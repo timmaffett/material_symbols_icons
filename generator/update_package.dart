@@ -415,7 +415,7 @@ class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
     sourceFileContent.writeln();
     sourceFileContent.writeln(
         '  /// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> &#x$codepoint; material symbol named "$iconname".');
-    sourceFileContent.writeln("\tstatic const IconData $iconname =");
+    sourceFileContent.writeln("  static const IconData $iconname =");
     sourceFileContent.writeln(
         "      IconData(0x$codepoint, fontFamily: _family, fontPackage: _package);");
     iconCount++;
@@ -570,10 +570,10 @@ class MaterialSymbols extends MaterialSymbolsBase {
       }
       sourceFileContent.writeln();
       sourceFileContent.writeln(
-          '\t/// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> &#x$codepoint; material symbol named "${iconname}_${fontinfo.flavor}".');
-      sourceFileContent.writeln("\tstatic const IconData $iconname =");
+          '  /// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> &#x$codepoint; material symbol named "${iconname}_${fontinfo.flavor}".');
+      sourceFileContent.writeln("  static const IconData $iconname =");
       sourceFileContent.writeln(
-          "\t\t\tIconData(0x$codepoint, fontFamily: _family, fontPackage: _package);");
+          "      IconData(0x$codepoint, fontFamily: _family, fontPackage: _package);");
       iconCount++;
     }
   }

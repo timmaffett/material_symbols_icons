@@ -18,6 +18,8 @@ import 'package:path/path.dart' as path;
 /// https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints
 /// https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints
 
+late final bool verboseFlag;
+
 class MaterialSymbolsVariableFont {
   final String flavor;
   final String familyNameToUse;
@@ -79,11 +81,12 @@ const pathToWriteExampleDartFiles = '../example/lib/';
 
 Future<void> downloadURLASBinaryFile(
     HttpClient client, String url, String filename) async {
-  print('downloadURLASBinaryFile $client $url $filename');
   final request = await client.getUrl(Uri.parse(url));
   final response = await request.close();
   if (response.statusCode == HttpStatus.ok) {
-    print('Got OK response for URL $url');
+    if (verboseFlag) {
+      print('Got OK response for URL $url - copying to $filename');
+    }
     await response.pipe(File('./$filename').openWrite());
   } else {
     print('ERROR reading the url $url');
@@ -119,7 +122,7 @@ Future<void> main(List<String> args) async {
       abbr: 's',
       negatable: false,
       help:
-          'Add `_outlined`, `_rounded` or `_sharp` suffixes to every icon name in corresponding MaterialSymbolsXXXXX classes.',
+          'Add `_outlined`, `_rounded` or `_sharp` suffixes to every icon name in corresponding MaterialSymbols, MaterialSymbolsOutlined, MaterialSymbolsRounded and MaterialSymbolsSharp classes.',
     )
     ..addFlag(
       'combined_universal',
@@ -144,7 +147,7 @@ Future<void> main(List<String> args) async {
   }
 
   final downloadFontsFlag = results['downloadfonts'] as bool;
-  final verboseFlag = results['verbose'] as bool;
+  verboseFlag = results['verbose'] as bool;
   final combinedUniversal = results['combined_universal'] as bool;
   final suffixIconNames = results['suffix_icon_names'] as bool;
 
@@ -279,7 +282,7 @@ void printUsage(ArgParser parser) {
 This program will download the latest Material Symbol Icon fonts and codepoint files and
 generate the relevant source files for this package.
 
-The --downloadfonts
+The --downloadfonts flag should be used if you also need to download the font files.
 
 ${parser.usage}
 ''',

@@ -374,7 +374,7 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisAlignment: mainAxisAlignment,
         children: <Widget>[
           Text(
-            'Grade: ${_gradeVariation.toString().padLeft(5)}',
+            'Grade: $_gradeVariation',
             style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 16.0,
@@ -417,7 +417,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       Center(
           child: Text(
-              'Fill: $_fillVariation Weight: $_weightVariation Grade: ${_gradeVariation.toString().padLeft(5)} Optical Size: $_opticalSizeVariation ',
+              'Fill: $_fillVariation Weight: $_weightVariation Grade: $_gradeVariation Optical Size: $_opticalSizeVariation ',
               style: const TextStyle(
                   color: Colors.blue,
                   fontWeight: FontWeight.bold,

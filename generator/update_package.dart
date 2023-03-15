@@ -214,7 +214,7 @@ Future<void> main(List<String> args) async {
         },
       );
       print(
-        'Read ${iconNameList.length} fonts from `${fontFlavor.codepointFileUrl}`',
+        'Read ${iconNameList.length} codepoints from `${fontFlavor.codepointFileUrl}`',
       );
     }
 
@@ -229,7 +229,7 @@ Future<void> main(List<String> args) async {
           client, fontFlavor.ttfFontFileUrl, filenameWithPath);
     } else {
       print(
-          'Skipped downloading ${fontFlavor.ttfFontFileUrl} to local file `$filenameWithPath}`');
+          'SKIPPED downloading ${fontFlavor.ttfFontFileUrl} to local file `$filenameWithPath}`');
     }
   }
 

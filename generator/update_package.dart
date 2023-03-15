@@ -410,7 +410,6 @@ class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
 void writeCombinedSourceFile(
     List<MaterialSymbolsVariableFont> fontinfoList, String sourceFilename,
     {bool suffixVersion = true}) {
-
   final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
 //
 // To edit this file modify the generator file `generator/update_package.dart` and
@@ -502,9 +501,11 @@ class MaterialSymbols extends MaterialSymbolsBase {
     lastCount = fontinfo.iconNameList.length;
 
     // write constant names
-     sourceFileContent.writeln("  static const _family_${fontinfo.flavor} = '${fontinfo.familyNameToUse}';");
+    sourceFileContent.writeln(
+        "  static const _family_${fontinfo.flavor} = '${fontinfo.familyNameToUse}';");
   }
-  sourceFileContent.writeln("  static const _package = 'material_symbols_icons';");
+  sourceFileContent
+      .writeln("  static const _package = 'material_symbols_icons';");
 
   var iconCount = 0;
 

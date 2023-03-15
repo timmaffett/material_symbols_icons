@@ -421,38 +421,9 @@ class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
     iconCount++;
   }
 
-/*
-  // OK - to get icon font tree shaking to work WE MUST AT LEAST REFERENCE a SINGLE icon from each of the other flavor fonts, that way
-  // tree-shaking will be triggered and all other icons form the other flavor fonts will be shaken out.
-  // If we do NOT reference any icons from the other flavors then THEIR ENTIRE FONTS are included.
-  final thisFlavor = fontinfo.flavor;
-  for(final otherFontInfo in allFlavorFontInfoList) {
-    if(otherFontInfo.flavor==thisFlavor) continue; // skip us
-    final otherFlavor = '${otherFontInfo.flavor[0].toUpperCase()}${otherFontInfo.flavor.substring(1).toLowerCase()}';
-    sourceFileContent.writeln();
-    sourceFileContent.writeln('\t/// Force font icon tree-shaking to occur on other material symbols font flavors within the library which may not be referenced');
-    sourceFileContent.writeln('\t/// otherwise.  If the fonts are not referenced at all then no icon tree-shaking is performed.');
-    sourceFileContent.writeln("\tstatic const IconData forceTreeShakingFor$otherFlavor = IconData(0xe5c9, fontFamily: '${otherFontInfo.familyNameToUse}', fontPackage: 'material_symbols_icons');");
-  }
-*/
   sourceFileContent.writeln();
-  sourceFileContent.writeln('\t// END GENERATED ICONS');
+  sourceFileContent.writeln('  // END GENERATED ICONS');
   sourceFileContent.writeln('}');
-
-/*
-  // OK - to get icon font tree shaking to work WE MUST AT LEAST REFERENCE a SINGLE icon from each of the other flavor fonts, that way
-  // tree-shaking will be triggered and all other icons form the other flavor fonts will be shaken out.
-  // If we do NOT reference any icons from the other flavors then THEIR ENTIRE FONTS are included.
-  final thisFlavor = fontinfo.flavor;
-  for(final otherFontInfo in allFlavorFontInfoList) {
-    if(otherFontInfo.flavor==thisFlavor) continue; // skip us
-    final otherFlavor = '${otherFontInfo.flavor[0].toUpperCase()}${otherFontInfo.flavor.substring(1).toLowerCase()}';
-    sourceFileContent.writeln();
-    sourceFileContent.writeln('\t/// Force font icon tree-shaking to occur on other material symbols font flavors within the library which may not be referenced');
-    sourceFileContent.writeln('\t/// otherwise.  If the fonts are not referenced at all then no icon tree-shaking is performed.');
-    sourceFileContent.writeln("\final IconData forceTreeShakingFor$otherFlavor = IconData(0xe5c9, fontFamily: '${otherFontInfo.familyNameToUse}', fontPackage: 'material_symbols_icons');");
-  }
-*/
 
   File(sourceFilename).writeAsStringSync(sourceFileContent.toString());
 
@@ -577,7 +548,7 @@ class MaterialSymbols extends MaterialSymbolsBase {
       iconCount++;
     }
   }
-  sourceFileContent.writeln('\t// END GENERATED ICONS');
+  sourceFileContent.writeln('  // END GENERATED ICONS');
   sourceFileContent.writeln('}');
 
   File(sourceFilename).writeAsStringSync(sourceFileContent.toString());
@@ -614,17 +585,14 @@ void writeExampleSourceFile(MaterialSymbolsVariableFont fontinfo,
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-
 import 'package:flutter/widgets.dart';
 import 'package:material_symbols_icons/$sourceFilename';
 
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: non_constant_identifier_names
 
-
 // BEGIN GENERATED static array
 Map<String,IconData> materialSymbols${classFlavor}Map = {
-
 ''');
 
   var iconCount = 0;
@@ -635,14 +603,13 @@ Map<String,IconData> materialSymbols${classFlavor}Map = {
     if (suffixIconNames) {
       iconname = '${iconname}_${fontinfo.flavor}';
     }
-    sourceFileContent.writeln();
     sourceFileContent.writeln(
-        "\t'${iconname.replaceAll('\$', '\\\$')}' : MaterialSymbols$classFlavor.$iconname,");
+        "  '${iconname.replaceAll('\$', '\\\$')}': MaterialSymbols$classFlavor.$iconname,");
     iconCount++;
   }
 
   sourceFileContent.writeln('};');
-  sourceFileContent.writeln('\t// END GENERATED ICONS');
+  sourceFileContent.writeln('// END GENERATED ICONS');
 
   File(exampleSourceFilename).writeAsStringSync(sourceFileContent.toString());
 
@@ -680,7 +647,6 @@ import 'package:material_symbols_icons/$sourceFilename';
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: non_constant_identifier_names
 
-
 // BEGIN GENERATED static array
 Map<String,IconData> materialSymbolsUniversalMap = {
 ''');
@@ -704,15 +670,14 @@ Map<String,IconData> materialSymbolsUniversalMap = {
       if (suffixVersion) {
         iconname = '${iconname}_${fontinfo.flavor}';
       }
-      sourceFileContent.writeln();
       sourceFileContent.writeln(
-          "\t'${iconname.replaceAll('\$', '\\\$')}' : MaterialSymbols.$iconname,");
+          "  '${iconname.replaceAll('\$', '\\\$')}': MaterialSymbols.$iconname,");
 
       iconCount++;
     }
   }
   sourceFileContent.writeln('};');
-  sourceFileContent.writeln('\t// END GENERATED ICONS');
+  sourceFileContent.writeln('// END GENERATED ICONS');
 
   File(exampleSourceFilename).writeAsStringSync(sourceFileContent.toString());
 

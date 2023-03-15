@@ -63,7 +63,12 @@ const prefixForReservedWordsAndNumbers = '\$';
 
 /// Path to write the downloaded TTF files to
 /// KLUDGE - currently we have to open the fonts and RE-CALC metrics to get them to render correctly in flutter.
-/// We recalc metrics using FontForge??? -
+/// We recalc metrics for each font using Font Creator 14.0  (https://high-logic.com) and then re-save.
+/// (Font->Properties menu - then master tab in dialog and then press first [Calculate] button next to
+/// 'Metrix for Horizontal Writing Mode')
+/// THIS IS NON-IDEAL - and we ahve submitted a issue to the material symbols github repo
+/// If this is not done then Flutter renders the icons lower in the text box then they should be
+/// (ie. *not centered*).
 const pathToWriteTTFFiles = '../rawFontsUnfixed/';
 
 /// Path to write the dart source files to

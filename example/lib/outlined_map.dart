@@ -6,7 +6,7 @@
 // localed at https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
 // These codepoints correspond to symbols within the corresponding variable font.
 // The font was downloaded from https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf and added to this package.
-// This file was generated 2023-03-15 10:12:25.812157 by the dart file
+// This file was generated 2023-03-15 10:21:17.937064 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2022 . All rights reserved.
@@ -147,7 +147,8 @@ Map<String, IconData> materialSymbolsMap = {
   'air_purifier_gen': MaterialSymbols.air_purifier_gen,
   'airline_seat_flat': MaterialSymbols.airline_seat_flat,
   'airline_seat_flat_angled': MaterialSymbols.airline_seat_flat_angled,
-  'airline_seat_individual_suite': MaterialSymbols.airline_seat_individual_suite,
+  'airline_seat_individual_suite':
+      MaterialSymbols.airline_seat_individual_suite,
   'airline_seat_legroom_extra': MaterialSymbols.airline_seat_legroom_extra,
   'airline_seat_legroom_normal': MaterialSymbols.airline_seat_legroom_normal,
   'airline_seat_legroom_reduced': MaterialSymbols.airline_seat_legroom_reduced,
@@ -846,7 +847,8 @@ Map<String, IconData> materialSymbolsMap = {
   'do_not_disturb_alt': MaterialSymbols.do_not_disturb_alt,
   'do_not_disturb_off': MaterialSymbols.do_not_disturb_off,
   'do_not_disturb_on': MaterialSymbols.do_not_disturb_on,
-  'do_not_disturb_on_total_silence': MaterialSymbols.do_not_disturb_on_total_silence,
+  'do_not_disturb_on_total_silence':
+      MaterialSymbols.do_not_disturb_on_total_silence,
   'do_not_step': MaterialSymbols.do_not_step,
   'do_not_touch': MaterialSymbols.do_not_touch,
   'dock': MaterialSymbols.dock,
@@ -2037,7 +2039,8 @@ Map<String, IconData> materialSymbolsMap = {
   'phone_enabled': MaterialSymbols.phone_enabled,
   'phone_forwarded': MaterialSymbols.phone_forwarded,
   'phone_in_talk': MaterialSymbols.phone_in_talk,
-  'phone_in_talk_watchface_indicator': MaterialSymbols.phone_in_talk_watchface_indicator,
+  'phone_in_talk_watchface_indicator':
+      MaterialSymbols.phone_in_talk_watchface_indicator,
   'phone_iphone': MaterialSymbols.phone_iphone,
   'phone_locked': MaterialSymbols.phone_locked,
   'phone_missed': MaterialSymbols.phone_missed,
@@ -2367,7 +2370,8 @@ Map<String, IconData> materialSymbolsMap = {
   'sentiment_content': MaterialSymbols.sentiment_content,
   'sentiment_dissatisfied': MaterialSymbols.sentiment_dissatisfied,
   'sentiment_excited': MaterialSymbols.sentiment_excited,
-  'sentiment_extremely_dissatisfied': MaterialSymbols.sentiment_extremely_dissatisfied,
+  'sentiment_extremely_dissatisfied':
+      MaterialSymbols.sentiment_extremely_dissatisfied,
   'sentiment_frustrated': MaterialSymbols.sentiment_frustrated,
   'sentiment_neutral': MaterialSymbols.sentiment_neutral,
   'sentiment_sad': MaterialSymbols.sentiment_sad,
@@ -2448,8 +2452,10 @@ Map<String, IconData> materialSymbolsMap = {
   'signal_cellular_alt': MaterialSymbols.signal_cellular_alt,
   'signal_cellular_alt_1_bar': MaterialSymbols.signal_cellular_alt_1_bar,
   'signal_cellular_alt_2_bar': MaterialSymbols.signal_cellular_alt_2_bar,
-  'signal_cellular_connected_no_internet_0_bar': MaterialSymbols.signal_cellular_connected_no_internet_0_bar,
-  'signal_cellular_connected_no_internet_4_bar': MaterialSymbols.signal_cellular_connected_no_internet_4_bar,
+  'signal_cellular_connected_no_internet_0_bar':
+      MaterialSymbols.signal_cellular_connected_no_internet_0_bar,
+  'signal_cellular_connected_no_internet_4_bar':
+      MaterialSymbols.signal_cellular_connected_no_internet_4_bar,
   'signal_cellular_no_sim': MaterialSymbols.signal_cellular_no_sim,
   'signal_cellular_nodata': MaterialSymbols.signal_cellular_nodata,
   'signal_cellular_null': MaterialSymbols.signal_cellular_null,
@@ -2459,10 +2465,12 @@ Map<String, IconData> materialSymbolsMap = {
   'signal_wifi_4_bar': MaterialSymbols.signal_wifi_4_bar,
   'signal_wifi_4_bar_lock': MaterialSymbols.signal_wifi_4_bar_lock,
   'signal_wifi_bad': MaterialSymbols.signal_wifi_bad,
-  'signal_wifi_connected_no_internet_4': MaterialSymbols.signal_wifi_connected_no_internet_4,
+  'signal_wifi_connected_no_internet_4':
+      MaterialSymbols.signal_wifi_connected_no_internet_4,
   'signal_wifi_off': MaterialSymbols.signal_wifi_off,
   'signal_wifi_statusbar_4_bar': MaterialSymbols.signal_wifi_statusbar_4_bar,
-  'signal_wifi_statusbar_not_connected': MaterialSymbols.signal_wifi_statusbar_not_connected,
+  'signal_wifi_statusbar_not_connected':
+      MaterialSymbols.signal_wifi_statusbar_not_connected,
   'signal_wifi_statusbar_null': MaterialSymbols.signal_wifi_statusbar_null,
   'signature': MaterialSymbols.signature,
   'signpost': MaterialSymbols.signpost,
@@ -2666,7 +2674,8 @@ Map<String, IconData> materialSymbolsMap = {
   'syringe': MaterialSymbols.syringe,
   'system_security_update': MaterialSymbols.system_security_update,
   'system_security_update_good': MaterialSymbols.system_security_update_good,
-  'system_security_update_warning': MaterialSymbols.system_security_update_warning,
+  'system_security_update_warning':
+      MaterialSymbols.system_security_update_warning,
   'system_update': MaterialSymbols.system_update,
   'system_update_alt': MaterialSymbols.system_update_alt,
   'tab': MaterialSymbols.tab,
@@ -2720,13 +2729,17 @@ Map<String, IconData> materialSymbolsMap = {
   'text_rotation_down': MaterialSymbols.text_rotation_down,
   'text_rotation_none': MaterialSymbols.text_rotation_none,
   'text_select_end': MaterialSymbols.text_select_end,
-  'text_select_jump_to_beginning': MaterialSymbols.text_select_jump_to_beginning,
+  'text_select_jump_to_beginning':
+      MaterialSymbols.text_select_jump_to_beginning,
   'text_select_jump_to_end': MaterialSymbols.text_select_jump_to_end,
-  'text_select_move_back_character': MaterialSymbols.text_select_move_back_character,
+  'text_select_move_back_character':
+      MaterialSymbols.text_select_move_back_character,
   'text_select_move_back_word': MaterialSymbols.text_select_move_back_word,
   'text_select_move_down': MaterialSymbols.text_select_move_down,
-  'text_select_move_forward_character': MaterialSymbols.text_select_move_forward_character,
-  'text_select_move_forward_word': MaterialSymbols.text_select_move_forward_word,
+  'text_select_move_forward_character':
+      MaterialSymbols.text_select_move_forward_character,
+  'text_select_move_forward_word':
+      MaterialSymbols.text_select_move_forward_word,
   'text_select_move_up': MaterialSymbols.text_select_move_up,
   'text_select_start': MaterialSymbols.text_select_start,
   'text_snippet': MaterialSymbols.text_snippet,

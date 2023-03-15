@@ -6,7 +6,7 @@
 // localed at https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
 // These codepoints correspond to symbols within the corresponding variable font.
 // The font was downloaded from https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf and added to this package.
-// This file was generated 2023-03-15 10:12:25.886691 by the dart file
+// This file was generated 2023-03-15 10:21:18.004327 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2022 . All rights reserved.
@@ -147,12 +147,16 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'air_purifier_gen': MaterialSymbolsSharp.air_purifier_gen,
   'airline_seat_flat': MaterialSymbolsSharp.airline_seat_flat,
   'airline_seat_flat_angled': MaterialSymbolsSharp.airline_seat_flat_angled,
-  'airline_seat_individual_suite': MaterialSymbolsSharp.airline_seat_individual_suite,
+  'airline_seat_individual_suite':
+      MaterialSymbolsSharp.airline_seat_individual_suite,
   'airline_seat_legroom_extra': MaterialSymbolsSharp.airline_seat_legroom_extra,
-  'airline_seat_legroom_normal': MaterialSymbolsSharp.airline_seat_legroom_normal,
-  'airline_seat_legroom_reduced': MaterialSymbolsSharp.airline_seat_legroom_reduced,
+  'airline_seat_legroom_normal':
+      MaterialSymbolsSharp.airline_seat_legroom_normal,
+  'airline_seat_legroom_reduced':
+      MaterialSymbolsSharp.airline_seat_legroom_reduced,
   'airline_seat_recline_extra': MaterialSymbolsSharp.airline_seat_recline_extra,
-  'airline_seat_recline_normal': MaterialSymbolsSharp.airline_seat_recline_normal,
+  'airline_seat_recline_normal':
+      MaterialSymbolsSharp.airline_seat_recline_normal,
   'airline_stops': MaterialSymbolsSharp.airline_stops,
   'airlines': MaterialSymbolsSharp.airlines,
   'airplane_ticket': MaterialSymbolsSharp.airplane_ticket,
@@ -181,7 +185,8 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'align_justify_flex_end': MaterialSymbolsSharp.align_justify_flex_end,
   'align_justify_flex_start': MaterialSymbolsSharp.align_justify_flex_start,
   'align_justify_space_around': MaterialSymbolsSharp.align_justify_space_around,
-  'align_justify_space_between': MaterialSymbolsSharp.align_justify_space_between,
+  'align_justify_space_between':
+      MaterialSymbolsSharp.align_justify_space_between,
   'align_justify_space_even': MaterialSymbolsSharp.align_justify_space_even,
   'align_justify_stretch': MaterialSymbolsSharp.align_justify_stretch,
   'align_self_stretch': MaterialSymbolsSharp.align_self_stretch,
@@ -846,7 +851,8 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'do_not_disturb_alt': MaterialSymbolsSharp.do_not_disturb_alt,
   'do_not_disturb_off': MaterialSymbolsSharp.do_not_disturb_off,
   'do_not_disturb_on': MaterialSymbolsSharp.do_not_disturb_on,
-  'do_not_disturb_on_total_silence': MaterialSymbolsSharp.do_not_disturb_on_total_silence,
+  'do_not_disturb_on_total_silence':
+      MaterialSymbolsSharp.do_not_disturb_on_total_silence,
   'do_not_step': MaterialSymbolsSharp.do_not_step,
   'do_not_touch': MaterialSymbolsSharp.do_not_touch,
   'dock': MaterialSymbolsSharp.dock,
@@ -1187,8 +1193,10 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'format_text_clip': MaterialSymbolsSharp.format_text_clip,
   'format_text_overflow': MaterialSymbolsSharp.format_text_overflow,
   'format_text_wrap': MaterialSymbolsSharp.format_text_wrap,
-  'format_textdirection_l_to_r': MaterialSymbolsSharp.format_textdirection_l_to_r,
-  'format_textdirection_r_to_l': MaterialSymbolsSharp.format_textdirection_r_to_l,
+  'format_textdirection_l_to_r':
+      MaterialSymbolsSharp.format_textdirection_l_to_r,
+  'format_textdirection_r_to_l':
+      MaterialSymbolsSharp.format_textdirection_r_to_l,
   'format_underlined': MaterialSymbolsSharp.format_underlined,
   'format_underlined_squiggle': MaterialSymbolsSharp.format_underlined_squiggle,
   'forms_add_on': MaterialSymbolsSharp.forms_add_on,
@@ -1463,7 +1471,8 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'keyboard_control_key': MaterialSymbolsSharp.keyboard_control_key,
   'keyboard_double_arrow_down': MaterialSymbolsSharp.keyboard_double_arrow_down,
   'keyboard_double_arrow_left': MaterialSymbolsSharp.keyboard_double_arrow_left,
-  'keyboard_double_arrow_right': MaterialSymbolsSharp.keyboard_double_arrow_right,
+  'keyboard_double_arrow_right':
+      MaterialSymbolsSharp.keyboard_double_arrow_right,
   'keyboard_double_arrow_up': MaterialSymbolsSharp.keyboard_double_arrow_up,
   'keyboard_external_input': MaterialSymbolsSharp.keyboard_external_input,
   'keyboard_full': MaterialSymbolsSharp.keyboard_full,
@@ -1814,7 +1823,8 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'nest_cam_wall_mount': MaterialSymbolsSharp.nest_cam_wall_mount,
   'nest_cam_wired_stand': MaterialSymbolsSharp.nest_cam_wired_stand,
   'nest_clock_farsight_analog': MaterialSymbolsSharp.nest_clock_farsight_analog,
-  'nest_clock_farsight_digital': MaterialSymbolsSharp.nest_clock_farsight_digital,
+  'nest_clock_farsight_digital':
+      MaterialSymbolsSharp.nest_clock_farsight_digital,
   'nest_connect': MaterialSymbolsSharp.nest_connect,
   'nest_detect': MaterialSymbolsSharp.nest_detect,
   'nest_display': MaterialSymbolsSharp.nest_display,
@@ -1838,7 +1848,8 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'nest_thermostat_gen_3': MaterialSymbolsSharp.nest_thermostat_gen_3,
   'nest_thermostat_sensor': MaterialSymbolsSharp.nest_thermostat_sensor,
   'nest_thermostat_sensor_eu': MaterialSymbolsSharp.nest_thermostat_sensor_eu,
-  'nest_thermostat_zirconium_eu': MaterialSymbolsSharp.nest_thermostat_zirconium_eu,
+  'nest_thermostat_zirconium_eu':
+      MaterialSymbolsSharp.nest_thermostat_zirconium_eu,
   'nest_true_radiant': MaterialSymbolsSharp.nest_true_radiant,
   'nest_wake_on_approach': MaterialSymbolsSharp.nest_wake_on_approach,
   'nest_wake_on_press': MaterialSymbolsSharp.nest_wake_on_press,
@@ -1880,7 +1891,8 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'no_crash': MaterialSymbolsSharp.no_crash,
   'no_drinks': MaterialSymbolsSharp.no_drinks,
   'no_encryption': MaterialSymbolsSharp.no_encryption,
-  'no_encryption_gmailerrorred': MaterialSymbolsSharp.no_encryption_gmailerrorred,
+  'no_encryption_gmailerrorred':
+      MaterialSymbolsSharp.no_encryption_gmailerrorred,
   'no_flash': MaterialSymbolsSharp.no_flash,
   'no_food': MaterialSymbolsSharp.no_food,
   'no_luggage': MaterialSymbolsSharp.no_luggage,
@@ -2037,7 +2049,8 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'phone_enabled': MaterialSymbolsSharp.phone_enabled,
   'phone_forwarded': MaterialSymbolsSharp.phone_forwarded,
   'phone_in_talk': MaterialSymbolsSharp.phone_in_talk,
-  'phone_in_talk_watchface_indicator': MaterialSymbolsSharp.phone_in_talk_watchface_indicator,
+  'phone_in_talk_watchface_indicator':
+      MaterialSymbolsSharp.phone_in_talk_watchface_indicator,
   'phone_iphone': MaterialSymbolsSharp.phone_iphone,
   'phone_locked': MaterialSymbolsSharp.phone_locked,
   'phone_missed': MaterialSymbolsSharp.phone_missed,
@@ -2367,14 +2380,16 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'sentiment_content': MaterialSymbolsSharp.sentiment_content,
   'sentiment_dissatisfied': MaterialSymbolsSharp.sentiment_dissatisfied,
   'sentiment_excited': MaterialSymbolsSharp.sentiment_excited,
-  'sentiment_extremely_dissatisfied': MaterialSymbolsSharp.sentiment_extremely_dissatisfied,
+  'sentiment_extremely_dissatisfied':
+      MaterialSymbolsSharp.sentiment_extremely_dissatisfied,
   'sentiment_frustrated': MaterialSymbolsSharp.sentiment_frustrated,
   'sentiment_neutral': MaterialSymbolsSharp.sentiment_neutral,
   'sentiment_sad': MaterialSymbolsSharp.sentiment_sad,
   'sentiment_satisfied': MaterialSymbolsSharp.sentiment_satisfied,
   'sentiment_satisfied_alt': MaterialSymbolsSharp.sentiment_satisfied_alt,
   'sentiment_stressed': MaterialSymbolsSharp.sentiment_stressed,
-  'sentiment_very_dissatisfied': MaterialSymbolsSharp.sentiment_very_dissatisfied,
+  'sentiment_very_dissatisfied':
+      MaterialSymbolsSharp.sentiment_very_dissatisfied,
   'sentiment_very_satisfied': MaterialSymbolsSharp.sentiment_very_satisfied,
   'sentiment_worried': MaterialSymbolsSharp.sentiment_worried,
   'set_meal': MaterialSymbolsSharp.set_meal,
@@ -2448,8 +2463,10 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'signal_cellular_alt': MaterialSymbolsSharp.signal_cellular_alt,
   'signal_cellular_alt_1_bar': MaterialSymbolsSharp.signal_cellular_alt_1_bar,
   'signal_cellular_alt_2_bar': MaterialSymbolsSharp.signal_cellular_alt_2_bar,
-  'signal_cellular_connected_no_internet_0_bar': MaterialSymbolsSharp.signal_cellular_connected_no_internet_0_bar,
-  'signal_cellular_connected_no_internet_4_bar': MaterialSymbolsSharp.signal_cellular_connected_no_internet_4_bar,
+  'signal_cellular_connected_no_internet_0_bar':
+      MaterialSymbolsSharp.signal_cellular_connected_no_internet_0_bar,
+  'signal_cellular_connected_no_internet_4_bar':
+      MaterialSymbolsSharp.signal_cellular_connected_no_internet_4_bar,
   'signal_cellular_no_sim': MaterialSymbolsSharp.signal_cellular_no_sim,
   'signal_cellular_nodata': MaterialSymbolsSharp.signal_cellular_nodata,
   'signal_cellular_null': MaterialSymbolsSharp.signal_cellular_null,
@@ -2459,10 +2476,13 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'signal_wifi_4_bar': MaterialSymbolsSharp.signal_wifi_4_bar,
   'signal_wifi_4_bar_lock': MaterialSymbolsSharp.signal_wifi_4_bar_lock,
   'signal_wifi_bad': MaterialSymbolsSharp.signal_wifi_bad,
-  'signal_wifi_connected_no_internet_4': MaterialSymbolsSharp.signal_wifi_connected_no_internet_4,
+  'signal_wifi_connected_no_internet_4':
+      MaterialSymbolsSharp.signal_wifi_connected_no_internet_4,
   'signal_wifi_off': MaterialSymbolsSharp.signal_wifi_off,
-  'signal_wifi_statusbar_4_bar': MaterialSymbolsSharp.signal_wifi_statusbar_4_bar,
-  'signal_wifi_statusbar_not_connected': MaterialSymbolsSharp.signal_wifi_statusbar_not_connected,
+  'signal_wifi_statusbar_4_bar':
+      MaterialSymbolsSharp.signal_wifi_statusbar_4_bar,
+  'signal_wifi_statusbar_not_connected':
+      MaterialSymbolsSharp.signal_wifi_statusbar_not_connected,
   'signal_wifi_statusbar_null': MaterialSymbolsSharp.signal_wifi_statusbar_null,
   'signature': MaterialSymbolsSharp.signature,
   'signpost': MaterialSymbolsSharp.signpost,
@@ -2506,8 +2526,10 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'sort': MaterialSymbolsSharp.sort,
   'sort_by_alpha': MaterialSymbolsSharp.sort_by_alpha,
   'sos': MaterialSymbolsSharp.sos,
-  'sound_detection_dog_barking': MaterialSymbolsSharp.sound_detection_dog_barking,
-  'sound_detection_glass_break': MaterialSymbolsSharp.sound_detection_glass_break,
+  'sound_detection_dog_barking':
+      MaterialSymbolsSharp.sound_detection_dog_barking,
+  'sound_detection_glass_break':
+      MaterialSymbolsSharp.sound_detection_glass_break,
   'sound_detection_loud_sound': MaterialSymbolsSharp.sound_detection_loud_sound,
   'sound_sampler': MaterialSymbolsSharp.sound_sampler,
   'soup_kitchen': MaterialSymbolsSharp.soup_kitchen,
@@ -2665,8 +2687,10 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'sync_saved_locally': MaterialSymbolsSharp.sync_saved_locally,
   'syringe': MaterialSymbolsSharp.syringe,
   'system_security_update': MaterialSymbolsSharp.system_security_update,
-  'system_security_update_good': MaterialSymbolsSharp.system_security_update_good,
-  'system_security_update_warning': MaterialSymbolsSharp.system_security_update_warning,
+  'system_security_update_good':
+      MaterialSymbolsSharp.system_security_update_good,
+  'system_security_update_warning':
+      MaterialSymbolsSharp.system_security_update_warning,
   'system_update': MaterialSymbolsSharp.system_update,
   'system_update_alt': MaterialSymbolsSharp.system_update_alt,
   'tab': MaterialSymbolsSharp.tab,
@@ -2720,13 +2744,17 @@ Map<String, IconData> materialSymbolsSharpMap = {
   'text_rotation_down': MaterialSymbolsSharp.text_rotation_down,
   'text_rotation_none': MaterialSymbolsSharp.text_rotation_none,
   'text_select_end': MaterialSymbolsSharp.text_select_end,
-  'text_select_jump_to_beginning': MaterialSymbolsSharp.text_select_jump_to_beginning,
+  'text_select_jump_to_beginning':
+      MaterialSymbolsSharp.text_select_jump_to_beginning,
   'text_select_jump_to_end': MaterialSymbolsSharp.text_select_jump_to_end,
-  'text_select_move_back_character': MaterialSymbolsSharp.text_select_move_back_character,
+  'text_select_move_back_character':
+      MaterialSymbolsSharp.text_select_move_back_character,
   'text_select_move_back_word': MaterialSymbolsSharp.text_select_move_back_word,
   'text_select_move_down': MaterialSymbolsSharp.text_select_move_down,
-  'text_select_move_forward_character': MaterialSymbolsSharp.text_select_move_forward_character,
-  'text_select_move_forward_word': MaterialSymbolsSharp.text_select_move_forward_word,
+  'text_select_move_forward_character':
+      MaterialSymbolsSharp.text_select_move_forward_character,
+  'text_select_move_forward_word':
+      MaterialSymbolsSharp.text_select_move_forward_word,
   'text_select_move_up': MaterialSymbolsSharp.text_select_move_up,
   'text_select_start': MaterialSymbolsSharp.text_select_start,
   'text_snippet': MaterialSymbolsSharp.text_snippet,

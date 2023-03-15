@@ -6,7 +6,7 @@
 // localed at https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
 // These codepoints correspond to symbols within the corresponding variable font.
 // The font was downloaded from https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf and added to this package.
-// This file was generated 2023-03-15 10:12:25.832150 by the dart file
+// This file was generated 2023-03-15 10:21:17.955064 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2022 . All rights reserved.
@@ -147,12 +147,18 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'air_purifier_gen': MaterialSymbolsOutlined.air_purifier_gen,
   'airline_seat_flat': MaterialSymbolsOutlined.airline_seat_flat,
   'airline_seat_flat_angled': MaterialSymbolsOutlined.airline_seat_flat_angled,
-  'airline_seat_individual_suite': MaterialSymbolsOutlined.airline_seat_individual_suite,
-  'airline_seat_legroom_extra': MaterialSymbolsOutlined.airline_seat_legroom_extra,
-  'airline_seat_legroom_normal': MaterialSymbolsOutlined.airline_seat_legroom_normal,
-  'airline_seat_legroom_reduced': MaterialSymbolsOutlined.airline_seat_legroom_reduced,
-  'airline_seat_recline_extra': MaterialSymbolsOutlined.airline_seat_recline_extra,
-  'airline_seat_recline_normal': MaterialSymbolsOutlined.airline_seat_recline_normal,
+  'airline_seat_individual_suite':
+      MaterialSymbolsOutlined.airline_seat_individual_suite,
+  'airline_seat_legroom_extra':
+      MaterialSymbolsOutlined.airline_seat_legroom_extra,
+  'airline_seat_legroom_normal':
+      MaterialSymbolsOutlined.airline_seat_legroom_normal,
+  'airline_seat_legroom_reduced':
+      MaterialSymbolsOutlined.airline_seat_legroom_reduced,
+  'airline_seat_recline_extra':
+      MaterialSymbolsOutlined.airline_seat_recline_extra,
+  'airline_seat_recline_normal':
+      MaterialSymbolsOutlined.airline_seat_recline_normal,
   'airline_stops': MaterialSymbolsOutlined.airline_stops,
   'airlines': MaterialSymbolsOutlined.airlines,
   'airplane_ticket': MaterialSymbolsOutlined.airplane_ticket,
@@ -180,8 +186,10 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'align_justify_center': MaterialSymbolsOutlined.align_justify_center,
   'align_justify_flex_end': MaterialSymbolsOutlined.align_justify_flex_end,
   'align_justify_flex_start': MaterialSymbolsOutlined.align_justify_flex_start,
-  'align_justify_space_around': MaterialSymbolsOutlined.align_justify_space_around,
-  'align_justify_space_between': MaterialSymbolsOutlined.align_justify_space_between,
+  'align_justify_space_around':
+      MaterialSymbolsOutlined.align_justify_space_around,
+  'align_justify_space_between':
+      MaterialSymbolsOutlined.align_justify_space_between,
   'align_justify_space_even': MaterialSymbolsOutlined.align_justify_space_even,
   'align_justify_stretch': MaterialSymbolsOutlined.align_justify_stretch,
   'align_self_stretch': MaterialSymbolsOutlined.align_self_stretch,
@@ -564,7 +572,8 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'check_circle_filled': MaterialSymbolsOutlined.check_circle_filled,
   'check_circle_outline': MaterialSymbolsOutlined.check_circle_outline,
   'check_in_out': MaterialSymbolsOutlined.check_in_out,
-  'check_indeterminate_small': MaterialSymbolsOutlined.check_indeterminate_small,
+  'check_indeterminate_small':
+      MaterialSymbolsOutlined.check_indeterminate_small,
   'check_small': MaterialSymbolsOutlined.check_small,
   'checklist': MaterialSymbolsOutlined.checklist,
   'checklist_rtl': MaterialSymbolsOutlined.checklist_rtl,
@@ -817,12 +826,14 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'directions_car_filled': MaterialSymbolsOutlined.directions_car_filled,
   'directions_off': MaterialSymbolsOutlined.directions_off,
   'directions_railway': MaterialSymbolsOutlined.directions_railway,
-  'directions_railway_filled': MaterialSymbolsOutlined.directions_railway_filled,
+  'directions_railway_filled':
+      MaterialSymbolsOutlined.directions_railway_filled,
   'directions_run': MaterialSymbolsOutlined.directions_run,
   'directions_subway': MaterialSymbolsOutlined.directions_subway,
   'directions_subway_filled': MaterialSymbolsOutlined.directions_subway_filled,
   'directions_transit': MaterialSymbolsOutlined.directions_transit,
-  'directions_transit_filled': MaterialSymbolsOutlined.directions_transit_filled,
+  'directions_transit_filled':
+      MaterialSymbolsOutlined.directions_transit_filled,
   'directions_walk': MaterialSymbolsOutlined.directions_walk,
   'dirty_lens': MaterialSymbolsOutlined.dirty_lens,
   'disabled_by_default': MaterialSymbolsOutlined.disabled_by_default,
@@ -846,7 +857,8 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'do_not_disturb_alt': MaterialSymbolsOutlined.do_not_disturb_alt,
   'do_not_disturb_off': MaterialSymbolsOutlined.do_not_disturb_off,
   'do_not_disturb_on': MaterialSymbolsOutlined.do_not_disturb_on,
-  'do_not_disturb_on_total_silence': MaterialSymbolsOutlined.do_not_disturb_on_total_silence,
+  'do_not_disturb_on_total_silence':
+      MaterialSymbolsOutlined.do_not_disturb_on_total_silence,
   'do_not_step': MaterialSymbolsOutlined.do_not_step,
   'do_not_touch': MaterialSymbolsOutlined.do_not_touch,
   'dock': MaterialSymbolsOutlined.dock,
@@ -893,7 +905,8 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'drive_file_move': MaterialSymbolsOutlined.drive_file_move,
   'drive_file_move_outline': MaterialSymbolsOutlined.drive_file_move_outline,
   'drive_file_move_rtl': MaterialSymbolsOutlined.drive_file_move_rtl,
-  'drive_file_rename_outline': MaterialSymbolsOutlined.drive_file_rename_outline,
+  'drive_file_rename_outline':
+      MaterialSymbolsOutlined.drive_file_rename_outline,
   'drive_folder_upload': MaterialSymbolsOutlined.drive_folder_upload,
   'dry': MaterialSymbolsOutlined.dry,
   'dry_cleaning': MaterialSymbolsOutlined.dry_cleaning,
@@ -1187,10 +1200,13 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'format_text_clip': MaterialSymbolsOutlined.format_text_clip,
   'format_text_overflow': MaterialSymbolsOutlined.format_text_overflow,
   'format_text_wrap': MaterialSymbolsOutlined.format_text_wrap,
-  'format_textdirection_l_to_r': MaterialSymbolsOutlined.format_textdirection_l_to_r,
-  'format_textdirection_r_to_l': MaterialSymbolsOutlined.format_textdirection_r_to_l,
+  'format_textdirection_l_to_r':
+      MaterialSymbolsOutlined.format_textdirection_l_to_r,
+  'format_textdirection_r_to_l':
+      MaterialSymbolsOutlined.format_textdirection_r_to_l,
   'format_underlined': MaterialSymbolsOutlined.format_underlined,
-  'format_underlined_squiggle': MaterialSymbolsOutlined.format_underlined_squiggle,
+  'format_underlined_squiggle':
+      MaterialSymbolsOutlined.format_underlined_squiggle,
   'forms_add_on': MaterialSymbolsOutlined.forms_add_on,
   'forms_apps_script': MaterialSymbolsOutlined.forms_apps_script,
   'fort': MaterialSymbolsOutlined.fort,
@@ -1461,16 +1477,20 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'keyboard_capslock_badge': MaterialSymbolsOutlined.keyboard_capslock_badge,
   'keyboard_command_key': MaterialSymbolsOutlined.keyboard_command_key,
   'keyboard_control_key': MaterialSymbolsOutlined.keyboard_control_key,
-  'keyboard_double_arrow_down': MaterialSymbolsOutlined.keyboard_double_arrow_down,
-  'keyboard_double_arrow_left': MaterialSymbolsOutlined.keyboard_double_arrow_left,
-  'keyboard_double_arrow_right': MaterialSymbolsOutlined.keyboard_double_arrow_right,
+  'keyboard_double_arrow_down':
+      MaterialSymbolsOutlined.keyboard_double_arrow_down,
+  'keyboard_double_arrow_left':
+      MaterialSymbolsOutlined.keyboard_double_arrow_left,
+  'keyboard_double_arrow_right':
+      MaterialSymbolsOutlined.keyboard_double_arrow_right,
   'keyboard_double_arrow_up': MaterialSymbolsOutlined.keyboard_double_arrow_up,
   'keyboard_external_input': MaterialSymbolsOutlined.keyboard_external_input,
   'keyboard_full': MaterialSymbolsOutlined.keyboard_full,
   'keyboard_hide': MaterialSymbolsOutlined.keyboard_hide,
   'keyboard_onscreen': MaterialSymbolsOutlined.keyboard_onscreen,
   'keyboard_option_key': MaterialSymbolsOutlined.keyboard_option_key,
-  'keyboard_previous_language': MaterialSymbolsOutlined.keyboard_previous_language,
+  'keyboard_previous_language':
+      MaterialSymbolsOutlined.keyboard_previous_language,
   'keyboard_return': MaterialSymbolsOutlined.keyboard_return,
   'keyboard_tab': MaterialSymbolsOutlined.keyboard_tab,
   'keyboard_tab_rtl': MaterialSymbolsOutlined.keyboard_tab_rtl,
@@ -1631,7 +1651,8 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'lte_mobiledata': MaterialSymbolsOutlined.lte_mobiledata,
   'lte_mobiledata_badge': MaterialSymbolsOutlined.lte_mobiledata_badge,
   'lte_plus_mobiledata': MaterialSymbolsOutlined.lte_plus_mobiledata,
-  'lte_plus_mobiledata_badge': MaterialSymbolsOutlined.lte_plus_mobiledata_badge,
+  'lte_plus_mobiledata_badge':
+      MaterialSymbolsOutlined.lte_plus_mobiledata_badge,
   'luggage': MaterialSymbolsOutlined.luggage,
   'lunch_dining': MaterialSymbolsOutlined.lunch_dining,
   'lyrics': MaterialSymbolsOutlined.lyrics,
@@ -1813,8 +1834,10 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'nest_cam_stand': MaterialSymbolsOutlined.nest_cam_stand,
   'nest_cam_wall_mount': MaterialSymbolsOutlined.nest_cam_wall_mount,
   'nest_cam_wired_stand': MaterialSymbolsOutlined.nest_cam_wired_stand,
-  'nest_clock_farsight_analog': MaterialSymbolsOutlined.nest_clock_farsight_analog,
-  'nest_clock_farsight_digital': MaterialSymbolsOutlined.nest_clock_farsight_digital,
+  'nest_clock_farsight_analog':
+      MaterialSymbolsOutlined.nest_clock_farsight_analog,
+  'nest_clock_farsight_digital':
+      MaterialSymbolsOutlined.nest_clock_farsight_digital,
   'nest_connect': MaterialSymbolsOutlined.nest_connect,
   'nest_detect': MaterialSymbolsOutlined.nest_detect,
   'nest_display': MaterialSymbolsOutlined.nest_display,
@@ -1830,15 +1853,18 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'nest_mini': MaterialSymbolsOutlined.nest_mini,
   'nest_multi_room': MaterialSymbolsOutlined.nest_multi_room,
   'nest_remote': MaterialSymbolsOutlined.nest_remote,
-  'nest_remote_comfort_sensor': MaterialSymbolsOutlined.nest_remote_comfort_sensor,
+  'nest_remote_comfort_sensor':
+      MaterialSymbolsOutlined.nest_remote_comfort_sensor,
   'nest_secure_alarm': MaterialSymbolsOutlined.nest_secure_alarm,
   'nest_sunblock': MaterialSymbolsOutlined.nest_sunblock,
   'nest_tag': MaterialSymbolsOutlined.nest_tag,
   'nest_thermostat_e_eu': MaterialSymbolsOutlined.nest_thermostat_e_eu,
   'nest_thermostat_gen_3': MaterialSymbolsOutlined.nest_thermostat_gen_3,
   'nest_thermostat_sensor': MaterialSymbolsOutlined.nest_thermostat_sensor,
-  'nest_thermostat_sensor_eu': MaterialSymbolsOutlined.nest_thermostat_sensor_eu,
-  'nest_thermostat_zirconium_eu': MaterialSymbolsOutlined.nest_thermostat_zirconium_eu,
+  'nest_thermostat_sensor_eu':
+      MaterialSymbolsOutlined.nest_thermostat_sensor_eu,
+  'nest_thermostat_zirconium_eu':
+      MaterialSymbolsOutlined.nest_thermostat_zirconium_eu,
   'nest_true_radiant': MaterialSymbolsOutlined.nest_true_radiant,
   'nest_wake_on_approach': MaterialSymbolsOutlined.nest_wake_on_approach,
   'nest_wake_on_press': MaterialSymbolsOutlined.nest_wake_on_press,
@@ -1880,7 +1906,8 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'no_crash': MaterialSymbolsOutlined.no_crash,
   'no_drinks': MaterialSymbolsOutlined.no_drinks,
   'no_encryption': MaterialSymbolsOutlined.no_encryption,
-  'no_encryption_gmailerrorred': MaterialSymbolsOutlined.no_encryption_gmailerrorred,
+  'no_encryption_gmailerrorred':
+      MaterialSymbolsOutlined.no_encryption_gmailerrorred,
   'no_flash': MaterialSymbolsOutlined.no_flash,
   'no_food': MaterialSymbolsOutlined.no_food,
   'no_luggage': MaterialSymbolsOutlined.no_luggage,
@@ -2037,7 +2064,8 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'phone_enabled': MaterialSymbolsOutlined.phone_enabled,
   'phone_forwarded': MaterialSymbolsOutlined.phone_forwarded,
   'phone_in_talk': MaterialSymbolsOutlined.phone_in_talk,
-  'phone_in_talk_watchface_indicator': MaterialSymbolsOutlined.phone_in_talk_watchface_indicator,
+  'phone_in_talk_watchface_indicator':
+      MaterialSymbolsOutlined.phone_in_talk_watchface_indicator,
   'phone_iphone': MaterialSymbolsOutlined.phone_iphone,
   'phone_locked': MaterialSymbolsOutlined.phone_locked,
   'phone_missed': MaterialSymbolsOutlined.phone_missed,
@@ -2094,7 +2122,8 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'play_pause': MaterialSymbolsOutlined.play_pause,
   'playlist_add': MaterialSymbolsOutlined.playlist_add,
   'playlist_add_check': MaterialSymbolsOutlined.playlist_add_check,
-  'playlist_add_check_circle': MaterialSymbolsOutlined.playlist_add_check_circle,
+  'playlist_add_check_circle':
+      MaterialSymbolsOutlined.playlist_add_check_circle,
   'playlist_add_circle': MaterialSymbolsOutlined.playlist_add_circle,
   'playlist_play': MaterialSymbolsOutlined.playlist_play,
   'playlist_remove': MaterialSymbolsOutlined.playlist_remove,
@@ -2149,7 +2178,8 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'problem': MaterialSymbolsOutlined.problem,
   'procedure': MaterialSymbolsOutlined.procedure,
   'process_chart': MaterialSymbolsOutlined.process_chart,
-  'production_quantity_limits': MaterialSymbolsOutlined.production_quantity_limits,
+  'production_quantity_limits':
+      MaterialSymbolsOutlined.production_quantity_limits,
   'productivity': MaterialSymbolsOutlined.productivity,
   'propane': MaterialSymbolsOutlined.propane,
   'propane_tank': MaterialSymbolsOutlined.propane_tank,
@@ -2367,14 +2397,16 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'sentiment_content': MaterialSymbolsOutlined.sentiment_content,
   'sentiment_dissatisfied': MaterialSymbolsOutlined.sentiment_dissatisfied,
   'sentiment_excited': MaterialSymbolsOutlined.sentiment_excited,
-  'sentiment_extremely_dissatisfied': MaterialSymbolsOutlined.sentiment_extremely_dissatisfied,
+  'sentiment_extremely_dissatisfied':
+      MaterialSymbolsOutlined.sentiment_extremely_dissatisfied,
   'sentiment_frustrated': MaterialSymbolsOutlined.sentiment_frustrated,
   'sentiment_neutral': MaterialSymbolsOutlined.sentiment_neutral,
   'sentiment_sad': MaterialSymbolsOutlined.sentiment_sad,
   'sentiment_satisfied': MaterialSymbolsOutlined.sentiment_satisfied,
   'sentiment_satisfied_alt': MaterialSymbolsOutlined.sentiment_satisfied_alt,
   'sentiment_stressed': MaterialSymbolsOutlined.sentiment_stressed,
-  'sentiment_very_dissatisfied': MaterialSymbolsOutlined.sentiment_very_dissatisfied,
+  'sentiment_very_dissatisfied':
+      MaterialSymbolsOutlined.sentiment_very_dissatisfied,
   'sentiment_very_satisfied': MaterialSymbolsOutlined.sentiment_very_satisfied,
   'sentiment_worried': MaterialSymbolsOutlined.sentiment_worried,
   'set_meal': MaterialSymbolsOutlined.set_meal,
@@ -2446,10 +2478,14 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'signal_cellular_4_bar': MaterialSymbolsOutlined.signal_cellular_4_bar,
   'signal_cellular_add': MaterialSymbolsOutlined.signal_cellular_add,
   'signal_cellular_alt': MaterialSymbolsOutlined.signal_cellular_alt,
-  'signal_cellular_alt_1_bar': MaterialSymbolsOutlined.signal_cellular_alt_1_bar,
-  'signal_cellular_alt_2_bar': MaterialSymbolsOutlined.signal_cellular_alt_2_bar,
-  'signal_cellular_connected_no_internet_0_bar': MaterialSymbolsOutlined.signal_cellular_connected_no_internet_0_bar,
-  'signal_cellular_connected_no_internet_4_bar': MaterialSymbolsOutlined.signal_cellular_connected_no_internet_4_bar,
+  'signal_cellular_alt_1_bar':
+      MaterialSymbolsOutlined.signal_cellular_alt_1_bar,
+  'signal_cellular_alt_2_bar':
+      MaterialSymbolsOutlined.signal_cellular_alt_2_bar,
+  'signal_cellular_connected_no_internet_0_bar':
+      MaterialSymbolsOutlined.signal_cellular_connected_no_internet_0_bar,
+  'signal_cellular_connected_no_internet_4_bar':
+      MaterialSymbolsOutlined.signal_cellular_connected_no_internet_4_bar,
   'signal_cellular_no_sim': MaterialSymbolsOutlined.signal_cellular_no_sim,
   'signal_cellular_nodata': MaterialSymbolsOutlined.signal_cellular_nodata,
   'signal_cellular_null': MaterialSymbolsOutlined.signal_cellular_null,
@@ -2459,11 +2495,15 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'signal_wifi_4_bar': MaterialSymbolsOutlined.signal_wifi_4_bar,
   'signal_wifi_4_bar_lock': MaterialSymbolsOutlined.signal_wifi_4_bar_lock,
   'signal_wifi_bad': MaterialSymbolsOutlined.signal_wifi_bad,
-  'signal_wifi_connected_no_internet_4': MaterialSymbolsOutlined.signal_wifi_connected_no_internet_4,
+  'signal_wifi_connected_no_internet_4':
+      MaterialSymbolsOutlined.signal_wifi_connected_no_internet_4,
   'signal_wifi_off': MaterialSymbolsOutlined.signal_wifi_off,
-  'signal_wifi_statusbar_4_bar': MaterialSymbolsOutlined.signal_wifi_statusbar_4_bar,
-  'signal_wifi_statusbar_not_connected': MaterialSymbolsOutlined.signal_wifi_statusbar_not_connected,
-  'signal_wifi_statusbar_null': MaterialSymbolsOutlined.signal_wifi_statusbar_null,
+  'signal_wifi_statusbar_4_bar':
+      MaterialSymbolsOutlined.signal_wifi_statusbar_4_bar,
+  'signal_wifi_statusbar_not_connected':
+      MaterialSymbolsOutlined.signal_wifi_statusbar_not_connected,
+  'signal_wifi_statusbar_null':
+      MaterialSymbolsOutlined.signal_wifi_statusbar_null,
   'signature': MaterialSymbolsOutlined.signature,
   'signpost': MaterialSymbolsOutlined.signpost,
   'sim_card': MaterialSymbolsOutlined.sim_card,
@@ -2506,9 +2546,12 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'sort': MaterialSymbolsOutlined.sort,
   'sort_by_alpha': MaterialSymbolsOutlined.sort_by_alpha,
   'sos': MaterialSymbolsOutlined.sos,
-  'sound_detection_dog_barking': MaterialSymbolsOutlined.sound_detection_dog_barking,
-  'sound_detection_glass_break': MaterialSymbolsOutlined.sound_detection_glass_break,
-  'sound_detection_loud_sound': MaterialSymbolsOutlined.sound_detection_loud_sound,
+  'sound_detection_dog_barking':
+      MaterialSymbolsOutlined.sound_detection_dog_barking,
+  'sound_detection_glass_break':
+      MaterialSymbolsOutlined.sound_detection_glass_break,
+  'sound_detection_loud_sound':
+      MaterialSymbolsOutlined.sound_detection_loud_sound,
   'sound_sampler': MaterialSymbolsOutlined.sound_sampler,
   'soup_kitchen': MaterialSymbolsOutlined.soup_kitchen,
   'source': MaterialSymbolsOutlined.source,
@@ -2648,7 +2691,8 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   '\$switch': MaterialSymbolsOutlined.$switch,
   'switch_access': MaterialSymbolsOutlined.switch_access,
   'switch_access_shortcut': MaterialSymbolsOutlined.switch_access_shortcut,
-  'switch_access_shortcut_add': MaterialSymbolsOutlined.switch_access_shortcut_add,
+  'switch_access_shortcut_add':
+      MaterialSymbolsOutlined.switch_access_shortcut_add,
   'switch_account': MaterialSymbolsOutlined.switch_account,
   'switch_camera': MaterialSymbolsOutlined.switch_camera,
   'switch_left': MaterialSymbolsOutlined.switch_left,
@@ -2665,8 +2709,10 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'sync_saved_locally': MaterialSymbolsOutlined.sync_saved_locally,
   'syringe': MaterialSymbolsOutlined.syringe,
   'system_security_update': MaterialSymbolsOutlined.system_security_update,
-  'system_security_update_good': MaterialSymbolsOutlined.system_security_update_good,
-  'system_security_update_warning': MaterialSymbolsOutlined.system_security_update_warning,
+  'system_security_update_good':
+      MaterialSymbolsOutlined.system_security_update_good,
+  'system_security_update_warning':
+      MaterialSymbolsOutlined.system_security_update_warning,
   'system_update': MaterialSymbolsOutlined.system_update,
   'system_update_alt': MaterialSymbolsOutlined.system_update_alt,
   'tab': MaterialSymbolsOutlined.tab,
@@ -2720,13 +2766,18 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'text_rotation_down': MaterialSymbolsOutlined.text_rotation_down,
   'text_rotation_none': MaterialSymbolsOutlined.text_rotation_none,
   'text_select_end': MaterialSymbolsOutlined.text_select_end,
-  'text_select_jump_to_beginning': MaterialSymbolsOutlined.text_select_jump_to_beginning,
+  'text_select_jump_to_beginning':
+      MaterialSymbolsOutlined.text_select_jump_to_beginning,
   'text_select_jump_to_end': MaterialSymbolsOutlined.text_select_jump_to_end,
-  'text_select_move_back_character': MaterialSymbolsOutlined.text_select_move_back_character,
-  'text_select_move_back_word': MaterialSymbolsOutlined.text_select_move_back_word,
+  'text_select_move_back_character':
+      MaterialSymbolsOutlined.text_select_move_back_character,
+  'text_select_move_back_word':
+      MaterialSymbolsOutlined.text_select_move_back_word,
   'text_select_move_down': MaterialSymbolsOutlined.text_select_move_down,
-  'text_select_move_forward_character': MaterialSymbolsOutlined.text_select_move_forward_character,
-  'text_select_move_forward_word': MaterialSymbolsOutlined.text_select_move_forward_word,
+  'text_select_move_forward_character':
+      MaterialSymbolsOutlined.text_select_move_forward_character,
+  'text_select_move_forward_word':
+      MaterialSymbolsOutlined.text_select_move_forward_word,
   'text_select_move_up': MaterialSymbolsOutlined.text_select_move_up,
   'text_select_start': MaterialSymbolsOutlined.text_select_start,
   'text_snippet': MaterialSymbolsOutlined.text_snippet,
@@ -2783,7 +2834,8 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'tools_ladder': MaterialSymbolsOutlined.tools_ladder,
   'tools_level': MaterialSymbolsOutlined.tools_level,
   'tools_phillips': MaterialSymbolsOutlined.tools_phillips,
-  'tools_pliers_wire_stripper': MaterialSymbolsOutlined.tools_pliers_wire_stripper,
+  'tools_pliers_wire_stripper':
+      MaterialSymbolsOutlined.tools_pliers_wire_stripper,
   'tools_power_drill': MaterialSymbolsOutlined.tools_power_drill,
   'tools_wrench': MaterialSymbolsOutlined.tools_wrench,
   'top_panel_close': MaterialSymbolsOutlined.top_panel_close,
@@ -2803,7 +2855,8 @@ Map<String, IconData> materialSymbolsOutlinedMap = {
   'train': MaterialSymbolsOutlined.train,
   'tram': MaterialSymbolsOutlined.tram,
   'transcribe': MaterialSymbolsOutlined.transcribe,
-  'transfer_within_a_station': MaterialSymbolsOutlined.transfer_within_a_station,
+  'transfer_within_a_station':
+      MaterialSymbolsOutlined.transfer_within_a_station,
   'transform': MaterialSymbolsOutlined.transform,
   'transgender': MaterialSymbolsOutlined.transgender,
   'transit_enterexit': MaterialSymbolsOutlined.transit_enterexit,

@@ -603,8 +603,15 @@ Map<String, IconData> materialSymbols${classFlavor}Map = {
     if (suffixIconNames) {
       iconname = '${iconname}_${fontinfo.flavor}';
     }
-    sourceFileContent.writeln(
-        "  '${iconname.replaceAll('\$', '\\\$')}': MaterialSymbols$classFlavor.$iconname,");
+    final testStr =
+        "  '${iconname.replaceAll('\$', '\\\$')}': MaterialSymbols$classFlavor.$iconname,";
+    if (testStr.length <= 80) {
+      sourceFileContent.writeln(testStr);
+    } else {
+      // SPLIT THE LINE
+      sourceFileContent.writeln("  '${iconname.replaceAll('\$', '\\\$')}':");
+      sourceFileContent.writeln("      MaterialSymbols$classFlavor.$iconname,");
+    }
     iconCount++;
   }
 
@@ -670,16 +677,14 @@ Map<String, IconData> materialSymbolsUniversalMap = {
       if (suffixVersion) {
         iconname = '${iconname}_${fontinfo.flavor}';
       }
-      final testStr = "  '${iconname.replaceAll('\$', '\\\$')}': MaterialSymbols.$iconname,";
-      if(testStr.length <= 80) {
-        sourceFileContent.writeln(
-          "  '${iconname.replaceAll('\$', '\\\$')}': MaterialSymbols.$iconname,");
+      final lineStr =
+          "  '${iconname.replaceAll('\$', '\\\$')}': MaterialSymbols.$iconname,";
+      if (lineStr.length <= 80) {
+        sourceFileContent.writeln(lineStr);
       } else {
-          // SPLIT THE LINE
-        sourceFileContent.writeln(
-            "  '${iconname.replaceAll('\$', '\\\$')}':");
-        sourceFileContent.writeln(
-            "      MaterialSymbols.$iconname,");
+        // SPLIT THE LINE
+        sourceFileContent.writeln("  '${iconname.replaceAll('\$', '\\\$')}':");
+        sourceFileContent.writeln("      MaterialSymbols.$iconname,");
       }
       iconCount++;
     }

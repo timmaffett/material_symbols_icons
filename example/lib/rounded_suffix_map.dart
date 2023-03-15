@@ -6,7 +6,7 @@
 // localed at https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
 // These codepoints correspond to symbols within the corresponding variable font.
 // The font was downloaded from https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf and added to this package.
-// This file was generated 2023-03-15 10:12:25.860700 by the dart file
+// This file was generated 2023-03-15 10:21:17.982081 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2022 . All rights reserved.
@@ -147,12 +147,18 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'air_purifier_gen': MaterialSymbolsRounded.air_purifier_gen,
   'airline_seat_flat': MaterialSymbolsRounded.airline_seat_flat,
   'airline_seat_flat_angled': MaterialSymbolsRounded.airline_seat_flat_angled,
-  'airline_seat_individual_suite': MaterialSymbolsRounded.airline_seat_individual_suite,
-  'airline_seat_legroom_extra': MaterialSymbolsRounded.airline_seat_legroom_extra,
-  'airline_seat_legroom_normal': MaterialSymbolsRounded.airline_seat_legroom_normal,
-  'airline_seat_legroom_reduced': MaterialSymbolsRounded.airline_seat_legroom_reduced,
-  'airline_seat_recline_extra': MaterialSymbolsRounded.airline_seat_recline_extra,
-  'airline_seat_recline_normal': MaterialSymbolsRounded.airline_seat_recline_normal,
+  'airline_seat_individual_suite':
+      MaterialSymbolsRounded.airline_seat_individual_suite,
+  'airline_seat_legroom_extra':
+      MaterialSymbolsRounded.airline_seat_legroom_extra,
+  'airline_seat_legroom_normal':
+      MaterialSymbolsRounded.airline_seat_legroom_normal,
+  'airline_seat_legroom_reduced':
+      MaterialSymbolsRounded.airline_seat_legroom_reduced,
+  'airline_seat_recline_extra':
+      MaterialSymbolsRounded.airline_seat_recline_extra,
+  'airline_seat_recline_normal':
+      MaterialSymbolsRounded.airline_seat_recline_normal,
   'airline_stops': MaterialSymbolsRounded.airline_stops,
   'airlines': MaterialSymbolsRounded.airlines,
   'airplane_ticket': MaterialSymbolsRounded.airplane_ticket,
@@ -180,8 +186,10 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'align_justify_center': MaterialSymbolsRounded.align_justify_center,
   'align_justify_flex_end': MaterialSymbolsRounded.align_justify_flex_end,
   'align_justify_flex_start': MaterialSymbolsRounded.align_justify_flex_start,
-  'align_justify_space_around': MaterialSymbolsRounded.align_justify_space_around,
-  'align_justify_space_between': MaterialSymbolsRounded.align_justify_space_between,
+  'align_justify_space_around':
+      MaterialSymbolsRounded.align_justify_space_around,
+  'align_justify_space_between':
+      MaterialSymbolsRounded.align_justify_space_between,
   'align_justify_space_even': MaterialSymbolsRounded.align_justify_space_even,
   'align_justify_stretch': MaterialSymbolsRounded.align_justify_stretch,
   'align_self_stretch': MaterialSymbolsRounded.align_self_stretch,
@@ -846,7 +854,8 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'do_not_disturb_alt': MaterialSymbolsRounded.do_not_disturb_alt,
   'do_not_disturb_off': MaterialSymbolsRounded.do_not_disturb_off,
   'do_not_disturb_on': MaterialSymbolsRounded.do_not_disturb_on,
-  'do_not_disturb_on_total_silence': MaterialSymbolsRounded.do_not_disturb_on_total_silence,
+  'do_not_disturb_on_total_silence':
+      MaterialSymbolsRounded.do_not_disturb_on_total_silence,
   'do_not_step': MaterialSymbolsRounded.do_not_step,
   'do_not_touch': MaterialSymbolsRounded.do_not_touch,
   'dock': MaterialSymbolsRounded.dock,
@@ -1187,10 +1196,13 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'format_text_clip': MaterialSymbolsRounded.format_text_clip,
   'format_text_overflow': MaterialSymbolsRounded.format_text_overflow,
   'format_text_wrap': MaterialSymbolsRounded.format_text_wrap,
-  'format_textdirection_l_to_r': MaterialSymbolsRounded.format_textdirection_l_to_r,
-  'format_textdirection_r_to_l': MaterialSymbolsRounded.format_textdirection_r_to_l,
+  'format_textdirection_l_to_r':
+      MaterialSymbolsRounded.format_textdirection_l_to_r,
+  'format_textdirection_r_to_l':
+      MaterialSymbolsRounded.format_textdirection_r_to_l,
   'format_underlined': MaterialSymbolsRounded.format_underlined,
-  'format_underlined_squiggle': MaterialSymbolsRounded.format_underlined_squiggle,
+  'format_underlined_squiggle':
+      MaterialSymbolsRounded.format_underlined_squiggle,
   'forms_add_on': MaterialSymbolsRounded.forms_add_on,
   'forms_apps_script': MaterialSymbolsRounded.forms_apps_script,
   'fort': MaterialSymbolsRounded.fort,
@@ -1461,16 +1473,20 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'keyboard_capslock_badge': MaterialSymbolsRounded.keyboard_capslock_badge,
   'keyboard_command_key': MaterialSymbolsRounded.keyboard_command_key,
   'keyboard_control_key': MaterialSymbolsRounded.keyboard_control_key,
-  'keyboard_double_arrow_down': MaterialSymbolsRounded.keyboard_double_arrow_down,
-  'keyboard_double_arrow_left': MaterialSymbolsRounded.keyboard_double_arrow_left,
-  'keyboard_double_arrow_right': MaterialSymbolsRounded.keyboard_double_arrow_right,
+  'keyboard_double_arrow_down':
+      MaterialSymbolsRounded.keyboard_double_arrow_down,
+  'keyboard_double_arrow_left':
+      MaterialSymbolsRounded.keyboard_double_arrow_left,
+  'keyboard_double_arrow_right':
+      MaterialSymbolsRounded.keyboard_double_arrow_right,
   'keyboard_double_arrow_up': MaterialSymbolsRounded.keyboard_double_arrow_up,
   'keyboard_external_input': MaterialSymbolsRounded.keyboard_external_input,
   'keyboard_full': MaterialSymbolsRounded.keyboard_full,
   'keyboard_hide': MaterialSymbolsRounded.keyboard_hide,
   'keyboard_onscreen': MaterialSymbolsRounded.keyboard_onscreen,
   'keyboard_option_key': MaterialSymbolsRounded.keyboard_option_key,
-  'keyboard_previous_language': MaterialSymbolsRounded.keyboard_previous_language,
+  'keyboard_previous_language':
+      MaterialSymbolsRounded.keyboard_previous_language,
   'keyboard_return': MaterialSymbolsRounded.keyboard_return,
   'keyboard_tab': MaterialSymbolsRounded.keyboard_tab,
   'keyboard_tab_rtl': MaterialSymbolsRounded.keyboard_tab_rtl,
@@ -1813,8 +1829,10 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'nest_cam_stand': MaterialSymbolsRounded.nest_cam_stand,
   'nest_cam_wall_mount': MaterialSymbolsRounded.nest_cam_wall_mount,
   'nest_cam_wired_stand': MaterialSymbolsRounded.nest_cam_wired_stand,
-  'nest_clock_farsight_analog': MaterialSymbolsRounded.nest_clock_farsight_analog,
-  'nest_clock_farsight_digital': MaterialSymbolsRounded.nest_clock_farsight_digital,
+  'nest_clock_farsight_analog':
+      MaterialSymbolsRounded.nest_clock_farsight_analog,
+  'nest_clock_farsight_digital':
+      MaterialSymbolsRounded.nest_clock_farsight_digital,
   'nest_connect': MaterialSymbolsRounded.nest_connect,
   'nest_detect': MaterialSymbolsRounded.nest_detect,
   'nest_display': MaterialSymbolsRounded.nest_display,
@@ -1830,7 +1848,8 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'nest_mini': MaterialSymbolsRounded.nest_mini,
   'nest_multi_room': MaterialSymbolsRounded.nest_multi_room,
   'nest_remote': MaterialSymbolsRounded.nest_remote,
-  'nest_remote_comfort_sensor': MaterialSymbolsRounded.nest_remote_comfort_sensor,
+  'nest_remote_comfort_sensor':
+      MaterialSymbolsRounded.nest_remote_comfort_sensor,
   'nest_secure_alarm': MaterialSymbolsRounded.nest_secure_alarm,
   'nest_sunblock': MaterialSymbolsRounded.nest_sunblock,
   'nest_tag': MaterialSymbolsRounded.nest_tag,
@@ -1838,7 +1857,8 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'nest_thermostat_gen_3': MaterialSymbolsRounded.nest_thermostat_gen_3,
   'nest_thermostat_sensor': MaterialSymbolsRounded.nest_thermostat_sensor,
   'nest_thermostat_sensor_eu': MaterialSymbolsRounded.nest_thermostat_sensor_eu,
-  'nest_thermostat_zirconium_eu': MaterialSymbolsRounded.nest_thermostat_zirconium_eu,
+  'nest_thermostat_zirconium_eu':
+      MaterialSymbolsRounded.nest_thermostat_zirconium_eu,
   'nest_true_radiant': MaterialSymbolsRounded.nest_true_radiant,
   'nest_wake_on_approach': MaterialSymbolsRounded.nest_wake_on_approach,
   'nest_wake_on_press': MaterialSymbolsRounded.nest_wake_on_press,
@@ -1880,7 +1900,8 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'no_crash': MaterialSymbolsRounded.no_crash,
   'no_drinks': MaterialSymbolsRounded.no_drinks,
   'no_encryption': MaterialSymbolsRounded.no_encryption,
-  'no_encryption_gmailerrorred': MaterialSymbolsRounded.no_encryption_gmailerrorred,
+  'no_encryption_gmailerrorred':
+      MaterialSymbolsRounded.no_encryption_gmailerrorred,
   'no_flash': MaterialSymbolsRounded.no_flash,
   'no_food': MaterialSymbolsRounded.no_food,
   'no_luggage': MaterialSymbolsRounded.no_luggage,
@@ -2037,7 +2058,8 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'phone_enabled': MaterialSymbolsRounded.phone_enabled,
   'phone_forwarded': MaterialSymbolsRounded.phone_forwarded,
   'phone_in_talk': MaterialSymbolsRounded.phone_in_talk,
-  'phone_in_talk_watchface_indicator': MaterialSymbolsRounded.phone_in_talk_watchface_indicator,
+  'phone_in_talk_watchface_indicator':
+      MaterialSymbolsRounded.phone_in_talk_watchface_indicator,
   'phone_iphone': MaterialSymbolsRounded.phone_iphone,
   'phone_locked': MaterialSymbolsRounded.phone_locked,
   'phone_missed': MaterialSymbolsRounded.phone_missed,
@@ -2149,7 +2171,8 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'problem': MaterialSymbolsRounded.problem,
   'procedure': MaterialSymbolsRounded.procedure,
   'process_chart': MaterialSymbolsRounded.process_chart,
-  'production_quantity_limits': MaterialSymbolsRounded.production_quantity_limits,
+  'production_quantity_limits':
+      MaterialSymbolsRounded.production_quantity_limits,
   'productivity': MaterialSymbolsRounded.productivity,
   'propane': MaterialSymbolsRounded.propane,
   'propane_tank': MaterialSymbolsRounded.propane_tank,
@@ -2367,14 +2390,16 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'sentiment_content': MaterialSymbolsRounded.sentiment_content,
   'sentiment_dissatisfied': MaterialSymbolsRounded.sentiment_dissatisfied,
   'sentiment_excited': MaterialSymbolsRounded.sentiment_excited,
-  'sentiment_extremely_dissatisfied': MaterialSymbolsRounded.sentiment_extremely_dissatisfied,
+  'sentiment_extremely_dissatisfied':
+      MaterialSymbolsRounded.sentiment_extremely_dissatisfied,
   'sentiment_frustrated': MaterialSymbolsRounded.sentiment_frustrated,
   'sentiment_neutral': MaterialSymbolsRounded.sentiment_neutral,
   'sentiment_sad': MaterialSymbolsRounded.sentiment_sad,
   'sentiment_satisfied': MaterialSymbolsRounded.sentiment_satisfied,
   'sentiment_satisfied_alt': MaterialSymbolsRounded.sentiment_satisfied_alt,
   'sentiment_stressed': MaterialSymbolsRounded.sentiment_stressed,
-  'sentiment_very_dissatisfied': MaterialSymbolsRounded.sentiment_very_dissatisfied,
+  'sentiment_very_dissatisfied':
+      MaterialSymbolsRounded.sentiment_very_dissatisfied,
   'sentiment_very_satisfied': MaterialSymbolsRounded.sentiment_very_satisfied,
   'sentiment_worried': MaterialSymbolsRounded.sentiment_worried,
   'set_meal': MaterialSymbolsRounded.set_meal,
@@ -2448,8 +2473,10 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'signal_cellular_alt': MaterialSymbolsRounded.signal_cellular_alt,
   'signal_cellular_alt_1_bar': MaterialSymbolsRounded.signal_cellular_alt_1_bar,
   'signal_cellular_alt_2_bar': MaterialSymbolsRounded.signal_cellular_alt_2_bar,
-  'signal_cellular_connected_no_internet_0_bar': MaterialSymbolsRounded.signal_cellular_connected_no_internet_0_bar,
-  'signal_cellular_connected_no_internet_4_bar': MaterialSymbolsRounded.signal_cellular_connected_no_internet_4_bar,
+  'signal_cellular_connected_no_internet_0_bar':
+      MaterialSymbolsRounded.signal_cellular_connected_no_internet_0_bar,
+  'signal_cellular_connected_no_internet_4_bar':
+      MaterialSymbolsRounded.signal_cellular_connected_no_internet_4_bar,
   'signal_cellular_no_sim': MaterialSymbolsRounded.signal_cellular_no_sim,
   'signal_cellular_nodata': MaterialSymbolsRounded.signal_cellular_nodata,
   'signal_cellular_null': MaterialSymbolsRounded.signal_cellular_null,
@@ -2459,11 +2486,15 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'signal_wifi_4_bar': MaterialSymbolsRounded.signal_wifi_4_bar,
   'signal_wifi_4_bar_lock': MaterialSymbolsRounded.signal_wifi_4_bar_lock,
   'signal_wifi_bad': MaterialSymbolsRounded.signal_wifi_bad,
-  'signal_wifi_connected_no_internet_4': MaterialSymbolsRounded.signal_wifi_connected_no_internet_4,
+  'signal_wifi_connected_no_internet_4':
+      MaterialSymbolsRounded.signal_wifi_connected_no_internet_4,
   'signal_wifi_off': MaterialSymbolsRounded.signal_wifi_off,
-  'signal_wifi_statusbar_4_bar': MaterialSymbolsRounded.signal_wifi_statusbar_4_bar,
-  'signal_wifi_statusbar_not_connected': MaterialSymbolsRounded.signal_wifi_statusbar_not_connected,
-  'signal_wifi_statusbar_null': MaterialSymbolsRounded.signal_wifi_statusbar_null,
+  'signal_wifi_statusbar_4_bar':
+      MaterialSymbolsRounded.signal_wifi_statusbar_4_bar,
+  'signal_wifi_statusbar_not_connected':
+      MaterialSymbolsRounded.signal_wifi_statusbar_not_connected,
+  'signal_wifi_statusbar_null':
+      MaterialSymbolsRounded.signal_wifi_statusbar_null,
   'signature': MaterialSymbolsRounded.signature,
   'signpost': MaterialSymbolsRounded.signpost,
   'sim_card': MaterialSymbolsRounded.sim_card,
@@ -2506,9 +2537,12 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'sort': MaterialSymbolsRounded.sort,
   'sort_by_alpha': MaterialSymbolsRounded.sort_by_alpha,
   'sos': MaterialSymbolsRounded.sos,
-  'sound_detection_dog_barking': MaterialSymbolsRounded.sound_detection_dog_barking,
-  'sound_detection_glass_break': MaterialSymbolsRounded.sound_detection_glass_break,
-  'sound_detection_loud_sound': MaterialSymbolsRounded.sound_detection_loud_sound,
+  'sound_detection_dog_barking':
+      MaterialSymbolsRounded.sound_detection_dog_barking,
+  'sound_detection_glass_break':
+      MaterialSymbolsRounded.sound_detection_glass_break,
+  'sound_detection_loud_sound':
+      MaterialSymbolsRounded.sound_detection_loud_sound,
   'sound_sampler': MaterialSymbolsRounded.sound_sampler,
   'soup_kitchen': MaterialSymbolsRounded.soup_kitchen,
   'source': MaterialSymbolsRounded.source,
@@ -2648,7 +2682,8 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   '\$switch': MaterialSymbolsRounded.$switch,
   'switch_access': MaterialSymbolsRounded.switch_access,
   'switch_access_shortcut': MaterialSymbolsRounded.switch_access_shortcut,
-  'switch_access_shortcut_add': MaterialSymbolsRounded.switch_access_shortcut_add,
+  'switch_access_shortcut_add':
+      MaterialSymbolsRounded.switch_access_shortcut_add,
   'switch_account': MaterialSymbolsRounded.switch_account,
   'switch_camera': MaterialSymbolsRounded.switch_camera,
   'switch_left': MaterialSymbolsRounded.switch_left,
@@ -2665,8 +2700,10 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'sync_saved_locally': MaterialSymbolsRounded.sync_saved_locally,
   'syringe': MaterialSymbolsRounded.syringe,
   'system_security_update': MaterialSymbolsRounded.system_security_update,
-  'system_security_update_good': MaterialSymbolsRounded.system_security_update_good,
-  'system_security_update_warning': MaterialSymbolsRounded.system_security_update_warning,
+  'system_security_update_good':
+      MaterialSymbolsRounded.system_security_update_good,
+  'system_security_update_warning':
+      MaterialSymbolsRounded.system_security_update_warning,
   'system_update': MaterialSymbolsRounded.system_update,
   'system_update_alt': MaterialSymbolsRounded.system_update_alt,
   'tab': MaterialSymbolsRounded.tab,
@@ -2720,13 +2757,18 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'text_rotation_down': MaterialSymbolsRounded.text_rotation_down,
   'text_rotation_none': MaterialSymbolsRounded.text_rotation_none,
   'text_select_end': MaterialSymbolsRounded.text_select_end,
-  'text_select_jump_to_beginning': MaterialSymbolsRounded.text_select_jump_to_beginning,
+  'text_select_jump_to_beginning':
+      MaterialSymbolsRounded.text_select_jump_to_beginning,
   'text_select_jump_to_end': MaterialSymbolsRounded.text_select_jump_to_end,
-  'text_select_move_back_character': MaterialSymbolsRounded.text_select_move_back_character,
-  'text_select_move_back_word': MaterialSymbolsRounded.text_select_move_back_word,
+  'text_select_move_back_character':
+      MaterialSymbolsRounded.text_select_move_back_character,
+  'text_select_move_back_word':
+      MaterialSymbolsRounded.text_select_move_back_word,
   'text_select_move_down': MaterialSymbolsRounded.text_select_move_down,
-  'text_select_move_forward_character': MaterialSymbolsRounded.text_select_move_forward_character,
-  'text_select_move_forward_word': MaterialSymbolsRounded.text_select_move_forward_word,
+  'text_select_move_forward_character':
+      MaterialSymbolsRounded.text_select_move_forward_character,
+  'text_select_move_forward_word':
+      MaterialSymbolsRounded.text_select_move_forward_word,
   'text_select_move_up': MaterialSymbolsRounded.text_select_move_up,
   'text_select_start': MaterialSymbolsRounded.text_select_start,
   'text_snippet': MaterialSymbolsRounded.text_snippet,
@@ -2783,7 +2825,8 @@ Map<String, IconData> materialSymbolsRoundedMap = {
   'tools_ladder': MaterialSymbolsRounded.tools_ladder,
   'tools_level': MaterialSymbolsRounded.tools_level,
   'tools_phillips': MaterialSymbolsRounded.tools_phillips,
-  'tools_pliers_wire_stripper': MaterialSymbolsRounded.tools_pliers_wire_stripper,
+  'tools_pliers_wire_stripper':
+      MaterialSymbolsRounded.tools_pliers_wire_stripper,
   'tools_power_drill': MaterialSymbolsRounded.tools_power_drill,
   'tools_wrench': MaterialSymbolsRounded.tools_wrench,
   'top_panel_close': MaterialSymbolsRounded.top_panel_close,

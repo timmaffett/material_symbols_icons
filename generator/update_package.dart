@@ -63,7 +63,7 @@ const prefixForReservedWordsAndNumbers = '\$';
 
 /// Path to write the downloaded TTF files to
 /// KLUDGE - currently we have to open the fonts and RE-CALC metrics to get them to render correctly in flutter.
-/// We recalc metrics using FontForge??? - 
+/// We recalc metrics using FontForge??? -
 const pathToWriteTTFFiles = '../rawFontsUnfixed/';
 
 /// Path to write the dart source files to
@@ -151,11 +151,6 @@ Future<void> main(List<String> args) async {
   final verboseFlag = results['verbose'] as bool;
   final combinedUniversal = results['combined_universal'] as bool;
   final suffixIconNames = results['suffix_icon_names'] as bool;
-
-//  final inputJsonFilename = results['inputjsonfile'];
-//  final localJson = (inputJsonFilename != 'missing');
-//  final googleFontAPIKey = results['apikey'];
-//  final apiKey = (googleFontAPIKey != 'missing');
 
   /*
    The codepoint files are in the form:
@@ -349,7 +344,6 @@ import 'material_symbols_icons.dart';
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: non_constant_identifier_names
 
-
 /// Identifiers for the supported [Material Symbols](https://fonts.google.com/icons?selected=Material+Symbols).
 ///
 /// Use with the [Icon] class to show specific icons. Icons are identified by
@@ -398,11 +392,9 @@ import 'material_symbols_icons.dart';
 
 @staticIconProvider
 class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
-
   // BEGIN GENERATED ICONS
   static const _family = '${fontinfo.familyNameToUse}';
   static const _package = 'material_symbols_icons';
-
 ''');
 
   var iconCount = 0;
@@ -422,11 +414,10 @@ class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
     }
     sourceFileContent.writeln();
     sourceFileContent.writeln(
-        '\t/// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> &#x$codepoint; material symbol named "$iconname".');
+        '  /// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> &#x$codepoint; material symbol named "$iconname".');
+    sourceFileContent.writeln("\tstatic const IconData $iconname =");
     sourceFileContent.writeln(
-        "\tstatic const IconData $iconname =");
-    sourceFileContent.writeln(
-        "\t\t\tIconData(0x$codepoint, fontFamily: _family, fontPackage: _package);");
+        "      IconData(0x$codepoint, fontFamily: _family, fontPackage: _package);");
     iconCount++;
   }
 
@@ -499,7 +490,6 @@ import 'material_symbols_icons.dart';
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: non_constant_identifier_names
 
-
 /// Identifiers for the supported [Material Symbols](https://fonts.google.com/icons?selected=Material+Symbols).
 ///
 /// Use with the [Icon] class to show specific icons. Icons are identified by
@@ -548,11 +538,9 @@ import 'material_symbols_icons.dart';
 
 @staticIconProvider
 class MaterialSymbols extends MaterialSymbolsBase {
-
   // BEGIN GENERATED ICONS
   static const _family = '${fontinfo.familyNameToUse}';
   static const _package = 'material_symbols_icons';
-
 ''');
 
   // all font flavors should have same number of codepoints
@@ -583,8 +571,7 @@ class MaterialSymbols extends MaterialSymbolsBase {
       sourceFileContent.writeln();
       sourceFileContent.writeln(
           '\t/// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> &#x$codepoint; material symbol named "${iconname}_${fontinfo.flavor}".');
-      sourceFileContent.writeln(
-          "\tstatic const IconData $iconname =");
+      sourceFileContent.writeln("\tstatic const IconData $iconname =");
       sourceFileContent.writeln(
           "\t\t\tIconData(0x$codepoint, fontFamily: _family, fontPackage: _package);");
       iconCount++;

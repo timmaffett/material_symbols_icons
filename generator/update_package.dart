@@ -120,18 +120,10 @@ Future<void> main(List<String> args) async {
           'combined_universal',
           abbr: 'c',
           negatable: false,
+          defaultsTo: true,
           help:
-              'If this flag is supplied a `universal.dart` will be created with all 3 flavors combined into a single class. This is however is not performant.',
+              'If this flag is supplied a `universal.dart` will be created with all 3 flavors combined into a single class.',
         )
-      /*
-    ..addOption(
-      'inputjsonfile',
-      abbr: 'i',
-      defaultsTo: 'missing',
-      help:
-          'This argument should be followed by the path to the local file containing the google fonts api output json.',
-    )
-    */
       ;
   late final ArgResults results;
 
@@ -278,28 +270,12 @@ Future<void> main(List<String> args) async {
 
 void printUsage(ArgParser parser) {
   print(
-    '''Usage: update_constants.dart [[--googlefontslist | -g] filenamecontaininglist.txt] [[--inputjsonfile | -i] api_output.json] | [[--apikey | -a] YOUR_SECRET_GOOGLE_FONT_API_KEY]
+    '''Usage:
 
-The list of fonts included in the current GoogleFonts package should be generated using the 
-`display_googlefonts_fontlist.dart` program included within the `examples` subdirectory.
-(GoogleFonts is a flutter package so the list cannot be automatically generated here).
-Run the `display_googlefonts_fontlist.dart` program and copy the list of fonts provided and
-save them into a local file within this directory.
-This file is then supplied on the command line using the --googlefontslist (or -g) directive.
-If the font list is NOT supplied then all fonts include within the googlefonts API Json will be
-included within the output constants.dart (including those not available from the
-current googlefonts package).
+This program will download the latest Material Symbol Icon fonts and codepoint files and
+generate the relevant source files for this package.
 
-The google fonts API JSON can be supplied one of two ways:
-
-1) Using a local file that contains the output of the google fonts api generated at
-https://developers.google.com/fonts/docs/developer_api and saved in a local file.
-The --inputjsonfile (or -i) and flag is then used with the name of the local file containing
-the output from clicking the 'EXECUTE' button on the google fonts developer page above.
-
-2) The second method is to supply your private (secret) google fonts api key on the
-command line using the --apikey (or -a) argument followed by your secret key.  This method
-directly queries the google fonts API and retreives the JSON file.
+The --downloadfonts
 
 ${parser.usage}
 ''',

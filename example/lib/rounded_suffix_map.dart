@@ -6,7 +6,7 @@
 // localed at https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
 // These codepoints correspond to symbols within the corresponding variable font.
 // The font was downloaded from https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf and added to this package.
-// This file was generated 2023-03-15 10:06:49.991632 by the dart file
+// This file was generated 2023-03-15 10:12:25.860700 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2022 . All rights reserved.
@@ -20,7 +20,7 @@ import 'package:material_symbols_icons/rounded_suffix.dart';
 // ignore_for_file: non_constant_identifier_names
 
 // BEGIN GENERATED static array
-Map<String,IconData> materialSymbolsRoundedMap = {
+Map<String, IconData> materialSymbolsRoundedMap = {
   '\$10k': MaterialSymbolsRounded.$10k,
   '\$10mp': MaterialSymbolsRounded.$10mp,
   '\$11mp': MaterialSymbolsRounded.$11mp,

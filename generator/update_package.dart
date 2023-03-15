@@ -592,7 +592,7 @@ import 'package:material_symbols_icons/$sourceFilename';
 // ignore_for_file: non_constant_identifier_names
 
 // BEGIN GENERATED static array
-Map<String,IconData> materialSymbols${classFlavor}Map = {
+Map<String, IconData> materialSymbols${classFlavor}Map = {
 ''');
 
   var iconCount = 0;
@@ -648,7 +648,7 @@ import 'package:material_symbols_icons/$sourceFilename';
 // ignore_for_file: non_constant_identifier_names
 
 // BEGIN GENERATED static array
-Map<String,IconData> materialSymbolsUniversalMap = {
+Map<String, IconData> materialSymbolsUniversalMap = {
 ''');
 
   // all font flavors should have same number of codepoints
@@ -670,9 +670,17 @@ Map<String,IconData> materialSymbolsUniversalMap = {
       if (suffixVersion) {
         iconname = '${iconname}_${fontinfo.flavor}';
       }
-      sourceFileContent.writeln(
+      final testStr = "  '${iconname.replaceAll('\$', '\\\$')}': MaterialSymbols.$iconname,";
+      if(testStr.length <= 80) {
+        sourceFileContent.writeln(
           "  '${iconname.replaceAll('\$', '\\\$')}': MaterialSymbols.$iconname,");
-
+      } else {
+          // SPLIT THE LINE
+        sourceFileContent.writeln(
+            "  '${iconname.replaceAll('\$', '\\\$')}':");
+        sourceFileContent.writeln(
+            "      MaterialSymbols.$iconname,");
+      }
       iconCount++;
     }
   }

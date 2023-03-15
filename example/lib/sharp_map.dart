@@ -6,7 +6,7 @@
 // localed at https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
 // These codepoints correspond to symbols within the corresponding variable font.
 // The font was downloaded from https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf and added to this package.
-// This file was generated 2023-03-15 10:06:50.002639 by the dart file
+// This file was generated 2023-03-15 10:12:25.872700 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2022 . All rights reserved.
@@ -20,7 +20,7 @@ import 'package:material_symbols_icons/sharp.dart';
 // ignore_for_file: non_constant_identifier_names
 
 // BEGIN GENERATED static array
-Map<String,IconData> materialSymbolsMap = {
+Map<String, IconData> materialSymbolsMap = {
   '\$10k': MaterialSymbols.$10k,
   '\$10mp': MaterialSymbols.$10mp,
   '\$11mp': MaterialSymbols.$11mp,

@@ -90,41 +90,40 @@ Future<void> downloadURLASBinaryFile(
 // ignore: long-method
 Future<void> main(List<String> args) async {
   final parser = ArgParser()
-        ..addFlag(
-          'help',
-          abbr: 'h',
-          negatable: false,
-          help: 'Print help text and exit.',
-        )
-        ..addFlag(
-          'verbose',
-          abbr: 'v',
-          negatable: false,
-          help: 'Print extra info during processing.',
-        )
-        ..addFlag(
-          'downloadfonts',
-          abbr: 'd',
-          negatable: false,
-          help:
-              'The TTF font files will be downloaded to the $pathToWriteTTFFiles directory if this flag is passed.',
-        )
-        ..addFlag(
-          'suffix_icon_names',
-          abbr: 's',
-          negatable: false,
-          help:
-              'Add `_outlined`, `_rounded` or `_sharp` suffixes to every icon name in corresponding MaterialSymbolsXXXXX classes.',
-        )
-        ..addFlag(
-          'combined_universal',
-          abbr: 'c',
-          negatable: false,
-          defaultsTo: true,
-          help:
-              'If this flag is supplied a `universal.dart` will be created with all 3 flavors combined into a single class.',
-        )
-      ;
+    ..addFlag(
+      'help',
+      abbr: 'h',
+      negatable: false,
+      help: 'Print help text and exit.',
+    )
+    ..addFlag(
+      'verbose',
+      abbr: 'v',
+      negatable: false,
+      help: 'Print extra info during processing.',
+    )
+    ..addFlag(
+      'downloadfonts',
+      abbr: 'd',
+      negatable: false,
+      help:
+          'The TTF font files will be downloaded to the $pathToWriteTTFFiles directory if this flag is passed.',
+    )
+    ..addFlag(
+      'suffix_icon_names',
+      abbr: 's',
+      negatable: false,
+      help:
+          'Add `_outlined`, `_rounded` or `_sharp` suffixes to every icon name in corresponding MaterialSymbolsXXXXX classes.',
+    )
+    ..addFlag(
+      'combined_universal',
+      abbr: 'c',
+      negatable: false,
+      defaultsTo: true,
+      help:
+          'If this flag is supplied a `universal.dart` will be created with all 3 flavors combined into a single class.',
+    );
   late final ArgResults results;
 
   try {

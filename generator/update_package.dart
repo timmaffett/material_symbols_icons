@@ -1,4 +1,4 @@
-// Copyright (c) 2022, the Dart project authors.  Please see the AUTHORS file
+// Copyright (c) 2023, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
@@ -306,7 +306,7 @@ void writeSourceFile(
 // This file was generated ${DateTime.now()} by the dart file
 // `generator/update_package.dart`.
 //
-// Copyright 2022 . All rights reserved.
+// Copyright 2023 . All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
@@ -410,20 +410,25 @@ class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
 void writeCombinedSourceFile(
     List<MaterialSymbolsVariableFont> fontinfoList, String sourceFilename,
     {bool suffixVersion = true}) {
-  final fontinfo = fontinfoList[0];
 
   final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
 //
 // To edit this file modify the generator file `generator/update_package.dart` and
 // re-generate.
-// This file was generated using the Material Symbols codepoint file
-// localed at ${fontinfo.codepointFileUrl}.
+// This file was generated using the Material Symbols codepoint files
+// localed at ${fontinfoList[0].codepointFileUrl},
+// ${fontinfoList[1].codepointFileUrl} and
+// ${fontinfoList[2].codepointFileUrl}.
 // These codepoints correspond to symbols within the corresponding variable font.
-// The font was downloaded from ${fontinfo.ttfFontFileUrl} and added to this package.
+// The fonts were downloaded from
+// ${fontinfoList[0].ttfFontFileUrl},
+// ${fontinfoList[1].ttfFontFileUrl}, and
+// ${fontinfoList[2].ttfFontFileUrl}
+// and added to this package.
 // This file was generated ${DateTime.now()} by the dart file
 // `generator/update_package.dart`.
 //
-// Copyright 2022 . All rights reserved.
+// Copyright 2023 . All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
@@ -485,8 +490,6 @@ import 'material_symbols_icons.dart';
 @staticIconProvider
 class MaterialSymbols extends MaterialSymbolsBase {
   // BEGIN GENERATED ICONS
-  static const _family = '${fontinfo.familyNameToUse}';
-  static const _package = 'material_symbols_icons';
 ''');
 
   // all font flavors should have same number of codepoints
@@ -497,7 +500,11 @@ class MaterialSymbols extends MaterialSymbolsBase {
       assert(fontinfo.iconNameList.length == lastCount);
     }
     lastCount = fontinfo.iconNameList.length;
+
+    // write constant names
+     sourceFileContent.writeln("  static const _family_${fontinfo.flavor} = '${fontinfo.familyNameToUse}';");
   }
+  sourceFileContent.writeln("  static const _package = 'material_symbols_icons';");
 
   var iconCount = 0;
 
@@ -519,7 +526,7 @@ class MaterialSymbols extends MaterialSymbolsBase {
           '  /// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> &#x$codepoint; material symbol named "${iconname}_${fontinfo.flavor}".');
       sourceFileContent.writeln("  static const IconData $iconname =");
       sourceFileContent.writeln(
-          "      IconData(0x$codepoint, fontFamily: _family, fontPackage: _package);");
+          "      IconData(0x$codepoint, fontFamily: _family_${fontinfo.flavor}, fontPackage: _package);");
       iconCount++;
     }
   }
@@ -556,7 +563,7 @@ void writeExampleSourceFile(MaterialSymbolsVariableFont fontinfo,
 // This file was generated ${DateTime.now()} by the dart file
 // `generator/update_package.dart`.
 //
-// Copyright 2022 . All rights reserved.
+// Copyright 2023 . All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
@@ -605,21 +612,26 @@ void writeCombinedExampleSourceFile(
     String exampleSourceFilename,
     String sourceFilename,
     {bool suffixVersion = true}) {
-  final fontinfo = fontinfoList[0];
   sourceFilename = path.basename(sourceFilename);
 
   final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
 //
 // To edit this file modify the generator file `generator/update_package.dart` and
 // re-generate.
-// This file was generated using the Material Symbols codepoint file
-// localed at ${fontinfo.codepointFileUrl}.
+// This file was generated using the Material Symbols codepoint files
+// localed at ${fontinfoList[0].codepointFileUrl},
+// ${fontinfoList[1].codepointFileUrl} and
+// ${fontinfoList[2].codepointFileUrl}.
 // These codepoints correspond to symbols within the corresponding variable font.
-// The font was downloaded from ${fontinfo.ttfFontFileUrl} and added to this package.
+// The fonts were downloaded from
+// ${fontinfoList[0].ttfFontFileUrl},
+// ${fontinfoList[1].ttfFontFileUrl}, and
+// ${fontinfoList[2].ttfFontFileUrl}
+// and added to this package.
 // This file was generated ${DateTime.now()} by the dart file
 // `generator/update_package.dart`.
 //
-// Copyright 2022 . All rights reserved.
+// Copyright 2023 . All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 

@@ -62,14 +62,14 @@ class MyApp extends StatelessWidget {
       Set default IconThemeData() for ALL icons
     */
     return MaterialApp(
-      title: 'Material Symbols Icons',
+      title: 'Material Symbols Icons For Flutter',
       theme: ThemeData(
         primarySwatch: Colors.teal,
         useMaterial3: true,
         fontFamily: 'Roboto',
         iconTheme: const IconThemeData(color: Colors.black),
       ),
-      home: const MyHomePage(title: 'Material Symbols Icons'),
+      home: const MyHomePage(title: 'Material Symbols Icons For Flutter'),
     );
   }
 }

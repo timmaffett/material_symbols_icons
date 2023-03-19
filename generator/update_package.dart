@@ -451,7 +451,7 @@ import 'material_symbols_icons.dart';
 /// Identifiers for the supported [Material Symbols](https://fonts.google.com/icons?selected=Material+Symbols).
 ///
 /// Use with the [Icon] class to show specific icons. Icons are identified by
-/// their name as listed below, e.g. [MaterialSymbols.airplanemode_on].
+/// their name FOLLOWED by the desired style as a suffix, as listed below, e.g. [MaterialSymbols.airplanemode_on_rounded].
 ///
 /// Search and find the perfect icon on the [Google Fonts](https://fonts.google.com/icons?selected=Material+Symbols) website.
 ///

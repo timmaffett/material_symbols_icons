@@ -98,13 +98,13 @@ class _MyHomePageState extends State<MyHomePage> {
   /// icon font size
   double _iconFontSize = 48.0;
 
-  // default fill variation
+  /// default fill variation
   double _fillVariation = 0.0;
 
-  // default weight variation
+  /// default weight variation
   double _weightVariation = 400.0;
 
-  // possible grade values
+  /// possible grade values
   List<double> grades = [0.25, 0.0, 200.0];
   double _gradeSliderPos = 1;
   double _gradeVariation = 0.0;
@@ -198,8 +198,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ...Splittable.flexibleRow(
         context: context,
         forceSplit: screenWidth <= 600,
-        splitOn: Radio<FontListType>,
-        splitWidgetBehavior: SplitWidgetBehavior.includeInNextRow,
+        splitAtIndicesByWidth: {
+                  300 : [0, 2, 4, 6],
+                  600 : [0,4],
+        },
+        splitWidgetBehavior: SplitWidgetBehavior.includeInThisRow,
         mainAxisAlignment: mainAxisAlignment,
         children: <Widget>[
           const Text(
@@ -241,9 +244,9 @@ class _MyHomePageState extends State<MyHomePage> {
             groupValue: _fontListType,
             onChanged: _onFontListTypeChange,
           ),
-          const Text(
-            'Universal set (all 3 w/suffixes)',
-            style: TextStyle(
+          Text(
+            screenWidth > 400 ? 'Universal set (all 3 w/suffixes)' : 'Universal set',
+            style: const TextStyle(
               fontSize: 16.0,
             ),
           ),
@@ -251,14 +254,15 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       ...Splittable.flexibleRow(
         context: context,
-        splitAtIndices:
-            screenWidth < 600 ? (screenWidth < 400 ? [0, 1] : []) : [],
+        splitAtIndicesByWidth: {
+                  300 : [0, 1],
+        },        
         forceSplit: screenWidth < 600,
         splitWidgetBehavior: SplitWidgetBehavior.includeInNextRow,
         mainAxisAlignment: mainAxisAlignment,
         children: <Widget>[
           Text(
-            'Icon size: ${_iconFontSize}px',
+            screenWidth > 400 ? 'Icon size: ${_iconFontSize}px' : 'Icon size:',
             style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 16.0,
@@ -281,7 +285,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ...Splittable.flexibleRow(
         context: context,
         splitEveryN: 1,
-        forceSplit: screenWidth < 600,
+        forceSplit: screenWidth < 300,
         splitWidgetBehavior: SplitWidgetBehavior.includeInNextRow,
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
@@ -315,15 +319,16 @@ class _MyHomePageState extends State<MyHomePage> {
       const SizedBox(height: 10),
       ...Splittable.flexibleRow(
         context: context,
-        splitAtIndices: screenWidth < 600
-            ? (screenWidth < 400 ? [0, 1, 2, 3] : [2, 4])
-            : [],
+        splitAtIndicesByWidth: {
+                  500 : [1, 3, 5, 7],
+                  600 : [2, 4],
+        },
         forceSplit: screenWidth < 600,
-        splitWidgetBehavior: SplitWidgetBehavior.includeInNextRow,
+        splitWidgetBehavior: SplitWidgetBehavior.includeInThisRow,
         mainAxisAlignment: mainAxisAlignment,
         children: <Widget>[
           Text(
-            'Fill: $_fillVariation',
+            screenWidth > 400 ? 'Fill: $_fillVariation' : 'Fill:',
             style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 16.0,
@@ -342,7 +347,7 @@ class _MyHomePageState extends State<MyHomePage> {
             },
           ),
           Text(
-            'Weight: $_weightVariation',
+            screenWidth > 400 ? 'Weight: $_weightVariation' : 'Weight:',
             style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 16.0,
@@ -366,15 +371,16 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       ...Splittable.flexibleRow(
         context: context,
-        splitAtIndices: screenWidth <= 700
-            ? (screenWidth < 400 ? [0, 1, 2, 3] : [2, 4])
-            : [],
-        forceSplit: screenWidth <= 700,
-        splitWidgetBehavior: SplitWidgetBehavior.includeInNextRow,
+        splitAtIndicesByWidth: {
+                  500 : [1, 3, 5, 7],
+                  600 : [2, 4],
+        },
+        //forceSplit: screenWidth <= 700,
+        splitWidgetBehavior: SplitWidgetBehavior.includeInThisRow,
         mainAxisAlignment: mainAxisAlignment,
         children: <Widget>[
           Text(
-            'Grade: $_gradeVariation',
+            screenWidth > 400 ? 'Grade: $_gradeVariation' : 'Grade:',
             style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 16.0,
@@ -394,7 +400,7 @@ class _MyHomePageState extends State<MyHomePage> {
             },
           ),
           Text(
-            'OpticalSize: ${_opticalSizeVariation}px',
+            screenWidth > 400 ? 'Optical Size: ${_opticalSizeVariation}px' : 'OpticalSize:',
             style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 16.0,
@@ -421,7 +427,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: const TextStyle(
                   color: Colors.blue,
                   fontWeight: FontWeight.bold,
-                  fontSize: 20))),
+                  fontSize: 16))),
       const SizedBox(width: 30),
       if (!willSplitRows)
         Padding(
@@ -519,8 +525,8 @@ class _MyHomePageState extends State<MyHomePage> {
     }
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
+      appBar: AppBar( toolbarHeight: 20,
+        title: Text(widget.title, style: const TextStyle(fontSize:18),),
       ),
       body: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints viewportConstraints) {
@@ -549,7 +555,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ConstrainedBox(
                           constraints: BoxConstraints(
                             maxWidth:
-                                screenWidth > 500 ? 400 : screenWidth * 0.6,
+                                screenWidth > 500 ? 400 : screenWidth * 0.8,
                           ),
                           child: IconSearchStringInput(
                             onSearchTextChanged: (newSearchText) {
@@ -564,65 +570,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: CustomScrollView(
                       controller: _scrollController,
                       slivers: [
-                        SliverPadding(
-                          padding: const EdgeInsets.symmetric(),
-                          sliver: SliverToBoxAdapter(
-                            child: Card(
-                              margin: const EdgeInsets.symmetric(
-                                horizontal: 12,
-                                vertical: 12,
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 12, vertical: 12),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Flexible(
-                                        child: Text(
-                                      'Browse Material Symbols Icons at fonts.google.com',
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .bodyMedium,
-                                      maxLines: 3,
-                                    )),
-                                    SizedBox.square(
-                                      dimension: 40,
-                                      child: IconButton.outlined(
-                                        color: Colors.grey,
-                                        onPressed: () {
-                                          launchUrl(Uri.parse(
-                                              'https://fonts.google.com/icons?icon.set=Material+Symbols'));
-                                        },
-                                        icon: const Icon(
-                                            MaterialSymbols.open_in_new),
-                                        style: IconButton.styleFrom(
-                                          foregroundColor:
-                                              colors.onSecondaryContainer,
-                                          backgroundColor:
-                                              colors.secondaryContainer,
-                                          disabledBackgroundColor: colors
-                                              .onSurface
-                                              .withOpacity(0.12),
-                                          hoverColor: colors
-                                              .onSecondaryContainer
-                                              .withOpacity(0.08),
-                                          focusColor: colors
-                                              .onSecondaryContainer
-                                              .withOpacity(0.12),
-                                          highlightColor: colors
-                                              .onSecondaryContainer
-                                              .withOpacity(0.12),
-                                        ),
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
                         SliverGrid(
                             delegate: SliverChildBuilderDelegate(
                               (context, index) => Center(
@@ -656,7 +603,66 @@ class _MyHomePageState extends State<MyHomePage> {
                             gridDelegate:
                                 const SliverGridDelegateWithMaxCrossAxisExtent(
                               maxCrossAxisExtent: 100,
-                            ))
+                            )),
+                        SliverPadding(
+                          padding: const EdgeInsets.symmetric(),
+                          sliver: SliverToBoxAdapter(
+                            child: Card(
+                              margin: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 12,
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 12, vertical: 12),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text(
+                                      'Browse Material Symbols Icons at fonts.google.com',
+                                      textAlign: TextAlign.left,
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .bodyMedium,
+                                      maxLines: 3,
+                                    ),                                    
+                                    SizedBox.square(
+                                      dimension: 40,
+                                      child: IconButton.outlined(
+                                        color: Colors.grey,
+                                        onPressed: () {
+                                          launchUrl(Uri.parse(
+                                              'https://fonts.google.com/icons?icon.set=Material+Symbols'));
+                                        },
+                                        icon: const Icon(
+                                            MaterialSymbols.open_in_new),
+                                        style: IconButton.styleFrom(
+                                          foregroundColor:
+                                              colors.onSecondaryContainer,
+                                          backgroundColor:
+                                              colors.secondaryContainer,
+                                          disabledBackgroundColor: colors
+                                              .onSurface
+                                              .withOpacity(0.12),
+                                          hoverColor: colors
+                                              .onSecondaryContainer
+                                              .withOpacity(0.08),
+                                          focusColor: colors
+                                              .onSecondaryContainer
+                                              .withOpacity(0.12),
+                                          highlightColor: colors
+                                              .onSecondaryContainer
+                                              .withOpacity(0.12),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ), //sizedbox

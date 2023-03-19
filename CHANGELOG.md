@@ -1,3 +1,4 @@
-## 0.0.1
+## 4.39.0
 
-* TODO: Describe initial release.
+* Initial release supporting the Material Symbols Icons variable fonts versions 4.39 for outline, rounded and sharp styles
+

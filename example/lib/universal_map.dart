@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-03-15 11:07:33.551546 by the dart file
+// This file was generated 2023-03-17 10:52:34.951787 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.

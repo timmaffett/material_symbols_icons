@@ -96,16 +96,16 @@ class IconVariationDefaults {
 }
 
 /// Our map of font family names to font variation default information.
-Map<String, IconVariationDefaults> globalVariationDefaults = {};
+Map<String, IconVariationDefaults> globalIconVariationDefaults = {};
 
 /// This can be used in conjunction with the [Icon.varied] constructor to provide font variation defaults *BY FONT FAMILY* first,
 /// and then falling back on the [IconTheme]'s [IconThemeData]
 void setIconVariationDefaultsByFontFamily(
     String fontFamily, IconVariationDefaults? variations) {
   if (variations == null) {
-    globalVariationDefaults.remove(fontFamily);
+    globalIconVariationDefaults.remove(fontFamily);
   } else {
-    globalVariationDefaults[fontFamily] = variations;
+    globalIconVariationDefaults[fontFamily] = variations;
   }
 }
 
@@ -117,11 +117,11 @@ void setIconVariationDefaultsByFontFamily(
 /// Material Symbols icons.
 extension VariedIconExt on Icon {
   /// Creates an icon using any default variations defined for the icon's fontFamily
-  /// (If the [icon.fontFamily] is not found in the [globalVariationDefaults] map then the
+  /// (If the [icon.fontFamily] is not found in the [globalIconVariationDefaults] map then the
   /// normal Icon() behavior of using the [IconTheme]'s [IconThemeData] infornation for any missing
   /// attributes.
   ///
-  /// The use of [globalVariationDefaults] allows DIFFERENT defaults BY FONT FAMILY NAME to be used during
+  /// The use of [globalIconVariationDefaults] allows DIFFERENT defaults BY FONT FAMILY NAME to be used during
   /// icon creation.  (ie. different defaults for regular, rounded or sharp Material Symbols icon fonts.)
   static Icon varied(
     IconData icon, {
@@ -139,16 +139,16 @@ extension VariedIconExt on Icon {
       Icon(
         icon,
         key: key,
-        size: size ?? globalVariationDefaults[icon.fontFamily]?.size,
-        fill: fill ?? globalVariationDefaults[icon.fontFamily]?.fill,
-        weight: weight ?? globalVariationDefaults[icon.fontFamily]?.weight,
-        grade: grade ?? globalVariationDefaults[icon.fontFamily]?.grade,
+        size: size ?? globalIconVariationDefaults[icon.fontFamily]?.size,
+        fill: fill ?? globalIconVariationDefaults[icon.fontFamily]?.fill,
+        weight: weight ?? globalIconVariationDefaults[icon.fontFamily]?.weight,
+        grade: grade ?? globalIconVariationDefaults[icon.fontFamily]?.grade,
         opticalSize: opticalSize ??
-            globalVariationDefaults[icon.fontFamily]?.opticalSize,
-        color: color ?? globalVariationDefaults[icon.fontFamily]?.color,
-        shadows: shadows ?? globalVariationDefaults[icon.fontFamily]?.shadows,
+            globalIconVariationDefaults[icon.fontFamily]?.opticalSize,
+        color: color ?? globalIconVariationDefaults[icon.fontFamily]?.color,
+        shadows: shadows ?? globalIconVariationDefaults[icon.fontFamily]?.shadows,
         semanticLabel: semanticLabel,
         textDirection: textDirection ??
-            globalVariationDefaults[icon.fontFamily]?.textDirection,
+            globalIconVariationDefaults[icon.fontFamily]?.textDirection,
       );
 }

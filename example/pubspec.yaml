@@ -16,8 +16,7 @@ dependencies:
   material_symbols_icons:
     path: ../
   device_preview: 1.1.0    # required only for virtual device screen testing
-  splittable_flexible_row:
-   path: ../../splittable_flexible_row
+  splittable_flexible_row: 1.0.0
 
 dev_dependencies:
   flutter_test:

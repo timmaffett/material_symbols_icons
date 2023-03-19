@@ -6,6 +6,8 @@ Why another version of this for flutter ? Because every other package for materi
 These icons also support the complete set of icon variation parameters defined for the Material Symbols Icons.  This includes setting fill/not filled, various weights, grades and optical sizes.
 This package contains a code generation dart file which automatically downloads the latest versions of the Material Symbols Icon font files from [https://github.com/google/material-design-icons](https://github.com/google/material-design-icons) and generates updated dart files containing all of the latest defined icons.  No more missing icons!
 
+## [Live Example](https://timmaffett.github.io/material_symbols_icons)
+
 Here is a [live example](https://timmaffett.github.io/material_symbols_icons) of the current version of this package where you can test any Material Symbols icon name to verify it's availability.  The example also allows playing with all of the font variation options to explore further customizing the look of our Material Symbols.
 
 This package includes an automatic generator program so that the user has the option of RE-generating the package at any time with the most current Material Symbols Icons definitions.  This program downloads the latest Material Symbols fonts from the github repository [https://github.com/google/material-design-icons](https://github.com/google/material-design-icons), and their corresponding codepoint definition files.  It will then automatically create the material_symbols_icons.dart definition source file.    This automatic generations allows this package to use Github CI routines to ensure that it is always up to date and in-sync with the latet Material Symbols defintions.

@@ -199,8 +199,8 @@ class _MyHomePageState extends State<MyHomePage> {
         context: context,
         forceSplit: screenWidth <= 600,
         splitAtIndicesByWidth: {
-                  300 : [0, 2, 4, 6],
-                  600 : [0,4],
+          300: [0, 2, 4, 6],
+          600: [0, 4],
         },
         splitWidgetBehavior: SplitWidgetBehavior.includeInThisRow,
         mainAxisAlignment: mainAxisAlignment,
@@ -245,7 +245,9 @@ class _MyHomePageState extends State<MyHomePage> {
             onChanged: _onFontListTypeChange,
           ),
           Text(
-            screenWidth > 400 ? 'Universal set (all 3 w/suffixes)' : 'Universal set',
+            screenWidth > 400
+                ? 'Universal set (all 3 w/suffixes)'
+                : 'Universal set',
             style: const TextStyle(
               fontSize: 16.0,
             ),
@@ -255,8 +257,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ...Splittable.flexibleRow(
         context: context,
         splitAtIndicesByWidth: {
-                  300 : [0, 1],
-        },        
+          300: [0, 1],
+        },
         forceSplit: screenWidth < 600,
         splitWidgetBehavior: SplitWidgetBehavior.includeInNextRow,
         mainAxisAlignment: mainAxisAlignment,
@@ -320,10 +322,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ...Splittable.flexibleRow(
         context: context,
         splitAtIndicesByWidth: {
-                  500 : [1, 3, 5, 7],
-                  600 : [2, 4],
+          500: [1, 3, 5, 7],
+          700: [2, 4],
         },
-        forceSplit: screenWidth < 600,
         splitWidgetBehavior: SplitWidgetBehavior.includeInThisRow,
         mainAxisAlignment: mainAxisAlignment,
         children: <Widget>[
@@ -372,10 +373,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ...Splittable.flexibleRow(
         context: context,
         splitAtIndicesByWidth: {
-                  500 : [1, 3, 5, 7],
-                  600 : [2, 4],
+          500: [1, 3, 5, 7],
+          700: [2, 4],
         },
-        //forceSplit: screenWidth <= 700,
         splitWidgetBehavior: SplitWidgetBehavior.includeInThisRow,
         mainAxisAlignment: mainAxisAlignment,
         children: <Widget>[
@@ -400,7 +400,9 @@ class _MyHomePageState extends State<MyHomePage> {
             },
           ),
           Text(
-            screenWidth > 400 ? 'Optical Size: ${_opticalSizeVariation}px' : 'OpticalSize:',
+            screenWidth > 400
+                ? 'Optical Size: ${_opticalSizeVariation}px'
+                : 'OpticalSize:',
             style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 16.0,
@@ -525,8 +527,25 @@ class _MyHomePageState extends State<MyHomePage> {
     }
 
     return Scaffold(
-      appBar: AppBar( toolbarHeight: 20,
-        title: Text(widget.title, style: const TextStyle(fontSize:18),),
+      appBar: AppBar(
+        toolbarHeight: 20,
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Text(widget.title, style: const TextStyle(fontSize: 18)),
+            SizedBox.square(
+              dimension: 40,
+              child: IconButton(
+                color: Colors.blue,
+                onPressed: () {
+                  launchUrl(Uri.parse(
+                      'https://pub.dev/packages/material_symbols_icons'));
+                },
+                icon: const Icon(MaterialSymbols.open_in_new),
+              ),
+            ),
+          ],
+        ),
       ),
       body: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints viewportConstraints) {
@@ -626,7 +645,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                           .textTheme
                                           .bodyMedium,
                                       maxLines: 3,
-                                    ),                                    
+                                    ),
                                     SizedBox.square(
                                       dimension: 40,
                                       child: IconButton.outlined(

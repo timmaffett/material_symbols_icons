@@ -146,7 +146,8 @@ extension VariedIconExt on Icon {
         opticalSize: opticalSize ??
             globalIconVariationDefaults[icon.fontFamily]?.opticalSize,
         color: color ?? globalIconVariationDefaults[icon.fontFamily]?.color,
-        shadows: shadows ?? globalIconVariationDefaults[icon.fontFamily]?.shadows,
+        shadows:
+            shadows ?? globalIconVariationDefaults[icon.fontFamily]?.shadows,
         semanticLabel: semanticLabel,
         textDirection: textDirection ??
             globalIconVariationDefaults[icon.fontFamily]?.textDirection,

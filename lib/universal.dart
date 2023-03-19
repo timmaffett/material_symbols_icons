@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-03-15 11:07:33.517995 by the dart file
+// This file was generated 2023-03-17 10:52:34.911097 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -31,7 +31,7 @@ import 'material_symbols_icons.dart';
 /// Identifiers for the supported [Material Symbols](https://fonts.google.com/icons?selected=Material+Symbols).
 ///
 /// Use with the [Icon] class to show specific icons. Icons are identified by
-/// their name as listed below, e.g. [MaterialSymbols.airplanemode_on].
+/// their name FOLLOWED by the desired style as a suffix, as listed below, e.g. [MaterialSymbols.airplanemode_on_rounded].
 ///
 /// Search and find the perfect icon on the [Google Fonts](https://fonts.google.com/icons?selected=Material+Symbols) website.
 ///

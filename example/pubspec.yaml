@@ -1,5 +1,5 @@
-name: example
-description: A new Flutter project.
+name: Example of using Material Symbols Icons Flutter Package
+description: Example package using pub.dev/packages/material_symbols_icons package.
 
 publish_to: 'none'
 

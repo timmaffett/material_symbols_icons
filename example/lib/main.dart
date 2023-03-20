@@ -465,7 +465,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ? controlPanelColumn
           : ExpansionPanelList(
               animationDuration: const Duration(milliseconds: 500),
-              expandIconColor: Colors.green,
+              //NotPreFlutter3//expandIconColor: Colors.green,
               expandedHeaderPadding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
               elevation: 1,
               children: [
@@ -648,7 +648,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                     SizedBox.square(
                                       dimension: 40,
-                                      child: IconButton.outlined(
+                                      child: IconButton( //NotPreFlutter3// IconButton.outlined(
                                         color: Colors.grey,
                                         onPressed: () {
                                           launchUrl(Uri.parse(

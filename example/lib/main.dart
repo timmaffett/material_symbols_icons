@@ -124,7 +124,9 @@ class _MyHomePageState extends State<MyHomePage> {
     _fillVariation = 0.0;
     _weightVariation = 400.0;
     _gradeVariation = 0.0;
+    _gradeSliderPos = grades.indexOf(_gradeVariation).toDouble();
     _opticalSizeVariation = 48.0;
+    _opticalSliderPos = opticalSizes.indexOf(_opticalSizeVariation).toDouble();
     setAllVariationsSettings();
   }
 
@@ -648,7 +650,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                     SizedBox.square(
                                       dimension: 40,
-                                      child: IconButton( //NotPreFlutter3// IconButton.outlined(
+                                      child: IconButton(
+                                        //NotPreFlutter3// IconButton.outlined(
                                         color: Colors.grey,
                                         onPressed: () {
                                           launchUrl(Uri.parse(

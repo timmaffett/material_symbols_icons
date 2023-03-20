@@ -227,8 +227,7 @@ Future<void> main(List<String> args) async {
       await downloadURLASBinaryFile(
           client, fontFlavor.ttfFontFileUrl, filenameWithPath);
     } else {
-      print(
-          'SKIPPED downloading ${fontFlavor.ttfFontFileUrl}');
+      print('SKIPPED downloading ${fontFlavor.ttfFontFileUrl}');
     }
   }
 

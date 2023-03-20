@@ -1,16 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:material_symbols_icons/outlined.dart';
+import 'package:device_preview/device_preview.dart'; // required when useDevicePreview==true
 import 'package:material_symbols_icons/material_symbols_icons.dart';
-import 'package:splittable_flexible_row/splittable_flexible_row.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import 'main.dart';
-import 'outlined_suffix_map.dart';
-import 'rounded_suffix_map.dart';
-import 'sharp_suffix_map.dart';
-import 'universal_map.dart';
-
-import 'package:device_preview/device_preview.dart'; // required when useDevicePreview==true
 
 /// Set [useDevicePreview] to allow testing layouts on virtual device screens
 const useDevicePreview = true;

@@ -593,7 +593,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             delegate: SliverChildBuilderDelegate(
                               (context, index) => Center(
                                 child: Column(children: [
-                                  VariedIconExt.varied(
+                                  VariedIcon.varied(
                                     searchActive
                                         ? iconList[matches[index]]
                                         : iconList[index],

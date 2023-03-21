@@ -4,8 +4,7 @@ library material_symbols_icons;
 
 import 'package:flutter/widgets.dart';
 
-/// Material Symbols
-@immutable
+/// Material Symbols base class with utility methods
 class MaterialSymbolsBase {
   static void setOutlinedVariationDefaults({
     double? size,
@@ -58,24 +57,19 @@ class MaterialSymbolsBase {
   /// Tree shaking DOES NOT OCCUR for fonts that are never referenced, so having a call to this
   /// methoid FORCES a reference to the fonts - and invokes tree shaking.
   /// (Tree shaking occurs when a *const* declaration to an IconData() class occurs.)
-  static void forceCompileTimeTreeShaking({bool actuallyCreateIcons = false}) {
-    // this is structured like this so that the compiler things these variables are going to be used,
-    // (so they don't get removed and we can trigger tree shaking), but this way we don't
-    // actually ever have to create any icons and waste memory.
-    if (actuallyCreateIcons) {
-      // ignore: unused_local_variable
-      const forceOutlinedTreeShake = IconData(0xe5c9,
-          fontFamily: 'MaterialSymbolsOutlined',
-          fontPackage: 'material_symbols_icons');
-      // ignore: unused_local_variable
-      const forceRoundedTreeShake = IconData(0xe5c9,
-          fontFamily: 'MaterialSymbolsRounded',
-          fontPackage: 'material_symbols_icons');
-      // ignore: unused_local_variable
-      const forceSharpTreeShake = IconData(0xe5c9,
-          fontFamily: 'MaterialSymbolsSharp',
-          fontPackage: 'material_symbols_icons');
-    }
+  static void forceCompileTimeTreeShaking() {
+    // ignore: unused_local_variable
+    const forceOutlinedTreeShake = IconData(0xeb36,
+        fontFamily: 'MaterialSymbolsOutlined',
+        fontPackage: 'material_symbols_icons');
+    // ignore: unused_local_variable
+    const forceRoundedTreeShake = IconData(0xeb36,
+        fontFamily: 'MaterialSymbolsRounded',
+        fontPackage: 'material_symbols_icons');
+    // ignore: unused_local_variable
+    const forceSharpTreeShake = IconData(0xeb36,
+        fontFamily: 'MaterialSymbolsSharp',
+        fontPackage: 'material_symbols_icons');
   }
 }
 
@@ -115,7 +109,7 @@ void setIconVariationDefaultsByFontFamily(
 /// [IconThemeData] secondarily.
 /// This allows different variation defaults for regular, rounded and sharp versions of the
 /// Material Symbols icons.
-extension VariedIconExt on Icon {
+extension VariedIcon on Icon {
   /// Creates an icon using any default variations defined for the icon's fontFamily
   /// (If the [icon.fontFamily] is not found in the [globalIconVariationDefaults] map then the
   /// normal Icon() behavior of using the [IconTheme]'s [IconThemeData] infornation for any missing

@@ -227,8 +227,7 @@ Future<void> main(List<String> args) async {
       await downloadURLASBinaryFile(
           client, fontFlavor.ttfFontFileUrl, filenameWithPath);
     } else {
-      print(
-          'SKIPPED downloading ${fontFlavor.ttfFontFileUrl} to local file `$filenameWithPath}`');
+      print('SKIPPED downloading ${fontFlavor.ttfFontFileUrl}');
     }
   }
 
@@ -373,7 +372,7 @@ import 'material_symbols_icons.dart';
 ///  * [IconButton]
 ///  * <https://fonts.google.com/icons?selected=Material+Symbols>
 
-@staticIconProvider
+//NotPreFlutter3//@staticIconProvider
 class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
   // BEGIN GENERATED ICONS
   static const _family = '${fontinfo.familyNameToUse}';
@@ -494,7 +493,7 @@ import 'material_symbols_icons.dart';
 ///  * [IconButton]
 ///  * <https://fonts.google.com/icons?selected=Material+Symbols>
 
-@staticIconProvider
+//NotPreFlutter3//@staticIconProvider
 class MaterialSymbols extends MaterialSymbolsBase {
   // BEGIN GENERATED ICONS
 ''');

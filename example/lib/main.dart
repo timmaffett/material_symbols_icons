@@ -124,7 +124,9 @@ class _MyHomePageState extends State<MyHomePage> {
     _fillVariation = 0.0;
     _weightVariation = 400.0;
     _gradeVariation = 0.0;
+    _gradeSliderPos = grades.indexOf(_gradeVariation).toDouble();
     _opticalSizeVariation = 48.0;
+    _opticalSliderPos = opticalSizes.indexOf(_opticalSizeVariation).toDouble();
     setAllVariationsSettings();
   }
 
@@ -465,7 +467,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ? controlPanelColumn
           : ExpansionPanelList(
               animationDuration: const Duration(milliseconds: 500),
-              expandIconColor: Colors.green,
+              //NotPreFlutter3//expandIconColor: Colors.green,
               expandedHeaderPadding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
               elevation: 1,
               children: [
@@ -648,7 +650,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                     SizedBox.square(
                                       dimension: 40,
-                                      child: IconButton.outlined(
+                                      child: IconButton(
+                                        //NotPreFlutter3// IconButton.outlined(
                                         color: Colors.grey,
                                         onPressed: () {
                                           launchUrl(Uri.parse(

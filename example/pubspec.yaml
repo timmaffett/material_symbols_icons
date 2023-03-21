@@ -1,4 +1,4 @@
-name: Example of using Material Symbols Icons Flutter Package
+name: example_using_material_symbols_icons 
 description: Example package using pub.dev/packages/material_symbols_icons package.
 
 publish_to: 'none'
@@ -6,7 +6,7 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.6 <3.0.0'
+  sdk: '>=2.17.0 <4.0.0'
 
 dependencies:
   flutter:
@@ -15,8 +15,8 @@ dependencies:
   cupertino_icons: ^1.0.5
   material_symbols_icons:
     path: ../
-  device_preview: 1.1.0    # required only for virtual device screen testing
-  splittable_flexible_row: 1.0.0
+  device_preview: ^1.1.0    # required only for virtual device screen testing
+  splittable_flexible_row: ^1.0.0
 
 dev_dependencies:
   flutter_test:

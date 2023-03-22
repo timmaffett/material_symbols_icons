@@ -91,7 +91,7 @@ class MaterialSymbolsBase {
   /// each of the three fonts.  In this way any unused fonts are reduced to around 2k, which
   /// the icon tree shake will report as 100.0% reduction.
   /// (Tree shaking occurs when a *const* declaration to an IconData() class occurs.)
-  /// 
+  ///
   /// NOTE: VERY IMPORTANT - the `@pargma('vm:entry-point')` annotation is REQUIRED
   /// and it is being used to force the dart compilation process to believe that this
   /// method is required and that it CAN NOT tree-shake this method when it never
@@ -99,8 +99,8 @@ class MaterialSymbolsBase {
   @pragma('vm:entry-point')
   static void forceCompileTimeTreeShaking() {
     // these variables must be declared as var to trigger tree shaking, when declared as const
-    // then the tree shaking is not triggered.  These are references to the 'check_indeterminate_small' icon in 
-    // each of the fonts, which is one of the smallest glyphs.
+    // then the tree shaking is not triggered.  These are references to the 'check_indeterminate_small'
+    // icon in each of the fonts (one of the smallest glyphs we can include).
     // ignore: unused_local_variable
     var forceOutlinedTreeShake = const IconData(0xf88a,
         fontFamily: 'MaterialSymbolsOutlined',

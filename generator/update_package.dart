@@ -68,9 +68,9 @@ const prefixForReservedWordsAndNumbers = '\$';
 /// This is done using the `../rawFontsUnfixed/fixFontMetricsAndUpdateLibFonts.sh` script.  This script patches the
 /// fonts and then copies them to `../lib/fonts`.  This script requires python and the fonttools package to be
 /// installed on the machine.
-/// 
+///
 /// Once the fonts have been corrected in their github repository this step will not be required.
-/// 
+///
 /// THIS IS NON-IDEAL (obvisouly!!) - and we have submitted a issue to the material symbols github repo
 /// If this is not done then Flutter renders the icons lower in the text box then they should be
 /// (ie. *not centered*).

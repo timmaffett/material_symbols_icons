@@ -63,12 +63,15 @@ final dartReservedWords = [
 /// This is the prefix that we will place before iconnames which are not valid class member names because they are numbers or reserved words.
 const prefixForReservedWordsAndNumbers = '\$';
 
-/// Path to write the downloaded TTF files to
-/// KLUDGE - currently we have to open the fonts and RE-CALC metrics to get them to render correctly in flutter.
-/// We recalc metrics for each font using Font Creator 14.0  (https://high-logic.com) and then re-save.
-/// (Font->Properties menu - then master tab in dialog and then press first [Calculate] button next to
-/// 'Metrix for Horizontal Writing Mode')
-/// THIS IS NON-IDEAL - and we ahve submitted a issue to the material symbols github repo
+/// Path to write the downloaded TTF files to `../rawFontsUnfixed`
+/// KLUDGE - currently we have to patch the fonts with the correct metrics to get them to render correctly in flutter.
+/// This is done using the `../rawFontsUnfixed/fixFontMetricsAndUpdateLibFonts.sh` script.  This script patches the
+/// fonts and then copies them to `../lib/fonts`.  This script requires python and the fonttools package to be
+/// installed on the machine.
+/// 
+/// Once the fonts have been corrected in their github repository this step will not be required.
+/// 
+/// THIS IS NON-IDEAL (obvisouly!!) - and we have submitted a issue to the material symbols github repo
 /// If this is not done then Flutter renders the icons lower in the text box then they should be
 /// (ie. *not centered*).
 const pathToWriteTTFFiles = '../rawFontsUnfixed/';
@@ -320,7 +323,6 @@ void writeSourceFile(
 library material_symbols_icons;
 
 import 'package:flutter/widgets.dart';
-
 import 'material_symbols_icons.dart';
 
 // ignore_for_file: constant_identifier_names
@@ -374,6 +376,10 @@ import 'material_symbols_icons.dart';
 
 //NotPreFlutter3//@staticIconProvider
 class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
+  // This class is not meant to be instantiated or extended; this constructor
+  // prevents instantiation and extension.
+  MaterialSymbols$classFlavor._();
+
   // BEGIN GENERATED ICONS
   static const _family = '${fontinfo.familyNameToUse}';
   static const _package = 'material_symbols_icons';
@@ -441,7 +447,6 @@ void writeCombinedSourceFile(
 library material_symbols_icons;
 
 import 'package:flutter/widgets.dart';
-
 import 'material_symbols_icons.dart';
 
 // ignore_for_file: constant_identifier_names
@@ -495,6 +500,10 @@ import 'material_symbols_icons.dart';
 
 //NotPreFlutter3//@staticIconProvider
 class MaterialSymbols extends MaterialSymbolsBase {
+  // This class is not meant to be instantiated or extended; this constructor
+  // prevents instantiation and extension.
+  MaterialSymbols._();
+
   // BEGIN GENERATED ICONS
 ''');
 

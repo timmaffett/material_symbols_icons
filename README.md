@@ -12,7 +12,7 @@ Here is a [live example](https://timmaffett.github.io/material_symbols_icons) of
 
 This package includes an automatic generator program so that the user has the option of RE-generating the package at any time with the most current Material Symbols Icons definitions.  This program downloads the latest Material Symbols fonts from the github repository [https://github.com/google/material-design-icons](https://github.com/google/material-design-icons), and their corresponding codepoint definition files.  It will then automatically create the material_symbols_icons.dart definition source file.    This automatic generations allows this package to use Github CI routines to ensure that it is always up to date and in-sync with the latet Material Symbols defintions.
 
-(For users of the previous Flutter alternatives for Material Symbols Icons support - No more finding an icon on [https://fonts.google.com/icons?icon.style=Outlined](https://fonts.google.com/icons?icon.style=Outlined) and then trying to use it's name, and then discovering that it is missing, or worse yet having the incorrect icon appear!)
+(For users of the previous Flutter alternatives for Material Symbols Icons support - No more finding an icon on [google's material symbols icon browser](https://fonts.google.com/icons?icon.style=Outlined) and then trying to use it's name, and then discovering that it is missing, or worse yet having the incorrect icon appear!)
 
 
 There are several options with how you reference the icons within your flutter program:
@@ -40,34 +40,10 @@ SO if you want to access the icon with the name `360` you use `MaterialSymbols.$
 
 Additionally the iconnames `class`, `switch` and `try` have been renamed with a leading underscore also (`$class`, `$switch` and `$try`) as these are dart language reserved words.
 
-## Note on icon tree shaking
-
-Flutter has a wonderful capability of 'tree shaking' icons when making release builds.  This can often reduce the file size of the icons fonts by >99%.  It does this removing all icons from the fonts which are not used by your application.
-HOWEVER, this method does have it's limitations.  Due to how the tree shaking works if a font is _never_ referenced by your application then the font is _still included in its entirety_ - because the font is never used at all no tree shaking is triggered for the font.   This creates a problem for our class because the `outlined`, `rounded` and `sharp` style icons are each provided by a separate font.  If you are only using outlined icons and never rounded or sharp icons the outlined font will be tree shaken but the rounded and sharp's _ENTIRE_ fonts will be included.  This can be >10MB of extra, completely unused, space consumed by your app.   This package contains a simply solution for this problem - one additional call to `MaterialSymbolsBase.forceCompileTimeTreeShaking()` needs to be added somewhere within your app, typically in the `main()`.
-This call will force a reference to each of the 3 possible styles of material symbols icons, and the unused fonts will be reduced in size by >99.99%.
-
-I understand requiring a call to `MaterialSymbolsBase.forceCompileTimeTreeShaking()` is not ideal - and an issue has been submitted with the flutter team to suggest any better alternatives (like fixed tree shaking to also be triggered by the new flutter 3 `@staticIconProvider` annotation (which was added to allow for tree shaking for web based flutter apps)
-
-```dart
-void main() {
-  /*
-    This called forces a reference to each of the 3 possible Material Symbols Icon fonts
-    so that tree shaking can take place and unused fonts will be removed.  If 
-    this is NOT done then any un-referenced fonts (such as rounded and sharp if you were
-    using outlined) will NOT BE SHOOK from the tree and your executable will include
-    these!
-    (Strictly speaking in this example, where we reference every icon in every font style, 
-    this is not needed, but in real world this is ALWAYS needed, so it is included here.
-  */
-  MaterialSymbolsBase.forceCompileTimeTreeShaking();
-
-   ...
-}
-```
 
 --------------------------------------;
 
-The variable version so the Material Symbols fonts are used, so it is possible to further modify (or animate!) the icons by specifying your own parameters for fill, weight, grade, and optical size when creating your icons.
+The Material Symbols Icon fonts are variable fonts, so it is possible to further modify (or animate!) the icons by specifying your own parameters for fill, weight, grade, and optical size when creating your icons.
 
 ```dart
     
@@ -121,9 +97,13 @@ If you find yourself using more than one of the styles simultaneously this packa
         weight: 600,
         grade: 0.25,
         opticalSize: 20.0);
+
+    // then use VariedIcon.varied() to create your icons - instead of Icon() directly
+    Icon example = VariedIcon.varied( MaterialSymbols.developer );
+
 ```
 
-Is the `setXYZVariationDefaults()` methods are used then the icons need to be created using `VariedIconExt.varied()` call instead of `Icon()` directly.
+If the `setXYZVariationDefaults()` methods are used then the icons need to be created using `VariedIcon.varied()` call instead of `Icon()` directly.
 
 -------------------------------------;
 [From https://github.com/google/material-design-icons/raw/master/README.md](https://github.com/google/material-design-icons/raw/master/README.md)

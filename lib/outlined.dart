@@ -6,7 +6,7 @@
 // localed at https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
 // These codepoints correspond to symbols within the corresponding variable font.
 // The font was downloaded from https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf and added to this package.
-// This file was generated 2023-03-19 19:30:31.599537 by the dart file
+// This file was generated 2023-03-21 12:59:34.997841 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -16,7 +16,6 @@
 library material_symbols_icons;
 
 import 'package:flutter/widgets.dart';
-
 import 'material_symbols_icons.dart';
 
 // ignore_for_file: constant_identifier_names
@@ -70,6 +69,10 @@ import 'material_symbols_icons.dart';
 
 //NotPreFlutter3//@staticIconProvider
 class MaterialSymbols extends MaterialSymbolsBase {
+  // This class is not meant to be instantiated or extended; this constructor
+  // prevents instantiation and extension.
+  MaterialSymbols._();
+
   // BEGIN GENERATED ICONS
   static const _family = 'MaterialSymbolsOutlined';
   static const _package = 'material_symbols_icons';

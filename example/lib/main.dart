@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/outlined.dart';
+import 'package:material_symbols_icons/outlined_suffix.dart';
+import 'package:material_symbols_icons/rounded_suffix.dart';
+import 'package:material_symbols_icons/sharp_suffix.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:splittable_flexible_row/splittable_flexible_row.dart';
 import 'package:url_launcher/url_launcher.dart';

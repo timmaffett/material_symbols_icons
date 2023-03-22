@@ -1,10 +1,14 @@
 // ignore_for_file: constant_identifier_names
-
+/// Material Symbols Icons library base class which contains method to force proper icon tree-shaking,
+/// and utility methods providing alternate method of icon variation defaults to be defined
+/// by icon style (implemented using font family names to differentiate icon styles).
+///
+/// {@category BaseClass}
 library material_symbols_icons;
 
 import 'package:flutter/widgets.dart';
 
-/// Class to store our icon variation defaults which we allow to be stored BY FONT FAMILY NAME,
+/// Class to store our icon variation defaults which we allow to be stored by _font family name_,
 /// so that there can be different defaults for different icon font families.
 class IconVariationDefaults {
   double? size;
@@ -20,14 +24,22 @@ class IconVariationDefaults {
       this.opticalSize, this.color, this.shadows, this.textDirection);
 }
 
-/// Material Symbols base class with utility methods for forcing tree shaking [forceCompileTimeTreeShaking] and
-/// methods for setting the default variations for each style.  These default variations are used when using
-/// `VariedIcon.varied()` as alternative to the `Icon()` constructor
+/// [MaterialSymbolsBase] class with methods for setting the default variations for each style.  These default variations are
+/// used when using `VariedIcon.varied()` as alternative to the `Icon()` constructor.
+/// All classes providing access to material symbols icons derive from this class [MaterialSymbols] (outlined, rounded, sharp
+/// or universal versions of this class), as well as [MaterialSymbolsOutlined], [MaterialSymbolsRounded] and [MaterialSymbolsSharp].
+/// The user of this package chooses the method they prefer to access the desired icons, and imports the corresponding
+/// dart file into their files.
+/// This [MaterialSymbolBase] class contains a method for forcing icon tree-shaking to properly take place on all three styles
+/// of material symbols icon fonts.  The method is [forceCompileTimeTreeShaking] and is annotated with a @pragma annotation so that
+/// method itself is not tree-shaken.  This method referes to all three material symbols icon fonts so that the build tools know
+/// to tree-shake each of these icon fonts.  (Otherwise unreferenced icon fonts would be included in their entirety into the built
+/// application (!)).
 class MaterialSymbolsBase {
   /// Our map of font family names to font variation default information.
   static Map<String, IconVariationDefaults> globalIconVariationDefaults = {};
 
-  /// This can be used in conjunction with the [Icon.varied] constructor to provide font variation defaults *BY FONT FAMILY* first,
+  /// This can be used in conjunction with the [VariedIcon.varied] constructor to provide font variation defaults *BY FONT FAMILY* first,
   /// and then falling back on the [IconTheme]'s [IconThemeData]
   static void setIconVariationDefaultsByFontFamily(
       String fontFamily, IconVariationDefaults? variations) {
@@ -117,18 +129,18 @@ class MaterialSymbolsBase {
 }
 
 /// Extension to [Icon] that creates icons are varied by any defaults you have set using
-/// [MaterialSymbols.setRegularVariationDefaults], [MaterialSymbols.setRegularVariationDefaults] or
-/// [MaterialSymbols.setRegularVariationDefaults] *first* and then using the [IconTheme]'s
+/// [MaterialSymbolsBase.setRegularVariationDefaults], [MaterialSymbolsBase.setRegularVariationDefaults] or
+/// [MaterialSymbolsBase.setRegularVariationDefaults] *first* and then using the [IconTheme]'s
 /// [IconThemeData] secondarily.
 /// This allows different variation defaults for regular, rounded and sharp versions of the
 /// Material Symbols icons.
 extension VariedIcon on Icon {
   /// Creates an icon using any default variations defined for the icon's fontFamily
-  /// (If the [icon.fontFamily] is not found in the [globalIconVariationDefaults] map then the
+  /// (If the [icon]'s [IconData.fontFamily] is not found in the [MaterialSymbolsBase.globalIconVariationDefaults] map then the
   /// normal Icon() behavior of using the [IconTheme]'s [IconThemeData] infornation for any missing
   /// attributes.
   ///
-  /// The use of [globalIconVariationDefaults] allows DIFFERENT defaults BY FONT FAMILY NAME to be used during
+  /// The use of [MaterialSymbolsBase.globalIconVariationDefaults] allows DIFFERENT defaults BY FONT FAMILY NAME to be used during
   /// icon creation.  (ie. different defaults for regular, rounded or sharp Material Symbols icon fonts.)
   static Icon varied(
     IconData icon, {

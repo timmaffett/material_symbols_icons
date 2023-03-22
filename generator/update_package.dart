@@ -299,11 +299,21 @@ void writeSourceFile(
     bool suffixIconNames = false}) {
   assert(fontinfo.iconNameList.length == fontinfo.codePointList.length);
   late final String classFlavor;
+  late final String libraryFlavor;
+  late final String categoryFlavor;
+  late final String extraMessage;
   if (suffixVersion) {
     classFlavor =
         '${fontinfo.flavor[0].toUpperCase()}${fontinfo.flavor.substring(1).toLowerCase()}';
+    categoryFlavor = '${classFlavor}_Suffix';
+    libraryFlavor = '${fontinfo.flavor.toLowerCase()}_suffix';
+    extraMessage = ' (with style as suffix appended to the class name)';
   } else {
     classFlavor = '';
+    categoryFlavor =
+        '${fontinfo.flavor[0].toUpperCase()}${fontinfo.flavor.substring(1).toLowerCase()}';
+    libraryFlavor = fontinfo.flavor.toLowerCase();
+    extraMessage = '';
   }
   final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
 //
@@ -320,7 +330,13 @@ void writeSourceFile(
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-library material_symbols_icons;
+/// ${libraryFlavor[0].toUpperCase()}${libraryFlavor.substring(1).toLowerCase()} style version of icons.  Accessed via [MaterialSymbols$classFlavor]$extraMessage<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+/// by using the icon name`MaterialSymbols$classFlavor.iconname`, for example `MaterialSymbols$classFlavor.circle` or `MaterialSymbols$classFlavor.square`.
+/// 
+/// `import 'package:material_symbols_icons/$libraryFlavor.dart';`
+/// 
+/// {@category $categoryFlavor}
+library $libraryFlavor;
 
 import 'package:flutter/widgets.dart';
 import 'material_symbols_icons.dart';
@@ -328,33 +344,38 @@ import 'material_symbols_icons.dart';
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: non_constant_identifier_names
 
-/// Identifiers for the supported [Material Symbols](https://fonts.google.com/icons?selected=Material+Symbols).
+/// Access icons using `MaterialSymbols$classFlavor.iconname` with icon names as identifiers. Explore available icons at [Google Font's Material Symbols Explorer](https://fonts.google.com/icons?selected=Material+Symbols).
+///
+/// All icon names that start with a number (like `360` or `9M`) but have their icon names prefixed with a `\$` to make the names valid dart class member names.
+/// For example if you want to access the icon with the name `360` you use `MaterialSymbols$classFlavor.\$360` instead.
+///
+/// Additionally the iconnames `class`, `switch` and `try` have also been renamed with a leading `\$` (`\$class`, `\$switch` and `\$try`) as these are dart language
+/// reserved words.
 ///
 /// Use with the [Icon] class to show specific icons. Icons are identified by
-/// their name as listed below, e.g. [MaterialSymbols$classFlavor.airplanemode_on].
+/// their name as listed below, e.g. [MaterialSymbols$classFlavor.airplanemode_active].
 ///
-/// Search and find the perfect icon on the [Google Fonts](https://fonts.google.com/icons?selected=Material+Symbols) website.
+/// Search and find the perfect icon on the [Google Font's Material Symbols Explorer](https://fonts.google.com/icons?selected=Material+Symbols) website.
 ///
 ///
-/// {@tool snippet}
 /// This example shows how to create a [Row] of [Icon]s in different colors and
-/// sizes. The first [Icon] uses a [semanticLabel] to announce in accessibility
+/// sizes. The first [Icon] uses a [Icon.semanticLabel] to announce in accessibility
 /// modes like TalkBack and VoiceOver.
 ///
-/// ![The following code snippet would generate a row of icons consisting of a pink heart, a green musical note, and a blue umbrella, each progressively bigger than the last.](https://timmaffett.github.io/assets-for-api-docs/assets/widgets/icon.png)
+/// ![The following code snippet would generate a row of icons consisting of a pink bike, a green sun, and a blue beach umbrella, each progressively bigger than the last.](https://github.com/timmaffett/material_symbols_icons/raw/master/media/${libraryFlavor}_example.png)
 ///
 /// ```dart
 /// const Row(
 ///   mainAxisAlignment: MainAxisAlignment.spaceAround,
 ///   children: <Widget>[
 ///     Icon(
-///       MaterialSymbols$classFlavor.favorite,
+///       MaterialSymbols$classFlavor.pedal_bike,
 ///       color: Colors.pink,
 ///       size: 24.0,
 ///       semanticLabel: 'Text to announce in accessibility modes',
 ///     ),
 ///     Icon(
-///       MaterialSymbols$classFlavor.audiotrack,
+///       MaterialSymbols$classFlavor.sunny,
 ///       color: Colors.green,
 ///       size: 30.0,
 ///     ),
@@ -366,7 +387,6 @@ import 'material_symbols_icons.dart';
 ///   ],
 /// )
 /// ```
-/// {@end-tool}
 ///
 /// See also:
 ///
@@ -402,7 +422,8 @@ class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
     }
     sourceFileContent.writeln();
     sourceFileContent.writeln(
-        '  /// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> &#x$codepoint; material symbol named "$iconname".');
+        //ALL OUTLINE'  /// <span class="material-symbols-outlined">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
+        '  /// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
     sourceFileContent.writeln("  static const IconData $iconname =");
     sourceFileContent.writeln(
         "      IconData(0x$codepoint, fontFamily: _family, fontPackage: _package);");
@@ -444,7 +465,14 @@ void writeCombinedSourceFile(
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-library material_symbols_icons;
+/// Combined verions of all three styles within [MaterialSymbols] - all icon names have the style as a suffix to the icon name.
+/// Accessed via `MaterialSymbols.iconname_style`, for example `MaterialSymbols.circle_outlined` or 
+/// `MaterialSymbols.circle_sharp`.<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+/// 
+/// `import 'package:material_symbols_icons/universal.dart';`
+/// 
+/// {@category CombinedUniversal}
+library combined_universal;
 
 import 'package:flutter/widgets.dart';
 import 'material_symbols_icons.dart';
@@ -452,33 +480,38 @@ import 'material_symbols_icons.dart';
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: non_constant_identifier_names
 
-/// Identifiers for the supported [Material Symbols](https://fonts.google.com/icons?selected=Material+Symbols).
+/// Access icons using `MaterialSymbols.iconname_style` with iconname_style as identifiers. Explore available icons at [Google Font's Material Symbols Explorer](https://fonts.google.com/icons?selected=Material+Symbols).
+///
+/// All icon names that start with a number (like `360` or `9M`) but have their icon names prefixed with a `\$` to make the names valid dart class member names.
+/// For example if you want to access the icon with the name `360` you use `MaterialSymbols.\$360` instead.
+///
+/// Additionally the iconnames `class`, `switch` and `try` have also been renamed with a leading `\$` (`\$class`, `\$switch` and `\$try`) as these are dart language
+/// reserved words.
 ///
 /// Use with the [Icon] class to show specific icons. Icons are identified by
-/// their name FOLLOWED by the desired style as a suffix, as listed below, e.g. [MaterialSymbols.airplanemode_on_rounded].
+/// their name FOLLOWED by the desired style as a suffix, as listed below, e.g. [MaterialSymbols.airplanemode_active_rounded].
 ///
 /// Search and find the perfect icon on the [Google Fonts](https://fonts.google.com/icons?selected=Material+Symbols) website.
 ///
 ///
-/// {@tool snippet}
 /// This example shows how to create a [Row] of [Icon]s in different colors and
-/// sizes. The first [Icon] uses a [MaterialSymbols.semanticLabel] to announce in accessibility
+/// sizes. The first [Icon] uses a [Icon.semanticLabel] to announce in accessibility
 /// modes like TalkBack and VoiceOver.
 ///
-/// ![The following code snippet would generate a row of icons consisting of a pink heart, a green musical note, and a blue umbrella, each progressively bigger than the last.](https://timmaffett.github.io/assets-for-api-docs/assets/widgets/icon.png)
+/// ![The following code snippet would generate a row of icons consisting of a pink bike (outlined style), a green sun (rounded style), and a blue beach umbrella (sharp style), each progressively bigger than the last.](https://github.com/timmaffett/material_symbols_icons/raw/master/media/universal_example.png)
 ///
 /// ```dart
 /// const Row(
 ///   mainAxisAlignment: MainAxisAlignment.spaceAround,
 ///   children: <Widget>[
 ///     Icon(
-///       MaterialSymbols.favorite_outlined,
+///       MaterialSymbols.pedal_bike_outlined,
 ///       color: Colors.pink,
 ///       size: 24.0,
 ///       semanticLabel: 'Text to announce in accessibility modes',
 ///     ),
 ///     Icon(
-///       MaterialSymbols.audiotrack_rounded,
+///       MaterialSymbols.sunny_rounded,
 ///       color: Colors.green,
 ///       size: 30.0,
 ///     ),
@@ -490,7 +523,6 @@ import 'material_symbols_icons.dart';
 ///   ],
 /// )
 /// ```
-/// {@end-tool}
 ///
 /// See also:
 ///
@@ -540,7 +572,8 @@ class MaterialSymbols extends MaterialSymbolsBase {
       }
       sourceFileContent.writeln();
       sourceFileContent.writeln(
-          '  /// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> &#x$codepoint; material symbol named "${iconname}_${fontinfo.flavor}".');
+          //ALL OUTLINE  '  /// <span class="material-symbols-outlined">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
+          '  /// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
       sourceFileContent.writeln("  static const IconData $iconname =");
       sourceFileContent.writeln(
           "      IconData(0x$codepoint, fontFamily: _family_${fontinfo.flavor}, fontPackage: _package);");

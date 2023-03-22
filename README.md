@@ -2,7 +2,7 @@
 
 <img src="https://github.com/timmaffett/material_symbols_icons/raw/master/media/example.png" width="100%">
 
-## (with full variation support and automatic code generation capability for updating icon definition files)
+### (with full variation support and automatic code generation capability for updating icon definition files)
 
 Why another version of this for flutter ? Because every other package for material icons is either out of date or has *INCORRECT* and *MISSING* icon definitions.
 These icons also support the complete set of icon variation parameters defined for the Material Symbols Icons.  This includes setting fill/not filled, various weights, grades and optical sizes.
@@ -37,11 +37,10 @@ This is the largest of the options as it includes all 3 versions of the Material
 
 --------------------------------------;
 
-ALl icon names that start with a number (like `360` or `9M`) but have their icon names prefixed with a `$` to make the names valid dart class member names.
-SO if you want to access the icon with the name `360` you use `MaterialSymbols.$360` instead.
+All icon names that start with a number (like `360` or `9M`) but have their icon names prefixed with a `$` to make the names valid dart class member names.
+For example if you want to access the icon with the name `360` you use `MaterialSymbols.$360` instead.
 
-Additionally the iconnames `class`, `switch` and `try` have been renamed with a leading underscore also (`$class`, `$switch` and `$try`) as these are dart language reserved words.
-
+Additionally the iconnames `class`, `switch` and `try` have also been renamed with a leading `$` (`$class`, `$switch` and `$try`) as these are dart language reserved words.
 
 --------------------------------------;
 
@@ -111,11 +110,13 @@ If the `setXYZVariationDefaults()` methods are used then the icons need to be cr
 
 <img src="https://github.com/timmaffett/material_symbols_icons/raw/master/media/google_icon_fonts.png" width="100%">
 
+-------------------------------------;
 
-[From https://github.com/google/material-design-icons/raw/master/README.md](https://github.com/google/material-design-icons/raw/master/README.md)
-## Material Symbols
+## Material Symbols Icons - Google's replacement to the original material design icons
 
-These newer icons can be browsed in a more user-friendly way at https://fonts.google.com/icons. Use the popdown menu near top left to choose between the two sets; Material Symbols is the default.
+Following background information info from [google's material design icon repo](https://github.com/google/material-design-icons/raw/master/README.md).
+
+These newer icons can be browsed in a more user-friendly way at [google's material symbols icon browser](https://fonts.google.com/icons?icon.style=Outlined). Use the popdown menu near top left to choose between the two sets; Material Symbols is the default.
 
 These icons were built/designed as variable fonts first (based on the 24 px designs from Material Icons). There are three separate Material Symbols variable fonts, which also have static icons available (but those do not have all the variations available, as that would be hundreds of styles):
 

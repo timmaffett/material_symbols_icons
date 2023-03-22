@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-03-21 12:59:35.333356 by the dart file
+// This file was generated 2023-03-21 21:15:54.324169 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -73,7 +73,7 @@ import 'material_symbols_icons.dart';
 ///  * [IconButton]
 ///  * <https://fonts.google.com/icons?selected=Material+Symbols>
 
-//NotPreFlutter3//@staticIconProvider
+@staticIconProvider
 class MaterialSymbols extends MaterialSymbolsBase {
   // This class is not meant to be instantiated or extended; this constructor
   // prevents instantiation and extension.

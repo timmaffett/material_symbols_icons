@@ -1,5 +1,7 @@
 # Material Symbols Icons for Flutter
 
+<img src="https://github.com/timmaffett/material_symbols_icons/raw/master/media/example.png" width="100%">
+
 ## (with full variation support and automatic code generation capability for updating icon definition files)
 
 Why another version of this for flutter ? Because every other package for material icons is either out of date or has *INCORRECT* and *MISSING* icon definitions.
@@ -106,6 +108,10 @@ If you find yourself using more than one of the styles simultaneously this packa
 If the `setXYZVariationDefaults()` methods are used then the icons need to be created using `VariedIcon.varied()` call instead of `Icon()` directly.
 
 -------------------------------------;
+
+<img src="https://github.com/timmaffett/material_symbols_icons/raw/master/media/google_icon_fonts.png" width="100%">
+
+
 [From https://github.com/google/material-design-icons/raw/master/README.md](https://github.com/google/material-design-icons/raw/master/README.md)
 ## Material Symbols
 

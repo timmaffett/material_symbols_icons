@@ -374,7 +374,7 @@ import 'material_symbols_icons.dart';
 ///  * [IconButton]
 ///  * <https://fonts.google.com/icons?selected=Material+Symbols>
 
-//NotPreFlutter3//@staticIconProvider
+@staticIconProvider
 class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
   // This class is not meant to be instantiated or extended; this constructor
   // prevents instantiation and extension.
@@ -498,7 +498,7 @@ import 'material_symbols_icons.dart';
 ///  * [IconButton]
 ///  * <https://fonts.google.com/icons?selected=Material+Symbols>
 
-//NotPreFlutter3//@staticIconProvider
+@staticIconProvider
 class MaterialSymbols extends MaterialSymbolsBase {
   // This class is not meant to be instantiated or extended; this constructor
   // prevents instantiation and extension.

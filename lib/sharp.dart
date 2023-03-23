@@ -6,7 +6,7 @@
 // localed at https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
 // These codepoints correspond to symbols within the corresponding variable font.
 // The font was downloaded from https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf and added to this package.
-// This file was generated 2023-03-22 16:29:11.671602 by the dart file
+// This file was generated 2023-03-22 19:18:41.820230 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -15,9 +15,9 @@
 
 /// Sharp style version of icons.  Accessed via [MaterialSymbols]<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 /// by using the icon name`MaterialSymbols.iconname`, for example `MaterialSymbols.circle` or `MaterialSymbols.square`.
-/// 
+///
 /// `import 'package:material_symbols_icons/sharp.dart';`
-/// 
+///
 /// {@category Sharp}
 library sharp;
 
@@ -28,7 +28,7 @@ import 'material_symbols_icons.dart';
 // ignore_for_file: non_constant_identifier_names
 
 /// Access icons using `MaterialSymbols.iconname` with icon names as identifiers. Explore available icons at [Google Font's Material Symbols Explorer](https://fonts.google.com/icons?selected=Material+Symbols).
-///
+/// <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><style>span.material-symbols-outlined,span.material-symbols-rounded,span.material-symbols-sharp { font-size:48px; color: 0x00f; }</style>
 /// All icon names that start with a number (like `360` or `9M`) but have their icon names prefixed with a `$` to make the names valid dart class member names.
 /// For example if you want to access the icon with the name `360` you use `MaterialSymbols.$360` instead.
 ///

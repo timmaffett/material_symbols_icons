@@ -9,7 +9,7 @@ dartdoc:
 #  categoryOrder: ["First Category", "Second Category"]
 #  examplePathPrefix: 'subdir/with/examples'
 #  includeExternal: ['bin/unusually_located_library.dart']
-#  nodoc: ['lib/roundedD.dart','lib/sharpD.dart']
+#  DDnodoc: ['lib/rounded.dart','lib/sharp.dart','lib/outlined_suffix.dart','lib/rounded_suffix.dart','lib/sharp_suffix.dart']
 #  linkTo:
 #    url: "https://my.dartdocumentationsite.org/dev/%v%"
 #  showUndocumentedCategories: true

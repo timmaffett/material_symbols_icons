@@ -31,7 +31,7 @@ class IconVariationDefaults {
 /// The user of this package chooses the method they prefer to access the desired icons, and imports the corresponding
 /// dart file into their files.
 ///
-/// This [MaterialSymbolBase] class contains a method for forcing icon tree-shaking to properly take place on all three styles
+/// This [MaterialSymbolsBase] class contains a method for forcing icon tree-shaking to properly take place on all three styles
 /// of material symbols icon fonts.  The method is [forceCompileTimeTreeShaking] and is annotated with a ` @pragma('vm:entry-point')`
 /// annotation so that method itself is not tree-shaken.  This method referes to all three material symbols icon fonts so that the
 /// build tools know to tree-shake each of these icon fonts.  (Otherwise unreferenced icon fonts would be included in their entirety
@@ -130,8 +130,8 @@ class MaterialSymbolsBase {
 }
 
 /// Extension to [Icon] that creates icons are varied by any defaults you have set using
-/// [MaterialSymbolsBase.setRegularVariationDefaults], [MaterialSymbolsBase.setRegularVariationDefaults] or
-/// [MaterialSymbolsBase.setRegularVariationDefaults] *first* and then using the [IconTheme]'s
+/// [MaterialSymbolsBase.setOutlinedVariationDefaults], [MaterialSymbolsBase.setRoundedVariationDefaults] or
+/// [MaterialSymbolsBase.setSharpVariationDefaults] *first* and then using the [IconTheme]'s
 /// [IconThemeData] secondarily.
 /// This allows different variation defaults for regular, rounded and sharp versions of the
 /// Material Symbols icons.

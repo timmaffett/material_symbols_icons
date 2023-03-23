@@ -315,6 +315,32 @@ void writeSourceFile(
     libraryFlavor = fontinfo.flavor.toLowerCase();
     extraMessage = '';
   }
+
+  StringBuffer getFakeDartDocsForIconNames() {
+    final fakeDartDocs = StringBuffer();
+      final iconNameList = fontinfo.iconNameList;
+      final codePointList = fontinfo.codePointList;
+      for (int i = 0; i < iconNameList.length; i++) {
+        var iconname = iconNameList[i];
+        final codepoint = codePointList[i];
+
+        // if we added a _ because it started with a number the remove it for html
+        final iconnameNoLeadingPrefix =
+            iconname.startsWith(prefixForReservedWordsAndNumbers)
+                ? iconname.substring(prefixForReservedWordsAndNumbers.length)
+                : iconname;
+        if (suffixIconNames) {
+          iconname = '${iconname}_${fontinfo.flavor}';
+        }
+        fakeDartDocs.writeln('///');
+        fakeDartDocs.writeln(
+            '  /// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> MaterialSymbols$classFlavor.$iconname');
+      }
+      return fakeDartDocs;
+    }
+    final fakeDartDocs = getFakeDartDocsForIconNames();
+
+
   final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
 //
 // To edit this file modify the generator file `generator/update_package.dart` and
@@ -393,8 +419,14 @@ import 'material_symbols_icons.dart';
 ///  * [Icon]
 ///  * [IconButton]
 ///  * <https://fonts.google.com/icons?selected=Material+Symbols>
+/// 
+/// NOTE: IMPORTANT - Because of the gross inefficiencies of dart doc ALL icon member names
+/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data. 
+/// The icons and corresponding symbols names follow:
+/// 
+$fakeDartDocs
 
-@staticIconProvider
+//pub.dev does not like//@staticIconProvider
 class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
   // This class is not meant to be instantiated or extended; this constructor
   // prevents instantiation and extension.
@@ -423,7 +455,7 @@ class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
     sourceFileContent.writeln();
     sourceFileContent.writeln(
         //ALL OUTLINE'  /// <span class="material-symbols-outlined">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
-        '  /// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
+        '  /// @nodoc <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
     sourceFileContent.writeln("  static const IconData $iconname =");
     sourceFileContent.writeln(
         "      IconData(0x$codepoint, fontFamily: _family, fontPackage: _package);");
@@ -444,6 +476,43 @@ class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
 void writeCombinedSourceFile(
     List<MaterialSymbolsVariableFont> fontinfoList, String sourceFilename,
     {bool suffixVersion = true}) {
+
+    StringBuffer getFakeDartDocsForIconNames() {
+      final fakeDartDocs = StringBuffer();
+      // all font flavors should have same number of codepoints
+      int? lastCount;
+      for (final fontinfo in fontinfoList) {
+        assert(fontinfo.iconNameList.length == fontinfo.codePointList.length);
+        if (lastCount != null) {
+          assert(fontinfo.iconNameList.length == lastCount);
+        }
+        lastCount = fontinfo.iconNameList.length;
+      }
+
+      var iconCount = 0;
+
+      for (int i = 0; i < lastCount!; i++) {
+        for (final fontinfo in fontinfoList) {
+          var iconname = fontinfo.iconNameList[i];
+          final codepoint = fontinfo.codePointList[i];
+
+          // if we added a _ because it started with a number the remove it for html
+          final iconnameNoLeadingPrefix =
+              iconname.startsWith(prefixForReservedWordsAndNumbers)
+                  ? iconname.substring(prefixForReservedWordsAndNumbers.length)
+                  : iconname;
+          if (suffixVersion) {
+            iconname = '${iconname}_${fontinfo.flavor}';
+          }
+          fakeDartDocs.writeln('///');
+          fakeDartDocs.writeln(
+              '/// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> MaterialSymbols.$iconname');
+        }
+      }
+      return fakeDartDocs;
+    }
+    final fakeDartDocs = getFakeDartDocsForIconNames();
+
   final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
 //
 // To edit this file modify the generator file `generator/update_package.dart` and
@@ -529,8 +598,14 @@ import 'material_symbols_icons.dart';
 ///  * [Icon]
 ///  * [IconButton]
 ///  * <https://fonts.google.com/icons?selected=Material+Symbols>
+/// 
+/// NOTE: IMPORTANT - Because of the gross inefficiencies of dart doc ALL icon member names
+/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data. 
+/// The icons and corresponding symbols names follow:
+/// 
+$fakeDartDocs
 
-@staticIconProvider
+//pub.dev does not like//@staticIconProvider
 class MaterialSymbols extends MaterialSymbolsBase {
   // This class is not meant to be instantiated or extended; this constructor
   // prevents instantiation and extension.
@@ -573,7 +648,7 @@ class MaterialSymbols extends MaterialSymbolsBase {
       sourceFileContent.writeln();
       sourceFileContent.writeln(
           //ALL OUTLINE  '  /// <span class="material-symbols-outlined">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
-          '  /// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
+          '  /// @nodoc<span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
       sourceFileContent.writeln("  static const IconData $iconname =");
       sourceFileContent.writeln(
           "      IconData(0x$codepoint, fontFamily: _family_${fontinfo.flavor}, fontPackage: _package);");

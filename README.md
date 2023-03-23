@@ -11,7 +11,7 @@ when google updates the material symbols icon fonts!
 
 Why another version of material symbols icons for flutter ? Because every other package for material symbols icons is either out of date, and/or has *INCORRECT* and *MISSING* icon definitions.
 
-## [Live Flutter Example with Material Symbols Icons style and variation customization](https://timmaffett.github.io/material_symbols_icons)
+## [Live Flutter Web Example with Material Symbols Icons style and variation customization](https://timmaffett.github.io/material_symbols_icons)
 
 Here is a [live example](https://timmaffett.github.io/material_symbols_icons) of the current version of this package where you can test any Material Symbols icon name to verify it's availability.  The example also allows playing with all of the font variation options to explore further customizing the look of our Material Symbols.
 

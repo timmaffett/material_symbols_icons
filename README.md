@@ -15,23 +15,24 @@ Why another version of material symbols icons for flutter ? Because every other 
 
 Here is a [live example](https://timmaffett.github.io/material_symbols_icons) of the current version of this package where you can test any Material Symbols icon name to verify it's availability.  The example also allows playing with all of the font variation options to explore further customizing the look of our Material Symbols.
 
-This package includes an automatic generator program so that the user has the option of RE-generating the package at any time with the most current Material Symbols Icons definitions.  This program downloads the latest Material Symbols fonts from the github repository [https://github.com/google/material-design-icons](https://github.com/google/material-design-icons), and their corresponding codepoint definition files.  It will then automatically create the material_symbols_icons.dart definition source file.    This automatic generations allows this package to use Github CI routines to ensure that it is always up to date and in-sync with the latet Material Symbols defintions.
+This package includes an automatic generator program so that the user has the option of regenerating the package at any time with the most current Material Symbols Icons definitions.  This program downloads the latest Material Symbols fonts from the github repository [https://github.com/google/material-design-icons](https://github.com/google/material-design-icons), and their corresponding codepoint definition files.  It will then automatically create the material_symbols_icons.dart definition source file.    This automatic generations allows this package to use Github CI routines to ensure that it is always up to date and in-sync with the latet Material Symbols defintions.
 
 (For users of the previous Flutter alternatives for Material Symbols Icons support - No more finding an icon on [google's material symbols icon browser](https://fonts.google.com/icons?icon.style=Outlined) and then trying to use it's name, and then discovering that it is missing, or worse yet having the incorrect icon appear!)
 
 There are several options with how you reference the icons within your flutter program:
 
 1) If you are using icons from a single style (outlined, rounded or sharp) then you can import:
-  A) `package material_symbols_icons\outlined.dart` and using `MaterialSymbols.iconname` to reference outlined style icons.
-  B) `package material_symbols_icons\outlined_suffix.dart` and using `MaterialSymbolsOutlined.iconname` to reference outlined style icons
-  C) `package material_symbols_icons\rounded.dart` and using `MaterialSymbols.iconname` to reference rounded style icons.
-  D) `package material_symbols_icons\rounded_suffix.dart` and using `MaterialSymbolsRounded.iconname` to reference rounded style icons.
-  E) `package material_symbols_icons\sharp.dart` and using `MaterialSymbols.iconname` to reference sharp style icons.
-  F) `package material_symbols_icons\sharp_suffix.dart` and using `MaterialSymbolsSharp.iconname` to reference sharp style icons.
 
-  Importing the A), C) or E) (`outlined.dart`, `rounded.dart` or `sharp.dart`) versions allows you to easily swap any style out for an alternate, with changing the `import` statement being the only change in your code that is needed to switch to the alternate.  (This is becsause these files all use `MaterialSymbols` as the class and the identical icon names (with no suffix) for each icon).
+    - A) `package material_symbols_icons\outlined.dart` and using `MaterialSymbols.iconname` to reference outlined style icons.
+    - B) `package material_symbols_icons\outlined_suffix.dart` and using `MaterialSymbolsOutlined.iconname` to reference outlined style icons
+    - C) `package material_symbols_icons\rounded.dart` and using `MaterialSymbols.iconname` to reference rounded style icons.
+    - D) `package material_symbols_icons\rounded_suffix.dart` and using `MaterialSymbolsRounded.iconname` to reference rounded style icons.
+    - E) `package material_symbols_icons\sharp.dart` and using `MaterialSymbols.iconname` to reference sharp style icons.
+    - F) `package material_symbols_icons\sharp_suffix.dart` and using `MaterialSymbolsSharp.iconname` to reference sharp style icons.
 
-  Options B), D) and F) (`outlined_suffix.dart`, `rounded_suffix.dart` or `sharp_suffix.dart`) have the style name as a suffix to the `MaterialSymbols` class name (`MaterialSymbolsOutlinded`, `MaterialSymbolsRounded` and `MaterialSymbolsSharp` respectively), thus allowing more than one of them to be used simultaneously without name collisions. (ie. you could use `MaterialSymbolsRounded.developer_mode` in one place and `MaterialSymbolsSharp.check_box` in another if you prefered the rounded look for the `developer_mode` icon and the sharp look for the `check_box` icon).
+    Importing the A), C) or E) (`outlined.dart`, `rounded.dart` or `sharp.dart`) versions allows you to easily swap any style out for an alternate, with changing the `import` statement being the only change in your code that is needed to switch to the alternate style.  (This is becsause these files all use `MaterialSymbols` as the class and the identical icon names (with no suffix) for each icon).
+
+    Options B), D) and F) (`outlined_suffix.dart`, `rounded_suffix.dart` or `sharp_suffix.dart`) have the style name as a suffix to the `MaterialSymbols` class name (`MaterialSymbolsOutlinded`, `MaterialSymbolsRounded` and `MaterialSymbolsSharp` respectively), thus allowing more than one of them to be used simultaneously without name collisions. (ie. you could use `MaterialSymbolsRounded.developer_mode` in one place and `MaterialSymbolsSharp.check_box` in another if you prefered the rounded look for the `developer_mode` icon and the sharp look for the `check_box` icon).
 
 2) Alternatitely if you use icons from more than one of the styles, (or are coming from one of the previous Material Symbols Icon package) then importing `package material_symbols_icons\universal.dart` and using `MaterialSymbols.` as the base class.  This class contains outlined, rounded and sharp versions of every icon.  You access them using `MaterialSymbols.iconname_outlined`, `MaterialSymbols.iconname_rounded` or `MaterialSymbols.iconname_sharp`
 This is the largest of the options as it includes all 3 versions of the Material Symbols variable fonts (outlined, rounded and sharp).  I would imagine that most users will pick the style of the icons they prefer and use one of the specific classes from #1.  This option is included primarily for users coming from one of the pre-existing packages.
@@ -49,7 +50,8 @@ The Material Symbols Icon fonts are variable fonts, so it is possible to further
 
 ```dart
     
-    final myIcon = Icon( MaterialSymbols.settings, fill: 1, weight: 700, grade: 0.25, opticalSize: 48 );
+final myIcon = Icon( MaterialSymbols.settings,
+                        fill: 1, weight: 700, grade: 0.25, opticalSize: 48 );
 
 ```
 
@@ -70,7 +72,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.teal,
         useMaterial3: true,
         fontFamily: 'Roboto',
-        iconTheme: const IconThemeData(color: Colors.black, fill: 0, weight: 100, opticalSize: 48),
+        iconTheme: const IconThemeData(color: Colors.black,
+                                       fill: 0,
+                                       weight: 100,
+                                       opticalSize: 48),
       ),
       home: const MyHomePage(title: 'Material Symbols Icons For Flutter'),
     );
@@ -105,7 +110,8 @@ If you find yourself using more than one of the styles simultaneously this packa
 
 ```
 
-If the `setXYZVariationDefaults()` methods are used then the icons need to be created using `VariedIcon.varied()` call instead of `Icon()` directly.
+If the `setOutlinedVariationDefaults`, `setRoundedVariationDefaults` or `setSharpVariationDefaults`  methods are used then the icons need to be
+created using `VariedIcon.varied()` call instead of `Icon()` directly.
 
 ---------------------------------------------------------------
 

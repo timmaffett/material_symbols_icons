@@ -419,14 +419,12 @@ import 'material_symbols_icons.dart';
 ///  * [Icon]
 ///  * [IconButton]
 ///  * <https://fonts.google.com/icons?selected=Material+Symbols>
-/// 
+///
 /// NOTE: IMPORTANT - Because of the gross inefficiencies of dart doc ALL icon member names
-/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data. 
+/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data.
 /// The icons and corresponding symbols names follow:
 ///
-$fakeDartDocs
-
-//pub.dev does not like//@staticIconProvider
+$fakeDartDocs//pub.dev does not like//@staticIconProvider
 class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
   // This class is not meant to be instantiated or extended; this constructor
   // prevents instantiation and extension.
@@ -598,14 +596,12 @@ import 'material_symbols_icons.dart';
 ///  * [Icon]
 ///  * [IconButton]
 ///  * <https://fonts.google.com/icons?selected=Material+Symbols>
-/// 
+///
 /// NOTE: IMPORTANT - Because of the gross inefficiencies of dart doc ALL icon member names
-/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data. 
+/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data.
 /// The icons and corresponding symbols names follow:
 ///
-$fakeDartDocs
-
-//pub.dev does not like//@staticIconProvider
+$fakeDartDocs//pub.dev does not like//@staticIconProvider
 class MaterialSymbols extends MaterialSymbolsBase {
   // This class is not meant to be instantiated or extended; this constructor
   // prevents instantiation and extension.

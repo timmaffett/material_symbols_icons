@@ -6,7 +6,7 @@
 // localed at https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
 // These codepoints correspond to symbols within the corresponding variable font.
 // The font was downloaded from https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf and added to this package.
-// This file was generated 2023-03-23 00:14:52.045601 by the dart file
+// This file was generated 2023-03-23 00:20:51.940847 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -76,9 +76,9 @@ import 'material_symbols_icons.dart';
 ///  * [Icon]
 ///  * [IconButton]
 ///  * <https://fonts.google.com/icons?selected=Material+Symbols>
-/// 
+///
 /// NOTE: IMPORTANT - Because of the gross inefficiencies of dart doc ALL icon member names
-/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data. 
+/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data.
 /// The icons and corresponding symbols names follow:
 ///
 ///
@@ -6123,8 +6123,6 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">zoom_out</span> MaterialSymbolsRounded.zoom_out
 ///
 /// <span class="material-symbols-rounded">zoom_out_map</span> MaterialSymbolsRounded.zoom_out_map
-
-
 //pub.dev does not like//@staticIconProvider
 class MaterialSymbolsRounded extends MaterialSymbolsBase {
   // This class is not meant to be instantiated or extended; this constructor

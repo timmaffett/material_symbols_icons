@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-03-23 00:14:52.101609 by the dart file
+// This file was generated 2023-03-23 00:20:51.998852 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -83,9 +83,9 @@ import 'material_symbols_icons.dart';
 ///  * [Icon]
 ///  * [IconButton]
 ///  * <https://fonts.google.com/icons?selected=Material+Symbols>
-/// 
+///
 /// NOTE: IMPORTANT - Because of the gross inefficiencies of dart doc ALL icon member names
-/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data. 
+/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data.
 /// The icons and corresponding symbols names follow:
 ///
 ///
@@ -18214,8 +18214,6 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">zoom_out_map</span> MaterialSymbols.zoom_out_map_rounded
 ///
 /// <span class="material-symbols-sharp">zoom_out_map</span> MaterialSymbols.zoom_out_map_sharp
-
-
 //pub.dev does not like//@staticIconProvider
 class MaterialSymbols extends MaterialSymbolsBase {
   // This class is not meant to be instantiated or extended; this constructor

@@ -6,7 +6,7 @@
 // localed at https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
 // These codepoints correspond to symbols within the corresponding variable font.
 // The font was downloaded from https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf and added to this package.
-// This file was generated 2023-03-22 23:59:04.336552 by the dart file
+// This file was generated 2023-03-23 00:14:52.068639 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.

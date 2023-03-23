@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-03-22 23:59:04.375548 by the dart file
+// This file was generated 2023-03-23 00:14:52.101609 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -87,7 +87,7 @@ import 'material_symbols_icons.dart';
 /// NOTE: IMPORTANT - Because of the gross inefficiencies of dart doc ALL icon member names
 /// have to be marked with `@ nodoc` because it generates 12gigs of redundant data. 
 /// The icons and corresponding symbols names follow:
-/// 
+///
 ///
 /// <span class="material-symbols-outlined">10k</span> MaterialSymbols.$10k_outlined
 ///

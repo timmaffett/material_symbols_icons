@@ -6,7 +6,7 @@
 // localed at https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
 // These codepoints correspond to symbols within the corresponding variable font.
 // The font was downloaded from https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf and added to this package.
-// This file was generated 2023-03-22 23:59:04.310576 by the dart file
+// This file was generated 2023-03-23 00:14:52.045601 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -80,6049 +80,6049 @@ import 'material_symbols_icons.dart';
 /// NOTE: IMPORTANT - Because of the gross inefficiencies of dart doc ALL icon member names
 /// have to be marked with `@ nodoc` because it generates 12gigs of redundant data. 
 /// The icons and corresponding symbols names follow:
-/// 
 ///
-  /// <span class="material-symbols-rounded">10k</span> MaterialSymbolsRounded.$10k
 ///
-  /// <span class="material-symbols-rounded">10mp</span> MaterialSymbolsRounded.$10mp
+/// <span class="material-symbols-rounded">10k</span> MaterialSymbolsRounded.$10k
 ///
-  /// <span class="material-symbols-rounded">11mp</span> MaterialSymbolsRounded.$11mp
+/// <span class="material-symbols-rounded">10mp</span> MaterialSymbolsRounded.$10mp
 ///
-  /// <span class="material-symbols-rounded">123</span> MaterialSymbolsRounded.$123
+/// <span class="material-symbols-rounded">11mp</span> MaterialSymbolsRounded.$11mp
 ///
-  /// <span class="material-symbols-rounded">12mp</span> MaterialSymbolsRounded.$12mp
+/// <span class="material-symbols-rounded">123</span> MaterialSymbolsRounded.$123
 ///
-  /// <span class="material-symbols-rounded">13mp</span> MaterialSymbolsRounded.$13mp
+/// <span class="material-symbols-rounded">12mp</span> MaterialSymbolsRounded.$12mp
 ///
-  /// <span class="material-symbols-rounded">14mp</span> MaterialSymbolsRounded.$14mp
+/// <span class="material-symbols-rounded">13mp</span> MaterialSymbolsRounded.$13mp
 ///
-  /// <span class="material-symbols-rounded">15mp</span> MaterialSymbolsRounded.$15mp
+/// <span class="material-symbols-rounded">14mp</span> MaterialSymbolsRounded.$14mp
 ///
-  /// <span class="material-symbols-rounded">16mp</span> MaterialSymbolsRounded.$16mp
+/// <span class="material-symbols-rounded">15mp</span> MaterialSymbolsRounded.$15mp
 ///
-  /// <span class="material-symbols-rounded">17mp</span> MaterialSymbolsRounded.$17mp
+/// <span class="material-symbols-rounded">16mp</span> MaterialSymbolsRounded.$16mp
 ///
-  /// <span class="material-symbols-rounded">18_up_rating</span> MaterialSymbolsRounded.$18_up_rating
+/// <span class="material-symbols-rounded">17mp</span> MaterialSymbolsRounded.$17mp
 ///
-  /// <span class="material-symbols-rounded">18mp</span> MaterialSymbolsRounded.$18mp
+/// <span class="material-symbols-rounded">18_up_rating</span> MaterialSymbolsRounded.$18_up_rating
 ///
-  /// <span class="material-symbols-rounded">19mp</span> MaterialSymbolsRounded.$19mp
+/// <span class="material-symbols-rounded">18mp</span> MaterialSymbolsRounded.$18mp
 ///
-  /// <span class="material-symbols-rounded">1k</span> MaterialSymbolsRounded.$1k
+/// <span class="material-symbols-rounded">19mp</span> MaterialSymbolsRounded.$19mp
 ///
-  /// <span class="material-symbols-rounded">1k_plus</span> MaterialSymbolsRounded.$1k_plus
+/// <span class="material-symbols-rounded">1k</span> MaterialSymbolsRounded.$1k
 ///
-  /// <span class="material-symbols-rounded">1x_mobiledata</span> MaterialSymbolsRounded.$1x_mobiledata
+/// <span class="material-symbols-rounded">1k_plus</span> MaterialSymbolsRounded.$1k_plus
 ///
-  /// <span class="material-symbols-rounded">1x_mobiledata_badge</span> MaterialSymbolsRounded.$1x_mobiledata_badge
+/// <span class="material-symbols-rounded">1x_mobiledata</span> MaterialSymbolsRounded.$1x_mobiledata
 ///
-  /// <span class="material-symbols-rounded">20mp</span> MaterialSymbolsRounded.$20mp
+/// <span class="material-symbols-rounded">1x_mobiledata_badge</span> MaterialSymbolsRounded.$1x_mobiledata_badge
 ///
-  /// <span class="material-symbols-rounded">21mp</span> MaterialSymbolsRounded.$21mp
+/// <span class="material-symbols-rounded">20mp</span> MaterialSymbolsRounded.$20mp
 ///
-  /// <span class="material-symbols-rounded">22mp</span> MaterialSymbolsRounded.$22mp
+/// <span class="material-symbols-rounded">21mp</span> MaterialSymbolsRounded.$21mp
 ///
-  /// <span class="material-symbols-rounded">23mp</span> MaterialSymbolsRounded.$23mp
+/// <span class="material-symbols-rounded">22mp</span> MaterialSymbolsRounded.$22mp
 ///
-  /// <span class="material-symbols-rounded">24mp</span> MaterialSymbolsRounded.$24mp
+/// <span class="material-symbols-rounded">23mp</span> MaterialSymbolsRounded.$23mp
 ///
-  /// <span class="material-symbols-rounded">2k</span> MaterialSymbolsRounded.$2k
+/// <span class="material-symbols-rounded">24mp</span> MaterialSymbolsRounded.$24mp
 ///
-  /// <span class="material-symbols-rounded">2k_plus</span> MaterialSymbolsRounded.$2k_plus
+/// <span class="material-symbols-rounded">2k</span> MaterialSymbolsRounded.$2k
 ///
-  /// <span class="material-symbols-rounded">2mp</span> MaterialSymbolsRounded.$2mp
+/// <span class="material-symbols-rounded">2k_plus</span> MaterialSymbolsRounded.$2k_plus
 ///
-  /// <span class="material-symbols-rounded">30fps</span> MaterialSymbolsRounded.$30fps
+/// <span class="material-symbols-rounded">2mp</span> MaterialSymbolsRounded.$2mp
 ///
-  /// <span class="material-symbols-rounded">30fps_select</span> MaterialSymbolsRounded.$30fps_select
+/// <span class="material-symbols-rounded">30fps</span> MaterialSymbolsRounded.$30fps
 ///
-  /// <span class="material-symbols-rounded">360</span> MaterialSymbolsRounded.$360
+/// <span class="material-symbols-rounded">30fps_select</span> MaterialSymbolsRounded.$30fps_select
 ///
-  /// <span class="material-symbols-rounded">3d_rotation</span> MaterialSymbolsRounded.$3d_rotation
+/// <span class="material-symbols-rounded">360</span> MaterialSymbolsRounded.$360
 ///
-  /// <span class="material-symbols-rounded">3g_mobiledata</span> MaterialSymbolsRounded.$3g_mobiledata
+/// <span class="material-symbols-rounded">3d_rotation</span> MaterialSymbolsRounded.$3d_rotation
 ///
-  /// <span class="material-symbols-rounded">3g_mobiledata_badge</span> MaterialSymbolsRounded.$3g_mobiledata_badge
+/// <span class="material-symbols-rounded">3g_mobiledata</span> MaterialSymbolsRounded.$3g_mobiledata
 ///
-  /// <span class="material-symbols-rounded">3k</span> MaterialSymbolsRounded.$3k
+/// <span class="material-symbols-rounded">3g_mobiledata_badge</span> MaterialSymbolsRounded.$3g_mobiledata_badge
 ///
-  /// <span class="material-symbols-rounded">3k_plus</span> MaterialSymbolsRounded.$3k_plus
+/// <span class="material-symbols-rounded">3k</span> MaterialSymbolsRounded.$3k
 ///
-  /// <span class="material-symbols-rounded">3mp</span> MaterialSymbolsRounded.$3mp
+/// <span class="material-symbols-rounded">3k_plus</span> MaterialSymbolsRounded.$3k_plus
 ///
-  /// <span class="material-symbols-rounded">3p</span> MaterialSymbolsRounded.$3p
+/// <span class="material-symbols-rounded">3mp</span> MaterialSymbolsRounded.$3mp
 ///
-  /// <span class="material-symbols-rounded">4g_mobiledata</span> MaterialSymbolsRounded.$4g_mobiledata
+/// <span class="material-symbols-rounded">3p</span> MaterialSymbolsRounded.$3p
 ///
-  /// <span class="material-symbols-rounded">4g_mobiledata_badge</span> MaterialSymbolsRounded.$4g_mobiledata_badge
+/// <span class="material-symbols-rounded">4g_mobiledata</span> MaterialSymbolsRounded.$4g_mobiledata
 ///
-  /// <span class="material-symbols-rounded">4g_plus_mobiledata</span> MaterialSymbolsRounded.$4g_plus_mobiledata
+/// <span class="material-symbols-rounded">4g_mobiledata_badge</span> MaterialSymbolsRounded.$4g_mobiledata_badge
 ///
-  /// <span class="material-symbols-rounded">4k</span> MaterialSymbolsRounded.$4k
+/// <span class="material-symbols-rounded">4g_plus_mobiledata</span> MaterialSymbolsRounded.$4g_plus_mobiledata
 ///
-  /// <span class="material-symbols-rounded">4k_plus</span> MaterialSymbolsRounded.$4k_plus
+/// <span class="material-symbols-rounded">4k</span> MaterialSymbolsRounded.$4k
 ///
-  /// <span class="material-symbols-rounded">4mp</span> MaterialSymbolsRounded.$4mp
+/// <span class="material-symbols-rounded">4k_plus</span> MaterialSymbolsRounded.$4k_plus
 ///
-  /// <span class="material-symbols-rounded">50mp</span> MaterialSymbolsRounded.$50mp
+/// <span class="material-symbols-rounded">4mp</span> MaterialSymbolsRounded.$4mp
 ///
-  /// <span class="material-symbols-rounded">5g</span> MaterialSymbolsRounded.$5g
+/// <span class="material-symbols-rounded">50mp</span> MaterialSymbolsRounded.$50mp
 ///
-  /// <span class="material-symbols-rounded">5g_mobiledata_badge</span> MaterialSymbolsRounded.$5g_mobiledata_badge
+/// <span class="material-symbols-rounded">5g</span> MaterialSymbolsRounded.$5g
 ///
-  /// <span class="material-symbols-rounded">5k</span> MaterialSymbolsRounded.$5k
+/// <span class="material-symbols-rounded">5g_mobiledata_badge</span> MaterialSymbolsRounded.$5g_mobiledata_badge
 ///
-  /// <span class="material-symbols-rounded">5k_plus</span> MaterialSymbolsRounded.$5k_plus
+/// <span class="material-symbols-rounded">5k</span> MaterialSymbolsRounded.$5k
 ///
-  /// <span class="material-symbols-rounded">5mp</span> MaterialSymbolsRounded.$5mp
+/// <span class="material-symbols-rounded">5k_plus</span> MaterialSymbolsRounded.$5k_plus
 ///
-  /// <span class="material-symbols-rounded">60fps</span> MaterialSymbolsRounded.$60fps
+/// <span class="material-symbols-rounded">5mp</span> MaterialSymbolsRounded.$5mp
 ///
-  /// <span class="material-symbols-rounded">60fps_select</span> MaterialSymbolsRounded.$60fps_select
+/// <span class="material-symbols-rounded">60fps</span> MaterialSymbolsRounded.$60fps
 ///
-  /// <span class="material-symbols-rounded">6_ft_apart</span> MaterialSymbolsRounded.$6_ft_apart
+/// <span class="material-symbols-rounded">60fps_select</span> MaterialSymbolsRounded.$60fps_select
 ///
-  /// <span class="material-symbols-rounded">6k</span> MaterialSymbolsRounded.$6k
+/// <span class="material-symbols-rounded">6_ft_apart</span> MaterialSymbolsRounded.$6_ft_apart
 ///
-  /// <span class="material-symbols-rounded">6k_plus</span> MaterialSymbolsRounded.$6k_plus
+/// <span class="material-symbols-rounded">6k</span> MaterialSymbolsRounded.$6k
 ///
-  /// <span class="material-symbols-rounded">6mp</span> MaterialSymbolsRounded.$6mp
+/// <span class="material-symbols-rounded">6k_plus</span> MaterialSymbolsRounded.$6k_plus
 ///
-  /// <span class="material-symbols-rounded">7k</span> MaterialSymbolsRounded.$7k
+/// <span class="material-symbols-rounded">6mp</span> MaterialSymbolsRounded.$6mp
 ///
-  /// <span class="material-symbols-rounded">7k_plus</span> MaterialSymbolsRounded.$7k_plus
+/// <span class="material-symbols-rounded">7k</span> MaterialSymbolsRounded.$7k
 ///
-  /// <span class="material-symbols-rounded">7mp</span> MaterialSymbolsRounded.$7mp
+/// <span class="material-symbols-rounded">7k_plus</span> MaterialSymbolsRounded.$7k_plus
 ///
-  /// <span class="material-symbols-rounded">8k</span> MaterialSymbolsRounded.$8k
+/// <span class="material-symbols-rounded">7mp</span> MaterialSymbolsRounded.$7mp
 ///
-  /// <span class="material-symbols-rounded">8k_plus</span> MaterialSymbolsRounded.$8k_plus
+/// <span class="material-symbols-rounded">8k</span> MaterialSymbolsRounded.$8k
 ///
-  /// <span class="material-symbols-rounded">8mp</span> MaterialSymbolsRounded.$8mp
+/// <span class="material-symbols-rounded">8k_plus</span> MaterialSymbolsRounded.$8k_plus
 ///
-  /// <span class="material-symbols-rounded">9k</span> MaterialSymbolsRounded.$9k
+/// <span class="material-symbols-rounded">8mp</span> MaterialSymbolsRounded.$8mp
 ///
-  /// <span class="material-symbols-rounded">9k_plus</span> MaterialSymbolsRounded.$9k_plus
+/// <span class="material-symbols-rounded">9k</span> MaterialSymbolsRounded.$9k
 ///
-  /// <span class="material-symbols-rounded">9mp</span> MaterialSymbolsRounded.$9mp
+/// <span class="material-symbols-rounded">9k_plus</span> MaterialSymbolsRounded.$9k_plus
 ///
-  /// <span class="material-symbols-rounded">abc</span> MaterialSymbolsRounded.abc
+/// <span class="material-symbols-rounded">9mp</span> MaterialSymbolsRounded.$9mp
 ///
-  /// <span class="material-symbols-rounded">ac_unit</span> MaterialSymbolsRounded.ac_unit
+/// <span class="material-symbols-rounded">abc</span> MaterialSymbolsRounded.abc
 ///
-  /// <span class="material-symbols-rounded">access_alarm</span> MaterialSymbolsRounded.access_alarm
+/// <span class="material-symbols-rounded">ac_unit</span> MaterialSymbolsRounded.ac_unit
 ///
-  /// <span class="material-symbols-rounded">access_alarms</span> MaterialSymbolsRounded.access_alarms
+/// <span class="material-symbols-rounded">access_alarm</span> MaterialSymbolsRounded.access_alarm
 ///
-  /// <span class="material-symbols-rounded">access_time</span> MaterialSymbolsRounded.access_time
+/// <span class="material-symbols-rounded">access_alarms</span> MaterialSymbolsRounded.access_alarms
 ///
-  /// <span class="material-symbols-rounded">access_time_filled</span> MaterialSymbolsRounded.access_time_filled
+/// <span class="material-symbols-rounded">access_time</span> MaterialSymbolsRounded.access_time
 ///
-  /// <span class="material-symbols-rounded">accessibility</span> MaterialSymbolsRounded.accessibility
+/// <span class="material-symbols-rounded">access_time_filled</span> MaterialSymbolsRounded.access_time_filled
 ///
-  /// <span class="material-symbols-rounded">accessibility_new</span> MaterialSymbolsRounded.accessibility_new
+/// <span class="material-symbols-rounded">accessibility</span> MaterialSymbolsRounded.accessibility
 ///
-  /// <span class="material-symbols-rounded">accessible</span> MaterialSymbolsRounded.accessible
+/// <span class="material-symbols-rounded">accessibility_new</span> MaterialSymbolsRounded.accessibility_new
 ///
-  /// <span class="material-symbols-rounded">accessible_forward</span> MaterialSymbolsRounded.accessible_forward
+/// <span class="material-symbols-rounded">accessible</span> MaterialSymbolsRounded.accessible
 ///
-  /// <span class="material-symbols-rounded">account_balance</span> MaterialSymbolsRounded.account_balance
+/// <span class="material-symbols-rounded">accessible_forward</span> MaterialSymbolsRounded.accessible_forward
 ///
-  /// <span class="material-symbols-rounded">account_balance_wallet</span> MaterialSymbolsRounded.account_balance_wallet
+/// <span class="material-symbols-rounded">account_balance</span> MaterialSymbolsRounded.account_balance
 ///
-  /// <span class="material-symbols-rounded">account_box</span> MaterialSymbolsRounded.account_box
+/// <span class="material-symbols-rounded">account_balance_wallet</span> MaterialSymbolsRounded.account_balance_wallet
 ///
-  /// <span class="material-symbols-rounded">account_circle</span> MaterialSymbolsRounded.account_circle
+/// <span class="material-symbols-rounded">account_box</span> MaterialSymbolsRounded.account_box
 ///
-  /// <span class="material-symbols-rounded">account_circle_filled</span> MaterialSymbolsRounded.account_circle_filled
+/// <span class="material-symbols-rounded">account_circle</span> MaterialSymbolsRounded.account_circle
 ///
-  /// <span class="material-symbols-rounded">account_circle_off</span> MaterialSymbolsRounded.account_circle_off
+/// <span class="material-symbols-rounded">account_circle_filled</span> MaterialSymbolsRounded.account_circle_filled
 ///
-  /// <span class="material-symbols-rounded">account_tree</span> MaterialSymbolsRounded.account_tree
+/// <span class="material-symbols-rounded">account_circle_off</span> MaterialSymbolsRounded.account_circle_off
 ///
-  /// <span class="material-symbols-rounded">activity_zone</span> MaterialSymbolsRounded.activity_zone
+/// <span class="material-symbols-rounded">account_tree</span> MaterialSymbolsRounded.account_tree
 ///
-  /// <span class="material-symbols-rounded">acute</span> MaterialSymbolsRounded.acute
+/// <span class="material-symbols-rounded">activity_zone</span> MaterialSymbolsRounded.activity_zone
 ///
-  /// <span class="material-symbols-rounded">ad_off</span> MaterialSymbolsRounded.ad_off
+/// <span class="material-symbols-rounded">acute</span> MaterialSymbolsRounded.acute
 ///
-  /// <span class="material-symbols-rounded">ad_units</span> MaterialSymbolsRounded.ad_units
+/// <span class="material-symbols-rounded">ad_off</span> MaterialSymbolsRounded.ad_off
 ///
-  /// <span class="material-symbols-rounded">adb</span> MaterialSymbolsRounded.adb
+/// <span class="material-symbols-rounded">ad_units</span> MaterialSymbolsRounded.ad_units
 ///
-  /// <span class="material-symbols-rounded">add</span> MaterialSymbolsRounded.add
+/// <span class="material-symbols-rounded">adb</span> MaterialSymbolsRounded.adb
 ///
-  /// <span class="material-symbols-rounded">add_a_photo</span> MaterialSymbolsRounded.add_a_photo
+/// <span class="material-symbols-rounded">add</span> MaterialSymbolsRounded.add
 ///
-  /// <span class="material-symbols-rounded">add_alarm</span> MaterialSymbolsRounded.add_alarm
+/// <span class="material-symbols-rounded">add_a_photo</span> MaterialSymbolsRounded.add_a_photo
 ///
-  /// <span class="material-symbols-rounded">add_alert</span> MaterialSymbolsRounded.add_alert
+/// <span class="material-symbols-rounded">add_alarm</span> MaterialSymbolsRounded.add_alarm
 ///
-  /// <span class="material-symbols-rounded">add_box</span> MaterialSymbolsRounded.add_box
+/// <span class="material-symbols-rounded">add_alert</span> MaterialSymbolsRounded.add_alert
 ///
-  /// <span class="material-symbols-rounded">add_business</span> MaterialSymbolsRounded.add_business
+/// <span class="material-symbols-rounded">add_box</span> MaterialSymbolsRounded.add_box
 ///
-  /// <span class="material-symbols-rounded">add_call</span> MaterialSymbolsRounded.add_call
+/// <span class="material-symbols-rounded">add_business</span> MaterialSymbolsRounded.add_business
 ///
-  /// <span class="material-symbols-rounded">add_card</span> MaterialSymbolsRounded.add_card
+/// <span class="material-symbols-rounded">add_call</span> MaterialSymbolsRounded.add_call
 ///
-  /// <span class="material-symbols-rounded">add_chart</span> MaterialSymbolsRounded.add_chart
+/// <span class="material-symbols-rounded">add_card</span> MaterialSymbolsRounded.add_card
 ///
-  /// <span class="material-symbols-rounded">add_circle</span> MaterialSymbolsRounded.add_circle
+/// <span class="material-symbols-rounded">add_chart</span> MaterialSymbolsRounded.add_chart
 ///
-  /// <span class="material-symbols-rounded">add_circle_outline</span> MaterialSymbolsRounded.add_circle_outline
+/// <span class="material-symbols-rounded">add_circle</span> MaterialSymbolsRounded.add_circle
 ///
-  /// <span class="material-symbols-rounded">add_comment</span> MaterialSymbolsRounded.add_comment
+/// <span class="material-symbols-rounded">add_circle_outline</span> MaterialSymbolsRounded.add_circle_outline
 ///
-  /// <span class="material-symbols-rounded">add_home</span> MaterialSymbolsRounded.add_home
+/// <span class="material-symbols-rounded">add_comment</span> MaterialSymbolsRounded.add_comment
 ///
-  /// <span class="material-symbols-rounded">add_home_work</span> MaterialSymbolsRounded.add_home_work
+/// <span class="material-symbols-rounded">add_home</span> MaterialSymbolsRounded.add_home
 ///
-  /// <span class="material-symbols-rounded">add_ic_call</span> MaterialSymbolsRounded.add_ic_call
+/// <span class="material-symbols-rounded">add_home_work</span> MaterialSymbolsRounded.add_home_work
 ///
-  /// <span class="material-symbols-rounded">add_link</span> MaterialSymbolsRounded.add_link
+/// <span class="material-symbols-rounded">add_ic_call</span> MaterialSymbolsRounded.add_ic_call
 ///
-  /// <span class="material-symbols-rounded">add_location</span> MaterialSymbolsRounded.add_location
+/// <span class="material-symbols-rounded">add_link</span> MaterialSymbolsRounded.add_link
 ///
-  /// <span class="material-symbols-rounded">add_location_alt</span> MaterialSymbolsRounded.add_location_alt
+/// <span class="material-symbols-rounded">add_location</span> MaterialSymbolsRounded.add_location
 ///
-  /// <span class="material-symbols-rounded">add_moderator</span> MaterialSymbolsRounded.add_moderator
+/// <span class="material-symbols-rounded">add_location_alt</span> MaterialSymbolsRounded.add_location_alt
 ///
-  /// <span class="material-symbols-rounded">add_notes</span> MaterialSymbolsRounded.add_notes
+/// <span class="material-symbols-rounded">add_moderator</span> MaterialSymbolsRounded.add_moderator
 ///
-  /// <span class="material-symbols-rounded">add_photo_alternate</span> MaterialSymbolsRounded.add_photo_alternate
+/// <span class="material-symbols-rounded">add_notes</span> MaterialSymbolsRounded.add_notes
 ///
-  /// <span class="material-symbols-rounded">add_reaction</span> MaterialSymbolsRounded.add_reaction
+/// <span class="material-symbols-rounded">add_photo_alternate</span> MaterialSymbolsRounded.add_photo_alternate
 ///
-  /// <span class="material-symbols-rounded">add_road</span> MaterialSymbolsRounded.add_road
+/// <span class="material-symbols-rounded">add_reaction</span> MaterialSymbolsRounded.add_reaction
 ///
-  /// <span class="material-symbols-rounded">add_shopping_cart</span> MaterialSymbolsRounded.add_shopping_cart
+/// <span class="material-symbols-rounded">add_road</span> MaterialSymbolsRounded.add_road
 ///
-  /// <span class="material-symbols-rounded">add_task</span> MaterialSymbolsRounded.add_task
+/// <span class="material-symbols-rounded">add_shopping_cart</span> MaterialSymbolsRounded.add_shopping_cart
 ///
-  /// <span class="material-symbols-rounded">add_to_drive</span> MaterialSymbolsRounded.add_to_drive
+/// <span class="material-symbols-rounded">add_task</span> MaterialSymbolsRounded.add_task
 ///
-  /// <span class="material-symbols-rounded">add_to_home_screen</span> MaterialSymbolsRounded.add_to_home_screen
+/// <span class="material-symbols-rounded">add_to_drive</span> MaterialSymbolsRounded.add_to_drive
 ///
-  /// <span class="material-symbols-rounded">add_to_photos</span> MaterialSymbolsRounded.add_to_photos
+/// <span class="material-symbols-rounded">add_to_home_screen</span> MaterialSymbolsRounded.add_to_home_screen
 ///
-  /// <span class="material-symbols-rounded">add_to_queue</span> MaterialSymbolsRounded.add_to_queue
+/// <span class="material-symbols-rounded">add_to_photos</span> MaterialSymbolsRounded.add_to_photos
 ///
-  /// <span class="material-symbols-rounded">addchart</span> MaterialSymbolsRounded.addchart
+/// <span class="material-symbols-rounded">add_to_queue</span> MaterialSymbolsRounded.add_to_queue
 ///
-  /// <span class="material-symbols-rounded">adf_scanner</span> MaterialSymbolsRounded.adf_scanner
+/// <span class="material-symbols-rounded">addchart</span> MaterialSymbolsRounded.addchart
 ///
-  /// <span class="material-symbols-rounded">adjust</span> MaterialSymbolsRounded.adjust
+/// <span class="material-symbols-rounded">adf_scanner</span> MaterialSymbolsRounded.adf_scanner
 ///
-  /// <span class="material-symbols-rounded">admin_meds</span> MaterialSymbolsRounded.admin_meds
+/// <span class="material-symbols-rounded">adjust</span> MaterialSymbolsRounded.adjust
 ///
-  /// <span class="material-symbols-rounded">admin_panel_settings</span> MaterialSymbolsRounded.admin_panel_settings
+/// <span class="material-symbols-rounded">admin_meds</span> MaterialSymbolsRounded.admin_meds
 ///
-  /// <span class="material-symbols-rounded">ads_click</span> MaterialSymbolsRounded.ads_click
+/// <span class="material-symbols-rounded">admin_panel_settings</span> MaterialSymbolsRounded.admin_panel_settings
 ///
-  /// <span class="material-symbols-rounded">agender</span> MaterialSymbolsRounded.agender
+/// <span class="material-symbols-rounded">ads_click</span> MaterialSymbolsRounded.ads_click
 ///
-  /// <span class="material-symbols-rounded">agriculture</span> MaterialSymbolsRounded.agriculture
+/// <span class="material-symbols-rounded">agender</span> MaterialSymbolsRounded.agender
 ///
-  /// <span class="material-symbols-rounded">air</span> MaterialSymbolsRounded.air
+/// <span class="material-symbols-rounded">agriculture</span> MaterialSymbolsRounded.agriculture
 ///
-  /// <span class="material-symbols-rounded">air_freshener</span> MaterialSymbolsRounded.air_freshener
+/// <span class="material-symbols-rounded">air</span> MaterialSymbolsRounded.air
 ///
-  /// <span class="material-symbols-rounded">air_purifier_gen</span> MaterialSymbolsRounded.air_purifier_gen
+/// <span class="material-symbols-rounded">air_freshener</span> MaterialSymbolsRounded.air_freshener
 ///
-  /// <span class="material-symbols-rounded">airline_seat_flat</span> MaterialSymbolsRounded.airline_seat_flat
+/// <span class="material-symbols-rounded">air_purifier_gen</span> MaterialSymbolsRounded.air_purifier_gen
 ///
-  /// <span class="material-symbols-rounded">airline_seat_flat_angled</span> MaterialSymbolsRounded.airline_seat_flat_angled
+/// <span class="material-symbols-rounded">airline_seat_flat</span> MaterialSymbolsRounded.airline_seat_flat
 ///
-  /// <span class="material-symbols-rounded">airline_seat_individual_suite</span> MaterialSymbolsRounded.airline_seat_individual_suite
+/// <span class="material-symbols-rounded">airline_seat_flat_angled</span> MaterialSymbolsRounded.airline_seat_flat_angled
 ///
-  /// <span class="material-symbols-rounded">airline_seat_legroom_extra</span> MaterialSymbolsRounded.airline_seat_legroom_extra
+/// <span class="material-symbols-rounded">airline_seat_individual_suite</span> MaterialSymbolsRounded.airline_seat_individual_suite
 ///
-  /// <span class="material-symbols-rounded">airline_seat_legroom_normal</span> MaterialSymbolsRounded.airline_seat_legroom_normal
+/// <span class="material-symbols-rounded">airline_seat_legroom_extra</span> MaterialSymbolsRounded.airline_seat_legroom_extra
 ///
-  /// <span class="material-symbols-rounded">airline_seat_legroom_reduced</span> MaterialSymbolsRounded.airline_seat_legroom_reduced
+/// <span class="material-symbols-rounded">airline_seat_legroom_normal</span> MaterialSymbolsRounded.airline_seat_legroom_normal
 ///
-  /// <span class="material-symbols-rounded">airline_seat_recline_extra</span> MaterialSymbolsRounded.airline_seat_recline_extra
+/// <span class="material-symbols-rounded">airline_seat_legroom_reduced</span> MaterialSymbolsRounded.airline_seat_legroom_reduced
 ///
-  /// <span class="material-symbols-rounded">airline_seat_recline_normal</span> MaterialSymbolsRounded.airline_seat_recline_normal
+/// <span class="material-symbols-rounded">airline_seat_recline_extra</span> MaterialSymbolsRounded.airline_seat_recline_extra
 ///
-  /// <span class="material-symbols-rounded">airline_stops</span> MaterialSymbolsRounded.airline_stops
+/// <span class="material-symbols-rounded">airline_seat_recline_normal</span> MaterialSymbolsRounded.airline_seat_recline_normal
 ///
-  /// <span class="material-symbols-rounded">airlines</span> MaterialSymbolsRounded.airlines
+/// <span class="material-symbols-rounded">airline_stops</span> MaterialSymbolsRounded.airline_stops
 ///
-  /// <span class="material-symbols-rounded">airplane_ticket</span> MaterialSymbolsRounded.airplane_ticket
+/// <span class="material-symbols-rounded">airlines</span> MaterialSymbolsRounded.airlines
 ///
-  /// <span class="material-symbols-rounded">airplanemode_active</span> MaterialSymbolsRounded.airplanemode_active
+/// <span class="material-symbols-rounded">airplane_ticket</span> MaterialSymbolsRounded.airplane_ticket
 ///
-  /// <span class="material-symbols-rounded">airplanemode_inactive</span> MaterialSymbolsRounded.airplanemode_inactive
+/// <span class="material-symbols-rounded">airplanemode_active</span> MaterialSymbolsRounded.airplanemode_active
 ///
-  /// <span class="material-symbols-rounded">airplay</span> MaterialSymbolsRounded.airplay
+/// <span class="material-symbols-rounded">airplanemode_inactive</span> MaterialSymbolsRounded.airplanemode_inactive
 ///
-  /// <span class="material-symbols-rounded">airport_shuttle</span> MaterialSymbolsRounded.airport_shuttle
+/// <span class="material-symbols-rounded">airplay</span> MaterialSymbolsRounded.airplay
 ///
-  /// <span class="material-symbols-rounded">airware</span> MaterialSymbolsRounded.airware
+/// <span class="material-symbols-rounded">airport_shuttle</span> MaterialSymbolsRounded.airport_shuttle
 ///
-  /// <span class="material-symbols-rounded">airwave</span> MaterialSymbolsRounded.airwave
+/// <span class="material-symbols-rounded">airware</span> MaterialSymbolsRounded.airware
 ///
-  /// <span class="material-symbols-rounded">alarm</span> MaterialSymbolsRounded.alarm
+/// <span class="material-symbols-rounded">airwave</span> MaterialSymbolsRounded.airwave
 ///
-  /// <span class="material-symbols-rounded">alarm_add</span> MaterialSymbolsRounded.alarm_add
+/// <span class="material-symbols-rounded">alarm</span> MaterialSymbolsRounded.alarm
 ///
-  /// <span class="material-symbols-rounded">alarm_off</span> MaterialSymbolsRounded.alarm_off
+/// <span class="material-symbols-rounded">alarm_add</span> MaterialSymbolsRounded.alarm_add
 ///
-  /// <span class="material-symbols-rounded">alarm_on</span> MaterialSymbolsRounded.alarm_on
+/// <span class="material-symbols-rounded">alarm_off</span> MaterialSymbolsRounded.alarm_off
 ///
-  /// <span class="material-symbols-rounded">alarm_smart_wake</span> MaterialSymbolsRounded.alarm_smart_wake
+/// <span class="material-symbols-rounded">alarm_on</span> MaterialSymbolsRounded.alarm_on
 ///
-  /// <span class="material-symbols-rounded">album</span> MaterialSymbolsRounded.album
+/// <span class="material-symbols-rounded">alarm_smart_wake</span> MaterialSymbolsRounded.alarm_smart_wake
 ///
-  /// <span class="material-symbols-rounded">align_center</span> MaterialSymbolsRounded.align_center
+/// <span class="material-symbols-rounded">album</span> MaterialSymbolsRounded.album
 ///
-  /// <span class="material-symbols-rounded">align_end</span> MaterialSymbolsRounded.align_end
+/// <span class="material-symbols-rounded">align_center</span> MaterialSymbolsRounded.align_center
 ///
-  /// <span class="material-symbols-rounded">align_flex_center</span> MaterialSymbolsRounded.align_flex_center
+/// <span class="material-symbols-rounded">align_end</span> MaterialSymbolsRounded.align_end
 ///
-  /// <span class="material-symbols-rounded">align_flex_end</span> MaterialSymbolsRounded.align_flex_end
+/// <span class="material-symbols-rounded">align_flex_center</span> MaterialSymbolsRounded.align_flex_center
 ///
-  /// <span class="material-symbols-rounded">align_flex_start</span> MaterialSymbolsRounded.align_flex_start
+/// <span class="material-symbols-rounded">align_flex_end</span> MaterialSymbolsRounded.align_flex_end
 ///
-  /// <span class="material-symbols-rounded">align_horizontal_center</span> MaterialSymbolsRounded.align_horizontal_center
+/// <span class="material-symbols-rounded">align_flex_start</span> MaterialSymbolsRounded.align_flex_start
 ///
-  /// <span class="material-symbols-rounded">align_horizontal_left</span> MaterialSymbolsRounded.align_horizontal_left
+/// <span class="material-symbols-rounded">align_horizontal_center</span> MaterialSymbolsRounded.align_horizontal_center
 ///
-  /// <span class="material-symbols-rounded">align_horizontal_right</span> MaterialSymbolsRounded.align_horizontal_right
+/// <span class="material-symbols-rounded">align_horizontal_left</span> MaterialSymbolsRounded.align_horizontal_left
 ///
-  /// <span class="material-symbols-rounded">align_items_stretch</span> MaterialSymbolsRounded.align_items_stretch
+/// <span class="material-symbols-rounded">align_horizontal_right</span> MaterialSymbolsRounded.align_horizontal_right
 ///
-  /// <span class="material-symbols-rounded">align_justify_center</span> MaterialSymbolsRounded.align_justify_center
+/// <span class="material-symbols-rounded">align_items_stretch</span> MaterialSymbolsRounded.align_items_stretch
 ///
-  /// <span class="material-symbols-rounded">align_justify_flex_end</span> MaterialSymbolsRounded.align_justify_flex_end
+/// <span class="material-symbols-rounded">align_justify_center</span> MaterialSymbolsRounded.align_justify_center
 ///
-  /// <span class="material-symbols-rounded">align_justify_flex_start</span> MaterialSymbolsRounded.align_justify_flex_start
+/// <span class="material-symbols-rounded">align_justify_flex_end</span> MaterialSymbolsRounded.align_justify_flex_end
 ///
-  /// <span class="material-symbols-rounded">align_justify_space_around</span> MaterialSymbolsRounded.align_justify_space_around
+/// <span class="material-symbols-rounded">align_justify_flex_start</span> MaterialSymbolsRounded.align_justify_flex_start
 ///
-  /// <span class="material-symbols-rounded">align_justify_space_between</span> MaterialSymbolsRounded.align_justify_space_between
+/// <span class="material-symbols-rounded">align_justify_space_around</span> MaterialSymbolsRounded.align_justify_space_around
 ///
-  /// <span class="material-symbols-rounded">align_justify_space_even</span> MaterialSymbolsRounded.align_justify_space_even
+/// <span class="material-symbols-rounded">align_justify_space_between</span> MaterialSymbolsRounded.align_justify_space_between
 ///
-  /// <span class="material-symbols-rounded">align_justify_stretch</span> MaterialSymbolsRounded.align_justify_stretch
+/// <span class="material-symbols-rounded">align_justify_space_even</span> MaterialSymbolsRounded.align_justify_space_even
 ///
-  /// <span class="material-symbols-rounded">align_self_stretch</span> MaterialSymbolsRounded.align_self_stretch
+/// <span class="material-symbols-rounded">align_justify_stretch</span> MaterialSymbolsRounded.align_justify_stretch
 ///
-  /// <span class="material-symbols-rounded">align_space_around</span> MaterialSymbolsRounded.align_space_around
+/// <span class="material-symbols-rounded">align_self_stretch</span> MaterialSymbolsRounded.align_self_stretch
 ///
-  /// <span class="material-symbols-rounded">align_space_between</span> MaterialSymbolsRounded.align_space_between
+/// <span class="material-symbols-rounded">align_space_around</span> MaterialSymbolsRounded.align_space_around
 ///
-  /// <span class="material-symbols-rounded">align_space_even</span> MaterialSymbolsRounded.align_space_even
+/// <span class="material-symbols-rounded">align_space_between</span> MaterialSymbolsRounded.align_space_between
 ///
-  /// <span class="material-symbols-rounded">align_start</span> MaterialSymbolsRounded.align_start
+/// <span class="material-symbols-rounded">align_space_even</span> MaterialSymbolsRounded.align_space_even
 ///
-  /// <span class="material-symbols-rounded">align_stretch</span> MaterialSymbolsRounded.align_stretch
+/// <span class="material-symbols-rounded">align_start</span> MaterialSymbolsRounded.align_start
 ///
-  /// <span class="material-symbols-rounded">align_vertical_bottom</span> MaterialSymbolsRounded.align_vertical_bottom
+/// <span class="material-symbols-rounded">align_stretch</span> MaterialSymbolsRounded.align_stretch
 ///
-  /// <span class="material-symbols-rounded">align_vertical_center</span> MaterialSymbolsRounded.align_vertical_center
+/// <span class="material-symbols-rounded">align_vertical_bottom</span> MaterialSymbolsRounded.align_vertical_bottom
 ///
-  /// <span class="material-symbols-rounded">align_vertical_top</span> MaterialSymbolsRounded.align_vertical_top
+/// <span class="material-symbols-rounded">align_vertical_center</span> MaterialSymbolsRounded.align_vertical_center
 ///
-  /// <span class="material-symbols-rounded">all_inbox</span> MaterialSymbolsRounded.all_inbox
+/// <span class="material-symbols-rounded">align_vertical_top</span> MaterialSymbolsRounded.align_vertical_top
 ///
-  /// <span class="material-symbols-rounded">all_inclusive</span> MaterialSymbolsRounded.all_inclusive
+/// <span class="material-symbols-rounded">all_inbox</span> MaterialSymbolsRounded.all_inbox
 ///
-  /// <span class="material-symbols-rounded">all_match</span> MaterialSymbolsRounded.all_match
+/// <span class="material-symbols-rounded">all_inclusive</span> MaterialSymbolsRounded.all_inclusive
 ///
-  /// <span class="material-symbols-rounded">all_out</span> MaterialSymbolsRounded.all_out
+/// <span class="material-symbols-rounded">all_match</span> MaterialSymbolsRounded.all_match
 ///
-  /// <span class="material-symbols-rounded">allergies</span> MaterialSymbolsRounded.allergies
+/// <span class="material-symbols-rounded">all_out</span> MaterialSymbolsRounded.all_out
 ///
-  /// <span class="material-symbols-rounded">allergy</span> MaterialSymbolsRounded.allergy
+/// <span class="material-symbols-rounded">allergies</span> MaterialSymbolsRounded.allergies
 ///
-  /// <span class="material-symbols-rounded">alt_route</span> MaterialSymbolsRounded.alt_route
+/// <span class="material-symbols-rounded">allergy</span> MaterialSymbolsRounded.allergy
 ///
-  /// <span class="material-symbols-rounded">alternate_email</span> MaterialSymbolsRounded.alternate_email
+/// <span class="material-symbols-rounded">alt_route</span> MaterialSymbolsRounded.alt_route
 ///
-  /// <span class="material-symbols-rounded">altitude</span> MaterialSymbolsRounded.altitude
+/// <span class="material-symbols-rounded">alternate_email</span> MaterialSymbolsRounded.alternate_email
 ///
-  /// <span class="material-symbols-rounded">ambient_screen</span> MaterialSymbolsRounded.ambient_screen
+/// <span class="material-symbols-rounded">altitude</span> MaterialSymbolsRounded.altitude
 ///
-  /// <span class="material-symbols-rounded">ambulance</span> MaterialSymbolsRounded.ambulance
+/// <span class="material-symbols-rounded">ambient_screen</span> MaterialSymbolsRounded.ambient_screen
 ///
-  /// <span class="material-symbols-rounded">amend</span> MaterialSymbolsRounded.amend
+/// <span class="material-symbols-rounded">ambulance</span> MaterialSymbolsRounded.ambulance
 ///
-  /// <span class="material-symbols-rounded">amp_stories</span> MaterialSymbolsRounded.amp_stories
+/// <span class="material-symbols-rounded">amend</span> MaterialSymbolsRounded.amend
 ///
-  /// <span class="material-symbols-rounded">analytics</span> MaterialSymbolsRounded.analytics
+/// <span class="material-symbols-rounded">amp_stories</span> MaterialSymbolsRounded.amp_stories
 ///
-  /// <span class="material-symbols-rounded">anchor</span> MaterialSymbolsRounded.anchor
+/// <span class="material-symbols-rounded">analytics</span> MaterialSymbolsRounded.analytics
 ///
-  /// <span class="material-symbols-rounded">android</span> MaterialSymbolsRounded.android
+/// <span class="material-symbols-rounded">anchor</span> MaterialSymbolsRounded.anchor
 ///
-  /// <span class="material-symbols-rounded">animation</span> MaterialSymbolsRounded.animation
+/// <span class="material-symbols-rounded">android</span> MaterialSymbolsRounded.android
 ///
-  /// <span class="material-symbols-rounded">announcement</span> MaterialSymbolsRounded.announcement
+/// <span class="material-symbols-rounded">animation</span> MaterialSymbolsRounded.animation
 ///
-  /// <span class="material-symbols-rounded">aod</span> MaterialSymbolsRounded.aod
+/// <span class="material-symbols-rounded">announcement</span> MaterialSymbolsRounded.announcement
 ///
-  /// <span class="material-symbols-rounded">aod_tablet</span> MaterialSymbolsRounded.aod_tablet
+/// <span class="material-symbols-rounded">aod</span> MaterialSymbolsRounded.aod
 ///
-  /// <span class="material-symbols-rounded">aod_watch</span> MaterialSymbolsRounded.aod_watch
+/// <span class="material-symbols-rounded">aod_tablet</span> MaterialSymbolsRounded.aod_tablet
 ///
-  /// <span class="material-symbols-rounded">apartment</span> MaterialSymbolsRounded.apartment
+/// <span class="material-symbols-rounded">aod_watch</span> MaterialSymbolsRounded.aod_watch
 ///
-  /// <span class="material-symbols-rounded">api</span> MaterialSymbolsRounded.api
+/// <span class="material-symbols-rounded">apartment</span> MaterialSymbolsRounded.apartment
 ///
-  /// <span class="material-symbols-rounded">apk_document</span> MaterialSymbolsRounded.apk_document
+/// <span class="material-symbols-rounded">api</span> MaterialSymbolsRounded.api
 ///
-  /// <span class="material-symbols-rounded">apk_install</span> MaterialSymbolsRounded.apk_install
+/// <span class="material-symbols-rounded">apk_document</span> MaterialSymbolsRounded.apk_document
 ///
-  /// <span class="material-symbols-rounded">app_badging</span> MaterialSymbolsRounded.app_badging
+/// <span class="material-symbols-rounded">apk_install</span> MaterialSymbolsRounded.apk_install
 ///
-  /// <span class="material-symbols-rounded">app_blocking</span> MaterialSymbolsRounded.app_blocking
+/// <span class="material-symbols-rounded">app_badging</span> MaterialSymbolsRounded.app_badging
 ///
-  /// <span class="material-symbols-rounded">app_registration</span> MaterialSymbolsRounded.app_registration
+/// <span class="material-symbols-rounded">app_blocking</span> MaterialSymbolsRounded.app_blocking
 ///
-  /// <span class="material-symbols-rounded">app_settings_alt</span> MaterialSymbolsRounded.app_settings_alt
+/// <span class="material-symbols-rounded">app_registration</span> MaterialSymbolsRounded.app_registration
 ///
-  /// <span class="material-symbols-rounded">app_shortcut</span> MaterialSymbolsRounded.app_shortcut
+/// <span class="material-symbols-rounded">app_settings_alt</span> MaterialSymbolsRounded.app_settings_alt
 ///
-  /// <span class="material-symbols-rounded">approval</span> MaterialSymbolsRounded.approval
+/// <span class="material-symbols-rounded">app_shortcut</span> MaterialSymbolsRounded.app_shortcut
 ///
-  /// <span class="material-symbols-rounded">approval_delegation</span> MaterialSymbolsRounded.approval_delegation
+/// <span class="material-symbols-rounded">approval</span> MaterialSymbolsRounded.approval
 ///
-  /// <span class="material-symbols-rounded">apps</span> MaterialSymbolsRounded.apps
+/// <span class="material-symbols-rounded">approval_delegation</span> MaterialSymbolsRounded.approval_delegation
 ///
-  /// <span class="material-symbols-rounded">apps_outage</span> MaterialSymbolsRounded.apps_outage
+/// <span class="material-symbols-rounded">apps</span> MaterialSymbolsRounded.apps
 ///
-  /// <span class="material-symbols-rounded">architecture</span> MaterialSymbolsRounded.architecture
+/// <span class="material-symbols-rounded">apps_outage</span> MaterialSymbolsRounded.apps_outage
 ///
-  /// <span class="material-symbols-rounded">archive</span> MaterialSymbolsRounded.archive
+/// <span class="material-symbols-rounded">architecture</span> MaterialSymbolsRounded.architecture
 ///
-  /// <span class="material-symbols-rounded">area_chart</span> MaterialSymbolsRounded.area_chart
+/// <span class="material-symbols-rounded">archive</span> MaterialSymbolsRounded.archive
 ///
-  /// <span class="material-symbols-rounded">arming_countdown</span> MaterialSymbolsRounded.arming_countdown
+/// <span class="material-symbols-rounded">area_chart</span> MaterialSymbolsRounded.area_chart
 ///
-  /// <span class="material-symbols-rounded">arrow_back</span> MaterialSymbolsRounded.arrow_back
+/// <span class="material-symbols-rounded">arming_countdown</span> MaterialSymbolsRounded.arming_countdown
 ///
-  /// <span class="material-symbols-rounded">arrow_back_ios</span> MaterialSymbolsRounded.arrow_back_ios
+/// <span class="material-symbols-rounded">arrow_back</span> MaterialSymbolsRounded.arrow_back
 ///
-  /// <span class="material-symbols-rounded">arrow_back_ios_new</span> MaterialSymbolsRounded.arrow_back_ios_new
+/// <span class="material-symbols-rounded">arrow_back_ios</span> MaterialSymbolsRounded.arrow_back_ios
 ///
-  /// <span class="material-symbols-rounded">arrow_circle_down</span> MaterialSymbolsRounded.arrow_circle_down
+/// <span class="material-symbols-rounded">arrow_back_ios_new</span> MaterialSymbolsRounded.arrow_back_ios_new
 ///
-  /// <span class="material-symbols-rounded">arrow_circle_left</span> MaterialSymbolsRounded.arrow_circle_left
+/// <span class="material-symbols-rounded">arrow_circle_down</span> MaterialSymbolsRounded.arrow_circle_down
 ///
-  /// <span class="material-symbols-rounded">arrow_circle_right</span> MaterialSymbolsRounded.arrow_circle_right
+/// <span class="material-symbols-rounded">arrow_circle_left</span> MaterialSymbolsRounded.arrow_circle_left
 ///
-  /// <span class="material-symbols-rounded">arrow_circle_up</span> MaterialSymbolsRounded.arrow_circle_up
+/// <span class="material-symbols-rounded">arrow_circle_right</span> MaterialSymbolsRounded.arrow_circle_right
 ///
-  /// <span class="material-symbols-rounded">arrow_downward</span> MaterialSymbolsRounded.arrow_downward
+/// <span class="material-symbols-rounded">arrow_circle_up</span> MaterialSymbolsRounded.arrow_circle_up
 ///
-  /// <span class="material-symbols-rounded">arrow_drop_down</span> MaterialSymbolsRounded.arrow_drop_down
+/// <span class="material-symbols-rounded">arrow_downward</span> MaterialSymbolsRounded.arrow_downward
 ///
-  /// <span class="material-symbols-rounded">arrow_drop_down_circle</span> MaterialSymbolsRounded.arrow_drop_down_circle
+/// <span class="material-symbols-rounded">arrow_drop_down</span> MaterialSymbolsRounded.arrow_drop_down
 ///
-  /// <span class="material-symbols-rounded">arrow_drop_up</span> MaterialSymbolsRounded.arrow_drop_up
+/// <span class="material-symbols-rounded">arrow_drop_down_circle</span> MaterialSymbolsRounded.arrow_drop_down_circle
 ///
-  /// <span class="material-symbols-rounded">arrow_forward</span> MaterialSymbolsRounded.arrow_forward
+/// <span class="material-symbols-rounded">arrow_drop_up</span> MaterialSymbolsRounded.arrow_drop_up
 ///
-  /// <span class="material-symbols-rounded">arrow_forward_ios</span> MaterialSymbolsRounded.arrow_forward_ios
+/// <span class="material-symbols-rounded">arrow_forward</span> MaterialSymbolsRounded.arrow_forward
 ///
-  /// <span class="material-symbols-rounded">arrow_insert</span> MaterialSymbolsRounded.arrow_insert
+/// <span class="material-symbols-rounded">arrow_forward_ios</span> MaterialSymbolsRounded.arrow_forward_ios
 ///
-  /// <span class="material-symbols-rounded">arrow_left</span> MaterialSymbolsRounded.arrow_left
+/// <span class="material-symbols-rounded">arrow_insert</span> MaterialSymbolsRounded.arrow_insert
 ///
-  /// <span class="material-symbols-rounded">arrow_outward</span> MaterialSymbolsRounded.arrow_outward
+/// <span class="material-symbols-rounded">arrow_left</span> MaterialSymbolsRounded.arrow_left
 ///
-  /// <span class="material-symbols-rounded">arrow_range</span> MaterialSymbolsRounded.arrow_range
+/// <span class="material-symbols-rounded">arrow_outward</span> MaterialSymbolsRounded.arrow_outward
 ///
-  /// <span class="material-symbols-rounded">arrow_right</span> MaterialSymbolsRounded.arrow_right
+/// <span class="material-symbols-rounded">arrow_range</span> MaterialSymbolsRounded.arrow_range
 ///
-  /// <span class="material-symbols-rounded">arrow_right_alt</span> MaterialSymbolsRounded.arrow_right_alt
+/// <span class="material-symbols-rounded">arrow_right</span> MaterialSymbolsRounded.arrow_right
 ///
-  /// <span class="material-symbols-rounded">arrow_selector_tool</span> MaterialSymbolsRounded.arrow_selector_tool
+/// <span class="material-symbols-rounded">arrow_right_alt</span> MaterialSymbolsRounded.arrow_right_alt
 ///
-  /// <span class="material-symbols-rounded">arrow_top_left</span> MaterialSymbolsRounded.arrow_top_left
+/// <span class="material-symbols-rounded">arrow_selector_tool</span> MaterialSymbolsRounded.arrow_selector_tool
 ///
-  /// <span class="material-symbols-rounded">arrow_top_right</span> MaterialSymbolsRounded.arrow_top_right
+/// <span class="material-symbols-rounded">arrow_top_left</span> MaterialSymbolsRounded.arrow_top_left
 ///
-  /// <span class="material-symbols-rounded">arrow_upward</span> MaterialSymbolsRounded.arrow_upward
+/// <span class="material-symbols-rounded">arrow_top_right</span> MaterialSymbolsRounded.arrow_top_right
 ///
-  /// <span class="material-symbols-rounded">arrows_more_down</span> MaterialSymbolsRounded.arrows_more_down
+/// <span class="material-symbols-rounded">arrow_upward</span> MaterialSymbolsRounded.arrow_upward
 ///
-  /// <span class="material-symbols-rounded">arrows_more_up</span> MaterialSymbolsRounded.arrows_more_up
+/// <span class="material-symbols-rounded">arrows_more_down</span> MaterialSymbolsRounded.arrows_more_down
 ///
-  /// <span class="material-symbols-rounded">arrows_outward</span> MaterialSymbolsRounded.arrows_outward
+/// <span class="material-symbols-rounded">arrows_more_up</span> MaterialSymbolsRounded.arrows_more_up
 ///
-  /// <span class="material-symbols-rounded">art_track</span> MaterialSymbolsRounded.art_track
+/// <span class="material-symbols-rounded">arrows_outward</span> MaterialSymbolsRounded.arrows_outward
 ///
-  /// <span class="material-symbols-rounded">article</span> MaterialSymbolsRounded.article
+/// <span class="material-symbols-rounded">art_track</span> MaterialSymbolsRounded.art_track
 ///
-  /// <span class="material-symbols-rounded">aspect_ratio</span> MaterialSymbolsRounded.aspect_ratio
+/// <span class="material-symbols-rounded">article</span> MaterialSymbolsRounded.article
 ///
-  /// <span class="material-symbols-rounded">assessment</span> MaterialSymbolsRounded.assessment
+/// <span class="material-symbols-rounded">aspect_ratio</span> MaterialSymbolsRounded.aspect_ratio
 ///
-  /// <span class="material-symbols-rounded">assignment</span> MaterialSymbolsRounded.assignment
+/// <span class="material-symbols-rounded">assessment</span> MaterialSymbolsRounded.assessment
 ///
-  /// <span class="material-symbols-rounded">assignment_add</span> MaterialSymbolsRounded.assignment_add
+/// <span class="material-symbols-rounded">assignment</span> MaterialSymbolsRounded.assignment
 ///
-  /// <span class="material-symbols-rounded">assignment_ind</span> MaterialSymbolsRounded.assignment_ind
+/// <span class="material-symbols-rounded">assignment_add</span> MaterialSymbolsRounded.assignment_add
 ///
-  /// <span class="material-symbols-rounded">assignment_late</span> MaterialSymbolsRounded.assignment_late
+/// <span class="material-symbols-rounded">assignment_ind</span> MaterialSymbolsRounded.assignment_ind
 ///
-  /// <span class="material-symbols-rounded">assignment_return</span> MaterialSymbolsRounded.assignment_return
+/// <span class="material-symbols-rounded">assignment_late</span> MaterialSymbolsRounded.assignment_late
 ///
-  /// <span class="material-symbols-rounded">assignment_returned</span> MaterialSymbolsRounded.assignment_returned
+/// <span class="material-symbols-rounded">assignment_return</span> MaterialSymbolsRounded.assignment_return
 ///
-  /// <span class="material-symbols-rounded">assignment_turned_in</span> MaterialSymbolsRounded.assignment_turned_in
+/// <span class="material-symbols-rounded">assignment_returned</span> MaterialSymbolsRounded.assignment_returned
 ///
-  /// <span class="material-symbols-rounded">assist_walker</span> MaterialSymbolsRounded.assist_walker
+/// <span class="material-symbols-rounded">assignment_turned_in</span> MaterialSymbolsRounded.assignment_turned_in
 ///
-  /// <span class="material-symbols-rounded">assistant</span> MaterialSymbolsRounded.assistant
+/// <span class="material-symbols-rounded">assist_walker</span> MaterialSymbolsRounded.assist_walker
 ///
-  /// <span class="material-symbols-rounded">assistant_direction</span> MaterialSymbolsRounded.assistant_direction
+/// <span class="material-symbols-rounded">assistant</span> MaterialSymbolsRounded.assistant
 ///
-  /// <span class="material-symbols-rounded">assistant_navigation</span> MaterialSymbolsRounded.assistant_navigation
+/// <span class="material-symbols-rounded">assistant_direction</span> MaterialSymbolsRounded.assistant_direction
 ///
-  /// <span class="material-symbols-rounded">assistant_on_hub</span> MaterialSymbolsRounded.assistant_on_hub
+/// <span class="material-symbols-rounded">assistant_navigation</span> MaterialSymbolsRounded.assistant_navigation
 ///
-  /// <span class="material-symbols-rounded">assistant_photo</span> MaterialSymbolsRounded.assistant_photo
+/// <span class="material-symbols-rounded">assistant_on_hub</span> MaterialSymbolsRounded.assistant_on_hub
 ///
-  /// <span class="material-symbols-rounded">assured_workload</span> MaterialSymbolsRounded.assured_workload
+/// <span class="material-symbols-rounded">assistant_photo</span> MaterialSymbolsRounded.assistant_photo
 ///
-  /// <span class="material-symbols-rounded">astrophotography_auto</span> MaterialSymbolsRounded.astrophotography_auto
+/// <span class="material-symbols-rounded">assured_workload</span> MaterialSymbolsRounded.assured_workload
 ///
-  /// <span class="material-symbols-rounded">astrophotography_off</span> MaterialSymbolsRounded.astrophotography_off
+/// <span class="material-symbols-rounded">astrophotography_auto</span> MaterialSymbolsRounded.astrophotography_auto
 ///
-  /// <span class="material-symbols-rounded">atm</span> MaterialSymbolsRounded.atm
+/// <span class="material-symbols-rounded">astrophotography_off</span> MaterialSymbolsRounded.astrophotography_off
 ///
-  /// <span class="material-symbols-rounded">atr</span> MaterialSymbolsRounded.atr
+/// <span class="material-symbols-rounded">atm</span> MaterialSymbolsRounded.atm
 ///
-  /// <span class="material-symbols-rounded">attach_email</span> MaterialSymbolsRounded.attach_email
+/// <span class="material-symbols-rounded">atr</span> MaterialSymbolsRounded.atr
 ///
-  /// <span class="material-symbols-rounded">attach_file</span> MaterialSymbolsRounded.attach_file
+/// <span class="material-symbols-rounded">attach_email</span> MaterialSymbolsRounded.attach_email
 ///
-  /// <span class="material-symbols-rounded">attach_file_add</span> MaterialSymbolsRounded.attach_file_add
+/// <span class="material-symbols-rounded">attach_file</span> MaterialSymbolsRounded.attach_file
 ///
-  /// <span class="material-symbols-rounded">attach_money</span> MaterialSymbolsRounded.attach_money
+/// <span class="material-symbols-rounded">attach_file_add</span> MaterialSymbolsRounded.attach_file_add
 ///
-  /// <span class="material-symbols-rounded">attachment</span> MaterialSymbolsRounded.attachment
+/// <span class="material-symbols-rounded">attach_money</span> MaterialSymbolsRounded.attach_money
 ///
-  /// <span class="material-symbols-rounded">attractions</span> MaterialSymbolsRounded.attractions
+/// <span class="material-symbols-rounded">attachment</span> MaterialSymbolsRounded.attachment
 ///
-  /// <span class="material-symbols-rounded">attribution</span> MaterialSymbolsRounded.attribution
+/// <span class="material-symbols-rounded">attractions</span> MaterialSymbolsRounded.attractions
 ///
-  /// <span class="material-symbols-rounded">audio_file</span> MaterialSymbolsRounded.audio_file
+/// <span class="material-symbols-rounded">attribution</span> MaterialSymbolsRounded.attribution
 ///
-  /// <span class="material-symbols-rounded">audiotrack</span> MaterialSymbolsRounded.audiotrack
+/// <span class="material-symbols-rounded">audio_file</span> MaterialSymbolsRounded.audio_file
 ///
-  /// <span class="material-symbols-rounded">auto_activity_zone</span> MaterialSymbolsRounded.auto_activity_zone
+/// <span class="material-symbols-rounded">audiotrack</span> MaterialSymbolsRounded.audiotrack
 ///
-  /// <span class="material-symbols-rounded">auto_awesome</span> MaterialSymbolsRounded.auto_awesome
+/// <span class="material-symbols-rounded">auto_activity_zone</span> MaterialSymbolsRounded.auto_activity_zone
 ///
-  /// <span class="material-symbols-rounded">auto_awesome_mosaic</span> MaterialSymbolsRounded.auto_awesome_mosaic
+/// <span class="material-symbols-rounded">auto_awesome</span> MaterialSymbolsRounded.auto_awesome
 ///
-  /// <span class="material-symbols-rounded">auto_awesome_motion</span> MaterialSymbolsRounded.auto_awesome_motion
+/// <span class="material-symbols-rounded">auto_awesome_mosaic</span> MaterialSymbolsRounded.auto_awesome_mosaic
 ///
-  /// <span class="material-symbols-rounded">auto_delete</span> MaterialSymbolsRounded.auto_delete
+/// <span class="material-symbols-rounded">auto_awesome_motion</span> MaterialSymbolsRounded.auto_awesome_motion
 ///
-  /// <span class="material-symbols-rounded">auto_detect_voice</span> MaterialSymbolsRounded.auto_detect_voice
+/// <span class="material-symbols-rounded">auto_delete</span> MaterialSymbolsRounded.auto_delete
 ///
-  /// <span class="material-symbols-rounded">auto_fix</span> MaterialSymbolsRounded.auto_fix
+/// <span class="material-symbols-rounded">auto_detect_voice</span> MaterialSymbolsRounded.auto_detect_voice
 ///
-  /// <span class="material-symbols-rounded">auto_fix_high</span> MaterialSymbolsRounded.auto_fix_high
+/// <span class="material-symbols-rounded">auto_fix</span> MaterialSymbolsRounded.auto_fix
 ///
-  /// <span class="material-symbols-rounded">auto_fix_normal</span> MaterialSymbolsRounded.auto_fix_normal
+/// <span class="material-symbols-rounded">auto_fix_high</span> MaterialSymbolsRounded.auto_fix_high
 ///
-  /// <span class="material-symbols-rounded">auto_fix_off</span> MaterialSymbolsRounded.auto_fix_off
+/// <span class="material-symbols-rounded">auto_fix_normal</span> MaterialSymbolsRounded.auto_fix_normal
 ///
-  /// <span class="material-symbols-rounded">auto_graph</span> MaterialSymbolsRounded.auto_graph
+/// <span class="material-symbols-rounded">auto_fix_off</span> MaterialSymbolsRounded.auto_fix_off
 ///
-  /// <span class="material-symbols-rounded">auto_label</span> MaterialSymbolsRounded.auto_label
+/// <span class="material-symbols-rounded">auto_graph</span> MaterialSymbolsRounded.auto_graph
 ///
-  /// <span class="material-symbols-rounded">auto_meeting_room</span> MaterialSymbolsRounded.auto_meeting_room
+/// <span class="material-symbols-rounded">auto_label</span> MaterialSymbolsRounded.auto_label
 ///
-  /// <span class="material-symbols-rounded">auto_mode</span> MaterialSymbolsRounded.auto_mode
+/// <span class="material-symbols-rounded">auto_meeting_room</span> MaterialSymbolsRounded.auto_meeting_room
 ///
-  /// <span class="material-symbols-rounded">auto_read_pause</span> MaterialSymbolsRounded.auto_read_pause
+/// <span class="material-symbols-rounded">auto_mode</span> MaterialSymbolsRounded.auto_mode
 ///
-  /// <span class="material-symbols-rounded">auto_read_play</span> MaterialSymbolsRounded.auto_read_play
+/// <span class="material-symbols-rounded">auto_read_pause</span> MaterialSymbolsRounded.auto_read_pause
 ///
-  /// <span class="material-symbols-rounded">auto_schedule</span> MaterialSymbolsRounded.auto_schedule
+/// <span class="material-symbols-rounded">auto_read_play</span> MaterialSymbolsRounded.auto_read_play
 ///
-  /// <span class="material-symbols-rounded">auto_stories</span> MaterialSymbolsRounded.auto_stories
+/// <span class="material-symbols-rounded">auto_schedule</span> MaterialSymbolsRounded.auto_schedule
 ///
-  /// <span class="material-symbols-rounded">auto_videocam</span> MaterialSymbolsRounded.auto_videocam
+/// <span class="material-symbols-rounded">auto_stories</span> MaterialSymbolsRounded.auto_stories
 ///
-  /// <span class="material-symbols-rounded">autofps_select</span> MaterialSymbolsRounded.autofps_select
+/// <span class="material-symbols-rounded">auto_videocam</span> MaterialSymbolsRounded.auto_videocam
 ///
-  /// <span class="material-symbols-rounded">autopause</span> MaterialSymbolsRounded.autopause
+/// <span class="material-symbols-rounded">autofps_select</span> MaterialSymbolsRounded.autofps_select
 ///
-  /// <span class="material-symbols-rounded">autopay</span> MaterialSymbolsRounded.autopay
+/// <span class="material-symbols-rounded">autopause</span> MaterialSymbolsRounded.autopause
 ///
-  /// <span class="material-symbols-rounded">autoplay</span> MaterialSymbolsRounded.autoplay
+/// <span class="material-symbols-rounded">autopay</span> MaterialSymbolsRounded.autopay
 ///
-  /// <span class="material-symbols-rounded">autorenew</span> MaterialSymbolsRounded.autorenew
+/// <span class="material-symbols-rounded">autoplay</span> MaterialSymbolsRounded.autoplay
 ///
-  /// <span class="material-symbols-rounded">av_timer</span> MaterialSymbolsRounded.av_timer
+/// <span class="material-symbols-rounded">autorenew</span> MaterialSymbolsRounded.autorenew
 ///
-  /// <span class="material-symbols-rounded">avg_pace</span> MaterialSymbolsRounded.avg_pace
+/// <span class="material-symbols-rounded">av_timer</span> MaterialSymbolsRounded.av_timer
 ///
-  /// <span class="material-symbols-rounded">avg_time</span> MaterialSymbolsRounded.avg_time
+/// <span class="material-symbols-rounded">avg_pace</span> MaterialSymbolsRounded.avg_pace
 ///
-  /// <span class="material-symbols-rounded">azm</span> MaterialSymbolsRounded.azm
+/// <span class="material-symbols-rounded">avg_time</span> MaterialSymbolsRounded.avg_time
 ///
-  /// <span class="material-symbols-rounded">baby_changing_station</span> MaterialSymbolsRounded.baby_changing_station
+/// <span class="material-symbols-rounded">azm</span> MaterialSymbolsRounded.azm
 ///
-  /// <span class="material-symbols-rounded">back_hand</span> MaterialSymbolsRounded.back_hand
+/// <span class="material-symbols-rounded">baby_changing_station</span> MaterialSymbolsRounded.baby_changing_station
 ///
-  /// <span class="material-symbols-rounded">back_to_tab</span> MaterialSymbolsRounded.back_to_tab
+/// <span class="material-symbols-rounded">back_hand</span> MaterialSymbolsRounded.back_hand
 ///
-  /// <span class="material-symbols-rounded">background_blur_full</span> MaterialSymbolsRounded.background_blur_full
+/// <span class="material-symbols-rounded">back_to_tab</span> MaterialSymbolsRounded.back_to_tab
 ///
-  /// <span class="material-symbols-rounded">background_blur_light</span> MaterialSymbolsRounded.background_blur_light
+/// <span class="material-symbols-rounded">background_blur_full</span> MaterialSymbolsRounded.background_blur_full
 ///
-  /// <span class="material-symbols-rounded">background_dot_large</span> MaterialSymbolsRounded.background_dot_large
+/// <span class="material-symbols-rounded">background_blur_light</span> MaterialSymbolsRounded.background_blur_light
 ///
-  /// <span class="material-symbols-rounded">background_grid_small</span> MaterialSymbolsRounded.background_grid_small
+/// <span class="material-symbols-rounded">background_dot_large</span> MaterialSymbolsRounded.background_dot_large
 ///
-  /// <span class="material-symbols-rounded">background_replace</span> MaterialSymbolsRounded.background_replace
+/// <span class="material-symbols-rounded">background_grid_small</span> MaterialSymbolsRounded.background_grid_small
 ///
-  /// <span class="material-symbols-rounded">backlight_high</span> MaterialSymbolsRounded.backlight_high
+/// <span class="material-symbols-rounded">background_replace</span> MaterialSymbolsRounded.background_replace
 ///
-  /// <span class="material-symbols-rounded">backlight_low</span> MaterialSymbolsRounded.backlight_low
+/// <span class="material-symbols-rounded">backlight_high</span> MaterialSymbolsRounded.backlight_high
 ///
-  /// <span class="material-symbols-rounded">backpack</span> MaterialSymbolsRounded.backpack
+/// <span class="material-symbols-rounded">backlight_low</span> MaterialSymbolsRounded.backlight_low
 ///
-  /// <span class="material-symbols-rounded">backspace</span> MaterialSymbolsRounded.backspace
+/// <span class="material-symbols-rounded">backpack</span> MaterialSymbolsRounded.backpack
 ///
-  /// <span class="material-symbols-rounded">backup</span> MaterialSymbolsRounded.backup
+/// <span class="material-symbols-rounded">backspace</span> MaterialSymbolsRounded.backspace
 ///
-  /// <span class="material-symbols-rounded">backup_table</span> MaterialSymbolsRounded.backup_table
+/// <span class="material-symbols-rounded">backup</span> MaterialSymbolsRounded.backup
 ///
-  /// <span class="material-symbols-rounded">badge</span> MaterialSymbolsRounded.badge
+/// <span class="material-symbols-rounded">backup_table</span> MaterialSymbolsRounded.backup_table
 ///
-  /// <span class="material-symbols-rounded">badge_critical_battery</span> MaterialSymbolsRounded.badge_critical_battery
+/// <span class="material-symbols-rounded">badge</span> MaterialSymbolsRounded.badge
 ///
-  /// <span class="material-symbols-rounded">bakery_dining</span> MaterialSymbolsRounded.bakery_dining
+/// <span class="material-symbols-rounded">badge_critical_battery</span> MaterialSymbolsRounded.badge_critical_battery
 ///
-  /// <span class="material-symbols-rounded">balance</span> MaterialSymbolsRounded.balance
+/// <span class="material-symbols-rounded">bakery_dining</span> MaterialSymbolsRounded.bakery_dining
 ///
-  /// <span class="material-symbols-rounded">balcony</span> MaterialSymbolsRounded.balcony
+/// <span class="material-symbols-rounded">balance</span> MaterialSymbolsRounded.balance
 ///
-  /// <span class="material-symbols-rounded">ballot</span> MaterialSymbolsRounded.ballot
+/// <span class="material-symbols-rounded">balcony</span> MaterialSymbolsRounded.balcony
 ///
-  /// <span class="material-symbols-rounded">bar_chart</span> MaterialSymbolsRounded.bar_chart
+/// <span class="material-symbols-rounded">ballot</span> MaterialSymbolsRounded.ballot
 ///
-  /// <span class="material-symbols-rounded">barcode</span> MaterialSymbolsRounded.barcode
+/// <span class="material-symbols-rounded">bar_chart</span> MaterialSymbolsRounded.bar_chart
 ///
-  /// <span class="material-symbols-rounded">barcode_reader</span> MaterialSymbolsRounded.barcode_reader
+/// <span class="material-symbols-rounded">barcode</span> MaterialSymbolsRounded.barcode
 ///
-  /// <span class="material-symbols-rounded">barcode_scanner</span> MaterialSymbolsRounded.barcode_scanner
+/// <span class="material-symbols-rounded">barcode_reader</span> MaterialSymbolsRounded.barcode_reader
 ///
-  /// <span class="material-symbols-rounded">barefoot</span> MaterialSymbolsRounded.barefoot
+/// <span class="material-symbols-rounded">barcode_scanner</span> MaterialSymbolsRounded.barcode_scanner
 ///
-  /// <span class="material-symbols-rounded">batch_prediction</span> MaterialSymbolsRounded.batch_prediction
+/// <span class="material-symbols-rounded">barefoot</span> MaterialSymbolsRounded.barefoot
 ///
-  /// <span class="material-symbols-rounded">bath_outdoor</span> MaterialSymbolsRounded.bath_outdoor
+/// <span class="material-symbols-rounded">batch_prediction</span> MaterialSymbolsRounded.batch_prediction
 ///
-  /// <span class="material-symbols-rounded">bath_private</span> MaterialSymbolsRounded.bath_private
+/// <span class="material-symbols-rounded">bath_outdoor</span> MaterialSymbolsRounded.bath_outdoor
 ///
-  /// <span class="material-symbols-rounded">bath_public_large</span> MaterialSymbolsRounded.bath_public_large
+/// <span class="material-symbols-rounded">bath_private</span> MaterialSymbolsRounded.bath_private
 ///
-  /// <span class="material-symbols-rounded">bathroom</span> MaterialSymbolsRounded.bathroom
+/// <span class="material-symbols-rounded">bath_public_large</span> MaterialSymbolsRounded.bath_public_large
 ///
-  /// <span class="material-symbols-rounded">bathtub</span> MaterialSymbolsRounded.bathtub
+/// <span class="material-symbols-rounded">bathroom</span> MaterialSymbolsRounded.bathroom
 ///
-  /// <span class="material-symbols-rounded">battery_0_bar</span> MaterialSymbolsRounded.battery_0_bar
+/// <span class="material-symbols-rounded">bathtub</span> MaterialSymbolsRounded.bathtub
 ///
-  /// <span class="material-symbols-rounded">battery_1_bar</span> MaterialSymbolsRounded.battery_1_bar
+/// <span class="material-symbols-rounded">battery_0_bar</span> MaterialSymbolsRounded.battery_0_bar
 ///
-  /// <span class="material-symbols-rounded">battery_20</span> MaterialSymbolsRounded.battery_20
+/// <span class="material-symbols-rounded">battery_1_bar</span> MaterialSymbolsRounded.battery_1_bar
 ///
-  /// <span class="material-symbols-rounded">battery_2_bar</span> MaterialSymbolsRounded.battery_2_bar
+/// <span class="material-symbols-rounded">battery_20</span> MaterialSymbolsRounded.battery_20
 ///
-  /// <span class="material-symbols-rounded">battery_30</span> MaterialSymbolsRounded.battery_30
+/// <span class="material-symbols-rounded">battery_2_bar</span> MaterialSymbolsRounded.battery_2_bar
 ///
-  /// <span class="material-symbols-rounded">battery_3_bar</span> MaterialSymbolsRounded.battery_3_bar
+/// <span class="material-symbols-rounded">battery_30</span> MaterialSymbolsRounded.battery_30
 ///
-  /// <span class="material-symbols-rounded">battery_4_bar</span> MaterialSymbolsRounded.battery_4_bar
+/// <span class="material-symbols-rounded">battery_3_bar</span> MaterialSymbolsRounded.battery_3_bar
 ///
-  /// <span class="material-symbols-rounded">battery_50</span> MaterialSymbolsRounded.battery_50
+/// <span class="material-symbols-rounded">battery_4_bar</span> MaterialSymbolsRounded.battery_4_bar
 ///
-  /// <span class="material-symbols-rounded">battery_5_bar</span> MaterialSymbolsRounded.battery_5_bar
+/// <span class="material-symbols-rounded">battery_50</span> MaterialSymbolsRounded.battery_50
 ///
-  /// <span class="material-symbols-rounded">battery_60</span> MaterialSymbolsRounded.battery_60
+/// <span class="material-symbols-rounded">battery_5_bar</span> MaterialSymbolsRounded.battery_5_bar
 ///
-  /// <span class="material-symbols-rounded">battery_6_bar</span> MaterialSymbolsRounded.battery_6_bar
+/// <span class="material-symbols-rounded">battery_60</span> MaterialSymbolsRounded.battery_60
 ///
-  /// <span class="material-symbols-rounded">battery_80</span> MaterialSymbolsRounded.battery_80
+/// <span class="material-symbols-rounded">battery_6_bar</span> MaterialSymbolsRounded.battery_6_bar
 ///
-  /// <span class="material-symbols-rounded">battery_90</span> MaterialSymbolsRounded.battery_90
+/// <span class="material-symbols-rounded">battery_80</span> MaterialSymbolsRounded.battery_80
 ///
-  /// <span class="material-symbols-rounded">battery_alert</span> MaterialSymbolsRounded.battery_alert
+/// <span class="material-symbols-rounded">battery_90</span> MaterialSymbolsRounded.battery_90
 ///
-  /// <span class="material-symbols-rounded">battery_change</span> MaterialSymbolsRounded.battery_change
+/// <span class="material-symbols-rounded">battery_alert</span> MaterialSymbolsRounded.battery_alert
 ///
-  /// <span class="material-symbols-rounded">battery_charging_20</span> MaterialSymbolsRounded.battery_charging_20
+/// <span class="material-symbols-rounded">battery_change</span> MaterialSymbolsRounded.battery_change
 ///
-  /// <span class="material-symbols-rounded">battery_charging_30</span> MaterialSymbolsRounded.battery_charging_30
+/// <span class="material-symbols-rounded">battery_charging_20</span> MaterialSymbolsRounded.battery_charging_20
 ///
-  /// <span class="material-symbols-rounded">battery_charging_50</span> MaterialSymbolsRounded.battery_charging_50
+/// <span class="material-symbols-rounded">battery_charging_30</span> MaterialSymbolsRounded.battery_charging_30
 ///
-  /// <span class="material-symbols-rounded">battery_charging_60</span> MaterialSymbolsRounded.battery_charging_60
+/// <span class="material-symbols-rounded">battery_charging_50</span> MaterialSymbolsRounded.battery_charging_50
 ///
-  /// <span class="material-symbols-rounded">battery_charging_80</span> MaterialSymbolsRounded.battery_charging_80
+/// <span class="material-symbols-rounded">battery_charging_60</span> MaterialSymbolsRounded.battery_charging_60
 ///
-  /// <span class="material-symbols-rounded">battery_charging_90</span> MaterialSymbolsRounded.battery_charging_90
+/// <span class="material-symbols-rounded">battery_charging_80</span> MaterialSymbolsRounded.battery_charging_80
 ///
-  /// <span class="material-symbols-rounded">battery_charging_full</span> MaterialSymbolsRounded.battery_charging_full
+/// <span class="material-symbols-rounded">battery_charging_90</span> MaterialSymbolsRounded.battery_charging_90
 ///
-  /// <span class="material-symbols-rounded">battery_error</span> MaterialSymbolsRounded.battery_error
+/// <span class="material-symbols-rounded">battery_charging_full</span> MaterialSymbolsRounded.battery_charging_full
 ///
-  /// <span class="material-symbols-rounded">battery_full</span> MaterialSymbolsRounded.battery_full
+/// <span class="material-symbols-rounded">battery_error</span> MaterialSymbolsRounded.battery_error
 ///
-  /// <span class="material-symbols-rounded">battery_full_alt</span> MaterialSymbolsRounded.battery_full_alt
+/// <span class="material-symbols-rounded">battery_full</span> MaterialSymbolsRounded.battery_full
 ///
-  /// <span class="material-symbols-rounded">battery_horiz_000</span> MaterialSymbolsRounded.battery_horiz_000
+/// <span class="material-symbols-rounded">battery_full_alt</span> MaterialSymbolsRounded.battery_full_alt
 ///
-  /// <span class="material-symbols-rounded">battery_horiz_050</span> MaterialSymbolsRounded.battery_horiz_050
+/// <span class="material-symbols-rounded">battery_horiz_000</span> MaterialSymbolsRounded.battery_horiz_000
 ///
-  /// <span class="material-symbols-rounded">battery_horiz_075</span> MaterialSymbolsRounded.battery_horiz_075
+/// <span class="material-symbols-rounded">battery_horiz_050</span> MaterialSymbolsRounded.battery_horiz_050
 ///
-  /// <span class="material-symbols-rounded">battery_low</span> MaterialSymbolsRounded.battery_low
+/// <span class="material-symbols-rounded">battery_horiz_075</span> MaterialSymbolsRounded.battery_horiz_075
 ///
-  /// <span class="material-symbols-rounded">battery_plus</span> MaterialSymbolsRounded.battery_plus
+/// <span class="material-symbols-rounded">battery_low</span> MaterialSymbolsRounded.battery_low
 ///
-  /// <span class="material-symbols-rounded">battery_profile</span> MaterialSymbolsRounded.battery_profile
+/// <span class="material-symbols-rounded">battery_plus</span> MaterialSymbolsRounded.battery_plus
 ///
-  /// <span class="material-symbols-rounded">battery_saver</span> MaterialSymbolsRounded.battery_saver
+/// <span class="material-symbols-rounded">battery_profile</span> MaterialSymbolsRounded.battery_profile
 ///
-  /// <span class="material-symbols-rounded">battery_std</span> MaterialSymbolsRounded.battery_std
+/// <span class="material-symbols-rounded">battery_saver</span> MaterialSymbolsRounded.battery_saver
 ///
-  /// <span class="material-symbols-rounded">battery_unknown</span> MaterialSymbolsRounded.battery_unknown
+/// <span class="material-symbols-rounded">battery_std</span> MaterialSymbolsRounded.battery_std
 ///
-  /// <span class="material-symbols-rounded">battery_vert_005</span> MaterialSymbolsRounded.battery_vert_005
+/// <span class="material-symbols-rounded">battery_unknown</span> MaterialSymbolsRounded.battery_unknown
 ///
-  /// <span class="material-symbols-rounded">battery_vert_020</span> MaterialSymbolsRounded.battery_vert_020
+/// <span class="material-symbols-rounded">battery_vert_005</span> MaterialSymbolsRounded.battery_vert_005
 ///
-  /// <span class="material-symbols-rounded">battery_vert_050</span> MaterialSymbolsRounded.battery_vert_050
+/// <span class="material-symbols-rounded">battery_vert_020</span> MaterialSymbolsRounded.battery_vert_020
 ///
-  /// <span class="material-symbols-rounded">battery_very_low</span> MaterialSymbolsRounded.battery_very_low
+/// <span class="material-symbols-rounded">battery_vert_050</span> MaterialSymbolsRounded.battery_vert_050
 ///
-  /// <span class="material-symbols-rounded">beach_access</span> MaterialSymbolsRounded.beach_access
+/// <span class="material-symbols-rounded">battery_very_low</span> MaterialSymbolsRounded.battery_very_low
 ///
-  /// <span class="material-symbols-rounded">bed</span> MaterialSymbolsRounded.bed
+/// <span class="material-symbols-rounded">beach_access</span> MaterialSymbolsRounded.beach_access
 ///
-  /// <span class="material-symbols-rounded">bedroom_baby</span> MaterialSymbolsRounded.bedroom_baby
+/// <span class="material-symbols-rounded">bed</span> MaterialSymbolsRounded.bed
 ///
-  /// <span class="material-symbols-rounded">bedroom_child</span> MaterialSymbolsRounded.bedroom_child
+/// <span class="material-symbols-rounded">bedroom_baby</span> MaterialSymbolsRounded.bedroom_baby
 ///
-  /// <span class="material-symbols-rounded">bedroom_parent</span> MaterialSymbolsRounded.bedroom_parent
+/// <span class="material-symbols-rounded">bedroom_child</span> MaterialSymbolsRounded.bedroom_child
 ///
-  /// <span class="material-symbols-rounded">bedtime</span> MaterialSymbolsRounded.bedtime
+/// <span class="material-symbols-rounded">bedroom_parent</span> MaterialSymbolsRounded.bedroom_parent
 ///
-  /// <span class="material-symbols-rounded">bedtime_off</span> MaterialSymbolsRounded.bedtime_off
+/// <span class="material-symbols-rounded">bedtime</span> MaterialSymbolsRounded.bedtime
 ///
-  /// <span class="material-symbols-rounded">beenhere</span> MaterialSymbolsRounded.beenhere
+/// <span class="material-symbols-rounded">bedtime_off</span> MaterialSymbolsRounded.bedtime_off
 ///
-  /// <span class="material-symbols-rounded">bento</span> MaterialSymbolsRounded.bento
+/// <span class="material-symbols-rounded">beenhere</span> MaterialSymbolsRounded.beenhere
 ///
-  /// <span class="material-symbols-rounded">bia</span> MaterialSymbolsRounded.bia
+/// <span class="material-symbols-rounded">bento</span> MaterialSymbolsRounded.bento
 ///
-  /// <span class="material-symbols-rounded">bike_scooter</span> MaterialSymbolsRounded.bike_scooter
+/// <span class="material-symbols-rounded">bia</span> MaterialSymbolsRounded.bia
 ///
-  /// <span class="material-symbols-rounded">biotech</span> MaterialSymbolsRounded.biotech
+/// <span class="material-symbols-rounded">bike_scooter</span> MaterialSymbolsRounded.bike_scooter
 ///
-  /// <span class="material-symbols-rounded">blanket</span> MaterialSymbolsRounded.blanket
+/// <span class="material-symbols-rounded">biotech</span> MaterialSymbolsRounded.biotech
 ///
-  /// <span class="material-symbols-rounded">blender</span> MaterialSymbolsRounded.blender
+/// <span class="material-symbols-rounded">blanket</span> MaterialSymbolsRounded.blanket
 ///
-  /// <span class="material-symbols-rounded">blind</span> MaterialSymbolsRounded.blind
+/// <span class="material-symbols-rounded">blender</span> MaterialSymbolsRounded.blender
 ///
-  /// <span class="material-symbols-rounded">blinds</span> MaterialSymbolsRounded.blinds
+/// <span class="material-symbols-rounded">blind</span> MaterialSymbolsRounded.blind
 ///
-  /// <span class="material-symbols-rounded">blinds_closed</span> MaterialSymbolsRounded.blinds_closed
+/// <span class="material-symbols-rounded">blinds</span> MaterialSymbolsRounded.blinds
 ///
-  /// <span class="material-symbols-rounded">block</span> MaterialSymbolsRounded.block
+/// <span class="material-symbols-rounded">blinds_closed</span> MaterialSymbolsRounded.blinds_closed
 ///
-  /// <span class="material-symbols-rounded">blood_pressure</span> MaterialSymbolsRounded.blood_pressure
+/// <span class="material-symbols-rounded">block</span> MaterialSymbolsRounded.block
 ///
-  /// <span class="material-symbols-rounded">bloodtype</span> MaterialSymbolsRounded.bloodtype
+/// <span class="material-symbols-rounded">blood_pressure</span> MaterialSymbolsRounded.blood_pressure
 ///
-  /// <span class="material-symbols-rounded">bluetooth</span> MaterialSymbolsRounded.bluetooth
+/// <span class="material-symbols-rounded">bloodtype</span> MaterialSymbolsRounded.bloodtype
 ///
-  /// <span class="material-symbols-rounded">bluetooth_audio</span> MaterialSymbolsRounded.bluetooth_audio
+/// <span class="material-symbols-rounded">bluetooth</span> MaterialSymbolsRounded.bluetooth
 ///
-  /// <span class="material-symbols-rounded">bluetooth_connected</span> MaterialSymbolsRounded.bluetooth_connected
+/// <span class="material-symbols-rounded">bluetooth_audio</span> MaterialSymbolsRounded.bluetooth_audio
 ///
-  /// <span class="material-symbols-rounded">bluetooth_disabled</span> MaterialSymbolsRounded.bluetooth_disabled
+/// <span class="material-symbols-rounded">bluetooth_connected</span> MaterialSymbolsRounded.bluetooth_connected
 ///
-  /// <span class="material-symbols-rounded">bluetooth_drive</span> MaterialSymbolsRounded.bluetooth_drive
+/// <span class="material-symbols-rounded">bluetooth_disabled</span> MaterialSymbolsRounded.bluetooth_disabled
 ///
-  /// <span class="material-symbols-rounded">bluetooth_searching</span> MaterialSymbolsRounded.bluetooth_searching
+/// <span class="material-symbols-rounded">bluetooth_drive</span> MaterialSymbolsRounded.bluetooth_drive
 ///
-  /// <span class="material-symbols-rounded">blur_circular</span> MaterialSymbolsRounded.blur_circular
+/// <span class="material-symbols-rounded">bluetooth_searching</span> MaterialSymbolsRounded.bluetooth_searching
 ///
-  /// <span class="material-symbols-rounded">blur_linear</span> MaterialSymbolsRounded.blur_linear
+/// <span class="material-symbols-rounded">blur_circular</span> MaterialSymbolsRounded.blur_circular
 ///
-  /// <span class="material-symbols-rounded">blur_medium</span> MaterialSymbolsRounded.blur_medium
+/// <span class="material-symbols-rounded">blur_linear</span> MaterialSymbolsRounded.blur_linear
 ///
-  /// <span class="material-symbols-rounded">blur_off</span> MaterialSymbolsRounded.blur_off
+/// <span class="material-symbols-rounded">blur_medium</span> MaterialSymbolsRounded.blur_medium
 ///
-  /// <span class="material-symbols-rounded">blur_on</span> MaterialSymbolsRounded.blur_on
+/// <span class="material-symbols-rounded">blur_off</span> MaterialSymbolsRounded.blur_off
 ///
-  /// <span class="material-symbols-rounded">blur_short</span> MaterialSymbolsRounded.blur_short
+/// <span class="material-symbols-rounded">blur_on</span> MaterialSymbolsRounded.blur_on
 ///
-  /// <span class="material-symbols-rounded">body_fat</span> MaterialSymbolsRounded.body_fat
+/// <span class="material-symbols-rounded">blur_short</span> MaterialSymbolsRounded.blur_short
 ///
-  /// <span class="material-symbols-rounded">body_system</span> MaterialSymbolsRounded.body_system
+/// <span class="material-symbols-rounded">body_fat</span> MaterialSymbolsRounded.body_fat
 ///
-  /// <span class="material-symbols-rounded">bolt</span> MaterialSymbolsRounded.bolt
+/// <span class="material-symbols-rounded">body_system</span> MaterialSymbolsRounded.body_system
 ///
-  /// <span class="material-symbols-rounded">book</span> MaterialSymbolsRounded.book
+/// <span class="material-symbols-rounded">bolt</span> MaterialSymbolsRounded.bolt
 ///
-  /// <span class="material-symbols-rounded">book_online</span> MaterialSymbolsRounded.book_online
+/// <span class="material-symbols-rounded">book</span> MaterialSymbolsRounded.book
 ///
-  /// <span class="material-symbols-rounded">bookmark</span> MaterialSymbolsRounded.bookmark
+/// <span class="material-symbols-rounded">book_online</span> MaterialSymbolsRounded.book_online
 ///
-  /// <span class="material-symbols-rounded">bookmark_add</span> MaterialSymbolsRounded.bookmark_add
+/// <span class="material-symbols-rounded">bookmark</span> MaterialSymbolsRounded.bookmark
 ///
-  /// <span class="material-symbols-rounded">bookmark_added</span> MaterialSymbolsRounded.bookmark_added
+/// <span class="material-symbols-rounded">bookmark_add</span> MaterialSymbolsRounded.bookmark_add
 ///
-  /// <span class="material-symbols-rounded">bookmark_border</span> MaterialSymbolsRounded.bookmark_border
+/// <span class="material-symbols-rounded">bookmark_added</span> MaterialSymbolsRounded.bookmark_added
 ///
-  /// <span class="material-symbols-rounded">bookmark_manager</span> MaterialSymbolsRounded.bookmark_manager
+/// <span class="material-symbols-rounded">bookmark_border</span> MaterialSymbolsRounded.bookmark_border
 ///
-  /// <span class="material-symbols-rounded">bookmark_remove</span> MaterialSymbolsRounded.bookmark_remove
+/// <span class="material-symbols-rounded">bookmark_manager</span> MaterialSymbolsRounded.bookmark_manager
 ///
-  /// <span class="material-symbols-rounded">bookmarks</span> MaterialSymbolsRounded.bookmarks
+/// <span class="material-symbols-rounded">bookmark_remove</span> MaterialSymbolsRounded.bookmark_remove
 ///
-  /// <span class="material-symbols-rounded">border_all</span> MaterialSymbolsRounded.border_all
+/// <span class="material-symbols-rounded">bookmarks</span> MaterialSymbolsRounded.bookmarks
 ///
-  /// <span class="material-symbols-rounded">border_bottom</span> MaterialSymbolsRounded.border_bottom
+/// <span class="material-symbols-rounded">border_all</span> MaterialSymbolsRounded.border_all
 ///
-  /// <span class="material-symbols-rounded">border_clear</span> MaterialSymbolsRounded.border_clear
+/// <span class="material-symbols-rounded">border_bottom</span> MaterialSymbolsRounded.border_bottom
 ///
-  /// <span class="material-symbols-rounded">border_color</span> MaterialSymbolsRounded.border_color
+/// <span class="material-symbols-rounded">border_clear</span> MaterialSymbolsRounded.border_clear
 ///
-  /// <span class="material-symbols-rounded">border_horizontal</span> MaterialSymbolsRounded.border_horizontal
+/// <span class="material-symbols-rounded">border_color</span> MaterialSymbolsRounded.border_color
 ///
-  /// <span class="material-symbols-rounded">border_inner</span> MaterialSymbolsRounded.border_inner
+/// <span class="material-symbols-rounded">border_horizontal</span> MaterialSymbolsRounded.border_horizontal
 ///
-  /// <span class="material-symbols-rounded">border_left</span> MaterialSymbolsRounded.border_left
+/// <span class="material-symbols-rounded">border_inner</span> MaterialSymbolsRounded.border_inner
 ///
-  /// <span class="material-symbols-rounded">border_outer</span> MaterialSymbolsRounded.border_outer
+/// <span class="material-symbols-rounded">border_left</span> MaterialSymbolsRounded.border_left
 ///
-  /// <span class="material-symbols-rounded">border_right</span> MaterialSymbolsRounded.border_right
+/// <span class="material-symbols-rounded">border_outer</span> MaterialSymbolsRounded.border_outer
 ///
-  /// <span class="material-symbols-rounded">border_style</span> MaterialSymbolsRounded.border_style
+/// <span class="material-symbols-rounded">border_right</span> MaterialSymbolsRounded.border_right
 ///
-  /// <span class="material-symbols-rounded">border_top</span> MaterialSymbolsRounded.border_top
+/// <span class="material-symbols-rounded">border_style</span> MaterialSymbolsRounded.border_style
 ///
-  /// <span class="material-symbols-rounded">border_vertical</span> MaterialSymbolsRounded.border_vertical
+/// <span class="material-symbols-rounded">border_top</span> MaterialSymbolsRounded.border_top
 ///
-  /// <span class="material-symbols-rounded">bottom_panel_close</span> MaterialSymbolsRounded.bottom_panel_close
+/// <span class="material-symbols-rounded">border_vertical</span> MaterialSymbolsRounded.border_vertical
 ///
-  /// <span class="material-symbols-rounded">bottom_panel_open</span> MaterialSymbolsRounded.bottom_panel_open
+/// <span class="material-symbols-rounded">bottom_panel_close</span> MaterialSymbolsRounded.bottom_panel_close
 ///
-  /// <span class="material-symbols-rounded">boy</span> MaterialSymbolsRounded.boy
+/// <span class="material-symbols-rounded">bottom_panel_open</span> MaterialSymbolsRounded.bottom_panel_open
 ///
-  /// <span class="material-symbols-rounded">branding_watermark</span> MaterialSymbolsRounded.branding_watermark
+/// <span class="material-symbols-rounded">boy</span> MaterialSymbolsRounded.boy
 ///
-  /// <span class="material-symbols-rounded">breakfast_dining</span> MaterialSymbolsRounded.breakfast_dining
+/// <span class="material-symbols-rounded">branding_watermark</span> MaterialSymbolsRounded.branding_watermark
 ///
-  /// <span class="material-symbols-rounded">breaking_news_alt_1</span> MaterialSymbolsRounded.breaking_news_alt_1
+/// <span class="material-symbols-rounded">breakfast_dining</span> MaterialSymbolsRounded.breakfast_dining
 ///
-  /// <span class="material-symbols-rounded">breastfeeding</span> MaterialSymbolsRounded.breastfeeding
+/// <span class="material-symbols-rounded">breaking_news_alt_1</span> MaterialSymbolsRounded.breaking_news_alt_1
 ///
-  /// <span class="material-symbols-rounded">brightness_1</span> MaterialSymbolsRounded.brightness_1
+/// <span class="material-symbols-rounded">breastfeeding</span> MaterialSymbolsRounded.breastfeeding
 ///
-  /// <span class="material-symbols-rounded">brightness_2</span> MaterialSymbolsRounded.brightness_2
+/// <span class="material-symbols-rounded">brightness_1</span> MaterialSymbolsRounded.brightness_1
 ///
-  /// <span class="material-symbols-rounded">brightness_3</span> MaterialSymbolsRounded.brightness_3
+/// <span class="material-symbols-rounded">brightness_2</span> MaterialSymbolsRounded.brightness_2
 ///
-  /// <span class="material-symbols-rounded">brightness_4</span> MaterialSymbolsRounded.brightness_4
+/// <span class="material-symbols-rounded">brightness_3</span> MaterialSymbolsRounded.brightness_3
 ///
-  /// <span class="material-symbols-rounded">brightness_5</span> MaterialSymbolsRounded.brightness_5
+/// <span class="material-symbols-rounded">brightness_4</span> MaterialSymbolsRounded.brightness_4
 ///
-  /// <span class="material-symbols-rounded">brightness_6</span> MaterialSymbolsRounded.brightness_6
+/// <span class="material-symbols-rounded">brightness_5</span> MaterialSymbolsRounded.brightness_5
 ///
-  /// <span class="material-symbols-rounded">brightness_7</span> MaterialSymbolsRounded.brightness_7
+/// <span class="material-symbols-rounded">brightness_6</span> MaterialSymbolsRounded.brightness_6
 ///
-  /// <span class="material-symbols-rounded">brightness_auto</span> MaterialSymbolsRounded.brightness_auto
+/// <span class="material-symbols-rounded">brightness_7</span> MaterialSymbolsRounded.brightness_7
 ///
-  /// <span class="material-symbols-rounded">brightness_empty</span> MaterialSymbolsRounded.brightness_empty
+/// <span class="material-symbols-rounded">brightness_auto</span> MaterialSymbolsRounded.brightness_auto
 ///
-  /// <span class="material-symbols-rounded">brightness_high</span> MaterialSymbolsRounded.brightness_high
+/// <span class="material-symbols-rounded">brightness_empty</span> MaterialSymbolsRounded.brightness_empty
 ///
-  /// <span class="material-symbols-rounded">brightness_low</span> MaterialSymbolsRounded.brightness_low
+/// <span class="material-symbols-rounded">brightness_high</span> MaterialSymbolsRounded.brightness_high
 ///
-  /// <span class="material-symbols-rounded">brightness_medium</span> MaterialSymbolsRounded.brightness_medium
+/// <span class="material-symbols-rounded">brightness_low</span> MaterialSymbolsRounded.brightness_low
 ///
-  /// <span class="material-symbols-rounded">bring_your_own_ip</span> MaterialSymbolsRounded.bring_your_own_ip
+/// <span class="material-symbols-rounded">brightness_medium</span> MaterialSymbolsRounded.brightness_medium
 ///
-  /// <span class="material-symbols-rounded">broadcast_on_home</span> MaterialSymbolsRounded.broadcast_on_home
+/// <span class="material-symbols-rounded">bring_your_own_ip</span> MaterialSymbolsRounded.bring_your_own_ip
 ///
-  /// <span class="material-symbols-rounded">broadcast_on_personal</span> MaterialSymbolsRounded.broadcast_on_personal
+/// <span class="material-symbols-rounded">broadcast_on_home</span> MaterialSymbolsRounded.broadcast_on_home
 ///
-  /// <span class="material-symbols-rounded">broken_image</span> MaterialSymbolsRounded.broken_image
+/// <span class="material-symbols-rounded">broadcast_on_personal</span> MaterialSymbolsRounded.broadcast_on_personal
 ///
-  /// <span class="material-symbols-rounded">browse_activity</span> MaterialSymbolsRounded.browse_activity
+/// <span class="material-symbols-rounded">broken_image</span> MaterialSymbolsRounded.broken_image
 ///
-  /// <span class="material-symbols-rounded">browse_gallery</span> MaterialSymbolsRounded.browse_gallery
+/// <span class="material-symbols-rounded">browse_activity</span> MaterialSymbolsRounded.browse_activity
 ///
-  /// <span class="material-symbols-rounded">browser_not_supported</span> MaterialSymbolsRounded.browser_not_supported
+/// <span class="material-symbols-rounded">browse_gallery</span> MaterialSymbolsRounded.browse_gallery
 ///
-  /// <span class="material-symbols-rounded">browser_updated</span> MaterialSymbolsRounded.browser_updated
+/// <span class="material-symbols-rounded">browser_not_supported</span> MaterialSymbolsRounded.browser_not_supported
 ///
-  /// <span class="material-symbols-rounded">brunch_dining</span> MaterialSymbolsRounded.brunch_dining
+/// <span class="material-symbols-rounded">browser_updated</span> MaterialSymbolsRounded.browser_updated
 ///
-  /// <span class="material-symbols-rounded">brush</span> MaterialSymbolsRounded.brush
+/// <span class="material-symbols-rounded">brunch_dining</span> MaterialSymbolsRounded.brunch_dining
 ///
-  /// <span class="material-symbols-rounded">bubble_chart</span> MaterialSymbolsRounded.bubble_chart
+/// <span class="material-symbols-rounded">brush</span> MaterialSymbolsRounded.brush
 ///
-  /// <span class="material-symbols-rounded">bug_report</span> MaterialSymbolsRounded.bug_report
+/// <span class="material-symbols-rounded">bubble_chart</span> MaterialSymbolsRounded.bubble_chart
 ///
-  /// <span class="material-symbols-rounded">build</span> MaterialSymbolsRounded.build
+/// <span class="material-symbols-rounded">bug_report</span> MaterialSymbolsRounded.bug_report
 ///
-  /// <span class="material-symbols-rounded">build_circle</span> MaterialSymbolsRounded.build_circle
+/// <span class="material-symbols-rounded">build</span> MaterialSymbolsRounded.build
 ///
-  /// <span class="material-symbols-rounded">bungalow</span> MaterialSymbolsRounded.bungalow
+/// <span class="material-symbols-rounded">build_circle</span> MaterialSymbolsRounded.build_circle
 ///
-  /// <span class="material-symbols-rounded">burst_mode</span> MaterialSymbolsRounded.burst_mode
+/// <span class="material-symbols-rounded">bungalow</span> MaterialSymbolsRounded.bungalow
 ///
-  /// <span class="material-symbols-rounded">bus_alert</span> MaterialSymbolsRounded.bus_alert
+/// <span class="material-symbols-rounded">burst_mode</span> MaterialSymbolsRounded.burst_mode
 ///
-  /// <span class="material-symbols-rounded">business</span> MaterialSymbolsRounded.business
+/// <span class="material-symbols-rounded">bus_alert</span> MaterialSymbolsRounded.bus_alert
 ///
-  /// <span class="material-symbols-rounded">business_center</span> MaterialSymbolsRounded.business_center
+/// <span class="material-symbols-rounded">business</span> MaterialSymbolsRounded.business
 ///
-  /// <span class="material-symbols-rounded">business_chip</span> MaterialSymbolsRounded.business_chip
+/// <span class="material-symbols-rounded">business_center</span> MaterialSymbolsRounded.business_center
 ///
-  /// <span class="material-symbols-rounded">cabin</span> MaterialSymbolsRounded.cabin
+/// <span class="material-symbols-rounded">business_chip</span> MaterialSymbolsRounded.business_chip
 ///
-  /// <span class="material-symbols-rounded">cable</span> MaterialSymbolsRounded.cable
+/// <span class="material-symbols-rounded">cabin</span> MaterialSymbolsRounded.cabin
 ///
-  /// <span class="material-symbols-rounded">cached</span> MaterialSymbolsRounded.cached
+/// <span class="material-symbols-rounded">cable</span> MaterialSymbolsRounded.cable
 ///
-  /// <span class="material-symbols-rounded">cake</span> MaterialSymbolsRounded.cake
+/// <span class="material-symbols-rounded">cached</span> MaterialSymbolsRounded.cached
 ///
-  /// <span class="material-symbols-rounded">cake_add</span> MaterialSymbolsRounded.cake_add
+/// <span class="material-symbols-rounded">cake</span> MaterialSymbolsRounded.cake
 ///
-  /// <span class="material-symbols-rounded">calculate</span> MaterialSymbolsRounded.calculate
+/// <span class="material-symbols-rounded">cake_add</span> MaterialSymbolsRounded.cake_add
 ///
-  /// <span class="material-symbols-rounded">calendar_add_on</span> MaterialSymbolsRounded.calendar_add_on
+/// <span class="material-symbols-rounded">calculate</span> MaterialSymbolsRounded.calculate
 ///
-  /// <span class="material-symbols-rounded">calendar_apps_script</span> MaterialSymbolsRounded.calendar_apps_script
+/// <span class="material-symbols-rounded">calendar_add_on</span> MaterialSymbolsRounded.calendar_add_on
 ///
-  /// <span class="material-symbols-rounded">calendar_month</span> MaterialSymbolsRounded.calendar_month
+/// <span class="material-symbols-rounded">calendar_apps_script</span> MaterialSymbolsRounded.calendar_apps_script
 ///
-  /// <span class="material-symbols-rounded">calendar_today</span> MaterialSymbolsRounded.calendar_today
+/// <span class="material-symbols-rounded">calendar_month</span> MaterialSymbolsRounded.calendar_month
 ///
-  /// <span class="material-symbols-rounded">calendar_view_day</span> MaterialSymbolsRounded.calendar_view_day
+/// <span class="material-symbols-rounded">calendar_today</span> MaterialSymbolsRounded.calendar_today
 ///
-  /// <span class="material-symbols-rounded">calendar_view_month</span> MaterialSymbolsRounded.calendar_view_month
+/// <span class="material-symbols-rounded">calendar_view_day</span> MaterialSymbolsRounded.calendar_view_day
 ///
-  /// <span class="material-symbols-rounded">calendar_view_week</span> MaterialSymbolsRounded.calendar_view_week
+/// <span class="material-symbols-rounded">calendar_view_month</span> MaterialSymbolsRounded.calendar_view_month
 ///
-  /// <span class="material-symbols-rounded">call</span> MaterialSymbolsRounded.call
+/// <span class="material-symbols-rounded">calendar_view_week</span> MaterialSymbolsRounded.calendar_view_week
 ///
-  /// <span class="material-symbols-rounded">call_end</span> MaterialSymbolsRounded.call_end
+/// <span class="material-symbols-rounded">call</span> MaterialSymbolsRounded.call
 ///
-  /// <span class="material-symbols-rounded">call_end_alt</span> MaterialSymbolsRounded.call_end_alt
+/// <span class="material-symbols-rounded">call_end</span> MaterialSymbolsRounded.call_end
 ///
-  /// <span class="material-symbols-rounded">call_made</span> MaterialSymbolsRounded.call_made
+/// <span class="material-symbols-rounded">call_end_alt</span> MaterialSymbolsRounded.call_end_alt
 ///
-  /// <span class="material-symbols-rounded">call_merge</span> MaterialSymbolsRounded.call_merge
+/// <span class="material-symbols-rounded">call_made</span> MaterialSymbolsRounded.call_made
 ///
-  /// <span class="material-symbols-rounded">call_missed</span> MaterialSymbolsRounded.call_missed
+/// <span class="material-symbols-rounded">call_merge</span> MaterialSymbolsRounded.call_merge
 ///
-  /// <span class="material-symbols-rounded">call_missed_outgoing</span> MaterialSymbolsRounded.call_missed_outgoing
+/// <span class="material-symbols-rounded">call_missed</span> MaterialSymbolsRounded.call_missed
 ///
-  /// <span class="material-symbols-rounded">call_received</span> MaterialSymbolsRounded.call_received
+/// <span class="material-symbols-rounded">call_missed_outgoing</span> MaterialSymbolsRounded.call_missed_outgoing
 ///
-  /// <span class="material-symbols-rounded">call_split</span> MaterialSymbolsRounded.call_split
+/// <span class="material-symbols-rounded">call_received</span> MaterialSymbolsRounded.call_received
 ///
-  /// <span class="material-symbols-rounded">call_to_action</span> MaterialSymbolsRounded.call_to_action
+/// <span class="material-symbols-rounded">call_split</span> MaterialSymbolsRounded.call_split
 ///
-  /// <span class="material-symbols-rounded">camera</span> MaterialSymbolsRounded.camera
+/// <span class="material-symbols-rounded">call_to_action</span> MaterialSymbolsRounded.call_to_action
 ///
-  /// <span class="material-symbols-rounded">camera_alt</span> MaterialSymbolsRounded.camera_alt
+/// <span class="material-symbols-rounded">camera</span> MaterialSymbolsRounded.camera
 ///
-  /// <span class="material-symbols-rounded">camera_enhance</span> MaterialSymbolsRounded.camera_enhance
+/// <span class="material-symbols-rounded">camera_alt</span> MaterialSymbolsRounded.camera_alt
 ///
-  /// <span class="material-symbols-rounded">camera_front</span> MaterialSymbolsRounded.camera_front
+/// <span class="material-symbols-rounded">camera_enhance</span> MaterialSymbolsRounded.camera_enhance
 ///
-  /// <span class="material-symbols-rounded">camera_indoor</span> MaterialSymbolsRounded.camera_indoor
+/// <span class="material-symbols-rounded">camera_front</span> MaterialSymbolsRounded.camera_front
 ///
-  /// <span class="material-symbols-rounded">camera_outdoor</span> MaterialSymbolsRounded.camera_outdoor
+/// <span class="material-symbols-rounded">camera_indoor</span> MaterialSymbolsRounded.camera_indoor
 ///
-  /// <span class="material-symbols-rounded">camera_rear</span> MaterialSymbolsRounded.camera_rear
+/// <span class="material-symbols-rounded">camera_outdoor</span> MaterialSymbolsRounded.camera_outdoor
 ///
-  /// <span class="material-symbols-rounded">camera_roll</span> MaterialSymbolsRounded.camera_roll
+/// <span class="material-symbols-rounded">camera_rear</span> MaterialSymbolsRounded.camera_rear
 ///
-  /// <span class="material-symbols-rounded">camera_video</span> MaterialSymbolsRounded.camera_video
+/// <span class="material-symbols-rounded">camera_roll</span> MaterialSymbolsRounded.camera_roll
 ///
-  /// <span class="material-symbols-rounded">cameraswitch</span> MaterialSymbolsRounded.cameraswitch
+/// <span class="material-symbols-rounded">camera_video</span> MaterialSymbolsRounded.camera_video
 ///
-  /// <span class="material-symbols-rounded">campaign</span> MaterialSymbolsRounded.campaign
+/// <span class="material-symbols-rounded">cameraswitch</span> MaterialSymbolsRounded.cameraswitch
 ///
-  /// <span class="material-symbols-rounded">camping</span> MaterialSymbolsRounded.camping
+/// <span class="material-symbols-rounded">campaign</span> MaterialSymbolsRounded.campaign
 ///
-  /// <span class="material-symbols-rounded">cancel</span> MaterialSymbolsRounded.cancel
+/// <span class="material-symbols-rounded">camping</span> MaterialSymbolsRounded.camping
 ///
-  /// <span class="material-symbols-rounded">cancel_presentation</span> MaterialSymbolsRounded.cancel_presentation
+/// <span class="material-symbols-rounded">cancel</span> MaterialSymbolsRounded.cancel
 ///
-  /// <span class="material-symbols-rounded">cancel_schedule_send</span> MaterialSymbolsRounded.cancel_schedule_send
+/// <span class="material-symbols-rounded">cancel_presentation</span> MaterialSymbolsRounded.cancel_presentation
 ///
-  /// <span class="material-symbols-rounded">candlestick_chart</span> MaterialSymbolsRounded.candlestick_chart
+/// <span class="material-symbols-rounded">cancel_schedule_send</span> MaterialSymbolsRounded.cancel_schedule_send
 ///
-  /// <span class="material-symbols-rounded">captive_portal</span> MaterialSymbolsRounded.captive_portal
+/// <span class="material-symbols-rounded">candlestick_chart</span> MaterialSymbolsRounded.candlestick_chart
 ///
-  /// <span class="material-symbols-rounded">capture</span> MaterialSymbolsRounded.capture
+/// <span class="material-symbols-rounded">captive_portal</span> MaterialSymbolsRounded.captive_portal
 ///
-  /// <span class="material-symbols-rounded">car_crash</span> MaterialSymbolsRounded.car_crash
+/// <span class="material-symbols-rounded">capture</span> MaterialSymbolsRounded.capture
 ///
-  /// <span class="material-symbols-rounded">car_rental</span> MaterialSymbolsRounded.car_rental
+/// <span class="material-symbols-rounded">car_crash</span> MaterialSymbolsRounded.car_crash
 ///
-  /// <span class="material-symbols-rounded">car_repair</span> MaterialSymbolsRounded.car_repair
+/// <span class="material-symbols-rounded">car_rental</span> MaterialSymbolsRounded.car_rental
 ///
-  /// <span class="material-symbols-rounded">card_giftcard</span> MaterialSymbolsRounded.card_giftcard
+/// <span class="material-symbols-rounded">car_repair</span> MaterialSymbolsRounded.car_repair
 ///
-  /// <span class="material-symbols-rounded">card_membership</span> MaterialSymbolsRounded.card_membership
+/// <span class="material-symbols-rounded">card_giftcard</span> MaterialSymbolsRounded.card_giftcard
 ///
-  /// <span class="material-symbols-rounded">card_travel</span> MaterialSymbolsRounded.card_travel
+/// <span class="material-symbols-rounded">card_membership</span> MaterialSymbolsRounded.card_membership
 ///
-  /// <span class="material-symbols-rounded">cardiology</span> MaterialSymbolsRounded.cardiology
+/// <span class="material-symbols-rounded">card_travel</span> MaterialSymbolsRounded.card_travel
 ///
-  /// <span class="material-symbols-rounded">carpenter</span> MaterialSymbolsRounded.carpenter
+/// <span class="material-symbols-rounded">cardiology</span> MaterialSymbolsRounded.cardiology
 ///
-  /// <span class="material-symbols-rounded">cases</span> MaterialSymbolsRounded.cases
+/// <span class="material-symbols-rounded">carpenter</span> MaterialSymbolsRounded.carpenter
 ///
-  /// <span class="material-symbols-rounded">casino</span> MaterialSymbolsRounded.casino
+/// <span class="material-symbols-rounded">cases</span> MaterialSymbolsRounded.cases
 ///
-  /// <span class="material-symbols-rounded">cast</span> MaterialSymbolsRounded.cast
+/// <span class="material-symbols-rounded">casino</span> MaterialSymbolsRounded.casino
 ///
-  /// <span class="material-symbols-rounded">cast_connected</span> MaterialSymbolsRounded.cast_connected
+/// <span class="material-symbols-rounded">cast</span> MaterialSymbolsRounded.cast
 ///
-  /// <span class="material-symbols-rounded">cast_for_education</span> MaterialSymbolsRounded.cast_for_education
+/// <span class="material-symbols-rounded">cast_connected</span> MaterialSymbolsRounded.cast_connected
 ///
-  /// <span class="material-symbols-rounded">castle</span> MaterialSymbolsRounded.castle
+/// <span class="material-symbols-rounded">cast_for_education</span> MaterialSymbolsRounded.cast_for_education
 ///
-  /// <span class="material-symbols-rounded">category</span> MaterialSymbolsRounded.category
+/// <span class="material-symbols-rounded">castle</span> MaterialSymbolsRounded.castle
 ///
-  /// <span class="material-symbols-rounded">celebration</span> MaterialSymbolsRounded.celebration
+/// <span class="material-symbols-rounded">category</span> MaterialSymbolsRounded.category
 ///
-  /// <span class="material-symbols-rounded">cell_merge</span> MaterialSymbolsRounded.cell_merge
+/// <span class="material-symbols-rounded">celebration</span> MaterialSymbolsRounded.celebration
 ///
-  /// <span class="material-symbols-rounded">cell_tower</span> MaterialSymbolsRounded.cell_tower
+/// <span class="material-symbols-rounded">cell_merge</span> MaterialSymbolsRounded.cell_merge
 ///
-  /// <span class="material-symbols-rounded">cell_wifi</span> MaterialSymbolsRounded.cell_wifi
+/// <span class="material-symbols-rounded">cell_tower</span> MaterialSymbolsRounded.cell_tower
 ///
-  /// <span class="material-symbols-rounded">center_focus_strong</span> MaterialSymbolsRounded.center_focus_strong
+/// <span class="material-symbols-rounded">cell_wifi</span> MaterialSymbolsRounded.cell_wifi
 ///
-  /// <span class="material-symbols-rounded">center_focus_weak</span> MaterialSymbolsRounded.center_focus_weak
+/// <span class="material-symbols-rounded">center_focus_strong</span> MaterialSymbolsRounded.center_focus_strong
 ///
-  /// <span class="material-symbols-rounded">chair</span> MaterialSymbolsRounded.chair
+/// <span class="material-symbols-rounded">center_focus_weak</span> MaterialSymbolsRounded.center_focus_weak
 ///
-  /// <span class="material-symbols-rounded">chair_alt</span> MaterialSymbolsRounded.chair_alt
+/// <span class="material-symbols-rounded">chair</span> MaterialSymbolsRounded.chair
 ///
-  /// <span class="material-symbols-rounded">chalet</span> MaterialSymbolsRounded.chalet
+/// <span class="material-symbols-rounded">chair_alt</span> MaterialSymbolsRounded.chair_alt
 ///
-  /// <span class="material-symbols-rounded">change_circle</span> MaterialSymbolsRounded.change_circle
+/// <span class="material-symbols-rounded">chalet</span> MaterialSymbolsRounded.chalet
 ///
-  /// <span class="material-symbols-rounded">change_history</span> MaterialSymbolsRounded.change_history
+/// <span class="material-symbols-rounded">change_circle</span> MaterialSymbolsRounded.change_circle
 ///
-  /// <span class="material-symbols-rounded">charger</span> MaterialSymbolsRounded.charger
+/// <span class="material-symbols-rounded">change_history</span> MaterialSymbolsRounded.change_history
 ///
-  /// <span class="material-symbols-rounded">charging_station</span> MaterialSymbolsRounded.charging_station
+/// <span class="material-symbols-rounded">charger</span> MaterialSymbolsRounded.charger
 ///
-  /// <span class="material-symbols-rounded">chart_data</span> MaterialSymbolsRounded.chart_data
+/// <span class="material-symbols-rounded">charging_station</span> MaterialSymbolsRounded.charging_station
 ///
-  /// <span class="material-symbols-rounded">chat</span> MaterialSymbolsRounded.chat
+/// <span class="material-symbols-rounded">chart_data</span> MaterialSymbolsRounded.chart_data
 ///
-  /// <span class="material-symbols-rounded">chat_add_on</span> MaterialSymbolsRounded.chat_add_on
+/// <span class="material-symbols-rounded">chat</span> MaterialSymbolsRounded.chat
 ///
-  /// <span class="material-symbols-rounded">chat_apps_script</span> MaterialSymbolsRounded.chat_apps_script
+/// <span class="material-symbols-rounded">chat_add_on</span> MaterialSymbolsRounded.chat_add_on
 ///
-  /// <span class="material-symbols-rounded">chat_bubble</span> MaterialSymbolsRounded.chat_bubble
+/// <span class="material-symbols-rounded">chat_apps_script</span> MaterialSymbolsRounded.chat_apps_script
 ///
-  /// <span class="material-symbols-rounded">chat_bubble_outline</span> MaterialSymbolsRounded.chat_bubble_outline
+/// <span class="material-symbols-rounded">chat_bubble</span> MaterialSymbolsRounded.chat_bubble
 ///
-  /// <span class="material-symbols-rounded">chat_error</span> MaterialSymbolsRounded.chat_error
+/// <span class="material-symbols-rounded">chat_bubble_outline</span> MaterialSymbolsRounded.chat_bubble_outline
 ///
-  /// <span class="material-symbols-rounded">chat_paste_go</span> MaterialSymbolsRounded.chat_paste_go
+/// <span class="material-symbols-rounded">chat_error</span> MaterialSymbolsRounded.chat_error
 ///
-  /// <span class="material-symbols-rounded">check</span> MaterialSymbolsRounded.check
+/// <span class="material-symbols-rounded">chat_paste_go</span> MaterialSymbolsRounded.chat_paste_go
 ///
-  /// <span class="material-symbols-rounded">check_box</span> MaterialSymbolsRounded.check_box
+/// <span class="material-symbols-rounded">check</span> MaterialSymbolsRounded.check
 ///
-  /// <span class="material-symbols-rounded">check_box_outline_blank</span> MaterialSymbolsRounded.check_box_outline_blank
+/// <span class="material-symbols-rounded">check_box</span> MaterialSymbolsRounded.check_box
 ///
-  /// <span class="material-symbols-rounded">check_circle</span> MaterialSymbolsRounded.check_circle
+/// <span class="material-symbols-rounded">check_box_outline_blank</span> MaterialSymbolsRounded.check_box_outline_blank
 ///
-  /// <span class="material-symbols-rounded">check_circle_filled</span> MaterialSymbolsRounded.check_circle_filled
+/// <span class="material-symbols-rounded">check_circle</span> MaterialSymbolsRounded.check_circle
 ///
-  /// <span class="material-symbols-rounded">check_circle_outline</span> MaterialSymbolsRounded.check_circle_outline
+/// <span class="material-symbols-rounded">check_circle_filled</span> MaterialSymbolsRounded.check_circle_filled
 ///
-  /// <span class="material-symbols-rounded">check_in_out</span> MaterialSymbolsRounded.check_in_out
+/// <span class="material-symbols-rounded">check_circle_outline</span> MaterialSymbolsRounded.check_circle_outline
 ///
-  /// <span class="material-symbols-rounded">check_indeterminate_small</span> MaterialSymbolsRounded.check_indeterminate_small
+/// <span class="material-symbols-rounded">check_in_out</span> MaterialSymbolsRounded.check_in_out
 ///
-  /// <span class="material-symbols-rounded">check_small</span> MaterialSymbolsRounded.check_small
+/// <span class="material-symbols-rounded">check_indeterminate_small</span> MaterialSymbolsRounded.check_indeterminate_small
 ///
-  /// <span class="material-symbols-rounded">checklist</span> MaterialSymbolsRounded.checklist
+/// <span class="material-symbols-rounded">check_small</span> MaterialSymbolsRounded.check_small
 ///
-  /// <span class="material-symbols-rounded">checklist_rtl</span> MaterialSymbolsRounded.checklist_rtl
+/// <span class="material-symbols-rounded">checklist</span> MaterialSymbolsRounded.checklist
 ///
-  /// <span class="material-symbols-rounded">checkroom</span> MaterialSymbolsRounded.checkroom
+/// <span class="material-symbols-rounded">checklist_rtl</span> MaterialSymbolsRounded.checklist_rtl
 ///
-  /// <span class="material-symbols-rounded">cheer</span> MaterialSymbolsRounded.cheer
+/// <span class="material-symbols-rounded">checkroom</span> MaterialSymbolsRounded.checkroom
 ///
-  /// <span class="material-symbols-rounded">chevron_left</span> MaterialSymbolsRounded.chevron_left
+/// <span class="material-symbols-rounded">cheer</span> MaterialSymbolsRounded.cheer
 ///
-  /// <span class="material-symbols-rounded">chevron_right</span> MaterialSymbolsRounded.chevron_right
+/// <span class="material-symbols-rounded">chevron_left</span> MaterialSymbolsRounded.chevron_left
 ///
-  /// <span class="material-symbols-rounded">child_care</span> MaterialSymbolsRounded.child_care
+/// <span class="material-symbols-rounded">chevron_right</span> MaterialSymbolsRounded.chevron_right
 ///
-  /// <span class="material-symbols-rounded">child_friendly</span> MaterialSymbolsRounded.child_friendly
+/// <span class="material-symbols-rounded">child_care</span> MaterialSymbolsRounded.child_care
 ///
-  /// <span class="material-symbols-rounded">chip_extraction</span> MaterialSymbolsRounded.chip_extraction
+/// <span class="material-symbols-rounded">child_friendly</span> MaterialSymbolsRounded.child_friendly
 ///
-  /// <span class="material-symbols-rounded">chrome_maximize</span> MaterialSymbolsRounded.chrome_maximize
+/// <span class="material-symbols-rounded">chip_extraction</span> MaterialSymbolsRounded.chip_extraction
 ///
-  /// <span class="material-symbols-rounded">chrome_minimize</span> MaterialSymbolsRounded.chrome_minimize
+/// <span class="material-symbols-rounded">chrome_maximize</span> MaterialSymbolsRounded.chrome_maximize
 ///
-  /// <span class="material-symbols-rounded">chrome_reader_mode</span> MaterialSymbolsRounded.chrome_reader_mode
+/// <span class="material-symbols-rounded">chrome_minimize</span> MaterialSymbolsRounded.chrome_minimize
 ///
-  /// <span class="material-symbols-rounded">chrome_restore</span> MaterialSymbolsRounded.chrome_restore
+/// <span class="material-symbols-rounded">chrome_reader_mode</span> MaterialSymbolsRounded.chrome_reader_mode
 ///
-  /// <span class="material-symbols-rounded">chrome_tote</span> MaterialSymbolsRounded.chrome_tote
+/// <span class="material-symbols-rounded">chrome_restore</span> MaterialSymbolsRounded.chrome_restore
 ///
-  /// <span class="material-symbols-rounded">chromecast_2</span> MaterialSymbolsRounded.chromecast_2
+/// <span class="material-symbols-rounded">chrome_tote</span> MaterialSymbolsRounded.chrome_tote
 ///
-  /// <span class="material-symbols-rounded">chromecast_device</span> MaterialSymbolsRounded.chromecast_device
+/// <span class="material-symbols-rounded">chromecast_2</span> MaterialSymbolsRounded.chromecast_2
 ///
-  /// <span class="material-symbols-rounded">chronic</span> MaterialSymbolsRounded.chronic
+/// <span class="material-symbols-rounded">chromecast_device</span> MaterialSymbolsRounded.chromecast_device
 ///
-  /// <span class="material-symbols-rounded">church</span> MaterialSymbolsRounded.church
+/// <span class="material-symbols-rounded">chronic</span> MaterialSymbolsRounded.chronic
 ///
-  /// <span class="material-symbols-rounded">cinematic_blur</span> MaterialSymbolsRounded.cinematic_blur
+/// <span class="material-symbols-rounded">church</span> MaterialSymbolsRounded.church
 ///
-  /// <span class="material-symbols-rounded">circle</span> MaterialSymbolsRounded.circle
+/// <span class="material-symbols-rounded">cinematic_blur</span> MaterialSymbolsRounded.cinematic_blur
 ///
-  /// <span class="material-symbols-rounded">circle_notifications</span> MaterialSymbolsRounded.circle_notifications
+/// <span class="material-symbols-rounded">circle</span> MaterialSymbolsRounded.circle
 ///
-  /// <span class="material-symbols-rounded">clarify</span> MaterialSymbolsRounded.clarify
+/// <span class="material-symbols-rounded">circle_notifications</span> MaterialSymbolsRounded.circle_notifications
 ///
-  /// <span class="material-symbols-rounded">class</span> MaterialSymbolsRounded.$class
+/// <span class="material-symbols-rounded">clarify</span> MaterialSymbolsRounded.clarify
 ///
-  /// <span class="material-symbols-rounded">clean_hands</span> MaterialSymbolsRounded.clean_hands
+/// <span class="material-symbols-rounded">class</span> MaterialSymbolsRounded.$class
 ///
-  /// <span class="material-symbols-rounded">cleaning_bucket</span> MaterialSymbolsRounded.cleaning_bucket
+/// <span class="material-symbols-rounded">clean_hands</span> MaterialSymbolsRounded.clean_hands
 ///
-  /// <span class="material-symbols-rounded">cleaning_services</span> MaterialSymbolsRounded.cleaning_services
+/// <span class="material-symbols-rounded">cleaning_bucket</span> MaterialSymbolsRounded.cleaning_bucket
 ///
-  /// <span class="material-symbols-rounded">clear</span> MaterialSymbolsRounded.clear
+/// <span class="material-symbols-rounded">cleaning_services</span> MaterialSymbolsRounded.cleaning_services
 ///
-  /// <span class="material-symbols-rounded">clear_all</span> MaterialSymbolsRounded.clear_all
+/// <span class="material-symbols-rounded">clear</span> MaterialSymbolsRounded.clear
 ///
-  /// <span class="material-symbols-rounded">clear_day</span> MaterialSymbolsRounded.clear_day
+/// <span class="material-symbols-rounded">clear_all</span> MaterialSymbolsRounded.clear_all
 ///
-  /// <span class="material-symbols-rounded">clear_night</span> MaterialSymbolsRounded.clear_night
+/// <span class="material-symbols-rounded">clear_day</span> MaterialSymbolsRounded.clear_day
 ///
-  /// <span class="material-symbols-rounded">climate_mini_split</span> MaterialSymbolsRounded.climate_mini_split
+/// <span class="material-symbols-rounded">clear_night</span> MaterialSymbolsRounded.clear_night
 ///
-  /// <span class="material-symbols-rounded">clinical_notes</span> MaterialSymbolsRounded.clinical_notes
+/// <span class="material-symbols-rounded">climate_mini_split</span> MaterialSymbolsRounded.climate_mini_split
 ///
-  /// <span class="material-symbols-rounded">clock_loader_10</span> MaterialSymbolsRounded.clock_loader_10
+/// <span class="material-symbols-rounded">clinical_notes</span> MaterialSymbolsRounded.clinical_notes
 ///
-  /// <span class="material-symbols-rounded">clock_loader_20</span> MaterialSymbolsRounded.clock_loader_20
+/// <span class="material-symbols-rounded">clock_loader_10</span> MaterialSymbolsRounded.clock_loader_10
 ///
-  /// <span class="material-symbols-rounded">clock_loader_40</span> MaterialSymbolsRounded.clock_loader_40
+/// <span class="material-symbols-rounded">clock_loader_20</span> MaterialSymbolsRounded.clock_loader_20
 ///
-  /// <span class="material-symbols-rounded">clock_loader_60</span> MaterialSymbolsRounded.clock_loader_60
+/// <span class="material-symbols-rounded">clock_loader_40</span> MaterialSymbolsRounded.clock_loader_40
 ///
-  /// <span class="material-symbols-rounded">clock_loader_80</span> MaterialSymbolsRounded.clock_loader_80
+/// <span class="material-symbols-rounded">clock_loader_60</span> MaterialSymbolsRounded.clock_loader_60
 ///
-  /// <span class="material-symbols-rounded">clock_loader_90</span> MaterialSymbolsRounded.clock_loader_90
+/// <span class="material-symbols-rounded">clock_loader_80</span> MaterialSymbolsRounded.clock_loader_80
 ///
-  /// <span class="material-symbols-rounded">close</span> MaterialSymbolsRounded.close
+/// <span class="material-symbols-rounded">clock_loader_90</span> MaterialSymbolsRounded.clock_loader_90
 ///
-  /// <span class="material-symbols-rounded">close_fullscreen</span> MaterialSymbolsRounded.close_fullscreen
+/// <span class="material-symbols-rounded">close</span> MaterialSymbolsRounded.close
 ///
-  /// <span class="material-symbols-rounded">closed_caption</span> MaterialSymbolsRounded.closed_caption
+/// <span class="material-symbols-rounded">close_fullscreen</span> MaterialSymbolsRounded.close_fullscreen
 ///
-  /// <span class="material-symbols-rounded">closed_caption_disabled</span> MaterialSymbolsRounded.closed_caption_disabled
+/// <span class="material-symbols-rounded">closed_caption</span> MaterialSymbolsRounded.closed_caption
 ///
-  /// <span class="material-symbols-rounded">closed_caption_off</span> MaterialSymbolsRounded.closed_caption_off
+/// <span class="material-symbols-rounded">closed_caption_disabled</span> MaterialSymbolsRounded.closed_caption_disabled
 ///
-  /// <span class="material-symbols-rounded">cloud</span> MaterialSymbolsRounded.cloud
+/// <span class="material-symbols-rounded">closed_caption_off</span> MaterialSymbolsRounded.closed_caption_off
 ///
-  /// <span class="material-symbols-rounded">cloud_circle</span> MaterialSymbolsRounded.cloud_circle
+/// <span class="material-symbols-rounded">cloud</span> MaterialSymbolsRounded.cloud
 ///
-  /// <span class="material-symbols-rounded">cloud_done</span> MaterialSymbolsRounded.cloud_done
+/// <span class="material-symbols-rounded">cloud_circle</span> MaterialSymbolsRounded.cloud_circle
 ///
-  /// <span class="material-symbols-rounded">cloud_download</span> MaterialSymbolsRounded.cloud_download
+/// <span class="material-symbols-rounded">cloud_done</span> MaterialSymbolsRounded.cloud_done
 ///
-  /// <span class="material-symbols-rounded">cloud_off</span> MaterialSymbolsRounded.cloud_off
+/// <span class="material-symbols-rounded">cloud_download</span> MaterialSymbolsRounded.cloud_download
 ///
-  /// <span class="material-symbols-rounded">cloud_queue</span> MaterialSymbolsRounded.cloud_queue
+/// <span class="material-symbols-rounded">cloud_off</span> MaterialSymbolsRounded.cloud_off
 ///
-  /// <span class="material-symbols-rounded">cloud_sync</span> MaterialSymbolsRounded.cloud_sync
+/// <span class="material-symbols-rounded">cloud_queue</span> MaterialSymbolsRounded.cloud_queue
 ///
-  /// <span class="material-symbols-rounded">cloud_upload</span> MaterialSymbolsRounded.cloud_upload
+/// <span class="material-symbols-rounded">cloud_sync</span> MaterialSymbolsRounded.cloud_sync
 ///
-  /// <span class="material-symbols-rounded">cloudy</span> MaterialSymbolsRounded.cloudy
+/// <span class="material-symbols-rounded">cloud_upload</span> MaterialSymbolsRounded.cloud_upload
 ///
-  /// <span class="material-symbols-rounded">cloudy_filled</span> MaterialSymbolsRounded.cloudy_filled
+/// <span class="material-symbols-rounded">cloudy</span> MaterialSymbolsRounded.cloudy
 ///
-  /// <span class="material-symbols-rounded">cloudy_snowing</span> MaterialSymbolsRounded.cloudy_snowing
+/// <span class="material-symbols-rounded">cloudy_filled</span> MaterialSymbolsRounded.cloudy_filled
 ///
-  /// <span class="material-symbols-rounded">co2</span> MaterialSymbolsRounded.co2
+/// <span class="material-symbols-rounded">cloudy_snowing</span> MaterialSymbolsRounded.cloudy_snowing
 ///
-  /// <span class="material-symbols-rounded">co_present</span> MaterialSymbolsRounded.co_present
+/// <span class="material-symbols-rounded">co2</span> MaterialSymbolsRounded.co2
 ///
-  /// <span class="material-symbols-rounded">code</span> MaterialSymbolsRounded.code
+/// <span class="material-symbols-rounded">co_present</span> MaterialSymbolsRounded.co_present
 ///
-  /// <span class="material-symbols-rounded">code_blocks</span> MaterialSymbolsRounded.code_blocks
+/// <span class="material-symbols-rounded">code</span> MaterialSymbolsRounded.code
 ///
-  /// <span class="material-symbols-rounded">code_off</span> MaterialSymbolsRounded.code_off
+/// <span class="material-symbols-rounded">code_blocks</span> MaterialSymbolsRounded.code_blocks
 ///
-  /// <span class="material-symbols-rounded">coffee</span> MaterialSymbolsRounded.coffee
+/// <span class="material-symbols-rounded">code_off</span> MaterialSymbolsRounded.code_off
 ///
-  /// <span class="material-symbols-rounded">coffee_maker</span> MaterialSymbolsRounded.coffee_maker
+/// <span class="material-symbols-rounded">coffee</span> MaterialSymbolsRounded.coffee
 ///
-  /// <span class="material-symbols-rounded">cognition</span> MaterialSymbolsRounded.cognition
+/// <span class="material-symbols-rounded">coffee_maker</span> MaterialSymbolsRounded.coffee_maker
 ///
-  /// <span class="material-symbols-rounded">collections</span> MaterialSymbolsRounded.collections
+/// <span class="material-symbols-rounded">cognition</span> MaterialSymbolsRounded.cognition
 ///
-  /// <span class="material-symbols-rounded">collections_bookmark</span> MaterialSymbolsRounded.collections_bookmark
+/// <span class="material-symbols-rounded">collections</span> MaterialSymbolsRounded.collections
 ///
-  /// <span class="material-symbols-rounded">color_lens</span> MaterialSymbolsRounded.color_lens
+/// <span class="material-symbols-rounded">collections_bookmark</span> MaterialSymbolsRounded.collections_bookmark
 ///
-  /// <span class="material-symbols-rounded">colorize</span> MaterialSymbolsRounded.colorize
+/// <span class="material-symbols-rounded">color_lens</span> MaterialSymbolsRounded.color_lens
 ///
-  /// <span class="material-symbols-rounded">comment</span> MaterialSymbolsRounded.comment
+/// <span class="material-symbols-rounded">colorize</span> MaterialSymbolsRounded.colorize
 ///
-  /// <span class="material-symbols-rounded">comment_bank</span> MaterialSymbolsRounded.comment_bank
+/// <span class="material-symbols-rounded">comment</span> MaterialSymbolsRounded.comment
 ///
-  /// <span class="material-symbols-rounded">comments_disabled</span> MaterialSymbolsRounded.comments_disabled
+/// <span class="material-symbols-rounded">comment_bank</span> MaterialSymbolsRounded.comment_bank
 ///
-  /// <span class="material-symbols-rounded">commit</span> MaterialSymbolsRounded.commit
+/// <span class="material-symbols-rounded">comments_disabled</span> MaterialSymbolsRounded.comments_disabled
 ///
-  /// <span class="material-symbols-rounded">communication</span> MaterialSymbolsRounded.communication
+/// <span class="material-symbols-rounded">commit</span> MaterialSymbolsRounded.commit
 ///
-  /// <span class="material-symbols-rounded">commute</span> MaterialSymbolsRounded.commute
+/// <span class="material-symbols-rounded">communication</span> MaterialSymbolsRounded.communication
 ///
-  /// <span class="material-symbols-rounded">compare</span> MaterialSymbolsRounded.compare
+/// <span class="material-symbols-rounded">commute</span> MaterialSymbolsRounded.commute
 ///
-  /// <span class="material-symbols-rounded">compare_arrows</span> MaterialSymbolsRounded.compare_arrows
+/// <span class="material-symbols-rounded">compare</span> MaterialSymbolsRounded.compare
 ///
-  /// <span class="material-symbols-rounded">compass_calibration</span> MaterialSymbolsRounded.compass_calibration
+/// <span class="material-symbols-rounded">compare_arrows</span> MaterialSymbolsRounded.compare_arrows
 ///
-  /// <span class="material-symbols-rounded">component_exchange</span> MaterialSymbolsRounded.component_exchange
+/// <span class="material-symbols-rounded">compass_calibration</span> MaterialSymbolsRounded.compass_calibration
 ///
-  /// <span class="material-symbols-rounded">compost</span> MaterialSymbolsRounded.compost
+/// <span class="material-symbols-rounded">component_exchange</span> MaterialSymbolsRounded.component_exchange
 ///
-  /// <span class="material-symbols-rounded">compress</span> MaterialSymbolsRounded.compress
+/// <span class="material-symbols-rounded">compost</span> MaterialSymbolsRounded.compost
 ///
-  /// <span class="material-symbols-rounded">computer</span> MaterialSymbolsRounded.computer
+/// <span class="material-symbols-rounded">compress</span> MaterialSymbolsRounded.compress
 ///
-  /// <span class="material-symbols-rounded">conditions</span> MaterialSymbolsRounded.conditions
+/// <span class="material-symbols-rounded">computer</span> MaterialSymbolsRounded.computer
 ///
-  /// <span class="material-symbols-rounded">confirmation_number</span> MaterialSymbolsRounded.confirmation_number
+/// <span class="material-symbols-rounded">conditions</span> MaterialSymbolsRounded.conditions
 ///
-  /// <span class="material-symbols-rounded">congenital</span> MaterialSymbolsRounded.congenital
+/// <span class="material-symbols-rounded">confirmation_number</span> MaterialSymbolsRounded.confirmation_number
 ///
-  /// <span class="material-symbols-rounded">connect_without_contact</span> MaterialSymbolsRounded.connect_without_contact
+/// <span class="material-symbols-rounded">congenital</span> MaterialSymbolsRounded.congenital
 ///
-  /// <span class="material-symbols-rounded">connected_tv</span> MaterialSymbolsRounded.connected_tv
+/// <span class="material-symbols-rounded">connect_without_contact</span> MaterialSymbolsRounded.connect_without_contact
 ///
-  /// <span class="material-symbols-rounded">connecting_airports</span> MaterialSymbolsRounded.connecting_airports
+/// <span class="material-symbols-rounded">connected_tv</span> MaterialSymbolsRounded.connected_tv
 ///
-  /// <span class="material-symbols-rounded">construction</span> MaterialSymbolsRounded.construction
+/// <span class="material-symbols-rounded">connecting_airports</span> MaterialSymbolsRounded.connecting_airports
 ///
-  /// <span class="material-symbols-rounded">contact_emergency</span> MaterialSymbolsRounded.contact_emergency
+/// <span class="material-symbols-rounded">construction</span> MaterialSymbolsRounded.construction
 ///
-  /// <span class="material-symbols-rounded">contact_mail</span> MaterialSymbolsRounded.contact_mail
+/// <span class="material-symbols-rounded">contact_emergency</span> MaterialSymbolsRounded.contact_emergency
 ///
-  /// <span class="material-symbols-rounded">contact_page</span> MaterialSymbolsRounded.contact_page
+/// <span class="material-symbols-rounded">contact_mail</span> MaterialSymbolsRounded.contact_mail
 ///
-  /// <span class="material-symbols-rounded">contact_phone</span> MaterialSymbolsRounded.contact_phone
+/// <span class="material-symbols-rounded">contact_page</span> MaterialSymbolsRounded.contact_page
 ///
-  /// <span class="material-symbols-rounded">contact_phone_filled</span> MaterialSymbolsRounded.contact_phone_filled
+/// <span class="material-symbols-rounded">contact_phone</span> MaterialSymbolsRounded.contact_phone
 ///
-  /// <span class="material-symbols-rounded">contact_support</span> MaterialSymbolsRounded.contact_support
+/// <span class="material-symbols-rounded">contact_phone_filled</span> MaterialSymbolsRounded.contact_phone_filled
 ///
-  /// <span class="material-symbols-rounded">contactless</span> MaterialSymbolsRounded.contactless
+/// <span class="material-symbols-rounded">contact_support</span> MaterialSymbolsRounded.contact_support
 ///
-  /// <span class="material-symbols-rounded">contactless_off</span> MaterialSymbolsRounded.contactless_off
+/// <span class="material-symbols-rounded">contactless</span> MaterialSymbolsRounded.contactless
 ///
-  /// <span class="material-symbols-rounded">contacts</span> MaterialSymbolsRounded.contacts
+/// <span class="material-symbols-rounded">contactless_off</span> MaterialSymbolsRounded.contactless_off
 ///
-  /// <span class="material-symbols-rounded">content_copy</span> MaterialSymbolsRounded.content_copy
+/// <span class="material-symbols-rounded">contacts</span> MaterialSymbolsRounded.contacts
 ///
-  /// <span class="material-symbols-rounded">content_cut</span> MaterialSymbolsRounded.content_cut
+/// <span class="material-symbols-rounded">content_copy</span> MaterialSymbolsRounded.content_copy
 ///
-  /// <span class="material-symbols-rounded">content_paste</span> MaterialSymbolsRounded.content_paste
+/// <span class="material-symbols-rounded">content_cut</span> MaterialSymbolsRounded.content_cut
 ///
-  /// <span class="material-symbols-rounded">content_paste_go</span> MaterialSymbolsRounded.content_paste_go
+/// <span class="material-symbols-rounded">content_paste</span> MaterialSymbolsRounded.content_paste
 ///
-  /// <span class="material-symbols-rounded">content_paste_off</span> MaterialSymbolsRounded.content_paste_off
+/// <span class="material-symbols-rounded">content_paste_go</span> MaterialSymbolsRounded.content_paste_go
 ///
-  /// <span class="material-symbols-rounded">content_paste_search</span> MaterialSymbolsRounded.content_paste_search
+/// <span class="material-symbols-rounded">content_paste_off</span> MaterialSymbolsRounded.content_paste_off
 ///
-  /// <span class="material-symbols-rounded">contrast</span> MaterialSymbolsRounded.contrast
+/// <span class="material-symbols-rounded">content_paste_search</span> MaterialSymbolsRounded.content_paste_search
 ///
-  /// <span class="material-symbols-rounded">contrast_rtl_off</span> MaterialSymbolsRounded.contrast_rtl_off
+/// <span class="material-symbols-rounded">contrast</span> MaterialSymbolsRounded.contrast
 ///
-  /// <span class="material-symbols-rounded">control_camera</span> MaterialSymbolsRounded.control_camera
+/// <span class="material-symbols-rounded">contrast_rtl_off</span> MaterialSymbolsRounded.contrast_rtl_off
 ///
-  /// <span class="material-symbols-rounded">control_point</span> MaterialSymbolsRounded.control_point
+/// <span class="material-symbols-rounded">control_camera</span> MaterialSymbolsRounded.control_camera
 ///
-  /// <span class="material-symbols-rounded">control_point_duplicate</span> MaterialSymbolsRounded.control_point_duplicate
+/// <span class="material-symbols-rounded">control_point</span> MaterialSymbolsRounded.control_point
 ///
-  /// <span class="material-symbols-rounded">controller_gen</span> MaterialSymbolsRounded.controller_gen
+/// <span class="material-symbols-rounded">control_point_duplicate</span> MaterialSymbolsRounded.control_point_duplicate
 ///
-  /// <span class="material-symbols-rounded">conversion_path</span> MaterialSymbolsRounded.conversion_path
+/// <span class="material-symbols-rounded">controller_gen</span> MaterialSymbolsRounded.controller_gen
 ///
-  /// <span class="material-symbols-rounded">conversion_path_off</span> MaterialSymbolsRounded.conversion_path_off
+/// <span class="material-symbols-rounded">conversion_path</span> MaterialSymbolsRounded.conversion_path
 ///
-  /// <span class="material-symbols-rounded">conveyor_belt</span> MaterialSymbolsRounded.conveyor_belt
+/// <span class="material-symbols-rounded">conversion_path_off</span> MaterialSymbolsRounded.conversion_path_off
 ///
-  /// <span class="material-symbols-rounded">cookie</span> MaterialSymbolsRounded.cookie
+/// <span class="material-symbols-rounded">conveyor_belt</span> MaterialSymbolsRounded.conveyor_belt
 ///
-  /// <span class="material-symbols-rounded">cookie_off</span> MaterialSymbolsRounded.cookie_off
+/// <span class="material-symbols-rounded">cookie</span> MaterialSymbolsRounded.cookie
 ///
-  /// <span class="material-symbols-rounded">cooking</span> MaterialSymbolsRounded.cooking
+/// <span class="material-symbols-rounded">cookie_off</span> MaterialSymbolsRounded.cookie_off
 ///
-  /// <span class="material-symbols-rounded">cool_to_dry</span> MaterialSymbolsRounded.cool_to_dry
+/// <span class="material-symbols-rounded">cooking</span> MaterialSymbolsRounded.cooking
 ///
-  /// <span class="material-symbols-rounded">copy_all</span> MaterialSymbolsRounded.copy_all
+/// <span class="material-symbols-rounded">cool_to_dry</span> MaterialSymbolsRounded.cool_to_dry
 ///
-  /// <span class="material-symbols-rounded">copyright</span> MaterialSymbolsRounded.copyright
+/// <span class="material-symbols-rounded">copy_all</span> MaterialSymbolsRounded.copy_all
 ///
-  /// <span class="material-symbols-rounded">coronavirus</span> MaterialSymbolsRounded.coronavirus
+/// <span class="material-symbols-rounded">copyright</span> MaterialSymbolsRounded.copyright
 ///
-  /// <span class="material-symbols-rounded">corporate_fare</span> MaterialSymbolsRounded.corporate_fare
+/// <span class="material-symbols-rounded">coronavirus</span> MaterialSymbolsRounded.coronavirus
 ///
-  /// <span class="material-symbols-rounded">cottage</span> MaterialSymbolsRounded.cottage
+/// <span class="material-symbols-rounded">corporate_fare</span> MaterialSymbolsRounded.corporate_fare
 ///
-  /// <span class="material-symbols-rounded">counter_0</span> MaterialSymbolsRounded.counter_0
+/// <span class="material-symbols-rounded">cottage</span> MaterialSymbolsRounded.cottage
 ///
-  /// <span class="material-symbols-rounded">counter_1</span> MaterialSymbolsRounded.counter_1
+/// <span class="material-symbols-rounded">counter_0</span> MaterialSymbolsRounded.counter_0
 ///
-  /// <span class="material-symbols-rounded">counter_2</span> MaterialSymbolsRounded.counter_2
+/// <span class="material-symbols-rounded">counter_1</span> MaterialSymbolsRounded.counter_1
 ///
-  /// <span class="material-symbols-rounded">counter_3</span> MaterialSymbolsRounded.counter_3
+/// <span class="material-symbols-rounded">counter_2</span> MaterialSymbolsRounded.counter_2
 ///
-  /// <span class="material-symbols-rounded">counter_4</span> MaterialSymbolsRounded.counter_4
+/// <span class="material-symbols-rounded">counter_3</span> MaterialSymbolsRounded.counter_3
 ///
-  /// <span class="material-symbols-rounded">counter_5</span> MaterialSymbolsRounded.counter_5
+/// <span class="material-symbols-rounded">counter_4</span> MaterialSymbolsRounded.counter_4
 ///
-  /// <span class="material-symbols-rounded">counter_6</span> MaterialSymbolsRounded.counter_6
+/// <span class="material-symbols-rounded">counter_5</span> MaterialSymbolsRounded.counter_5
 ///
-  /// <span class="material-symbols-rounded">counter_7</span> MaterialSymbolsRounded.counter_7
+/// <span class="material-symbols-rounded">counter_6</span> MaterialSymbolsRounded.counter_6
 ///
-  /// <span class="material-symbols-rounded">counter_8</span> MaterialSymbolsRounded.counter_8
+/// <span class="material-symbols-rounded">counter_7</span> MaterialSymbolsRounded.counter_7
 ///
-  /// <span class="material-symbols-rounded">counter_9</span> MaterialSymbolsRounded.counter_9
+/// <span class="material-symbols-rounded">counter_8</span> MaterialSymbolsRounded.counter_8
 ///
-  /// <span class="material-symbols-rounded">countertops</span> MaterialSymbolsRounded.countertops
+/// <span class="material-symbols-rounded">counter_9</span> MaterialSymbolsRounded.counter_9
 ///
-  /// <span class="material-symbols-rounded">create</span> MaterialSymbolsRounded.create
+/// <span class="material-symbols-rounded">countertops</span> MaterialSymbolsRounded.countertops
 ///
-  /// <span class="material-symbols-rounded">create_new_folder</span> MaterialSymbolsRounded.create_new_folder
+/// <span class="material-symbols-rounded">create</span> MaterialSymbolsRounded.create
 ///
-  /// <span class="material-symbols-rounded">credit_card</span> MaterialSymbolsRounded.credit_card
+/// <span class="material-symbols-rounded">create_new_folder</span> MaterialSymbolsRounded.create_new_folder
 ///
-  /// <span class="material-symbols-rounded">credit_card_off</span> MaterialSymbolsRounded.credit_card_off
+/// <span class="material-symbols-rounded">credit_card</span> MaterialSymbolsRounded.credit_card
 ///
-  /// <span class="material-symbols-rounded">credit_score</span> MaterialSymbolsRounded.credit_score
+/// <span class="material-symbols-rounded">credit_card_off</span> MaterialSymbolsRounded.credit_card_off
 ///
-  /// <span class="material-symbols-rounded">crib</span> MaterialSymbolsRounded.crib
+/// <span class="material-symbols-rounded">credit_score</span> MaterialSymbolsRounded.credit_score
 ///
-  /// <span class="material-symbols-rounded">crisis_alert</span> MaterialSymbolsRounded.crisis_alert
+/// <span class="material-symbols-rounded">crib</span> MaterialSymbolsRounded.crib
 ///
-  /// <span class="material-symbols-rounded">crop</span> MaterialSymbolsRounded.crop
+/// <span class="material-symbols-rounded">crisis_alert</span> MaterialSymbolsRounded.crisis_alert
 ///
-  /// <span class="material-symbols-rounded">crop_16_9</span> MaterialSymbolsRounded.crop_16_9
+/// <span class="material-symbols-rounded">crop</span> MaterialSymbolsRounded.crop
 ///
-  /// <span class="material-symbols-rounded">crop_3_2</span> MaterialSymbolsRounded.crop_3_2
+/// <span class="material-symbols-rounded">crop_16_9</span> MaterialSymbolsRounded.crop_16_9
 ///
-  /// <span class="material-symbols-rounded">crop_5_4</span> MaterialSymbolsRounded.crop_5_4
+/// <span class="material-symbols-rounded">crop_3_2</span> MaterialSymbolsRounded.crop_3_2
 ///
-  /// <span class="material-symbols-rounded">crop_7_5</span> MaterialSymbolsRounded.crop_7_5
+/// <span class="material-symbols-rounded">crop_5_4</span> MaterialSymbolsRounded.crop_5_4
 ///
-  /// <span class="material-symbols-rounded">crop_din</span> MaterialSymbolsRounded.crop_din
+/// <span class="material-symbols-rounded">crop_7_5</span> MaterialSymbolsRounded.crop_7_5
 ///
-  /// <span class="material-symbols-rounded">crop_free</span> MaterialSymbolsRounded.crop_free
+/// <span class="material-symbols-rounded">crop_din</span> MaterialSymbolsRounded.crop_din
 ///
-  /// <span class="material-symbols-rounded">crop_landscape</span> MaterialSymbolsRounded.crop_landscape
+/// <span class="material-symbols-rounded">crop_free</span> MaterialSymbolsRounded.crop_free
 ///
-  /// <span class="material-symbols-rounded">crop_original</span> MaterialSymbolsRounded.crop_original
+/// <span class="material-symbols-rounded">crop_landscape</span> MaterialSymbolsRounded.crop_landscape
 ///
-  /// <span class="material-symbols-rounded">crop_portrait</span> MaterialSymbolsRounded.crop_portrait
+/// <span class="material-symbols-rounded">crop_original</span> MaterialSymbolsRounded.crop_original
 ///
-  /// <span class="material-symbols-rounded">crop_rotate</span> MaterialSymbolsRounded.crop_rotate
+/// <span class="material-symbols-rounded">crop_portrait</span> MaterialSymbolsRounded.crop_portrait
 ///
-  /// <span class="material-symbols-rounded">crop_square</span> MaterialSymbolsRounded.crop_square
+/// <span class="material-symbols-rounded">crop_rotate</span> MaterialSymbolsRounded.crop_rotate
 ///
-  /// <span class="material-symbols-rounded">cruelty_free</span> MaterialSymbolsRounded.cruelty_free
+/// <span class="material-symbols-rounded">crop_square</span> MaterialSymbolsRounded.crop_square
 ///
-  /// <span class="material-symbols-rounded">css</span> MaterialSymbolsRounded.css
+/// <span class="material-symbols-rounded">cruelty_free</span> MaterialSymbolsRounded.cruelty_free
 ///
-  /// <span class="material-symbols-rounded">currency_bitcoin</span> MaterialSymbolsRounded.currency_bitcoin
+/// <span class="material-symbols-rounded">css</span> MaterialSymbolsRounded.css
 ///
-  /// <span class="material-symbols-rounded">currency_exchange</span> MaterialSymbolsRounded.currency_exchange
+/// <span class="material-symbols-rounded">currency_bitcoin</span> MaterialSymbolsRounded.currency_bitcoin
 ///
-  /// <span class="material-symbols-rounded">currency_franc</span> MaterialSymbolsRounded.currency_franc
+/// <span class="material-symbols-rounded">currency_exchange</span> MaterialSymbolsRounded.currency_exchange
 ///
-  /// <span class="material-symbols-rounded">currency_lira</span> MaterialSymbolsRounded.currency_lira
+/// <span class="material-symbols-rounded">currency_franc</span> MaterialSymbolsRounded.currency_franc
 ///
-  /// <span class="material-symbols-rounded">currency_pound</span> MaterialSymbolsRounded.currency_pound
+/// <span class="material-symbols-rounded">currency_lira</span> MaterialSymbolsRounded.currency_lira
 ///
-  /// <span class="material-symbols-rounded">currency_ruble</span> MaterialSymbolsRounded.currency_ruble
+/// <span class="material-symbols-rounded">currency_pound</span> MaterialSymbolsRounded.currency_pound
 ///
-  /// <span class="material-symbols-rounded">currency_rupee</span> MaterialSymbolsRounded.currency_rupee
+/// <span class="material-symbols-rounded">currency_ruble</span> MaterialSymbolsRounded.currency_ruble
 ///
-  /// <span class="material-symbols-rounded">currency_yen</span> MaterialSymbolsRounded.currency_yen
+/// <span class="material-symbols-rounded">currency_rupee</span> MaterialSymbolsRounded.currency_rupee
 ///
-  /// <span class="material-symbols-rounded">currency_yuan</span> MaterialSymbolsRounded.currency_yuan
+/// <span class="material-symbols-rounded">currency_yen</span> MaterialSymbolsRounded.currency_yen
 ///
-  /// <span class="material-symbols-rounded">curtains</span> MaterialSymbolsRounded.curtains
+/// <span class="material-symbols-rounded">currency_yuan</span> MaterialSymbolsRounded.currency_yuan
 ///
-  /// <span class="material-symbols-rounded">curtains_closed</span> MaterialSymbolsRounded.curtains_closed
+/// <span class="material-symbols-rounded">curtains</span> MaterialSymbolsRounded.curtains
 ///
-  /// <span class="material-symbols-rounded">cut</span> MaterialSymbolsRounded.cut
+/// <span class="material-symbols-rounded">curtains_closed</span> MaterialSymbolsRounded.curtains_closed
 ///
-  /// <span class="material-symbols-rounded">cycle</span> MaterialSymbolsRounded.cycle
+/// <span class="material-symbols-rounded">cut</span> MaterialSymbolsRounded.cut
 ///
-  /// <span class="material-symbols-rounded">cyclone</span> MaterialSymbolsRounded.cyclone
+/// <span class="material-symbols-rounded">cycle</span> MaterialSymbolsRounded.cycle
 ///
-  /// <span class="material-symbols-rounded">dangerous</span> MaterialSymbolsRounded.dangerous
+/// <span class="material-symbols-rounded">cyclone</span> MaterialSymbolsRounded.cyclone
 ///
-  /// <span class="material-symbols-rounded">dark_mode</span> MaterialSymbolsRounded.dark_mode
+/// <span class="material-symbols-rounded">dangerous</span> MaterialSymbolsRounded.dangerous
 ///
-  /// <span class="material-symbols-rounded">dashboard</span> MaterialSymbolsRounded.dashboard
+/// <span class="material-symbols-rounded">dark_mode</span> MaterialSymbolsRounded.dark_mode
 ///
-  /// <span class="material-symbols-rounded">dashboard_customize</span> MaterialSymbolsRounded.dashboard_customize
+/// <span class="material-symbols-rounded">dashboard</span> MaterialSymbolsRounded.dashboard
 ///
-  /// <span class="material-symbols-rounded">data_alert</span> MaterialSymbolsRounded.data_alert
+/// <span class="material-symbols-rounded">dashboard_customize</span> MaterialSymbolsRounded.dashboard_customize
 ///
-  /// <span class="material-symbols-rounded">data_array</span> MaterialSymbolsRounded.data_array
+/// <span class="material-symbols-rounded">data_alert</span> MaterialSymbolsRounded.data_alert
 ///
-  /// <span class="material-symbols-rounded">data_check</span> MaterialSymbolsRounded.data_check
+/// <span class="material-symbols-rounded">data_array</span> MaterialSymbolsRounded.data_array
 ///
-  /// <span class="material-symbols-rounded">data_exploration</span> MaterialSymbolsRounded.data_exploration
+/// <span class="material-symbols-rounded">data_check</span> MaterialSymbolsRounded.data_check
 ///
-  /// <span class="material-symbols-rounded">data_info_alert</span> MaterialSymbolsRounded.data_info_alert
+/// <span class="material-symbols-rounded">data_exploration</span> MaterialSymbolsRounded.data_exploration
 ///
-  /// <span class="material-symbols-rounded">data_object</span> MaterialSymbolsRounded.data_object
+/// <span class="material-symbols-rounded">data_info_alert</span> MaterialSymbolsRounded.data_info_alert
 ///
-  /// <span class="material-symbols-rounded">data_saver_off</span> MaterialSymbolsRounded.data_saver_off
+/// <span class="material-symbols-rounded">data_object</span> MaterialSymbolsRounded.data_object
 ///
-  /// <span class="material-symbols-rounded">data_saver_on</span> MaterialSymbolsRounded.data_saver_on
+/// <span class="material-symbols-rounded">data_saver_off</span> MaterialSymbolsRounded.data_saver_off
 ///
-  /// <span class="material-symbols-rounded">data_thresholding</span> MaterialSymbolsRounded.data_thresholding
+/// <span class="material-symbols-rounded">data_saver_on</span> MaterialSymbolsRounded.data_saver_on
 ///
-  /// <span class="material-symbols-rounded">data_usage</span> MaterialSymbolsRounded.data_usage
+/// <span class="material-symbols-rounded">data_thresholding</span> MaterialSymbolsRounded.data_thresholding
 ///
-  /// <span class="material-symbols-rounded">database</span> MaterialSymbolsRounded.database
+/// <span class="material-symbols-rounded">data_usage</span> MaterialSymbolsRounded.data_usage
 ///
-  /// <span class="material-symbols-rounded">dataset</span> MaterialSymbolsRounded.dataset
+/// <span class="material-symbols-rounded">database</span> MaterialSymbolsRounded.database
 ///
-  /// <span class="material-symbols-rounded">dataset_linked</span> MaterialSymbolsRounded.dataset_linked
+/// <span class="material-symbols-rounded">dataset</span> MaterialSymbolsRounded.dataset
 ///
-  /// <span class="material-symbols-rounded">date_range</span> MaterialSymbolsRounded.date_range
+/// <span class="material-symbols-rounded">dataset_linked</span> MaterialSymbolsRounded.dataset_linked
 ///
-  /// <span class="material-symbols-rounded">deblur</span> MaterialSymbolsRounded.deblur
+/// <span class="material-symbols-rounded">date_range</span> MaterialSymbolsRounded.date_range
 ///
-  /// <span class="material-symbols-rounded">deceased</span> MaterialSymbolsRounded.deceased
+/// <span class="material-symbols-rounded">deblur</span> MaterialSymbolsRounded.deblur
 ///
-  /// <span class="material-symbols-rounded">decimal_decrease</span> MaterialSymbolsRounded.decimal_decrease
+/// <span class="material-symbols-rounded">deceased</span> MaterialSymbolsRounded.deceased
 ///
-  /// <span class="material-symbols-rounded">decimal_increase</span> MaterialSymbolsRounded.decimal_increase
+/// <span class="material-symbols-rounded">decimal_decrease</span> MaterialSymbolsRounded.decimal_decrease
 ///
-  /// <span class="material-symbols-rounded">deck</span> MaterialSymbolsRounded.deck
+/// <span class="material-symbols-rounded">decimal_increase</span> MaterialSymbolsRounded.decimal_increase
 ///
-  /// <span class="material-symbols-rounded">dehaze</span> MaterialSymbolsRounded.dehaze
+/// <span class="material-symbols-rounded">deck</span> MaterialSymbolsRounded.deck
 ///
-  /// <span class="material-symbols-rounded">delete</span> MaterialSymbolsRounded.delete
+/// <span class="material-symbols-rounded">dehaze</span> MaterialSymbolsRounded.dehaze
 ///
-  /// <span class="material-symbols-rounded">delete_forever</span> MaterialSymbolsRounded.delete_forever
+/// <span class="material-symbols-rounded">delete</span> MaterialSymbolsRounded.delete
 ///
-  /// <span class="material-symbols-rounded">delete_outline</span> MaterialSymbolsRounded.delete_outline
+/// <span class="material-symbols-rounded">delete_forever</span> MaterialSymbolsRounded.delete_forever
 ///
-  /// <span class="material-symbols-rounded">delete_sweep</span> MaterialSymbolsRounded.delete_sweep
+/// <span class="material-symbols-rounded">delete_outline</span> MaterialSymbolsRounded.delete_outline
 ///
-  /// <span class="material-symbols-rounded">demography</span> MaterialSymbolsRounded.demography
+/// <span class="material-symbols-rounded">delete_sweep</span> MaterialSymbolsRounded.delete_sweep
 ///
-  /// <span class="material-symbols-rounded">density_large</span> MaterialSymbolsRounded.density_large
+/// <span class="material-symbols-rounded">demography</span> MaterialSymbolsRounded.demography
 ///
-  /// <span class="material-symbols-rounded">density_medium</span> MaterialSymbolsRounded.density_medium
+/// <span class="material-symbols-rounded">density_large</span> MaterialSymbolsRounded.density_large
 ///
-  /// <span class="material-symbols-rounded">density_small</span> MaterialSymbolsRounded.density_small
+/// <span class="material-symbols-rounded">density_medium</span> MaterialSymbolsRounded.density_medium
 ///
-  /// <span class="material-symbols-rounded">dentistry</span> MaterialSymbolsRounded.dentistry
+/// <span class="material-symbols-rounded">density_small</span> MaterialSymbolsRounded.density_small
 ///
-  /// <span class="material-symbols-rounded">departure_board</span> MaterialSymbolsRounded.departure_board
+/// <span class="material-symbols-rounded">dentistry</span> MaterialSymbolsRounded.dentistry
 ///
-  /// <span class="material-symbols-rounded">deployed_code</span> MaterialSymbolsRounded.deployed_code
+/// <span class="material-symbols-rounded">departure_board</span> MaterialSymbolsRounded.departure_board
 ///
-  /// <span class="material-symbols-rounded">dermatology</span> MaterialSymbolsRounded.dermatology
+/// <span class="material-symbols-rounded">deployed_code</span> MaterialSymbolsRounded.deployed_code
 ///
-  /// <span class="material-symbols-rounded">description</span> MaterialSymbolsRounded.description
+/// <span class="material-symbols-rounded">dermatology</span> MaterialSymbolsRounded.dermatology
 ///
-  /// <span class="material-symbols-rounded">deselect</span> MaterialSymbolsRounded.deselect
+/// <span class="material-symbols-rounded">description</span> MaterialSymbolsRounded.description
 ///
-  /// <span class="material-symbols-rounded">design_services</span> MaterialSymbolsRounded.design_services
+/// <span class="material-symbols-rounded">deselect</span> MaterialSymbolsRounded.deselect
 ///
-  /// <span class="material-symbols-rounded">desk</span> MaterialSymbolsRounded.desk
+/// <span class="material-symbols-rounded">design_services</span> MaterialSymbolsRounded.design_services
 ///
-  /// <span class="material-symbols-rounded">deskphone</span> MaterialSymbolsRounded.deskphone
+/// <span class="material-symbols-rounded">desk</span> MaterialSymbolsRounded.desk
 ///
-  /// <span class="material-symbols-rounded">desktop_access_disabled</span> MaterialSymbolsRounded.desktop_access_disabled
+/// <span class="material-symbols-rounded">deskphone</span> MaterialSymbolsRounded.deskphone
 ///
-  /// <span class="material-symbols-rounded">desktop_mac</span> MaterialSymbolsRounded.desktop_mac
+/// <span class="material-symbols-rounded">desktop_access_disabled</span> MaterialSymbolsRounded.desktop_access_disabled
 ///
-  /// <span class="material-symbols-rounded">desktop_windows</span> MaterialSymbolsRounded.desktop_windows
+/// <span class="material-symbols-rounded">desktop_mac</span> MaterialSymbolsRounded.desktop_mac
 ///
-  /// <span class="material-symbols-rounded">details</span> MaterialSymbolsRounded.details
+/// <span class="material-symbols-rounded">desktop_windows</span> MaterialSymbolsRounded.desktop_windows
 ///
-  /// <span class="material-symbols-rounded">detection_and_zone</span> MaterialSymbolsRounded.detection_and_zone
+/// <span class="material-symbols-rounded">details</span> MaterialSymbolsRounded.details
 ///
-  /// <span class="material-symbols-rounded">detector</span> MaterialSymbolsRounded.detector
+/// <span class="material-symbols-rounded">detection_and_zone</span> MaterialSymbolsRounded.detection_and_zone
 ///
-  /// <span class="material-symbols-rounded">detector_alarm</span> MaterialSymbolsRounded.detector_alarm
+/// <span class="material-symbols-rounded">detector</span> MaterialSymbolsRounded.detector
 ///
-  /// <span class="material-symbols-rounded">detector_battery</span> MaterialSymbolsRounded.detector_battery
+/// <span class="material-symbols-rounded">detector_alarm</span> MaterialSymbolsRounded.detector_alarm
 ///
-  /// <span class="material-symbols-rounded">detector_co</span> MaterialSymbolsRounded.detector_co
+/// <span class="material-symbols-rounded">detector_battery</span> MaterialSymbolsRounded.detector_battery
 ///
-  /// <span class="material-symbols-rounded">detector_offline</span> MaterialSymbolsRounded.detector_offline
+/// <span class="material-symbols-rounded">detector_co</span> MaterialSymbolsRounded.detector_co
 ///
-  /// <span class="material-symbols-rounded">detector_smoke</span> MaterialSymbolsRounded.detector_smoke
+/// <span class="material-symbols-rounded">detector_offline</span> MaterialSymbolsRounded.detector_offline
 ///
-  /// <span class="material-symbols-rounded">detector_status</span> MaterialSymbolsRounded.detector_status
+/// <span class="material-symbols-rounded">detector_smoke</span> MaterialSymbolsRounded.detector_smoke
 ///
-  /// <span class="material-symbols-rounded">developer_board</span> MaterialSymbolsRounded.developer_board
+/// <span class="material-symbols-rounded">detector_status</span> MaterialSymbolsRounded.detector_status
 ///
-  /// <span class="material-symbols-rounded">developer_board_off</span> MaterialSymbolsRounded.developer_board_off
+/// <span class="material-symbols-rounded">developer_board</span> MaterialSymbolsRounded.developer_board
 ///
-  /// <span class="material-symbols-rounded">developer_mode</span> MaterialSymbolsRounded.developer_mode
+/// <span class="material-symbols-rounded">developer_board_off</span> MaterialSymbolsRounded.developer_board_off
 ///
-  /// <span class="material-symbols-rounded">device_hub</span> MaterialSymbolsRounded.device_hub
+/// <span class="material-symbols-rounded">developer_mode</span> MaterialSymbolsRounded.developer_mode
 ///
-  /// <span class="material-symbols-rounded">device_reset</span> MaterialSymbolsRounded.device_reset
+/// <span class="material-symbols-rounded">device_hub</span> MaterialSymbolsRounded.device_hub
 ///
-  /// <span class="material-symbols-rounded">device_thermostat</span> MaterialSymbolsRounded.device_thermostat
+/// <span class="material-symbols-rounded">device_reset</span> MaterialSymbolsRounded.device_reset
 ///
-  /// <span class="material-symbols-rounded">device_unknown</span> MaterialSymbolsRounded.device_unknown
+/// <span class="material-symbols-rounded">device_thermostat</span> MaterialSymbolsRounded.device_thermostat
 ///
-  /// <span class="material-symbols-rounded">devices</span> MaterialSymbolsRounded.devices
+/// <span class="material-symbols-rounded">device_unknown</span> MaterialSymbolsRounded.device_unknown
 ///
-  /// <span class="material-symbols-rounded">devices_fold</span> MaterialSymbolsRounded.devices_fold
+/// <span class="material-symbols-rounded">devices</span> MaterialSymbolsRounded.devices
 ///
-  /// <span class="material-symbols-rounded">devices_off</span> MaterialSymbolsRounded.devices_off
+/// <span class="material-symbols-rounded">devices_fold</span> MaterialSymbolsRounded.devices_fold
 ///
-  /// <span class="material-symbols-rounded">devices_other</span> MaterialSymbolsRounded.devices_other
+/// <span class="material-symbols-rounded">devices_off</span> MaterialSymbolsRounded.devices_off
 ///
-  /// <span class="material-symbols-rounded">devices_wearables</span> MaterialSymbolsRounded.devices_wearables
+/// <span class="material-symbols-rounded">devices_other</span> MaterialSymbolsRounded.devices_other
 ///
-  /// <span class="material-symbols-rounded">dew_point</span> MaterialSymbolsRounded.dew_point
+/// <span class="material-symbols-rounded">devices_wearables</span> MaterialSymbolsRounded.devices_wearables
 ///
-  /// <span class="material-symbols-rounded">diagnosis</span> MaterialSymbolsRounded.diagnosis
+/// <span class="material-symbols-rounded">dew_point</span> MaterialSymbolsRounded.dew_point
 ///
-  /// <span class="material-symbols-rounded">dialer_sip</span> MaterialSymbolsRounded.dialer_sip
+/// <span class="material-symbols-rounded">diagnosis</span> MaterialSymbolsRounded.diagnosis
 ///
-  /// <span class="material-symbols-rounded">dialpad</span> MaterialSymbolsRounded.dialpad
+/// <span class="material-symbols-rounded">dialer_sip</span> MaterialSymbolsRounded.dialer_sip
 ///
-  /// <span class="material-symbols-rounded">diamond</span> MaterialSymbolsRounded.diamond
+/// <span class="material-symbols-rounded">dialpad</span> MaterialSymbolsRounded.dialpad
 ///
-  /// <span class="material-symbols-rounded">difference</span> MaterialSymbolsRounded.difference
+/// <span class="material-symbols-rounded">diamond</span> MaterialSymbolsRounded.diamond
 ///
-  /// <span class="material-symbols-rounded">digital_out_of_home</span> MaterialSymbolsRounded.digital_out_of_home
+/// <span class="material-symbols-rounded">difference</span> MaterialSymbolsRounded.difference
 ///
-  /// <span class="material-symbols-rounded">dining</span> MaterialSymbolsRounded.dining
+/// <span class="material-symbols-rounded">digital_out_of_home</span> MaterialSymbolsRounded.digital_out_of_home
 ///
-  /// <span class="material-symbols-rounded">dinner_dining</span> MaterialSymbolsRounded.dinner_dining
+/// <span class="material-symbols-rounded">dining</span> MaterialSymbolsRounded.dining
 ///
-  /// <span class="material-symbols-rounded">directions</span> MaterialSymbolsRounded.directions
+/// <span class="material-symbols-rounded">dinner_dining</span> MaterialSymbolsRounded.dinner_dining
 ///
-  /// <span class="material-symbols-rounded">directions_alt</span> MaterialSymbolsRounded.directions_alt
+/// <span class="material-symbols-rounded">directions</span> MaterialSymbolsRounded.directions
 ///
-  /// <span class="material-symbols-rounded">directions_alt_off</span> MaterialSymbolsRounded.directions_alt_off
+/// <span class="material-symbols-rounded">directions_alt</span> MaterialSymbolsRounded.directions_alt
 ///
-  /// <span class="material-symbols-rounded">directions_bike</span> MaterialSymbolsRounded.directions_bike
+/// <span class="material-symbols-rounded">directions_alt_off</span> MaterialSymbolsRounded.directions_alt_off
 ///
-  /// <span class="material-symbols-rounded">directions_boat</span> MaterialSymbolsRounded.directions_boat
+/// <span class="material-symbols-rounded">directions_bike</span> MaterialSymbolsRounded.directions_bike
 ///
-  /// <span class="material-symbols-rounded">directions_boat_filled</span> MaterialSymbolsRounded.directions_boat_filled
+/// <span class="material-symbols-rounded">directions_boat</span> MaterialSymbolsRounded.directions_boat
 ///
-  /// <span class="material-symbols-rounded">directions_bus</span> MaterialSymbolsRounded.directions_bus
+/// <span class="material-symbols-rounded">directions_boat_filled</span> MaterialSymbolsRounded.directions_boat_filled
 ///
-  /// <span class="material-symbols-rounded">directions_bus_filled</span> MaterialSymbolsRounded.directions_bus_filled
+/// <span class="material-symbols-rounded">directions_bus</span> MaterialSymbolsRounded.directions_bus
 ///
-  /// <span class="material-symbols-rounded">directions_car</span> MaterialSymbolsRounded.directions_car
+/// <span class="material-symbols-rounded">directions_bus_filled</span> MaterialSymbolsRounded.directions_bus_filled
 ///
-  /// <span class="material-symbols-rounded">directions_car_filled</span> MaterialSymbolsRounded.directions_car_filled
+/// <span class="material-symbols-rounded">directions_car</span> MaterialSymbolsRounded.directions_car
 ///
-  /// <span class="material-symbols-rounded">directions_off</span> MaterialSymbolsRounded.directions_off
+/// <span class="material-symbols-rounded">directions_car_filled</span> MaterialSymbolsRounded.directions_car_filled
 ///
-  /// <span class="material-symbols-rounded">directions_railway</span> MaterialSymbolsRounded.directions_railway
+/// <span class="material-symbols-rounded">directions_off</span> MaterialSymbolsRounded.directions_off
 ///
-  /// <span class="material-symbols-rounded">directions_railway_filled</span> MaterialSymbolsRounded.directions_railway_filled
+/// <span class="material-symbols-rounded">directions_railway</span> MaterialSymbolsRounded.directions_railway
 ///
-  /// <span class="material-symbols-rounded">directions_run</span> MaterialSymbolsRounded.directions_run
+/// <span class="material-symbols-rounded">directions_railway_filled</span> MaterialSymbolsRounded.directions_railway_filled
 ///
-  /// <span class="material-symbols-rounded">directions_subway</span> MaterialSymbolsRounded.directions_subway
+/// <span class="material-symbols-rounded">directions_run</span> MaterialSymbolsRounded.directions_run
 ///
-  /// <span class="material-symbols-rounded">directions_subway_filled</span> MaterialSymbolsRounded.directions_subway_filled
+/// <span class="material-symbols-rounded">directions_subway</span> MaterialSymbolsRounded.directions_subway
 ///
-  /// <span class="material-symbols-rounded">directions_transit</span> MaterialSymbolsRounded.directions_transit
+/// <span class="material-symbols-rounded">directions_subway_filled</span> MaterialSymbolsRounded.directions_subway_filled
 ///
-  /// <span class="material-symbols-rounded">directions_transit_filled</span> MaterialSymbolsRounded.directions_transit_filled
+/// <span class="material-symbols-rounded">directions_transit</span> MaterialSymbolsRounded.directions_transit
 ///
-  /// <span class="material-symbols-rounded">directions_walk</span> MaterialSymbolsRounded.directions_walk
+/// <span class="material-symbols-rounded">directions_transit_filled</span> MaterialSymbolsRounded.directions_transit_filled
 ///
-  /// <span class="material-symbols-rounded">dirty_lens</span> MaterialSymbolsRounded.dirty_lens
+/// <span class="material-symbols-rounded">directions_walk</span> MaterialSymbolsRounded.directions_walk
 ///
-  /// <span class="material-symbols-rounded">disabled_by_default</span> MaterialSymbolsRounded.disabled_by_default
+/// <span class="material-symbols-rounded">dirty_lens</span> MaterialSymbolsRounded.dirty_lens
 ///
-  /// <span class="material-symbols-rounded">disabled_visible</span> MaterialSymbolsRounded.disabled_visible
+/// <span class="material-symbols-rounded">disabled_by_default</span> MaterialSymbolsRounded.disabled_by_default
 ///
-  /// <span class="material-symbols-rounded">disc_full</span> MaterialSymbolsRounded.disc_full
+/// <span class="material-symbols-rounded">disabled_visible</span> MaterialSymbolsRounded.disabled_visible
 ///
-  /// <span class="material-symbols-rounded">discover_tune</span> MaterialSymbolsRounded.discover_tune
+/// <span class="material-symbols-rounded">disc_full</span> MaterialSymbolsRounded.disc_full
 ///
-  /// <span class="material-symbols-rounded">dishwasher_gen</span> MaterialSymbolsRounded.dishwasher_gen
+/// <span class="material-symbols-rounded">discover_tune</span> MaterialSymbolsRounded.discover_tune
 ///
-  /// <span class="material-symbols-rounded">display_external_input</span> MaterialSymbolsRounded.display_external_input
+/// <span class="material-symbols-rounded">dishwasher_gen</span> MaterialSymbolsRounded.dishwasher_gen
 ///
-  /// <span class="material-symbols-rounded">display_settings</span> MaterialSymbolsRounded.display_settings
+/// <span class="material-symbols-rounded">display_external_input</span> MaterialSymbolsRounded.display_external_input
 ///
-  /// <span class="material-symbols-rounded">distance</span> MaterialSymbolsRounded.distance
+/// <span class="material-symbols-rounded">display_settings</span> MaterialSymbolsRounded.display_settings
 ///
-  /// <span class="material-symbols-rounded">diversity_1</span> MaterialSymbolsRounded.diversity_1
+/// <span class="material-symbols-rounded">distance</span> MaterialSymbolsRounded.distance
 ///
-  /// <span class="material-symbols-rounded">diversity_2</span> MaterialSymbolsRounded.diversity_2
+/// <span class="material-symbols-rounded">diversity_1</span> MaterialSymbolsRounded.diversity_1
 ///
-  /// <span class="material-symbols-rounded">diversity_3</span> MaterialSymbolsRounded.diversity_3
+/// <span class="material-symbols-rounded">diversity_2</span> MaterialSymbolsRounded.diversity_2
 ///
-  /// <span class="material-symbols-rounded">diversity_4</span> MaterialSymbolsRounded.diversity_4
+/// <span class="material-symbols-rounded">diversity_3</span> MaterialSymbolsRounded.diversity_3
 ///
-  /// <span class="material-symbols-rounded">dns</span> MaterialSymbolsRounded.dns
+/// <span class="material-symbols-rounded">diversity_4</span> MaterialSymbolsRounded.diversity_4
 ///
-  /// <span class="material-symbols-rounded">do_disturb</span> MaterialSymbolsRounded.do_disturb
+/// <span class="material-symbols-rounded">dns</span> MaterialSymbolsRounded.dns
 ///
-  /// <span class="material-symbols-rounded">do_disturb_alt</span> MaterialSymbolsRounded.do_disturb_alt
+/// <span class="material-symbols-rounded">do_disturb</span> MaterialSymbolsRounded.do_disturb
 ///
-  /// <span class="material-symbols-rounded">do_disturb_off</span> MaterialSymbolsRounded.do_disturb_off
+/// <span class="material-symbols-rounded">do_disturb_alt</span> MaterialSymbolsRounded.do_disturb_alt
 ///
-  /// <span class="material-symbols-rounded">do_disturb_on</span> MaterialSymbolsRounded.do_disturb_on
+/// <span class="material-symbols-rounded">do_disturb_off</span> MaterialSymbolsRounded.do_disturb_off
 ///
-  /// <span class="material-symbols-rounded">do_not_disturb</span> MaterialSymbolsRounded.do_not_disturb
+/// <span class="material-symbols-rounded">do_disturb_on</span> MaterialSymbolsRounded.do_disturb_on
 ///
-  /// <span class="material-symbols-rounded">do_not_disturb_alt</span> MaterialSymbolsRounded.do_not_disturb_alt
+/// <span class="material-symbols-rounded">do_not_disturb</span> MaterialSymbolsRounded.do_not_disturb
 ///
-  /// <span class="material-symbols-rounded">do_not_disturb_off</span> MaterialSymbolsRounded.do_not_disturb_off
+/// <span class="material-symbols-rounded">do_not_disturb_alt</span> MaterialSymbolsRounded.do_not_disturb_alt
 ///
-  /// <span class="material-symbols-rounded">do_not_disturb_on</span> MaterialSymbolsRounded.do_not_disturb_on
+/// <span class="material-symbols-rounded">do_not_disturb_off</span> MaterialSymbolsRounded.do_not_disturb_off
 ///
-  /// <span class="material-symbols-rounded">do_not_disturb_on_total_silence</span> MaterialSymbolsRounded.do_not_disturb_on_total_silence
+/// <span class="material-symbols-rounded">do_not_disturb_on</span> MaterialSymbolsRounded.do_not_disturb_on
 ///
-  /// <span class="material-symbols-rounded">do_not_step</span> MaterialSymbolsRounded.do_not_step
+/// <span class="material-symbols-rounded">do_not_disturb_on_total_silence</span> MaterialSymbolsRounded.do_not_disturb_on_total_silence
 ///
-  /// <span class="material-symbols-rounded">do_not_touch</span> MaterialSymbolsRounded.do_not_touch
+/// <span class="material-symbols-rounded">do_not_step</span> MaterialSymbolsRounded.do_not_step
 ///
-  /// <span class="material-symbols-rounded">dock</span> MaterialSymbolsRounded.dock
+/// <span class="material-symbols-rounded">do_not_touch</span> MaterialSymbolsRounded.do_not_touch
 ///
-  /// <span class="material-symbols-rounded">dock_to_bottom</span> MaterialSymbolsRounded.dock_to_bottom
+/// <span class="material-symbols-rounded">dock</span> MaterialSymbolsRounded.dock
 ///
-  /// <span class="material-symbols-rounded">dock_to_left</span> MaterialSymbolsRounded.dock_to_left
+/// <span class="material-symbols-rounded">dock_to_bottom</span> MaterialSymbolsRounded.dock_to_bottom
 ///
-  /// <span class="material-symbols-rounded">dock_to_right</span> MaterialSymbolsRounded.dock_to_right
+/// <span class="material-symbols-rounded">dock_to_left</span> MaterialSymbolsRounded.dock_to_left
 ///
-  /// <span class="material-symbols-rounded">docs_add_on</span> MaterialSymbolsRounded.docs_add_on
+/// <span class="material-symbols-rounded">dock_to_right</span> MaterialSymbolsRounded.dock_to_right
 ///
-  /// <span class="material-symbols-rounded">docs_apps_script</span> MaterialSymbolsRounded.docs_apps_script
+/// <span class="material-symbols-rounded">docs_add_on</span> MaterialSymbolsRounded.docs_add_on
 ///
-  /// <span class="material-symbols-rounded">document_scanner</span> MaterialSymbolsRounded.document_scanner
+/// <span class="material-symbols-rounded">docs_apps_script</span> MaterialSymbolsRounded.docs_apps_script
 ///
-  /// <span class="material-symbols-rounded">domain</span> MaterialSymbolsRounded.domain
+/// <span class="material-symbols-rounded">document_scanner</span> MaterialSymbolsRounded.document_scanner
 ///
-  /// <span class="material-symbols-rounded">domain_add</span> MaterialSymbolsRounded.domain_add
+/// <span class="material-symbols-rounded">domain</span> MaterialSymbolsRounded.domain
 ///
-  /// <span class="material-symbols-rounded">domain_disabled</span> MaterialSymbolsRounded.domain_disabled
+/// <span class="material-symbols-rounded">domain_add</span> MaterialSymbolsRounded.domain_add
 ///
-  /// <span class="material-symbols-rounded">domain_verification</span> MaterialSymbolsRounded.domain_verification
+/// <span class="material-symbols-rounded">domain_disabled</span> MaterialSymbolsRounded.domain_disabled
 ///
-  /// <span class="material-symbols-rounded">domain_verification_off</span> MaterialSymbolsRounded.domain_verification_off
+/// <span class="material-symbols-rounded">domain_verification</span> MaterialSymbolsRounded.domain_verification
 ///
-  /// <span class="material-symbols-rounded">done</span> MaterialSymbolsRounded.done
+/// <span class="material-symbols-rounded">domain_verification_off</span> MaterialSymbolsRounded.domain_verification_off
 ///
-  /// <span class="material-symbols-rounded">done_all</span> MaterialSymbolsRounded.done_all
+/// <span class="material-symbols-rounded">done</span> MaterialSymbolsRounded.done
 ///
-  /// <span class="material-symbols-rounded">done_outline</span> MaterialSymbolsRounded.done_outline
+/// <span class="material-symbols-rounded">done_all</span> MaterialSymbolsRounded.done_all
 ///
-  /// <span class="material-symbols-rounded">donut_large</span> MaterialSymbolsRounded.donut_large
+/// <span class="material-symbols-rounded">done_outline</span> MaterialSymbolsRounded.done_outline
 ///
-  /// <span class="material-symbols-rounded">donut_small</span> MaterialSymbolsRounded.donut_small
+/// <span class="material-symbols-rounded">donut_large</span> MaterialSymbolsRounded.donut_large
 ///
-  /// <span class="material-symbols-rounded">door_back</span> MaterialSymbolsRounded.door_back
+/// <span class="material-symbols-rounded">donut_small</span> MaterialSymbolsRounded.donut_small
 ///
-  /// <span class="material-symbols-rounded">door_front</span> MaterialSymbolsRounded.door_front
+/// <span class="material-symbols-rounded">door_back</span> MaterialSymbolsRounded.door_back
 ///
-  /// <span class="material-symbols-rounded">door_open</span> MaterialSymbolsRounded.door_open
+/// <span class="material-symbols-rounded">door_front</span> MaterialSymbolsRounded.door_front
 ///
-  /// <span class="material-symbols-rounded">door_sensor</span> MaterialSymbolsRounded.door_sensor
+/// <span class="material-symbols-rounded">door_open</span> MaterialSymbolsRounded.door_open
 ///
-  /// <span class="material-symbols-rounded">door_sliding</span> MaterialSymbolsRounded.door_sliding
+/// <span class="material-symbols-rounded">door_sensor</span> MaterialSymbolsRounded.door_sensor
 ///
-  /// <span class="material-symbols-rounded">doorbell</span> MaterialSymbolsRounded.doorbell
+/// <span class="material-symbols-rounded">door_sliding</span> MaterialSymbolsRounded.door_sliding
 ///
-  /// <span class="material-symbols-rounded">doorbell_3p</span> MaterialSymbolsRounded.doorbell_3p
+/// <span class="material-symbols-rounded">doorbell</span> MaterialSymbolsRounded.doorbell
 ///
-  /// <span class="material-symbols-rounded">doorbell_chime</span> MaterialSymbolsRounded.doorbell_chime
+/// <span class="material-symbols-rounded">doorbell_3p</span> MaterialSymbolsRounded.doorbell_3p
 ///
-  /// <span class="material-symbols-rounded">double_arrow</span> MaterialSymbolsRounded.double_arrow
+/// <span class="material-symbols-rounded">doorbell_chime</span> MaterialSymbolsRounded.doorbell_chime
 ///
-  /// <span class="material-symbols-rounded">downhill_skiing</span> MaterialSymbolsRounded.downhill_skiing
+/// <span class="material-symbols-rounded">double_arrow</span> MaterialSymbolsRounded.double_arrow
 ///
-  /// <span class="material-symbols-rounded">download</span> MaterialSymbolsRounded.download
+/// <span class="material-symbols-rounded">downhill_skiing</span> MaterialSymbolsRounded.downhill_skiing
 ///
-  /// <span class="material-symbols-rounded">download_done</span> MaterialSymbolsRounded.download_done
+/// <span class="material-symbols-rounded">download</span> MaterialSymbolsRounded.download
 ///
-  /// <span class="material-symbols-rounded">download_for_offline</span> MaterialSymbolsRounded.download_for_offline
+/// <span class="material-symbols-rounded">download_done</span> MaterialSymbolsRounded.download_done
 ///
-  /// <span class="material-symbols-rounded">downloading</span> MaterialSymbolsRounded.downloading
+/// <span class="material-symbols-rounded">download_for_offline</span> MaterialSymbolsRounded.download_for_offline
 ///
-  /// <span class="material-symbols-rounded">draft</span> MaterialSymbolsRounded.draft
+/// <span class="material-symbols-rounded">downloading</span> MaterialSymbolsRounded.downloading
 ///
-  /// <span class="material-symbols-rounded">draft_orders</span> MaterialSymbolsRounded.draft_orders
+/// <span class="material-symbols-rounded">draft</span> MaterialSymbolsRounded.draft
 ///
-  /// <span class="material-symbols-rounded">drafts</span> MaterialSymbolsRounded.drafts
+/// <span class="material-symbols-rounded">draft_orders</span> MaterialSymbolsRounded.draft_orders
 ///
-  /// <span class="material-symbols-rounded">drag_click</span> MaterialSymbolsRounded.drag_click
+/// <span class="material-symbols-rounded">drafts</span> MaterialSymbolsRounded.drafts
 ///
-  /// <span class="material-symbols-rounded">drag_handle</span> MaterialSymbolsRounded.drag_handle
+/// <span class="material-symbols-rounded">drag_click</span> MaterialSymbolsRounded.drag_click
 ///
-  /// <span class="material-symbols-rounded">drag_indicator</span> MaterialSymbolsRounded.drag_indicator
+/// <span class="material-symbols-rounded">drag_handle</span> MaterialSymbolsRounded.drag_handle
 ///
-  /// <span class="material-symbols-rounded">drag_pan</span> MaterialSymbolsRounded.drag_pan
+/// <span class="material-symbols-rounded">drag_indicator</span> MaterialSymbolsRounded.drag_indicator
 ///
-  /// <span class="material-symbols-rounded">draw</span> MaterialSymbolsRounded.draw
+/// <span class="material-symbols-rounded">drag_pan</span> MaterialSymbolsRounded.drag_pan
 ///
-  /// <span class="material-symbols-rounded">dresser</span> MaterialSymbolsRounded.dresser
+/// <span class="material-symbols-rounded">draw</span> MaterialSymbolsRounded.draw
 ///
-  /// <span class="material-symbols-rounded">drive_eta</span> MaterialSymbolsRounded.drive_eta
+/// <span class="material-symbols-rounded">dresser</span> MaterialSymbolsRounded.dresser
 ///
-  /// <span class="material-symbols-rounded">drive_file_move</span> MaterialSymbolsRounded.drive_file_move
+/// <span class="material-symbols-rounded">drive_eta</span> MaterialSymbolsRounded.drive_eta
 ///
-  /// <span class="material-symbols-rounded">drive_file_move_outline</span> MaterialSymbolsRounded.drive_file_move_outline
+/// <span class="material-symbols-rounded">drive_file_move</span> MaterialSymbolsRounded.drive_file_move
 ///
-  /// <span class="material-symbols-rounded">drive_file_move_rtl</span> MaterialSymbolsRounded.drive_file_move_rtl
+/// <span class="material-symbols-rounded">drive_file_move_outline</span> MaterialSymbolsRounded.drive_file_move_outline
 ///
-  /// <span class="material-symbols-rounded">drive_file_rename_outline</span> MaterialSymbolsRounded.drive_file_rename_outline
+/// <span class="material-symbols-rounded">drive_file_move_rtl</span> MaterialSymbolsRounded.drive_file_move_rtl
 ///
-  /// <span class="material-symbols-rounded">drive_folder_upload</span> MaterialSymbolsRounded.drive_folder_upload
+/// <span class="material-symbols-rounded">drive_file_rename_outline</span> MaterialSymbolsRounded.drive_file_rename_outline
 ///
-  /// <span class="material-symbols-rounded">dry</span> MaterialSymbolsRounded.dry
+/// <span class="material-symbols-rounded">drive_folder_upload</span> MaterialSymbolsRounded.drive_folder_upload
 ///
-  /// <span class="material-symbols-rounded">dry_cleaning</span> MaterialSymbolsRounded.dry_cleaning
+/// <span class="material-symbols-rounded">dry</span> MaterialSymbolsRounded.dry
 ///
-  /// <span class="material-symbols-rounded">dual_screen</span> MaterialSymbolsRounded.dual_screen
+/// <span class="material-symbols-rounded">dry_cleaning</span> MaterialSymbolsRounded.dry_cleaning
 ///
-  /// <span class="material-symbols-rounded">duo</span> MaterialSymbolsRounded.duo
+/// <span class="material-symbols-rounded">dual_screen</span> MaterialSymbolsRounded.dual_screen
 ///
-  /// <span class="material-symbols-rounded">dvr</span> MaterialSymbolsRounded.dvr
+/// <span class="material-symbols-rounded">duo</span> MaterialSymbolsRounded.duo
 ///
-  /// <span class="material-symbols-rounded">dynamic_feed</span> MaterialSymbolsRounded.dynamic_feed
+/// <span class="material-symbols-rounded">dvr</span> MaterialSymbolsRounded.dvr
 ///
-  /// <span class="material-symbols-rounded">dynamic_form</span> MaterialSymbolsRounded.dynamic_form
+/// <span class="material-symbols-rounded">dynamic_feed</span> MaterialSymbolsRounded.dynamic_feed
 ///
-  /// <span class="material-symbols-rounded">e911_avatar</span> MaterialSymbolsRounded.e911_avatar
+/// <span class="material-symbols-rounded">dynamic_form</span> MaterialSymbolsRounded.dynamic_form
 ///
-  /// <span class="material-symbols-rounded">e911_emergency</span> MaterialSymbolsRounded.e911_emergency
+/// <span class="material-symbols-rounded">e911_avatar</span> MaterialSymbolsRounded.e911_avatar
 ///
-  /// <span class="material-symbols-rounded">e_mobiledata</span> MaterialSymbolsRounded.e_mobiledata
+/// <span class="material-symbols-rounded">e911_emergency</span> MaterialSymbolsRounded.e911_emergency
 ///
-  /// <span class="material-symbols-rounded">e_mobiledata_badge</span> MaterialSymbolsRounded.e_mobiledata_badge
+/// <span class="material-symbols-rounded">e_mobiledata</span> MaterialSymbolsRounded.e_mobiledata
 ///
-  /// <span class="material-symbols-rounded">earbuds</span> MaterialSymbolsRounded.earbuds
+/// <span class="material-symbols-rounded">e_mobiledata_badge</span> MaterialSymbolsRounded.e_mobiledata_badge
 ///
-  /// <span class="material-symbols-rounded">earbuds_battery</span> MaterialSymbolsRounded.earbuds_battery
+/// <span class="material-symbols-rounded">earbuds</span> MaterialSymbolsRounded.earbuds
 ///
-  /// <span class="material-symbols-rounded">early_on</span> MaterialSymbolsRounded.early_on
+/// <span class="material-symbols-rounded">earbuds_battery</span> MaterialSymbolsRounded.earbuds_battery
 ///
-  /// <span class="material-symbols-rounded">east</span> MaterialSymbolsRounded.east
+/// <span class="material-symbols-rounded">early_on</span> MaterialSymbolsRounded.early_on
 ///
-  /// <span class="material-symbols-rounded">ecg</span> MaterialSymbolsRounded.ecg
+/// <span class="material-symbols-rounded">east</span> MaterialSymbolsRounded.east
 ///
-  /// <span class="material-symbols-rounded">ecg_heart</span> MaterialSymbolsRounded.ecg_heart
+/// <span class="material-symbols-rounded">ecg</span> MaterialSymbolsRounded.ecg
 ///
-  /// <span class="material-symbols-rounded">eco</span> MaterialSymbolsRounded.eco
+/// <span class="material-symbols-rounded">ecg_heart</span> MaterialSymbolsRounded.ecg_heart
 ///
-  /// <span class="material-symbols-rounded">eda</span> MaterialSymbolsRounded.eda
+/// <span class="material-symbols-rounded">eco</span> MaterialSymbolsRounded.eco
 ///
-  /// <span class="material-symbols-rounded">edgesensor_high</span> MaterialSymbolsRounded.edgesensor_high
+/// <span class="material-symbols-rounded">eda</span> MaterialSymbolsRounded.eda
 ///
-  /// <span class="material-symbols-rounded">edgesensor_low</span> MaterialSymbolsRounded.edgesensor_low
+/// <span class="material-symbols-rounded">edgesensor_high</span> MaterialSymbolsRounded.edgesensor_high
 ///
-  /// <span class="material-symbols-rounded">edit</span> MaterialSymbolsRounded.edit
+/// <span class="material-symbols-rounded">edgesensor_low</span> MaterialSymbolsRounded.edgesensor_low
 ///
-  /// <span class="material-symbols-rounded">edit_attributes</span> MaterialSymbolsRounded.edit_attributes
+/// <span class="material-symbols-rounded">edit</span> MaterialSymbolsRounded.edit
 ///
-  /// <span class="material-symbols-rounded">edit_calendar</span> MaterialSymbolsRounded.edit_calendar
+/// <span class="material-symbols-rounded">edit_attributes</span> MaterialSymbolsRounded.edit_attributes
 ///
-  /// <span class="material-symbols-rounded">edit_document</span> MaterialSymbolsRounded.edit_document
+/// <span class="material-symbols-rounded">edit_calendar</span> MaterialSymbolsRounded.edit_calendar
 ///
-  /// <span class="material-symbols-rounded">edit_location</span> MaterialSymbolsRounded.edit_location
+/// <span class="material-symbols-rounded">edit_document</span> MaterialSymbolsRounded.edit_document
 ///
-  /// <span class="material-symbols-rounded">edit_location_alt</span> MaterialSymbolsRounded.edit_location_alt
+/// <span class="material-symbols-rounded">edit_location</span> MaterialSymbolsRounded.edit_location
 ///
-  /// <span class="material-symbols-rounded">edit_note</span> MaterialSymbolsRounded.edit_note
+/// <span class="material-symbols-rounded">edit_location_alt</span> MaterialSymbolsRounded.edit_location_alt
 ///
-  /// <span class="material-symbols-rounded">edit_notifications</span> MaterialSymbolsRounded.edit_notifications
+/// <span class="material-symbols-rounded">edit_note</span> MaterialSymbolsRounded.edit_note
 ///
-  /// <span class="material-symbols-rounded">edit_off</span> MaterialSymbolsRounded.edit_off
+/// <span class="material-symbols-rounded">edit_notifications</span> MaterialSymbolsRounded.edit_notifications
 ///
-  /// <span class="material-symbols-rounded">edit_road</span> MaterialSymbolsRounded.edit_road
+/// <span class="material-symbols-rounded">edit_off</span> MaterialSymbolsRounded.edit_off
 ///
-  /// <span class="material-symbols-rounded">edit_square</span> MaterialSymbolsRounded.edit_square
+/// <span class="material-symbols-rounded">edit_road</span> MaterialSymbolsRounded.edit_road
 ///
-  /// <span class="material-symbols-rounded">egg</span> MaterialSymbolsRounded.egg
+/// <span class="material-symbols-rounded">edit_square</span> MaterialSymbolsRounded.edit_square
 ///
-  /// <span class="material-symbols-rounded">egg_alt</span> MaterialSymbolsRounded.egg_alt
+/// <span class="material-symbols-rounded">egg</span> MaterialSymbolsRounded.egg
 ///
-  /// <span class="material-symbols-rounded">eject</span> MaterialSymbolsRounded.eject
+/// <span class="material-symbols-rounded">egg_alt</span> MaterialSymbolsRounded.egg_alt
 ///
-  /// <span class="material-symbols-rounded">elderly</span> MaterialSymbolsRounded.elderly
+/// <span class="material-symbols-rounded">eject</span> MaterialSymbolsRounded.eject
 ///
-  /// <span class="material-symbols-rounded">elderly_woman</span> MaterialSymbolsRounded.elderly_woman
+/// <span class="material-symbols-rounded">elderly</span> MaterialSymbolsRounded.elderly
 ///
-  /// <span class="material-symbols-rounded">electric_bike</span> MaterialSymbolsRounded.electric_bike
+/// <span class="material-symbols-rounded">elderly_woman</span> MaterialSymbolsRounded.elderly_woman
 ///
-  /// <span class="material-symbols-rounded">electric_bolt</span> MaterialSymbolsRounded.electric_bolt
+/// <span class="material-symbols-rounded">electric_bike</span> MaterialSymbolsRounded.electric_bike
 ///
-  /// <span class="material-symbols-rounded">electric_car</span> MaterialSymbolsRounded.electric_car
+/// <span class="material-symbols-rounded">electric_bolt</span> MaterialSymbolsRounded.electric_bolt
 ///
-  /// <span class="material-symbols-rounded">electric_meter</span> MaterialSymbolsRounded.electric_meter
+/// <span class="material-symbols-rounded">electric_car</span> MaterialSymbolsRounded.electric_car
 ///
-  /// <span class="material-symbols-rounded">electric_moped</span> MaterialSymbolsRounded.electric_moped
+/// <span class="material-symbols-rounded">electric_meter</span> MaterialSymbolsRounded.electric_meter
 ///
-  /// <span class="material-symbols-rounded">electric_rickshaw</span> MaterialSymbolsRounded.electric_rickshaw
+/// <span class="material-symbols-rounded">electric_moped</span> MaterialSymbolsRounded.electric_moped
 ///
-  /// <span class="material-symbols-rounded">electric_scooter</span> MaterialSymbolsRounded.electric_scooter
+/// <span class="material-symbols-rounded">electric_rickshaw</span> MaterialSymbolsRounded.electric_rickshaw
 ///
-  /// <span class="material-symbols-rounded">electrical_services</span> MaterialSymbolsRounded.electrical_services
+/// <span class="material-symbols-rounded">electric_scooter</span> MaterialSymbolsRounded.electric_scooter
 ///
-  /// <span class="material-symbols-rounded">elevation</span> MaterialSymbolsRounded.elevation
+/// <span class="material-symbols-rounded">electrical_services</span> MaterialSymbolsRounded.electrical_services
 ///
-  /// <span class="material-symbols-rounded">elevator</span> MaterialSymbolsRounded.elevator
+/// <span class="material-symbols-rounded">elevation</span> MaterialSymbolsRounded.elevation
 ///
-  /// <span class="material-symbols-rounded">email</span> MaterialSymbolsRounded.email
+/// <span class="material-symbols-rounded">elevator</span> MaterialSymbolsRounded.elevator
 ///
-  /// <span class="material-symbols-rounded">emergency</span> MaterialSymbolsRounded.emergency
+/// <span class="material-symbols-rounded">email</span> MaterialSymbolsRounded.email
 ///
-  /// <span class="material-symbols-rounded">emergency_heat</span> MaterialSymbolsRounded.emergency_heat
+/// <span class="material-symbols-rounded">emergency</span> MaterialSymbolsRounded.emergency
 ///
-  /// <span class="material-symbols-rounded">emergency_home</span> MaterialSymbolsRounded.emergency_home
+/// <span class="material-symbols-rounded">emergency_heat</span> MaterialSymbolsRounded.emergency_heat
 ///
-  /// <span class="material-symbols-rounded">emergency_recording</span> MaterialSymbolsRounded.emergency_recording
+/// <span class="material-symbols-rounded">emergency_home</span> MaterialSymbolsRounded.emergency_home
 ///
-  /// <span class="material-symbols-rounded">emergency_share</span> MaterialSymbolsRounded.emergency_share
+/// <span class="material-symbols-rounded">emergency_recording</span> MaterialSymbolsRounded.emergency_recording
 ///
-  /// <span class="material-symbols-rounded">emoji_emotions</span> MaterialSymbolsRounded.emoji_emotions
+/// <span class="material-symbols-rounded">emergency_share</span> MaterialSymbolsRounded.emergency_share
 ///
-  /// <span class="material-symbols-rounded">emoji_flags</span> MaterialSymbolsRounded.emoji_flags
+/// <span class="material-symbols-rounded">emoji_emotions</span> MaterialSymbolsRounded.emoji_emotions
 ///
-  /// <span class="material-symbols-rounded">emoji_food_beverage</span> MaterialSymbolsRounded.emoji_food_beverage
+/// <span class="material-symbols-rounded">emoji_flags</span> MaterialSymbolsRounded.emoji_flags
 ///
-  /// <span class="material-symbols-rounded">emoji_nature</span> MaterialSymbolsRounded.emoji_nature
+/// <span class="material-symbols-rounded">emoji_food_beverage</span> MaterialSymbolsRounded.emoji_food_beverage
 ///
-  /// <span class="material-symbols-rounded">emoji_objects</span> MaterialSymbolsRounded.emoji_objects
+/// <span class="material-symbols-rounded">emoji_nature</span> MaterialSymbolsRounded.emoji_nature
 ///
-  /// <span class="material-symbols-rounded">emoji_people</span> MaterialSymbolsRounded.emoji_people
+/// <span class="material-symbols-rounded">emoji_objects</span> MaterialSymbolsRounded.emoji_objects
 ///
-  /// <span class="material-symbols-rounded">emoji_symbols</span> MaterialSymbolsRounded.emoji_symbols
+/// <span class="material-symbols-rounded">emoji_people</span> MaterialSymbolsRounded.emoji_people
 ///
-  /// <span class="material-symbols-rounded">emoji_transportation</span> MaterialSymbolsRounded.emoji_transportation
+/// <span class="material-symbols-rounded">emoji_symbols</span> MaterialSymbolsRounded.emoji_symbols
 ///
-  /// <span class="material-symbols-rounded">emoticon</span> MaterialSymbolsRounded.emoticon
+/// <span class="material-symbols-rounded">emoji_transportation</span> MaterialSymbolsRounded.emoji_transportation
 ///
-  /// <span class="material-symbols-rounded">empty_dashboard</span> MaterialSymbolsRounded.empty_dashboard
+/// <span class="material-symbols-rounded">emoticon</span> MaterialSymbolsRounded.emoticon
 ///
-  /// <span class="material-symbols-rounded">enable</span> MaterialSymbolsRounded.enable
+/// <span class="material-symbols-rounded">empty_dashboard</span> MaterialSymbolsRounded.empty_dashboard
 ///
-  /// <span class="material-symbols-rounded">endocrinology</span> MaterialSymbolsRounded.endocrinology
+/// <span class="material-symbols-rounded">enable</span> MaterialSymbolsRounded.enable
 ///
-  /// <span class="material-symbols-rounded">energy_program_saving</span> MaterialSymbolsRounded.energy_program_saving
+/// <span class="material-symbols-rounded">endocrinology</span> MaterialSymbolsRounded.endocrinology
 ///
-  /// <span class="material-symbols-rounded">energy_program_time_used</span> MaterialSymbolsRounded.energy_program_time_used
+/// <span class="material-symbols-rounded">energy_program_saving</span> MaterialSymbolsRounded.energy_program_saving
 ///
-  /// <span class="material-symbols-rounded">energy_savings_leaf</span> MaterialSymbolsRounded.energy_savings_leaf
+/// <span class="material-symbols-rounded">energy_program_time_used</span> MaterialSymbolsRounded.energy_program_time_used
 ///
-  /// <span class="material-symbols-rounded">engineering</span> MaterialSymbolsRounded.engineering
+/// <span class="material-symbols-rounded">energy_savings_leaf</span> MaterialSymbolsRounded.energy_savings_leaf
 ///
-  /// <span class="material-symbols-rounded">enhanced_encryption</span> MaterialSymbolsRounded.enhanced_encryption
+/// <span class="material-symbols-rounded">engineering</span> MaterialSymbolsRounded.engineering
 ///
-  /// <span class="material-symbols-rounded">ent</span> MaterialSymbolsRounded.ent
+/// <span class="material-symbols-rounded">enhanced_encryption</span> MaterialSymbolsRounded.enhanced_encryption
 ///
-  /// <span class="material-symbols-rounded">equal</span> MaterialSymbolsRounded.equal
+/// <span class="material-symbols-rounded">ent</span> MaterialSymbolsRounded.ent
 ///
-  /// <span class="material-symbols-rounded">equalizer</span> MaterialSymbolsRounded.equalizer
+/// <span class="material-symbols-rounded">equal</span> MaterialSymbolsRounded.equal
 ///
-  /// <span class="material-symbols-rounded">error</span> MaterialSymbolsRounded.error
+/// <span class="material-symbols-rounded">equalizer</span> MaterialSymbolsRounded.equalizer
 ///
-  /// <span class="material-symbols-rounded">error_circle_rounded</span> MaterialSymbolsRounded.error_circle_rounded
+/// <span class="material-symbols-rounded">error</span> MaterialSymbolsRounded.error
 ///
-  /// <span class="material-symbols-rounded">error_med</span> MaterialSymbolsRounded.error_med
+/// <span class="material-symbols-rounded">error_circle_rounded</span> MaterialSymbolsRounded.error_circle_rounded
 ///
-  /// <span class="material-symbols-rounded">error_outline</span> MaterialSymbolsRounded.error_outline
+/// <span class="material-symbols-rounded">error_med</span> MaterialSymbolsRounded.error_med
 ///
-  /// <span class="material-symbols-rounded">escalator</span> MaterialSymbolsRounded.escalator
+/// <span class="material-symbols-rounded">error_outline</span> MaterialSymbolsRounded.error_outline
 ///
-  /// <span class="material-symbols-rounded">escalator_warning</span> MaterialSymbolsRounded.escalator_warning
+/// <span class="material-symbols-rounded">escalator</span> MaterialSymbolsRounded.escalator
 ///
-  /// <span class="material-symbols-rounded">euro</span> MaterialSymbolsRounded.euro
+/// <span class="material-symbols-rounded">escalator_warning</span> MaterialSymbolsRounded.escalator_warning
 ///
-  /// <span class="material-symbols-rounded">euro_symbol</span> MaterialSymbolsRounded.euro_symbol
+/// <span class="material-symbols-rounded">euro</span> MaterialSymbolsRounded.euro
 ///
-  /// <span class="material-symbols-rounded">ev_charger</span> MaterialSymbolsRounded.ev_charger
+/// <span class="material-symbols-rounded">euro_symbol</span> MaterialSymbolsRounded.euro_symbol
 ///
-  /// <span class="material-symbols-rounded">ev_mobiledata_badge</span> MaterialSymbolsRounded.ev_mobiledata_badge
+/// <span class="material-symbols-rounded">ev_charger</span> MaterialSymbolsRounded.ev_charger
 ///
-  /// <span class="material-symbols-rounded">ev_shadow</span> MaterialSymbolsRounded.ev_shadow
+/// <span class="material-symbols-rounded">ev_mobiledata_badge</span> MaterialSymbolsRounded.ev_mobiledata_badge
 ///
-  /// <span class="material-symbols-rounded">ev_station</span> MaterialSymbolsRounded.ev_station
+/// <span class="material-symbols-rounded">ev_shadow</span> MaterialSymbolsRounded.ev_shadow
 ///
-  /// <span class="material-symbols-rounded">event</span> MaterialSymbolsRounded.event
+/// <span class="material-symbols-rounded">ev_station</span> MaterialSymbolsRounded.ev_station
 ///
-  /// <span class="material-symbols-rounded">event_available</span> MaterialSymbolsRounded.event_available
+/// <span class="material-symbols-rounded">event</span> MaterialSymbolsRounded.event
 ///
-  /// <span class="material-symbols-rounded">event_busy</span> MaterialSymbolsRounded.event_busy
+/// <span class="material-symbols-rounded">event_available</span> MaterialSymbolsRounded.event_available
 ///
-  /// <span class="material-symbols-rounded">event_note</span> MaterialSymbolsRounded.event_note
+/// <span class="material-symbols-rounded">event_busy</span> MaterialSymbolsRounded.event_busy
 ///
-  /// <span class="material-symbols-rounded">event_repeat</span> MaterialSymbolsRounded.event_repeat
+/// <span class="material-symbols-rounded">event_note</span> MaterialSymbolsRounded.event_note
 ///
-  /// <span class="material-symbols-rounded">event_seat</span> MaterialSymbolsRounded.event_seat
+/// <span class="material-symbols-rounded">event_repeat</span> MaterialSymbolsRounded.event_repeat
 ///
-  /// <span class="material-symbols-rounded">event_upcoming</span> MaterialSymbolsRounded.event_upcoming
+/// <span class="material-symbols-rounded">event_seat</span> MaterialSymbolsRounded.event_seat
 ///
-  /// <span class="material-symbols-rounded">exclamation</span> MaterialSymbolsRounded.exclamation
+/// <span class="material-symbols-rounded">event_upcoming</span> MaterialSymbolsRounded.event_upcoming
 ///
-  /// <span class="material-symbols-rounded">exercise</span> MaterialSymbolsRounded.exercise
+/// <span class="material-symbols-rounded">exclamation</span> MaterialSymbolsRounded.exclamation
 ///
-  /// <span class="material-symbols-rounded">exit_to_app</span> MaterialSymbolsRounded.exit_to_app
+/// <span class="material-symbols-rounded">exercise</span> MaterialSymbolsRounded.exercise
 ///
-  /// <span class="material-symbols-rounded">expand</span> MaterialSymbolsRounded.expand
+/// <span class="material-symbols-rounded">exit_to_app</span> MaterialSymbolsRounded.exit_to_app
 ///
-  /// <span class="material-symbols-rounded">expand_circle_down</span> MaterialSymbolsRounded.expand_circle_down
+/// <span class="material-symbols-rounded">expand</span> MaterialSymbolsRounded.expand
 ///
-  /// <span class="material-symbols-rounded">expand_content</span> MaterialSymbolsRounded.expand_content
+/// <span class="material-symbols-rounded">expand_circle_down</span> MaterialSymbolsRounded.expand_circle_down
 ///
-  /// <span class="material-symbols-rounded">expand_less</span> MaterialSymbolsRounded.expand_less
+/// <span class="material-symbols-rounded">expand_content</span> MaterialSymbolsRounded.expand_content
 ///
-  /// <span class="material-symbols-rounded">expand_more</span> MaterialSymbolsRounded.expand_more
+/// <span class="material-symbols-rounded">expand_less</span> MaterialSymbolsRounded.expand_less
 ///
-  /// <span class="material-symbols-rounded">explicit</span> MaterialSymbolsRounded.explicit
+/// <span class="material-symbols-rounded">expand_more</span> MaterialSymbolsRounded.expand_more
 ///
-  /// <span class="material-symbols-rounded">explore</span> MaterialSymbolsRounded.explore
+/// <span class="material-symbols-rounded">explicit</span> MaterialSymbolsRounded.explicit
 ///
-  /// <span class="material-symbols-rounded">explore_off</span> MaterialSymbolsRounded.explore_off
+/// <span class="material-symbols-rounded">explore</span> MaterialSymbolsRounded.explore
 ///
-  /// <span class="material-symbols-rounded">export_notes</span> MaterialSymbolsRounded.export_notes
+/// <span class="material-symbols-rounded">explore_off</span> MaterialSymbolsRounded.explore_off
 ///
-  /// <span class="material-symbols-rounded">exposure</span> MaterialSymbolsRounded.exposure
+/// <span class="material-symbols-rounded">export_notes</span> MaterialSymbolsRounded.export_notes
 ///
-  /// <span class="material-symbols-rounded">exposure_neg_1</span> MaterialSymbolsRounded.exposure_neg_1
+/// <span class="material-symbols-rounded">exposure</span> MaterialSymbolsRounded.exposure
 ///
-  /// <span class="material-symbols-rounded">exposure_neg_2</span> MaterialSymbolsRounded.exposure_neg_2
+/// <span class="material-symbols-rounded">exposure_neg_1</span> MaterialSymbolsRounded.exposure_neg_1
 ///
-  /// <span class="material-symbols-rounded">exposure_plus_1</span> MaterialSymbolsRounded.exposure_plus_1
+/// <span class="material-symbols-rounded">exposure_neg_2</span> MaterialSymbolsRounded.exposure_neg_2
 ///
-  /// <span class="material-symbols-rounded">exposure_plus_2</span> MaterialSymbolsRounded.exposure_plus_2
+/// <span class="material-symbols-rounded">exposure_plus_1</span> MaterialSymbolsRounded.exposure_plus_1
 ///
-  /// <span class="material-symbols-rounded">exposure_zero</span> MaterialSymbolsRounded.exposure_zero
+/// <span class="material-symbols-rounded">exposure_plus_2</span> MaterialSymbolsRounded.exposure_plus_2
 ///
-  /// <span class="material-symbols-rounded">extension</span> MaterialSymbolsRounded.extension
+/// <span class="material-symbols-rounded">exposure_zero</span> MaterialSymbolsRounded.exposure_zero
 ///
-  /// <span class="material-symbols-rounded">extension_off</span> MaterialSymbolsRounded.extension_off
+/// <span class="material-symbols-rounded">extension</span> MaterialSymbolsRounded.extension
 ///
-  /// <span class="material-symbols-rounded">eyeglasses</span> MaterialSymbolsRounded.eyeglasses
+/// <span class="material-symbols-rounded">extension_off</span> MaterialSymbolsRounded.extension_off
 ///
-  /// <span class="material-symbols-rounded">face</span> MaterialSymbolsRounded.face
+/// <span class="material-symbols-rounded">eyeglasses</span> MaterialSymbolsRounded.eyeglasses
 ///
-  /// <span class="material-symbols-rounded">face_2</span> MaterialSymbolsRounded.face_2
+/// <span class="material-symbols-rounded">face</span> MaterialSymbolsRounded.face
 ///
-  /// <span class="material-symbols-rounded">face_3</span> MaterialSymbolsRounded.face_3
+/// <span class="material-symbols-rounded">face_2</span> MaterialSymbolsRounded.face_2
 ///
-  /// <span class="material-symbols-rounded">face_4</span> MaterialSymbolsRounded.face_4
+/// <span class="material-symbols-rounded">face_3</span> MaterialSymbolsRounded.face_3
 ///
-  /// <span class="material-symbols-rounded">face_5</span> MaterialSymbolsRounded.face_5
+/// <span class="material-symbols-rounded">face_4</span> MaterialSymbolsRounded.face_4
 ///
-  /// <span class="material-symbols-rounded">face_6</span> MaterialSymbolsRounded.face_6
+/// <span class="material-symbols-rounded">face_5</span> MaterialSymbolsRounded.face_5
 ///
-  /// <span class="material-symbols-rounded">face_retouching_natural</span> MaterialSymbolsRounded.face_retouching_natural
+/// <span class="material-symbols-rounded">face_6</span> MaterialSymbolsRounded.face_6
 ///
-  /// <span class="material-symbols-rounded">face_retouching_off</span> MaterialSymbolsRounded.face_retouching_off
+/// <span class="material-symbols-rounded">face_retouching_natural</span> MaterialSymbolsRounded.face_retouching_natural
 ///
-  /// <span class="material-symbols-rounded">face_unlock</span> MaterialSymbolsRounded.face_unlock
+/// <span class="material-symbols-rounded">face_retouching_off</span> MaterialSymbolsRounded.face_retouching_off
 ///
-  /// <span class="material-symbols-rounded">fact_check</span> MaterialSymbolsRounded.fact_check
+/// <span class="material-symbols-rounded">face_unlock</span> MaterialSymbolsRounded.face_unlock
 ///
-  /// <span class="material-symbols-rounded">factory</span> MaterialSymbolsRounded.factory
+/// <span class="material-symbols-rounded">fact_check</span> MaterialSymbolsRounded.fact_check
 ///
-  /// <span class="material-symbols-rounded">familiar_face_and_zone</span> MaterialSymbolsRounded.familiar_face_and_zone
+/// <span class="material-symbols-rounded">factory</span> MaterialSymbolsRounded.factory
 ///
-  /// <span class="material-symbols-rounded">family_history</span> MaterialSymbolsRounded.family_history
+/// <span class="material-symbols-rounded">familiar_face_and_zone</span> MaterialSymbolsRounded.familiar_face_and_zone
 ///
-  /// <span class="material-symbols-rounded">family_restroom</span> MaterialSymbolsRounded.family_restroom
+/// <span class="material-symbols-rounded">family_history</span> MaterialSymbolsRounded.family_history
 ///
-  /// <span class="material-symbols-rounded">fast_forward</span> MaterialSymbolsRounded.fast_forward
+/// <span class="material-symbols-rounded">family_restroom</span> MaterialSymbolsRounded.family_restroom
 ///
-  /// <span class="material-symbols-rounded">fast_rewind</span> MaterialSymbolsRounded.fast_rewind
+/// <span class="material-symbols-rounded">fast_forward</span> MaterialSymbolsRounded.fast_forward
 ///
-  /// <span class="material-symbols-rounded">fastfood</span> MaterialSymbolsRounded.fastfood
+/// <span class="material-symbols-rounded">fast_rewind</span> MaterialSymbolsRounded.fast_rewind
 ///
-  /// <span class="material-symbols-rounded">faucet</span> MaterialSymbolsRounded.faucet
+/// <span class="material-symbols-rounded">fastfood</span> MaterialSymbolsRounded.fastfood
 ///
-  /// <span class="material-symbols-rounded">favorite</span> MaterialSymbolsRounded.favorite
+/// <span class="material-symbols-rounded">faucet</span> MaterialSymbolsRounded.faucet
 ///
-  /// <span class="material-symbols-rounded">favorite_border</span> MaterialSymbolsRounded.favorite_border
+/// <span class="material-symbols-rounded">favorite</span> MaterialSymbolsRounded.favorite
 ///
-  /// <span class="material-symbols-rounded">fax</span> MaterialSymbolsRounded.fax
+/// <span class="material-symbols-rounded">favorite_border</span> MaterialSymbolsRounded.favorite_border
 ///
-  /// <span class="material-symbols-rounded">featured_play_list</span> MaterialSymbolsRounded.featured_play_list
+/// <span class="material-symbols-rounded">fax</span> MaterialSymbolsRounded.fax
 ///
-  /// <span class="material-symbols-rounded">featured_video</span> MaterialSymbolsRounded.featured_video
+/// <span class="material-symbols-rounded">featured_play_list</span> MaterialSymbolsRounded.featured_play_list
 ///
-  /// <span class="material-symbols-rounded">feed</span> MaterialSymbolsRounded.feed
+/// <span class="material-symbols-rounded">featured_video</span> MaterialSymbolsRounded.featured_video
 ///
-  /// <span class="material-symbols-rounded">feedback</span> MaterialSymbolsRounded.feedback
+/// <span class="material-symbols-rounded">feed</span> MaterialSymbolsRounded.feed
 ///
-  /// <span class="material-symbols-rounded">female</span> MaterialSymbolsRounded.female
+/// <span class="material-symbols-rounded">feedback</span> MaterialSymbolsRounded.feedback
 ///
-  /// <span class="material-symbols-rounded">femur</span> MaterialSymbolsRounded.femur
+/// <span class="material-symbols-rounded">female</span> MaterialSymbolsRounded.female
 ///
-  /// <span class="material-symbols-rounded">femur_alt</span> MaterialSymbolsRounded.femur_alt
+/// <span class="material-symbols-rounded">femur</span> MaterialSymbolsRounded.femur
 ///
-  /// <span class="material-symbols-rounded">fence</span> MaterialSymbolsRounded.fence
+/// <span class="material-symbols-rounded">femur_alt</span> MaterialSymbolsRounded.femur_alt
 ///
-  /// <span class="material-symbols-rounded">fertile</span> MaterialSymbolsRounded.fertile
+/// <span class="material-symbols-rounded">fence</span> MaterialSymbolsRounded.fence
 ///
-  /// <span class="material-symbols-rounded">festival</span> MaterialSymbolsRounded.festival
+/// <span class="material-symbols-rounded">fertile</span> MaterialSymbolsRounded.fertile
 ///
-  /// <span class="material-symbols-rounded">fiber_dvr</span> MaterialSymbolsRounded.fiber_dvr
+/// <span class="material-symbols-rounded">festival</span> MaterialSymbolsRounded.festival
 ///
-  /// <span class="material-symbols-rounded">fiber_manual_record</span> MaterialSymbolsRounded.fiber_manual_record
+/// <span class="material-symbols-rounded">fiber_dvr</span> MaterialSymbolsRounded.fiber_dvr
 ///
-  /// <span class="material-symbols-rounded">fiber_new</span> MaterialSymbolsRounded.fiber_new
+/// <span class="material-symbols-rounded">fiber_manual_record</span> MaterialSymbolsRounded.fiber_manual_record
 ///
-  /// <span class="material-symbols-rounded">fiber_pin</span> MaterialSymbolsRounded.fiber_pin
+/// <span class="material-symbols-rounded">fiber_new</span> MaterialSymbolsRounded.fiber_new
 ///
-  /// <span class="material-symbols-rounded">fiber_smart_record</span> MaterialSymbolsRounded.fiber_smart_record
+/// <span class="material-symbols-rounded">fiber_pin</span> MaterialSymbolsRounded.fiber_pin
 ///
-  /// <span class="material-symbols-rounded">file_copy</span> MaterialSymbolsRounded.file_copy
+/// <span class="material-symbols-rounded">fiber_smart_record</span> MaterialSymbolsRounded.fiber_smart_record
 ///
-  /// <span class="material-symbols-rounded">file_download</span> MaterialSymbolsRounded.file_download
+/// <span class="material-symbols-rounded">file_copy</span> MaterialSymbolsRounded.file_copy
 ///
-  /// <span class="material-symbols-rounded">file_download_done</span> MaterialSymbolsRounded.file_download_done
+/// <span class="material-symbols-rounded">file_download</span> MaterialSymbolsRounded.file_download
 ///
-  /// <span class="material-symbols-rounded">file_download_off</span> MaterialSymbolsRounded.file_download_off
+/// <span class="material-symbols-rounded">file_download_done</span> MaterialSymbolsRounded.file_download_done
 ///
-  /// <span class="material-symbols-rounded">file_open</span> MaterialSymbolsRounded.file_open
+/// <span class="material-symbols-rounded">file_download_off</span> MaterialSymbolsRounded.file_download_off
 ///
-  /// <span class="material-symbols-rounded">file_present</span> MaterialSymbolsRounded.file_present
+/// <span class="material-symbols-rounded">file_open</span> MaterialSymbolsRounded.file_open
 ///
-  /// <span class="material-symbols-rounded">file_upload</span> MaterialSymbolsRounded.file_upload
+/// <span class="material-symbols-rounded">file_present</span> MaterialSymbolsRounded.file_present
 ///
-  /// <span class="material-symbols-rounded">file_upload_off</span> MaterialSymbolsRounded.file_upload_off
+/// <span class="material-symbols-rounded">file_upload</span> MaterialSymbolsRounded.file_upload
 ///
-  /// <span class="material-symbols-rounded">filter</span> MaterialSymbolsRounded.filter
+/// <span class="material-symbols-rounded">file_upload_off</span> MaterialSymbolsRounded.file_upload_off
 ///
-  /// <span class="material-symbols-rounded">filter_1</span> MaterialSymbolsRounded.filter_1
+/// <span class="material-symbols-rounded">filter</span> MaterialSymbolsRounded.filter
 ///
-  /// <span class="material-symbols-rounded">filter_2</span> MaterialSymbolsRounded.filter_2
+/// <span class="material-symbols-rounded">filter_1</span> MaterialSymbolsRounded.filter_1
 ///
-  /// <span class="material-symbols-rounded">filter_3</span> MaterialSymbolsRounded.filter_3
+/// <span class="material-symbols-rounded">filter_2</span> MaterialSymbolsRounded.filter_2
 ///
-  /// <span class="material-symbols-rounded">filter_4</span> MaterialSymbolsRounded.filter_4
+/// <span class="material-symbols-rounded">filter_3</span> MaterialSymbolsRounded.filter_3
 ///
-  /// <span class="material-symbols-rounded">filter_5</span> MaterialSymbolsRounded.filter_5
+/// <span class="material-symbols-rounded">filter_4</span> MaterialSymbolsRounded.filter_4
 ///
-  /// <span class="material-symbols-rounded">filter_6</span> MaterialSymbolsRounded.filter_6
+/// <span class="material-symbols-rounded">filter_5</span> MaterialSymbolsRounded.filter_5
 ///
-  /// <span class="material-symbols-rounded">filter_7</span> MaterialSymbolsRounded.filter_7
+/// <span class="material-symbols-rounded">filter_6</span> MaterialSymbolsRounded.filter_6
 ///
-  /// <span class="material-symbols-rounded">filter_8</span> MaterialSymbolsRounded.filter_8
+/// <span class="material-symbols-rounded">filter_7</span> MaterialSymbolsRounded.filter_7
 ///
-  /// <span class="material-symbols-rounded">filter_9</span> MaterialSymbolsRounded.filter_9
+/// <span class="material-symbols-rounded">filter_8</span> MaterialSymbolsRounded.filter_8
 ///
-  /// <span class="material-symbols-rounded">filter_9_plus</span> MaterialSymbolsRounded.filter_9_plus
+/// <span class="material-symbols-rounded">filter_9</span> MaterialSymbolsRounded.filter_9
 ///
-  /// <span class="material-symbols-rounded">filter_alt</span> MaterialSymbolsRounded.filter_alt
+/// <span class="material-symbols-rounded">filter_9_plus</span> MaterialSymbolsRounded.filter_9_plus
 ///
-  /// <span class="material-symbols-rounded">filter_alt_off</span> MaterialSymbolsRounded.filter_alt_off
+/// <span class="material-symbols-rounded">filter_alt</span> MaterialSymbolsRounded.filter_alt
 ///
-  /// <span class="material-symbols-rounded">filter_b_and_w</span> MaterialSymbolsRounded.filter_b_and_w
+/// <span class="material-symbols-rounded">filter_alt_off</span> MaterialSymbolsRounded.filter_alt_off
 ///
-  /// <span class="material-symbols-rounded">filter_center_focus</span> MaterialSymbolsRounded.filter_center_focus
+/// <span class="material-symbols-rounded">filter_b_and_w</span> MaterialSymbolsRounded.filter_b_and_w
 ///
-  /// <span class="material-symbols-rounded">filter_drama</span> MaterialSymbolsRounded.filter_drama
+/// <span class="material-symbols-rounded">filter_center_focus</span> MaterialSymbolsRounded.filter_center_focus
 ///
-  /// <span class="material-symbols-rounded">filter_frames</span> MaterialSymbolsRounded.filter_frames
+/// <span class="material-symbols-rounded">filter_drama</span> MaterialSymbolsRounded.filter_drama
 ///
-  /// <span class="material-symbols-rounded">filter_hdr</span> MaterialSymbolsRounded.filter_hdr
+/// <span class="material-symbols-rounded">filter_frames</span> MaterialSymbolsRounded.filter_frames
 ///
-  /// <span class="material-symbols-rounded">filter_list</span> MaterialSymbolsRounded.filter_list
+/// <span class="material-symbols-rounded">filter_hdr</span> MaterialSymbolsRounded.filter_hdr
 ///
-  /// <span class="material-symbols-rounded">filter_list_alt</span> MaterialSymbolsRounded.filter_list_alt
+/// <span class="material-symbols-rounded">filter_list</span> MaterialSymbolsRounded.filter_list
 ///
-  /// <span class="material-symbols-rounded">filter_list_off</span> MaterialSymbolsRounded.filter_list_off
+/// <span class="material-symbols-rounded">filter_list_alt</span> MaterialSymbolsRounded.filter_list_alt
 ///
-  /// <span class="material-symbols-rounded">filter_none</span> MaterialSymbolsRounded.filter_none
+/// <span class="material-symbols-rounded">filter_list_off</span> MaterialSymbolsRounded.filter_list_off
 ///
-  /// <span class="material-symbols-rounded">filter_tilt_shift</span> MaterialSymbolsRounded.filter_tilt_shift
+/// <span class="material-symbols-rounded">filter_none</span> MaterialSymbolsRounded.filter_none
 ///
-  /// <span class="material-symbols-rounded">filter_vintage</span> MaterialSymbolsRounded.filter_vintage
+/// <span class="material-symbols-rounded">filter_tilt_shift</span> MaterialSymbolsRounded.filter_tilt_shift
 ///
-  /// <span class="material-symbols-rounded">finance_chip</span> MaterialSymbolsRounded.finance_chip
+/// <span class="material-symbols-rounded">filter_vintage</span> MaterialSymbolsRounded.filter_vintage
 ///
-  /// <span class="material-symbols-rounded">find_in_page</span> MaterialSymbolsRounded.find_in_page
+/// <span class="material-symbols-rounded">finance_chip</span> MaterialSymbolsRounded.finance_chip
 ///
-  /// <span class="material-symbols-rounded">find_replace</span> MaterialSymbolsRounded.find_replace
+/// <span class="material-symbols-rounded">find_in_page</span> MaterialSymbolsRounded.find_in_page
 ///
-  /// <span class="material-symbols-rounded">fingerprint</span> MaterialSymbolsRounded.fingerprint
+/// <span class="material-symbols-rounded">find_replace</span> MaterialSymbolsRounded.find_replace
 ///
-  /// <span class="material-symbols-rounded">fire_extinguisher</span> MaterialSymbolsRounded.fire_extinguisher
+/// <span class="material-symbols-rounded">fingerprint</span> MaterialSymbolsRounded.fingerprint
 ///
-  /// <span class="material-symbols-rounded">fire_hydrant</span> MaterialSymbolsRounded.fire_hydrant
+/// <span class="material-symbols-rounded">fire_extinguisher</span> MaterialSymbolsRounded.fire_extinguisher
 ///
-  /// <span class="material-symbols-rounded">fire_truck</span> MaterialSymbolsRounded.fire_truck
+/// <span class="material-symbols-rounded">fire_hydrant</span> MaterialSymbolsRounded.fire_hydrant
 ///
-  /// <span class="material-symbols-rounded">fireplace</span> MaterialSymbolsRounded.fireplace
+/// <span class="material-symbols-rounded">fire_truck</span> MaterialSymbolsRounded.fire_truck
 ///
-  /// <span class="material-symbols-rounded">first_page</span> MaterialSymbolsRounded.first_page
+/// <span class="material-symbols-rounded">fireplace</span> MaterialSymbolsRounded.fireplace
 ///
-  /// <span class="material-symbols-rounded">fit_page</span> MaterialSymbolsRounded.fit_page
+/// <span class="material-symbols-rounded">first_page</span> MaterialSymbolsRounded.first_page
 ///
-  /// <span class="material-symbols-rounded">fit_screen</span> MaterialSymbolsRounded.fit_screen
+/// <span class="material-symbols-rounded">fit_page</span> MaterialSymbolsRounded.fit_page
 ///
-  /// <span class="material-symbols-rounded">fit_width</span> MaterialSymbolsRounded.fit_width
+/// <span class="material-symbols-rounded">fit_screen</span> MaterialSymbolsRounded.fit_screen
 ///
-  /// <span class="material-symbols-rounded">fitbit_arrow_downward</span> MaterialSymbolsRounded.fitbit_arrow_downward
+/// <span class="material-symbols-rounded">fit_width</span> MaterialSymbolsRounded.fit_width
 ///
-  /// <span class="material-symbols-rounded">fitbit_arrow_upward</span> MaterialSymbolsRounded.fitbit_arrow_upward
+/// <span class="material-symbols-rounded">fitbit_arrow_downward</span> MaterialSymbolsRounded.fitbit_arrow_downward
 ///
-  /// <span class="material-symbols-rounded">fitbit_check_small</span> MaterialSymbolsRounded.fitbit_check_small
+/// <span class="material-symbols-rounded">fitbit_arrow_upward</span> MaterialSymbolsRounded.fitbit_arrow_upward
 ///
-  /// <span class="material-symbols-rounded">fitness_center</span> MaterialSymbolsRounded.fitness_center
+/// <span class="material-symbols-rounded">fitbit_check_small</span> MaterialSymbolsRounded.fitbit_check_small
 ///
-  /// <span class="material-symbols-rounded">flag</span> MaterialSymbolsRounded.flag
+/// <span class="material-symbols-rounded">fitness_center</span> MaterialSymbolsRounded.fitness_center
 ///
-  /// <span class="material-symbols-rounded">flag_circle</span> MaterialSymbolsRounded.flag_circle
+/// <span class="material-symbols-rounded">flag</span> MaterialSymbolsRounded.flag
 ///
-  /// <span class="material-symbols-rounded">flag_filled</span> MaterialSymbolsRounded.flag_filled
+/// <span class="material-symbols-rounded">flag_circle</span> MaterialSymbolsRounded.flag_circle
 ///
-  /// <span class="material-symbols-rounded">flaky</span> MaterialSymbolsRounded.flaky
+/// <span class="material-symbols-rounded">flag_filled</span> MaterialSymbolsRounded.flag_filled
 ///
-  /// <span class="material-symbols-rounded">flare</span> MaterialSymbolsRounded.flare
+/// <span class="material-symbols-rounded">flaky</span> MaterialSymbolsRounded.flaky
 ///
-  /// <span class="material-symbols-rounded">flash_auto</span> MaterialSymbolsRounded.flash_auto
+/// <span class="material-symbols-rounded">flare</span> MaterialSymbolsRounded.flare
 ///
-  /// <span class="material-symbols-rounded">flash_off</span> MaterialSymbolsRounded.flash_off
+/// <span class="material-symbols-rounded">flash_auto</span> MaterialSymbolsRounded.flash_auto
 ///
-  /// <span class="material-symbols-rounded">flash_on</span> MaterialSymbolsRounded.flash_on
+/// <span class="material-symbols-rounded">flash_off</span> MaterialSymbolsRounded.flash_off
 ///
-  /// <span class="material-symbols-rounded">flashlight_off</span> MaterialSymbolsRounded.flashlight_off
+/// <span class="material-symbols-rounded">flash_on</span> MaterialSymbolsRounded.flash_on
 ///
-  /// <span class="material-symbols-rounded">flashlight_on</span> MaterialSymbolsRounded.flashlight_on
+/// <span class="material-symbols-rounded">flashlight_off</span> MaterialSymbolsRounded.flashlight_off
 ///
-  /// <span class="material-symbols-rounded">flatware</span> MaterialSymbolsRounded.flatware
+/// <span class="material-symbols-rounded">flashlight_on</span> MaterialSymbolsRounded.flashlight_on
 ///
-  /// <span class="material-symbols-rounded">flex_direction</span> MaterialSymbolsRounded.flex_direction
+/// <span class="material-symbols-rounded">flatware</span> MaterialSymbolsRounded.flatware
 ///
-  /// <span class="material-symbols-rounded">flex_no_wrap</span> MaterialSymbolsRounded.flex_no_wrap
+/// <span class="material-symbols-rounded">flex_direction</span> MaterialSymbolsRounded.flex_direction
 ///
-  /// <span class="material-symbols-rounded">flex_wrap</span> MaterialSymbolsRounded.flex_wrap
+/// <span class="material-symbols-rounded">flex_no_wrap</span> MaterialSymbolsRounded.flex_no_wrap
 ///
-  /// <span class="material-symbols-rounded">flight</span> MaterialSymbolsRounded.flight
+/// <span class="material-symbols-rounded">flex_wrap</span> MaterialSymbolsRounded.flex_wrap
 ///
-  /// <span class="material-symbols-rounded">flight_class</span> MaterialSymbolsRounded.flight_class
+/// <span class="material-symbols-rounded">flight</span> MaterialSymbolsRounded.flight
 ///
-  /// <span class="material-symbols-rounded">flight_land</span> MaterialSymbolsRounded.flight_land
+/// <span class="material-symbols-rounded">flight_class</span> MaterialSymbolsRounded.flight_class
 ///
-  /// <span class="material-symbols-rounded">flight_takeoff</span> MaterialSymbolsRounded.flight_takeoff
+/// <span class="material-symbols-rounded">flight_land</span> MaterialSymbolsRounded.flight_land
 ///
-  /// <span class="material-symbols-rounded">flip</span> MaterialSymbolsRounded.flip
+/// <span class="material-symbols-rounded">flight_takeoff</span> MaterialSymbolsRounded.flight_takeoff
 ///
-  /// <span class="material-symbols-rounded">flip_camera_android</span> MaterialSymbolsRounded.flip_camera_android
+/// <span class="material-symbols-rounded">flip</span> MaterialSymbolsRounded.flip
 ///
-  /// <span class="material-symbols-rounded">flip_camera_ios</span> MaterialSymbolsRounded.flip_camera_ios
+/// <span class="material-symbols-rounded">flip_camera_android</span> MaterialSymbolsRounded.flip_camera_android
 ///
-  /// <span class="material-symbols-rounded">flip_to_back</span> MaterialSymbolsRounded.flip_to_back
+/// <span class="material-symbols-rounded">flip_camera_ios</span> MaterialSymbolsRounded.flip_camera_ios
 ///
-  /// <span class="material-symbols-rounded">flip_to_front</span> MaterialSymbolsRounded.flip_to_front
+/// <span class="material-symbols-rounded">flip_to_back</span> MaterialSymbolsRounded.flip_to_back
 ///
-  /// <span class="material-symbols-rounded">float_landscape</span> MaterialSymbolsRounded.float_landscape
+/// <span class="material-symbols-rounded">flip_to_front</span> MaterialSymbolsRounded.flip_to_front
 ///
-  /// <span class="material-symbols-rounded">float_portrait</span> MaterialSymbolsRounded.float_portrait
+/// <span class="material-symbols-rounded">float_landscape</span> MaterialSymbolsRounded.float_landscape
 ///
-  /// <span class="material-symbols-rounded">flood</span> MaterialSymbolsRounded.flood
+/// <span class="material-symbols-rounded">float_portrait</span> MaterialSymbolsRounded.float_portrait
 ///
-  /// <span class="material-symbols-rounded">floor</span> MaterialSymbolsRounded.floor
+/// <span class="material-symbols-rounded">flood</span> MaterialSymbolsRounded.flood
 ///
-  /// <span class="material-symbols-rounded">floor_lamp</span> MaterialSymbolsRounded.floor_lamp
+/// <span class="material-symbols-rounded">floor</span> MaterialSymbolsRounded.floor
 ///
-  /// <span class="material-symbols-rounded">flourescent</span> MaterialSymbolsRounded.flourescent
+/// <span class="material-symbols-rounded">floor_lamp</span> MaterialSymbolsRounded.floor_lamp
 ///
-  /// <span class="material-symbols-rounded">flowsheet</span> MaterialSymbolsRounded.flowsheet
+/// <span class="material-symbols-rounded">flourescent</span> MaterialSymbolsRounded.flourescent
 ///
-  /// <span class="material-symbols-rounded">fluid</span> MaterialSymbolsRounded.fluid
+/// <span class="material-symbols-rounded">flowsheet</span> MaterialSymbolsRounded.flowsheet
 ///
-  /// <span class="material-symbols-rounded">fluid_balance</span> MaterialSymbolsRounded.fluid_balance
+/// <span class="material-symbols-rounded">fluid</span> MaterialSymbolsRounded.fluid
 ///
-  /// <span class="material-symbols-rounded">fluid_med</span> MaterialSymbolsRounded.fluid_med
+/// <span class="material-symbols-rounded">fluid_balance</span> MaterialSymbolsRounded.fluid_balance
 ///
-  /// <span class="material-symbols-rounded">fluorescent</span> MaterialSymbolsRounded.fluorescent
+/// <span class="material-symbols-rounded">fluid_med</span> MaterialSymbolsRounded.fluid_med
 ///
-  /// <span class="material-symbols-rounded">flutter_dash</span> MaterialSymbolsRounded.flutter_dash
+/// <span class="material-symbols-rounded">fluorescent</span> MaterialSymbolsRounded.fluorescent
 ///
-  /// <span class="material-symbols-rounded">fmd_bad</span> MaterialSymbolsRounded.fmd_bad
+/// <span class="material-symbols-rounded">flutter_dash</span> MaterialSymbolsRounded.flutter_dash
 ///
-  /// <span class="material-symbols-rounded">fmd_good</span> MaterialSymbolsRounded.fmd_good
+/// <span class="material-symbols-rounded">fmd_bad</span> MaterialSymbolsRounded.fmd_bad
 ///
-  /// <span class="material-symbols-rounded">foggy</span> MaterialSymbolsRounded.foggy
+/// <span class="material-symbols-rounded">fmd_good</span> MaterialSymbolsRounded.fmd_good
 ///
-  /// <span class="material-symbols-rounded">folder</span> MaterialSymbolsRounded.folder
+/// <span class="material-symbols-rounded">foggy</span> MaterialSymbolsRounded.foggy
 ///
-  /// <span class="material-symbols-rounded">folder_copy</span> MaterialSymbolsRounded.folder_copy
+/// <span class="material-symbols-rounded">folder</span> MaterialSymbolsRounded.folder
 ///
-  /// <span class="material-symbols-rounded">folder_delete</span> MaterialSymbolsRounded.folder_delete
+/// <span class="material-symbols-rounded">folder_copy</span> MaterialSymbolsRounded.folder_copy
 ///
-  /// <span class="material-symbols-rounded">folder_managed</span> MaterialSymbolsRounded.folder_managed
+/// <span class="material-symbols-rounded">folder_delete</span> MaterialSymbolsRounded.folder_delete
 ///
-  /// <span class="material-symbols-rounded">folder_off</span> MaterialSymbolsRounded.folder_off
+/// <span class="material-symbols-rounded">folder_managed</span> MaterialSymbolsRounded.folder_managed
 ///
-  /// <span class="material-symbols-rounded">folder_open</span> MaterialSymbolsRounded.folder_open
+/// <span class="material-symbols-rounded">folder_off</span> MaterialSymbolsRounded.folder_off
 ///
-  /// <span class="material-symbols-rounded">folder_shared</span> MaterialSymbolsRounded.folder_shared
+/// <span class="material-symbols-rounded">folder_open</span> MaterialSymbolsRounded.folder_open
 ///
-  /// <span class="material-symbols-rounded">folder_special</span> MaterialSymbolsRounded.folder_special
+/// <span class="material-symbols-rounded">folder_shared</span> MaterialSymbolsRounded.folder_shared
 ///
-  /// <span class="material-symbols-rounded">folder_supervised</span> MaterialSymbolsRounded.folder_supervised
+/// <span class="material-symbols-rounded">folder_special</span> MaterialSymbolsRounded.folder_special
 ///
-  /// <span class="material-symbols-rounded">folder_zip</span> MaterialSymbolsRounded.folder_zip
+/// <span class="material-symbols-rounded">folder_supervised</span> MaterialSymbolsRounded.folder_supervised
 ///
-  /// <span class="material-symbols-rounded">follow_the_signs</span> MaterialSymbolsRounded.follow_the_signs
+/// <span class="material-symbols-rounded">folder_zip</span> MaterialSymbolsRounded.folder_zip
 ///
-  /// <span class="material-symbols-rounded">font_download</span> MaterialSymbolsRounded.font_download
+/// <span class="material-symbols-rounded">follow_the_signs</span> MaterialSymbolsRounded.follow_the_signs
 ///
-  /// <span class="material-symbols-rounded">font_download_off</span> MaterialSymbolsRounded.font_download_off
+/// <span class="material-symbols-rounded">font_download</span> MaterialSymbolsRounded.font_download
 ///
-  /// <span class="material-symbols-rounded">food_bank</span> MaterialSymbolsRounded.food_bank
+/// <span class="material-symbols-rounded">font_download_off</span> MaterialSymbolsRounded.font_download_off
 ///
-  /// <span class="material-symbols-rounded">foot_bones</span> MaterialSymbolsRounded.foot_bones
+/// <span class="material-symbols-rounded">food_bank</span> MaterialSymbolsRounded.food_bank
 ///
-  /// <span class="material-symbols-rounded">footprint</span> MaterialSymbolsRounded.footprint
+/// <span class="material-symbols-rounded">foot_bones</span> MaterialSymbolsRounded.foot_bones
 ///
-  /// <span class="material-symbols-rounded">forest</span> MaterialSymbolsRounded.forest
+/// <span class="material-symbols-rounded">footprint</span> MaterialSymbolsRounded.footprint
 ///
-  /// <span class="material-symbols-rounded">fork_left</span> MaterialSymbolsRounded.fork_left
+/// <span class="material-symbols-rounded">forest</span> MaterialSymbolsRounded.forest
 ///
-  /// <span class="material-symbols-rounded">fork_right</span> MaterialSymbolsRounded.fork_right
+/// <span class="material-symbols-rounded">fork_left</span> MaterialSymbolsRounded.fork_left
 ///
-  /// <span class="material-symbols-rounded">forklift</span> MaterialSymbolsRounded.forklift
+/// <span class="material-symbols-rounded">fork_right</span> MaterialSymbolsRounded.fork_right
 ///
-  /// <span class="material-symbols-rounded">format_align_center</span> MaterialSymbolsRounded.format_align_center
+/// <span class="material-symbols-rounded">forklift</span> MaterialSymbolsRounded.forklift
 ///
-  /// <span class="material-symbols-rounded">format_align_justify</span> MaterialSymbolsRounded.format_align_justify
+/// <span class="material-symbols-rounded">format_align_center</span> MaterialSymbolsRounded.format_align_center
 ///
-  /// <span class="material-symbols-rounded">format_align_left</span> MaterialSymbolsRounded.format_align_left
+/// <span class="material-symbols-rounded">format_align_justify</span> MaterialSymbolsRounded.format_align_justify
 ///
-  /// <span class="material-symbols-rounded">format_align_right</span> MaterialSymbolsRounded.format_align_right
+/// <span class="material-symbols-rounded">format_align_left</span> MaterialSymbolsRounded.format_align_left
 ///
-  /// <span class="material-symbols-rounded">format_bold</span> MaterialSymbolsRounded.format_bold
+/// <span class="material-symbols-rounded">format_align_right</span> MaterialSymbolsRounded.format_align_right
 ///
-  /// <span class="material-symbols-rounded">format_clear</span> MaterialSymbolsRounded.format_clear
+/// <span class="material-symbols-rounded">format_bold</span> MaterialSymbolsRounded.format_bold
 ///
-  /// <span class="material-symbols-rounded">format_color_fill</span> MaterialSymbolsRounded.format_color_fill
+/// <span class="material-symbols-rounded">format_clear</span> MaterialSymbolsRounded.format_clear
 ///
-  /// <span class="material-symbols-rounded">format_color_reset</span> MaterialSymbolsRounded.format_color_reset
+/// <span class="material-symbols-rounded">format_color_fill</span> MaterialSymbolsRounded.format_color_fill
 ///
-  /// <span class="material-symbols-rounded">format_color_text</span> MaterialSymbolsRounded.format_color_text
+/// <span class="material-symbols-rounded">format_color_reset</span> MaterialSymbolsRounded.format_color_reset
 ///
-  /// <span class="material-symbols-rounded">format_h1</span> MaterialSymbolsRounded.format_h1
+/// <span class="material-symbols-rounded">format_color_text</span> MaterialSymbolsRounded.format_color_text
 ///
-  /// <span class="material-symbols-rounded">format_h2</span> MaterialSymbolsRounded.format_h2
+/// <span class="material-symbols-rounded">format_h1</span> MaterialSymbolsRounded.format_h1
 ///
-  /// <span class="material-symbols-rounded">format_h3</span> MaterialSymbolsRounded.format_h3
+/// <span class="material-symbols-rounded">format_h2</span> MaterialSymbolsRounded.format_h2
 ///
-  /// <span class="material-symbols-rounded">format_h4</span> MaterialSymbolsRounded.format_h4
+/// <span class="material-symbols-rounded">format_h3</span> MaterialSymbolsRounded.format_h3
 ///
-  /// <span class="material-symbols-rounded">format_h5</span> MaterialSymbolsRounded.format_h5
+/// <span class="material-symbols-rounded">format_h4</span> MaterialSymbolsRounded.format_h4
 ///
-  /// <span class="material-symbols-rounded">format_h6</span> MaterialSymbolsRounded.format_h6
+/// <span class="material-symbols-rounded">format_h5</span> MaterialSymbolsRounded.format_h5
 ///
-  /// <span class="material-symbols-rounded">format_image_left</span> MaterialSymbolsRounded.format_image_left
+/// <span class="material-symbols-rounded">format_h6</span> MaterialSymbolsRounded.format_h6
 ///
-  /// <span class="material-symbols-rounded">format_image_right</span> MaterialSymbolsRounded.format_image_right
+/// <span class="material-symbols-rounded">format_image_left</span> MaterialSymbolsRounded.format_image_left
 ///
-  /// <span class="material-symbols-rounded">format_indent_decrease</span> MaterialSymbolsRounded.format_indent_decrease
+/// <span class="material-symbols-rounded">format_image_right</span> MaterialSymbolsRounded.format_image_right
 ///
-  /// <span class="material-symbols-rounded">format_indent_increase</span> MaterialSymbolsRounded.format_indent_increase
+/// <span class="material-symbols-rounded">format_indent_decrease</span> MaterialSymbolsRounded.format_indent_decrease
 ///
-  /// <span class="material-symbols-rounded">format_ink_highlighter</span> MaterialSymbolsRounded.format_ink_highlighter
+/// <span class="material-symbols-rounded">format_indent_increase</span> MaterialSymbolsRounded.format_indent_increase
 ///
-  /// <span class="material-symbols-rounded">format_italic</span> MaterialSymbolsRounded.format_italic
+/// <span class="material-symbols-rounded">format_ink_highlighter</span> MaterialSymbolsRounded.format_ink_highlighter
 ///
-  /// <span class="material-symbols-rounded">format_letter_spacing</span> MaterialSymbolsRounded.format_letter_spacing
+/// <span class="material-symbols-rounded">format_italic</span> MaterialSymbolsRounded.format_italic
 ///
-  /// <span class="material-symbols-rounded">format_line_spacing</span> MaterialSymbolsRounded.format_line_spacing
+/// <span class="material-symbols-rounded">format_letter_spacing</span> MaterialSymbolsRounded.format_letter_spacing
 ///
-  /// <span class="material-symbols-rounded">format_list_bulleted</span> MaterialSymbolsRounded.format_list_bulleted
+/// <span class="material-symbols-rounded">format_line_spacing</span> MaterialSymbolsRounded.format_line_spacing
 ///
-  /// <span class="material-symbols-rounded">format_list_bulleted_add</span> MaterialSymbolsRounded.format_list_bulleted_add
+/// <span class="material-symbols-rounded">format_list_bulleted</span> MaterialSymbolsRounded.format_list_bulleted
 ///
-  /// <span class="material-symbols-rounded">format_list_numbered</span> MaterialSymbolsRounded.format_list_numbered
+/// <span class="material-symbols-rounded">format_list_bulleted_add</span> MaterialSymbolsRounded.format_list_bulleted_add
 ///
-  /// <span class="material-symbols-rounded">format_list_numbered_rtl</span> MaterialSymbolsRounded.format_list_numbered_rtl
+/// <span class="material-symbols-rounded">format_list_numbered</span> MaterialSymbolsRounded.format_list_numbered
 ///
-  /// <span class="material-symbols-rounded">format_overline</span> MaterialSymbolsRounded.format_overline
+/// <span class="material-symbols-rounded">format_list_numbered_rtl</span> MaterialSymbolsRounded.format_list_numbered_rtl
 ///
-  /// <span class="material-symbols-rounded">format_paint</span> MaterialSymbolsRounded.format_paint
+/// <span class="material-symbols-rounded">format_overline</span> MaterialSymbolsRounded.format_overline
 ///
-  /// <span class="material-symbols-rounded">format_paragraph</span> MaterialSymbolsRounded.format_paragraph
+/// <span class="material-symbols-rounded">format_paint</span> MaterialSymbolsRounded.format_paint
 ///
-  /// <span class="material-symbols-rounded">format_quote</span> MaterialSymbolsRounded.format_quote
+/// <span class="material-symbols-rounded">format_paragraph</span> MaterialSymbolsRounded.format_paragraph
 ///
-  /// <span class="material-symbols-rounded">format_shapes</span> MaterialSymbolsRounded.format_shapes
+/// <span class="material-symbols-rounded">format_quote</span> MaterialSymbolsRounded.format_quote
 ///
-  /// <span class="material-symbols-rounded">format_size</span> MaterialSymbolsRounded.format_size
+/// <span class="material-symbols-rounded">format_shapes</span> MaterialSymbolsRounded.format_shapes
 ///
-  /// <span class="material-symbols-rounded">format_strikethrough</span> MaterialSymbolsRounded.format_strikethrough
+/// <span class="material-symbols-rounded">format_size</span> MaterialSymbolsRounded.format_size
 ///
-  /// <span class="material-symbols-rounded">format_text_clip</span> MaterialSymbolsRounded.format_text_clip
+/// <span class="material-symbols-rounded">format_strikethrough</span> MaterialSymbolsRounded.format_strikethrough
 ///
-  /// <span class="material-symbols-rounded">format_text_overflow</span> MaterialSymbolsRounded.format_text_overflow
+/// <span class="material-symbols-rounded">format_text_clip</span> MaterialSymbolsRounded.format_text_clip
 ///
-  /// <span class="material-symbols-rounded">format_text_wrap</span> MaterialSymbolsRounded.format_text_wrap
+/// <span class="material-symbols-rounded">format_text_overflow</span> MaterialSymbolsRounded.format_text_overflow
 ///
-  /// <span class="material-symbols-rounded">format_textdirection_l_to_r</span> MaterialSymbolsRounded.format_textdirection_l_to_r
+/// <span class="material-symbols-rounded">format_text_wrap</span> MaterialSymbolsRounded.format_text_wrap
 ///
-  /// <span class="material-symbols-rounded">format_textdirection_r_to_l</span> MaterialSymbolsRounded.format_textdirection_r_to_l
+/// <span class="material-symbols-rounded">format_textdirection_l_to_r</span> MaterialSymbolsRounded.format_textdirection_l_to_r
 ///
-  /// <span class="material-symbols-rounded">format_underlined</span> MaterialSymbolsRounded.format_underlined
+/// <span class="material-symbols-rounded">format_textdirection_r_to_l</span> MaterialSymbolsRounded.format_textdirection_r_to_l
 ///
-  /// <span class="material-symbols-rounded">format_underlined_squiggle</span> MaterialSymbolsRounded.format_underlined_squiggle
+/// <span class="material-symbols-rounded">format_underlined</span> MaterialSymbolsRounded.format_underlined
 ///
-  /// <span class="material-symbols-rounded">forms_add_on</span> MaterialSymbolsRounded.forms_add_on
+/// <span class="material-symbols-rounded">format_underlined_squiggle</span> MaterialSymbolsRounded.format_underlined_squiggle
 ///
-  /// <span class="material-symbols-rounded">forms_apps_script</span> MaterialSymbolsRounded.forms_apps_script
+/// <span class="material-symbols-rounded">forms_add_on</span> MaterialSymbolsRounded.forms_add_on
 ///
-  /// <span class="material-symbols-rounded">fort</span> MaterialSymbolsRounded.fort
+/// <span class="material-symbols-rounded">forms_apps_script</span> MaterialSymbolsRounded.forms_apps_script
 ///
-  /// <span class="material-symbols-rounded">forum</span> MaterialSymbolsRounded.forum
+/// <span class="material-symbols-rounded">fort</span> MaterialSymbolsRounded.fort
 ///
-  /// <span class="material-symbols-rounded">forward</span> MaterialSymbolsRounded.forward
+/// <span class="material-symbols-rounded">forum</span> MaterialSymbolsRounded.forum
 ///
-  /// <span class="material-symbols-rounded">forward_10</span> MaterialSymbolsRounded.forward_10
+/// <span class="material-symbols-rounded">forward</span> MaterialSymbolsRounded.forward
 ///
-  /// <span class="material-symbols-rounded">forward_30</span> MaterialSymbolsRounded.forward_30
+/// <span class="material-symbols-rounded">forward_10</span> MaterialSymbolsRounded.forward_10
 ///
-  /// <span class="material-symbols-rounded">forward_5</span> MaterialSymbolsRounded.forward_5
+/// <span class="material-symbols-rounded">forward_30</span> MaterialSymbolsRounded.forward_30
 ///
-  /// <span class="material-symbols-rounded">forward_circle</span> MaterialSymbolsRounded.forward_circle
+/// <span class="material-symbols-rounded">forward_5</span> MaterialSymbolsRounded.forward_5
 ///
-  /// <span class="material-symbols-rounded">forward_media</span> MaterialSymbolsRounded.forward_media
+/// <span class="material-symbols-rounded">forward_circle</span> MaterialSymbolsRounded.forward_circle
 ///
-  /// <span class="material-symbols-rounded">forward_to_inbox</span> MaterialSymbolsRounded.forward_to_inbox
+/// <span class="material-symbols-rounded">forward_media</span> MaterialSymbolsRounded.forward_media
 ///
-  /// <span class="material-symbols-rounded">foundation</span> MaterialSymbolsRounded.foundation
+/// <span class="material-symbols-rounded">forward_to_inbox</span> MaterialSymbolsRounded.forward_to_inbox
 ///
-  /// <span class="material-symbols-rounded">frame_inspect</span> MaterialSymbolsRounded.frame_inspect
+/// <span class="material-symbols-rounded">foundation</span> MaterialSymbolsRounded.foundation
 ///
-  /// <span class="material-symbols-rounded">frame_person</span> MaterialSymbolsRounded.frame_person
+/// <span class="material-symbols-rounded">frame_inspect</span> MaterialSymbolsRounded.frame_inspect
 ///
-  /// <span class="material-symbols-rounded">frame_person_off</span> MaterialSymbolsRounded.frame_person_off
+/// <span class="material-symbols-rounded">frame_person</span> MaterialSymbolsRounded.frame_person
 ///
-  /// <span class="material-symbols-rounded">frame_reload</span> MaterialSymbolsRounded.frame_reload
+/// <span class="material-symbols-rounded">frame_person_off</span> MaterialSymbolsRounded.frame_person_off
 ///
-  /// <span class="material-symbols-rounded">frame_source</span> MaterialSymbolsRounded.frame_source
+/// <span class="material-symbols-rounded">frame_reload</span> MaterialSymbolsRounded.frame_reload
 ///
-  /// <span class="material-symbols-rounded">free_breakfast</span> MaterialSymbolsRounded.free_breakfast
+/// <span class="material-symbols-rounded">frame_source</span> MaterialSymbolsRounded.frame_source
 ///
-  /// <span class="material-symbols-rounded">free_cancellation</span> MaterialSymbolsRounded.free_cancellation
+/// <span class="material-symbols-rounded">free_breakfast</span> MaterialSymbolsRounded.free_breakfast
 ///
-  /// <span class="material-symbols-rounded">front_hand</span> MaterialSymbolsRounded.front_hand
+/// <span class="material-symbols-rounded">free_cancellation</span> MaterialSymbolsRounded.free_cancellation
 ///
-  /// <span class="material-symbols-rounded">front_loader</span> MaterialSymbolsRounded.front_loader
+/// <span class="material-symbols-rounded">front_hand</span> MaterialSymbolsRounded.front_hand
 ///
-  /// <span class="material-symbols-rounded">full_stacked_bar_chart</span> MaterialSymbolsRounded.full_stacked_bar_chart
+/// <span class="material-symbols-rounded">front_loader</span> MaterialSymbolsRounded.front_loader
 ///
-  /// <span class="material-symbols-rounded">fullscreen</span> MaterialSymbolsRounded.fullscreen
+/// <span class="material-symbols-rounded">full_stacked_bar_chart</span> MaterialSymbolsRounded.full_stacked_bar_chart
 ///
-  /// <span class="material-symbols-rounded">fullscreen_exit</span> MaterialSymbolsRounded.fullscreen_exit
+/// <span class="material-symbols-rounded">fullscreen</span> MaterialSymbolsRounded.fullscreen
 ///
-  /// <span class="material-symbols-rounded">function</span> MaterialSymbolsRounded.function
+/// <span class="material-symbols-rounded">fullscreen_exit</span> MaterialSymbolsRounded.fullscreen_exit
 ///
-  /// <span class="material-symbols-rounded">functions</span> MaterialSymbolsRounded.functions
+/// <span class="material-symbols-rounded">function</span> MaterialSymbolsRounded.function
 ///
-  /// <span class="material-symbols-rounded">g_mobiledata</span> MaterialSymbolsRounded.g_mobiledata
+/// <span class="material-symbols-rounded">functions</span> MaterialSymbolsRounded.functions
 ///
-  /// <span class="material-symbols-rounded">g_mobiledata_badge</span> MaterialSymbolsRounded.g_mobiledata_badge
+/// <span class="material-symbols-rounded">g_mobiledata</span> MaterialSymbolsRounded.g_mobiledata
 ///
-  /// <span class="material-symbols-rounded">g_translate</span> MaterialSymbolsRounded.g_translate
+/// <span class="material-symbols-rounded">g_mobiledata_badge</span> MaterialSymbolsRounded.g_mobiledata_badge
 ///
-  /// <span class="material-symbols-rounded">gallery_thumbnail</span> MaterialSymbolsRounded.gallery_thumbnail
+/// <span class="material-symbols-rounded">g_translate</span> MaterialSymbolsRounded.g_translate
 ///
-  /// <span class="material-symbols-rounded">gamepad</span> MaterialSymbolsRounded.gamepad
+/// <span class="material-symbols-rounded">gallery_thumbnail</span> MaterialSymbolsRounded.gallery_thumbnail
 ///
-  /// <span class="material-symbols-rounded">games</span> MaterialSymbolsRounded.games
+/// <span class="material-symbols-rounded">gamepad</span> MaterialSymbolsRounded.gamepad
 ///
-  /// <span class="material-symbols-rounded">garage</span> MaterialSymbolsRounded.garage
+/// <span class="material-symbols-rounded">games</span> MaterialSymbolsRounded.games
 ///
-  /// <span class="material-symbols-rounded">garage_home</span> MaterialSymbolsRounded.garage_home
+/// <span class="material-symbols-rounded">garage</span> MaterialSymbolsRounded.garage
 ///
-  /// <span class="material-symbols-rounded">garden_cart</span> MaterialSymbolsRounded.garden_cart
+/// <span class="material-symbols-rounded">garage_home</span> MaterialSymbolsRounded.garage_home
 ///
-  /// <span class="material-symbols-rounded">gas_meter</span> MaterialSymbolsRounded.gas_meter
+/// <span class="material-symbols-rounded">garden_cart</span> MaterialSymbolsRounded.garden_cart
 ///
-  /// <span class="material-symbols-rounded">gastroenterology</span> MaterialSymbolsRounded.gastroenterology
+/// <span class="material-symbols-rounded">gas_meter</span> MaterialSymbolsRounded.gas_meter
 ///
-  /// <span class="material-symbols-rounded">gate</span> MaterialSymbolsRounded.gate
+/// <span class="material-symbols-rounded">gastroenterology</span> MaterialSymbolsRounded.gastroenterology
 ///
-  /// <span class="material-symbols-rounded">gavel</span> MaterialSymbolsRounded.gavel
+/// <span class="material-symbols-rounded">gate</span> MaterialSymbolsRounded.gate
 ///
-  /// <span class="material-symbols-rounded">generating_tokens</span> MaterialSymbolsRounded.generating_tokens
+/// <span class="material-symbols-rounded">gavel</span> MaterialSymbolsRounded.gavel
 ///
-  /// <span class="material-symbols-rounded">genetics</span> MaterialSymbolsRounded.genetics
+/// <span class="material-symbols-rounded">generating_tokens</span> MaterialSymbolsRounded.generating_tokens
 ///
-  /// <span class="material-symbols-rounded">gesture</span> MaterialSymbolsRounded.gesture
+/// <span class="material-symbols-rounded">genetics</span> MaterialSymbolsRounded.genetics
 ///
-  /// <span class="material-symbols-rounded">get_app</span> MaterialSymbolsRounded.get_app
+/// <span class="material-symbols-rounded">gesture</span> MaterialSymbolsRounded.gesture
 ///
-  /// <span class="material-symbols-rounded">gif</span> MaterialSymbolsRounded.gif
+/// <span class="material-symbols-rounded">get_app</span> MaterialSymbolsRounded.get_app
 ///
-  /// <span class="material-symbols-rounded">gif_box</span> MaterialSymbolsRounded.gif_box
+/// <span class="material-symbols-rounded">gif</span> MaterialSymbolsRounded.gif
 ///
-  /// <span class="material-symbols-rounded">girl</span> MaterialSymbolsRounded.girl
+/// <span class="material-symbols-rounded">gif_box</span> MaterialSymbolsRounded.gif_box
 ///
-  /// <span class="material-symbols-rounded">gite</span> MaterialSymbolsRounded.gite
+/// <span class="material-symbols-rounded">girl</span> MaterialSymbolsRounded.girl
 ///
-  /// <span class="material-symbols-rounded">glass_cup</span> MaterialSymbolsRounded.glass_cup
+/// <span class="material-symbols-rounded">gite</span> MaterialSymbolsRounded.gite
 ///
-  /// <span class="material-symbols-rounded">globe_asia</span> MaterialSymbolsRounded.globe_asia
+/// <span class="material-symbols-rounded">glass_cup</span> MaterialSymbolsRounded.glass_cup
 ///
-  /// <span class="material-symbols-rounded">globe_uk</span> MaterialSymbolsRounded.globe_uk
+/// <span class="material-symbols-rounded">globe_asia</span> MaterialSymbolsRounded.globe_asia
 ///
-  /// <span class="material-symbols-rounded">glucose</span> MaterialSymbolsRounded.glucose
+/// <span class="material-symbols-rounded">globe_uk</span> MaterialSymbolsRounded.globe_uk
 ///
-  /// <span class="material-symbols-rounded">glyphs</span> MaterialSymbolsRounded.glyphs
+/// <span class="material-symbols-rounded">glucose</span> MaterialSymbolsRounded.glucose
 ///
-  /// <span class="material-symbols-rounded">go_to_line</span> MaterialSymbolsRounded.go_to_line
+/// <span class="material-symbols-rounded">glyphs</span> MaterialSymbolsRounded.glyphs
 ///
-  /// <span class="material-symbols-rounded">golf_course</span> MaterialSymbolsRounded.golf_course
+/// <span class="material-symbols-rounded">go_to_line</span> MaterialSymbolsRounded.go_to_line
 ///
-  /// <span class="material-symbols-rounded">google_plus_reshare</span> MaterialSymbolsRounded.google_plus_reshare
+/// <span class="material-symbols-rounded">golf_course</span> MaterialSymbolsRounded.golf_course
 ///
-  /// <span class="material-symbols-rounded">google_wifi</span> MaterialSymbolsRounded.google_wifi
+/// <span class="material-symbols-rounded">google_plus_reshare</span> MaterialSymbolsRounded.google_plus_reshare
 ///
-  /// <span class="material-symbols-rounded">gpp_bad</span> MaterialSymbolsRounded.gpp_bad
+/// <span class="material-symbols-rounded">google_wifi</span> MaterialSymbolsRounded.google_wifi
 ///
-  /// <span class="material-symbols-rounded">gpp_good</span> MaterialSymbolsRounded.gpp_good
+/// <span class="material-symbols-rounded">gpp_bad</span> MaterialSymbolsRounded.gpp_bad
 ///
-  /// <span class="material-symbols-rounded">gpp_maybe</span> MaterialSymbolsRounded.gpp_maybe
+/// <span class="material-symbols-rounded">gpp_good</span> MaterialSymbolsRounded.gpp_good
 ///
-  /// <span class="material-symbols-rounded">gps_fixed</span> MaterialSymbolsRounded.gps_fixed
+/// <span class="material-symbols-rounded">gpp_maybe</span> MaterialSymbolsRounded.gpp_maybe
 ///
-  /// <span class="material-symbols-rounded">gps_not_fixed</span> MaterialSymbolsRounded.gps_not_fixed
+/// <span class="material-symbols-rounded">gps_fixed</span> MaterialSymbolsRounded.gps_fixed
 ///
-  /// <span class="material-symbols-rounded">gps_off</span> MaterialSymbolsRounded.gps_off
+/// <span class="material-symbols-rounded">gps_not_fixed</span> MaterialSymbolsRounded.gps_not_fixed
 ///
-  /// <span class="material-symbols-rounded">grade</span> MaterialSymbolsRounded.grade
+/// <span class="material-symbols-rounded">gps_off</span> MaterialSymbolsRounded.gps_off
 ///
-  /// <span class="material-symbols-rounded">gradient</span> MaterialSymbolsRounded.gradient
+/// <span class="material-symbols-rounded">grade</span> MaterialSymbolsRounded.grade
 ///
-  /// <span class="material-symbols-rounded">grading</span> MaterialSymbolsRounded.grading
+/// <span class="material-symbols-rounded">gradient</span> MaterialSymbolsRounded.gradient
 ///
-  /// <span class="material-symbols-rounded">grain</span> MaterialSymbolsRounded.grain
+/// <span class="material-symbols-rounded">grading</span> MaterialSymbolsRounded.grading
 ///
-  /// <span class="material-symbols-rounded">graphic_eq</span> MaterialSymbolsRounded.graphic_eq
+/// <span class="material-symbols-rounded">grain</span> MaterialSymbolsRounded.grain
 ///
-  /// <span class="material-symbols-rounded">grass</span> MaterialSymbolsRounded.grass
+/// <span class="material-symbols-rounded">graphic_eq</span> MaterialSymbolsRounded.graphic_eq
 ///
-  /// <span class="material-symbols-rounded">grid_3x3</span> MaterialSymbolsRounded.grid_3x3
+/// <span class="material-symbols-rounded">grass</span> MaterialSymbolsRounded.grass
 ///
-  /// <span class="material-symbols-rounded">grid_4x4</span> MaterialSymbolsRounded.grid_4x4
+/// <span class="material-symbols-rounded">grid_3x3</span> MaterialSymbolsRounded.grid_3x3
 ///
-  /// <span class="material-symbols-rounded">grid_goldenratio</span> MaterialSymbolsRounded.grid_goldenratio
+/// <span class="material-symbols-rounded">grid_4x4</span> MaterialSymbolsRounded.grid_4x4
 ///
-  /// <span class="material-symbols-rounded">grid_guides</span> MaterialSymbolsRounded.grid_guides
+/// <span class="material-symbols-rounded">grid_goldenratio</span> MaterialSymbolsRounded.grid_goldenratio
 ///
-  /// <span class="material-symbols-rounded">grid_off</span> MaterialSymbolsRounded.grid_off
+/// <span class="material-symbols-rounded">grid_guides</span> MaterialSymbolsRounded.grid_guides
 ///
-  /// <span class="material-symbols-rounded">grid_on</span> MaterialSymbolsRounded.grid_on
+/// <span class="material-symbols-rounded">grid_off</span> MaterialSymbolsRounded.grid_off
 ///
-  /// <span class="material-symbols-rounded">grid_view</span> MaterialSymbolsRounded.grid_view
+/// <span class="material-symbols-rounded">grid_on</span> MaterialSymbolsRounded.grid_on
 ///
-  /// <span class="material-symbols-rounded">group</span> MaterialSymbolsRounded.group
+/// <span class="material-symbols-rounded">grid_view</span> MaterialSymbolsRounded.grid_view
 ///
-  /// <span class="material-symbols-rounded">group_add</span> MaterialSymbolsRounded.group_add
+/// <span class="material-symbols-rounded">group</span> MaterialSymbolsRounded.group
 ///
-  /// <span class="material-symbols-rounded">group_off</span> MaterialSymbolsRounded.group_off
+/// <span class="material-symbols-rounded">group_add</span> MaterialSymbolsRounded.group_add
 ///
-  /// <span class="material-symbols-rounded">group_remove</span> MaterialSymbolsRounded.group_remove
+/// <span class="material-symbols-rounded">group_off</span> MaterialSymbolsRounded.group_off
 ///
-  /// <span class="material-symbols-rounded">group_work</span> MaterialSymbolsRounded.group_work
+/// <span class="material-symbols-rounded">group_remove</span> MaterialSymbolsRounded.group_remove
 ///
-  /// <span class="material-symbols-rounded">grouped_bar_chart</span> MaterialSymbolsRounded.grouped_bar_chart
+/// <span class="material-symbols-rounded">group_work</span> MaterialSymbolsRounded.group_work
 ///
-  /// <span class="material-symbols-rounded">groups</span> MaterialSymbolsRounded.groups
+/// <span class="material-symbols-rounded">grouped_bar_chart</span> MaterialSymbolsRounded.grouped_bar_chart
 ///
-  /// <span class="material-symbols-rounded">groups_2</span> MaterialSymbolsRounded.groups_2
+/// <span class="material-symbols-rounded">groups</span> MaterialSymbolsRounded.groups
 ///
-  /// <span class="material-symbols-rounded">groups_3</span> MaterialSymbolsRounded.groups_3
+/// <span class="material-symbols-rounded">groups_2</span> MaterialSymbolsRounded.groups_2
 ///
-  /// <span class="material-symbols-rounded">gynecology</span> MaterialSymbolsRounded.gynecology
+/// <span class="material-symbols-rounded">groups_3</span> MaterialSymbolsRounded.groups_3
 ///
-  /// <span class="material-symbols-rounded">h_mobiledata</span> MaterialSymbolsRounded.h_mobiledata
+/// <span class="material-symbols-rounded">gynecology</span> MaterialSymbolsRounded.gynecology
 ///
-  /// <span class="material-symbols-rounded">h_mobiledata_badge</span> MaterialSymbolsRounded.h_mobiledata_badge
+/// <span class="material-symbols-rounded">h_mobiledata</span> MaterialSymbolsRounded.h_mobiledata
 ///
-  /// <span class="material-symbols-rounded">h_plus_mobiledata</span> MaterialSymbolsRounded.h_plus_mobiledata
+/// <span class="material-symbols-rounded">h_mobiledata_badge</span> MaterialSymbolsRounded.h_mobiledata_badge
 ///
-  /// <span class="material-symbols-rounded">h_plus_mobiledata_badge</span> MaterialSymbolsRounded.h_plus_mobiledata_badge
+/// <span class="material-symbols-rounded">h_plus_mobiledata</span> MaterialSymbolsRounded.h_plus_mobiledata
 ///
-  /// <span class="material-symbols-rounded">hail</span> MaterialSymbolsRounded.hail
+/// <span class="material-symbols-rounded">h_plus_mobiledata_badge</span> MaterialSymbolsRounded.h_plus_mobiledata_badge
 ///
-  /// <span class="material-symbols-rounded">hand_bones</span> MaterialSymbolsRounded.hand_bones
+/// <span class="material-symbols-rounded">hail</span> MaterialSymbolsRounded.hail
 ///
-  /// <span class="material-symbols-rounded">hand_gesture</span> MaterialSymbolsRounded.hand_gesture
+/// <span class="material-symbols-rounded">hand_bones</span> MaterialSymbolsRounded.hand_bones
 ///
-  /// <span class="material-symbols-rounded">handshake</span> MaterialSymbolsRounded.handshake
+/// <span class="material-symbols-rounded">hand_gesture</span> MaterialSymbolsRounded.hand_gesture
 ///
-  /// <span class="material-symbols-rounded">handyman</span> MaterialSymbolsRounded.handyman
+/// <span class="material-symbols-rounded">handshake</span> MaterialSymbolsRounded.handshake
 ///
-  /// <span class="material-symbols-rounded">hangout_meeting</span> MaterialSymbolsRounded.hangout_meeting
+/// <span class="material-symbols-rounded">handyman</span> MaterialSymbolsRounded.handyman
 ///
-  /// <span class="material-symbols-rounded">hard_drive</span> MaterialSymbolsRounded.hard_drive
+/// <span class="material-symbols-rounded">hangout_meeting</span> MaterialSymbolsRounded.hangout_meeting
 ///
-  /// <span class="material-symbols-rounded">hard_drive_2</span> MaterialSymbolsRounded.hard_drive_2
+/// <span class="material-symbols-rounded">hard_drive</span> MaterialSymbolsRounded.hard_drive
 ///
-  /// <span class="material-symbols-rounded">hardware</span> MaterialSymbolsRounded.hardware
+/// <span class="material-symbols-rounded">hard_drive_2</span> MaterialSymbolsRounded.hard_drive_2
 ///
-  /// <span class="material-symbols-rounded">hd</span> MaterialSymbolsRounded.hd
+/// <span class="material-symbols-rounded">hardware</span> MaterialSymbolsRounded.hardware
 ///
-  /// <span class="material-symbols-rounded">hdr_auto</span> MaterialSymbolsRounded.hdr_auto
+/// <span class="material-symbols-rounded">hd</span> MaterialSymbolsRounded.hd
 ///
-  /// <span class="material-symbols-rounded">hdr_auto_select</span> MaterialSymbolsRounded.hdr_auto_select
+/// <span class="material-symbols-rounded">hdr_auto</span> MaterialSymbolsRounded.hdr_auto
 ///
-  /// <span class="material-symbols-rounded">hdr_enhanced_select</span> MaterialSymbolsRounded.hdr_enhanced_select
+/// <span class="material-symbols-rounded">hdr_auto_select</span> MaterialSymbolsRounded.hdr_auto_select
 ///
-  /// <span class="material-symbols-rounded">hdr_off</span> MaterialSymbolsRounded.hdr_off
+/// <span class="material-symbols-rounded">hdr_enhanced_select</span> MaterialSymbolsRounded.hdr_enhanced_select
 ///
-  /// <span class="material-symbols-rounded">hdr_off_select</span> MaterialSymbolsRounded.hdr_off_select
+/// <span class="material-symbols-rounded">hdr_off</span> MaterialSymbolsRounded.hdr_off
 ///
-  /// <span class="material-symbols-rounded">hdr_on</span> MaterialSymbolsRounded.hdr_on
+/// <span class="material-symbols-rounded">hdr_off_select</span> MaterialSymbolsRounded.hdr_off_select
 ///
-  /// <span class="material-symbols-rounded">hdr_on_select</span> MaterialSymbolsRounded.hdr_on_select
+/// <span class="material-symbols-rounded">hdr_on</span> MaterialSymbolsRounded.hdr_on
 ///
-  /// <span class="material-symbols-rounded">hdr_plus</span> MaterialSymbolsRounded.hdr_plus
+/// <span class="material-symbols-rounded">hdr_on_select</span> MaterialSymbolsRounded.hdr_on_select
 ///
-  /// <span class="material-symbols-rounded">hdr_strong</span> MaterialSymbolsRounded.hdr_strong
+/// <span class="material-symbols-rounded">hdr_plus</span> MaterialSymbolsRounded.hdr_plus
 ///
-  /// <span class="material-symbols-rounded">hdr_weak</span> MaterialSymbolsRounded.hdr_weak
+/// <span class="material-symbols-rounded">hdr_strong</span> MaterialSymbolsRounded.hdr_strong
 ///
-  /// <span class="material-symbols-rounded">headphones</span> MaterialSymbolsRounded.headphones
+/// <span class="material-symbols-rounded">hdr_weak</span> MaterialSymbolsRounded.hdr_weak
 ///
-  /// <span class="material-symbols-rounded">headphones_battery</span> MaterialSymbolsRounded.headphones_battery
+/// <span class="material-symbols-rounded">headphones</span> MaterialSymbolsRounded.headphones
 ///
-  /// <span class="material-symbols-rounded">headset</span> MaterialSymbolsRounded.headset
+/// <span class="material-symbols-rounded">headphones_battery</span> MaterialSymbolsRounded.headphones_battery
 ///
-  /// <span class="material-symbols-rounded">headset_mic</span> MaterialSymbolsRounded.headset_mic
+/// <span class="material-symbols-rounded">headset</span> MaterialSymbolsRounded.headset
 ///
-  /// <span class="material-symbols-rounded">headset_off</span> MaterialSymbolsRounded.headset_off
+/// <span class="material-symbols-rounded">headset_mic</span> MaterialSymbolsRounded.headset_mic
 ///
-  /// <span class="material-symbols-rounded">healing</span> MaterialSymbolsRounded.healing
+/// <span class="material-symbols-rounded">headset_off</span> MaterialSymbolsRounded.headset_off
 ///
-  /// <span class="material-symbols-rounded">health_and_safety</span> MaterialSymbolsRounded.health_and_safety
+/// <span class="material-symbols-rounded">healing</span> MaterialSymbolsRounded.healing
 ///
-  /// <span class="material-symbols-rounded">health_metrics</span> MaterialSymbolsRounded.health_metrics
+/// <span class="material-symbols-rounded">health_and_safety</span> MaterialSymbolsRounded.health_and_safety
 ///
-  /// <span class="material-symbols-rounded">heap_snapshot_large</span> MaterialSymbolsRounded.heap_snapshot_large
+/// <span class="material-symbols-rounded">health_metrics</span> MaterialSymbolsRounded.health_metrics
 ///
-  /// <span class="material-symbols-rounded">heap_snapshot_multiple</span> MaterialSymbolsRounded.heap_snapshot_multiple
+/// <span class="material-symbols-rounded">heap_snapshot_large</span> MaterialSymbolsRounded.heap_snapshot_large
 ///
-  /// <span class="material-symbols-rounded">heap_snapshot_thumbnail</span> MaterialSymbolsRounded.heap_snapshot_thumbnail
+/// <span class="material-symbols-rounded">heap_snapshot_multiple</span> MaterialSymbolsRounded.heap_snapshot_multiple
 ///
-  /// <span class="material-symbols-rounded">hearing</span> MaterialSymbolsRounded.hearing
+/// <span class="material-symbols-rounded">heap_snapshot_thumbnail</span> MaterialSymbolsRounded.heap_snapshot_thumbnail
 ///
-  /// <span class="material-symbols-rounded">hearing_disabled</span> MaterialSymbolsRounded.hearing_disabled
+/// <span class="material-symbols-rounded">hearing</span> MaterialSymbolsRounded.hearing
 ///
-  /// <span class="material-symbols-rounded">heart_broken</span> MaterialSymbolsRounded.heart_broken
+/// <span class="material-symbols-rounded">hearing_disabled</span> MaterialSymbolsRounded.hearing_disabled
 ///
-  /// <span class="material-symbols-rounded">heart_minus</span> MaterialSymbolsRounded.heart_minus
+/// <span class="material-symbols-rounded">heart_broken</span> MaterialSymbolsRounded.heart_broken
 ///
-  /// <span class="material-symbols-rounded">heart_plus</span> MaterialSymbolsRounded.heart_plus
+/// <span class="material-symbols-rounded">heart_minus</span> MaterialSymbolsRounded.heart_minus
 ///
-  /// <span class="material-symbols-rounded">heat_pump</span> MaterialSymbolsRounded.heat_pump
+/// <span class="material-symbols-rounded">heart_plus</span> MaterialSymbolsRounded.heart_plus
 ///
-  /// <span class="material-symbols-rounded">heat_pump_balance</span> MaterialSymbolsRounded.heat_pump_balance
+/// <span class="material-symbols-rounded">heat_pump</span> MaterialSymbolsRounded.heat_pump
 ///
-  /// <span class="material-symbols-rounded">height</span> MaterialSymbolsRounded.height
+/// <span class="material-symbols-rounded">heat_pump_balance</span> MaterialSymbolsRounded.heat_pump_balance
 ///
-  /// <span class="material-symbols-rounded">help</span> MaterialSymbolsRounded.help
+/// <span class="material-symbols-rounded">height</span> MaterialSymbolsRounded.height
 ///
-  /// <span class="material-symbols-rounded">help_center</span> MaterialSymbolsRounded.help_center
+/// <span class="material-symbols-rounded">help</span> MaterialSymbolsRounded.help
 ///
-  /// <span class="material-symbols-rounded">help_clinic</span> MaterialSymbolsRounded.help_clinic
+/// <span class="material-symbols-rounded">help_center</span> MaterialSymbolsRounded.help_center
 ///
-  /// <span class="material-symbols-rounded">help_outline</span> MaterialSymbolsRounded.help_outline
+/// <span class="material-symbols-rounded">help_clinic</span> MaterialSymbolsRounded.help_clinic
 ///
-  /// <span class="material-symbols-rounded">hematology</span> MaterialSymbolsRounded.hematology
+/// <span class="material-symbols-rounded">help_outline</span> MaterialSymbolsRounded.help_outline
 ///
-  /// <span class="material-symbols-rounded">hevc</span> MaterialSymbolsRounded.hevc
+/// <span class="material-symbols-rounded">hematology</span> MaterialSymbolsRounded.hematology
 ///
-  /// <span class="material-symbols-rounded">hexagon</span> MaterialSymbolsRounded.hexagon
+/// <span class="material-symbols-rounded">hevc</span> MaterialSymbolsRounded.hevc
 ///
-  /// <span class="material-symbols-rounded">hide</span> MaterialSymbolsRounded.hide
+/// <span class="material-symbols-rounded">hexagon</span> MaterialSymbolsRounded.hexagon
 ///
-  /// <span class="material-symbols-rounded">hide_image</span> MaterialSymbolsRounded.hide_image
+/// <span class="material-symbols-rounded">hide</span> MaterialSymbolsRounded.hide
 ///
-  /// <span class="material-symbols-rounded">hide_source</span> MaterialSymbolsRounded.hide_source
+/// <span class="material-symbols-rounded">hide_image</span> MaterialSymbolsRounded.hide_image
 ///
-  /// <span class="material-symbols-rounded">high_density</span> MaterialSymbolsRounded.high_density
+/// <span class="material-symbols-rounded">hide_source</span> MaterialSymbolsRounded.hide_source
 ///
-  /// <span class="material-symbols-rounded">high_quality</span> MaterialSymbolsRounded.high_quality
+/// <span class="material-symbols-rounded">high_density</span> MaterialSymbolsRounded.high_density
 ///
-  /// <span class="material-symbols-rounded">highlight</span> MaterialSymbolsRounded.highlight
+/// <span class="material-symbols-rounded">high_quality</span> MaterialSymbolsRounded.high_quality
 ///
-  /// <span class="material-symbols-rounded">highlight_off</span> MaterialSymbolsRounded.highlight_off
+/// <span class="material-symbols-rounded">highlight</span> MaterialSymbolsRounded.highlight
 ///
-  /// <span class="material-symbols-rounded">highlighter_size_1</span> MaterialSymbolsRounded.highlighter_size_1
+/// <span class="material-symbols-rounded">highlight_off</span> MaterialSymbolsRounded.highlight_off
 ///
-  /// <span class="material-symbols-rounded">highlighter_size_2</span> MaterialSymbolsRounded.highlighter_size_2
+/// <span class="material-symbols-rounded">highlighter_size_1</span> MaterialSymbolsRounded.highlighter_size_1
 ///
-  /// <span class="material-symbols-rounded">highlighter_size_3</span> MaterialSymbolsRounded.highlighter_size_3
+/// <span class="material-symbols-rounded">highlighter_size_2</span> MaterialSymbolsRounded.highlighter_size_2
 ///
-  /// <span class="material-symbols-rounded">highlighter_size_4</span> MaterialSymbolsRounded.highlighter_size_4
+/// <span class="material-symbols-rounded">highlighter_size_3</span> MaterialSymbolsRounded.highlighter_size_3
 ///
-  /// <span class="material-symbols-rounded">highlighter_size_5</span> MaterialSymbolsRounded.highlighter_size_5
+/// <span class="material-symbols-rounded">highlighter_size_4</span> MaterialSymbolsRounded.highlighter_size_4
 ///
-  /// <span class="material-symbols-rounded">hiking</span> MaterialSymbolsRounded.hiking
+/// <span class="material-symbols-rounded">highlighter_size_5</span> MaterialSymbolsRounded.highlighter_size_5
 ///
-  /// <span class="material-symbols-rounded">history</span> MaterialSymbolsRounded.history
+/// <span class="material-symbols-rounded">hiking</span> MaterialSymbolsRounded.hiking
 ///
-  /// <span class="material-symbols-rounded">history_edu</span> MaterialSymbolsRounded.history_edu
+/// <span class="material-symbols-rounded">history</span> MaterialSymbolsRounded.history
 ///
-  /// <span class="material-symbols-rounded">history_toggle_off</span> MaterialSymbolsRounded.history_toggle_off
+/// <span class="material-symbols-rounded">history_edu</span> MaterialSymbolsRounded.history_edu
 ///
-  /// <span class="material-symbols-rounded">hive</span> MaterialSymbolsRounded.hive
+/// <span class="material-symbols-rounded">history_toggle_off</span> MaterialSymbolsRounded.history_toggle_off
 ///
-  /// <span class="material-symbols-rounded">hls</span> MaterialSymbolsRounded.hls
+/// <span class="material-symbols-rounded">hive</span> MaterialSymbolsRounded.hive
 ///
-  /// <span class="material-symbols-rounded">hls_off</span> MaterialSymbolsRounded.hls_off
+/// <span class="material-symbols-rounded">hls</span> MaterialSymbolsRounded.hls
 ///
-  /// <span class="material-symbols-rounded">holiday_village</span> MaterialSymbolsRounded.holiday_village
+/// <span class="material-symbols-rounded">hls_off</span> MaterialSymbolsRounded.hls_off
 ///
-  /// <span class="material-symbols-rounded">home</span> MaterialSymbolsRounded.home
+/// <span class="material-symbols-rounded">holiday_village</span> MaterialSymbolsRounded.holiday_village
 ///
-  /// <span class="material-symbols-rounded">home_app_logo</span> MaterialSymbolsRounded.home_app_logo
+/// <span class="material-symbols-rounded">home</span> MaterialSymbolsRounded.home
 ///
-  /// <span class="material-symbols-rounded">home_filled</span> MaterialSymbolsRounded.home_filled
+/// <span class="material-symbols-rounded">home_app_logo</span> MaterialSymbolsRounded.home_app_logo
 ///
-  /// <span class="material-symbols-rounded">home_health</span> MaterialSymbolsRounded.home_health
+/// <span class="material-symbols-rounded">home_filled</span> MaterialSymbolsRounded.home_filled
 ///
-  /// <span class="material-symbols-rounded">home_iot_device</span> MaterialSymbolsRounded.home_iot_device
+/// <span class="material-symbols-rounded">home_health</span> MaterialSymbolsRounded.home_health
 ///
-  /// <span class="material-symbols-rounded">home_max</span> MaterialSymbolsRounded.home_max
+/// <span class="material-symbols-rounded">home_iot_device</span> MaterialSymbolsRounded.home_iot_device
 ///
-  /// <span class="material-symbols-rounded">home_max_dots</span> MaterialSymbolsRounded.home_max_dots
+/// <span class="material-symbols-rounded">home_max</span> MaterialSymbolsRounded.home_max
 ///
-  /// <span class="material-symbols-rounded">home_mini</span> MaterialSymbolsRounded.home_mini
+/// <span class="material-symbols-rounded">home_max_dots</span> MaterialSymbolsRounded.home_max_dots
 ///
-  /// <span class="material-symbols-rounded">home_pin</span> MaterialSymbolsRounded.home_pin
+/// <span class="material-symbols-rounded">home_mini</span> MaterialSymbolsRounded.home_mini
 ///
-  /// <span class="material-symbols-rounded">home_repair_service</span> MaterialSymbolsRounded.home_repair_service
+/// <span class="material-symbols-rounded">home_pin</span> MaterialSymbolsRounded.home_pin
 ///
-  /// <span class="material-symbols-rounded">home_speaker</span> MaterialSymbolsRounded.home_speaker
+/// <span class="material-symbols-rounded">home_repair_service</span> MaterialSymbolsRounded.home_repair_service
 ///
-  /// <span class="material-symbols-rounded">home_storage</span> MaterialSymbolsRounded.home_storage
+/// <span class="material-symbols-rounded">home_speaker</span> MaterialSymbolsRounded.home_speaker
 ///
-  /// <span class="material-symbols-rounded">home_work</span> MaterialSymbolsRounded.home_work
+/// <span class="material-symbols-rounded">home_storage</span> MaterialSymbolsRounded.home_storage
 ///
-  /// <span class="material-symbols-rounded">horizontal_distribute</span> MaterialSymbolsRounded.horizontal_distribute
+/// <span class="material-symbols-rounded">home_work</span> MaterialSymbolsRounded.home_work
 ///
-  /// <span class="material-symbols-rounded">horizontal_rule</span> MaterialSymbolsRounded.horizontal_rule
+/// <span class="material-symbols-rounded">horizontal_distribute</span> MaterialSymbolsRounded.horizontal_distribute
 ///
-  /// <span class="material-symbols-rounded">horizontal_split</span> MaterialSymbolsRounded.horizontal_split
+/// <span class="material-symbols-rounded">horizontal_rule</span> MaterialSymbolsRounded.horizontal_rule
 ///
-  /// <span class="material-symbols-rounded">hot_tub</span> MaterialSymbolsRounded.hot_tub
+/// <span class="material-symbols-rounded">horizontal_split</span> MaterialSymbolsRounded.horizontal_split
 ///
-  /// <span class="material-symbols-rounded">hotel</span> MaterialSymbolsRounded.hotel
+/// <span class="material-symbols-rounded">hot_tub</span> MaterialSymbolsRounded.hot_tub
 ///
-  /// <span class="material-symbols-rounded">hotel_class</span> MaterialSymbolsRounded.hotel_class
+/// <span class="material-symbols-rounded">hotel</span> MaterialSymbolsRounded.hotel
 ///
-  /// <span class="material-symbols-rounded">hourglass_bottom</span> MaterialSymbolsRounded.hourglass_bottom
+/// <span class="material-symbols-rounded">hotel_class</span> MaterialSymbolsRounded.hotel_class
 ///
-  /// <span class="material-symbols-rounded">hourglass_disabled</span> MaterialSymbolsRounded.hourglass_disabled
+/// <span class="material-symbols-rounded">hourglass_bottom</span> MaterialSymbolsRounded.hourglass_bottom
 ///
-  /// <span class="material-symbols-rounded">hourglass_empty</span> MaterialSymbolsRounded.hourglass_empty
+/// <span class="material-symbols-rounded">hourglass_disabled</span> MaterialSymbolsRounded.hourglass_disabled
 ///
-  /// <span class="material-symbols-rounded">hourglass_full</span> MaterialSymbolsRounded.hourglass_full
+/// <span class="material-symbols-rounded">hourglass_empty</span> MaterialSymbolsRounded.hourglass_empty
 ///
-  /// <span class="material-symbols-rounded">hourglass_top</span> MaterialSymbolsRounded.hourglass_top
+/// <span class="material-symbols-rounded">hourglass_full</span> MaterialSymbolsRounded.hourglass_full
 ///
-  /// <span class="material-symbols-rounded">house</span> MaterialSymbolsRounded.house
+/// <span class="material-symbols-rounded">hourglass_top</span> MaterialSymbolsRounded.hourglass_top
 ///
-  /// <span class="material-symbols-rounded">house_siding</span> MaterialSymbolsRounded.house_siding
+/// <span class="material-symbols-rounded">house</span> MaterialSymbolsRounded.house
 ///
-  /// <span class="material-symbols-rounded">house_with_shield</span> MaterialSymbolsRounded.house_with_shield
+/// <span class="material-symbols-rounded">house_siding</span> MaterialSymbolsRounded.house_siding
 ///
-  /// <span class="material-symbols-rounded">houseboat</span> MaterialSymbolsRounded.houseboat
+/// <span class="material-symbols-rounded">house_with_shield</span> MaterialSymbolsRounded.house_with_shield
 ///
-  /// <span class="material-symbols-rounded">how_to_reg</span> MaterialSymbolsRounded.how_to_reg
+/// <span class="material-symbols-rounded">houseboat</span> MaterialSymbolsRounded.houseboat
 ///
-  /// <span class="material-symbols-rounded">how_to_vote</span> MaterialSymbolsRounded.how_to_vote
+/// <span class="material-symbols-rounded">how_to_reg</span> MaterialSymbolsRounded.how_to_reg
 ///
-  /// <span class="material-symbols-rounded">hr_resting</span> MaterialSymbolsRounded.hr_resting
+/// <span class="material-symbols-rounded">how_to_vote</span> MaterialSymbolsRounded.how_to_vote
 ///
-  /// <span class="material-symbols-rounded">html</span> MaterialSymbolsRounded.html
+/// <span class="material-symbols-rounded">hr_resting</span> MaterialSymbolsRounded.hr_resting
 ///
-  /// <span class="material-symbols-rounded">http</span> MaterialSymbolsRounded.http
+/// <span class="material-symbols-rounded">html</span> MaterialSymbolsRounded.html
 ///
-  /// <span class="material-symbols-rounded">https</span> MaterialSymbolsRounded.https
+/// <span class="material-symbols-rounded">http</span> MaterialSymbolsRounded.http
 ///
-  /// <span class="material-symbols-rounded">hub</span> MaterialSymbolsRounded.hub
+/// <span class="material-symbols-rounded">https</span> MaterialSymbolsRounded.https
 ///
-  /// <span class="material-symbols-rounded">humerus</span> MaterialSymbolsRounded.humerus
+/// <span class="material-symbols-rounded">hub</span> MaterialSymbolsRounded.hub
 ///
-  /// <span class="material-symbols-rounded">humerus_alt</span> MaterialSymbolsRounded.humerus_alt
+/// <span class="material-symbols-rounded">humerus</span> MaterialSymbolsRounded.humerus
 ///
-  /// <span class="material-symbols-rounded">humidity_high</span> MaterialSymbolsRounded.humidity_high
+/// <span class="material-symbols-rounded">humerus_alt</span> MaterialSymbolsRounded.humerus_alt
 ///
-  /// <span class="material-symbols-rounded">humidity_low</span> MaterialSymbolsRounded.humidity_low
+/// <span class="material-symbols-rounded">humidity_high</span> MaterialSymbolsRounded.humidity_high
 ///
-  /// <span class="material-symbols-rounded">humidity_mid</span> MaterialSymbolsRounded.humidity_mid
+/// <span class="material-symbols-rounded">humidity_low</span> MaterialSymbolsRounded.humidity_low
 ///
-  /// <span class="material-symbols-rounded">humidity_percentage</span> MaterialSymbolsRounded.humidity_percentage
+/// <span class="material-symbols-rounded">humidity_mid</span> MaterialSymbolsRounded.humidity_mid
 ///
-  /// <span class="material-symbols-rounded">hvac</span> MaterialSymbolsRounded.hvac
+/// <span class="material-symbols-rounded">humidity_percentage</span> MaterialSymbolsRounded.humidity_percentage
 ///
-  /// <span class="material-symbols-rounded">ice_skating</span> MaterialSymbolsRounded.ice_skating
+/// <span class="material-symbols-rounded">hvac</span> MaterialSymbolsRounded.hvac
 ///
-  /// <span class="material-symbols-rounded">icecream</span> MaterialSymbolsRounded.icecream
+/// <span class="material-symbols-rounded">ice_skating</span> MaterialSymbolsRounded.ice_skating
 ///
-  /// <span class="material-symbols-rounded">iframe</span> MaterialSymbolsRounded.iframe
+/// <span class="material-symbols-rounded">icecream</span> MaterialSymbolsRounded.icecream
 ///
-  /// <span class="material-symbols-rounded">iframe_off</span> MaterialSymbolsRounded.iframe_off
+/// <span class="material-symbols-rounded">iframe</span> MaterialSymbolsRounded.iframe
 ///
-  /// <span class="material-symbols-rounded">image</span> MaterialSymbolsRounded.image
+/// <span class="material-symbols-rounded">iframe_off</span> MaterialSymbolsRounded.iframe_off
 ///
-  /// <span class="material-symbols-rounded">image_aspect_ratio</span> MaterialSymbolsRounded.image_aspect_ratio
+/// <span class="material-symbols-rounded">image</span> MaterialSymbolsRounded.image
 ///
-  /// <span class="material-symbols-rounded">image_not_supported</span> MaterialSymbolsRounded.image_not_supported
+/// <span class="material-symbols-rounded">image_aspect_ratio</span> MaterialSymbolsRounded.image_aspect_ratio
 ///
-  /// <span class="material-symbols-rounded">image_search</span> MaterialSymbolsRounded.image_search
+/// <span class="material-symbols-rounded">image_not_supported</span> MaterialSymbolsRounded.image_not_supported
 ///
-  /// <span class="material-symbols-rounded">imagesearch_roller</span> MaterialSymbolsRounded.imagesearch_roller
+/// <span class="material-symbols-rounded">image_search</span> MaterialSymbolsRounded.image_search
 ///
-  /// <span class="material-symbols-rounded">imagesmode</span> MaterialSymbolsRounded.imagesmode
+/// <span class="material-symbols-rounded">imagesearch_roller</span> MaterialSymbolsRounded.imagesearch_roller
 ///
-  /// <span class="material-symbols-rounded">immunology</span> MaterialSymbolsRounded.immunology
+/// <span class="material-symbols-rounded">imagesmode</span> MaterialSymbolsRounded.imagesmode
 ///
-  /// <span class="material-symbols-rounded">import_contacts</span> MaterialSymbolsRounded.import_contacts
+/// <span class="material-symbols-rounded">immunology</span> MaterialSymbolsRounded.immunology
 ///
-  /// <span class="material-symbols-rounded">import_export</span> MaterialSymbolsRounded.import_export
+/// <span class="material-symbols-rounded">import_contacts</span> MaterialSymbolsRounded.import_contacts
 ///
-  /// <span class="material-symbols-rounded">important_devices</span> MaterialSymbolsRounded.important_devices
+/// <span class="material-symbols-rounded">import_export</span> MaterialSymbolsRounded.import_export
 ///
-  /// <span class="material-symbols-rounded">in_home_mode</span> MaterialSymbolsRounded.in_home_mode
+/// <span class="material-symbols-rounded">important_devices</span> MaterialSymbolsRounded.important_devices
 ///
-  /// <span class="material-symbols-rounded">inactive_order</span> MaterialSymbolsRounded.inactive_order
+/// <span class="material-symbols-rounded">in_home_mode</span> MaterialSymbolsRounded.in_home_mode
 ///
-  /// <span class="material-symbols-rounded">inbox</span> MaterialSymbolsRounded.inbox
+/// <span class="material-symbols-rounded">inactive_order</span> MaterialSymbolsRounded.inactive_order
 ///
-  /// <span class="material-symbols-rounded">inbox_customize</span> MaterialSymbolsRounded.inbox_customize
+/// <span class="material-symbols-rounded">inbox</span> MaterialSymbolsRounded.inbox
 ///
-  /// <span class="material-symbols-rounded">incomplete_circle</span> MaterialSymbolsRounded.incomplete_circle
+/// <span class="material-symbols-rounded">inbox_customize</span> MaterialSymbolsRounded.inbox_customize
 ///
-  /// <span class="material-symbols-rounded">indeterminate_check_box</span> MaterialSymbolsRounded.indeterminate_check_box
+/// <span class="material-symbols-rounded">incomplete_circle</span> MaterialSymbolsRounded.incomplete_circle
 ///
-  /// <span class="material-symbols-rounded">info</span> MaterialSymbolsRounded.info
+/// <span class="material-symbols-rounded">indeterminate_check_box</span> MaterialSymbolsRounded.indeterminate_check_box
 ///
-  /// <span class="material-symbols-rounded">infrared</span> MaterialSymbolsRounded.infrared
+/// <span class="material-symbols-rounded">info</span> MaterialSymbolsRounded.info
 ///
-  /// <span class="material-symbols-rounded">inpatient</span> MaterialSymbolsRounded.inpatient
+/// <span class="material-symbols-rounded">infrared</span> MaterialSymbolsRounded.infrared
 ///
-  /// <span class="material-symbols-rounded">input</span> MaterialSymbolsRounded.input
+/// <span class="material-symbols-rounded">inpatient</span> MaterialSymbolsRounded.inpatient
 ///
-  /// <span class="material-symbols-rounded">input_circle</span> MaterialSymbolsRounded.input_circle
+/// <span class="material-symbols-rounded">input</span> MaterialSymbolsRounded.input
 ///
-  /// <span class="material-symbols-rounded">insert_chart</span> MaterialSymbolsRounded.insert_chart
+/// <span class="material-symbols-rounded">input_circle</span> MaterialSymbolsRounded.input_circle
 ///
-  /// <span class="material-symbols-rounded">insert_chart_filled</span> MaterialSymbolsRounded.insert_chart_filled
+/// <span class="material-symbols-rounded">insert_chart</span> MaterialSymbolsRounded.insert_chart
 ///
-  /// <span class="material-symbols-rounded">insert_chart_outlined</span> MaterialSymbolsRounded.insert_chart_outlined
+/// <span class="material-symbols-rounded">insert_chart_filled</span> MaterialSymbolsRounded.insert_chart_filled
 ///
-  /// <span class="material-symbols-rounded">insert_comment</span> MaterialSymbolsRounded.insert_comment
+/// <span class="material-symbols-rounded">insert_chart_outlined</span> MaterialSymbolsRounded.insert_chart_outlined
 ///
-  /// <span class="material-symbols-rounded">insert_drive_file</span> MaterialSymbolsRounded.insert_drive_file
+/// <span class="material-symbols-rounded">insert_comment</span> MaterialSymbolsRounded.insert_comment
 ///
-  /// <span class="material-symbols-rounded">insert_emoticon</span> MaterialSymbolsRounded.insert_emoticon
+/// <span class="material-symbols-rounded">insert_drive_file</span> MaterialSymbolsRounded.insert_drive_file
 ///
-  /// <span class="material-symbols-rounded">insert_invitation</span> MaterialSymbolsRounded.insert_invitation
+/// <span class="material-symbols-rounded">insert_emoticon</span> MaterialSymbolsRounded.insert_emoticon
 ///
-  /// <span class="material-symbols-rounded">insert_link</span> MaterialSymbolsRounded.insert_link
+/// <span class="material-symbols-rounded">insert_invitation</span> MaterialSymbolsRounded.insert_invitation
 ///
-  /// <span class="material-symbols-rounded">insert_page_break</span> MaterialSymbolsRounded.insert_page_break
+/// <span class="material-symbols-rounded">insert_link</span> MaterialSymbolsRounded.insert_link
 ///
-  /// <span class="material-symbols-rounded">insert_photo</span> MaterialSymbolsRounded.insert_photo
+/// <span class="material-symbols-rounded">insert_page_break</span> MaterialSymbolsRounded.insert_page_break
 ///
-  /// <span class="material-symbols-rounded">insert_text</span> MaterialSymbolsRounded.insert_text
+/// <span class="material-symbols-rounded">insert_photo</span> MaterialSymbolsRounded.insert_photo
 ///
-  /// <span class="material-symbols-rounded">insights</span> MaterialSymbolsRounded.insights
+/// <span class="material-symbols-rounded">insert_text</span> MaterialSymbolsRounded.insert_text
 ///
-  /// <span class="material-symbols-rounded">install_desktop</span> MaterialSymbolsRounded.install_desktop
+/// <span class="material-symbols-rounded">insights</span> MaterialSymbolsRounded.insights
 ///
-  /// <span class="material-symbols-rounded">install_mobile</span> MaterialSymbolsRounded.install_mobile
+/// <span class="material-symbols-rounded">install_desktop</span> MaterialSymbolsRounded.install_desktop
 ///
-  /// <span class="material-symbols-rounded">integration_instructions</span> MaterialSymbolsRounded.integration_instructions
+/// <span class="material-symbols-rounded">install_mobile</span> MaterialSymbolsRounded.install_mobile
 ///
-  /// <span class="material-symbols-rounded">interests</span> MaterialSymbolsRounded.interests
+/// <span class="material-symbols-rounded">integration_instructions</span> MaterialSymbolsRounded.integration_instructions
 ///
-  /// <span class="material-symbols-rounded">interpreter_mode</span> MaterialSymbolsRounded.interpreter_mode
+/// <span class="material-symbols-rounded">interests</span> MaterialSymbolsRounded.interests
 ///
-  /// <span class="material-symbols-rounded">inventory</span> MaterialSymbolsRounded.inventory
+/// <span class="material-symbols-rounded">interpreter_mode</span> MaterialSymbolsRounded.interpreter_mode
 ///
-  /// <span class="material-symbols-rounded">inventory_2</span> MaterialSymbolsRounded.inventory_2
+/// <span class="material-symbols-rounded">inventory</span> MaterialSymbolsRounded.inventory
 ///
-  /// <span class="material-symbols-rounded">invert_colors</span> MaterialSymbolsRounded.invert_colors
+/// <span class="material-symbols-rounded">inventory_2</span> MaterialSymbolsRounded.inventory_2
 ///
-  /// <span class="material-symbols-rounded">invert_colors_off</span> MaterialSymbolsRounded.invert_colors_off
+/// <span class="material-symbols-rounded">invert_colors</span> MaterialSymbolsRounded.invert_colors
 ///
-  /// <span class="material-symbols-rounded">ios_share</span> MaterialSymbolsRounded.ios_share
+/// <span class="material-symbols-rounded">invert_colors_off</span> MaterialSymbolsRounded.invert_colors_off
 ///
-  /// <span class="material-symbols-rounded">iron</span> MaterialSymbolsRounded.iron
+/// <span class="material-symbols-rounded">ios_share</span> MaterialSymbolsRounded.ios_share
 ///
-  /// <span class="material-symbols-rounded">iso</span> MaterialSymbolsRounded.iso
+/// <span class="material-symbols-rounded">iron</span> MaterialSymbolsRounded.iron
 ///
-  /// <span class="material-symbols-rounded">javascript</span> MaterialSymbolsRounded.javascript
+/// <span class="material-symbols-rounded">iso</span> MaterialSymbolsRounded.iso
 ///
-  /// <span class="material-symbols-rounded">join</span> MaterialSymbolsRounded.join
+/// <span class="material-symbols-rounded">javascript</span> MaterialSymbolsRounded.javascript
 ///
-  /// <span class="material-symbols-rounded">join_full</span> MaterialSymbolsRounded.join_full
+/// <span class="material-symbols-rounded">join</span> MaterialSymbolsRounded.join
 ///
-  /// <span class="material-symbols-rounded">join_inner</span> MaterialSymbolsRounded.join_inner
+/// <span class="material-symbols-rounded">join_full</span> MaterialSymbolsRounded.join_full
 ///
-  /// <span class="material-symbols-rounded">join_left</span> MaterialSymbolsRounded.join_left
+/// <span class="material-symbols-rounded">join_inner</span> MaterialSymbolsRounded.join_inner
 ///
-  /// <span class="material-symbols-rounded">join_right</span> MaterialSymbolsRounded.join_right
+/// <span class="material-symbols-rounded">join_left</span> MaterialSymbolsRounded.join_left
 ///
-  /// <span class="material-symbols-rounded">jump_to_element</span> MaterialSymbolsRounded.jump_to_element
+/// <span class="material-symbols-rounded">join_right</span> MaterialSymbolsRounded.join_right
 ///
-  /// <span class="material-symbols-rounded">kayaking</span> MaterialSymbolsRounded.kayaking
+/// <span class="material-symbols-rounded">jump_to_element</span> MaterialSymbolsRounded.jump_to_element
 ///
-  /// <span class="material-symbols-rounded">kebab_dining</span> MaterialSymbolsRounded.kebab_dining
+/// <span class="material-symbols-rounded">kayaking</span> MaterialSymbolsRounded.kayaking
 ///
-  /// <span class="material-symbols-rounded">kettle</span> MaterialSymbolsRounded.kettle
+/// <span class="material-symbols-rounded">kebab_dining</span> MaterialSymbolsRounded.kebab_dining
 ///
-  /// <span class="material-symbols-rounded">key</span> MaterialSymbolsRounded.key
+/// <span class="material-symbols-rounded">kettle</span> MaterialSymbolsRounded.kettle
 ///
-  /// <span class="material-symbols-rounded">key_off</span> MaterialSymbolsRounded.key_off
+/// <span class="material-symbols-rounded">key</span> MaterialSymbolsRounded.key
 ///
-  /// <span class="material-symbols-rounded">key_visualizer</span> MaterialSymbolsRounded.key_visualizer
+/// <span class="material-symbols-rounded">key_off</span> MaterialSymbolsRounded.key_off
 ///
-  /// <span class="material-symbols-rounded">keyboard</span> MaterialSymbolsRounded.keyboard
+/// <span class="material-symbols-rounded">key_visualizer</span> MaterialSymbolsRounded.key_visualizer
 ///
-  /// <span class="material-symbols-rounded">keyboard_alt</span> MaterialSymbolsRounded.keyboard_alt
+/// <span class="material-symbols-rounded">keyboard</span> MaterialSymbolsRounded.keyboard
 ///
-  /// <span class="material-symbols-rounded">keyboard_arrow_down</span> MaterialSymbolsRounded.keyboard_arrow_down
+/// <span class="material-symbols-rounded">keyboard_alt</span> MaterialSymbolsRounded.keyboard_alt
 ///
-  /// <span class="material-symbols-rounded">keyboard_arrow_left</span> MaterialSymbolsRounded.keyboard_arrow_left
+/// <span class="material-symbols-rounded">keyboard_arrow_down</span> MaterialSymbolsRounded.keyboard_arrow_down
 ///
-  /// <span class="material-symbols-rounded">keyboard_arrow_right</span> MaterialSymbolsRounded.keyboard_arrow_right
+/// <span class="material-symbols-rounded">keyboard_arrow_left</span> MaterialSymbolsRounded.keyboard_arrow_left
 ///
-  /// <span class="material-symbols-rounded">keyboard_arrow_up</span> MaterialSymbolsRounded.keyboard_arrow_up
+/// <span class="material-symbols-rounded">keyboard_arrow_right</span> MaterialSymbolsRounded.keyboard_arrow_right
 ///
-  /// <span class="material-symbols-rounded">keyboard_backspace</span> MaterialSymbolsRounded.keyboard_backspace
+/// <span class="material-symbols-rounded">keyboard_arrow_up</span> MaterialSymbolsRounded.keyboard_arrow_up
 ///
-  /// <span class="material-symbols-rounded">keyboard_capslock</span> MaterialSymbolsRounded.keyboard_capslock
+/// <span class="material-symbols-rounded">keyboard_backspace</span> MaterialSymbolsRounded.keyboard_backspace
 ///
-  /// <span class="material-symbols-rounded">keyboard_capslock_badge</span> MaterialSymbolsRounded.keyboard_capslock_badge
+/// <span class="material-symbols-rounded">keyboard_capslock</span> MaterialSymbolsRounded.keyboard_capslock
 ///
-  /// <span class="material-symbols-rounded">keyboard_command_key</span> MaterialSymbolsRounded.keyboard_command_key
+/// <span class="material-symbols-rounded">keyboard_capslock_badge</span> MaterialSymbolsRounded.keyboard_capslock_badge
 ///
-  /// <span class="material-symbols-rounded">keyboard_control_key</span> MaterialSymbolsRounded.keyboard_control_key
+/// <span class="material-symbols-rounded">keyboard_command_key</span> MaterialSymbolsRounded.keyboard_command_key
 ///
-  /// <span class="material-symbols-rounded">keyboard_double_arrow_down</span> MaterialSymbolsRounded.keyboard_double_arrow_down
+/// <span class="material-symbols-rounded">keyboard_control_key</span> MaterialSymbolsRounded.keyboard_control_key
 ///
-  /// <span class="material-symbols-rounded">keyboard_double_arrow_left</span> MaterialSymbolsRounded.keyboard_double_arrow_left
+/// <span class="material-symbols-rounded">keyboard_double_arrow_down</span> MaterialSymbolsRounded.keyboard_double_arrow_down
 ///
-  /// <span class="material-symbols-rounded">keyboard_double_arrow_right</span> MaterialSymbolsRounded.keyboard_double_arrow_right
+/// <span class="material-symbols-rounded">keyboard_double_arrow_left</span> MaterialSymbolsRounded.keyboard_double_arrow_left
 ///
-  /// <span class="material-symbols-rounded">keyboard_double_arrow_up</span> MaterialSymbolsRounded.keyboard_double_arrow_up
+/// <span class="material-symbols-rounded">keyboard_double_arrow_right</span> MaterialSymbolsRounded.keyboard_double_arrow_right
 ///
-  /// <span class="material-symbols-rounded">keyboard_external_input</span> MaterialSymbolsRounded.keyboard_external_input
+/// <span class="material-symbols-rounded">keyboard_double_arrow_up</span> MaterialSymbolsRounded.keyboard_double_arrow_up
 ///
-  /// <span class="material-symbols-rounded">keyboard_full</span> MaterialSymbolsRounded.keyboard_full
+/// <span class="material-symbols-rounded">keyboard_external_input</span> MaterialSymbolsRounded.keyboard_external_input
 ///
-  /// <span class="material-symbols-rounded">keyboard_hide</span> MaterialSymbolsRounded.keyboard_hide
+/// <span class="material-symbols-rounded">keyboard_full</span> MaterialSymbolsRounded.keyboard_full
 ///
-  /// <span class="material-symbols-rounded">keyboard_onscreen</span> MaterialSymbolsRounded.keyboard_onscreen
+/// <span class="material-symbols-rounded">keyboard_hide</span> MaterialSymbolsRounded.keyboard_hide
 ///
-  /// <span class="material-symbols-rounded">keyboard_option_key</span> MaterialSymbolsRounded.keyboard_option_key
+/// <span class="material-symbols-rounded">keyboard_onscreen</span> MaterialSymbolsRounded.keyboard_onscreen
 ///
-  /// <span class="material-symbols-rounded">keyboard_previous_language</span> MaterialSymbolsRounded.keyboard_previous_language
+/// <span class="material-symbols-rounded">keyboard_option_key</span> MaterialSymbolsRounded.keyboard_option_key
 ///
-  /// <span class="material-symbols-rounded">keyboard_return</span> MaterialSymbolsRounded.keyboard_return
+/// <span class="material-symbols-rounded">keyboard_previous_language</span> MaterialSymbolsRounded.keyboard_previous_language
 ///
-  /// <span class="material-symbols-rounded">keyboard_tab</span> MaterialSymbolsRounded.keyboard_tab
+/// <span class="material-symbols-rounded">keyboard_return</span> MaterialSymbolsRounded.keyboard_return
 ///
-  /// <span class="material-symbols-rounded">keyboard_tab_rtl</span> MaterialSymbolsRounded.keyboard_tab_rtl
+/// <span class="material-symbols-rounded">keyboard_tab</span> MaterialSymbolsRounded.keyboard_tab
 ///
-  /// <span class="material-symbols-rounded">keyboard_voice</span> MaterialSymbolsRounded.keyboard_voice
+/// <span class="material-symbols-rounded">keyboard_tab_rtl</span> MaterialSymbolsRounded.keyboard_tab_rtl
 ///
-  /// <span class="material-symbols-rounded">king_bed</span> MaterialSymbolsRounded.king_bed
+/// <span class="material-symbols-rounded">keyboard_voice</span> MaterialSymbolsRounded.keyboard_voice
 ///
-  /// <span class="material-symbols-rounded">kitchen</span> MaterialSymbolsRounded.kitchen
+/// <span class="material-symbols-rounded">king_bed</span> MaterialSymbolsRounded.king_bed
 ///
-  /// <span class="material-symbols-rounded">kitesurfing</span> MaterialSymbolsRounded.kitesurfing
+/// <span class="material-symbols-rounded">kitchen</span> MaterialSymbolsRounded.kitchen
 ///
-  /// <span class="material-symbols-rounded">lab_panel</span> MaterialSymbolsRounded.lab_panel
+/// <span class="material-symbols-rounded">kitesurfing</span> MaterialSymbolsRounded.kitesurfing
 ///
-  /// <span class="material-symbols-rounded">lab_profile</span> MaterialSymbolsRounded.lab_profile
+/// <span class="material-symbols-rounded">lab_panel</span> MaterialSymbolsRounded.lab_panel
 ///
-  /// <span class="material-symbols-rounded">lab_research</span> MaterialSymbolsRounded.lab_research
+/// <span class="material-symbols-rounded">lab_profile</span> MaterialSymbolsRounded.lab_profile
 ///
-  /// <span class="material-symbols-rounded">label</span> MaterialSymbolsRounded.label
+/// <span class="material-symbols-rounded">lab_research</span> MaterialSymbolsRounded.lab_research
 ///
-  /// <span class="material-symbols-rounded">label_important</span> MaterialSymbolsRounded.label_important
+/// <span class="material-symbols-rounded">label</span> MaterialSymbolsRounded.label
 ///
-  /// <span class="material-symbols-rounded">label_important_outline</span> MaterialSymbolsRounded.label_important_outline
+/// <span class="material-symbols-rounded">label_important</span> MaterialSymbolsRounded.label_important
 ///
-  /// <span class="material-symbols-rounded">label_off</span> MaterialSymbolsRounded.label_off
+/// <span class="material-symbols-rounded">label_important_outline</span> MaterialSymbolsRounded.label_important_outline
 ///
-  /// <span class="material-symbols-rounded">label_outline</span> MaterialSymbolsRounded.label_outline
+/// <span class="material-symbols-rounded">label_off</span> MaterialSymbolsRounded.label_off
 ///
-  /// <span class="material-symbols-rounded">labs</span> MaterialSymbolsRounded.labs
+/// <span class="material-symbols-rounded">label_outline</span> MaterialSymbolsRounded.label_outline
 ///
-  /// <span class="material-symbols-rounded">lan</span> MaterialSymbolsRounded.lan
+/// <span class="material-symbols-rounded">labs</span> MaterialSymbolsRounded.labs
 ///
-  /// <span class="material-symbols-rounded">landscape</span> MaterialSymbolsRounded.landscape
+/// <span class="material-symbols-rounded">lan</span> MaterialSymbolsRounded.lan
 ///
-  /// <span class="material-symbols-rounded">landslide</span> MaterialSymbolsRounded.landslide
+/// <span class="material-symbols-rounded">landscape</span> MaterialSymbolsRounded.landscape
 ///
-  /// <span class="material-symbols-rounded">language</span> MaterialSymbolsRounded.language
+/// <span class="material-symbols-rounded">landslide</span> MaterialSymbolsRounded.landslide
 ///
-  /// <span class="material-symbols-rounded">language_chinese_array</span> MaterialSymbolsRounded.language_chinese_array
+/// <span class="material-symbols-rounded">language</span> MaterialSymbolsRounded.language
 ///
-  /// <span class="material-symbols-rounded">language_chinese_cangjie</span> MaterialSymbolsRounded.language_chinese_cangjie
+/// <span class="material-symbols-rounded">language_chinese_array</span> MaterialSymbolsRounded.language_chinese_array
 ///
-  /// <span class="material-symbols-rounded">language_chinese_dayi</span> MaterialSymbolsRounded.language_chinese_dayi
+/// <span class="material-symbols-rounded">language_chinese_cangjie</span> MaterialSymbolsRounded.language_chinese_cangjie
 ///
-  /// <span class="material-symbols-rounded">language_chinese_pinyin</span> MaterialSymbolsRounded.language_chinese_pinyin
+/// <span class="material-symbols-rounded">language_chinese_dayi</span> MaterialSymbolsRounded.language_chinese_dayi
 ///
-  /// <span class="material-symbols-rounded">language_chinese_quick</span> MaterialSymbolsRounded.language_chinese_quick
+/// <span class="material-symbols-rounded">language_chinese_pinyin</span> MaterialSymbolsRounded.language_chinese_pinyin
 ///
-  /// <span class="material-symbols-rounded">language_chinese_wubi</span> MaterialSymbolsRounded.language_chinese_wubi
+/// <span class="material-symbols-rounded">language_chinese_quick</span> MaterialSymbolsRounded.language_chinese_quick
 ///
-  /// <span class="material-symbols-rounded">language_french</span> MaterialSymbolsRounded.language_french
+/// <span class="material-symbols-rounded">language_chinese_wubi</span> MaterialSymbolsRounded.language_chinese_wubi
 ///
-  /// <span class="material-symbols-rounded">language_gb_english</span> MaterialSymbolsRounded.language_gb_english
+/// <span class="material-symbols-rounded">language_french</span> MaterialSymbolsRounded.language_french
 ///
-  /// <span class="material-symbols-rounded">language_international</span> MaterialSymbolsRounded.language_international
+/// <span class="material-symbols-rounded">language_gb_english</span> MaterialSymbolsRounded.language_gb_english
 ///
-  /// <span class="material-symbols-rounded">language_korean_latin</span> MaterialSymbolsRounded.language_korean_latin
+/// <span class="material-symbols-rounded">language_international</span> MaterialSymbolsRounded.language_international
 ///
-  /// <span class="material-symbols-rounded">language_pinyin</span> MaterialSymbolsRounded.language_pinyin
+/// <span class="material-symbols-rounded">language_korean_latin</span> MaterialSymbolsRounded.language_korean_latin
 ///
-  /// <span class="material-symbols-rounded">language_us</span> MaterialSymbolsRounded.language_us
+/// <span class="material-symbols-rounded">language_pinyin</span> MaterialSymbolsRounded.language_pinyin
 ///
-  /// <span class="material-symbols-rounded">language_us_colemak</span> MaterialSymbolsRounded.language_us_colemak
+/// <span class="material-symbols-rounded">language_us</span> MaterialSymbolsRounded.language_us
 ///
-  /// <span class="material-symbols-rounded">language_us_dvorak</span> MaterialSymbolsRounded.language_us_dvorak
+/// <span class="material-symbols-rounded">language_us_colemak</span> MaterialSymbolsRounded.language_us_colemak
 ///
-  /// <span class="material-symbols-rounded">laps</span> MaterialSymbolsRounded.laps
+/// <span class="material-symbols-rounded">language_us_dvorak</span> MaterialSymbolsRounded.language_us_dvorak
 ///
-  /// <span class="material-symbols-rounded">laptop</span> MaterialSymbolsRounded.laptop
+/// <span class="material-symbols-rounded">laps</span> MaterialSymbolsRounded.laps
 ///
-  /// <span class="material-symbols-rounded">laptop_chromebook</span> MaterialSymbolsRounded.laptop_chromebook
+/// <span class="material-symbols-rounded">laptop</span> MaterialSymbolsRounded.laptop
 ///
-  /// <span class="material-symbols-rounded">laptop_mac</span> MaterialSymbolsRounded.laptop_mac
+/// <span class="material-symbols-rounded">laptop_chromebook</span> MaterialSymbolsRounded.laptop_chromebook
 ///
-  /// <span class="material-symbols-rounded">laptop_windows</span> MaterialSymbolsRounded.laptop_windows
+/// <span class="material-symbols-rounded">laptop_mac</span> MaterialSymbolsRounded.laptop_mac
 ///
-  /// <span class="material-symbols-rounded">last_page</span> MaterialSymbolsRounded.last_page
+/// <span class="material-symbols-rounded">laptop_windows</span> MaterialSymbolsRounded.laptop_windows
 ///
-  /// <span class="material-symbols-rounded">launch</span> MaterialSymbolsRounded.launch
+/// <span class="material-symbols-rounded">last_page</span> MaterialSymbolsRounded.last_page
 ///
-  /// <span class="material-symbols-rounded">launcher_assistant_off</span> MaterialSymbolsRounded.launcher_assistant_off
+/// <span class="material-symbols-rounded">launch</span> MaterialSymbolsRounded.launch
 ///
-  /// <span class="material-symbols-rounded">launcher_assistant_on</span> MaterialSymbolsRounded.launcher_assistant_on
+/// <span class="material-symbols-rounded">launcher_assistant_off</span> MaterialSymbolsRounded.launcher_assistant_off
 ///
-  /// <span class="material-symbols-rounded">laundry</span> MaterialSymbolsRounded.laundry
+/// <span class="material-symbols-rounded">launcher_assistant_on</span> MaterialSymbolsRounded.launcher_assistant_on
 ///
-  /// <span class="material-symbols-rounded">layers</span> MaterialSymbolsRounded.layers
+/// <span class="material-symbols-rounded">laundry</span> MaterialSymbolsRounded.laundry
 ///
-  /// <span class="material-symbols-rounded">layers_clear</span> MaterialSymbolsRounded.layers_clear
+/// <span class="material-symbols-rounded">layers</span> MaterialSymbolsRounded.layers
 ///
-  /// <span class="material-symbols-rounded">lda</span> MaterialSymbolsRounded.lda
+/// <span class="material-symbols-rounded">layers_clear</span> MaterialSymbolsRounded.layers_clear
 ///
-  /// <span class="material-symbols-rounded">leaderboard</span> MaterialSymbolsRounded.leaderboard
+/// <span class="material-symbols-rounded">lda</span> MaterialSymbolsRounded.lda
 ///
-  /// <span class="material-symbols-rounded">leak_add</span> MaterialSymbolsRounded.leak_add
+/// <span class="material-symbols-rounded">leaderboard</span> MaterialSymbolsRounded.leaderboard
 ///
-  /// <span class="material-symbols-rounded">leak_remove</span> MaterialSymbolsRounded.leak_remove
+/// <span class="material-symbols-rounded">leak_add</span> MaterialSymbolsRounded.leak_add
 ///
-  /// <span class="material-symbols-rounded">left_click</span> MaterialSymbolsRounded.left_click
+/// <span class="material-symbols-rounded">leak_remove</span> MaterialSymbolsRounded.leak_remove
 ///
-  /// <span class="material-symbols-rounded">left_panel_close</span> MaterialSymbolsRounded.left_panel_close
+/// <span class="material-symbols-rounded">left_click</span> MaterialSymbolsRounded.left_click
 ///
-  /// <span class="material-symbols-rounded">left_panel_open</span> MaterialSymbolsRounded.left_panel_open
+/// <span class="material-symbols-rounded">left_panel_close</span> MaterialSymbolsRounded.left_panel_close
 ///
-  /// <span class="material-symbols-rounded">legend_toggle</span> MaterialSymbolsRounded.legend_toggle
+/// <span class="material-symbols-rounded">left_panel_open</span> MaterialSymbolsRounded.left_panel_open
 ///
-  /// <span class="material-symbols-rounded">lens</span> MaterialSymbolsRounded.lens
+/// <span class="material-symbols-rounded">legend_toggle</span> MaterialSymbolsRounded.legend_toggle
 ///
-  /// <span class="material-symbols-rounded">lens_blur</span> MaterialSymbolsRounded.lens_blur
+/// <span class="material-symbols-rounded">lens</span> MaterialSymbolsRounded.lens
 ///
-  /// <span class="material-symbols-rounded">letter_switch</span> MaterialSymbolsRounded.letter_switch
+/// <span class="material-symbols-rounded">lens_blur</span> MaterialSymbolsRounded.lens_blur
 ///
-  /// <span class="material-symbols-rounded">library_add</span> MaterialSymbolsRounded.library_add
+/// <span class="material-symbols-rounded">letter_switch</span> MaterialSymbolsRounded.letter_switch
 ///
-  /// <span class="material-symbols-rounded">library_add_check</span> MaterialSymbolsRounded.library_add_check
+/// <span class="material-symbols-rounded">library_add</span> MaterialSymbolsRounded.library_add
 ///
-  /// <span class="material-symbols-rounded">library_books</span> MaterialSymbolsRounded.library_books
+/// <span class="material-symbols-rounded">library_add_check</span> MaterialSymbolsRounded.library_add_check
 ///
-  /// <span class="material-symbols-rounded">library_music</span> MaterialSymbolsRounded.library_music
+/// <span class="material-symbols-rounded">library_books</span> MaterialSymbolsRounded.library_books
 ///
-  /// <span class="material-symbols-rounded">lift_to_talk</span> MaterialSymbolsRounded.lift_to_talk
+/// <span class="material-symbols-rounded">library_music</span> MaterialSymbolsRounded.library_music
 ///
-  /// <span class="material-symbols-rounded">light</span> MaterialSymbolsRounded.light
+/// <span class="material-symbols-rounded">lift_to_talk</span> MaterialSymbolsRounded.lift_to_talk
 ///
-  /// <span class="material-symbols-rounded">light_group</span> MaterialSymbolsRounded.light_group
+/// <span class="material-symbols-rounded">light</span> MaterialSymbolsRounded.light
 ///
-  /// <span class="material-symbols-rounded">light_mode</span> MaterialSymbolsRounded.light_mode
+/// <span class="material-symbols-rounded">light_group</span> MaterialSymbolsRounded.light_group
 ///
-  /// <span class="material-symbols-rounded">lightbulb</span> MaterialSymbolsRounded.lightbulb
+/// <span class="material-symbols-rounded">light_mode</span> MaterialSymbolsRounded.light_mode
 ///
-  /// <span class="material-symbols-rounded">lightbulb_circle</span> MaterialSymbolsRounded.lightbulb_circle
+/// <span class="material-symbols-rounded">lightbulb</span> MaterialSymbolsRounded.lightbulb
 ///
-  /// <span class="material-symbols-rounded">lightbulb_outline</span> MaterialSymbolsRounded.lightbulb_outline
+/// <span class="material-symbols-rounded">lightbulb_circle</span> MaterialSymbolsRounded.lightbulb_circle
 ///
-  /// <span class="material-symbols-rounded">line_axis</span> MaterialSymbolsRounded.line_axis
+/// <span class="material-symbols-rounded">lightbulb_outline</span> MaterialSymbolsRounded.lightbulb_outline
 ///
-  /// <span class="material-symbols-rounded">line_curve</span> MaterialSymbolsRounded.line_curve
+/// <span class="material-symbols-rounded">line_axis</span> MaterialSymbolsRounded.line_axis
 ///
-  /// <span class="material-symbols-rounded">line_end</span> MaterialSymbolsRounded.line_end
+/// <span class="material-symbols-rounded">line_curve</span> MaterialSymbolsRounded.line_curve
 ///
-  /// <span class="material-symbols-rounded">line_end_arrow</span> MaterialSymbolsRounded.line_end_arrow
+/// <span class="material-symbols-rounded">line_end</span> MaterialSymbolsRounded.line_end
 ///
-  /// <span class="material-symbols-rounded">line_end_arrow_notch</span> MaterialSymbolsRounded.line_end_arrow_notch
+/// <span class="material-symbols-rounded">line_end_arrow</span> MaterialSymbolsRounded.line_end_arrow
 ///
-  /// <span class="material-symbols-rounded">line_end_circle</span> MaterialSymbolsRounded.line_end_circle
+/// <span class="material-symbols-rounded">line_end_arrow_notch</span> MaterialSymbolsRounded.line_end_arrow_notch
 ///
-  /// <span class="material-symbols-rounded">line_end_diamond</span> MaterialSymbolsRounded.line_end_diamond
+/// <span class="material-symbols-rounded">line_end_circle</span> MaterialSymbolsRounded.line_end_circle
 ///
-  /// <span class="material-symbols-rounded">line_end_square</span> MaterialSymbolsRounded.line_end_square
+/// <span class="material-symbols-rounded">line_end_diamond</span> MaterialSymbolsRounded.line_end_diamond
 ///
-  /// <span class="material-symbols-rounded">line_start</span> MaterialSymbolsRounded.line_start
+/// <span class="material-symbols-rounded">line_end_square</span> MaterialSymbolsRounded.line_end_square
 ///
-  /// <span class="material-symbols-rounded">line_start_arrow</span> MaterialSymbolsRounded.line_start_arrow
+/// <span class="material-symbols-rounded">line_start</span> MaterialSymbolsRounded.line_start
 ///
-  /// <span class="material-symbols-rounded">line_start_arrow_notch</span> MaterialSymbolsRounded.line_start_arrow_notch
+/// <span class="material-symbols-rounded">line_start_arrow</span> MaterialSymbolsRounded.line_start_arrow
 ///
-  /// <span class="material-symbols-rounded">line_start_circle</span> MaterialSymbolsRounded.line_start_circle
+/// <span class="material-symbols-rounded">line_start_arrow_notch</span> MaterialSymbolsRounded.line_start_arrow_notch
 ///
-  /// <span class="material-symbols-rounded">line_start_diamond</span> MaterialSymbolsRounded.line_start_diamond
+/// <span class="material-symbols-rounded">line_start_circle</span> MaterialSymbolsRounded.line_start_circle
 ///
-  /// <span class="material-symbols-rounded">line_start_square</span> MaterialSymbolsRounded.line_start_square
+/// <span class="material-symbols-rounded">line_start_diamond</span> MaterialSymbolsRounded.line_start_diamond
 ///
-  /// <span class="material-symbols-rounded">line_style</span> MaterialSymbolsRounded.line_style
+/// <span class="material-symbols-rounded">line_start_square</span> MaterialSymbolsRounded.line_start_square
 ///
-  /// <span class="material-symbols-rounded">line_weight</span> MaterialSymbolsRounded.line_weight
+/// <span class="material-symbols-rounded">line_style</span> MaterialSymbolsRounded.line_style
 ///
-  /// <span class="material-symbols-rounded">linear_scale</span> MaterialSymbolsRounded.linear_scale
+/// <span class="material-symbols-rounded">line_weight</span> MaterialSymbolsRounded.line_weight
 ///
-  /// <span class="material-symbols-rounded">link</span> MaterialSymbolsRounded.link
+/// <span class="material-symbols-rounded">linear_scale</span> MaterialSymbolsRounded.linear_scale
 ///
-  /// <span class="material-symbols-rounded">link_off</span> MaterialSymbolsRounded.link_off
+/// <span class="material-symbols-rounded">link</span> MaterialSymbolsRounded.link
 ///
-  /// <span class="material-symbols-rounded">linked_camera</span> MaterialSymbolsRounded.linked_camera
+/// <span class="material-symbols-rounded">link_off</span> MaterialSymbolsRounded.link_off
 ///
-  /// <span class="material-symbols-rounded">liquor</span> MaterialSymbolsRounded.liquor
+/// <span class="material-symbols-rounded">linked_camera</span> MaterialSymbolsRounded.linked_camera
 ///
-  /// <span class="material-symbols-rounded">list</span> MaterialSymbolsRounded.list
+/// <span class="material-symbols-rounded">liquor</span> MaterialSymbolsRounded.liquor
 ///
-  /// <span class="material-symbols-rounded">list_alt</span> MaterialSymbolsRounded.list_alt
+/// <span class="material-symbols-rounded">list</span> MaterialSymbolsRounded.list
 ///
-  /// <span class="material-symbols-rounded">list_alt_add</span> MaterialSymbolsRounded.list_alt_add
+/// <span class="material-symbols-rounded">list_alt</span> MaterialSymbolsRounded.list_alt
 ///
-  /// <span class="material-symbols-rounded">live_help</span> MaterialSymbolsRounded.live_help
+/// <span class="material-symbols-rounded">list_alt_add</span> MaterialSymbolsRounded.list_alt_add
 ///
-  /// <span class="material-symbols-rounded">live_tv</span> MaterialSymbolsRounded.live_tv
+/// <span class="material-symbols-rounded">live_help</span> MaterialSymbolsRounded.live_help
 ///
-  /// <span class="material-symbols-rounded">living</span> MaterialSymbolsRounded.living
+/// <span class="material-symbols-rounded">live_tv</span> MaterialSymbolsRounded.live_tv
 ///
-  /// <span class="material-symbols-rounded">local_activity</span> MaterialSymbolsRounded.local_activity
+/// <span class="material-symbols-rounded">living</span> MaterialSymbolsRounded.living
 ///
-  /// <span class="material-symbols-rounded">local_airport</span> MaterialSymbolsRounded.local_airport
+/// <span class="material-symbols-rounded">local_activity</span> MaterialSymbolsRounded.local_activity
 ///
-  /// <span class="material-symbols-rounded">local_atm</span> MaterialSymbolsRounded.local_atm
+/// <span class="material-symbols-rounded">local_airport</span> MaterialSymbolsRounded.local_airport
 ///
-  /// <span class="material-symbols-rounded">local_bar</span> MaterialSymbolsRounded.local_bar
+/// <span class="material-symbols-rounded">local_atm</span> MaterialSymbolsRounded.local_atm
 ///
-  /// <span class="material-symbols-rounded">local_cafe</span> MaterialSymbolsRounded.local_cafe
+/// <span class="material-symbols-rounded">local_bar</span> MaterialSymbolsRounded.local_bar
 ///
-  /// <span class="material-symbols-rounded">local_car_wash</span> MaterialSymbolsRounded.local_car_wash
+/// <span class="material-symbols-rounded">local_cafe</span> MaterialSymbolsRounded.local_cafe
 ///
-  /// <span class="material-symbols-rounded">local_convenience_store</span> MaterialSymbolsRounded.local_convenience_store
+/// <span class="material-symbols-rounded">local_car_wash</span> MaterialSymbolsRounded.local_car_wash
 ///
-  /// <span class="material-symbols-rounded">local_dining</span> MaterialSymbolsRounded.local_dining
+/// <span class="material-symbols-rounded">local_convenience_store</span> MaterialSymbolsRounded.local_convenience_store
 ///
-  /// <span class="material-symbols-rounded">local_drink</span> MaterialSymbolsRounded.local_drink
+/// <span class="material-symbols-rounded">local_dining</span> MaterialSymbolsRounded.local_dining
 ///
-  /// <span class="material-symbols-rounded">local_fire_department</span> MaterialSymbolsRounded.local_fire_department
+/// <span class="material-symbols-rounded">local_drink</span> MaterialSymbolsRounded.local_drink
 ///
-  /// <span class="material-symbols-rounded">local_florist</span> MaterialSymbolsRounded.local_florist
+/// <span class="material-symbols-rounded">local_fire_department</span> MaterialSymbolsRounded.local_fire_department
 ///
-  /// <span class="material-symbols-rounded">local_gas_station</span> MaterialSymbolsRounded.local_gas_station
+/// <span class="material-symbols-rounded">local_florist</span> MaterialSymbolsRounded.local_florist
 ///
-  /// <span class="material-symbols-rounded">local_grocery_store</span> MaterialSymbolsRounded.local_grocery_store
+/// <span class="material-symbols-rounded">local_gas_station</span> MaterialSymbolsRounded.local_gas_station
 ///
-  /// <span class="material-symbols-rounded">local_hospital</span> MaterialSymbolsRounded.local_hospital
+/// <span class="material-symbols-rounded">local_grocery_store</span> MaterialSymbolsRounded.local_grocery_store
 ///
-  /// <span class="material-symbols-rounded">local_hotel</span> MaterialSymbolsRounded.local_hotel
+/// <span class="material-symbols-rounded">local_hospital</span> MaterialSymbolsRounded.local_hospital
 ///
-  /// <span class="material-symbols-rounded">local_laundry_service</span> MaterialSymbolsRounded.local_laundry_service
+/// <span class="material-symbols-rounded">local_hotel</span> MaterialSymbolsRounded.local_hotel
 ///
-  /// <span class="material-symbols-rounded">local_library</span> MaterialSymbolsRounded.local_library
+/// <span class="material-symbols-rounded">local_laundry_service</span> MaterialSymbolsRounded.local_laundry_service
 ///
-  /// <span class="material-symbols-rounded">local_mall</span> MaterialSymbolsRounded.local_mall
+/// <span class="material-symbols-rounded">local_library</span> MaterialSymbolsRounded.local_library
 ///
-  /// <span class="material-symbols-rounded">local_movies</span> MaterialSymbolsRounded.local_movies
+/// <span class="material-symbols-rounded">local_mall</span> MaterialSymbolsRounded.local_mall
 ///
-  /// <span class="material-symbols-rounded">local_offer</span> MaterialSymbolsRounded.local_offer
+/// <span class="material-symbols-rounded">local_movies</span> MaterialSymbolsRounded.local_movies
 ///
-  /// <span class="material-symbols-rounded">local_parking</span> MaterialSymbolsRounded.local_parking
+/// <span class="material-symbols-rounded">local_offer</span> MaterialSymbolsRounded.local_offer
 ///
-  /// <span class="material-symbols-rounded">local_pharmacy</span> MaterialSymbolsRounded.local_pharmacy
+/// <span class="material-symbols-rounded">local_parking</span> MaterialSymbolsRounded.local_parking
 ///
-  /// <span class="material-symbols-rounded">local_phone</span> MaterialSymbolsRounded.local_phone
+/// <span class="material-symbols-rounded">local_pharmacy</span> MaterialSymbolsRounded.local_pharmacy
 ///
-  /// <span class="material-symbols-rounded">local_pizza</span> MaterialSymbolsRounded.local_pizza
+/// <span class="material-symbols-rounded">local_phone</span> MaterialSymbolsRounded.local_phone
 ///
-  /// <span class="material-symbols-rounded">local_play</span> MaterialSymbolsRounded.local_play
+/// <span class="material-symbols-rounded">local_pizza</span> MaterialSymbolsRounded.local_pizza
 ///
-  /// <span class="material-symbols-rounded">local_police</span> MaterialSymbolsRounded.local_police
+/// <span class="material-symbols-rounded">local_play</span> MaterialSymbolsRounded.local_play
 ///
-  /// <span class="material-symbols-rounded">local_post_office</span> MaterialSymbolsRounded.local_post_office
+/// <span class="material-symbols-rounded">local_police</span> MaterialSymbolsRounded.local_police
 ///
-  /// <span class="material-symbols-rounded">local_printshop</span> MaterialSymbolsRounded.local_printshop
+/// <span class="material-symbols-rounded">local_post_office</span> MaterialSymbolsRounded.local_post_office
 ///
-  /// <span class="material-symbols-rounded">local_see</span> MaterialSymbolsRounded.local_see
+/// <span class="material-symbols-rounded">local_printshop</span> MaterialSymbolsRounded.local_printshop
 ///
-  /// <span class="material-symbols-rounded">local_shipping</span> MaterialSymbolsRounded.local_shipping
+/// <span class="material-symbols-rounded">local_see</span> MaterialSymbolsRounded.local_see
 ///
-  /// <span class="material-symbols-rounded">local_taxi</span> MaterialSymbolsRounded.local_taxi
+/// <span class="material-symbols-rounded">local_shipping</span> MaterialSymbolsRounded.local_shipping
 ///
-  /// <span class="material-symbols-rounded">location_automation</span> MaterialSymbolsRounded.location_automation
+/// <span class="material-symbols-rounded">local_taxi</span> MaterialSymbolsRounded.local_taxi
 ///
-  /// <span class="material-symbols-rounded">location_away</span> MaterialSymbolsRounded.location_away
+/// <span class="material-symbols-rounded">location_automation</span> MaterialSymbolsRounded.location_automation
 ///
-  /// <span class="material-symbols-rounded">location_chip</span> MaterialSymbolsRounded.location_chip
+/// <span class="material-symbols-rounded">location_away</span> MaterialSymbolsRounded.location_away
 ///
-  /// <span class="material-symbols-rounded">location_city</span> MaterialSymbolsRounded.location_city
+/// <span class="material-symbols-rounded">location_chip</span> MaterialSymbolsRounded.location_chip
 ///
-  /// <span class="material-symbols-rounded">location_disabled</span> MaterialSymbolsRounded.location_disabled
+/// <span class="material-symbols-rounded">location_city</span> MaterialSymbolsRounded.location_city
 ///
-  /// <span class="material-symbols-rounded">location_home</span> MaterialSymbolsRounded.location_home
+/// <span class="material-symbols-rounded">location_disabled</span> MaterialSymbolsRounded.location_disabled
 ///
-  /// <span class="material-symbols-rounded">location_off</span> MaterialSymbolsRounded.location_off
+/// <span class="material-symbols-rounded">location_home</span> MaterialSymbolsRounded.location_home
 ///
-  /// <span class="material-symbols-rounded">location_on</span> MaterialSymbolsRounded.location_on
+/// <span class="material-symbols-rounded">location_off</span> MaterialSymbolsRounded.location_off
 ///
-  /// <span class="material-symbols-rounded">location_pin</span> MaterialSymbolsRounded.location_pin
+/// <span class="material-symbols-rounded">location_on</span> MaterialSymbolsRounded.location_on
 ///
-  /// <span class="material-symbols-rounded">location_searching</span> MaterialSymbolsRounded.location_searching
+/// <span class="material-symbols-rounded">location_pin</span> MaterialSymbolsRounded.location_pin
 ///
-  /// <span class="material-symbols-rounded">lock</span> MaterialSymbolsRounded.lock
+/// <span class="material-symbols-rounded">location_searching</span> MaterialSymbolsRounded.location_searching
 ///
-  /// <span class="material-symbols-rounded">lock_clock</span> MaterialSymbolsRounded.lock_clock
+/// <span class="material-symbols-rounded">lock</span> MaterialSymbolsRounded.lock
 ///
-  /// <span class="material-symbols-rounded">lock_open</span> MaterialSymbolsRounded.lock_open
+/// <span class="material-symbols-rounded">lock_clock</span> MaterialSymbolsRounded.lock_clock
 ///
-  /// <span class="material-symbols-rounded">lock_outline</span> MaterialSymbolsRounded.lock_outline
+/// <span class="material-symbols-rounded">lock_open</span> MaterialSymbolsRounded.lock_open
 ///
-  /// <span class="material-symbols-rounded">lock_person</span> MaterialSymbolsRounded.lock_person
+/// <span class="material-symbols-rounded">lock_outline</span> MaterialSymbolsRounded.lock_outline
 ///
-  /// <span class="material-symbols-rounded">lock_reset</span> MaterialSymbolsRounded.lock_reset
+/// <span class="material-symbols-rounded">lock_person</span> MaterialSymbolsRounded.lock_person
 ///
-  /// <span class="material-symbols-rounded">login</span> MaterialSymbolsRounded.login
+/// <span class="material-symbols-rounded">lock_reset</span> MaterialSymbolsRounded.lock_reset
 ///
-  /// <span class="material-symbols-rounded">logo_dev</span> MaterialSymbolsRounded.logo_dev
+/// <span class="material-symbols-rounded">login</span> MaterialSymbolsRounded.login
 ///
-  /// <span class="material-symbols-rounded">logout</span> MaterialSymbolsRounded.logout
+/// <span class="material-symbols-rounded">logo_dev</span> MaterialSymbolsRounded.logo_dev
 ///
-  /// <span class="material-symbols-rounded">looks</span> MaterialSymbolsRounded.looks
+/// <span class="material-symbols-rounded">logout</span> MaterialSymbolsRounded.logout
 ///
-  /// <span class="material-symbols-rounded">looks_3</span> MaterialSymbolsRounded.looks_3
+/// <span class="material-symbols-rounded">looks</span> MaterialSymbolsRounded.looks
 ///
-  /// <span class="material-symbols-rounded">looks_4</span> MaterialSymbolsRounded.looks_4
+/// <span class="material-symbols-rounded">looks_3</span> MaterialSymbolsRounded.looks_3
 ///
-  /// <span class="material-symbols-rounded">looks_5</span> MaterialSymbolsRounded.looks_5
+/// <span class="material-symbols-rounded">looks_4</span> MaterialSymbolsRounded.looks_4
 ///
-  /// <span class="material-symbols-rounded">looks_6</span> MaterialSymbolsRounded.looks_6
+/// <span class="material-symbols-rounded">looks_5</span> MaterialSymbolsRounded.looks_5
 ///
-  /// <span class="material-symbols-rounded">looks_one</span> MaterialSymbolsRounded.looks_one
+/// <span class="material-symbols-rounded">looks_6</span> MaterialSymbolsRounded.looks_6
 ///
-  /// <span class="material-symbols-rounded">looks_two</span> MaterialSymbolsRounded.looks_two
+/// <span class="material-symbols-rounded">looks_one</span> MaterialSymbolsRounded.looks_one
 ///
-  /// <span class="material-symbols-rounded">loop</span> MaterialSymbolsRounded.loop
+/// <span class="material-symbols-rounded">looks_two</span> MaterialSymbolsRounded.looks_two
 ///
-  /// <span class="material-symbols-rounded">loupe</span> MaterialSymbolsRounded.loupe
+/// <span class="material-symbols-rounded">loop</span> MaterialSymbolsRounded.loop
 ///
-  /// <span class="material-symbols-rounded">low_density</span> MaterialSymbolsRounded.low_density
+/// <span class="material-symbols-rounded">loupe</span> MaterialSymbolsRounded.loupe
 ///
-  /// <span class="material-symbols-rounded">low_priority</span> MaterialSymbolsRounded.low_priority
+/// <span class="material-symbols-rounded">low_density</span> MaterialSymbolsRounded.low_density
 ///
-  /// <span class="material-symbols-rounded">loyalty</span> MaterialSymbolsRounded.loyalty
+/// <span class="material-symbols-rounded">low_priority</span> MaterialSymbolsRounded.low_priority
 ///
-  /// <span class="material-symbols-rounded">lte_mobiledata</span> MaterialSymbolsRounded.lte_mobiledata
+/// <span class="material-symbols-rounded">loyalty</span> MaterialSymbolsRounded.loyalty
 ///
-  /// <span class="material-symbols-rounded">lte_mobiledata_badge</span> MaterialSymbolsRounded.lte_mobiledata_badge
+/// <span class="material-symbols-rounded">lte_mobiledata</span> MaterialSymbolsRounded.lte_mobiledata
 ///
-  /// <span class="material-symbols-rounded">lte_plus_mobiledata</span> MaterialSymbolsRounded.lte_plus_mobiledata
+/// <span class="material-symbols-rounded">lte_mobiledata_badge</span> MaterialSymbolsRounded.lte_mobiledata_badge
 ///
-  /// <span class="material-symbols-rounded">lte_plus_mobiledata_badge</span> MaterialSymbolsRounded.lte_plus_mobiledata_badge
+/// <span class="material-symbols-rounded">lte_plus_mobiledata</span> MaterialSymbolsRounded.lte_plus_mobiledata
 ///
-  /// <span class="material-symbols-rounded">luggage</span> MaterialSymbolsRounded.luggage
+/// <span class="material-symbols-rounded">lte_plus_mobiledata_badge</span> MaterialSymbolsRounded.lte_plus_mobiledata_badge
 ///
-  /// <span class="material-symbols-rounded">lunch_dining</span> MaterialSymbolsRounded.lunch_dining
+/// <span class="material-symbols-rounded">luggage</span> MaterialSymbolsRounded.luggage
 ///
-  /// <span class="material-symbols-rounded">lyrics</span> MaterialSymbolsRounded.lyrics
+/// <span class="material-symbols-rounded">lunch_dining</span> MaterialSymbolsRounded.lunch_dining
 ///
-  /// <span class="material-symbols-rounded">macro_auto</span> MaterialSymbolsRounded.macro_auto
+/// <span class="material-symbols-rounded">lyrics</span> MaterialSymbolsRounded.lyrics
 ///
-  /// <span class="material-symbols-rounded">macro_off</span> MaterialSymbolsRounded.macro_off
+/// <span class="material-symbols-rounded">macro_auto</span> MaterialSymbolsRounded.macro_auto
 ///
-  /// <span class="material-symbols-rounded">magic_button</span> MaterialSymbolsRounded.magic_button
+/// <span class="material-symbols-rounded">macro_off</span> MaterialSymbolsRounded.macro_off
 ///
-  /// <span class="material-symbols-rounded">magic_exchange</span> MaterialSymbolsRounded.magic_exchange
+/// <span class="material-symbols-rounded">magic_button</span> MaterialSymbolsRounded.magic_button
 ///
-  /// <span class="material-symbols-rounded">magic_tether</span> MaterialSymbolsRounded.magic_tether
+/// <span class="material-symbols-rounded">magic_exchange</span> MaterialSymbolsRounded.magic_exchange
 ///
-  /// <span class="material-symbols-rounded">magnification_large</span> MaterialSymbolsRounded.magnification_large
+/// <span class="material-symbols-rounded">magic_tether</span> MaterialSymbolsRounded.magic_tether
 ///
-  /// <span class="material-symbols-rounded">magnification_small</span> MaterialSymbolsRounded.magnification_small
+/// <span class="material-symbols-rounded">magnification_large</span> MaterialSymbolsRounded.magnification_large
 ///
-  /// <span class="material-symbols-rounded">magnify_docked</span> MaterialSymbolsRounded.magnify_docked
+/// <span class="material-symbols-rounded">magnification_small</span> MaterialSymbolsRounded.magnification_small
 ///
-  /// <span class="material-symbols-rounded">magnify_fullscreen</span> MaterialSymbolsRounded.magnify_fullscreen
+/// <span class="material-symbols-rounded">magnify_docked</span> MaterialSymbolsRounded.magnify_docked
 ///
-  /// <span class="material-symbols-rounded">mail</span> MaterialSymbolsRounded.mail
+/// <span class="material-symbols-rounded">magnify_fullscreen</span> MaterialSymbolsRounded.magnify_fullscreen
 ///
-  /// <span class="material-symbols-rounded">mail_lock</span> MaterialSymbolsRounded.mail_lock
+/// <span class="material-symbols-rounded">mail</span> MaterialSymbolsRounded.mail
 ///
-  /// <span class="material-symbols-rounded">mail_outline</span> MaterialSymbolsRounded.mail_outline
+/// <span class="material-symbols-rounded">mail_lock</span> MaterialSymbolsRounded.mail_lock
 ///
-  /// <span class="material-symbols-rounded">male</span> MaterialSymbolsRounded.male
+/// <span class="material-symbols-rounded">mail_outline</span> MaterialSymbolsRounded.mail_outline
 ///
-  /// <span class="material-symbols-rounded">man</span> MaterialSymbolsRounded.man
+/// <span class="material-symbols-rounded">male</span> MaterialSymbolsRounded.male
 ///
-  /// <span class="material-symbols-rounded">man_2</span> MaterialSymbolsRounded.man_2
+/// <span class="material-symbols-rounded">man</span> MaterialSymbolsRounded.man
 ///
-  /// <span class="material-symbols-rounded">man_3</span> MaterialSymbolsRounded.man_3
+/// <span class="material-symbols-rounded">man_2</span> MaterialSymbolsRounded.man_2
 ///
-  /// <span class="material-symbols-rounded">man_4</span> MaterialSymbolsRounded.man_4
+/// <span class="material-symbols-rounded">man_3</span> MaterialSymbolsRounded.man_3
 ///
-  /// <span class="material-symbols-rounded">manage_accounts</span> MaterialSymbolsRounded.manage_accounts
+/// <span class="material-symbols-rounded">man_4</span> MaterialSymbolsRounded.man_4
 ///
-  /// <span class="material-symbols-rounded">manage_history</span> MaterialSymbolsRounded.manage_history
+/// <span class="material-symbols-rounded">manage_accounts</span> MaterialSymbolsRounded.manage_accounts
 ///
-  /// <span class="material-symbols-rounded">manage_search</span> MaterialSymbolsRounded.manage_search
+/// <span class="material-symbols-rounded">manage_history</span> MaterialSymbolsRounded.manage_history
 ///
-  /// <span class="material-symbols-rounded">map</span> MaterialSymbolsRounded.map
+/// <span class="material-symbols-rounded">manage_search</span> MaterialSymbolsRounded.manage_search
 ///
-  /// <span class="material-symbols-rounded">maps_home_work</span> MaterialSymbolsRounded.maps_home_work
+/// <span class="material-symbols-rounded">map</span> MaterialSymbolsRounded.map
 ///
-  /// <span class="material-symbols-rounded">maps_ugc</span> MaterialSymbolsRounded.maps_ugc
+/// <span class="material-symbols-rounded">maps_home_work</span> MaterialSymbolsRounded.maps_home_work
 ///
-  /// <span class="material-symbols-rounded">margin</span> MaterialSymbolsRounded.margin
+/// <span class="material-symbols-rounded">maps_ugc</span> MaterialSymbolsRounded.maps_ugc
 ///
-  /// <span class="material-symbols-rounded">mark_as_unread</span> MaterialSymbolsRounded.mark_as_unread
+/// <span class="material-symbols-rounded">margin</span> MaterialSymbolsRounded.margin
 ///
-  /// <span class="material-symbols-rounded">mark_chat_read</span> MaterialSymbolsRounded.mark_chat_read
+/// <span class="material-symbols-rounded">mark_as_unread</span> MaterialSymbolsRounded.mark_as_unread
 ///
-  /// <span class="material-symbols-rounded">mark_chat_unread</span> MaterialSymbolsRounded.mark_chat_unread
+/// <span class="material-symbols-rounded">mark_chat_read</span> MaterialSymbolsRounded.mark_chat_read
 ///
-  /// <span class="material-symbols-rounded">mark_email_read</span> MaterialSymbolsRounded.mark_email_read
+/// <span class="material-symbols-rounded">mark_chat_unread</span> MaterialSymbolsRounded.mark_chat_unread
 ///
-  /// <span class="material-symbols-rounded">mark_email_unread</span> MaterialSymbolsRounded.mark_email_unread
+/// <span class="material-symbols-rounded">mark_email_read</span> MaterialSymbolsRounded.mark_email_read
 ///
-  /// <span class="material-symbols-rounded">mark_unread_chat_alt</span> MaterialSymbolsRounded.mark_unread_chat_alt
+/// <span class="material-symbols-rounded">mark_email_unread</span> MaterialSymbolsRounded.mark_email_unread
 ///
-  /// <span class="material-symbols-rounded">markunread</span> MaterialSymbolsRounded.markunread
+/// <span class="material-symbols-rounded">mark_unread_chat_alt</span> MaterialSymbolsRounded.mark_unread_chat_alt
 ///
-  /// <span class="material-symbols-rounded">markunread_mailbox</span> MaterialSymbolsRounded.markunread_mailbox
+/// <span class="material-symbols-rounded">markunread</span> MaterialSymbolsRounded.markunread
 ///
-  /// <span class="material-symbols-rounded">masks</span> MaterialSymbolsRounded.masks
+/// <span class="material-symbols-rounded">markunread_mailbox</span> MaterialSymbolsRounded.markunread_mailbox
 ///
-  /// <span class="material-symbols-rounded">match_case</span> MaterialSymbolsRounded.match_case
+/// <span class="material-symbols-rounded">masks</span> MaterialSymbolsRounded.masks
 ///
-  /// <span class="material-symbols-rounded">match_word</span> MaterialSymbolsRounded.match_word
+/// <span class="material-symbols-rounded">match_case</span> MaterialSymbolsRounded.match_case
 ///
-  /// <span class="material-symbols-rounded">matter</span> MaterialSymbolsRounded.matter
+/// <span class="material-symbols-rounded">match_word</span> MaterialSymbolsRounded.match_word
 ///
-  /// <span class="material-symbols-rounded">maximize</span> MaterialSymbolsRounded.maximize
+/// <span class="material-symbols-rounded">matter</span> MaterialSymbolsRounded.matter
 ///
-  /// <span class="material-symbols-rounded">measuring_tape</span> MaterialSymbolsRounded.measuring_tape
+/// <span class="material-symbols-rounded">maximize</span> MaterialSymbolsRounded.maximize
 ///
-  /// <span class="material-symbols-rounded">media_bluetooth_off</span> MaterialSymbolsRounded.media_bluetooth_off
+/// <span class="material-symbols-rounded">measuring_tape</span> MaterialSymbolsRounded.measuring_tape
 ///
-  /// <span class="material-symbols-rounded">media_bluetooth_on</span> MaterialSymbolsRounded.media_bluetooth_on
+/// <span class="material-symbols-rounded">media_bluetooth_off</span> MaterialSymbolsRounded.media_bluetooth_off
 ///
-  /// <span class="material-symbols-rounded">media_link</span> MaterialSymbolsRounded.media_link
+/// <span class="material-symbols-rounded">media_bluetooth_on</span> MaterialSymbolsRounded.media_bluetooth_on
 ///
-  /// <span class="material-symbols-rounded">mediation</span> MaterialSymbolsRounded.mediation
+/// <span class="material-symbols-rounded">media_link</span> MaterialSymbolsRounded.media_link
 ///
-  /// <span class="material-symbols-rounded">medical_information</span> MaterialSymbolsRounded.medical_information
+/// <span class="material-symbols-rounded">mediation</span> MaterialSymbolsRounded.mediation
 ///
-  /// <span class="material-symbols-rounded">medical_mask</span> MaterialSymbolsRounded.medical_mask
+/// <span class="material-symbols-rounded">medical_information</span> MaterialSymbolsRounded.medical_information
 ///
-  /// <span class="material-symbols-rounded">medical_services</span> MaterialSymbolsRounded.medical_services
+/// <span class="material-symbols-rounded">medical_mask</span> MaterialSymbolsRounded.medical_mask
 ///
-  /// <span class="material-symbols-rounded">medication</span> MaterialSymbolsRounded.medication
+/// <span class="material-symbols-rounded">medical_services</span> MaterialSymbolsRounded.medical_services
 ///
-  /// <span class="material-symbols-rounded">medication_liquid</span> MaterialSymbolsRounded.medication_liquid
+/// <span class="material-symbols-rounded">medication</span> MaterialSymbolsRounded.medication
 ///
-  /// <span class="material-symbols-rounded">meeting_room</span> MaterialSymbolsRounded.meeting_room
+/// <span class="material-symbols-rounded">medication_liquid</span> MaterialSymbolsRounded.medication_liquid
 ///
-  /// <span class="material-symbols-rounded">memory</span> MaterialSymbolsRounded.memory
+/// <span class="material-symbols-rounded">meeting_room</span> MaterialSymbolsRounded.meeting_room
 ///
-  /// <span class="material-symbols-rounded">memory_alt</span> MaterialSymbolsRounded.memory_alt
+/// <span class="material-symbols-rounded">memory</span> MaterialSymbolsRounded.memory
 ///
-  /// <span class="material-symbols-rounded">menstrual_health</span> MaterialSymbolsRounded.menstrual_health
+/// <span class="material-symbols-rounded">memory_alt</span> MaterialSymbolsRounded.memory_alt
 ///
-  /// <span class="material-symbols-rounded">menu</span> MaterialSymbolsRounded.menu
+/// <span class="material-symbols-rounded">menstrual_health</span> MaterialSymbolsRounded.menstrual_health
 ///
-  /// <span class="material-symbols-rounded">menu_book</span> MaterialSymbolsRounded.menu_book
+/// <span class="material-symbols-rounded">menu</span> MaterialSymbolsRounded.menu
 ///
-  /// <span class="material-symbols-rounded">menu_open</span> MaterialSymbolsRounded.menu_open
+/// <span class="material-symbols-rounded">menu_book</span> MaterialSymbolsRounded.menu_book
 ///
-  /// <span class="material-symbols-rounded">merge</span> MaterialSymbolsRounded.merge
+/// <span class="material-symbols-rounded">menu_open</span> MaterialSymbolsRounded.menu_open
 ///
-  /// <span class="material-symbols-rounded">merge_type</span> MaterialSymbolsRounded.merge_type
+/// <span class="material-symbols-rounded">merge</span> MaterialSymbolsRounded.merge
 ///
-  /// <span class="material-symbols-rounded">message</span> MaterialSymbolsRounded.message
+/// <span class="material-symbols-rounded">merge_type</span> MaterialSymbolsRounded.merge_type
 ///
-  /// <span class="material-symbols-rounded">metabolism</span> MaterialSymbolsRounded.metabolism
+/// <span class="material-symbols-rounded">message</span> MaterialSymbolsRounded.message
 ///
-  /// <span class="material-symbols-rounded">mfg_nest_yale_lock</span> MaterialSymbolsRounded.mfg_nest_yale_lock
+/// <span class="material-symbols-rounded">metabolism</span> MaterialSymbolsRounded.metabolism
 ///
-  /// <span class="material-symbols-rounded">mic</span> MaterialSymbolsRounded.mic
+/// <span class="material-symbols-rounded">mfg_nest_yale_lock</span> MaterialSymbolsRounded.mfg_nest_yale_lock
 ///
-  /// <span class="material-symbols-rounded">mic_external_off</span> MaterialSymbolsRounded.mic_external_off
+/// <span class="material-symbols-rounded">mic</span> MaterialSymbolsRounded.mic
 ///
-  /// <span class="material-symbols-rounded">mic_external_on</span> MaterialSymbolsRounded.mic_external_on
+/// <span class="material-symbols-rounded">mic_external_off</span> MaterialSymbolsRounded.mic_external_off
 ///
-  /// <span class="material-symbols-rounded">mic_noise_cancel_high</span> MaterialSymbolsRounded.mic_noise_cancel_high
+/// <span class="material-symbols-rounded">mic_external_on</span> MaterialSymbolsRounded.mic_external_on
 ///
-  /// <span class="material-symbols-rounded">mic_noise_cancel_low</span> MaterialSymbolsRounded.mic_noise_cancel_low
+/// <span class="material-symbols-rounded">mic_noise_cancel_high</span> MaterialSymbolsRounded.mic_noise_cancel_high
 ///
-  /// <span class="material-symbols-rounded">mic_noise_cancel_off</span> MaterialSymbolsRounded.mic_noise_cancel_off
+/// <span class="material-symbols-rounded">mic_noise_cancel_low</span> MaterialSymbolsRounded.mic_noise_cancel_low
 ///
-  /// <span class="material-symbols-rounded">mic_none</span> MaterialSymbolsRounded.mic_none
+/// <span class="material-symbols-rounded">mic_noise_cancel_off</span> MaterialSymbolsRounded.mic_noise_cancel_off
 ///
-  /// <span class="material-symbols-rounded">mic_off</span> MaterialSymbolsRounded.mic_off
+/// <span class="material-symbols-rounded">mic_none</span> MaterialSymbolsRounded.mic_none
 ///
-  /// <span class="material-symbols-rounded">microbiology</span> MaterialSymbolsRounded.microbiology
+/// <span class="material-symbols-rounded">mic_off</span> MaterialSymbolsRounded.mic_off
 ///
-  /// <span class="material-symbols-rounded">microwave</span> MaterialSymbolsRounded.microwave
+/// <span class="material-symbols-rounded">microbiology</span> MaterialSymbolsRounded.microbiology
 ///
-  /// <span class="material-symbols-rounded">microwave_gen</span> MaterialSymbolsRounded.microwave_gen
+/// <span class="material-symbols-rounded">microwave</span> MaterialSymbolsRounded.microwave
 ///
-  /// <span class="material-symbols-rounded">military_tech</span> MaterialSymbolsRounded.military_tech
+/// <span class="material-symbols-rounded">microwave_gen</span> MaterialSymbolsRounded.microwave_gen
 ///
-  /// <span class="material-symbols-rounded">mindfulness</span> MaterialSymbolsRounded.mindfulness
+/// <span class="material-symbols-rounded">military_tech</span> MaterialSymbolsRounded.military_tech
 ///
-  /// <span class="material-symbols-rounded">minimize</span> MaterialSymbolsRounded.minimize
+/// <span class="material-symbols-rounded">mindfulness</span> MaterialSymbolsRounded.mindfulness
 ///
-  /// <span class="material-symbols-rounded">minor_crash</span> MaterialSymbolsRounded.minor_crash
+/// <span class="material-symbols-rounded">minimize</span> MaterialSymbolsRounded.minimize
 ///
-  /// <span class="material-symbols-rounded">missed_video_call</span> MaterialSymbolsRounded.missed_video_call
+/// <span class="material-symbols-rounded">minor_crash</span> MaterialSymbolsRounded.minor_crash
 ///
-  /// <span class="material-symbols-rounded">missed_video_call_filled</span> MaterialSymbolsRounded.missed_video_call_filled
+/// <span class="material-symbols-rounded">missed_video_call</span> MaterialSymbolsRounded.missed_video_call
 ///
-  /// <span class="material-symbols-rounded">mixture_med</span> MaterialSymbolsRounded.mixture_med
+/// <span class="material-symbols-rounded">missed_video_call_filled</span> MaterialSymbolsRounded.missed_video_call_filled
 ///
-  /// <span class="material-symbols-rounded">mms</span> MaterialSymbolsRounded.mms
+/// <span class="material-symbols-rounded">mixture_med</span> MaterialSymbolsRounded.mixture_med
 ///
-  /// <span class="material-symbols-rounded">mobile_friendly</span> MaterialSymbolsRounded.mobile_friendly
+/// <span class="material-symbols-rounded">mms</span> MaterialSymbolsRounded.mms
 ///
-  /// <span class="material-symbols-rounded">mobile_off</span> MaterialSymbolsRounded.mobile_off
+/// <span class="material-symbols-rounded">mobile_friendly</span> MaterialSymbolsRounded.mobile_friendly
 ///
-  /// <span class="material-symbols-rounded">mobile_screen_share</span> MaterialSymbolsRounded.mobile_screen_share
+/// <span class="material-symbols-rounded">mobile_off</span> MaterialSymbolsRounded.mobile_off
 ///
-  /// <span class="material-symbols-rounded">mobiledata_off</span> MaterialSymbolsRounded.mobiledata_off
+/// <span class="material-symbols-rounded">mobile_screen_share</span> MaterialSymbolsRounded.mobile_screen_share
 ///
-  /// <span class="material-symbols-rounded">mode</span> MaterialSymbolsRounded.mode
+/// <span class="material-symbols-rounded">mobiledata_off</span> MaterialSymbolsRounded.mobiledata_off
 ///
-  /// <span class="material-symbols-rounded">mode_comment</span> MaterialSymbolsRounded.mode_comment
+/// <span class="material-symbols-rounded">mode</span> MaterialSymbolsRounded.mode
 ///
-  /// <span class="material-symbols-rounded">mode_cool</span> MaterialSymbolsRounded.mode_cool
+/// <span class="material-symbols-rounded">mode_comment</span> MaterialSymbolsRounded.mode_comment
 ///
-  /// <span class="material-symbols-rounded">mode_cool_off</span> MaterialSymbolsRounded.mode_cool_off
+/// <span class="material-symbols-rounded">mode_cool</span> MaterialSymbolsRounded.mode_cool
 ///
-  /// <span class="material-symbols-rounded">mode_edit</span> MaterialSymbolsRounded.mode_edit
+/// <span class="material-symbols-rounded">mode_cool_off</span> MaterialSymbolsRounded.mode_cool_off
 ///
-  /// <span class="material-symbols-rounded">mode_edit_outline</span> MaterialSymbolsRounded.mode_edit_outline
+/// <span class="material-symbols-rounded">mode_edit</span> MaterialSymbolsRounded.mode_edit
 ///
-  /// <span class="material-symbols-rounded">mode_fan</span> MaterialSymbolsRounded.mode_fan
+/// <span class="material-symbols-rounded">mode_edit_outline</span> MaterialSymbolsRounded.mode_edit_outline
 ///
-  /// <span class="material-symbols-rounded">mode_fan_off</span> MaterialSymbolsRounded.mode_fan_off
+/// <span class="material-symbols-rounded">mode_fan</span> MaterialSymbolsRounded.mode_fan
 ///
-  /// <span class="material-symbols-rounded">mode_heat</span> MaterialSymbolsRounded.mode_heat
+/// <span class="material-symbols-rounded">mode_fan_off</span> MaterialSymbolsRounded.mode_fan_off
 ///
-  /// <span class="material-symbols-rounded">mode_heat_cool</span> MaterialSymbolsRounded.mode_heat_cool
+/// <span class="material-symbols-rounded">mode_heat</span> MaterialSymbolsRounded.mode_heat
 ///
-  /// <span class="material-symbols-rounded">mode_heat_off</span> MaterialSymbolsRounded.mode_heat_off
+/// <span class="material-symbols-rounded">mode_heat_cool</span> MaterialSymbolsRounded.mode_heat_cool
 ///
-  /// <span class="material-symbols-rounded">mode_night</span> MaterialSymbolsRounded.mode_night
+/// <span class="material-symbols-rounded">mode_heat_off</span> MaterialSymbolsRounded.mode_heat_off
 ///
-  /// <span class="material-symbols-rounded">mode_of_travel</span> MaterialSymbolsRounded.mode_of_travel
+/// <span class="material-symbols-rounded">mode_night</span> MaterialSymbolsRounded.mode_night
 ///
-  /// <span class="material-symbols-rounded">mode_off_on</span> MaterialSymbolsRounded.mode_off_on
+/// <span class="material-symbols-rounded">mode_of_travel</span> MaterialSymbolsRounded.mode_of_travel
 ///
-  /// <span class="material-symbols-rounded">mode_standby</span> MaterialSymbolsRounded.mode_standby
+/// <span class="material-symbols-rounded">mode_off_on</span> MaterialSymbolsRounded.mode_off_on
 ///
-  /// <span class="material-symbols-rounded">model_training</span> MaterialSymbolsRounded.model_training
+/// <span class="material-symbols-rounded">mode_standby</span> MaterialSymbolsRounded.mode_standby
 ///
-  /// <span class="material-symbols-rounded">monetization_on</span> MaterialSymbolsRounded.monetization_on
+/// <span class="material-symbols-rounded">model_training</span> MaterialSymbolsRounded.model_training
 ///
-  /// <span class="material-symbols-rounded">money</span> MaterialSymbolsRounded.money
+/// <span class="material-symbols-rounded">monetization_on</span> MaterialSymbolsRounded.monetization_on
 ///
-  /// <span class="material-symbols-rounded">money_off</span> MaterialSymbolsRounded.money_off
+/// <span class="material-symbols-rounded">money</span> MaterialSymbolsRounded.money
 ///
-  /// <span class="material-symbols-rounded">money_off_csred</span> MaterialSymbolsRounded.money_off_csred
+/// <span class="material-symbols-rounded">money_off</span> MaterialSymbolsRounded.money_off
 ///
-  /// <span class="material-symbols-rounded">monitor</span> MaterialSymbolsRounded.monitor
+/// <span class="material-symbols-rounded">money_off_csred</span> MaterialSymbolsRounded.money_off_csred
 ///
-  /// <span class="material-symbols-rounded">monitor_heart</span> MaterialSymbolsRounded.monitor_heart
+/// <span class="material-symbols-rounded">monitor</span> MaterialSymbolsRounded.monitor
 ///
-  /// <span class="material-symbols-rounded">monitor_weight</span> MaterialSymbolsRounded.monitor_weight
+/// <span class="material-symbols-rounded">monitor_heart</span> MaterialSymbolsRounded.monitor_heart
 ///
-  /// <span class="material-symbols-rounded">monitor_weight_gain</span> MaterialSymbolsRounded.monitor_weight_gain
+/// <span class="material-symbols-rounded">monitor_weight</span> MaterialSymbolsRounded.monitor_weight
 ///
-  /// <span class="material-symbols-rounded">monitor_weight_loss</span> MaterialSymbolsRounded.monitor_weight_loss
+/// <span class="material-symbols-rounded">monitor_weight_gain</span> MaterialSymbolsRounded.monitor_weight_gain
 ///
-  /// <span class="material-symbols-rounded">monitoring</span> MaterialSymbolsRounded.monitoring
+/// <span class="material-symbols-rounded">monitor_weight_loss</span> MaterialSymbolsRounded.monitor_weight_loss
 ///
-  /// <span class="material-symbols-rounded">monochrome_photos</span> MaterialSymbolsRounded.monochrome_photos
+/// <span class="material-symbols-rounded">monitoring</span> MaterialSymbolsRounded.monitoring
 ///
-  /// <span class="material-symbols-rounded">mood</span> MaterialSymbolsRounded.mood
+/// <span class="material-symbols-rounded">monochrome_photos</span> MaterialSymbolsRounded.monochrome_photos
 ///
-  /// <span class="material-symbols-rounded">mood_bad</span> MaterialSymbolsRounded.mood_bad
+/// <span class="material-symbols-rounded">mood</span> MaterialSymbolsRounded.mood
 ///
-  /// <span class="material-symbols-rounded">mop</span> MaterialSymbolsRounded.mop
+/// <span class="material-symbols-rounded">mood_bad</span> MaterialSymbolsRounded.mood_bad
 ///
-  /// <span class="material-symbols-rounded">more</span> MaterialSymbolsRounded.more
+/// <span class="material-symbols-rounded">mop</span> MaterialSymbolsRounded.mop
 ///
-  /// <span class="material-symbols-rounded">more_down</span> MaterialSymbolsRounded.more_down
+/// <span class="material-symbols-rounded">more</span> MaterialSymbolsRounded.more
 ///
-  /// <span class="material-symbols-rounded">more_horiz</span> MaterialSymbolsRounded.more_horiz
+/// <span class="material-symbols-rounded">more_down</span> MaterialSymbolsRounded.more_down
 ///
-  /// <span class="material-symbols-rounded">more_time</span> MaterialSymbolsRounded.more_time
+/// <span class="material-symbols-rounded">more_horiz</span> MaterialSymbolsRounded.more_horiz
 ///
-  /// <span class="material-symbols-rounded">more_up</span> MaterialSymbolsRounded.more_up
+/// <span class="material-symbols-rounded">more_time</span> MaterialSymbolsRounded.more_time
 ///
-  /// <span class="material-symbols-rounded">more_vert</span> MaterialSymbolsRounded.more_vert
+/// <span class="material-symbols-rounded">more_up</span> MaterialSymbolsRounded.more_up
 ///
-  /// <span class="material-symbols-rounded">mosque</span> MaterialSymbolsRounded.mosque
+/// <span class="material-symbols-rounded">more_vert</span> MaterialSymbolsRounded.more_vert
 ///
-  /// <span class="material-symbols-rounded">motion_blur</span> MaterialSymbolsRounded.motion_blur
+/// <span class="material-symbols-rounded">mosque</span> MaterialSymbolsRounded.mosque
 ///
-  /// <span class="material-symbols-rounded">motion_mode</span> MaterialSymbolsRounded.motion_mode
+/// <span class="material-symbols-rounded">motion_blur</span> MaterialSymbolsRounded.motion_blur
 ///
-  /// <span class="material-symbols-rounded">motion_photos_auto</span> MaterialSymbolsRounded.motion_photos_auto
+/// <span class="material-symbols-rounded">motion_mode</span> MaterialSymbolsRounded.motion_mode
 ///
-  /// <span class="material-symbols-rounded">motion_photos_off</span> MaterialSymbolsRounded.motion_photos_off
+/// <span class="material-symbols-rounded">motion_photos_auto</span> MaterialSymbolsRounded.motion_photos_auto
 ///
-  /// <span class="material-symbols-rounded">motion_photos_pause</span> MaterialSymbolsRounded.motion_photos_pause
+/// <span class="material-symbols-rounded">motion_photos_off</span> MaterialSymbolsRounded.motion_photos_off
 ///
-  /// <span class="material-symbols-rounded">motion_photos_paused</span> MaterialSymbolsRounded.motion_photos_paused
+/// <span class="material-symbols-rounded">motion_photos_pause</span> MaterialSymbolsRounded.motion_photos_pause
 ///
-  /// <span class="material-symbols-rounded">motion_sensor_active</span> MaterialSymbolsRounded.motion_sensor_active
+/// <span class="material-symbols-rounded">motion_photos_paused</span> MaterialSymbolsRounded.motion_photos_paused
 ///
-  /// <span class="material-symbols-rounded">motion_sensor_alert</span> MaterialSymbolsRounded.motion_sensor_alert
+/// <span class="material-symbols-rounded">motion_sensor_active</span> MaterialSymbolsRounded.motion_sensor_active
 ///
-  /// <span class="material-symbols-rounded">motion_sensor_idle</span> MaterialSymbolsRounded.motion_sensor_idle
+/// <span class="material-symbols-rounded">motion_sensor_alert</span> MaterialSymbolsRounded.motion_sensor_alert
 ///
-  /// <span class="material-symbols-rounded">motion_sensor_urgent</span> MaterialSymbolsRounded.motion_sensor_urgent
+/// <span class="material-symbols-rounded">motion_sensor_idle</span> MaterialSymbolsRounded.motion_sensor_idle
 ///
-  /// <span class="material-symbols-rounded">motorcycle</span> MaterialSymbolsRounded.motorcycle
+/// <span class="material-symbols-rounded">motion_sensor_urgent</span> MaterialSymbolsRounded.motion_sensor_urgent
 ///
-  /// <span class="material-symbols-rounded">mouse</span> MaterialSymbolsRounded.mouse
+/// <span class="material-symbols-rounded">motorcycle</span> MaterialSymbolsRounded.motorcycle
 ///
-  /// <span class="material-symbols-rounded">move</span> MaterialSymbolsRounded.move
+/// <span class="material-symbols-rounded">mouse</span> MaterialSymbolsRounded.mouse
 ///
-  /// <span class="material-symbols-rounded">move_down</span> MaterialSymbolsRounded.move_down
+/// <span class="material-symbols-rounded">move</span> MaterialSymbolsRounded.move
 ///
-  /// <span class="material-symbols-rounded">move_group</span> MaterialSymbolsRounded.move_group
+/// <span class="material-symbols-rounded">move_down</span> MaterialSymbolsRounded.move_down
 ///
-  /// <span class="material-symbols-rounded">move_location</span> MaterialSymbolsRounded.move_location
+/// <span class="material-symbols-rounded">move_group</span> MaterialSymbolsRounded.move_group
 ///
-  /// <span class="material-symbols-rounded">move_selection_down</span> MaterialSymbolsRounded.move_selection_down
+/// <span class="material-symbols-rounded">move_location</span> MaterialSymbolsRounded.move_location
 ///
-  /// <span class="material-symbols-rounded">move_selection_left</span> MaterialSymbolsRounded.move_selection_left
+/// <span class="material-symbols-rounded">move_selection_down</span> MaterialSymbolsRounded.move_selection_down
 ///
-  /// <span class="material-symbols-rounded">move_selection_right</span> MaterialSymbolsRounded.move_selection_right
+/// <span class="material-symbols-rounded">move_selection_left</span> MaterialSymbolsRounded.move_selection_left
 ///
-  /// <span class="material-symbols-rounded">move_selection_up</span> MaterialSymbolsRounded.move_selection_up
+/// <span class="material-symbols-rounded">move_selection_right</span> MaterialSymbolsRounded.move_selection_right
 ///
-  /// <span class="material-symbols-rounded">move_to_inbox</span> MaterialSymbolsRounded.move_to_inbox
+/// <span class="material-symbols-rounded">move_selection_up</span> MaterialSymbolsRounded.move_selection_up
 ///
-  /// <span class="material-symbols-rounded">move_up</span> MaterialSymbolsRounded.move_up
+/// <span class="material-symbols-rounded">move_to_inbox</span> MaterialSymbolsRounded.move_to_inbox
 ///
-  /// <span class="material-symbols-rounded">movie</span> MaterialSymbolsRounded.movie
+/// <span class="material-symbols-rounded">move_up</span> MaterialSymbolsRounded.move_up
 ///
-  /// <span class="material-symbols-rounded">movie_creation</span> MaterialSymbolsRounded.movie_creation
+/// <span class="material-symbols-rounded">movie</span> MaterialSymbolsRounded.movie
 ///
-  /// <span class="material-symbols-rounded">movie_edit</span> MaterialSymbolsRounded.movie_edit
+/// <span class="material-symbols-rounded">movie_creation</span> MaterialSymbolsRounded.movie_creation
 ///
-  /// <span class="material-symbols-rounded">movie_filter</span> MaterialSymbolsRounded.movie_filter
+/// <span class="material-symbols-rounded">movie_edit</span> MaterialSymbolsRounded.movie_edit
 ///
-  /// <span class="material-symbols-rounded">moving</span> MaterialSymbolsRounded.moving
+/// <span class="material-symbols-rounded">movie_filter</span> MaterialSymbolsRounded.movie_filter
 ///
-  /// <span class="material-symbols-rounded">moving_beds</span> MaterialSymbolsRounded.moving_beds
+/// <span class="material-symbols-rounded">moving</span> MaterialSymbolsRounded.moving
 ///
-  /// <span class="material-symbols-rounded">moving_ministry</span> MaterialSymbolsRounded.moving_ministry
+/// <span class="material-symbols-rounded">moving_beds</span> MaterialSymbolsRounded.moving_beds
 ///
-  /// <span class="material-symbols-rounded">mp</span> MaterialSymbolsRounded.mp
+/// <span class="material-symbols-rounded">moving_ministry</span> MaterialSymbolsRounded.moving_ministry
 ///
-  /// <span class="material-symbols-rounded">multicooker</span> MaterialSymbolsRounded.multicooker
+/// <span class="material-symbols-rounded">mp</span> MaterialSymbolsRounded.mp
 ///
-  /// <span class="material-symbols-rounded">multiline_chart</span> MaterialSymbolsRounded.multiline_chart
+/// <span class="material-symbols-rounded">multicooker</span> MaterialSymbolsRounded.multicooker
 ///
-  /// <span class="material-symbols-rounded">multiple_stop</span> MaterialSymbolsRounded.multiple_stop
+/// <span class="material-symbols-rounded">multiline_chart</span> MaterialSymbolsRounded.multiline_chart
 ///
-  /// <span class="material-symbols-rounded">museum</span> MaterialSymbolsRounded.museum
+/// <span class="material-symbols-rounded">multiple_stop</span> MaterialSymbolsRounded.multiple_stop
 ///
-  /// <span class="material-symbols-rounded">music_note</span> MaterialSymbolsRounded.music_note
+/// <span class="material-symbols-rounded">museum</span> MaterialSymbolsRounded.museum
 ///
-  /// <span class="material-symbols-rounded">music_off</span> MaterialSymbolsRounded.music_off
+/// <span class="material-symbols-rounded">music_note</span> MaterialSymbolsRounded.music_note
 ///
-  /// <span class="material-symbols-rounded">music_video</span> MaterialSymbolsRounded.music_video
+/// <span class="material-symbols-rounded">music_off</span> MaterialSymbolsRounded.music_off
 ///
-  /// <span class="material-symbols-rounded">my_location</span> MaterialSymbolsRounded.my_location
+/// <span class="material-symbols-rounded">music_video</span> MaterialSymbolsRounded.music_video
 ///
-  /// <span class="material-symbols-rounded">nat</span> MaterialSymbolsRounded.nat
+/// <span class="material-symbols-rounded">my_location</span> MaterialSymbolsRounded.my_location
 ///
-  /// <span class="material-symbols-rounded">nature</span> MaterialSymbolsRounded.nature
+/// <span class="material-symbols-rounded">nat</span> MaterialSymbolsRounded.nat
 ///
-  /// <span class="material-symbols-rounded">nature_people</span> MaterialSymbolsRounded.nature_people
+/// <span class="material-symbols-rounded">nature</span> MaterialSymbolsRounded.nature
 ///
-  /// <span class="material-symbols-rounded">navigate_before</span> MaterialSymbolsRounded.navigate_before
+/// <span class="material-symbols-rounded">nature_people</span> MaterialSymbolsRounded.nature_people
 ///
-  /// <span class="material-symbols-rounded">navigate_next</span> MaterialSymbolsRounded.navigate_next
+/// <span class="material-symbols-rounded">navigate_before</span> MaterialSymbolsRounded.navigate_before
 ///
-  /// <span class="material-symbols-rounded">navigation</span> MaterialSymbolsRounded.navigation
+/// <span class="material-symbols-rounded">navigate_next</span> MaterialSymbolsRounded.navigate_next
 ///
-  /// <span class="material-symbols-rounded">near_me</span> MaterialSymbolsRounded.near_me
+/// <span class="material-symbols-rounded">navigation</span> MaterialSymbolsRounded.navigation
 ///
-  /// <span class="material-symbols-rounded">near_me_disabled</span> MaterialSymbolsRounded.near_me_disabled
+/// <span class="material-symbols-rounded">near_me</span> MaterialSymbolsRounded.near_me
 ///
-  /// <span class="material-symbols-rounded">nearby_error</span> MaterialSymbolsRounded.nearby_error
+/// <span class="material-symbols-rounded">near_me_disabled</span> MaterialSymbolsRounded.near_me_disabled
 ///
-  /// <span class="material-symbols-rounded">nearby_off</span> MaterialSymbolsRounded.nearby_off
+/// <span class="material-symbols-rounded">nearby_error</span> MaterialSymbolsRounded.nearby_error
 ///
-  /// <span class="material-symbols-rounded">nephrology</span> MaterialSymbolsRounded.nephrology
+/// <span class="material-symbols-rounded">nearby_off</span> MaterialSymbolsRounded.nearby_off
 ///
-  /// <span class="material-symbols-rounded">nest_audio</span> MaterialSymbolsRounded.nest_audio
+/// <span class="material-symbols-rounded">nephrology</span> MaterialSymbolsRounded.nephrology
 ///
-  /// <span class="material-symbols-rounded">nest_cam_floodlight</span> MaterialSymbolsRounded.nest_cam_floodlight
+/// <span class="material-symbols-rounded">nest_audio</span> MaterialSymbolsRounded.nest_audio
 ///
-  /// <span class="material-symbols-rounded">nest_cam_indoor</span> MaterialSymbolsRounded.nest_cam_indoor
+/// <span class="material-symbols-rounded">nest_cam_floodlight</span> MaterialSymbolsRounded.nest_cam_floodlight
 ///
-  /// <span class="material-symbols-rounded">nest_cam_iq</span> MaterialSymbolsRounded.nest_cam_iq
+/// <span class="material-symbols-rounded">nest_cam_indoor</span> MaterialSymbolsRounded.nest_cam_indoor
 ///
-  /// <span class="material-symbols-rounded">nest_cam_iq_outdoor</span> MaterialSymbolsRounded.nest_cam_iq_outdoor
+/// <span class="material-symbols-rounded">nest_cam_iq</span> MaterialSymbolsRounded.nest_cam_iq
 ///
-  /// <span class="material-symbols-rounded">nest_cam_magnet_mount</span> MaterialSymbolsRounded.nest_cam_magnet_mount
+/// <span class="material-symbols-rounded">nest_cam_iq_outdoor</span> MaterialSymbolsRounded.nest_cam_iq_outdoor
 ///
-  /// <span class="material-symbols-rounded">nest_cam_outdoor</span> MaterialSymbolsRounded.nest_cam_outdoor
+/// <span class="material-symbols-rounded">nest_cam_magnet_mount</span> MaterialSymbolsRounded.nest_cam_magnet_mount
 ///
-  /// <span class="material-symbols-rounded">nest_cam_stand</span> MaterialSymbolsRounded.nest_cam_stand
+/// <span class="material-symbols-rounded">nest_cam_outdoor</span> MaterialSymbolsRounded.nest_cam_outdoor
 ///
-  /// <span class="material-symbols-rounded">nest_cam_wall_mount</span> MaterialSymbolsRounded.nest_cam_wall_mount
+/// <span class="material-symbols-rounded">nest_cam_stand</span> MaterialSymbolsRounded.nest_cam_stand
 ///
-  /// <span class="material-symbols-rounded">nest_cam_wired_stand</span> MaterialSymbolsRounded.nest_cam_wired_stand
+/// <span class="material-symbols-rounded">nest_cam_wall_mount</span> MaterialSymbolsRounded.nest_cam_wall_mount
 ///
-  /// <span class="material-symbols-rounded">nest_clock_farsight_analog</span> MaterialSymbolsRounded.nest_clock_farsight_analog
+/// <span class="material-symbols-rounded">nest_cam_wired_stand</span> MaterialSymbolsRounded.nest_cam_wired_stand
 ///
-  /// <span class="material-symbols-rounded">nest_clock_farsight_digital</span> MaterialSymbolsRounded.nest_clock_farsight_digital
+/// <span class="material-symbols-rounded">nest_clock_farsight_analog</span> MaterialSymbolsRounded.nest_clock_farsight_analog
 ///
-  /// <span class="material-symbols-rounded">nest_connect</span> MaterialSymbolsRounded.nest_connect
+/// <span class="material-symbols-rounded">nest_clock_farsight_digital</span> MaterialSymbolsRounded.nest_clock_farsight_digital
 ///
-  /// <span class="material-symbols-rounded">nest_detect</span> MaterialSymbolsRounded.nest_detect
+/// <span class="material-symbols-rounded">nest_connect</span> MaterialSymbolsRounded.nest_connect
 ///
-  /// <span class="material-symbols-rounded">nest_display</span> MaterialSymbolsRounded.nest_display
+/// <span class="material-symbols-rounded">nest_detect</span> MaterialSymbolsRounded.nest_detect
 ///
-  /// <span class="material-symbols-rounded">nest_display_max</span> MaterialSymbolsRounded.nest_display_max
+/// <span class="material-symbols-rounded">nest_display</span> MaterialSymbolsRounded.nest_display
 ///
-  /// <span class="material-symbols-rounded">nest_doorbell_visitor</span> MaterialSymbolsRounded.nest_doorbell_visitor
+/// <span class="material-symbols-rounded">nest_display_max</span> MaterialSymbolsRounded.nest_display_max
 ///
-  /// <span class="material-symbols-rounded">nest_eco_leaf</span> MaterialSymbolsRounded.nest_eco_leaf
+/// <span class="material-symbols-rounded">nest_doorbell_visitor</span> MaterialSymbolsRounded.nest_doorbell_visitor
 ///
-  /// <span class="material-symbols-rounded">nest_farsight_weather</span> MaterialSymbolsRounded.nest_farsight_weather
+/// <span class="material-symbols-rounded">nest_eco_leaf</span> MaterialSymbolsRounded.nest_eco_leaf
 ///
-  /// <span class="material-symbols-rounded">nest_found_savings</span> MaterialSymbolsRounded.nest_found_savings
+/// <span class="material-symbols-rounded">nest_farsight_weather</span> MaterialSymbolsRounded.nest_farsight_weather
 ///
-  /// <span class="material-symbols-rounded">nest_heat_link_e</span> MaterialSymbolsRounded.nest_heat_link_e
+/// <span class="material-symbols-rounded">nest_found_savings</span> MaterialSymbolsRounded.nest_found_savings
 ///
-  /// <span class="material-symbols-rounded">nest_heat_link_gen_3</span> MaterialSymbolsRounded.nest_heat_link_gen_3
+/// <span class="material-symbols-rounded">nest_heat_link_e</span> MaterialSymbolsRounded.nest_heat_link_e
 ///
-  /// <span class="material-symbols-rounded">nest_hello_doorbell</span> MaterialSymbolsRounded.nest_hello_doorbell
+/// <span class="material-symbols-rounded">nest_heat_link_gen_3</span> MaterialSymbolsRounded.nest_heat_link_gen_3
 ///
-  /// <span class="material-symbols-rounded">nest_locator_tag</span> MaterialSymbolsRounded.nest_locator_tag
+/// <span class="material-symbols-rounded">nest_hello_doorbell</span> MaterialSymbolsRounded.nest_hello_doorbell
 ///
-  /// <span class="material-symbols-rounded">nest_mini</span> MaterialSymbolsRounded.nest_mini
+/// <span class="material-symbols-rounded">nest_locator_tag</span> MaterialSymbolsRounded.nest_locator_tag
 ///
-  /// <span class="material-symbols-rounded">nest_multi_room</span> MaterialSymbolsRounded.nest_multi_room
+/// <span class="material-symbols-rounded">nest_mini</span> MaterialSymbolsRounded.nest_mini
 ///
-  /// <span class="material-symbols-rounded">nest_remote</span> MaterialSymbolsRounded.nest_remote
+/// <span class="material-symbols-rounded">nest_multi_room</span> MaterialSymbolsRounded.nest_multi_room
 ///
-  /// <span class="material-symbols-rounded">nest_remote_comfort_sensor</span> MaterialSymbolsRounded.nest_remote_comfort_sensor
+/// <span class="material-symbols-rounded">nest_remote</span> MaterialSymbolsRounded.nest_remote
 ///
-  /// <span class="material-symbols-rounded">nest_secure_alarm</span> MaterialSymbolsRounded.nest_secure_alarm
+/// <span class="material-symbols-rounded">nest_remote_comfort_sensor</span> MaterialSymbolsRounded.nest_remote_comfort_sensor
 ///
-  /// <span class="material-symbols-rounded">nest_sunblock</span> MaterialSymbolsRounded.nest_sunblock
+/// <span class="material-symbols-rounded">nest_secure_alarm</span> MaterialSymbolsRounded.nest_secure_alarm
 ///
-  /// <span class="material-symbols-rounded">nest_tag</span> MaterialSymbolsRounded.nest_tag
+/// <span class="material-symbols-rounded">nest_sunblock</span> MaterialSymbolsRounded.nest_sunblock
 ///
-  /// <span class="material-symbols-rounded">nest_thermostat_e_eu</span> MaterialSymbolsRounded.nest_thermostat_e_eu
+/// <span class="material-symbols-rounded">nest_tag</span> MaterialSymbolsRounded.nest_tag
 ///
-  /// <span class="material-symbols-rounded">nest_thermostat_gen_3</span> MaterialSymbolsRounded.nest_thermostat_gen_3
+/// <span class="material-symbols-rounded">nest_thermostat_e_eu</span> MaterialSymbolsRounded.nest_thermostat_e_eu
 ///
-  /// <span class="material-symbols-rounded">nest_thermostat_sensor</span> MaterialSymbolsRounded.nest_thermostat_sensor
+/// <span class="material-symbols-rounded">nest_thermostat_gen_3</span> MaterialSymbolsRounded.nest_thermostat_gen_3
 ///
-  /// <span class="material-symbols-rounded">nest_thermostat_sensor_eu</span> MaterialSymbolsRounded.nest_thermostat_sensor_eu
+/// <span class="material-symbols-rounded">nest_thermostat_sensor</span> MaterialSymbolsRounded.nest_thermostat_sensor
 ///
-  /// <span class="material-symbols-rounded">nest_thermostat_zirconium_eu</span> MaterialSymbolsRounded.nest_thermostat_zirconium_eu
+/// <span class="material-symbols-rounded">nest_thermostat_sensor_eu</span> MaterialSymbolsRounded.nest_thermostat_sensor_eu
 ///
-  /// <span class="material-symbols-rounded">nest_true_radiant</span> MaterialSymbolsRounded.nest_true_radiant
+/// <span class="material-symbols-rounded">nest_thermostat_zirconium_eu</span> MaterialSymbolsRounded.nest_thermostat_zirconium_eu
 ///
-  /// <span class="material-symbols-rounded">nest_wake_on_approach</span> MaterialSymbolsRounded.nest_wake_on_approach
+/// <span class="material-symbols-rounded">nest_true_radiant</span> MaterialSymbolsRounded.nest_true_radiant
 ///
-  /// <span class="material-symbols-rounded">nest_wake_on_press</span> MaterialSymbolsRounded.nest_wake_on_press
+/// <span class="material-symbols-rounded">nest_wake_on_approach</span> MaterialSymbolsRounded.nest_wake_on_approach
 ///
-  /// <span class="material-symbols-rounded">nest_wifi_gale</span> MaterialSymbolsRounded.nest_wifi_gale
+/// <span class="material-symbols-rounded">nest_wake_on_press</span> MaterialSymbolsRounded.nest_wake_on_press
 ///
-  /// <span class="material-symbols-rounded">nest_wifi_mistral</span> MaterialSymbolsRounded.nest_wifi_mistral
+/// <span class="material-symbols-rounded">nest_wifi_gale</span> MaterialSymbolsRounded.nest_wifi_gale
 ///
-  /// <span class="material-symbols-rounded">nest_wifi_point</span> MaterialSymbolsRounded.nest_wifi_point
+/// <span class="material-symbols-rounded">nest_wifi_mistral</span> MaterialSymbolsRounded.nest_wifi_mistral
 ///
-  /// <span class="material-symbols-rounded">nest_wifi_point_vento</span> MaterialSymbolsRounded.nest_wifi_point_vento
+/// <span class="material-symbols-rounded">nest_wifi_point</span> MaterialSymbolsRounded.nest_wifi_point
 ///
-  /// <span class="material-symbols-rounded">nest_wifi_router</span> MaterialSymbolsRounded.nest_wifi_router
+/// <span class="material-symbols-rounded">nest_wifi_point_vento</span> MaterialSymbolsRounded.nest_wifi_point_vento
 ///
-  /// <span class="material-symbols-rounded">network_cell</span> MaterialSymbolsRounded.network_cell
+/// <span class="material-symbols-rounded">nest_wifi_router</span> MaterialSymbolsRounded.nest_wifi_router
 ///
-  /// <span class="material-symbols-rounded">network_check</span> MaterialSymbolsRounded.network_check
+/// <span class="material-symbols-rounded">network_cell</span> MaterialSymbolsRounded.network_cell
 ///
-  /// <span class="material-symbols-rounded">network_locked</span> MaterialSymbolsRounded.network_locked
+/// <span class="material-symbols-rounded">network_check</span> MaterialSymbolsRounded.network_check
 ///
-  /// <span class="material-symbols-rounded">network_manage</span> MaterialSymbolsRounded.network_manage
+/// <span class="material-symbols-rounded">network_locked</span> MaterialSymbolsRounded.network_locked
 ///
-  /// <span class="material-symbols-rounded">network_ping</span> MaterialSymbolsRounded.network_ping
+/// <span class="material-symbols-rounded">network_manage</span> MaterialSymbolsRounded.network_manage
 ///
-  /// <span class="material-symbols-rounded">network_wifi</span> MaterialSymbolsRounded.network_wifi
+/// <span class="material-symbols-rounded">network_ping</span> MaterialSymbolsRounded.network_ping
 ///
-  /// <span class="material-symbols-rounded">network_wifi_1_bar</span> MaterialSymbolsRounded.network_wifi_1_bar
+/// <span class="material-symbols-rounded">network_wifi</span> MaterialSymbolsRounded.network_wifi
 ///
-  /// <span class="material-symbols-rounded">network_wifi_2_bar</span> MaterialSymbolsRounded.network_wifi_2_bar
+/// <span class="material-symbols-rounded">network_wifi_1_bar</span> MaterialSymbolsRounded.network_wifi_1_bar
 ///
-  /// <span class="material-symbols-rounded">network_wifi_3_bar</span> MaterialSymbolsRounded.network_wifi_3_bar
+/// <span class="material-symbols-rounded">network_wifi_2_bar</span> MaterialSymbolsRounded.network_wifi_2_bar
 ///
-  /// <span class="material-symbols-rounded">neurology</span> MaterialSymbolsRounded.neurology
+/// <span class="material-symbols-rounded">network_wifi_3_bar</span> MaterialSymbolsRounded.network_wifi_3_bar
 ///
-  /// <span class="material-symbols-rounded">new_label</span> MaterialSymbolsRounded.new_label
+/// <span class="material-symbols-rounded">neurology</span> MaterialSymbolsRounded.neurology
 ///
-  /// <span class="material-symbols-rounded">new_releases</span> MaterialSymbolsRounded.new_releases
+/// <span class="material-symbols-rounded">new_label</span> MaterialSymbolsRounded.new_label
 ///
-  /// <span class="material-symbols-rounded">new_window</span> MaterialSymbolsRounded.new_window
+/// <span class="material-symbols-rounded">new_releases</span> MaterialSymbolsRounded.new_releases
 ///
-  /// <span class="material-symbols-rounded">newspaper</span> MaterialSymbolsRounded.newspaper
+/// <span class="material-symbols-rounded">new_window</span> MaterialSymbolsRounded.new_window
 ///
-  /// <span class="material-symbols-rounded">next_plan</span> MaterialSymbolsRounded.next_plan
+/// <span class="material-symbols-rounded">newspaper</span> MaterialSymbolsRounded.newspaper
 ///
-  /// <span class="material-symbols-rounded">next_week</span> MaterialSymbolsRounded.next_week
+/// <span class="material-symbols-rounded">next_plan</span> MaterialSymbolsRounded.next_plan
 ///
-  /// <span class="material-symbols-rounded">nfc</span> MaterialSymbolsRounded.nfc
+/// <span class="material-symbols-rounded">next_week</span> MaterialSymbolsRounded.next_week
 ///
-  /// <span class="material-symbols-rounded">night_shelter</span> MaterialSymbolsRounded.night_shelter
+/// <span class="material-symbols-rounded">nfc</span> MaterialSymbolsRounded.nfc
 ///
-  /// <span class="material-symbols-rounded">night_sight_auto</span> MaterialSymbolsRounded.night_sight_auto
+/// <span class="material-symbols-rounded">night_shelter</span> MaterialSymbolsRounded.night_shelter
 ///
-  /// <span class="material-symbols-rounded">night_sight_auto_off</span> MaterialSymbolsRounded.night_sight_auto_off
+/// <span class="material-symbols-rounded">night_sight_auto</span> MaterialSymbolsRounded.night_sight_auto
 ///
-  /// <span class="material-symbols-rounded">night_sight_max</span> MaterialSymbolsRounded.night_sight_max
+/// <span class="material-symbols-rounded">night_sight_auto_off</span> MaterialSymbolsRounded.night_sight_auto_off
 ///
-  /// <span class="material-symbols-rounded">nightlife</span> MaterialSymbolsRounded.nightlife
+/// <span class="material-symbols-rounded">night_sight_max</span> MaterialSymbolsRounded.night_sight_max
 ///
-  /// <span class="material-symbols-rounded">nightlight</span> MaterialSymbolsRounded.nightlight
+/// <span class="material-symbols-rounded">nightlife</span> MaterialSymbolsRounded.nightlife
 ///
-  /// <span class="material-symbols-rounded">nightlight_badge</span> MaterialSymbolsRounded.nightlight_badge
+/// <span class="material-symbols-rounded">nightlight</span> MaterialSymbolsRounded.nightlight
 ///
-  /// <span class="material-symbols-rounded">nightlight_off</span> MaterialSymbolsRounded.nightlight_off
+/// <span class="material-symbols-rounded">nightlight_badge</span> MaterialSymbolsRounded.nightlight_badge
 ///
-  /// <span class="material-symbols-rounded">nightlight_round</span> MaterialSymbolsRounded.nightlight_round
+/// <span class="material-symbols-rounded">nightlight_off</span> MaterialSymbolsRounded.nightlight_off
 ///
-  /// <span class="material-symbols-rounded">nights_stay</span> MaterialSymbolsRounded.nights_stay
+/// <span class="material-symbols-rounded">nightlight_round</span> MaterialSymbolsRounded.nightlight_round
 ///
-  /// <span class="material-symbols-rounded">no_accounts</span> MaterialSymbolsRounded.no_accounts
+/// <span class="material-symbols-rounded">nights_stay</span> MaterialSymbolsRounded.nights_stay
 ///
-  /// <span class="material-symbols-rounded">no_adult_content</span> MaterialSymbolsRounded.no_adult_content
+/// <span class="material-symbols-rounded">no_accounts</span> MaterialSymbolsRounded.no_accounts
 ///
-  /// <span class="material-symbols-rounded">no_backpack</span> MaterialSymbolsRounded.no_backpack
+/// <span class="material-symbols-rounded">no_adult_content</span> MaterialSymbolsRounded.no_adult_content
 ///
-  /// <span class="material-symbols-rounded">no_crash</span> MaterialSymbolsRounded.no_crash
+/// <span class="material-symbols-rounded">no_backpack</span> MaterialSymbolsRounded.no_backpack
 ///
-  /// <span class="material-symbols-rounded">no_drinks</span> MaterialSymbolsRounded.no_drinks
+/// <span class="material-symbols-rounded">no_crash</span> MaterialSymbolsRounded.no_crash
 ///
-  /// <span class="material-symbols-rounded">no_encryption</span> MaterialSymbolsRounded.no_encryption
+/// <span class="material-symbols-rounded">no_drinks</span> MaterialSymbolsRounded.no_drinks
 ///
-  /// <span class="material-symbols-rounded">no_encryption_gmailerrorred</span> MaterialSymbolsRounded.no_encryption_gmailerrorred
+/// <span class="material-symbols-rounded">no_encryption</span> MaterialSymbolsRounded.no_encryption
 ///
-  /// <span class="material-symbols-rounded">no_flash</span> MaterialSymbolsRounded.no_flash
+/// <span class="material-symbols-rounded">no_encryption_gmailerrorred</span> MaterialSymbolsRounded.no_encryption_gmailerrorred
 ///
-  /// <span class="material-symbols-rounded">no_food</span> MaterialSymbolsRounded.no_food
+/// <span class="material-symbols-rounded">no_flash</span> MaterialSymbolsRounded.no_flash
 ///
-  /// <span class="material-symbols-rounded">no_luggage</span> MaterialSymbolsRounded.no_luggage
+/// <span class="material-symbols-rounded">no_food</span> MaterialSymbolsRounded.no_food
 ///
-  /// <span class="material-symbols-rounded">no_meals</span> MaterialSymbolsRounded.no_meals
+/// <span class="material-symbols-rounded">no_luggage</span> MaterialSymbolsRounded.no_luggage
 ///
-  /// <span class="material-symbols-rounded">no_meeting_room</span> MaterialSymbolsRounded.no_meeting_room
+/// <span class="material-symbols-rounded">no_meals</span> MaterialSymbolsRounded.no_meals
 ///
-  /// <span class="material-symbols-rounded">no_photography</span> MaterialSymbolsRounded.no_photography
+/// <span class="material-symbols-rounded">no_meeting_room</span> MaterialSymbolsRounded.no_meeting_room
 ///
-  /// <span class="material-symbols-rounded">no_sim</span> MaterialSymbolsRounded.no_sim
+/// <span class="material-symbols-rounded">no_photography</span> MaterialSymbolsRounded.no_photography
 ///
-  /// <span class="material-symbols-rounded">no_stroller</span> MaterialSymbolsRounded.no_stroller
+/// <span class="material-symbols-rounded">no_sim</span> MaterialSymbolsRounded.no_sim
 ///
-  /// <span class="material-symbols-rounded">no_transfer</span> MaterialSymbolsRounded.no_transfer
+/// <span class="material-symbols-rounded">no_stroller</span> MaterialSymbolsRounded.no_stroller
 ///
-  /// <span class="material-symbols-rounded">noise_aware</span> MaterialSymbolsRounded.noise_aware
+/// <span class="material-symbols-rounded">no_transfer</span> MaterialSymbolsRounded.no_transfer
 ///
-  /// <span class="material-symbols-rounded">noise_control_off</span> MaterialSymbolsRounded.noise_control_off
+/// <span class="material-symbols-rounded">noise_aware</span> MaterialSymbolsRounded.noise_aware
 ///
-  /// <span class="material-symbols-rounded">noise_control_on</span> MaterialSymbolsRounded.noise_control_on
+/// <span class="material-symbols-rounded">noise_control_off</span> MaterialSymbolsRounded.noise_control_off
 ///
-  /// <span class="material-symbols-rounded">nordic_walking</span> MaterialSymbolsRounded.nordic_walking
+/// <span class="material-symbols-rounded">noise_control_on</span> MaterialSymbolsRounded.noise_control_on
 ///
-  /// <span class="material-symbols-rounded">north</span> MaterialSymbolsRounded.north
+/// <span class="material-symbols-rounded">nordic_walking</span> MaterialSymbolsRounded.nordic_walking
 ///
-  /// <span class="material-symbols-rounded">north_east</span> MaterialSymbolsRounded.north_east
+/// <span class="material-symbols-rounded">north</span> MaterialSymbolsRounded.north
 ///
-  /// <span class="material-symbols-rounded">north_west</span> MaterialSymbolsRounded.north_west
+/// <span class="material-symbols-rounded">north_east</span> MaterialSymbolsRounded.north_east
 ///
-  /// <span class="material-symbols-rounded">not_accessible</span> MaterialSymbolsRounded.not_accessible
+/// <span class="material-symbols-rounded">north_west</span> MaterialSymbolsRounded.north_west
 ///
-  /// <span class="material-symbols-rounded">not_interested</span> MaterialSymbolsRounded.not_interested
+/// <span class="material-symbols-rounded">not_accessible</span> MaterialSymbolsRounded.not_accessible
 ///
-  /// <span class="material-symbols-rounded">not_listed_location</span> MaterialSymbolsRounded.not_listed_location
+/// <span class="material-symbols-rounded">not_interested</span> MaterialSymbolsRounded.not_interested
 ///
-  /// <span class="material-symbols-rounded">not_started</span> MaterialSymbolsRounded.not_started
+/// <span class="material-symbols-rounded">not_listed_location</span> MaterialSymbolsRounded.not_listed_location
 ///
-  /// <span class="material-symbols-rounded">note</span> MaterialSymbolsRounded.note
+/// <span class="material-symbols-rounded">not_started</span> MaterialSymbolsRounded.not_started
 ///
-  /// <span class="material-symbols-rounded">note_add</span> MaterialSymbolsRounded.note_add
+/// <span class="material-symbols-rounded">note</span> MaterialSymbolsRounded.note
 ///
-  /// <span class="material-symbols-rounded">note_alt</span> MaterialSymbolsRounded.note_alt
+/// <span class="material-symbols-rounded">note_add</span> MaterialSymbolsRounded.note_add
 ///
-  /// <span class="material-symbols-rounded">notes</span> MaterialSymbolsRounded.notes
+/// <span class="material-symbols-rounded">note_alt</span> MaterialSymbolsRounded.note_alt
 ///
-  /// <span class="material-symbols-rounded">notification_add</span> MaterialSymbolsRounded.notification_add
+/// <span class="material-symbols-rounded">notes</span> MaterialSymbolsRounded.notes
 ///
-  /// <span class="material-symbols-rounded">notification_important</span> MaterialSymbolsRounded.notification_important
+/// <span class="material-symbols-rounded">notification_add</span> MaterialSymbolsRounded.notification_add
 ///
-  /// <span class="material-symbols-rounded">notifications</span> MaterialSymbolsRounded.notifications
+/// <span class="material-symbols-rounded">notification_important</span> MaterialSymbolsRounded.notification_important
 ///
-  /// <span class="material-symbols-rounded">notifications_active</span> MaterialSymbolsRounded.notifications_active
+/// <span class="material-symbols-rounded">notifications</span> MaterialSymbolsRounded.notifications
 ///
-  /// <span class="material-symbols-rounded">notifications_none</span> MaterialSymbolsRounded.notifications_none
+/// <span class="material-symbols-rounded">notifications_active</span> MaterialSymbolsRounded.notifications_active
 ///
-  /// <span class="material-symbols-rounded">notifications_off</span> MaterialSymbolsRounded.notifications_off
+/// <span class="material-symbols-rounded">notifications_none</span> MaterialSymbolsRounded.notifications_none
 ///
-  /// <span class="material-symbols-rounded">notifications_paused</span> MaterialSymbolsRounded.notifications_paused
+/// <span class="material-symbols-rounded">notifications_off</span> MaterialSymbolsRounded.notifications_off
 ///
-  /// <span class="material-symbols-rounded">numbers</span> MaterialSymbolsRounded.numbers
+/// <span class="material-symbols-rounded">notifications_paused</span> MaterialSymbolsRounded.notifications_paused
 ///
-  /// <span class="material-symbols-rounded">nutrition</span> MaterialSymbolsRounded.nutrition
+/// <span class="material-symbols-rounded">numbers</span> MaterialSymbolsRounded.numbers
 ///
-  /// <span class="material-symbols-rounded">offline_bolt</span> MaterialSymbolsRounded.offline_bolt
+/// <span class="material-symbols-rounded">nutrition</span> MaterialSymbolsRounded.nutrition
 ///
-  /// <span class="material-symbols-rounded">offline_pin</span> MaterialSymbolsRounded.offline_pin
+/// <span class="material-symbols-rounded">offline_bolt</span> MaterialSymbolsRounded.offline_bolt
 ///
-  /// <span class="material-symbols-rounded">offline_share</span> MaterialSymbolsRounded.offline_share
+/// <span class="material-symbols-rounded">offline_pin</span> MaterialSymbolsRounded.offline_pin
 ///
-  /// <span class="material-symbols-rounded">oil_barrel</span> MaterialSymbolsRounded.oil_barrel
+/// <span class="material-symbols-rounded">offline_share</span> MaterialSymbolsRounded.offline_share
 ///
-  /// <span class="material-symbols-rounded">on_device_training</span> MaterialSymbolsRounded.on_device_training
+/// <span class="material-symbols-rounded">oil_barrel</span> MaterialSymbolsRounded.oil_barrel
 ///
-  /// <span class="material-symbols-rounded">oncology</span> MaterialSymbolsRounded.oncology
+/// <span class="material-symbols-rounded">on_device_training</span> MaterialSymbolsRounded.on_device_training
 ///
-  /// <span class="material-symbols-rounded">ondemand_video</span> MaterialSymbolsRounded.ondemand_video
+/// <span class="material-symbols-rounded">oncology</span> MaterialSymbolsRounded.oncology
 ///
-  /// <span class="material-symbols-rounded">online_prediction</span> MaterialSymbolsRounded.online_prediction
+/// <span class="material-symbols-rounded">ondemand_video</span> MaterialSymbolsRounded.ondemand_video
 ///
-  /// <span class="material-symbols-rounded">onsen</span> MaterialSymbolsRounded.onsen
+/// <span class="material-symbols-rounded">online_prediction</span> MaterialSymbolsRounded.online_prediction
 ///
-  /// <span class="material-symbols-rounded">opacity</span> MaterialSymbolsRounded.opacity
+/// <span class="material-symbols-rounded">onsen</span> MaterialSymbolsRounded.onsen
 ///
-  /// <span class="material-symbols-rounded">open_in_browser</span> MaterialSymbolsRounded.open_in_browser
+/// <span class="material-symbols-rounded">opacity</span> MaterialSymbolsRounded.opacity
 ///
-  /// <span class="material-symbols-rounded">open_in_full</span> MaterialSymbolsRounded.open_in_full
+/// <span class="material-symbols-rounded">open_in_browser</span> MaterialSymbolsRounded.open_in_browser
 ///
-  /// <span class="material-symbols-rounded">open_in_new</span> MaterialSymbolsRounded.open_in_new
+/// <span class="material-symbols-rounded">open_in_full</span> MaterialSymbolsRounded.open_in_full
 ///
-  /// <span class="material-symbols-rounded">open_in_new_down</span> MaterialSymbolsRounded.open_in_new_down
+/// <span class="material-symbols-rounded">open_in_new</span> MaterialSymbolsRounded.open_in_new
 ///
-  /// <span class="material-symbols-rounded">open_in_new_off</span> MaterialSymbolsRounded.open_in_new_off
+/// <span class="material-symbols-rounded">open_in_new_down</span> MaterialSymbolsRounded.open_in_new_down
 ///
-  /// <span class="material-symbols-rounded">open_with</span> MaterialSymbolsRounded.open_with
+/// <span class="material-symbols-rounded">open_in_new_off</span> MaterialSymbolsRounded.open_in_new_off
 ///
-  /// <span class="material-symbols-rounded">ophthalmology</span> MaterialSymbolsRounded.ophthalmology
+/// <span class="material-symbols-rounded">open_with</span> MaterialSymbolsRounded.open_with
 ///
-  /// <span class="material-symbols-rounded">oral_disease</span> MaterialSymbolsRounded.oral_disease
+/// <span class="material-symbols-rounded">ophthalmology</span> MaterialSymbolsRounded.ophthalmology
 ///
-  /// <span class="material-symbols-rounded">order_approve</span> MaterialSymbolsRounded.order_approve
+/// <span class="material-symbols-rounded">oral_disease</span> MaterialSymbolsRounded.oral_disease
 ///
-  /// <span class="material-symbols-rounded">order_play</span> MaterialSymbolsRounded.order_play
+/// <span class="material-symbols-rounded">order_approve</span> MaterialSymbolsRounded.order_approve
 ///
-  /// <span class="material-symbols-rounded">orthopedics</span> MaterialSymbolsRounded.orthopedics
+/// <span class="material-symbols-rounded">order_play</span> MaterialSymbolsRounded.order_play
 ///
-  /// <span class="material-symbols-rounded">other_admission</span> MaterialSymbolsRounded.other_admission
+/// <span class="material-symbols-rounded">orthopedics</span> MaterialSymbolsRounded.orthopedics
 ///
-  /// <span class="material-symbols-rounded">other_houses</span> MaterialSymbolsRounded.other_houses
+/// <span class="material-symbols-rounded">other_admission</span> MaterialSymbolsRounded.other_admission
 ///
-  /// <span class="material-symbols-rounded">outbound</span> MaterialSymbolsRounded.outbound
+/// <span class="material-symbols-rounded">other_houses</span> MaterialSymbolsRounded.other_houses
 ///
-  /// <span class="material-symbols-rounded">outbox</span> MaterialSymbolsRounded.outbox
+/// <span class="material-symbols-rounded">outbound</span> MaterialSymbolsRounded.outbound
 ///
-  /// <span class="material-symbols-rounded">outdoor_garden</span> MaterialSymbolsRounded.outdoor_garden
+/// <span class="material-symbols-rounded">outbox</span> MaterialSymbolsRounded.outbox
 ///
-  /// <span class="material-symbols-rounded">outdoor_grill</span> MaterialSymbolsRounded.outdoor_grill
+/// <span class="material-symbols-rounded">outdoor_garden</span> MaterialSymbolsRounded.outdoor_garden
 ///
-  /// <span class="material-symbols-rounded">outgoing_mail</span> MaterialSymbolsRounded.outgoing_mail
+/// <span class="material-symbols-rounded">outdoor_grill</span> MaterialSymbolsRounded.outdoor_grill
 ///
-  /// <span class="material-symbols-rounded">outlet</span> MaterialSymbolsRounded.outlet
+/// <span class="material-symbols-rounded">outgoing_mail</span> MaterialSymbolsRounded.outgoing_mail
 ///
-  /// <span class="material-symbols-rounded">outlined_flag</span> MaterialSymbolsRounded.outlined_flag
+/// <span class="material-symbols-rounded">outlet</span> MaterialSymbolsRounded.outlet
 ///
-  /// <span class="material-symbols-rounded">outpatient</span> MaterialSymbolsRounded.outpatient
+/// <span class="material-symbols-rounded">outlined_flag</span> MaterialSymbolsRounded.outlined_flag
 ///
-  /// <span class="material-symbols-rounded">outpatient_med</span> MaterialSymbolsRounded.outpatient_med
+/// <span class="material-symbols-rounded">outpatient</span> MaterialSymbolsRounded.outpatient
 ///
-  /// <span class="material-symbols-rounded">output</span> MaterialSymbolsRounded.output
+/// <span class="material-symbols-rounded">outpatient_med</span> MaterialSymbolsRounded.outpatient_med
 ///
-  /// <span class="material-symbols-rounded">output_circle</span> MaterialSymbolsRounded.output_circle
+/// <span class="material-symbols-rounded">output</span> MaterialSymbolsRounded.output
 ///
-  /// <span class="material-symbols-rounded">oven_gen</span> MaterialSymbolsRounded.oven_gen
+/// <span class="material-symbols-rounded">output_circle</span> MaterialSymbolsRounded.output_circle
 ///
-  /// <span class="material-symbols-rounded">overview</span> MaterialSymbolsRounded.overview
+/// <span class="material-symbols-rounded">oven_gen</span> MaterialSymbolsRounded.oven_gen
 ///
-  /// <span class="material-symbols-rounded">overview_key</span> MaterialSymbolsRounded.overview_key
+/// <span class="material-symbols-rounded">overview</span> MaterialSymbolsRounded.overview
 ///
-  /// <span class="material-symbols-rounded">oxygen_saturation</span> MaterialSymbolsRounded.oxygen_saturation
+/// <span class="material-symbols-rounded">overview_key</span> MaterialSymbolsRounded.overview_key
 ///
-  /// <span class="material-symbols-rounded">pace</span> MaterialSymbolsRounded.pace
+/// <span class="material-symbols-rounded">oxygen_saturation</span> MaterialSymbolsRounded.oxygen_saturation
 ///
-  /// <span class="material-symbols-rounded">pacemaker</span> MaterialSymbolsRounded.pacemaker
+/// <span class="material-symbols-rounded">pace</span> MaterialSymbolsRounded.pace
 ///
-  /// <span class="material-symbols-rounded">package</span> MaterialSymbolsRounded.package
+/// <span class="material-symbols-rounded">pacemaker</span> MaterialSymbolsRounded.pacemaker
 ///
-  /// <span class="material-symbols-rounded">padding</span> MaterialSymbolsRounded.padding
+/// <span class="material-symbols-rounded">package</span> MaterialSymbolsRounded.package
 ///
-  /// <span class="material-symbols-rounded">pages</span> MaterialSymbolsRounded.pages
+/// <span class="material-symbols-rounded">padding</span> MaterialSymbolsRounded.padding
 ///
-  /// <span class="material-symbols-rounded">pageview</span> MaterialSymbolsRounded.pageview
+/// <span class="material-symbols-rounded">pages</span> MaterialSymbolsRounded.pages
 ///
-  /// <span class="material-symbols-rounded">paid</span> MaterialSymbolsRounded.paid
+/// <span class="material-symbols-rounded">pageview</span> MaterialSymbolsRounded.pageview
 ///
-  /// <span class="material-symbols-rounded">palette</span> MaterialSymbolsRounded.palette
+/// <span class="material-symbols-rounded">paid</span> MaterialSymbolsRounded.paid
 ///
-  /// <span class="material-symbols-rounded">pallet</span> MaterialSymbolsRounded.pallet
+/// <span class="material-symbols-rounded">palette</span> MaterialSymbolsRounded.palette
 ///
-  /// <span class="material-symbols-rounded">pan_tool</span> MaterialSymbolsRounded.pan_tool
+/// <span class="material-symbols-rounded">pallet</span> MaterialSymbolsRounded.pallet
 ///
-  /// <span class="material-symbols-rounded">pan_tool_alt</span> MaterialSymbolsRounded.pan_tool_alt
+/// <span class="material-symbols-rounded">pan_tool</span> MaterialSymbolsRounded.pan_tool
 ///
-  /// <span class="material-symbols-rounded">panorama</span> MaterialSymbolsRounded.panorama
+/// <span class="material-symbols-rounded">pan_tool_alt</span> MaterialSymbolsRounded.pan_tool_alt
 ///
-  /// <span class="material-symbols-rounded">panorama_fish_eye</span> MaterialSymbolsRounded.panorama_fish_eye
+/// <span class="material-symbols-rounded">panorama</span> MaterialSymbolsRounded.panorama
 ///
-  /// <span class="material-symbols-rounded">panorama_horizontal</span> MaterialSymbolsRounded.panorama_horizontal
+/// <span class="material-symbols-rounded">panorama_fish_eye</span> MaterialSymbolsRounded.panorama_fish_eye
 ///
-  /// <span class="material-symbols-rounded">panorama_photosphere</span> MaterialSymbolsRounded.panorama_photosphere
+/// <span class="material-symbols-rounded">panorama_horizontal</span> MaterialSymbolsRounded.panorama_horizontal
 ///
-  /// <span class="material-symbols-rounded">panorama_vertical</span> MaterialSymbolsRounded.panorama_vertical
+/// <span class="material-symbols-rounded">panorama_photosphere</span> MaterialSymbolsRounded.panorama_photosphere
 ///
-  /// <span class="material-symbols-rounded">panorama_wide_angle</span> MaterialSymbolsRounded.panorama_wide_angle
+/// <span class="material-symbols-rounded">panorama_vertical</span> MaterialSymbolsRounded.panorama_vertical
 ///
-  /// <span class="material-symbols-rounded">paragliding</span> MaterialSymbolsRounded.paragliding
+/// <span class="material-symbols-rounded">panorama_wide_angle</span> MaterialSymbolsRounded.panorama_wide_angle
 ///
-  /// <span class="material-symbols-rounded">park</span> MaterialSymbolsRounded.park
+/// <span class="material-symbols-rounded">paragliding</span> MaterialSymbolsRounded.paragliding
 ///
-  /// <span class="material-symbols-rounded">partly_cloudy_day</span> MaterialSymbolsRounded.partly_cloudy_day
+/// <span class="material-symbols-rounded">park</span> MaterialSymbolsRounded.park
 ///
-  /// <span class="material-symbols-rounded">partly_cloudy_night</span> MaterialSymbolsRounded.partly_cloudy_night
+/// <span class="material-symbols-rounded">partly_cloudy_day</span> MaterialSymbolsRounded.partly_cloudy_day
 ///
-  /// <span class="material-symbols-rounded">party_mode</span> MaterialSymbolsRounded.party_mode
+/// <span class="material-symbols-rounded">partly_cloudy_night</span> MaterialSymbolsRounded.partly_cloudy_night
 ///
-  /// <span class="material-symbols-rounded">password</span> MaterialSymbolsRounded.password
+/// <span class="material-symbols-rounded">party_mode</span> MaterialSymbolsRounded.party_mode
 ///
-  /// <span class="material-symbols-rounded">patient_list</span> MaterialSymbolsRounded.patient_list
+/// <span class="material-symbols-rounded">password</span> MaterialSymbolsRounded.password
 ///
-  /// <span class="material-symbols-rounded">pattern</span> MaterialSymbolsRounded.pattern
+/// <span class="material-symbols-rounded">patient_list</span> MaterialSymbolsRounded.patient_list
 ///
-  /// <span class="material-symbols-rounded">pause</span> MaterialSymbolsRounded.pause
+/// <span class="material-symbols-rounded">pattern</span> MaterialSymbolsRounded.pattern
 ///
-  /// <span class="material-symbols-rounded">pause_circle</span> MaterialSymbolsRounded.pause_circle
+/// <span class="material-symbols-rounded">pause</span> MaterialSymbolsRounded.pause
 ///
-  /// <span class="material-symbols-rounded">pause_circle_filled</span> MaterialSymbolsRounded.pause_circle_filled
+/// <span class="material-symbols-rounded">pause_circle</span> MaterialSymbolsRounded.pause_circle
 ///
-  /// <span class="material-symbols-rounded">pause_circle_outline</span> MaterialSymbolsRounded.pause_circle_outline
+/// <span class="material-symbols-rounded">pause_circle_filled</span> MaterialSymbolsRounded.pause_circle_filled
 ///
-  /// <span class="material-symbols-rounded">pause_presentation</span> MaterialSymbolsRounded.pause_presentation
+/// <span class="material-symbols-rounded">pause_circle_outline</span> MaterialSymbolsRounded.pause_circle_outline
 ///
-  /// <span class="material-symbols-rounded">payment</span> MaterialSymbolsRounded.payment
+/// <span class="material-symbols-rounded">pause_presentation</span> MaterialSymbolsRounded.pause_presentation
 ///
-  /// <span class="material-symbols-rounded">payments</span> MaterialSymbolsRounded.payments
+/// <span class="material-symbols-rounded">payment</span> MaterialSymbolsRounded.payment
 ///
-  /// <span class="material-symbols-rounded">pdf_off</span> MaterialSymbolsRounded.pdf_off
+/// <span class="material-symbols-rounded">payments</span> MaterialSymbolsRounded.payments
 ///
-  /// <span class="material-symbols-rounded">pedal_bike</span> MaterialSymbolsRounded.pedal_bike
+/// <span class="material-symbols-rounded">pdf_off</span> MaterialSymbolsRounded.pdf_off
 ///
-  /// <span class="material-symbols-rounded">pediatrics</span> MaterialSymbolsRounded.pediatrics
+/// <span class="material-symbols-rounded">pedal_bike</span> MaterialSymbolsRounded.pedal_bike
 ///
-  /// <span class="material-symbols-rounded">pen_size_1</span> MaterialSymbolsRounded.pen_size_1
+/// <span class="material-symbols-rounded">pediatrics</span> MaterialSymbolsRounded.pediatrics
 ///
-  /// <span class="material-symbols-rounded">pen_size_2</span> MaterialSymbolsRounded.pen_size_2
+/// <span class="material-symbols-rounded">pen_size_1</span> MaterialSymbolsRounded.pen_size_1
 ///
-  /// <span class="material-symbols-rounded">pen_size_3</span> MaterialSymbolsRounded.pen_size_3
+/// <span class="material-symbols-rounded">pen_size_2</span> MaterialSymbolsRounded.pen_size_2
 ///
-  /// <span class="material-symbols-rounded">pen_size_4</span> MaterialSymbolsRounded.pen_size_4
+/// <span class="material-symbols-rounded">pen_size_3</span> MaterialSymbolsRounded.pen_size_3
 ///
-  /// <span class="material-symbols-rounded">pen_size_5</span> MaterialSymbolsRounded.pen_size_5
+/// <span class="material-symbols-rounded">pen_size_4</span> MaterialSymbolsRounded.pen_size_4
 ///
-  /// <span class="material-symbols-rounded">pending</span> MaterialSymbolsRounded.pending
+/// <span class="material-symbols-rounded">pen_size_5</span> MaterialSymbolsRounded.pen_size_5
 ///
-  /// <span class="material-symbols-rounded">pending_actions</span> MaterialSymbolsRounded.pending_actions
+/// <span class="material-symbols-rounded">pending</span> MaterialSymbolsRounded.pending
 ///
-  /// <span class="material-symbols-rounded">pentagon</span> MaterialSymbolsRounded.pentagon
+/// <span class="material-symbols-rounded">pending_actions</span> MaterialSymbolsRounded.pending_actions
 ///
-  /// <span class="material-symbols-rounded">people</span> MaterialSymbolsRounded.people
+/// <span class="material-symbols-rounded">pentagon</span> MaterialSymbolsRounded.pentagon
 ///
-  /// <span class="material-symbols-rounded">people_alt</span> MaterialSymbolsRounded.people_alt
+/// <span class="material-symbols-rounded">people</span> MaterialSymbolsRounded.people
 ///
-  /// <span class="material-symbols-rounded">people_outline</span> MaterialSymbolsRounded.people_outline
+/// <span class="material-symbols-rounded">people_alt</span> MaterialSymbolsRounded.people_alt
 ///
-  /// <span class="material-symbols-rounded">percent</span> MaterialSymbolsRounded.percent
+/// <span class="material-symbols-rounded">people_outline</span> MaterialSymbolsRounded.people_outline
 ///
-  /// <span class="material-symbols-rounded">pergola</span> MaterialSymbolsRounded.pergola
+/// <span class="material-symbols-rounded">percent</span> MaterialSymbolsRounded.percent
 ///
-  /// <span class="material-symbols-rounded">perm_camera_mic</span> MaterialSymbolsRounded.perm_camera_mic
+/// <span class="material-symbols-rounded">pergola</span> MaterialSymbolsRounded.pergola
 ///
-  /// <span class="material-symbols-rounded">perm_contact_calendar</span> MaterialSymbolsRounded.perm_contact_calendar
+/// <span class="material-symbols-rounded">perm_camera_mic</span> MaterialSymbolsRounded.perm_camera_mic
 ///
-  /// <span class="material-symbols-rounded">perm_data_setting</span> MaterialSymbolsRounded.perm_data_setting
+/// <span class="material-symbols-rounded">perm_contact_calendar</span> MaterialSymbolsRounded.perm_contact_calendar
 ///
-  /// <span class="material-symbols-rounded">perm_device_information</span> MaterialSymbolsRounded.perm_device_information
+/// <span class="material-symbols-rounded">perm_data_setting</span> MaterialSymbolsRounded.perm_data_setting
 ///
-  /// <span class="material-symbols-rounded">perm_identity</span> MaterialSymbolsRounded.perm_identity
+/// <span class="material-symbols-rounded">perm_device_information</span> MaterialSymbolsRounded.perm_device_information
 ///
-  /// <span class="material-symbols-rounded">perm_media</span> MaterialSymbolsRounded.perm_media
+/// <span class="material-symbols-rounded">perm_identity</span> MaterialSymbolsRounded.perm_identity
 ///
-  /// <span class="material-symbols-rounded">perm_phone_msg</span> MaterialSymbolsRounded.perm_phone_msg
+/// <span class="material-symbols-rounded">perm_media</span> MaterialSymbolsRounded.perm_media
 ///
-  /// <span class="material-symbols-rounded">perm_scan_wifi</span> MaterialSymbolsRounded.perm_scan_wifi
+/// <span class="material-symbols-rounded">perm_phone_msg</span> MaterialSymbolsRounded.perm_phone_msg
 ///
-  /// <span class="material-symbols-rounded">person</span> MaterialSymbolsRounded.person
+/// <span class="material-symbols-rounded">perm_scan_wifi</span> MaterialSymbolsRounded.perm_scan_wifi
 ///
-  /// <span class="material-symbols-rounded">person_2</span> MaterialSymbolsRounded.person_2
+/// <span class="material-symbols-rounded">person</span> MaterialSymbolsRounded.person
 ///
-  /// <span class="material-symbols-rounded">person_3</span> MaterialSymbolsRounded.person_3
+/// <span class="material-symbols-rounded">person_2</span> MaterialSymbolsRounded.person_2
 ///
-  /// <span class="material-symbols-rounded">person_4</span> MaterialSymbolsRounded.person_4
+/// <span class="material-symbols-rounded">person_3</span> MaterialSymbolsRounded.person_3
 ///
-  /// <span class="material-symbols-rounded">person_add</span> MaterialSymbolsRounded.person_add
+/// <span class="material-symbols-rounded">person_4</span> MaterialSymbolsRounded.person_4
 ///
-  /// <span class="material-symbols-rounded">person_add_alt</span> MaterialSymbolsRounded.person_add_alt
+/// <span class="material-symbols-rounded">person_add</span> MaterialSymbolsRounded.person_add
 ///
-  /// <span class="material-symbols-rounded">person_add_disabled</span> MaterialSymbolsRounded.person_add_disabled
+/// <span class="material-symbols-rounded">person_add_alt</span> MaterialSymbolsRounded.person_add_alt
 ///
-  /// <span class="material-symbols-rounded">person_filled</span> MaterialSymbolsRounded.person_filled
+/// <span class="material-symbols-rounded">person_add_disabled</span> MaterialSymbolsRounded.person_add_disabled
 ///
-  /// <span class="material-symbols-rounded">person_off</span> MaterialSymbolsRounded.person_off
+/// <span class="material-symbols-rounded">person_filled</span> MaterialSymbolsRounded.person_filled
 ///
-  /// <span class="material-symbols-rounded">person_outline</span> MaterialSymbolsRounded.person_outline
+/// <span class="material-symbols-rounded">person_off</span> MaterialSymbolsRounded.person_off
 ///
-  /// <span class="material-symbols-rounded">person_pin</span> MaterialSymbolsRounded.person_pin
+/// <span class="material-symbols-rounded">person_outline</span> MaterialSymbolsRounded.person_outline
 ///
-  /// <span class="material-symbols-rounded">person_pin_circle</span> MaterialSymbolsRounded.person_pin_circle
+/// <span class="material-symbols-rounded">person_pin</span> MaterialSymbolsRounded.person_pin
 ///
-  /// <span class="material-symbols-rounded">person_remove</span> MaterialSymbolsRounded.person_remove
+/// <span class="material-symbols-rounded">person_pin_circle</span> MaterialSymbolsRounded.person_pin_circle
 ///
-  /// <span class="material-symbols-rounded">person_search</span> MaterialSymbolsRounded.person_search
+/// <span class="material-symbols-rounded">person_remove</span> MaterialSymbolsRounded.person_remove
 ///
-  /// <span class="material-symbols-rounded">personal_injury</span> MaterialSymbolsRounded.personal_injury
+/// <span class="material-symbols-rounded">person_search</span> MaterialSymbolsRounded.person_search
 ///
-  /// <span class="material-symbols-rounded">personal_video</span> MaterialSymbolsRounded.personal_video
+/// <span class="material-symbols-rounded">personal_injury</span> MaterialSymbolsRounded.personal_injury
 ///
-  /// <span class="material-symbols-rounded">pest_control</span> MaterialSymbolsRounded.pest_control
+/// <span class="material-symbols-rounded">personal_video</span> MaterialSymbolsRounded.personal_video
 ///
-  /// <span class="material-symbols-rounded">pest_control_rodent</span> MaterialSymbolsRounded.pest_control_rodent
+/// <span class="material-symbols-rounded">pest_control</span> MaterialSymbolsRounded.pest_control
 ///
-  /// <span class="material-symbols-rounded">pets</span> MaterialSymbolsRounded.pets
+/// <span class="material-symbols-rounded">pest_control_rodent</span> MaterialSymbolsRounded.pest_control_rodent
 ///
-  /// <span class="material-symbols-rounded">phishing</span> MaterialSymbolsRounded.phishing
+/// <span class="material-symbols-rounded">pets</span> MaterialSymbolsRounded.pets
 ///
-  /// <span class="material-symbols-rounded">phone</span> MaterialSymbolsRounded.phone
+/// <span class="material-symbols-rounded">phishing</span> MaterialSymbolsRounded.phishing
 ///
-  /// <span class="material-symbols-rounded">phone_alt</span> MaterialSymbolsRounded.phone_alt
+/// <span class="material-symbols-rounded">phone</span> MaterialSymbolsRounded.phone
 ///
-  /// <span class="material-symbols-rounded">phone_android</span> MaterialSymbolsRounded.phone_android
+/// <span class="material-symbols-rounded">phone_alt</span> MaterialSymbolsRounded.phone_alt
 ///
-  /// <span class="material-symbols-rounded">phone_bluetooth_speaker</span> MaterialSymbolsRounded.phone_bluetooth_speaker
+/// <span class="material-symbols-rounded">phone_android</span> MaterialSymbolsRounded.phone_android
 ///
-  /// <span class="material-symbols-rounded">phone_callback</span> MaterialSymbolsRounded.phone_callback
+/// <span class="material-symbols-rounded">phone_bluetooth_speaker</span> MaterialSymbolsRounded.phone_bluetooth_speaker
 ///
-  /// <span class="material-symbols-rounded">phone_disabled</span> MaterialSymbolsRounded.phone_disabled
+/// <span class="material-symbols-rounded">phone_callback</span> MaterialSymbolsRounded.phone_callback
 ///
-  /// <span class="material-symbols-rounded">phone_enabled</span> MaterialSymbolsRounded.phone_enabled
+/// <span class="material-symbols-rounded">phone_disabled</span> MaterialSymbolsRounded.phone_disabled
 ///
-  /// <span class="material-symbols-rounded">phone_forwarded</span> MaterialSymbolsRounded.phone_forwarded
+/// <span class="material-symbols-rounded">phone_enabled</span> MaterialSymbolsRounded.phone_enabled
 ///
-  /// <span class="material-symbols-rounded">phone_in_talk</span> MaterialSymbolsRounded.phone_in_talk
+/// <span class="material-symbols-rounded">phone_forwarded</span> MaterialSymbolsRounded.phone_forwarded
 ///
-  /// <span class="material-symbols-rounded">phone_in_talk_watchface_indicator</span> MaterialSymbolsRounded.phone_in_talk_watchface_indicator
+/// <span class="material-symbols-rounded">phone_in_talk</span> MaterialSymbolsRounded.phone_in_talk
 ///
-  /// <span class="material-symbols-rounded">phone_iphone</span> MaterialSymbolsRounded.phone_iphone
+/// <span class="material-symbols-rounded">phone_in_talk_watchface_indicator</span> MaterialSymbolsRounded.phone_in_talk_watchface_indicator
 ///
-  /// <span class="material-symbols-rounded">phone_locked</span> MaterialSymbolsRounded.phone_locked
+/// <span class="material-symbols-rounded">phone_iphone</span> MaterialSymbolsRounded.phone_iphone
 ///
-  /// <span class="material-symbols-rounded">phone_missed</span> MaterialSymbolsRounded.phone_missed
+/// <span class="material-symbols-rounded">phone_locked</span> MaterialSymbolsRounded.phone_locked
 ///
-  /// <span class="material-symbols-rounded">phone_paused</span> MaterialSymbolsRounded.phone_paused
+/// <span class="material-symbols-rounded">phone_missed</span> MaterialSymbolsRounded.phone_missed
 ///
-  /// <span class="material-symbols-rounded">phonelink</span> MaterialSymbolsRounded.phonelink
+/// <span class="material-symbols-rounded">phone_paused</span> MaterialSymbolsRounded.phone_paused
 ///
-  /// <span class="material-symbols-rounded">phonelink_erase</span> MaterialSymbolsRounded.phonelink_erase
+/// <span class="material-symbols-rounded">phonelink</span> MaterialSymbolsRounded.phonelink
 ///
-  /// <span class="material-symbols-rounded">phonelink_lock</span> MaterialSymbolsRounded.phonelink_lock
+/// <span class="material-symbols-rounded">phonelink_erase</span> MaterialSymbolsRounded.phonelink_erase
 ///
-  /// <span class="material-symbols-rounded">phonelink_off</span> MaterialSymbolsRounded.phonelink_off
+/// <span class="material-symbols-rounded">phonelink_lock</span> MaterialSymbolsRounded.phonelink_lock
 ///
-  /// <span class="material-symbols-rounded">phonelink_ring</span> MaterialSymbolsRounded.phonelink_ring
+/// <span class="material-symbols-rounded">phonelink_off</span> MaterialSymbolsRounded.phonelink_off
 ///
-  /// <span class="material-symbols-rounded">phonelink_ring_off</span> MaterialSymbolsRounded.phonelink_ring_off
+/// <span class="material-symbols-rounded">phonelink_ring</span> MaterialSymbolsRounded.phonelink_ring
 ///
-  /// <span class="material-symbols-rounded">phonelink_setup</span> MaterialSymbolsRounded.phonelink_setup
+/// <span class="material-symbols-rounded">phonelink_ring_off</span> MaterialSymbolsRounded.phonelink_ring_off
 ///
-  /// <span class="material-symbols-rounded">photo</span> MaterialSymbolsRounded.photo
+/// <span class="material-symbols-rounded">phonelink_setup</span> MaterialSymbolsRounded.phonelink_setup
 ///
-  /// <span class="material-symbols-rounded">photo_album</span> MaterialSymbolsRounded.photo_album
+/// <span class="material-symbols-rounded">photo</span> MaterialSymbolsRounded.photo
 ///
-  /// <span class="material-symbols-rounded">photo_camera</span> MaterialSymbolsRounded.photo_camera
+/// <span class="material-symbols-rounded">photo_album</span> MaterialSymbolsRounded.photo_album
 ///
-  /// <span class="material-symbols-rounded">photo_camera_back</span> MaterialSymbolsRounded.photo_camera_back
+/// <span class="material-symbols-rounded">photo_camera</span> MaterialSymbolsRounded.photo_camera
 ///
-  /// <span class="material-symbols-rounded">photo_camera_front</span> MaterialSymbolsRounded.photo_camera_front
+/// <span class="material-symbols-rounded">photo_camera_back</span> MaterialSymbolsRounded.photo_camera_back
 ///
-  /// <span class="material-symbols-rounded">photo_filter</span> MaterialSymbolsRounded.photo_filter
+/// <span class="material-symbols-rounded">photo_camera_front</span> MaterialSymbolsRounded.photo_camera_front
 ///
-  /// <span class="material-symbols-rounded">photo_frame</span> MaterialSymbolsRounded.photo_frame
+/// <span class="material-symbols-rounded">photo_filter</span> MaterialSymbolsRounded.photo_filter
 ///
-  /// <span class="material-symbols-rounded">photo_library</span> MaterialSymbolsRounded.photo_library
+/// <span class="material-symbols-rounded">photo_frame</span> MaterialSymbolsRounded.photo_frame
 ///
-  /// <span class="material-symbols-rounded">photo_size_select_actual</span> MaterialSymbolsRounded.photo_size_select_actual
+/// <span class="material-symbols-rounded">photo_library</span> MaterialSymbolsRounded.photo_library
 ///
-  /// <span class="material-symbols-rounded">photo_size_select_large</span> MaterialSymbolsRounded.photo_size_select_large
+/// <span class="material-symbols-rounded">photo_size_select_actual</span> MaterialSymbolsRounded.photo_size_select_actual
 ///
-  /// <span class="material-symbols-rounded">photo_size_select_small</span> MaterialSymbolsRounded.photo_size_select_small
+/// <span class="material-symbols-rounded">photo_size_select_large</span> MaterialSymbolsRounded.photo_size_select_large
 ///
-  /// <span class="material-symbols-rounded">php</span> MaterialSymbolsRounded.php
+/// <span class="material-symbols-rounded">photo_size_select_small</span> MaterialSymbolsRounded.photo_size_select_small
 ///
-  /// <span class="material-symbols-rounded">physical_therapy</span> MaterialSymbolsRounded.physical_therapy
+/// <span class="material-symbols-rounded">php</span> MaterialSymbolsRounded.php
 ///
-  /// <span class="material-symbols-rounded">piano</span> MaterialSymbolsRounded.piano
+/// <span class="material-symbols-rounded">physical_therapy</span> MaterialSymbolsRounded.physical_therapy
 ///
-  /// <span class="material-symbols-rounded">piano_off</span> MaterialSymbolsRounded.piano_off
+/// <span class="material-symbols-rounded">piano</span> MaterialSymbolsRounded.piano
 ///
-  /// <span class="material-symbols-rounded">picture_as_pdf</span> MaterialSymbolsRounded.picture_as_pdf
+/// <span class="material-symbols-rounded">piano_off</span> MaterialSymbolsRounded.piano_off
 ///
-  /// <span class="material-symbols-rounded">picture_in_picture</span> MaterialSymbolsRounded.picture_in_picture
+/// <span class="material-symbols-rounded">picture_as_pdf</span> MaterialSymbolsRounded.picture_as_pdf
 ///
-  /// <span class="material-symbols-rounded">picture_in_picture_alt</span> MaterialSymbolsRounded.picture_in_picture_alt
+/// <span class="material-symbols-rounded">picture_in_picture</span> MaterialSymbolsRounded.picture_in_picture
 ///
-  /// <span class="material-symbols-rounded">pie_chart</span> MaterialSymbolsRounded.pie_chart
+/// <span class="material-symbols-rounded">picture_in_picture_alt</span> MaterialSymbolsRounded.picture_in_picture_alt
 ///
-  /// <span class="material-symbols-rounded">pie_chart_filled</span> MaterialSymbolsRounded.pie_chart_filled
+/// <span class="material-symbols-rounded">pie_chart</span> MaterialSymbolsRounded.pie_chart
 ///
-  /// <span class="material-symbols-rounded">pie_chart_outline</span> MaterialSymbolsRounded.pie_chart_outline
+/// <span class="material-symbols-rounded">pie_chart_filled</span> MaterialSymbolsRounded.pie_chart_filled
 ///
-  /// <span class="material-symbols-rounded">pie_chart_outlined</span> MaterialSymbolsRounded.pie_chart_outlined
+/// <span class="material-symbols-rounded">pie_chart_outline</span> MaterialSymbolsRounded.pie_chart_outline
 ///
-  /// <span class="material-symbols-rounded">pill</span> MaterialSymbolsRounded.pill
+/// <span class="material-symbols-rounded">pie_chart_outlined</span> MaterialSymbolsRounded.pie_chart_outlined
 ///
-  /// <span class="material-symbols-rounded">pill_off</span> MaterialSymbolsRounded.pill_off
+/// <span class="material-symbols-rounded">pill</span> MaterialSymbolsRounded.pill
 ///
-  /// <span class="material-symbols-rounded">pin</span> MaterialSymbolsRounded.pin
+/// <span class="material-symbols-rounded">pill_off</span> MaterialSymbolsRounded.pill_off
 ///
-  /// <span class="material-symbols-rounded">pin_drop</span> MaterialSymbolsRounded.pin_drop
+/// <span class="material-symbols-rounded">pin</span> MaterialSymbolsRounded.pin
 ///
-  /// <span class="material-symbols-rounded">pin_end</span> MaterialSymbolsRounded.pin_end
+/// <span class="material-symbols-rounded">pin_drop</span> MaterialSymbolsRounded.pin_drop
 ///
-  /// <span class="material-symbols-rounded">pin_invoke</span> MaterialSymbolsRounded.pin_invoke
+/// <span class="material-symbols-rounded">pin_end</span> MaterialSymbolsRounded.pin_end
 ///
-  /// <span class="material-symbols-rounded">pinch</span> MaterialSymbolsRounded.pinch
+/// <span class="material-symbols-rounded">pin_invoke</span> MaterialSymbolsRounded.pin_invoke
 ///
-  /// <span class="material-symbols-rounded">pinch_zoom_in</span> MaterialSymbolsRounded.pinch_zoom_in
+/// <span class="material-symbols-rounded">pinch</span> MaterialSymbolsRounded.pinch
 ///
-  /// <span class="material-symbols-rounded">pinch_zoom_out</span> MaterialSymbolsRounded.pinch_zoom_out
+/// <span class="material-symbols-rounded">pinch_zoom_in</span> MaterialSymbolsRounded.pinch_zoom_in
 ///
-  /// <span class="material-symbols-rounded">pip_exit</span> MaterialSymbolsRounded.pip_exit
+/// <span class="material-symbols-rounded">pinch_zoom_out</span> MaterialSymbolsRounded.pinch_zoom_out
 ///
-  /// <span class="material-symbols-rounded">pivot_table_chart</span> MaterialSymbolsRounded.pivot_table_chart
+/// <span class="material-symbols-rounded">pip_exit</span> MaterialSymbolsRounded.pip_exit
 ///
-  /// <span class="material-symbols-rounded">pixel_3_3xl_3a</span> MaterialSymbolsRounded.pixel_3_3xl_3a
+/// <span class="material-symbols-rounded">pivot_table_chart</span> MaterialSymbolsRounded.pivot_table_chart
 ///
-  /// <span class="material-symbols-rounded">place</span> MaterialSymbolsRounded.place
+/// <span class="material-symbols-rounded">pixel_3_3xl_3a</span> MaterialSymbolsRounded.pixel_3_3xl_3a
 ///
-  /// <span class="material-symbols-rounded">place_item</span> MaterialSymbolsRounded.place_item
+/// <span class="material-symbols-rounded">place</span> MaterialSymbolsRounded.place
 ///
-  /// <span class="material-symbols-rounded">plagiarism</span> MaterialSymbolsRounded.plagiarism
+/// <span class="material-symbols-rounded">place_item</span> MaterialSymbolsRounded.place_item
 ///
-  /// <span class="material-symbols-rounded">play_arrow</span> MaterialSymbolsRounded.play_arrow
+/// <span class="material-symbols-rounded">plagiarism</span> MaterialSymbolsRounded.plagiarism
 ///
-  /// <span class="material-symbols-rounded">play_circle</span> MaterialSymbolsRounded.play_circle
+/// <span class="material-symbols-rounded">play_arrow</span> MaterialSymbolsRounded.play_arrow
 ///
-  /// <span class="material-symbols-rounded">play_disabled</span> MaterialSymbolsRounded.play_disabled
+/// <span class="material-symbols-rounded">play_circle</span> MaterialSymbolsRounded.play_circle
 ///
-  /// <span class="material-symbols-rounded">play_for_work</span> MaterialSymbolsRounded.play_for_work
+/// <span class="material-symbols-rounded">play_disabled</span> MaterialSymbolsRounded.play_disabled
 ///
-  /// <span class="material-symbols-rounded">play_lesson</span> MaterialSymbolsRounded.play_lesson
+/// <span class="material-symbols-rounded">play_for_work</span> MaterialSymbolsRounded.play_for_work
 ///
-  /// <span class="material-symbols-rounded">play_pause</span> MaterialSymbolsRounded.play_pause
+/// <span class="material-symbols-rounded">play_lesson</span> MaterialSymbolsRounded.play_lesson
 ///
-  /// <span class="material-symbols-rounded">playlist_add</span> MaterialSymbolsRounded.playlist_add
+/// <span class="material-symbols-rounded">play_pause</span> MaterialSymbolsRounded.play_pause
 ///
-  /// <span class="material-symbols-rounded">playlist_add_check</span> MaterialSymbolsRounded.playlist_add_check
+/// <span class="material-symbols-rounded">playlist_add</span> MaterialSymbolsRounded.playlist_add
 ///
-  /// <span class="material-symbols-rounded">playlist_add_check_circle</span> MaterialSymbolsRounded.playlist_add_check_circle
+/// <span class="material-symbols-rounded">playlist_add_check</span> MaterialSymbolsRounded.playlist_add_check
 ///
-  /// <span class="material-symbols-rounded">playlist_add_circle</span> MaterialSymbolsRounded.playlist_add_circle
+/// <span class="material-symbols-rounded">playlist_add_check_circle</span> MaterialSymbolsRounded.playlist_add_check_circle
 ///
-  /// <span class="material-symbols-rounded">playlist_play</span> MaterialSymbolsRounded.playlist_play
+/// <span class="material-symbols-rounded">playlist_add_circle</span> MaterialSymbolsRounded.playlist_add_circle
 ///
-  /// <span class="material-symbols-rounded">playlist_remove</span> MaterialSymbolsRounded.playlist_remove
+/// <span class="material-symbols-rounded">playlist_play</span> MaterialSymbolsRounded.playlist_play
 ///
-  /// <span class="material-symbols-rounded">plumbing</span> MaterialSymbolsRounded.plumbing
+/// <span class="material-symbols-rounded">playlist_remove</span> MaterialSymbolsRounded.playlist_remove
 ///
-  /// <span class="material-symbols-rounded">plus_one</span> MaterialSymbolsRounded.plus_one
+/// <span class="material-symbols-rounded">plumbing</span> MaterialSymbolsRounded.plumbing
 ///
-  /// <span class="material-symbols-rounded">podcasts</span> MaterialSymbolsRounded.podcasts
+/// <span class="material-symbols-rounded">plus_one</span> MaterialSymbolsRounded.plus_one
 ///
-  /// <span class="material-symbols-rounded">podiatry</span> MaterialSymbolsRounded.podiatry
+/// <span class="material-symbols-rounded">podcasts</span> MaterialSymbolsRounded.podcasts
 ///
-  /// <span class="material-symbols-rounded">podium</span> MaterialSymbolsRounded.podium
+/// <span class="material-symbols-rounded">podiatry</span> MaterialSymbolsRounded.podiatry
 ///
-  /// <span class="material-symbols-rounded">point_of_sale</span> MaterialSymbolsRounded.point_of_sale
+/// <span class="material-symbols-rounded">podium</span> MaterialSymbolsRounded.podium
 ///
-  /// <span class="material-symbols-rounded">point_scan</span> MaterialSymbolsRounded.point_scan
+/// <span class="material-symbols-rounded">point_of_sale</span> MaterialSymbolsRounded.point_of_sale
 ///
-  /// <span class="material-symbols-rounded">policy</span> MaterialSymbolsRounded.policy
+/// <span class="material-symbols-rounded">point_scan</span> MaterialSymbolsRounded.point_scan
 ///
-  /// <span class="material-symbols-rounded">poll</span> MaterialSymbolsRounded.poll
+/// <span class="material-symbols-rounded">policy</span> MaterialSymbolsRounded.policy
 ///
-  /// <span class="material-symbols-rounded">polyline</span> MaterialSymbolsRounded.polyline
+/// <span class="material-symbols-rounded">poll</span> MaterialSymbolsRounded.poll
 ///
-  /// <span class="material-symbols-rounded">polymer</span> MaterialSymbolsRounded.polymer
+/// <span class="material-symbols-rounded">polyline</span> MaterialSymbolsRounded.polyline
 ///
-  /// <span class="material-symbols-rounded">pool</span> MaterialSymbolsRounded.pool
+/// <span class="material-symbols-rounded">polymer</span> MaterialSymbolsRounded.polymer
 ///
-  /// <span class="material-symbols-rounded">portable_wifi_off</span> MaterialSymbolsRounded.portable_wifi_off
+/// <span class="material-symbols-rounded">pool</span> MaterialSymbolsRounded.pool
 ///
-  /// <span class="material-symbols-rounded">portrait</span> MaterialSymbolsRounded.portrait
+/// <span class="material-symbols-rounded">portable_wifi_off</span> MaterialSymbolsRounded.portable_wifi_off
 ///
-  /// <span class="material-symbols-rounded">portrait_lighting</span> MaterialSymbolsRounded.portrait_lighting
+/// <span class="material-symbols-rounded">portrait</span> MaterialSymbolsRounded.portrait
 ///
-  /// <span class="material-symbols-rounded">portrait_lighting_off</span> MaterialSymbolsRounded.portrait_lighting_off
+/// <span class="material-symbols-rounded">portrait_lighting</span> MaterialSymbolsRounded.portrait_lighting
 ///
-  /// <span class="material-symbols-rounded">position_bottom_left</span> MaterialSymbolsRounded.position_bottom_left
+/// <span class="material-symbols-rounded">portrait_lighting_off</span> MaterialSymbolsRounded.portrait_lighting_off
 ///
-  /// <span class="material-symbols-rounded">position_bottom_right</span> MaterialSymbolsRounded.position_bottom_right
+/// <span class="material-symbols-rounded">position_bottom_left</span> MaterialSymbolsRounded.position_bottom_left
 ///
-  /// <span class="material-symbols-rounded">position_top_right</span> MaterialSymbolsRounded.position_top_right
+/// <span class="material-symbols-rounded">position_bottom_right</span> MaterialSymbolsRounded.position_bottom_right
 ///
-  /// <span class="material-symbols-rounded">post_add</span> MaterialSymbolsRounded.post_add
+/// <span class="material-symbols-rounded">position_top_right</span> MaterialSymbolsRounded.position_top_right
 ///
-  /// <span class="material-symbols-rounded">potted_plant</span> MaterialSymbolsRounded.potted_plant
+/// <span class="material-symbols-rounded">post_add</span> MaterialSymbolsRounded.post_add
 ///
-  /// <span class="material-symbols-rounded">power</span> MaterialSymbolsRounded.power
+/// <span class="material-symbols-rounded">potted_plant</span> MaterialSymbolsRounded.potted_plant
 ///
-  /// <span class="material-symbols-rounded">power_input</span> MaterialSymbolsRounded.power_input
+/// <span class="material-symbols-rounded">power</span> MaterialSymbolsRounded.power
 ///
-  /// <span class="material-symbols-rounded">power_off</span> MaterialSymbolsRounded.power_off
+/// <span class="material-symbols-rounded">power_input</span> MaterialSymbolsRounded.power_input
 ///
-  /// <span class="material-symbols-rounded">power_rounded</span> MaterialSymbolsRounded.power_rounded
+/// <span class="material-symbols-rounded">power_off</span> MaterialSymbolsRounded.power_off
 ///
-  /// <span class="material-symbols-rounded">power_settings_new</span> MaterialSymbolsRounded.power_settings_new
+/// <span class="material-symbols-rounded">power_rounded</span> MaterialSymbolsRounded.power_rounded
 ///
-  /// <span class="material-symbols-rounded">prayer_times</span> MaterialSymbolsRounded.prayer_times
+/// <span class="material-symbols-rounded">power_settings_new</span> MaterialSymbolsRounded.power_settings_new
 ///
-  /// <span class="material-symbols-rounded">precision_manufacturing</span> MaterialSymbolsRounded.precision_manufacturing
+/// <span class="material-symbols-rounded">prayer_times</span> MaterialSymbolsRounded.prayer_times
 ///
-  /// <span class="material-symbols-rounded">pregnant_woman</span> MaterialSymbolsRounded.pregnant_woman
+/// <span class="material-symbols-rounded">precision_manufacturing</span> MaterialSymbolsRounded.precision_manufacturing
 ///
-  /// <span class="material-symbols-rounded">preliminary</span> MaterialSymbolsRounded.preliminary
+/// <span class="material-symbols-rounded">pregnant_woman</span> MaterialSymbolsRounded.pregnant_woman
 ///
-  /// <span class="material-symbols-rounded">prescriptions</span> MaterialSymbolsRounded.prescriptions
+/// <span class="material-symbols-rounded">preliminary</span> MaterialSymbolsRounded.preliminary
 ///
-  /// <span class="material-symbols-rounded">present_to_all</span> MaterialSymbolsRounded.present_to_all
+/// <span class="material-symbols-rounded">prescriptions</span> MaterialSymbolsRounded.prescriptions
 ///
-  /// <span class="material-symbols-rounded">preview</span> MaterialSymbolsRounded.preview
+/// <span class="material-symbols-rounded">present_to_all</span> MaterialSymbolsRounded.present_to_all
 ///
-  /// <span class="material-symbols-rounded">preview_off</span> MaterialSymbolsRounded.preview_off
+/// <span class="material-symbols-rounded">preview</span> MaterialSymbolsRounded.preview
 ///
-  /// <span class="material-symbols-rounded">price_change</span> MaterialSymbolsRounded.price_change
+/// <span class="material-symbols-rounded">preview_off</span> MaterialSymbolsRounded.preview_off
 ///
-  /// <span class="material-symbols-rounded">price_check</span> MaterialSymbolsRounded.price_check
+/// <span class="material-symbols-rounded">price_change</span> MaterialSymbolsRounded.price_change
 ///
-  /// <span class="material-symbols-rounded">print</span> MaterialSymbolsRounded.print
+/// <span class="material-symbols-rounded">price_check</span> MaterialSymbolsRounded.price_check
 ///
-  /// <span class="material-symbols-rounded">print_add</span> MaterialSymbolsRounded.print_add
+/// <span class="material-symbols-rounded">print</span> MaterialSymbolsRounded.print
 ///
-  /// <span class="material-symbols-rounded">print_connect</span> MaterialSymbolsRounded.print_connect
+/// <span class="material-symbols-rounded">print_add</span> MaterialSymbolsRounded.print_add
 ///
-  /// <span class="material-symbols-rounded">print_disabled</span> MaterialSymbolsRounded.print_disabled
+/// <span class="material-symbols-rounded">print_connect</span> MaterialSymbolsRounded.print_connect
 ///
-  /// <span class="material-symbols-rounded">print_error</span> MaterialSymbolsRounded.print_error
+/// <span class="material-symbols-rounded">print_disabled</span> MaterialSymbolsRounded.print_disabled
 ///
-  /// <span class="material-symbols-rounded">priority</span> MaterialSymbolsRounded.priority
+/// <span class="material-symbols-rounded">print_error</span> MaterialSymbolsRounded.print_error
 ///
-  /// <span class="material-symbols-rounded">priority_high</span> MaterialSymbolsRounded.priority_high
+/// <span class="material-symbols-rounded">priority</span> MaterialSymbolsRounded.priority
 ///
-  /// <span class="material-symbols-rounded">privacy</span> MaterialSymbolsRounded.privacy
+/// <span class="material-symbols-rounded">priority_high</span> MaterialSymbolsRounded.priority_high
 ///
-  /// <span class="material-symbols-rounded">privacy_screen</span> MaterialSymbolsRounded.privacy_screen
+/// <span class="material-symbols-rounded">privacy</span> MaterialSymbolsRounded.privacy
 ///
-  /// <span class="material-symbols-rounded">privacy_screen_off</span> MaterialSymbolsRounded.privacy_screen_off
+/// <span class="material-symbols-rounded">privacy_screen</span> MaterialSymbolsRounded.privacy_screen
 ///
-  /// <span class="material-symbols-rounded">privacy_tip</span> MaterialSymbolsRounded.privacy_tip
+/// <span class="material-symbols-rounded">privacy_screen_off</span> MaterialSymbolsRounded.privacy_screen_off
 ///
-  /// <span class="material-symbols-rounded">private_connectivity</span> MaterialSymbolsRounded.private_connectivity
+/// <span class="material-symbols-rounded">privacy_tip</span> MaterialSymbolsRounded.privacy_tip
 ///
-  /// <span class="material-symbols-rounded">problem</span> MaterialSymbolsRounded.problem
+/// <span class="material-symbols-rounded">private_connectivity</span> MaterialSymbolsRounded.private_connectivity
 ///
-  /// <span class="material-symbols-rounded">procedure</span> MaterialSymbolsRounded.procedure
+/// <span class="material-symbols-rounded">problem</span> MaterialSymbolsRounded.problem
 ///
-  /// <span class="material-symbols-rounded">process_chart</span> MaterialSymbolsRounded.process_chart
+/// <span class="material-symbols-rounded">procedure</span> MaterialSymbolsRounded.procedure
 ///
-  /// <span class="material-symbols-rounded">production_quantity_limits</span> MaterialSymbolsRounded.production_quantity_limits
+/// <span class="material-symbols-rounded">process_chart</span> MaterialSymbolsRounded.process_chart
 ///
-  /// <span class="material-symbols-rounded">productivity</span> MaterialSymbolsRounded.productivity
+/// <span class="material-symbols-rounded">production_quantity_limits</span> MaterialSymbolsRounded.production_quantity_limits
 ///
-  /// <span class="material-symbols-rounded">propane</span> MaterialSymbolsRounded.propane
+/// <span class="material-symbols-rounded">productivity</span> MaterialSymbolsRounded.productivity
 ///
-  /// <span class="material-symbols-rounded">propane_tank</span> MaterialSymbolsRounded.propane_tank
+/// <span class="material-symbols-rounded">propane</span> MaterialSymbolsRounded.propane
 ///
-  /// <span class="material-symbols-rounded">psychiatry</span> MaterialSymbolsRounded.psychiatry
+/// <span class="material-symbols-rounded">propane_tank</span> MaterialSymbolsRounded.propane_tank
 ///
-  /// <span class="material-symbols-rounded">psychology</span> MaterialSymbolsRounded.psychology
+/// <span class="material-symbols-rounded">psychiatry</span> MaterialSymbolsRounded.psychiatry
 ///
-  /// <span class="material-symbols-rounded">psychology_alt</span> MaterialSymbolsRounded.psychology_alt
+/// <span class="material-symbols-rounded">psychology</span> MaterialSymbolsRounded.psychology
 ///
-  /// <span class="material-symbols-rounded">public</span> MaterialSymbolsRounded.public
+/// <span class="material-symbols-rounded">psychology_alt</span> MaterialSymbolsRounded.psychology_alt
 ///
-  /// <span class="material-symbols-rounded">public_off</span> MaterialSymbolsRounded.public_off
+/// <span class="material-symbols-rounded">public</span> MaterialSymbolsRounded.public
 ///
-  /// <span class="material-symbols-rounded">publish</span> MaterialSymbolsRounded.publish
+/// <span class="material-symbols-rounded">public_off</span> MaterialSymbolsRounded.public_off
 ///
-  /// <span class="material-symbols-rounded">published_with_changes</span> MaterialSymbolsRounded.published_with_changes
+/// <span class="material-symbols-rounded">publish</span> MaterialSymbolsRounded.publish
 ///
-  /// <span class="material-symbols-rounded">pulmonology</span> MaterialSymbolsRounded.pulmonology
+/// <span class="material-symbols-rounded">published_with_changes</span> MaterialSymbolsRounded.published_with_changes
 ///
-  /// <span class="material-symbols-rounded">punch_clock</span> MaterialSymbolsRounded.punch_clock
+/// <span class="material-symbols-rounded">pulmonology</span> MaterialSymbolsRounded.pulmonology
 ///
-  /// <span class="material-symbols-rounded">push_pin</span> MaterialSymbolsRounded.push_pin
+/// <span class="material-symbols-rounded">punch_clock</span> MaterialSymbolsRounded.punch_clock
 ///
-  /// <span class="material-symbols-rounded">qr_code</span> MaterialSymbolsRounded.qr_code
+/// <span class="material-symbols-rounded">push_pin</span> MaterialSymbolsRounded.push_pin
 ///
-  /// <span class="material-symbols-rounded">qr_code_2</span> MaterialSymbolsRounded.qr_code_2
+/// <span class="material-symbols-rounded">qr_code</span> MaterialSymbolsRounded.qr_code
 ///
-  /// <span class="material-symbols-rounded">qr_code_scanner</span> MaterialSymbolsRounded.qr_code_scanner
+/// <span class="material-symbols-rounded">qr_code_2</span> MaterialSymbolsRounded.qr_code_2
 ///
-  /// <span class="material-symbols-rounded">query_builder</span> MaterialSymbolsRounded.query_builder
+/// <span class="material-symbols-rounded">qr_code_scanner</span> MaterialSymbolsRounded.qr_code_scanner
 ///
-  /// <span class="material-symbols-rounded">query_stats</span> MaterialSymbolsRounded.query_stats
+/// <span class="material-symbols-rounded">query_builder</span> MaterialSymbolsRounded.query_builder
 ///
-  /// <span class="material-symbols-rounded">question_answer</span> MaterialSymbolsRounded.question_answer
+/// <span class="material-symbols-rounded">query_stats</span> MaterialSymbolsRounded.query_stats
 ///
-  /// <span class="material-symbols-rounded">question_exchange</span> MaterialSymbolsRounded.question_exchange
+/// <span class="material-symbols-rounded">question_answer</span> MaterialSymbolsRounded.question_answer
 ///
-  /// <span class="material-symbols-rounded">question_mark</span> MaterialSymbolsRounded.question_mark
+/// <span class="material-symbols-rounded">question_exchange</span> MaterialSymbolsRounded.question_exchange
 ///
-  /// <span class="material-symbols-rounded">queue</span> MaterialSymbolsRounded.queue
+/// <span class="material-symbols-rounded">question_mark</span> MaterialSymbolsRounded.question_mark
 ///
-  /// <span class="material-symbols-rounded">queue_music</span> MaterialSymbolsRounded.queue_music
+/// <span class="material-symbols-rounded">queue</span> MaterialSymbolsRounded.queue
 ///
-  /// <span class="material-symbols-rounded">queue_play_next</span> MaterialSymbolsRounded.queue_play_next
+/// <span class="material-symbols-rounded">queue_music</span> MaterialSymbolsRounded.queue_music
 ///
-  /// <span class="material-symbols-rounded">quick_phrases</span> MaterialSymbolsRounded.quick_phrases
+/// <span class="material-symbols-rounded">queue_play_next</span> MaterialSymbolsRounded.queue_play_next
 ///
-  /// <span class="material-symbols-rounded">quick_reference</span> MaterialSymbolsRounded.quick_reference
+/// <span class="material-symbols-rounded">quick_phrases</span> MaterialSymbolsRounded.quick_phrases
 ///
-  /// <span class="material-symbols-rounded">quick_reference_all</span> MaterialSymbolsRounded.quick_reference_all
+/// <span class="material-symbols-rounded">quick_reference</span> MaterialSymbolsRounded.quick_reference
 ///
-  /// <span class="material-symbols-rounded">quickreply</span> MaterialSymbolsRounded.quickreply
+/// <span class="material-symbols-rounded">quick_reference_all</span> MaterialSymbolsRounded.quick_reference_all
 ///
-  /// <span class="material-symbols-rounded">quiet_time</span> MaterialSymbolsRounded.quiet_time
+/// <span class="material-symbols-rounded">quickreply</span> MaterialSymbolsRounded.quickreply
 ///
-  /// <span class="material-symbols-rounded">quiet_time_active</span> MaterialSymbolsRounded.quiet_time_active
+/// <span class="material-symbols-rounded">quiet_time</span> MaterialSymbolsRounded.quiet_time
 ///
-  /// <span class="material-symbols-rounded">quiz</span> MaterialSymbolsRounded.quiz
+/// <span class="material-symbols-rounded">quiet_time_active</span> MaterialSymbolsRounded.quiet_time_active
 ///
-  /// <span class="material-symbols-rounded">r_mobiledata</span> MaterialSymbolsRounded.r_mobiledata
+/// <span class="material-symbols-rounded">quiz</span> MaterialSymbolsRounded.quiz
 ///
-  /// <span class="material-symbols-rounded">radar</span> MaterialSymbolsRounded.radar
+/// <span class="material-symbols-rounded">r_mobiledata</span> MaterialSymbolsRounded.r_mobiledata
 ///
-  /// <span class="material-symbols-rounded">radio</span> MaterialSymbolsRounded.radio
+/// <span class="material-symbols-rounded">radar</span> MaterialSymbolsRounded.radar
 ///
-  /// <span class="material-symbols-rounded">radio_button_checked</span> MaterialSymbolsRounded.radio_button_checked
+/// <span class="material-symbols-rounded">radio</span> MaterialSymbolsRounded.radio
 ///
-  /// <span class="material-symbols-rounded">radio_button_unchecked</span> MaterialSymbolsRounded.radio_button_unchecked
+/// <span class="material-symbols-rounded">radio_button_checked</span> MaterialSymbolsRounded.radio_button_checked
 ///
-  /// <span class="material-symbols-rounded">radiology</span> MaterialSymbolsRounded.radiology
+/// <span class="material-symbols-rounded">radio_button_unchecked</span> MaterialSymbolsRounded.radio_button_unchecked
 ///
-  /// <span class="material-symbols-rounded">railway_alert</span> MaterialSymbolsRounded.railway_alert
+/// <span class="material-symbols-rounded">radiology</span> MaterialSymbolsRounded.radiology
 ///
-  /// <span class="material-symbols-rounded">rainy</span> MaterialSymbolsRounded.rainy
+/// <span class="material-symbols-rounded">railway_alert</span> MaterialSymbolsRounded.railway_alert
 ///
-  /// <span class="material-symbols-rounded">ramen_dining</span> MaterialSymbolsRounded.ramen_dining
+/// <span class="material-symbols-rounded">rainy</span> MaterialSymbolsRounded.rainy
 ///
-  /// <span class="material-symbols-rounded">ramp_left</span> MaterialSymbolsRounded.ramp_left
+/// <span class="material-symbols-rounded">ramen_dining</span> MaterialSymbolsRounded.ramen_dining
 ///
-  /// <span class="material-symbols-rounded">ramp_right</span> MaterialSymbolsRounded.ramp_right
+/// <span class="material-symbols-rounded">ramp_left</span> MaterialSymbolsRounded.ramp_left
 ///
-  /// <span class="material-symbols-rounded">range_hood</span> MaterialSymbolsRounded.range_hood
+/// <span class="material-symbols-rounded">ramp_right</span> MaterialSymbolsRounded.ramp_right
 ///
-  /// <span class="material-symbols-rounded">rate_review</span> MaterialSymbolsRounded.rate_review
+/// <span class="material-symbols-rounded">range_hood</span> MaterialSymbolsRounded.range_hood
 ///
-  /// <span class="material-symbols-rounded">raw_off</span> MaterialSymbolsRounded.raw_off
+/// <span class="material-symbols-rounded">rate_review</span> MaterialSymbolsRounded.rate_review
 ///
-  /// <span class="material-symbols-rounded">raw_on</span> MaterialSymbolsRounded.raw_on
+/// <span class="material-symbols-rounded">raw_off</span> MaterialSymbolsRounded.raw_off
 ///
-  /// <span class="material-symbols-rounded">read_more</span> MaterialSymbolsRounded.read_more
+/// <span class="material-symbols-rounded">raw_on</span> MaterialSymbolsRounded.raw_on
 ///
-  /// <span class="material-symbols-rounded">real_estate_agent</span> MaterialSymbolsRounded.real_estate_agent
+/// <span class="material-symbols-rounded">read_more</span> MaterialSymbolsRounded.read_more
 ///
-  /// <span class="material-symbols-rounded">rear_camera</span> MaterialSymbolsRounded.rear_camera
+/// <span class="material-symbols-rounded">real_estate_agent</span> MaterialSymbolsRounded.real_estate_agent
 ///
-  /// <span class="material-symbols-rounded">rebase</span> MaterialSymbolsRounded.rebase
+/// <span class="material-symbols-rounded">rear_camera</span> MaterialSymbolsRounded.rear_camera
 ///
-  /// <span class="material-symbols-rounded">rebase_edit</span> MaterialSymbolsRounded.rebase_edit
+/// <span class="material-symbols-rounded">rebase</span> MaterialSymbolsRounded.rebase
 ///
-  /// <span class="material-symbols-rounded">receipt</span> MaterialSymbolsRounded.receipt
+/// <span class="material-symbols-rounded">rebase_edit</span> MaterialSymbolsRounded.rebase_edit
 ///
-  /// <span class="material-symbols-rounded">receipt_long</span> MaterialSymbolsRounded.receipt_long
+/// <span class="material-symbols-rounded">receipt</span> MaterialSymbolsRounded.receipt
 ///
-  /// <span class="material-symbols-rounded">recent_actors</span> MaterialSymbolsRounded.recent_actors
+/// <span class="material-symbols-rounded">receipt_long</span> MaterialSymbolsRounded.receipt_long
 ///
-  /// <span class="material-symbols-rounded">recent_patient</span> MaterialSymbolsRounded.recent_patient
+/// <span class="material-symbols-rounded">recent_actors</span> MaterialSymbolsRounded.recent_actors
 ///
-  /// <span class="material-symbols-rounded">recommend</span> MaterialSymbolsRounded.recommend
+/// <span class="material-symbols-rounded">recent_patient</span> MaterialSymbolsRounded.recent_patient
 ///
-  /// <span class="material-symbols-rounded">record_voice_over</span> MaterialSymbolsRounded.record_voice_over
+/// <span class="material-symbols-rounded">recommend</span> MaterialSymbolsRounded.recommend
 ///
-  /// <span class="material-symbols-rounded">rectangle</span> MaterialSymbolsRounded.rectangle
+/// <span class="material-symbols-rounded">record_voice_over</span> MaterialSymbolsRounded.record_voice_over
 ///
-  /// <span class="material-symbols-rounded">recycling</span> MaterialSymbolsRounded.recycling
+/// <span class="material-symbols-rounded">rectangle</span> MaterialSymbolsRounded.rectangle
 ///
-  /// <span class="material-symbols-rounded">redeem</span> MaterialSymbolsRounded.redeem
+/// <span class="material-symbols-rounded">recycling</span> MaterialSymbolsRounded.recycling
 ///
-  /// <span class="material-symbols-rounded">redo</span> MaterialSymbolsRounded.redo
+/// <span class="material-symbols-rounded">redeem</span> MaterialSymbolsRounded.redeem
 ///
-  /// <span class="material-symbols-rounded">reduce_capacity</span> MaterialSymbolsRounded.reduce_capacity
+/// <span class="material-symbols-rounded">redo</span> MaterialSymbolsRounded.redo
 ///
-  /// <span class="material-symbols-rounded">refresh</span> MaterialSymbolsRounded.refresh
+/// <span class="material-symbols-rounded">reduce_capacity</span> MaterialSymbolsRounded.reduce_capacity
 ///
-  /// <span class="material-symbols-rounded">regular_expression</span> MaterialSymbolsRounded.regular_expression
+/// <span class="material-symbols-rounded">refresh</span> MaterialSymbolsRounded.refresh
 ///
-  /// <span class="material-symbols-rounded">relax</span> MaterialSymbolsRounded.relax
+/// <span class="material-symbols-rounded">regular_expression</span> MaterialSymbolsRounded.regular_expression
 ///
-  /// <span class="material-symbols-rounded">remember_me</span> MaterialSymbolsRounded.remember_me
+/// <span class="material-symbols-rounded">relax</span> MaterialSymbolsRounded.relax
 ///
-  /// <span class="material-symbols-rounded">remote_gen</span> MaterialSymbolsRounded.remote_gen
+/// <span class="material-symbols-rounded">remember_me</span> MaterialSymbolsRounded.remember_me
 ///
-  /// <span class="material-symbols-rounded">remove</span> MaterialSymbolsRounded.remove
+/// <span class="material-symbols-rounded">remote_gen</span> MaterialSymbolsRounded.remote_gen
 ///
-  /// <span class="material-symbols-rounded">remove_circle</span> MaterialSymbolsRounded.remove_circle
+/// <span class="material-symbols-rounded">remove</span> MaterialSymbolsRounded.remove
 ///
-  /// <span class="material-symbols-rounded">remove_circle_outline</span> MaterialSymbolsRounded.remove_circle_outline
+/// <span class="material-symbols-rounded">remove_circle</span> MaterialSymbolsRounded.remove_circle
 ///
-  /// <span class="material-symbols-rounded">remove_done</span> MaterialSymbolsRounded.remove_done
+/// <span class="material-symbols-rounded">remove_circle_outline</span> MaterialSymbolsRounded.remove_circle_outline
 ///
-  /// <span class="material-symbols-rounded">remove_from_queue</span> MaterialSymbolsRounded.remove_from_queue
+/// <span class="material-symbols-rounded">remove_done</span> MaterialSymbolsRounded.remove_done
 ///
-  /// <span class="material-symbols-rounded">remove_moderator</span> MaterialSymbolsRounded.remove_moderator
+/// <span class="material-symbols-rounded">remove_from_queue</span> MaterialSymbolsRounded.remove_from_queue
 ///
-  /// <span class="material-symbols-rounded">remove_red_eye</span> MaterialSymbolsRounded.remove_red_eye
+/// <span class="material-symbols-rounded">remove_moderator</span> MaterialSymbolsRounded.remove_moderator
 ///
-  /// <span class="material-symbols-rounded">remove_road</span> MaterialSymbolsRounded.remove_road
+/// <span class="material-symbols-rounded">remove_red_eye</span> MaterialSymbolsRounded.remove_red_eye
 ///
-  /// <span class="material-symbols-rounded">remove_shopping_cart</span> MaterialSymbolsRounded.remove_shopping_cart
+/// <span class="material-symbols-rounded">remove_road</span> MaterialSymbolsRounded.remove_road
 ///
-  /// <span class="material-symbols-rounded">reopen_window</span> MaterialSymbolsRounded.reopen_window
+/// <span class="material-symbols-rounded">remove_shopping_cart</span> MaterialSymbolsRounded.remove_shopping_cart
 ///
-  /// <span class="material-symbols-rounded">reorder</span> MaterialSymbolsRounded.reorder
+/// <span class="material-symbols-rounded">reopen_window</span> MaterialSymbolsRounded.reopen_window
 ///
-  /// <span class="material-symbols-rounded">repartition</span> MaterialSymbolsRounded.repartition
+/// <span class="material-symbols-rounded">reorder</span> MaterialSymbolsRounded.reorder
 ///
-  /// <span class="material-symbols-rounded">repeat</span> MaterialSymbolsRounded.repeat
+/// <span class="material-symbols-rounded">repartition</span> MaterialSymbolsRounded.repartition
 ///
-  /// <span class="material-symbols-rounded">repeat_on</span> MaterialSymbolsRounded.repeat_on
+/// <span class="material-symbols-rounded">repeat</span> MaterialSymbolsRounded.repeat
 ///
-  /// <span class="material-symbols-rounded">repeat_one</span> MaterialSymbolsRounded.repeat_one
+/// <span class="material-symbols-rounded">repeat_on</span> MaterialSymbolsRounded.repeat_on
 ///
-  /// <span class="material-symbols-rounded">repeat_one_on</span> MaterialSymbolsRounded.repeat_one_on
+/// <span class="material-symbols-rounded">repeat_one</span> MaterialSymbolsRounded.repeat_one
 ///
-  /// <span class="material-symbols-rounded">replay</span> MaterialSymbolsRounded.replay
+/// <span class="material-symbols-rounded">repeat_one_on</span> MaterialSymbolsRounded.repeat_one_on
 ///
-  /// <span class="material-symbols-rounded">replay_10</span> MaterialSymbolsRounded.replay_10
+/// <span class="material-symbols-rounded">replay</span> MaterialSymbolsRounded.replay
 ///
-  /// <span class="material-symbols-rounded">replay_30</span> MaterialSymbolsRounded.replay_30
+/// <span class="material-symbols-rounded">replay_10</span> MaterialSymbolsRounded.replay_10
 ///
-  /// <span class="material-symbols-rounded">replay_5</span> MaterialSymbolsRounded.replay_5
+/// <span class="material-symbols-rounded">replay_30</span> MaterialSymbolsRounded.replay_30
 ///
-  /// <span class="material-symbols-rounded">replay_circle_filled</span> MaterialSymbolsRounded.replay_circle_filled
+/// <span class="material-symbols-rounded">replay_5</span> MaterialSymbolsRounded.replay_5
 ///
-  /// <span class="material-symbols-rounded">reply</span> MaterialSymbolsRounded.reply
+/// <span class="material-symbols-rounded">replay_circle_filled</span> MaterialSymbolsRounded.replay_circle_filled
 ///
-  /// <span class="material-symbols-rounded">reply_all</span> MaterialSymbolsRounded.reply_all
+/// <span class="material-symbols-rounded">reply</span> MaterialSymbolsRounded.reply
 ///
-  /// <span class="material-symbols-rounded">report</span> MaterialSymbolsRounded.report
+/// <span class="material-symbols-rounded">reply_all</span> MaterialSymbolsRounded.reply_all
 ///
-  /// <span class="material-symbols-rounded">report_gmailerrorred</span> MaterialSymbolsRounded.report_gmailerrorred
+/// <span class="material-symbols-rounded">report</span> MaterialSymbolsRounded.report
 ///
-  /// <span class="material-symbols-rounded">report_off</span> MaterialSymbolsRounded.report_off
+/// <span class="material-symbols-rounded">report_gmailerrorred</span> MaterialSymbolsRounded.report_gmailerrorred
 ///
-  /// <span class="material-symbols-rounded">report_problem</span> MaterialSymbolsRounded.report_problem
+/// <span class="material-symbols-rounded">report_off</span> MaterialSymbolsRounded.report_off
 ///
-  /// <span class="material-symbols-rounded">request_page</span> MaterialSymbolsRounded.request_page
+/// <span class="material-symbols-rounded">report_problem</span> MaterialSymbolsRounded.report_problem
 ///
-  /// <span class="material-symbols-rounded">request_quote</span> MaterialSymbolsRounded.request_quote
+/// <span class="material-symbols-rounded">request_page</span> MaterialSymbolsRounded.request_page
 ///
-  /// <span class="material-symbols-rounded">reset_image</span> MaterialSymbolsRounded.reset_image
+/// <span class="material-symbols-rounded">request_quote</span> MaterialSymbolsRounded.request_quote
 ///
-  /// <span class="material-symbols-rounded">reset_tv</span> MaterialSymbolsRounded.reset_tv
+/// <span class="material-symbols-rounded">reset_image</span> MaterialSymbolsRounded.reset_image
 ///
-  /// <span class="material-symbols-rounded">resize</span> MaterialSymbolsRounded.resize
+/// <span class="material-symbols-rounded">reset_tv</span> MaterialSymbolsRounded.reset_tv
 ///
-  /// <span class="material-symbols-rounded">respiratory_rate</span> MaterialSymbolsRounded.respiratory_rate
+/// <span class="material-symbols-rounded">resize</span> MaterialSymbolsRounded.resize
 ///
-  /// <span class="material-symbols-rounded">restart_alt</span> MaterialSymbolsRounded.restart_alt
+/// <span class="material-symbols-rounded">respiratory_rate</span> MaterialSymbolsRounded.respiratory_rate
 ///
-  /// <span class="material-symbols-rounded">restaurant</span> MaterialSymbolsRounded.restaurant
+/// <span class="material-symbols-rounded">restart_alt</span> MaterialSymbolsRounded.restart_alt
 ///
-  /// <span class="material-symbols-rounded">restaurant_menu</span> MaterialSymbolsRounded.restaurant_menu
+/// <span class="material-symbols-rounded">restaurant</span> MaterialSymbolsRounded.restaurant
 ///
-  /// <span class="material-symbols-rounded">restore</span> MaterialSymbolsRounded.restore
+/// <span class="material-symbols-rounded">restaurant_menu</span> MaterialSymbolsRounded.restaurant_menu
 ///
-  /// <span class="material-symbols-rounded">restore_from_trash</span> MaterialSymbolsRounded.restore_from_trash
+/// <span class="material-symbols-rounded">restore</span> MaterialSymbolsRounded.restore
 ///
-  /// <span class="material-symbols-rounded">restore_page</span> MaterialSymbolsRounded.restore_page
+/// <span class="material-symbols-rounded">restore_from_trash</span> MaterialSymbolsRounded.restore_from_trash
 ///
-  /// <span class="material-symbols-rounded">resume</span> MaterialSymbolsRounded.resume
+/// <span class="material-symbols-rounded">restore_page</span> MaterialSymbolsRounded.restore_page
 ///
-  /// <span class="material-symbols-rounded">reviews</span> MaterialSymbolsRounded.reviews
+/// <span class="material-symbols-rounded">resume</span> MaterialSymbolsRounded.resume
 ///
-  /// <span class="material-symbols-rounded">rheumatology</span> MaterialSymbolsRounded.rheumatology
+/// <span class="material-symbols-rounded">reviews</span> MaterialSymbolsRounded.reviews
 ///
-  /// <span class="material-symbols-rounded">rib_cage</span> MaterialSymbolsRounded.rib_cage
+/// <span class="material-symbols-rounded">rheumatology</span> MaterialSymbolsRounded.rheumatology
 ///
-  /// <span class="material-symbols-rounded">rice_bowl</span> MaterialSymbolsRounded.rice_bowl
+/// <span class="material-symbols-rounded">rib_cage</span> MaterialSymbolsRounded.rib_cage
 ///
-  /// <span class="material-symbols-rounded">right_click</span> MaterialSymbolsRounded.right_click
+/// <span class="material-symbols-rounded">rice_bowl</span> MaterialSymbolsRounded.rice_bowl
 ///
-  /// <span class="material-symbols-rounded">right_panel_close</span> MaterialSymbolsRounded.right_panel_close
+/// <span class="material-symbols-rounded">right_click</span> MaterialSymbolsRounded.right_click
 ///
-  /// <span class="material-symbols-rounded">right_panel_open</span> MaterialSymbolsRounded.right_panel_open
+/// <span class="material-symbols-rounded">right_panel_close</span> MaterialSymbolsRounded.right_panel_close
 ///
-  /// <span class="material-symbols-rounded">ring_volume</span> MaterialSymbolsRounded.ring_volume
+/// <span class="material-symbols-rounded">right_panel_open</span> MaterialSymbolsRounded.right_panel_open
 ///
-  /// <span class="material-symbols-rounded">ring_volume_filled</span> MaterialSymbolsRounded.ring_volume_filled
+/// <span class="material-symbols-rounded">ring_volume</span> MaterialSymbolsRounded.ring_volume
 ///
-  /// <span class="material-symbols-rounded">robot</span> MaterialSymbolsRounded.robot
+/// <span class="material-symbols-rounded">ring_volume_filled</span> MaterialSymbolsRounded.ring_volume_filled
 ///
-  /// <span class="material-symbols-rounded">rocket</span> MaterialSymbolsRounded.rocket
+/// <span class="material-symbols-rounded">robot</span> MaterialSymbolsRounded.robot
 ///
-  /// <span class="material-symbols-rounded">rocket_launch</span> MaterialSymbolsRounded.rocket_launch
+/// <span class="material-symbols-rounded">rocket</span> MaterialSymbolsRounded.rocket
 ///
-  /// <span class="material-symbols-rounded">roller_shades</span> MaterialSymbolsRounded.roller_shades
+/// <span class="material-symbols-rounded">rocket_launch</span> MaterialSymbolsRounded.rocket_launch
 ///
-  /// <span class="material-symbols-rounded">roller_shades_closed</span> MaterialSymbolsRounded.roller_shades_closed
+/// <span class="material-symbols-rounded">roller_shades</span> MaterialSymbolsRounded.roller_shades
 ///
-  /// <span class="material-symbols-rounded">roller_skating</span> MaterialSymbolsRounded.roller_skating
+/// <span class="material-symbols-rounded">roller_shades_closed</span> MaterialSymbolsRounded.roller_shades_closed
 ///
-  /// <span class="material-symbols-rounded">roofing</span> MaterialSymbolsRounded.roofing
+/// <span class="material-symbols-rounded">roller_skating</span> MaterialSymbolsRounded.roller_skating
 ///
-  /// <span class="material-symbols-rounded">room</span> MaterialSymbolsRounded.room
+/// <span class="material-symbols-rounded">roofing</span> MaterialSymbolsRounded.roofing
 ///
-  /// <span class="material-symbols-rounded">room_preferences</span> MaterialSymbolsRounded.room_preferences
+/// <span class="material-symbols-rounded">room</span> MaterialSymbolsRounded.room
 ///
-  /// <span class="material-symbols-rounded">room_service</span> MaterialSymbolsRounded.room_service
+/// <span class="material-symbols-rounded">room_preferences</span> MaterialSymbolsRounded.room_preferences
 ///
-  /// <span class="material-symbols-rounded">rotate_90_degrees_ccw</span> MaterialSymbolsRounded.rotate_90_degrees_ccw
+/// <span class="material-symbols-rounded">room_service</span> MaterialSymbolsRounded.room_service
 ///
-  /// <span class="material-symbols-rounded">rotate_90_degrees_cw</span> MaterialSymbolsRounded.rotate_90_degrees_cw
+/// <span class="material-symbols-rounded">rotate_90_degrees_ccw</span> MaterialSymbolsRounded.rotate_90_degrees_ccw
 ///
-  /// <span class="material-symbols-rounded">rotate_left</span> MaterialSymbolsRounded.rotate_left
+/// <span class="material-symbols-rounded">rotate_90_degrees_cw</span> MaterialSymbolsRounded.rotate_90_degrees_cw
 ///
-  /// <span class="material-symbols-rounded">rotate_right</span> MaterialSymbolsRounded.rotate_right
+/// <span class="material-symbols-rounded">rotate_left</span> MaterialSymbolsRounded.rotate_left
 ///
-  /// <span class="material-symbols-rounded">roundabout_left</span> MaterialSymbolsRounded.roundabout_left
+/// <span class="material-symbols-rounded">rotate_right</span> MaterialSymbolsRounded.rotate_right
 ///
-  /// <span class="material-symbols-rounded">roundabout_right</span> MaterialSymbolsRounded.roundabout_right
+/// <span class="material-symbols-rounded">roundabout_left</span> MaterialSymbolsRounded.roundabout_left
 ///
-  /// <span class="material-symbols-rounded">rounded_corner</span> MaterialSymbolsRounded.rounded_corner
+/// <span class="material-symbols-rounded">roundabout_right</span> MaterialSymbolsRounded.roundabout_right
 ///
-  /// <span class="material-symbols-rounded">route</span> MaterialSymbolsRounded.route
+/// <span class="material-symbols-rounded">rounded_corner</span> MaterialSymbolsRounded.rounded_corner
 ///
-  /// <span class="material-symbols-rounded">router</span> MaterialSymbolsRounded.router
+/// <span class="material-symbols-rounded">route</span> MaterialSymbolsRounded.route
 ///
-  /// <span class="material-symbols-rounded">routine</span> MaterialSymbolsRounded.routine
+/// <span class="material-symbols-rounded">router</span> MaterialSymbolsRounded.router
 ///
-  /// <span class="material-symbols-rounded">rowing</span> MaterialSymbolsRounded.rowing
+/// <span class="material-symbols-rounded">routine</span> MaterialSymbolsRounded.routine
 ///
-  /// <span class="material-symbols-rounded">rss_feed</span> MaterialSymbolsRounded.rss_feed
+/// <span class="material-symbols-rounded">rowing</span> MaterialSymbolsRounded.rowing
 ///
-  /// <span class="material-symbols-rounded">rsvp</span> MaterialSymbolsRounded.rsvp
+/// <span class="material-symbols-rounded">rss_feed</span> MaterialSymbolsRounded.rss_feed
 ///
-  /// <span class="material-symbols-rounded">rtt</span> MaterialSymbolsRounded.rtt
+/// <span class="material-symbols-rounded">rsvp</span> MaterialSymbolsRounded.rsvp
 ///
-  /// <span class="material-symbols-rounded">rule</span> MaterialSymbolsRounded.rule
+/// <span class="material-symbols-rounded">rtt</span> MaterialSymbolsRounded.rtt
 ///
-  /// <span class="material-symbols-rounded">rule_folder</span> MaterialSymbolsRounded.rule_folder
+/// <span class="material-symbols-rounded">rule</span> MaterialSymbolsRounded.rule
 ///
-  /// <span class="material-symbols-rounded">run_circle</span> MaterialSymbolsRounded.run_circle
+/// <span class="material-symbols-rounded">rule_folder</span> MaterialSymbolsRounded.rule_folder
 ///
-  /// <span class="material-symbols-rounded">running_with_errors</span> MaterialSymbolsRounded.running_with_errors
+/// <span class="material-symbols-rounded">run_circle</span> MaterialSymbolsRounded.run_circle
 ///
-  /// <span class="material-symbols-rounded">rv_hookup</span> MaterialSymbolsRounded.rv_hookup
+/// <span class="material-symbols-rounded">running_with_errors</span> MaterialSymbolsRounded.running_with_errors
 ///
-  /// <span class="material-symbols-rounded">sad_tab</span> MaterialSymbolsRounded.sad_tab
+/// <span class="material-symbols-rounded">rv_hookup</span> MaterialSymbolsRounded.rv_hookup
 ///
-  /// <span class="material-symbols-rounded">safety_check</span> MaterialSymbolsRounded.safety_check
+/// <span class="material-symbols-rounded">sad_tab</span> MaterialSymbolsRounded.sad_tab
 ///
-  /// <span class="material-symbols-rounded">safety_divider</span> MaterialSymbolsRounded.safety_divider
+/// <span class="material-symbols-rounded">safety_check</span> MaterialSymbolsRounded.safety_check
 ///
-  /// <span class="material-symbols-rounded">sailing</span> MaterialSymbolsRounded.sailing
+/// <span class="material-symbols-rounded">safety_divider</span> MaterialSymbolsRounded.safety_divider
 ///
-  /// <span class="material-symbols-rounded">salinity</span> MaterialSymbolsRounded.salinity
+/// <span class="material-symbols-rounded">sailing</span> MaterialSymbolsRounded.sailing
 ///
-  /// <span class="material-symbols-rounded">sanitizer</span> MaterialSymbolsRounded.sanitizer
+/// <span class="material-symbols-rounded">salinity</span> MaterialSymbolsRounded.salinity
 ///
-  /// <span class="material-symbols-rounded">satellite</span> MaterialSymbolsRounded.satellite
+/// <span class="material-symbols-rounded">sanitizer</span> MaterialSymbolsRounded.sanitizer
 ///
-  /// <span class="material-symbols-rounded">satellite_alt</span> MaterialSymbolsRounded.satellite_alt
+/// <span class="material-symbols-rounded">satellite</span> MaterialSymbolsRounded.satellite
 ///
-  /// <span class="material-symbols-rounded">sauna</span> MaterialSymbolsRounded.sauna
+/// <span class="material-symbols-rounded">satellite_alt</span> MaterialSymbolsRounded.satellite_alt
 ///
-  /// <span class="material-symbols-rounded">save</span> MaterialSymbolsRounded.save
+/// <span class="material-symbols-rounded">sauna</span> MaterialSymbolsRounded.sauna
 ///
-  /// <span class="material-symbols-rounded">save_alt</span> MaterialSymbolsRounded.save_alt
+/// <span class="material-symbols-rounded">save</span> MaterialSymbolsRounded.save
 ///
-  /// <span class="material-symbols-rounded">save_as</span> MaterialSymbolsRounded.save_as
+/// <span class="material-symbols-rounded">save_alt</span> MaterialSymbolsRounded.save_alt
 ///
-  /// <span class="material-symbols-rounded">saved_search</span> MaterialSymbolsRounded.saved_search
+/// <span class="material-symbols-rounded">save_as</span> MaterialSymbolsRounded.save_as
 ///
-  /// <span class="material-symbols-rounded">savings</span> MaterialSymbolsRounded.savings
+/// <span class="material-symbols-rounded">saved_search</span> MaterialSymbolsRounded.saved_search
 ///
-  /// <span class="material-symbols-rounded">scale</span> MaterialSymbolsRounded.scale
+/// <span class="material-symbols-rounded">savings</span> MaterialSymbolsRounded.savings
 ///
-  /// <span class="material-symbols-rounded">scan</span> MaterialSymbolsRounded.scan
+/// <span class="material-symbols-rounded">scale</span> MaterialSymbolsRounded.scale
 ///
-  /// <span class="material-symbols-rounded">scan_delete</span> MaterialSymbolsRounded.scan_delete
+/// <span class="material-symbols-rounded">scan</span> MaterialSymbolsRounded.scan
 ///
-  /// <span class="material-symbols-rounded">scanner</span> MaterialSymbolsRounded.scanner
+/// <span class="material-symbols-rounded">scan_delete</span> MaterialSymbolsRounded.scan_delete
 ///
-  /// <span class="material-symbols-rounded">scatter_plot</span> MaterialSymbolsRounded.scatter_plot
+/// <span class="material-symbols-rounded">scanner</span> MaterialSymbolsRounded.scanner
 ///
-  /// <span class="material-symbols-rounded">scene</span> MaterialSymbolsRounded.scene
+/// <span class="material-symbols-rounded">scatter_plot</span> MaterialSymbolsRounded.scatter_plot
 ///
-  /// <span class="material-symbols-rounded">schedule</span> MaterialSymbolsRounded.schedule
+/// <span class="material-symbols-rounded">scene</span> MaterialSymbolsRounded.scene
 ///
-  /// <span class="material-symbols-rounded">schedule_send</span> MaterialSymbolsRounded.schedule_send
+/// <span class="material-symbols-rounded">schedule</span> MaterialSymbolsRounded.schedule
 ///
-  /// <span class="material-symbols-rounded">schema</span> MaterialSymbolsRounded.schema
+/// <span class="material-symbols-rounded">schedule_send</span> MaterialSymbolsRounded.schedule_send
 ///
-  /// <span class="material-symbols-rounded">school</span> MaterialSymbolsRounded.school
+/// <span class="material-symbols-rounded">schema</span> MaterialSymbolsRounded.schema
 ///
-  /// <span class="material-symbols-rounded">science</span> MaterialSymbolsRounded.science
+/// <span class="material-symbols-rounded">school</span> MaterialSymbolsRounded.school
 ///
-  /// <span class="material-symbols-rounded">score</span> MaterialSymbolsRounded.score
+/// <span class="material-symbols-rounded">science</span> MaterialSymbolsRounded.science
 ///
-  /// <span class="material-symbols-rounded">scoreboard</span> MaterialSymbolsRounded.scoreboard
+/// <span class="material-symbols-rounded">score</span> MaterialSymbolsRounded.score
 ///
-  /// <span class="material-symbols-rounded">screen_lock_landscape</span> MaterialSymbolsRounded.screen_lock_landscape
+/// <span class="material-symbols-rounded">scoreboard</span> MaterialSymbolsRounded.scoreboard
 ///
-  /// <span class="material-symbols-rounded">screen_lock_portrait</span> MaterialSymbolsRounded.screen_lock_portrait
+/// <span class="material-symbols-rounded">screen_lock_landscape</span> MaterialSymbolsRounded.screen_lock_landscape
 ///
-  /// <span class="material-symbols-rounded">screen_lock_rotation</span> MaterialSymbolsRounded.screen_lock_rotation
+/// <span class="material-symbols-rounded">screen_lock_portrait</span> MaterialSymbolsRounded.screen_lock_portrait
 ///
-  /// <span class="material-symbols-rounded">screen_rotation</span> MaterialSymbolsRounded.screen_rotation
+/// <span class="material-symbols-rounded">screen_lock_rotation</span> MaterialSymbolsRounded.screen_lock_rotation
 ///
-  /// <span class="material-symbols-rounded">screen_rotation_alt</span> MaterialSymbolsRounded.screen_rotation_alt
+/// <span class="material-symbols-rounded">screen_rotation</span> MaterialSymbolsRounded.screen_rotation
 ///
-  /// <span class="material-symbols-rounded">screen_search_desktop</span> MaterialSymbolsRounded.screen_search_desktop
+/// <span class="material-symbols-rounded">screen_rotation_alt</span> MaterialSymbolsRounded.screen_rotation_alt
 ///
-  /// <span class="material-symbols-rounded">screen_share</span> MaterialSymbolsRounded.screen_share
+/// <span class="material-symbols-rounded">screen_search_desktop</span> MaterialSymbolsRounded.screen_search_desktop
 ///
-  /// <span class="material-symbols-rounded">screencast</span> MaterialSymbolsRounded.screencast
+/// <span class="material-symbols-rounded">screen_share</span> MaterialSymbolsRounded.screen_share
 ///
-  /// <span class="material-symbols-rounded">screenshot</span> MaterialSymbolsRounded.screenshot
+/// <span class="material-symbols-rounded">screencast</span> MaterialSymbolsRounded.screencast
 ///
-  /// <span class="material-symbols-rounded">screenshot_keyboard</span> MaterialSymbolsRounded.screenshot_keyboard
+/// <span class="material-symbols-rounded">screenshot</span> MaterialSymbolsRounded.screenshot
 ///
-  /// <span class="material-symbols-rounded">screenshot_monitor</span> MaterialSymbolsRounded.screenshot_monitor
+/// <span class="material-symbols-rounded">screenshot_keyboard</span> MaterialSymbolsRounded.screenshot_keyboard
 ///
-  /// <span class="material-symbols-rounded">screenshot_region</span> MaterialSymbolsRounded.screenshot_region
+/// <span class="material-symbols-rounded">screenshot_monitor</span> MaterialSymbolsRounded.screenshot_monitor
 ///
-  /// <span class="material-symbols-rounded">scuba_diving</span> MaterialSymbolsRounded.scuba_diving
+/// <span class="material-symbols-rounded">screenshot_region</span> MaterialSymbolsRounded.screenshot_region
 ///
-  /// <span class="material-symbols-rounded">sd</span> MaterialSymbolsRounded.sd
+/// <span class="material-symbols-rounded">scuba_diving</span> MaterialSymbolsRounded.scuba_diving
 ///
-  /// <span class="material-symbols-rounded">sd_card</span> MaterialSymbolsRounded.sd_card
+/// <span class="material-symbols-rounded">sd</span> MaterialSymbolsRounded.sd
 ///
-  /// <span class="material-symbols-rounded">sd_card_alert</span> MaterialSymbolsRounded.sd_card_alert
+/// <span class="material-symbols-rounded">sd_card</span> MaterialSymbolsRounded.sd_card
 ///
-  /// <span class="material-symbols-rounded">sd_storage</span> MaterialSymbolsRounded.sd_storage
+/// <span class="material-symbols-rounded">sd_card_alert</span> MaterialSymbolsRounded.sd_card_alert
 ///
-  /// <span class="material-symbols-rounded">search</span> MaterialSymbolsRounded.search
+/// <span class="material-symbols-rounded">sd_storage</span> MaterialSymbolsRounded.sd_storage
 ///
-  /// <span class="material-symbols-rounded">search_check</span> MaterialSymbolsRounded.search_check
+/// <span class="material-symbols-rounded">search</span> MaterialSymbolsRounded.search
 ///
-  /// <span class="material-symbols-rounded">search_off</span> MaterialSymbolsRounded.search_off
+/// <span class="material-symbols-rounded">search_check</span> MaterialSymbolsRounded.search_check
 ///
-  /// <span class="material-symbols-rounded">security</span> MaterialSymbolsRounded.security
+/// <span class="material-symbols-rounded">search_off</span> MaterialSymbolsRounded.search_off
 ///
-  /// <span class="material-symbols-rounded">security_update</span> MaterialSymbolsRounded.security_update
+/// <span class="material-symbols-rounded">security</span> MaterialSymbolsRounded.security
 ///
-  /// <span class="material-symbols-rounded">security_update_good</span> MaterialSymbolsRounded.security_update_good
+/// <span class="material-symbols-rounded">security_update</span> MaterialSymbolsRounded.security_update
 ///
-  /// <span class="material-symbols-rounded">security_update_warning</span> MaterialSymbolsRounded.security_update_warning
+/// <span class="material-symbols-rounded">security_update_good</span> MaterialSymbolsRounded.security_update_good
 ///
-  /// <span class="material-symbols-rounded">segment</span> MaterialSymbolsRounded.segment
+/// <span class="material-symbols-rounded">security_update_warning</span> MaterialSymbolsRounded.security_update_warning
 ///
-  /// <span class="material-symbols-rounded">select</span> MaterialSymbolsRounded.select
+/// <span class="material-symbols-rounded">segment</span> MaterialSymbolsRounded.segment
 ///
-  /// <span class="material-symbols-rounded">select_all</span> MaterialSymbolsRounded.select_all
+/// <span class="material-symbols-rounded">select</span> MaterialSymbolsRounded.select
 ///
-  /// <span class="material-symbols-rounded">select_check_box</span> MaterialSymbolsRounded.select_check_box
+/// <span class="material-symbols-rounded">select_all</span> MaterialSymbolsRounded.select_all
 ///
-  /// <span class="material-symbols-rounded">select_to_speak</span> MaterialSymbolsRounded.select_to_speak
+/// <span class="material-symbols-rounded">select_check_box</span> MaterialSymbolsRounded.select_check_box
 ///
-  /// <span class="material-symbols-rounded">self_care</span> MaterialSymbolsRounded.self_care
+/// <span class="material-symbols-rounded">select_to_speak</span> MaterialSymbolsRounded.select_to_speak
 ///
-  /// <span class="material-symbols-rounded">self_improvement</span> MaterialSymbolsRounded.self_improvement
+/// <span class="material-symbols-rounded">self_care</span> MaterialSymbolsRounded.self_care
 ///
-  /// <span class="material-symbols-rounded">sell</span> MaterialSymbolsRounded.sell
+/// <span class="material-symbols-rounded">self_improvement</span> MaterialSymbolsRounded.self_improvement
 ///
-  /// <span class="material-symbols-rounded">send</span> MaterialSymbolsRounded.send
+/// <span class="material-symbols-rounded">sell</span> MaterialSymbolsRounded.sell
 ///
-  /// <span class="material-symbols-rounded">send_and_archive</span> MaterialSymbolsRounded.send_and_archive
+/// <span class="material-symbols-rounded">send</span> MaterialSymbolsRounded.send
 ///
-  /// <span class="material-symbols-rounded">send_time_extension</span> MaterialSymbolsRounded.send_time_extension
+/// <span class="material-symbols-rounded">send_and_archive</span> MaterialSymbolsRounded.send_and_archive
 ///
-  /// <span class="material-symbols-rounded">send_to_mobile</span> MaterialSymbolsRounded.send_to_mobile
+/// <span class="material-symbols-rounded">send_time_extension</span> MaterialSymbolsRounded.send_time_extension
 ///
-  /// <span class="material-symbols-rounded">sensor_door</span> MaterialSymbolsRounded.sensor_door
+/// <span class="material-symbols-rounded">send_to_mobile</span> MaterialSymbolsRounded.send_to_mobile
 ///
-  /// <span class="material-symbols-rounded">sensor_occupied</span> MaterialSymbolsRounded.sensor_occupied
+/// <span class="material-symbols-rounded">sensor_door</span> MaterialSymbolsRounded.sensor_door
 ///
-  /// <span class="material-symbols-rounded">sensor_window</span> MaterialSymbolsRounded.sensor_window
+/// <span class="material-symbols-rounded">sensor_occupied</span> MaterialSymbolsRounded.sensor_occupied
 ///
-  /// <span class="material-symbols-rounded">sensors</span> MaterialSymbolsRounded.sensors
+/// <span class="material-symbols-rounded">sensor_window</span> MaterialSymbolsRounded.sensor_window
 ///
-  /// <span class="material-symbols-rounded">sensors_off</span> MaterialSymbolsRounded.sensors_off
+/// <span class="material-symbols-rounded">sensors</span> MaterialSymbolsRounded.sensors
 ///
-  /// <span class="material-symbols-rounded">sentiment_calm</span> MaterialSymbolsRounded.sentiment_calm
+/// <span class="material-symbols-rounded">sensors_off</span> MaterialSymbolsRounded.sensors_off
 ///
-  /// <span class="material-symbols-rounded">sentiment_content</span> MaterialSymbolsRounded.sentiment_content
+/// <span class="material-symbols-rounded">sentiment_calm</span> MaterialSymbolsRounded.sentiment_calm
 ///
-  /// <span class="material-symbols-rounded">sentiment_dissatisfied</span> MaterialSymbolsRounded.sentiment_dissatisfied
+/// <span class="material-symbols-rounded">sentiment_content</span> MaterialSymbolsRounded.sentiment_content
 ///
-  /// <span class="material-symbols-rounded">sentiment_excited</span> MaterialSymbolsRounded.sentiment_excited
+/// <span class="material-symbols-rounded">sentiment_dissatisfied</span> MaterialSymbolsRounded.sentiment_dissatisfied
 ///
-  /// <span class="material-symbols-rounded">sentiment_extremely_dissatisfied</span> MaterialSymbolsRounded.sentiment_extremely_dissatisfied
+/// <span class="material-symbols-rounded">sentiment_excited</span> MaterialSymbolsRounded.sentiment_excited
 ///
-  /// <span class="material-symbols-rounded">sentiment_frustrated</span> MaterialSymbolsRounded.sentiment_frustrated
+/// <span class="material-symbols-rounded">sentiment_extremely_dissatisfied</span> MaterialSymbolsRounded.sentiment_extremely_dissatisfied
 ///
-  /// <span class="material-symbols-rounded">sentiment_neutral</span> MaterialSymbolsRounded.sentiment_neutral
+/// <span class="material-symbols-rounded">sentiment_frustrated</span> MaterialSymbolsRounded.sentiment_frustrated
 ///
-  /// <span class="material-symbols-rounded">sentiment_sad</span> MaterialSymbolsRounded.sentiment_sad
+/// <span class="material-symbols-rounded">sentiment_neutral</span> MaterialSymbolsRounded.sentiment_neutral
 ///
-  /// <span class="material-symbols-rounded">sentiment_satisfied</span> MaterialSymbolsRounded.sentiment_satisfied
+/// <span class="material-symbols-rounded">sentiment_sad</span> MaterialSymbolsRounded.sentiment_sad
 ///
-  /// <span class="material-symbols-rounded">sentiment_satisfied_alt</span> MaterialSymbolsRounded.sentiment_satisfied_alt
+/// <span class="material-symbols-rounded">sentiment_satisfied</span> MaterialSymbolsRounded.sentiment_satisfied
 ///
-  /// <span class="material-symbols-rounded">sentiment_stressed</span> MaterialSymbolsRounded.sentiment_stressed
+/// <span class="material-symbols-rounded">sentiment_satisfied_alt</span> MaterialSymbolsRounded.sentiment_satisfied_alt
 ///
-  /// <span class="material-symbols-rounded">sentiment_very_dissatisfied</span> MaterialSymbolsRounded.sentiment_very_dissatisfied
+/// <span class="material-symbols-rounded">sentiment_stressed</span> MaterialSymbolsRounded.sentiment_stressed
 ///
-  /// <span class="material-symbols-rounded">sentiment_very_satisfied</span> MaterialSymbolsRounded.sentiment_very_satisfied
+/// <span class="material-symbols-rounded">sentiment_very_dissatisfied</span> MaterialSymbolsRounded.sentiment_very_dissatisfied
 ///
-  /// <span class="material-symbols-rounded">sentiment_worried</span> MaterialSymbolsRounded.sentiment_worried
+/// <span class="material-symbols-rounded">sentiment_very_satisfied</span> MaterialSymbolsRounded.sentiment_very_satisfied
 ///
-  /// <span class="material-symbols-rounded">set_meal</span> MaterialSymbolsRounded.set_meal
+/// <span class="material-symbols-rounded">sentiment_worried</span> MaterialSymbolsRounded.sentiment_worried
 ///
-  /// <span class="material-symbols-rounded">settings</span> MaterialSymbolsRounded.settings
+/// <span class="material-symbols-rounded">set_meal</span> MaterialSymbolsRounded.set_meal
 ///
-  /// <span class="material-symbols-rounded">settings_accessibility</span> MaterialSymbolsRounded.settings_accessibility
+/// <span class="material-symbols-rounded">settings</span> MaterialSymbolsRounded.settings
 ///
-  /// <span class="material-symbols-rounded">settings_account_box</span> MaterialSymbolsRounded.settings_account_box
+/// <span class="material-symbols-rounded">settings_accessibility</span> MaterialSymbolsRounded.settings_accessibility
 ///
-  /// <span class="material-symbols-rounded">settings_alert</span> MaterialSymbolsRounded.settings_alert
+/// <span class="material-symbols-rounded">settings_account_box</span> MaterialSymbolsRounded.settings_account_box
 ///
-  /// <span class="material-symbols-rounded">settings_applications</span> MaterialSymbolsRounded.settings_applications
+/// <span class="material-symbols-rounded">settings_alert</span> MaterialSymbolsRounded.settings_alert
 ///
-  /// <span class="material-symbols-rounded">settings_backup_restore</span> MaterialSymbolsRounded.settings_backup_restore
+/// <span class="material-symbols-rounded">settings_applications</span> MaterialSymbolsRounded.settings_applications
 ///
-  /// <span class="material-symbols-rounded">settings_bluetooth</span> MaterialSymbolsRounded.settings_bluetooth
+/// <span class="material-symbols-rounded">settings_backup_restore</span> MaterialSymbolsRounded.settings_backup_restore
 ///
-  /// <span class="material-symbols-rounded">settings_brightness</span> MaterialSymbolsRounded.settings_brightness
+/// <span class="material-symbols-rounded">settings_bluetooth</span> MaterialSymbolsRounded.settings_bluetooth
 ///
-  /// <span class="material-symbols-rounded">settings_cell</span> MaterialSymbolsRounded.settings_cell
+/// <span class="material-symbols-rounded">settings_brightness</span> MaterialSymbolsRounded.settings_brightness
 ///
-  /// <span class="material-symbols-rounded">settings_ethernet</span> MaterialSymbolsRounded.settings_ethernet
+/// <span class="material-symbols-rounded">settings_cell</span> MaterialSymbolsRounded.settings_cell
 ///
-  /// <span class="material-symbols-rounded">settings_input_antenna</span> MaterialSymbolsRounded.settings_input_antenna
+/// <span class="material-symbols-rounded">settings_ethernet</span> MaterialSymbolsRounded.settings_ethernet
 ///
-  /// <span class="material-symbols-rounded">settings_input_component</span> MaterialSymbolsRounded.settings_input_component
+/// <span class="material-symbols-rounded">settings_input_antenna</span> MaterialSymbolsRounded.settings_input_antenna
 ///
-  /// <span class="material-symbols-rounded">settings_input_composite</span> MaterialSymbolsRounded.settings_input_composite
+/// <span class="material-symbols-rounded">settings_input_component</span> MaterialSymbolsRounded.settings_input_component
 ///
-  /// <span class="material-symbols-rounded">settings_input_hdmi</span> MaterialSymbolsRounded.settings_input_hdmi
+/// <span class="material-symbols-rounded">settings_input_composite</span> MaterialSymbolsRounded.settings_input_composite
 ///
-  /// <span class="material-symbols-rounded">settings_input_svideo</span> MaterialSymbolsRounded.settings_input_svideo
+/// <span class="material-symbols-rounded">settings_input_hdmi</span> MaterialSymbolsRounded.settings_input_hdmi
 ///
-  /// <span class="material-symbols-rounded">settings_motion_mode</span> MaterialSymbolsRounded.settings_motion_mode
+/// <span class="material-symbols-rounded">settings_input_svideo</span> MaterialSymbolsRounded.settings_input_svideo
 ///
-  /// <span class="material-symbols-rounded">settings_night_sight</span> MaterialSymbolsRounded.settings_night_sight
+/// <span class="material-symbols-rounded">settings_motion_mode</span> MaterialSymbolsRounded.settings_motion_mode
 ///
-  /// <span class="material-symbols-rounded">settings_overscan</span> MaterialSymbolsRounded.settings_overscan
+/// <span class="material-symbols-rounded">settings_night_sight</span> MaterialSymbolsRounded.settings_night_sight
 ///
-  /// <span class="material-symbols-rounded">settings_panorama</span> MaterialSymbolsRounded.settings_panorama
+/// <span class="material-symbols-rounded">settings_overscan</span> MaterialSymbolsRounded.settings_overscan
 ///
-  /// <span class="material-symbols-rounded">settings_phone</span> MaterialSymbolsRounded.settings_phone
+/// <span class="material-symbols-rounded">settings_panorama</span> MaterialSymbolsRounded.settings_panorama
 ///
-  /// <span class="material-symbols-rounded">settings_photo_camera</span> MaterialSymbolsRounded.settings_photo_camera
+/// <span class="material-symbols-rounded">settings_phone</span> MaterialSymbolsRounded.settings_phone
 ///
-  /// <span class="material-symbols-rounded">settings_power</span> MaterialSymbolsRounded.settings_power
+/// <span class="material-symbols-rounded">settings_photo_camera</span> MaterialSymbolsRounded.settings_photo_camera
 ///
-  /// <span class="material-symbols-rounded">settings_remote</span> MaterialSymbolsRounded.settings_remote
+/// <span class="material-symbols-rounded">settings_power</span> MaterialSymbolsRounded.settings_power
 ///
-  /// <span class="material-symbols-rounded">settings_suggest</span> MaterialSymbolsRounded.settings_suggest
+/// <span class="material-symbols-rounded">settings_remote</span> MaterialSymbolsRounded.settings_remote
 ///
-  /// <span class="material-symbols-rounded">settings_system_daydream</span> MaterialSymbolsRounded.settings_system_daydream
+/// <span class="material-symbols-rounded">settings_suggest</span> MaterialSymbolsRounded.settings_suggest
 ///
-  /// <span class="material-symbols-rounded">settings_voice</span> MaterialSymbolsRounded.settings_voice
+/// <span class="material-symbols-rounded">settings_system_daydream</span> MaterialSymbolsRounded.settings_system_daydream
 ///
-  /// <span class="material-symbols-rounded">settop_component</span> MaterialSymbolsRounded.settop_component
+/// <span class="material-symbols-rounded">settings_voice</span> MaterialSymbolsRounded.settings_voice
 ///
-  /// <span class="material-symbols-rounded">severe_cold</span> MaterialSymbolsRounded.severe_cold
+/// <span class="material-symbols-rounded">settop_component</span> MaterialSymbolsRounded.settop_component
 ///
-  /// <span class="material-symbols-rounded">shape_line</span> MaterialSymbolsRounded.shape_line
+/// <span class="material-symbols-rounded">severe_cold</span> MaterialSymbolsRounded.severe_cold
 ///
-  /// <span class="material-symbols-rounded">shapes</span> MaterialSymbolsRounded.shapes
+/// <span class="material-symbols-rounded">shape_line</span> MaterialSymbolsRounded.shape_line
 ///
-  /// <span class="material-symbols-rounded">share</span> MaterialSymbolsRounded.share
+/// <span class="material-symbols-rounded">shapes</span> MaterialSymbolsRounded.shapes
 ///
-  /// <span class="material-symbols-rounded">share_location</span> MaterialSymbolsRounded.share_location
+/// <span class="material-symbols-rounded">share</span> MaterialSymbolsRounded.share
 ///
-  /// <span class="material-symbols-rounded">share_off</span> MaterialSymbolsRounded.share_off
+/// <span class="material-symbols-rounded">share_location</span> MaterialSymbolsRounded.share_location
 ///
-  /// <span class="material-symbols-rounded">share_reviews</span> MaterialSymbolsRounded.share_reviews
+/// <span class="material-symbols-rounded">share_off</span> MaterialSymbolsRounded.share_off
 ///
-  /// <span class="material-symbols-rounded">sheets_rtl</span> MaterialSymbolsRounded.sheets_rtl
+/// <span class="material-symbols-rounded">share_reviews</span> MaterialSymbolsRounded.share_reviews
 ///
-  /// <span class="material-symbols-rounded">shelf_auto_hide</span> MaterialSymbolsRounded.shelf_auto_hide
+/// <span class="material-symbols-rounded">sheets_rtl</span> MaterialSymbolsRounded.sheets_rtl
 ///
-  /// <span class="material-symbols-rounded">shelf_position</span> MaterialSymbolsRounded.shelf_position
+/// <span class="material-symbols-rounded">shelf_auto_hide</span> MaterialSymbolsRounded.shelf_auto_hide
 ///
-  /// <span class="material-symbols-rounded">shelves</span> MaterialSymbolsRounded.shelves
+/// <span class="material-symbols-rounded">shelf_position</span> MaterialSymbolsRounded.shelf_position
 ///
-  /// <span class="material-symbols-rounded">shield</span> MaterialSymbolsRounded.shield
+/// <span class="material-symbols-rounded">shelves</span> MaterialSymbolsRounded.shelves
 ///
-  /// <span class="material-symbols-rounded">shield_moon</span> MaterialSymbolsRounded.shield_moon
+/// <span class="material-symbols-rounded">shield</span> MaterialSymbolsRounded.shield
 ///
-  /// <span class="material-symbols-rounded">shield_with_heart</span> MaterialSymbolsRounded.shield_with_heart
+/// <span class="material-symbols-rounded">shield_moon</span> MaterialSymbolsRounded.shield_moon
 ///
-  /// <span class="material-symbols-rounded">shield_with_house</span> MaterialSymbolsRounded.shield_with_house
+/// <span class="material-symbols-rounded">shield_with_heart</span> MaterialSymbolsRounded.shield_with_heart
 ///
-  /// <span class="material-symbols-rounded">shift</span> MaterialSymbolsRounded.shift
+/// <span class="material-symbols-rounded">shield_with_house</span> MaterialSymbolsRounded.shield_with_house
 ///
-  /// <span class="material-symbols-rounded">shift_lock</span> MaterialSymbolsRounded.shift_lock
+/// <span class="material-symbols-rounded">shift</span> MaterialSymbolsRounded.shift
 ///
-  /// <span class="material-symbols-rounded">shop</span> MaterialSymbolsRounded.shop
+/// <span class="material-symbols-rounded">shift_lock</span> MaterialSymbolsRounded.shift_lock
 ///
-  /// <span class="material-symbols-rounded">shop_2</span> MaterialSymbolsRounded.shop_2
+/// <span class="material-symbols-rounded">shop</span> MaterialSymbolsRounded.shop
 ///
-  /// <span class="material-symbols-rounded">shop_two</span> MaterialSymbolsRounded.shop_two
+/// <span class="material-symbols-rounded">shop_2</span> MaterialSymbolsRounded.shop_2
 ///
-  /// <span class="material-symbols-rounded">shopping_bag</span> MaterialSymbolsRounded.shopping_bag
+/// <span class="material-symbols-rounded">shop_two</span> MaterialSymbolsRounded.shop_two
 ///
-  /// <span class="material-symbols-rounded">shopping_basket</span> MaterialSymbolsRounded.shopping_basket
+/// <span class="material-symbols-rounded">shopping_bag</span> MaterialSymbolsRounded.shopping_bag
 ///
-  /// <span class="material-symbols-rounded">shopping_cart</span> MaterialSymbolsRounded.shopping_cart
+/// <span class="material-symbols-rounded">shopping_basket</span> MaterialSymbolsRounded.shopping_basket
 ///
-  /// <span class="material-symbols-rounded">shopping_cart_checkout</span> MaterialSymbolsRounded.shopping_cart_checkout
+/// <span class="material-symbols-rounded">shopping_cart</span> MaterialSymbolsRounded.shopping_cart
 ///
-  /// <span class="material-symbols-rounded">short_stay</span> MaterialSymbolsRounded.short_stay
+/// <span class="material-symbols-rounded">shopping_cart_checkout</span> MaterialSymbolsRounded.shopping_cart_checkout
 ///
-  /// <span class="material-symbols-rounded">short_text</span> MaterialSymbolsRounded.short_text
+/// <span class="material-symbols-rounded">short_stay</span> MaterialSymbolsRounded.short_stay
 ///
-  /// <span class="material-symbols-rounded">shortcut</span> MaterialSymbolsRounded.shortcut
+/// <span class="material-symbols-rounded">short_text</span> MaterialSymbolsRounded.short_text
 ///
-  /// <span class="material-symbols-rounded">show_chart</span> MaterialSymbolsRounded.show_chart
+/// <span class="material-symbols-rounded">shortcut</span> MaterialSymbolsRounded.shortcut
 ///
-  /// <span class="material-symbols-rounded">shower</span> MaterialSymbolsRounded.shower
+/// <span class="material-symbols-rounded">show_chart</span> MaterialSymbolsRounded.show_chart
 ///
-  /// <span class="material-symbols-rounded">shuffle</span> MaterialSymbolsRounded.shuffle
+/// <span class="material-symbols-rounded">shower</span> MaterialSymbolsRounded.shower
 ///
-  /// <span class="material-symbols-rounded">shuffle_on</span> MaterialSymbolsRounded.shuffle_on
+/// <span class="material-symbols-rounded">shuffle</span> MaterialSymbolsRounded.shuffle
 ///
-  /// <span class="material-symbols-rounded">shutter_speed</span> MaterialSymbolsRounded.shutter_speed
+/// <span class="material-symbols-rounded">shuffle_on</span> MaterialSymbolsRounded.shuffle_on
 ///
-  /// <span class="material-symbols-rounded">sick</span> MaterialSymbolsRounded.sick
+/// <span class="material-symbols-rounded">shutter_speed</span> MaterialSymbolsRounded.shutter_speed
 ///
-  /// <span class="material-symbols-rounded">sign_language</span> MaterialSymbolsRounded.sign_language
+/// <span class="material-symbols-rounded">sick</span> MaterialSymbolsRounded.sick
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_0_bar</span> MaterialSymbolsRounded.signal_cellular_0_bar
+/// <span class="material-symbols-rounded">sign_language</span> MaterialSymbolsRounded.sign_language
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_1_bar</span> MaterialSymbolsRounded.signal_cellular_1_bar
+/// <span class="material-symbols-rounded">signal_cellular_0_bar</span> MaterialSymbolsRounded.signal_cellular_0_bar
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_2_bar</span> MaterialSymbolsRounded.signal_cellular_2_bar
+/// <span class="material-symbols-rounded">signal_cellular_1_bar</span> MaterialSymbolsRounded.signal_cellular_1_bar
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_3_bar</span> MaterialSymbolsRounded.signal_cellular_3_bar
+/// <span class="material-symbols-rounded">signal_cellular_2_bar</span> MaterialSymbolsRounded.signal_cellular_2_bar
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_4_bar</span> MaterialSymbolsRounded.signal_cellular_4_bar
+/// <span class="material-symbols-rounded">signal_cellular_3_bar</span> MaterialSymbolsRounded.signal_cellular_3_bar
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_add</span> MaterialSymbolsRounded.signal_cellular_add
+/// <span class="material-symbols-rounded">signal_cellular_4_bar</span> MaterialSymbolsRounded.signal_cellular_4_bar
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_alt</span> MaterialSymbolsRounded.signal_cellular_alt
+/// <span class="material-symbols-rounded">signal_cellular_add</span> MaterialSymbolsRounded.signal_cellular_add
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_alt_1_bar</span> MaterialSymbolsRounded.signal_cellular_alt_1_bar
+/// <span class="material-symbols-rounded">signal_cellular_alt</span> MaterialSymbolsRounded.signal_cellular_alt
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_alt_2_bar</span> MaterialSymbolsRounded.signal_cellular_alt_2_bar
+/// <span class="material-symbols-rounded">signal_cellular_alt_1_bar</span> MaterialSymbolsRounded.signal_cellular_alt_1_bar
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_connected_no_internet_0_bar</span> MaterialSymbolsRounded.signal_cellular_connected_no_internet_0_bar
+/// <span class="material-symbols-rounded">signal_cellular_alt_2_bar</span> MaterialSymbolsRounded.signal_cellular_alt_2_bar
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_connected_no_internet_4_bar</span> MaterialSymbolsRounded.signal_cellular_connected_no_internet_4_bar
+/// <span class="material-symbols-rounded">signal_cellular_connected_no_internet_0_bar</span> MaterialSymbolsRounded.signal_cellular_connected_no_internet_0_bar
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_no_sim</span> MaterialSymbolsRounded.signal_cellular_no_sim
+/// <span class="material-symbols-rounded">signal_cellular_connected_no_internet_4_bar</span> MaterialSymbolsRounded.signal_cellular_connected_no_internet_4_bar
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_nodata</span> MaterialSymbolsRounded.signal_cellular_nodata
+/// <span class="material-symbols-rounded">signal_cellular_no_sim</span> MaterialSymbolsRounded.signal_cellular_no_sim
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_null</span> MaterialSymbolsRounded.signal_cellular_null
+/// <span class="material-symbols-rounded">signal_cellular_nodata</span> MaterialSymbolsRounded.signal_cellular_nodata
 ///
-  /// <span class="material-symbols-rounded">signal_cellular_off</span> MaterialSymbolsRounded.signal_cellular_off
+/// <span class="material-symbols-rounded">signal_cellular_null</span> MaterialSymbolsRounded.signal_cellular_null
 ///
-  /// <span class="material-symbols-rounded">signal_disconnected</span> MaterialSymbolsRounded.signal_disconnected
+/// <span class="material-symbols-rounded">signal_cellular_off</span> MaterialSymbolsRounded.signal_cellular_off
 ///
-  /// <span class="material-symbols-rounded">signal_wifi_0_bar</span> MaterialSymbolsRounded.signal_wifi_0_bar
+/// <span class="material-symbols-rounded">signal_disconnected</span> MaterialSymbolsRounded.signal_disconnected
 ///
-  /// <span class="material-symbols-rounded">signal_wifi_4_bar</span> MaterialSymbolsRounded.signal_wifi_4_bar
+/// <span class="material-symbols-rounded">signal_wifi_0_bar</span> MaterialSymbolsRounded.signal_wifi_0_bar
 ///
-  /// <span class="material-symbols-rounded">signal_wifi_4_bar_lock</span> MaterialSymbolsRounded.signal_wifi_4_bar_lock
+/// <span class="material-symbols-rounded">signal_wifi_4_bar</span> MaterialSymbolsRounded.signal_wifi_4_bar
 ///
-  /// <span class="material-symbols-rounded">signal_wifi_bad</span> MaterialSymbolsRounded.signal_wifi_bad
+/// <span class="material-symbols-rounded">signal_wifi_4_bar_lock</span> MaterialSymbolsRounded.signal_wifi_4_bar_lock
 ///
-  /// <span class="material-symbols-rounded">signal_wifi_connected_no_internet_4</span> MaterialSymbolsRounded.signal_wifi_connected_no_internet_4
+/// <span class="material-symbols-rounded">signal_wifi_bad</span> MaterialSymbolsRounded.signal_wifi_bad
 ///
-  /// <span class="material-symbols-rounded">signal_wifi_off</span> MaterialSymbolsRounded.signal_wifi_off
+/// <span class="material-symbols-rounded">signal_wifi_connected_no_internet_4</span> MaterialSymbolsRounded.signal_wifi_connected_no_internet_4
 ///
-  /// <span class="material-symbols-rounded">signal_wifi_statusbar_4_bar</span> MaterialSymbolsRounded.signal_wifi_statusbar_4_bar
+/// <span class="material-symbols-rounded">signal_wifi_off</span> MaterialSymbolsRounded.signal_wifi_off
 ///
-  /// <span class="material-symbols-rounded">signal_wifi_statusbar_not_connected</span> MaterialSymbolsRounded.signal_wifi_statusbar_not_connected
+/// <span class="material-symbols-rounded">signal_wifi_statusbar_4_bar</span> MaterialSymbolsRounded.signal_wifi_statusbar_4_bar
 ///
-  /// <span class="material-symbols-rounded">signal_wifi_statusbar_null</span> MaterialSymbolsRounded.signal_wifi_statusbar_null
+/// <span class="material-symbols-rounded">signal_wifi_statusbar_not_connected</span> MaterialSymbolsRounded.signal_wifi_statusbar_not_connected
 ///
-  /// <span class="material-symbols-rounded">signature</span> MaterialSymbolsRounded.signature
+/// <span class="material-symbols-rounded">signal_wifi_statusbar_null</span> MaterialSymbolsRounded.signal_wifi_statusbar_null
 ///
-  /// <span class="material-symbols-rounded">signpost</span> MaterialSymbolsRounded.signpost
+/// <span class="material-symbols-rounded">signature</span> MaterialSymbolsRounded.signature
 ///
-  /// <span class="material-symbols-rounded">sim_card</span> MaterialSymbolsRounded.sim_card
+/// <span class="material-symbols-rounded">signpost</span> MaterialSymbolsRounded.signpost
 ///
-  /// <span class="material-symbols-rounded">sim_card_alert</span> MaterialSymbolsRounded.sim_card_alert
+/// <span class="material-symbols-rounded">sim_card</span> MaterialSymbolsRounded.sim_card
 ///
-  /// <span class="material-symbols-rounded">sim_card_download</span> MaterialSymbolsRounded.sim_card_download
+/// <span class="material-symbols-rounded">sim_card_alert</span> MaterialSymbolsRounded.sim_card_alert
 ///
-  /// <span class="material-symbols-rounded">single_bed</span> MaterialSymbolsRounded.single_bed
+/// <span class="material-symbols-rounded">sim_card_download</span> MaterialSymbolsRounded.sim_card_download
 ///
-  /// <span class="material-symbols-rounded">sip</span> MaterialSymbolsRounded.sip
+/// <span class="material-symbols-rounded">single_bed</span> MaterialSymbolsRounded.single_bed
 ///
-  /// <span class="material-symbols-rounded">skateboarding</span> MaterialSymbolsRounded.skateboarding
+/// <span class="material-symbols-rounded">sip</span> MaterialSymbolsRounded.sip
 ///
-  /// <span class="material-symbols-rounded">skeleton</span> MaterialSymbolsRounded.skeleton
+/// <span class="material-symbols-rounded">skateboarding</span> MaterialSymbolsRounded.skateboarding
 ///
-  /// <span class="material-symbols-rounded">skip_next</span> MaterialSymbolsRounded.skip_next
+/// <span class="material-symbols-rounded">skeleton</span> MaterialSymbolsRounded.skeleton
 ///
-  /// <span class="material-symbols-rounded">skip_previous</span> MaterialSymbolsRounded.skip_previous
+/// <span class="material-symbols-rounded">skip_next</span> MaterialSymbolsRounded.skip_next
 ///
-  /// <span class="material-symbols-rounded">skull</span> MaterialSymbolsRounded.skull
+/// <span class="material-symbols-rounded">skip_previous</span> MaterialSymbolsRounded.skip_previous
 ///
-  /// <span class="material-symbols-rounded">sledding</span> MaterialSymbolsRounded.sledding
+/// <span class="material-symbols-rounded">skull</span> MaterialSymbolsRounded.skull
 ///
-  /// <span class="material-symbols-rounded">sleep</span> MaterialSymbolsRounded.sleep
+/// <span class="material-symbols-rounded">sledding</span> MaterialSymbolsRounded.sledding
 ///
-  /// <span class="material-symbols-rounded">sleep_score</span> MaterialSymbolsRounded.sleep_score
+/// <span class="material-symbols-rounded">sleep</span> MaterialSymbolsRounded.sleep
 ///
-  /// <span class="material-symbols-rounded">slide_library</span> MaterialSymbolsRounded.slide_library
+/// <span class="material-symbols-rounded">sleep_score</span> MaterialSymbolsRounded.sleep_score
 ///
-  /// <span class="material-symbols-rounded">slideshow</span> MaterialSymbolsRounded.slideshow
+/// <span class="material-symbols-rounded">slide_library</span> MaterialSymbolsRounded.slide_library
 ///
-  /// <span class="material-symbols-rounded">slow_motion_video</span> MaterialSymbolsRounded.slow_motion_video
+/// <span class="material-symbols-rounded">slideshow</span> MaterialSymbolsRounded.slideshow
 ///
-  /// <span class="material-symbols-rounded">smart_button</span> MaterialSymbolsRounded.smart_button
+/// <span class="material-symbols-rounded">slow_motion_video</span> MaterialSymbolsRounded.slow_motion_video
 ///
-  /// <span class="material-symbols-rounded">smart_display</span> MaterialSymbolsRounded.smart_display
+/// <span class="material-symbols-rounded">smart_button</span> MaterialSymbolsRounded.smart_button
 ///
-  /// <span class="material-symbols-rounded">smart_outlet</span> MaterialSymbolsRounded.smart_outlet
+/// <span class="material-symbols-rounded">smart_display</span> MaterialSymbolsRounded.smart_display
 ///
-  /// <span class="material-symbols-rounded">smart_screen</span> MaterialSymbolsRounded.smart_screen
+/// <span class="material-symbols-rounded">smart_outlet</span> MaterialSymbolsRounded.smart_outlet
 ///
-  /// <span class="material-symbols-rounded">smart_toy</span> MaterialSymbolsRounded.smart_toy
+/// <span class="material-symbols-rounded">smart_screen</span> MaterialSymbolsRounded.smart_screen
 ///
-  /// <span class="material-symbols-rounded">smartphone</span> MaterialSymbolsRounded.smartphone
+/// <span class="material-symbols-rounded">smart_toy</span> MaterialSymbolsRounded.smart_toy
 ///
-  /// <span class="material-symbols-rounded">smb_share</span> MaterialSymbolsRounded.smb_share
+/// <span class="material-symbols-rounded">smartphone</span> MaterialSymbolsRounded.smartphone
 ///
-  /// <span class="material-symbols-rounded">smoke_free</span> MaterialSymbolsRounded.smoke_free
+/// <span class="material-symbols-rounded">smb_share</span> MaterialSymbolsRounded.smb_share
 ///
-  /// <span class="material-symbols-rounded">smoking_rooms</span> MaterialSymbolsRounded.smoking_rooms
+/// <span class="material-symbols-rounded">smoke_free</span> MaterialSymbolsRounded.smoke_free
 ///
-  /// <span class="material-symbols-rounded">sms</span> MaterialSymbolsRounded.sms
+/// <span class="material-symbols-rounded">smoking_rooms</span> MaterialSymbolsRounded.smoking_rooms
 ///
-  /// <span class="material-symbols-rounded">sms_failed</span> MaterialSymbolsRounded.sms_failed
+/// <span class="material-symbols-rounded">sms</span> MaterialSymbolsRounded.sms
 ///
-  /// <span class="material-symbols-rounded">snippet_folder</span> MaterialSymbolsRounded.snippet_folder
+/// <span class="material-symbols-rounded">sms_failed</span> MaterialSymbolsRounded.sms_failed
 ///
-  /// <span class="material-symbols-rounded">snooze</span> MaterialSymbolsRounded.snooze
+/// <span class="material-symbols-rounded">snippet_folder</span> MaterialSymbolsRounded.snippet_folder
 ///
-  /// <span class="material-symbols-rounded">snowboarding</span> MaterialSymbolsRounded.snowboarding
+/// <span class="material-symbols-rounded">snooze</span> MaterialSymbolsRounded.snooze
 ///
-  /// <span class="material-symbols-rounded">snowing</span> MaterialSymbolsRounded.snowing
+/// <span class="material-symbols-rounded">snowboarding</span> MaterialSymbolsRounded.snowboarding
 ///
-  /// <span class="material-symbols-rounded">snowmobile</span> MaterialSymbolsRounded.snowmobile
+/// <span class="material-symbols-rounded">snowing</span> MaterialSymbolsRounded.snowing
 ///
-  /// <span class="material-symbols-rounded">snowshoeing</span> MaterialSymbolsRounded.snowshoeing
+/// <span class="material-symbols-rounded">snowmobile</span> MaterialSymbolsRounded.snowmobile
 ///
-  /// <span class="material-symbols-rounded">soap</span> MaterialSymbolsRounded.soap
+/// <span class="material-symbols-rounded">snowshoeing</span> MaterialSymbolsRounded.snowshoeing
 ///
-  /// <span class="material-symbols-rounded">social_distance</span> MaterialSymbolsRounded.social_distance
+/// <span class="material-symbols-rounded">soap</span> MaterialSymbolsRounded.soap
 ///
-  /// <span class="material-symbols-rounded">social_leaderboard</span> MaterialSymbolsRounded.social_leaderboard
+/// <span class="material-symbols-rounded">social_distance</span> MaterialSymbolsRounded.social_distance
 ///
-  /// <span class="material-symbols-rounded">solar_power</span> MaterialSymbolsRounded.solar_power
+/// <span class="material-symbols-rounded">social_leaderboard</span> MaterialSymbolsRounded.social_leaderboard
 ///
-  /// <span class="material-symbols-rounded">sort</span> MaterialSymbolsRounded.sort
+/// <span class="material-symbols-rounded">solar_power</span> MaterialSymbolsRounded.solar_power
 ///
-  /// <span class="material-symbols-rounded">sort_by_alpha</span> MaterialSymbolsRounded.sort_by_alpha
+/// <span class="material-symbols-rounded">sort</span> MaterialSymbolsRounded.sort
 ///
-  /// <span class="material-symbols-rounded">sos</span> MaterialSymbolsRounded.sos
+/// <span class="material-symbols-rounded">sort_by_alpha</span> MaterialSymbolsRounded.sort_by_alpha
 ///
-  /// <span class="material-symbols-rounded">sound_detection_dog_barking</span> MaterialSymbolsRounded.sound_detection_dog_barking
+/// <span class="material-symbols-rounded">sos</span> MaterialSymbolsRounded.sos
 ///
-  /// <span class="material-symbols-rounded">sound_detection_glass_break</span> MaterialSymbolsRounded.sound_detection_glass_break
+/// <span class="material-symbols-rounded">sound_detection_dog_barking</span> MaterialSymbolsRounded.sound_detection_dog_barking
 ///
-  /// <span class="material-symbols-rounded">sound_detection_loud_sound</span> MaterialSymbolsRounded.sound_detection_loud_sound
+/// <span class="material-symbols-rounded">sound_detection_glass_break</span> MaterialSymbolsRounded.sound_detection_glass_break
 ///
-  /// <span class="material-symbols-rounded">sound_sampler</span> MaterialSymbolsRounded.sound_sampler
+/// <span class="material-symbols-rounded">sound_detection_loud_sound</span> MaterialSymbolsRounded.sound_detection_loud_sound
 ///
-  /// <span class="material-symbols-rounded">soup_kitchen</span> MaterialSymbolsRounded.soup_kitchen
+/// <span class="material-symbols-rounded">sound_sampler</span> MaterialSymbolsRounded.sound_sampler
 ///
-  /// <span class="material-symbols-rounded">source</span> MaterialSymbolsRounded.source
+/// <span class="material-symbols-rounded">soup_kitchen</span> MaterialSymbolsRounded.soup_kitchen
 ///
-  /// <span class="material-symbols-rounded">source_notes</span> MaterialSymbolsRounded.source_notes
+/// <span class="material-symbols-rounded">source</span> MaterialSymbolsRounded.source
 ///
-  /// <span class="material-symbols-rounded">south</span> MaterialSymbolsRounded.south
+/// <span class="material-symbols-rounded">source_notes</span> MaterialSymbolsRounded.source_notes
 ///
-  /// <span class="material-symbols-rounded">south_america</span> MaterialSymbolsRounded.south_america
+/// <span class="material-symbols-rounded">south</span> MaterialSymbolsRounded.south
 ///
-  /// <span class="material-symbols-rounded">south_east</span> MaterialSymbolsRounded.south_east
+/// <span class="material-symbols-rounded">south_america</span> MaterialSymbolsRounded.south_america
 ///
-  /// <span class="material-symbols-rounded">south_west</span> MaterialSymbolsRounded.south_west
+/// <span class="material-symbols-rounded">south_east</span> MaterialSymbolsRounded.south_east
 ///
-  /// <span class="material-symbols-rounded">spa</span> MaterialSymbolsRounded.spa
+/// <span class="material-symbols-rounded">south_west</span> MaterialSymbolsRounded.south_west
 ///
-  /// <span class="material-symbols-rounded">space_bar</span> MaterialSymbolsRounded.space_bar
+/// <span class="material-symbols-rounded">spa</span> MaterialSymbolsRounded.spa
 ///
-  /// <span class="material-symbols-rounded">space_dashboard</span> MaterialSymbolsRounded.space_dashboard
+/// <span class="material-symbols-rounded">space_bar</span> MaterialSymbolsRounded.space_bar
 ///
-  /// <span class="material-symbols-rounded">spatial_audio</span> MaterialSymbolsRounded.spatial_audio
+/// <span class="material-symbols-rounded">space_dashboard</span> MaterialSymbolsRounded.space_dashboard
 ///
-  /// <span class="material-symbols-rounded">spatial_audio_off</span> MaterialSymbolsRounded.spatial_audio_off
+/// <span class="material-symbols-rounded">spatial_audio</span> MaterialSymbolsRounded.spatial_audio
 ///
-  /// <span class="material-symbols-rounded">spatial_tracking</span> MaterialSymbolsRounded.spatial_tracking
+/// <span class="material-symbols-rounded">spatial_audio_off</span> MaterialSymbolsRounded.spatial_audio_off
 ///
-  /// <span class="material-symbols-rounded">speaker</span> MaterialSymbolsRounded.speaker
+/// <span class="material-symbols-rounded">spatial_tracking</span> MaterialSymbolsRounded.spatial_tracking
 ///
-  /// <span class="material-symbols-rounded">speaker_group</span> MaterialSymbolsRounded.speaker_group
+/// <span class="material-symbols-rounded">speaker</span> MaterialSymbolsRounded.speaker
 ///
-  /// <span class="material-symbols-rounded">speaker_notes</span> MaterialSymbolsRounded.speaker_notes
+/// <span class="material-symbols-rounded">speaker_group</span> MaterialSymbolsRounded.speaker_group
 ///
-  /// <span class="material-symbols-rounded">speaker_notes_off</span> MaterialSymbolsRounded.speaker_notes_off
+/// <span class="material-symbols-rounded">speaker_notes</span> MaterialSymbolsRounded.speaker_notes
 ///
-  /// <span class="material-symbols-rounded">speaker_phone</span> MaterialSymbolsRounded.speaker_phone
+/// <span class="material-symbols-rounded">speaker_notes_off</span> MaterialSymbolsRounded.speaker_notes_off
 ///
-  /// <span class="material-symbols-rounded">special_character</span> MaterialSymbolsRounded.special_character
+/// <span class="material-symbols-rounded">speaker_phone</span> MaterialSymbolsRounded.speaker_phone
 ///
-  /// <span class="material-symbols-rounded">specific_gravity</span> MaterialSymbolsRounded.specific_gravity
+/// <span class="material-symbols-rounded">special_character</span> MaterialSymbolsRounded.special_character
 ///
-  /// <span class="material-symbols-rounded">speech_to_text</span> MaterialSymbolsRounded.speech_to_text
+/// <span class="material-symbols-rounded">specific_gravity</span> MaterialSymbolsRounded.specific_gravity
 ///
-  /// <span class="material-symbols-rounded">speed</span> MaterialSymbolsRounded.speed
+/// <span class="material-symbols-rounded">speech_to_text</span> MaterialSymbolsRounded.speech_to_text
 ///
-  /// <span class="material-symbols-rounded">spellcheck</span> MaterialSymbolsRounded.spellcheck
+/// <span class="material-symbols-rounded">speed</span> MaterialSymbolsRounded.speed
 ///
-  /// <span class="material-symbols-rounded">splitscreen</span> MaterialSymbolsRounded.splitscreen
+/// <span class="material-symbols-rounded">spellcheck</span> MaterialSymbolsRounded.spellcheck
 ///
-  /// <span class="material-symbols-rounded">spo2</span> MaterialSymbolsRounded.spo2
+/// <span class="material-symbols-rounded">splitscreen</span> MaterialSymbolsRounded.splitscreen
 ///
-  /// <span class="material-symbols-rounded">spoke</span> MaterialSymbolsRounded.spoke
+/// <span class="material-symbols-rounded">spo2</span> MaterialSymbolsRounded.spo2
 ///
-  /// <span class="material-symbols-rounded">spoof</span> MaterialSymbolsRounded.spoof
+/// <span class="material-symbols-rounded">spoke</span> MaterialSymbolsRounded.spoke
 ///
-  /// <span class="material-symbols-rounded">sports</span> MaterialSymbolsRounded.sports
+/// <span class="material-symbols-rounded">spoof</span> MaterialSymbolsRounded.spoof
 ///
-  /// <span class="material-symbols-rounded">sports_bar</span> MaterialSymbolsRounded.sports_bar
+/// <span class="material-symbols-rounded">sports</span> MaterialSymbolsRounded.sports
 ///
-  /// <span class="material-symbols-rounded">sports_baseball</span> MaterialSymbolsRounded.sports_baseball
+/// <span class="material-symbols-rounded">sports_bar</span> MaterialSymbolsRounded.sports_bar
 ///
-  /// <span class="material-symbols-rounded">sports_basketball</span> MaterialSymbolsRounded.sports_basketball
+/// <span class="material-symbols-rounded">sports_baseball</span> MaterialSymbolsRounded.sports_baseball
 ///
-  /// <span class="material-symbols-rounded">sports_cricket</span> MaterialSymbolsRounded.sports_cricket
+/// <span class="material-symbols-rounded">sports_basketball</span> MaterialSymbolsRounded.sports_basketball
 ///
-  /// <span class="material-symbols-rounded">sports_esports</span> MaterialSymbolsRounded.sports_esports
+/// <span class="material-symbols-rounded">sports_cricket</span> MaterialSymbolsRounded.sports_cricket
 ///
-  /// <span class="material-symbols-rounded">sports_football</span> MaterialSymbolsRounded.sports_football
+/// <span class="material-symbols-rounded">sports_esports</span> MaterialSymbolsRounded.sports_esports
 ///
-  /// <span class="material-symbols-rounded">sports_golf</span> MaterialSymbolsRounded.sports_golf
+/// <span class="material-symbols-rounded">sports_football</span> MaterialSymbolsRounded.sports_football
 ///
-  /// <span class="material-symbols-rounded">sports_gymnastics</span> MaterialSymbolsRounded.sports_gymnastics
+/// <span class="material-symbols-rounded">sports_golf</span> MaterialSymbolsRounded.sports_golf
 ///
-  /// <span class="material-symbols-rounded">sports_handball</span> MaterialSymbolsRounded.sports_handball
+/// <span class="material-symbols-rounded">sports_gymnastics</span> MaterialSymbolsRounded.sports_gymnastics
 ///
-  /// <span class="material-symbols-rounded">sports_hockey</span> MaterialSymbolsRounded.sports_hockey
+/// <span class="material-symbols-rounded">sports_handball</span> MaterialSymbolsRounded.sports_handball
 ///
-  /// <span class="material-symbols-rounded">sports_kabaddi</span> MaterialSymbolsRounded.sports_kabaddi
+/// <span class="material-symbols-rounded">sports_hockey</span> MaterialSymbolsRounded.sports_hockey
 ///
-  /// <span class="material-symbols-rounded">sports_martial_arts</span> MaterialSymbolsRounded.sports_martial_arts
+/// <span class="material-symbols-rounded">sports_kabaddi</span> MaterialSymbolsRounded.sports_kabaddi
 ///
-  /// <span class="material-symbols-rounded">sports_mma</span> MaterialSymbolsRounded.sports_mma
+/// <span class="material-symbols-rounded">sports_martial_arts</span> MaterialSymbolsRounded.sports_martial_arts
 ///
-  /// <span class="material-symbols-rounded">sports_motorsports</span> MaterialSymbolsRounded.sports_motorsports
+/// <span class="material-symbols-rounded">sports_mma</span> MaterialSymbolsRounded.sports_mma
 ///
-  /// <span class="material-symbols-rounded">sports_rugby</span> MaterialSymbolsRounded.sports_rugby
+/// <span class="material-symbols-rounded">sports_motorsports</span> MaterialSymbolsRounded.sports_motorsports
 ///
-  /// <span class="material-symbols-rounded">sports_score</span> MaterialSymbolsRounded.sports_score
+/// <span class="material-symbols-rounded">sports_rugby</span> MaterialSymbolsRounded.sports_rugby
 ///
-  /// <span class="material-symbols-rounded">sports_soccer</span> MaterialSymbolsRounded.sports_soccer
+/// <span class="material-symbols-rounded">sports_score</span> MaterialSymbolsRounded.sports_score
 ///
-  /// <span class="material-symbols-rounded">sports_tennis</span> MaterialSymbolsRounded.sports_tennis
+/// <span class="material-symbols-rounded">sports_soccer</span> MaterialSymbolsRounded.sports_soccer
 ///
-  /// <span class="material-symbols-rounded">sports_volleyball</span> MaterialSymbolsRounded.sports_volleyball
+/// <span class="material-symbols-rounded">sports_tennis</span> MaterialSymbolsRounded.sports_tennis
 ///
-  /// <span class="material-symbols-rounded">sprinkler</span> MaterialSymbolsRounded.sprinkler
+/// <span class="material-symbols-rounded">sports_volleyball</span> MaterialSymbolsRounded.sports_volleyball
 ///
-  /// <span class="material-symbols-rounded">sprint</span> MaterialSymbolsRounded.sprint
+/// <span class="material-symbols-rounded">sprinkler</span> MaterialSymbolsRounded.sprinkler
 ///
-  /// <span class="material-symbols-rounded">square</span> MaterialSymbolsRounded.square
+/// <span class="material-symbols-rounded">sprint</span> MaterialSymbolsRounded.sprint
 ///
-  /// <span class="material-symbols-rounded">square_foot</span> MaterialSymbolsRounded.square_foot
+/// <span class="material-symbols-rounded">square</span> MaterialSymbolsRounded.square
 ///
-  /// <span class="material-symbols-rounded">ssid_chart</span> MaterialSymbolsRounded.ssid_chart
+/// <span class="material-symbols-rounded">square_foot</span> MaterialSymbolsRounded.square_foot
 ///
-  /// <span class="material-symbols-rounded">stacked_bar_chart</span> MaterialSymbolsRounded.stacked_bar_chart
+/// <span class="material-symbols-rounded">ssid_chart</span> MaterialSymbolsRounded.ssid_chart
 ///
-  /// <span class="material-symbols-rounded">stacked_line_chart</span> MaterialSymbolsRounded.stacked_line_chart
+/// <span class="material-symbols-rounded">stacked_bar_chart</span> MaterialSymbolsRounded.stacked_bar_chart
 ///
-  /// <span class="material-symbols-rounded">stadia_controller</span> MaterialSymbolsRounded.stadia_controller
+/// <span class="material-symbols-rounded">stacked_line_chart</span> MaterialSymbolsRounded.stacked_line_chart
 ///
-  /// <span class="material-symbols-rounded">stadium</span> MaterialSymbolsRounded.stadium
+/// <span class="material-symbols-rounded">stadia_controller</span> MaterialSymbolsRounded.stadia_controller
 ///
-  /// <span class="material-symbols-rounded">stairs</span> MaterialSymbolsRounded.stairs
+/// <span class="material-symbols-rounded">stadium</span> MaterialSymbolsRounded.stadium
 ///
-  /// <span class="material-symbols-rounded">star</span> MaterialSymbolsRounded.star
+/// <span class="material-symbols-rounded">stairs</span> MaterialSymbolsRounded.stairs
 ///
-  /// <span class="material-symbols-rounded">star_border</span> MaterialSymbolsRounded.star_border
+/// <span class="material-symbols-rounded">star</span> MaterialSymbolsRounded.star
 ///
-  /// <span class="material-symbols-rounded">star_border_purple500</span> MaterialSymbolsRounded.star_border_purple500
+/// <span class="material-symbols-rounded">star_border</span> MaterialSymbolsRounded.star_border
 ///
-  /// <span class="material-symbols-rounded">star_half</span> MaterialSymbolsRounded.star_half
+/// <span class="material-symbols-rounded">star_border_purple500</span> MaterialSymbolsRounded.star_border_purple500
 ///
-  /// <span class="material-symbols-rounded">star_outline</span> MaterialSymbolsRounded.star_outline
+/// <span class="material-symbols-rounded">star_half</span> MaterialSymbolsRounded.star_half
 ///
-  /// <span class="material-symbols-rounded">star_purple500</span> MaterialSymbolsRounded.star_purple500
+/// <span class="material-symbols-rounded">star_outline</span> MaterialSymbolsRounded.star_outline
 ///
-  /// <span class="material-symbols-rounded">star_rate</span> MaterialSymbolsRounded.star_rate
+/// <span class="material-symbols-rounded">star_purple500</span> MaterialSymbolsRounded.star_purple500
 ///
-  /// <span class="material-symbols-rounded">star_rate_half</span> MaterialSymbolsRounded.star_rate_half
+/// <span class="material-symbols-rounded">star_rate</span> MaterialSymbolsRounded.star_rate
 ///
-  /// <span class="material-symbols-rounded">stars</span> MaterialSymbolsRounded.stars
+/// <span class="material-symbols-rounded">star_rate_half</span> MaterialSymbolsRounded.star_rate_half
 ///
-  /// <span class="material-symbols-rounded">start</span> MaterialSymbolsRounded.start
+/// <span class="material-symbols-rounded">stars</span> MaterialSymbolsRounded.stars
 ///
-  /// <span class="material-symbols-rounded">stay_current_landscape</span> MaterialSymbolsRounded.stay_current_landscape
+/// <span class="material-symbols-rounded">start</span> MaterialSymbolsRounded.start
 ///
-  /// <span class="material-symbols-rounded">stay_current_portrait</span> MaterialSymbolsRounded.stay_current_portrait
+/// <span class="material-symbols-rounded">stay_current_landscape</span> MaterialSymbolsRounded.stay_current_landscape
 ///
-  /// <span class="material-symbols-rounded">stay_primary_landscape</span> MaterialSymbolsRounded.stay_primary_landscape
+/// <span class="material-symbols-rounded">stay_current_portrait</span> MaterialSymbolsRounded.stay_current_portrait
 ///
-  /// <span class="material-symbols-rounded">stay_primary_portrait</span> MaterialSymbolsRounded.stay_primary_portrait
+/// <span class="material-symbols-rounded">stay_primary_landscape</span> MaterialSymbolsRounded.stay_primary_landscape
 ///
-  /// <span class="material-symbols-rounded">step</span> MaterialSymbolsRounded.step
+/// <span class="material-symbols-rounded">stay_primary_portrait</span> MaterialSymbolsRounded.stay_primary_portrait
 ///
-  /// <span class="material-symbols-rounded">step_into</span> MaterialSymbolsRounded.step_into
+/// <span class="material-symbols-rounded">step</span> MaterialSymbolsRounded.step
 ///
-  /// <span class="material-symbols-rounded">step_out</span> MaterialSymbolsRounded.step_out
+/// <span class="material-symbols-rounded">step_into</span> MaterialSymbolsRounded.step_into
 ///
-  /// <span class="material-symbols-rounded">step_over</span> MaterialSymbolsRounded.step_over
+/// <span class="material-symbols-rounded">step_out</span> MaterialSymbolsRounded.step_out
 ///
-  /// <span class="material-symbols-rounded">steps</span> MaterialSymbolsRounded.steps
+/// <span class="material-symbols-rounded">step_over</span> MaterialSymbolsRounded.step_over
 ///
-  /// <span class="material-symbols-rounded">stethoscope</span> MaterialSymbolsRounded.stethoscope
+/// <span class="material-symbols-rounded">steps</span> MaterialSymbolsRounded.steps
 ///
-  /// <span class="material-symbols-rounded">stethoscope_arrow</span> MaterialSymbolsRounded.stethoscope_arrow
+/// <span class="material-symbols-rounded">stethoscope</span> MaterialSymbolsRounded.stethoscope
 ///
-  /// <span class="material-symbols-rounded">stethoscope_check</span> MaterialSymbolsRounded.stethoscope_check
+/// <span class="material-symbols-rounded">stethoscope_arrow</span> MaterialSymbolsRounded.stethoscope_arrow
 ///
-  /// <span class="material-symbols-rounded">sticky_note_2</span> MaterialSymbolsRounded.sticky_note_2
+/// <span class="material-symbols-rounded">stethoscope_check</span> MaterialSymbolsRounded.stethoscope_check
 ///
-  /// <span class="material-symbols-rounded">stop</span> MaterialSymbolsRounded.stop
+/// <span class="material-symbols-rounded">sticky_note_2</span> MaterialSymbolsRounded.sticky_note_2
 ///
-  /// <span class="material-symbols-rounded">stop_circle</span> MaterialSymbolsRounded.stop_circle
+/// <span class="material-symbols-rounded">stop</span> MaterialSymbolsRounded.stop
 ///
-  /// <span class="material-symbols-rounded">stop_screen_share</span> MaterialSymbolsRounded.stop_screen_share
+/// <span class="material-symbols-rounded">stop_circle</span> MaterialSymbolsRounded.stop_circle
 ///
-  /// <span class="material-symbols-rounded">storage</span> MaterialSymbolsRounded.storage
+/// <span class="material-symbols-rounded">stop_screen_share</span> MaterialSymbolsRounded.stop_screen_share
 ///
-  /// <span class="material-symbols-rounded">store</span> MaterialSymbolsRounded.store
+/// <span class="material-symbols-rounded">storage</span> MaterialSymbolsRounded.storage
 ///
-  /// <span class="material-symbols-rounded">store_mall_directory</span> MaterialSymbolsRounded.store_mall_directory
+/// <span class="material-symbols-rounded">store</span> MaterialSymbolsRounded.store
 ///
-  /// <span class="material-symbols-rounded">storefront</span> MaterialSymbolsRounded.storefront
+/// <span class="material-symbols-rounded">store_mall_directory</span> MaterialSymbolsRounded.store_mall_directory
 ///
-  /// <span class="material-symbols-rounded">storm</span> MaterialSymbolsRounded.storm
+/// <span class="material-symbols-rounded">storefront</span> MaterialSymbolsRounded.storefront
 ///
-  /// <span class="material-symbols-rounded">straight</span> MaterialSymbolsRounded.straight
+/// <span class="material-symbols-rounded">storm</span> MaterialSymbolsRounded.storm
 ///
-  /// <span class="material-symbols-rounded">straighten</span> MaterialSymbolsRounded.straighten
+/// <span class="material-symbols-rounded">straight</span> MaterialSymbolsRounded.straight
 ///
-  /// <span class="material-symbols-rounded">stream</span> MaterialSymbolsRounded.stream
+/// <span class="material-symbols-rounded">straighten</span> MaterialSymbolsRounded.straighten
 ///
-  /// <span class="material-symbols-rounded">stream_apps</span> MaterialSymbolsRounded.stream_apps
+/// <span class="material-symbols-rounded">stream</span> MaterialSymbolsRounded.stream
 ///
-  /// <span class="material-symbols-rounded">streetview</span> MaterialSymbolsRounded.streetview
+/// <span class="material-symbols-rounded">stream_apps</span> MaterialSymbolsRounded.stream_apps
 ///
-  /// <span class="material-symbols-rounded">stress_management</span> MaterialSymbolsRounded.stress_management
+/// <span class="material-symbols-rounded">streetview</span> MaterialSymbolsRounded.streetview
 ///
-  /// <span class="material-symbols-rounded">strikethrough_s</span> MaterialSymbolsRounded.strikethrough_s
+/// <span class="material-symbols-rounded">stress_management</span> MaterialSymbolsRounded.stress_management
 ///
-  /// <span class="material-symbols-rounded">stroke_full</span> MaterialSymbolsRounded.stroke_full
+/// <span class="material-symbols-rounded">strikethrough_s</span> MaterialSymbolsRounded.strikethrough_s
 ///
-  /// <span class="material-symbols-rounded">stroke_partial</span> MaterialSymbolsRounded.stroke_partial
+/// <span class="material-symbols-rounded">stroke_full</span> MaterialSymbolsRounded.stroke_full
 ///
-  /// <span class="material-symbols-rounded">stroller</span> MaterialSymbolsRounded.stroller
+/// <span class="material-symbols-rounded">stroke_partial</span> MaterialSymbolsRounded.stroke_partial
 ///
-  /// <span class="material-symbols-rounded">style</span> MaterialSymbolsRounded.style
+/// <span class="material-symbols-rounded">stroller</span> MaterialSymbolsRounded.stroller
 ///
-  /// <span class="material-symbols-rounded">styler</span> MaterialSymbolsRounded.styler
+/// <span class="material-symbols-rounded">style</span> MaterialSymbolsRounded.style
 ///
-  /// <span class="material-symbols-rounded">stylus_laser_pointer</span> MaterialSymbolsRounded.stylus_laser_pointer
+/// <span class="material-symbols-rounded">styler</span> MaterialSymbolsRounded.styler
 ///
-  /// <span class="material-symbols-rounded">subdirectory_arrow_left</span> MaterialSymbolsRounded.subdirectory_arrow_left
+/// <span class="material-symbols-rounded">stylus_laser_pointer</span> MaterialSymbolsRounded.stylus_laser_pointer
 ///
-  /// <span class="material-symbols-rounded">subdirectory_arrow_right</span> MaterialSymbolsRounded.subdirectory_arrow_right
+/// <span class="material-symbols-rounded">subdirectory_arrow_left</span> MaterialSymbolsRounded.subdirectory_arrow_left
 ///
-  /// <span class="material-symbols-rounded">subject</span> MaterialSymbolsRounded.subject
+/// <span class="material-symbols-rounded">subdirectory_arrow_right</span> MaterialSymbolsRounded.subdirectory_arrow_right
 ///
-  /// <span class="material-symbols-rounded">subscript</span> MaterialSymbolsRounded.subscript
+/// <span class="material-symbols-rounded">subject</span> MaterialSymbolsRounded.subject
 ///
-  /// <span class="material-symbols-rounded">subscriptions</span> MaterialSymbolsRounded.subscriptions
+/// <span class="material-symbols-rounded">subscript</span> MaterialSymbolsRounded.subscript
 ///
-  /// <span class="material-symbols-rounded">subtitles</span> MaterialSymbolsRounded.subtitles
+/// <span class="material-symbols-rounded">subscriptions</span> MaterialSymbolsRounded.subscriptions
 ///
-  /// <span class="material-symbols-rounded">subtitles_off</span> MaterialSymbolsRounded.subtitles_off
+/// <span class="material-symbols-rounded">subtitles</span> MaterialSymbolsRounded.subtitles
 ///
-  /// <span class="material-symbols-rounded">subway</span> MaterialSymbolsRounded.subway
+/// <span class="material-symbols-rounded">subtitles_off</span> MaterialSymbolsRounded.subtitles_off
 ///
-  /// <span class="material-symbols-rounded">summarize</span> MaterialSymbolsRounded.summarize
+/// <span class="material-symbols-rounded">subway</span> MaterialSymbolsRounded.subway
 ///
-  /// <span class="material-symbols-rounded">sunny</span> MaterialSymbolsRounded.sunny
+/// <span class="material-symbols-rounded">summarize</span> MaterialSymbolsRounded.summarize
 ///
-  /// <span class="material-symbols-rounded">sunny_snowing</span> MaterialSymbolsRounded.sunny_snowing
+/// <span class="material-symbols-rounded">sunny</span> MaterialSymbolsRounded.sunny
 ///
-  /// <span class="material-symbols-rounded">superscript</span> MaterialSymbolsRounded.superscript
+/// <span class="material-symbols-rounded">sunny_snowing</span> MaterialSymbolsRounded.sunny_snowing
 ///
-  /// <span class="material-symbols-rounded">supervised_user_circle</span> MaterialSymbolsRounded.supervised_user_circle
+/// <span class="material-symbols-rounded">superscript</span> MaterialSymbolsRounded.superscript
 ///
-  /// <span class="material-symbols-rounded">supervisor_account</span> MaterialSymbolsRounded.supervisor_account
+/// <span class="material-symbols-rounded">supervised_user_circle</span> MaterialSymbolsRounded.supervised_user_circle
 ///
-  /// <span class="material-symbols-rounded">support</span> MaterialSymbolsRounded.support
+/// <span class="material-symbols-rounded">supervisor_account</span> MaterialSymbolsRounded.supervisor_account
 ///
-  /// <span class="material-symbols-rounded">support_agent</span> MaterialSymbolsRounded.support_agent
+/// <span class="material-symbols-rounded">support</span> MaterialSymbolsRounded.support
 ///
-  /// <span class="material-symbols-rounded">surfing</span> MaterialSymbolsRounded.surfing
+/// <span class="material-symbols-rounded">support_agent</span> MaterialSymbolsRounded.support_agent
 ///
-  /// <span class="material-symbols-rounded">surgical</span> MaterialSymbolsRounded.surgical
+/// <span class="material-symbols-rounded">surfing</span> MaterialSymbolsRounded.surfing
 ///
-  /// <span class="material-symbols-rounded">surround_sound</span> MaterialSymbolsRounded.surround_sound
+/// <span class="material-symbols-rounded">surgical</span> MaterialSymbolsRounded.surgical
 ///
-  /// <span class="material-symbols-rounded">swap_calls</span> MaterialSymbolsRounded.swap_calls
+/// <span class="material-symbols-rounded">surround_sound</span> MaterialSymbolsRounded.surround_sound
 ///
-  /// <span class="material-symbols-rounded">swap_horiz</span> MaterialSymbolsRounded.swap_horiz
+/// <span class="material-symbols-rounded">swap_calls</span> MaterialSymbolsRounded.swap_calls
 ///
-  /// <span class="material-symbols-rounded">swap_horizontal_circle</span> MaterialSymbolsRounded.swap_horizontal_circle
+/// <span class="material-symbols-rounded">swap_horiz</span> MaterialSymbolsRounded.swap_horiz
 ///
-  /// <span class="material-symbols-rounded">swap_vert</span> MaterialSymbolsRounded.swap_vert
+/// <span class="material-symbols-rounded">swap_horizontal_circle</span> MaterialSymbolsRounded.swap_horizontal_circle
 ///
-  /// <span class="material-symbols-rounded">swap_vertical_circle</span> MaterialSymbolsRounded.swap_vertical_circle
+/// <span class="material-symbols-rounded">swap_vert</span> MaterialSymbolsRounded.swap_vert
 ///
-  /// <span class="material-symbols-rounded">swipe</span> MaterialSymbolsRounded.swipe
+/// <span class="material-symbols-rounded">swap_vertical_circle</span> MaterialSymbolsRounded.swap_vertical_circle
 ///
-  /// <span class="material-symbols-rounded">swipe_down</span> MaterialSymbolsRounded.swipe_down
+/// <span class="material-symbols-rounded">swipe</span> MaterialSymbolsRounded.swipe
 ///
-  /// <span class="material-symbols-rounded">swipe_down_alt</span> MaterialSymbolsRounded.swipe_down_alt
+/// <span class="material-symbols-rounded">swipe_down</span> MaterialSymbolsRounded.swipe_down
 ///
-  /// <span class="material-symbols-rounded">swipe_left</span> MaterialSymbolsRounded.swipe_left
+/// <span class="material-symbols-rounded">swipe_down_alt</span> MaterialSymbolsRounded.swipe_down_alt
 ///
-  /// <span class="material-symbols-rounded">swipe_left_alt</span> MaterialSymbolsRounded.swipe_left_alt
+/// <span class="material-symbols-rounded">swipe_left</span> MaterialSymbolsRounded.swipe_left
 ///
-  /// <span class="material-symbols-rounded">swipe_right</span> MaterialSymbolsRounded.swipe_right
+/// <span class="material-symbols-rounded">swipe_left_alt</span> MaterialSymbolsRounded.swipe_left_alt
 ///
-  /// <span class="material-symbols-rounded">swipe_right_alt</span> MaterialSymbolsRounded.swipe_right_alt
+/// <span class="material-symbols-rounded">swipe_right</span> MaterialSymbolsRounded.swipe_right
 ///
-  /// <span class="material-symbols-rounded">swipe_up</span> MaterialSymbolsRounded.swipe_up
+/// <span class="material-symbols-rounded">swipe_right_alt</span> MaterialSymbolsRounded.swipe_right_alt
 ///
-  /// <span class="material-symbols-rounded">swipe_up_alt</span> MaterialSymbolsRounded.swipe_up_alt
+/// <span class="material-symbols-rounded">swipe_up</span> MaterialSymbolsRounded.swipe_up
 ///
-  /// <span class="material-symbols-rounded">swipe_vertical</span> MaterialSymbolsRounded.swipe_vertical
+/// <span class="material-symbols-rounded">swipe_up_alt</span> MaterialSymbolsRounded.swipe_up_alt
 ///
-  /// <span class="material-symbols-rounded">switch</span> MaterialSymbolsRounded.$switch
+/// <span class="material-symbols-rounded">swipe_vertical</span> MaterialSymbolsRounded.swipe_vertical
 ///
-  /// <span class="material-symbols-rounded">switch_access</span> MaterialSymbolsRounded.switch_access
+/// <span class="material-symbols-rounded">switch</span> MaterialSymbolsRounded.$switch
 ///
-  /// <span class="material-symbols-rounded">switch_access_shortcut</span> MaterialSymbolsRounded.switch_access_shortcut
+/// <span class="material-symbols-rounded">switch_access</span> MaterialSymbolsRounded.switch_access
 ///
-  /// <span class="material-symbols-rounded">switch_access_shortcut_add</span> MaterialSymbolsRounded.switch_access_shortcut_add
+/// <span class="material-symbols-rounded">switch_access_shortcut</span> MaterialSymbolsRounded.switch_access_shortcut
 ///
-  /// <span class="material-symbols-rounded">switch_account</span> MaterialSymbolsRounded.switch_account
+/// <span class="material-symbols-rounded">switch_access_shortcut_add</span> MaterialSymbolsRounded.switch_access_shortcut_add
 ///
-  /// <span class="material-symbols-rounded">switch_camera</span> MaterialSymbolsRounded.switch_camera
+/// <span class="material-symbols-rounded">switch_account</span> MaterialSymbolsRounded.switch_account
 ///
-  /// <span class="material-symbols-rounded">switch_left</span> MaterialSymbolsRounded.switch_left
+/// <span class="material-symbols-rounded">switch_camera</span> MaterialSymbolsRounded.switch_camera
 ///
-  /// <span class="material-symbols-rounded">switch_right</span> MaterialSymbolsRounded.switch_right
+/// <span class="material-symbols-rounded">switch_left</span> MaterialSymbolsRounded.switch_left
 ///
-  /// <span class="material-symbols-rounded">switch_video</span> MaterialSymbolsRounded.switch_video
+/// <span class="material-symbols-rounded">switch_right</span> MaterialSymbolsRounded.switch_right
 ///
-  /// <span class="material-symbols-rounded">swords</span> MaterialSymbolsRounded.swords
+/// <span class="material-symbols-rounded">switch_video</span> MaterialSymbolsRounded.switch_video
 ///
-  /// <span class="material-symbols-rounded">symptoms</span> MaterialSymbolsRounded.symptoms
+/// <span class="material-symbols-rounded">swords</span> MaterialSymbolsRounded.swords
 ///
-  /// <span class="material-symbols-rounded">synagogue</span> MaterialSymbolsRounded.synagogue
+/// <span class="material-symbols-rounded">symptoms</span> MaterialSymbolsRounded.symptoms
 ///
-  /// <span class="material-symbols-rounded">sync</span> MaterialSymbolsRounded.sync
+/// <span class="material-symbols-rounded">synagogue</span> MaterialSymbolsRounded.synagogue
 ///
-  /// <span class="material-symbols-rounded">sync_alt</span> MaterialSymbolsRounded.sync_alt
+/// <span class="material-symbols-rounded">sync</span> MaterialSymbolsRounded.sync
 ///
-  /// <span class="material-symbols-rounded">sync_disabled</span> MaterialSymbolsRounded.sync_disabled
+/// <span class="material-symbols-rounded">sync_alt</span> MaterialSymbolsRounded.sync_alt
 ///
-  /// <span class="material-symbols-rounded">sync_lock</span> MaterialSymbolsRounded.sync_lock
+/// <span class="material-symbols-rounded">sync_disabled</span> MaterialSymbolsRounded.sync_disabled
 ///
-  /// <span class="material-symbols-rounded">sync_problem</span> MaterialSymbolsRounded.sync_problem
+/// <span class="material-symbols-rounded">sync_lock</span> MaterialSymbolsRounded.sync_lock
 ///
-  /// <span class="material-symbols-rounded">sync_saved_locally</span> MaterialSymbolsRounded.sync_saved_locally
+/// <span class="material-symbols-rounded">sync_problem</span> MaterialSymbolsRounded.sync_problem
 ///
-  /// <span class="material-symbols-rounded">syringe</span> MaterialSymbolsRounded.syringe
+/// <span class="material-symbols-rounded">sync_saved_locally</span> MaterialSymbolsRounded.sync_saved_locally
 ///
-  /// <span class="material-symbols-rounded">system_security_update</span> MaterialSymbolsRounded.system_security_update
+/// <span class="material-symbols-rounded">syringe</span> MaterialSymbolsRounded.syringe
 ///
-  /// <span class="material-symbols-rounded">system_security_update_good</span> MaterialSymbolsRounded.system_security_update_good
+/// <span class="material-symbols-rounded">system_security_update</span> MaterialSymbolsRounded.system_security_update
 ///
-  /// <span class="material-symbols-rounded">system_security_update_warning</span> MaterialSymbolsRounded.system_security_update_warning
+/// <span class="material-symbols-rounded">system_security_update_good</span> MaterialSymbolsRounded.system_security_update_good
 ///
-  /// <span class="material-symbols-rounded">system_update</span> MaterialSymbolsRounded.system_update
+/// <span class="material-symbols-rounded">system_security_update_warning</span> MaterialSymbolsRounded.system_security_update_warning
 ///
-  /// <span class="material-symbols-rounded">system_update_alt</span> MaterialSymbolsRounded.system_update_alt
+/// <span class="material-symbols-rounded">system_update</span> MaterialSymbolsRounded.system_update
 ///
-  /// <span class="material-symbols-rounded">tab</span> MaterialSymbolsRounded.tab
+/// <span class="material-symbols-rounded">system_update_alt</span> MaterialSymbolsRounded.system_update_alt
 ///
-  /// <span class="material-symbols-rounded">tab_close</span> MaterialSymbolsRounded.tab_close
+/// <span class="material-symbols-rounded">tab</span> MaterialSymbolsRounded.tab
 ///
-  /// <span class="material-symbols-rounded">tab_close_right</span> MaterialSymbolsRounded.tab_close_right
+/// <span class="material-symbols-rounded">tab_close</span> MaterialSymbolsRounded.tab_close
 ///
-  /// <span class="material-symbols-rounded">tab_duplicate</span> MaterialSymbolsRounded.tab_duplicate
+/// <span class="material-symbols-rounded">tab_close_right</span> MaterialSymbolsRounded.tab_close_right
 ///
-  /// <span class="material-symbols-rounded">tab_group</span> MaterialSymbolsRounded.tab_group
+/// <span class="material-symbols-rounded">tab_duplicate</span> MaterialSymbolsRounded.tab_duplicate
 ///
-  /// <span class="material-symbols-rounded">tab_move</span> MaterialSymbolsRounded.tab_move
+/// <span class="material-symbols-rounded">tab_group</span> MaterialSymbolsRounded.tab_group
 ///
-  /// <span class="material-symbols-rounded">tab_new_right</span> MaterialSymbolsRounded.tab_new_right
+/// <span class="material-symbols-rounded">tab_move</span> MaterialSymbolsRounded.tab_move
 ///
-  /// <span class="material-symbols-rounded">tab_recent</span> MaterialSymbolsRounded.tab_recent
+/// <span class="material-symbols-rounded">tab_new_right</span> MaterialSymbolsRounded.tab_new_right
 ///
-  /// <span class="material-symbols-rounded">tab_unselected</span> MaterialSymbolsRounded.tab_unselected
+/// <span class="material-symbols-rounded">tab_recent</span> MaterialSymbolsRounded.tab_recent
 ///
-  /// <span class="material-symbols-rounded">table</span> MaterialSymbolsRounded.table
+/// <span class="material-symbols-rounded">tab_unselected</span> MaterialSymbolsRounded.tab_unselected
 ///
-  /// <span class="material-symbols-rounded">table_bar</span> MaterialSymbolsRounded.table_bar
+/// <span class="material-symbols-rounded">table</span> MaterialSymbolsRounded.table
 ///
-  /// <span class="material-symbols-rounded">table_chart</span> MaterialSymbolsRounded.table_chart
+/// <span class="material-symbols-rounded">table_bar</span> MaterialSymbolsRounded.table_bar
 ///
-  /// <span class="material-symbols-rounded">table_chart_view</span> MaterialSymbolsRounded.table_chart_view
+/// <span class="material-symbols-rounded">table_chart</span> MaterialSymbolsRounded.table_chart
 ///
-  /// <span class="material-symbols-rounded">table_lamp</span> MaterialSymbolsRounded.table_lamp
+/// <span class="material-symbols-rounded">table_chart_view</span> MaterialSymbolsRounded.table_chart_view
 ///
-  /// <span class="material-symbols-rounded">table_restaurant</span> MaterialSymbolsRounded.table_restaurant
+/// <span class="material-symbols-rounded">table_lamp</span> MaterialSymbolsRounded.table_lamp
 ///
-  /// <span class="material-symbols-rounded">table_rows</span> MaterialSymbolsRounded.table_rows
+/// <span class="material-symbols-rounded">table_restaurant</span> MaterialSymbolsRounded.table_restaurant
 ///
-  /// <span class="material-symbols-rounded">table_rows_narrow</span> MaterialSymbolsRounded.table_rows_narrow
+/// <span class="material-symbols-rounded">table_rows</span> MaterialSymbolsRounded.table_rows
 ///
-  /// <span class="material-symbols-rounded">table_view</span> MaterialSymbolsRounded.table_view
+/// <span class="material-symbols-rounded">table_rows_narrow</span> MaterialSymbolsRounded.table_rows_narrow
 ///
-  /// <span class="material-symbols-rounded">tablet</span> MaterialSymbolsRounded.tablet
+/// <span class="material-symbols-rounded">table_view</span> MaterialSymbolsRounded.table_view
 ///
-  /// <span class="material-symbols-rounded">tablet_android</span> MaterialSymbolsRounded.tablet_android
+/// <span class="material-symbols-rounded">tablet</span> MaterialSymbolsRounded.tablet
 ///
-  /// <span class="material-symbols-rounded">tablet_mac</span> MaterialSymbolsRounded.tablet_mac
+/// <span class="material-symbols-rounded">tablet_android</span> MaterialSymbolsRounded.tablet_android
 ///
-  /// <span class="material-symbols-rounded">tag</span> MaterialSymbolsRounded.tag
+/// <span class="material-symbols-rounded">tablet_mac</span> MaterialSymbolsRounded.tablet_mac
 ///
-  /// <span class="material-symbols-rounded">tag_faces</span> MaterialSymbolsRounded.tag_faces
+/// <span class="material-symbols-rounded">tag</span> MaterialSymbolsRounded.tag
 ///
-  /// <span class="material-symbols-rounded">takeout_dining</span> MaterialSymbolsRounded.takeout_dining
+/// <span class="material-symbols-rounded">tag_faces</span> MaterialSymbolsRounded.tag_faces
 ///
-  /// <span class="material-symbols-rounded">tamper_detection_off</span> MaterialSymbolsRounded.tamper_detection_off
+/// <span class="material-symbols-rounded">takeout_dining</span> MaterialSymbolsRounded.takeout_dining
 ///
-  /// <span class="material-symbols-rounded">tamper_detection_on</span> MaterialSymbolsRounded.tamper_detection_on
+/// <span class="material-symbols-rounded">tamper_detection_off</span> MaterialSymbolsRounded.tamper_detection_off
 ///
-  /// <span class="material-symbols-rounded">tap_and_play</span> MaterialSymbolsRounded.tap_and_play
+/// <span class="material-symbols-rounded">tamper_detection_on</span> MaterialSymbolsRounded.tamper_detection_on
 ///
-  /// <span class="material-symbols-rounded">tapas</span> MaterialSymbolsRounded.tapas
+/// <span class="material-symbols-rounded">tap_and_play</span> MaterialSymbolsRounded.tap_and_play
 ///
-  /// <span class="material-symbols-rounded">task</span> MaterialSymbolsRounded.task
+/// <span class="material-symbols-rounded">tapas</span> MaterialSymbolsRounded.tapas
 ///
-  /// <span class="material-symbols-rounded">task_alt</span> MaterialSymbolsRounded.task_alt
+/// <span class="material-symbols-rounded">task</span> MaterialSymbolsRounded.task
 ///
-  /// <span class="material-symbols-rounded">taunt</span> MaterialSymbolsRounded.taunt
+/// <span class="material-symbols-rounded">task_alt</span> MaterialSymbolsRounded.task_alt
 ///
-  /// <span class="material-symbols-rounded">taxi_alert</span> MaterialSymbolsRounded.taxi_alert
+/// <span class="material-symbols-rounded">taunt</span> MaterialSymbolsRounded.taunt
 ///
-  /// <span class="material-symbols-rounded">team_dashboard</span> MaterialSymbolsRounded.team_dashboard
+/// <span class="material-symbols-rounded">taxi_alert</span> MaterialSymbolsRounded.taxi_alert
 ///
-  /// <span class="material-symbols-rounded">temp_preferences_custom</span> MaterialSymbolsRounded.temp_preferences_custom
+/// <span class="material-symbols-rounded">team_dashboard</span> MaterialSymbolsRounded.team_dashboard
 ///
-  /// <span class="material-symbols-rounded">temp_preferences_eco</span> MaterialSymbolsRounded.temp_preferences_eco
+/// <span class="material-symbols-rounded">temp_preferences_custom</span> MaterialSymbolsRounded.temp_preferences_custom
 ///
-  /// <span class="material-symbols-rounded">temple_buddhist</span> MaterialSymbolsRounded.temple_buddhist
+/// <span class="material-symbols-rounded">temp_preferences_eco</span> MaterialSymbolsRounded.temp_preferences_eco
 ///
-  /// <span class="material-symbols-rounded">temple_hindu</span> MaterialSymbolsRounded.temple_hindu
+/// <span class="material-symbols-rounded">temple_buddhist</span> MaterialSymbolsRounded.temple_buddhist
 ///
-  /// <span class="material-symbols-rounded">tenancy</span> MaterialSymbolsRounded.tenancy
+/// <span class="material-symbols-rounded">temple_hindu</span> MaterialSymbolsRounded.temple_hindu
 ///
-  /// <span class="material-symbols-rounded">terminal</span> MaterialSymbolsRounded.terminal
+/// <span class="material-symbols-rounded">tenancy</span> MaterialSymbolsRounded.tenancy
 ///
-  /// <span class="material-symbols-rounded">terrain</span> MaterialSymbolsRounded.terrain
+/// <span class="material-symbols-rounded">terminal</span> MaterialSymbolsRounded.terminal
 ///
-  /// <span class="material-symbols-rounded">text_decrease</span> MaterialSymbolsRounded.text_decrease
+/// <span class="material-symbols-rounded">terrain</span> MaterialSymbolsRounded.terrain
 ///
-  /// <span class="material-symbols-rounded">text_fields</span> MaterialSymbolsRounded.text_fields
+/// <span class="material-symbols-rounded">text_decrease</span> MaterialSymbolsRounded.text_decrease
 ///
-  /// <span class="material-symbols-rounded">text_format</span> MaterialSymbolsRounded.text_format
+/// <span class="material-symbols-rounded">text_fields</span> MaterialSymbolsRounded.text_fields
 ///
-  /// <span class="material-symbols-rounded">text_increase</span> MaterialSymbolsRounded.text_increase
+/// <span class="material-symbols-rounded">text_format</span> MaterialSymbolsRounded.text_format
 ///
-  /// <span class="material-symbols-rounded">text_rotate_up</span> MaterialSymbolsRounded.text_rotate_up
+/// <span class="material-symbols-rounded">text_increase</span> MaterialSymbolsRounded.text_increase
 ///
-  /// <span class="material-symbols-rounded">text_rotate_vertical</span> MaterialSymbolsRounded.text_rotate_vertical
+/// <span class="material-symbols-rounded">text_rotate_up</span> MaterialSymbolsRounded.text_rotate_up
 ///
-  /// <span class="material-symbols-rounded">text_rotation_angledown</span> MaterialSymbolsRounded.text_rotation_angledown
+/// <span class="material-symbols-rounded">text_rotate_vertical</span> MaterialSymbolsRounded.text_rotate_vertical
 ///
-  /// <span class="material-symbols-rounded">text_rotation_angleup</span> MaterialSymbolsRounded.text_rotation_angleup
+/// <span class="material-symbols-rounded">text_rotation_angledown</span> MaterialSymbolsRounded.text_rotation_angledown
 ///
-  /// <span class="material-symbols-rounded">text_rotation_down</span> MaterialSymbolsRounded.text_rotation_down
+/// <span class="material-symbols-rounded">text_rotation_angleup</span> MaterialSymbolsRounded.text_rotation_angleup
 ///
-  /// <span class="material-symbols-rounded">text_rotation_none</span> MaterialSymbolsRounded.text_rotation_none
+/// <span class="material-symbols-rounded">text_rotation_down</span> MaterialSymbolsRounded.text_rotation_down
 ///
-  /// <span class="material-symbols-rounded">text_select_end</span> MaterialSymbolsRounded.text_select_end
+/// <span class="material-symbols-rounded">text_rotation_none</span> MaterialSymbolsRounded.text_rotation_none
 ///
-  /// <span class="material-symbols-rounded">text_select_jump_to_beginning</span> MaterialSymbolsRounded.text_select_jump_to_beginning
+/// <span class="material-symbols-rounded">text_select_end</span> MaterialSymbolsRounded.text_select_end
 ///
-  /// <span class="material-symbols-rounded">text_select_jump_to_end</span> MaterialSymbolsRounded.text_select_jump_to_end
+/// <span class="material-symbols-rounded">text_select_jump_to_beginning</span> MaterialSymbolsRounded.text_select_jump_to_beginning
 ///
-  /// <span class="material-symbols-rounded">text_select_move_back_character</span> MaterialSymbolsRounded.text_select_move_back_character
+/// <span class="material-symbols-rounded">text_select_jump_to_end</span> MaterialSymbolsRounded.text_select_jump_to_end
 ///
-  /// <span class="material-symbols-rounded">text_select_move_back_word</span> MaterialSymbolsRounded.text_select_move_back_word
+/// <span class="material-symbols-rounded">text_select_move_back_character</span> MaterialSymbolsRounded.text_select_move_back_character
 ///
-  /// <span class="material-symbols-rounded">text_select_move_down</span> MaterialSymbolsRounded.text_select_move_down
+/// <span class="material-symbols-rounded">text_select_move_back_word</span> MaterialSymbolsRounded.text_select_move_back_word
 ///
-  /// <span class="material-symbols-rounded">text_select_move_forward_character</span> MaterialSymbolsRounded.text_select_move_forward_character
+/// <span class="material-symbols-rounded">text_select_move_down</span> MaterialSymbolsRounded.text_select_move_down
 ///
-  /// <span class="material-symbols-rounded">text_select_move_forward_word</span> MaterialSymbolsRounded.text_select_move_forward_word
+/// <span class="material-symbols-rounded">text_select_move_forward_character</span> MaterialSymbolsRounded.text_select_move_forward_character
 ///
-  /// <span class="material-symbols-rounded">text_select_move_up</span> MaterialSymbolsRounded.text_select_move_up
+/// <span class="material-symbols-rounded">text_select_move_forward_word</span> MaterialSymbolsRounded.text_select_move_forward_word
 ///
-  /// <span class="material-symbols-rounded">text_select_start</span> MaterialSymbolsRounded.text_select_start
+/// <span class="material-symbols-rounded">text_select_move_up</span> MaterialSymbolsRounded.text_select_move_up
 ///
-  /// <span class="material-symbols-rounded">text_snippet</span> MaterialSymbolsRounded.text_snippet
+/// <span class="material-symbols-rounded">text_select_start</span> MaterialSymbolsRounded.text_select_start
 ///
-  /// <span class="material-symbols-rounded">text_to_speech</span> MaterialSymbolsRounded.text_to_speech
+/// <span class="material-symbols-rounded">text_snippet</span> MaterialSymbolsRounded.text_snippet
 ///
-  /// <span class="material-symbols-rounded">textsms</span> MaterialSymbolsRounded.textsms
+/// <span class="material-symbols-rounded">text_to_speech</span> MaterialSymbolsRounded.text_to_speech
 ///
-  /// <span class="material-symbols-rounded">texture</span> MaterialSymbolsRounded.texture
+/// <span class="material-symbols-rounded">textsms</span> MaterialSymbolsRounded.textsms
 ///
-  /// <span class="material-symbols-rounded">theater_comedy</span> MaterialSymbolsRounded.theater_comedy
+/// <span class="material-symbols-rounded">texture</span> MaterialSymbolsRounded.texture
 ///
-  /// <span class="material-symbols-rounded">theaters</span> MaterialSymbolsRounded.theaters
+/// <span class="material-symbols-rounded">theater_comedy</span> MaterialSymbolsRounded.theater_comedy
 ///
-  /// <span class="material-symbols-rounded">thermometer</span> MaterialSymbolsRounded.thermometer
+/// <span class="material-symbols-rounded">theaters</span> MaterialSymbolsRounded.theaters
 ///
-  /// <span class="material-symbols-rounded">thermometer_gain</span> MaterialSymbolsRounded.thermometer_gain
+/// <span class="material-symbols-rounded">thermometer</span> MaterialSymbolsRounded.thermometer
 ///
-  /// <span class="material-symbols-rounded">thermometer_loss</span> MaterialSymbolsRounded.thermometer_loss
+/// <span class="material-symbols-rounded">thermometer_gain</span> MaterialSymbolsRounded.thermometer_gain
 ///
-  /// <span class="material-symbols-rounded">thermostat</span> MaterialSymbolsRounded.thermostat
+/// <span class="material-symbols-rounded">thermometer_loss</span> MaterialSymbolsRounded.thermometer_loss
 ///
-  /// <span class="material-symbols-rounded">thermostat_auto</span> MaterialSymbolsRounded.thermostat_auto
+/// <span class="material-symbols-rounded">thermostat</span> MaterialSymbolsRounded.thermostat
 ///
-  /// <span class="material-symbols-rounded">thermostat_carbon</span> MaterialSymbolsRounded.thermostat_carbon
+/// <span class="material-symbols-rounded">thermostat_auto</span> MaterialSymbolsRounded.thermostat_auto
 ///
-  /// <span class="material-symbols-rounded">thumb_down</span> MaterialSymbolsRounded.thumb_down
+/// <span class="material-symbols-rounded">thermostat_carbon</span> MaterialSymbolsRounded.thermostat_carbon
 ///
-  /// <span class="material-symbols-rounded">thumb_down_alt</span> MaterialSymbolsRounded.thumb_down_alt
+/// <span class="material-symbols-rounded">thumb_down</span> MaterialSymbolsRounded.thumb_down
 ///
-  /// <span class="material-symbols-rounded">thumb_down_filled</span> MaterialSymbolsRounded.thumb_down_filled
+/// <span class="material-symbols-rounded">thumb_down_alt</span> MaterialSymbolsRounded.thumb_down_alt
 ///
-  /// <span class="material-symbols-rounded">thumb_down_off</span> MaterialSymbolsRounded.thumb_down_off
+/// <span class="material-symbols-rounded">thumb_down_filled</span> MaterialSymbolsRounded.thumb_down_filled
 ///
-  /// <span class="material-symbols-rounded">thumb_down_off_alt</span> MaterialSymbolsRounded.thumb_down_off_alt
+/// <span class="material-symbols-rounded">thumb_down_off</span> MaterialSymbolsRounded.thumb_down_off
 ///
-  /// <span class="material-symbols-rounded">thumb_up</span> MaterialSymbolsRounded.thumb_up
+/// <span class="material-symbols-rounded">thumb_down_off_alt</span> MaterialSymbolsRounded.thumb_down_off_alt
 ///
-  /// <span class="material-symbols-rounded">thumb_up_alt</span> MaterialSymbolsRounded.thumb_up_alt
+/// <span class="material-symbols-rounded">thumb_up</span> MaterialSymbolsRounded.thumb_up
 ///
-  /// <span class="material-symbols-rounded">thumb_up_filled</span> MaterialSymbolsRounded.thumb_up_filled
+/// <span class="material-symbols-rounded">thumb_up_alt</span> MaterialSymbolsRounded.thumb_up_alt
 ///
-  /// <span class="material-symbols-rounded">thumb_up_off</span> MaterialSymbolsRounded.thumb_up_off
+/// <span class="material-symbols-rounded">thumb_up_filled</span> MaterialSymbolsRounded.thumb_up_filled
 ///
-  /// <span class="material-symbols-rounded">thumb_up_off_alt</span> MaterialSymbolsRounded.thumb_up_off_alt
+/// <span class="material-symbols-rounded">thumb_up_off</span> MaterialSymbolsRounded.thumb_up_off
 ///
-  /// <span class="material-symbols-rounded">thumbnail_bar</span> MaterialSymbolsRounded.thumbnail_bar
+/// <span class="material-symbols-rounded">thumb_up_off_alt</span> MaterialSymbolsRounded.thumb_up_off_alt
 ///
-  /// <span class="material-symbols-rounded">thumbs_up_down</span> MaterialSymbolsRounded.thumbs_up_down
+/// <span class="material-symbols-rounded">thumbnail_bar</span> MaterialSymbolsRounded.thumbnail_bar
 ///
-  /// <span class="material-symbols-rounded">thunderstorm</span> MaterialSymbolsRounded.thunderstorm
+/// <span class="material-symbols-rounded">thumbs_up_down</span> MaterialSymbolsRounded.thumbs_up_down
 ///
-  /// <span class="material-symbols-rounded">tibia</span> MaterialSymbolsRounded.tibia
+/// <span class="material-symbols-rounded">thunderstorm</span> MaterialSymbolsRounded.thunderstorm
 ///
-  /// <span class="material-symbols-rounded">tibia_alt</span> MaterialSymbolsRounded.tibia_alt
+/// <span class="material-symbols-rounded">tibia</span> MaterialSymbolsRounded.tibia
 ///
-  /// <span class="material-symbols-rounded">time_auto</span> MaterialSymbolsRounded.time_auto
+/// <span class="material-symbols-rounded">tibia_alt</span> MaterialSymbolsRounded.tibia_alt
 ///
-  /// <span class="material-symbols-rounded">time_to_leave</span> MaterialSymbolsRounded.time_to_leave
+/// <span class="material-symbols-rounded">time_auto</span> MaterialSymbolsRounded.time_auto
 ///
-  /// <span class="material-symbols-rounded">timelapse</span> MaterialSymbolsRounded.timelapse
+/// <span class="material-symbols-rounded">time_to_leave</span> MaterialSymbolsRounded.time_to_leave
 ///
-  /// <span class="material-symbols-rounded">timeline</span> MaterialSymbolsRounded.timeline
+/// <span class="material-symbols-rounded">timelapse</span> MaterialSymbolsRounded.timelapse
 ///
-  /// <span class="material-symbols-rounded">timer</span> MaterialSymbolsRounded.timer
+/// <span class="material-symbols-rounded">timeline</span> MaterialSymbolsRounded.timeline
 ///
-  /// <span class="material-symbols-rounded">timer_10</span> MaterialSymbolsRounded.timer_10
+/// <span class="material-symbols-rounded">timer</span> MaterialSymbolsRounded.timer
 ///
-  /// <span class="material-symbols-rounded">timer_10_alt_1</span> MaterialSymbolsRounded.timer_10_alt_1
+/// <span class="material-symbols-rounded">timer_10</span> MaterialSymbolsRounded.timer_10
 ///
-  /// <span class="material-symbols-rounded">timer_10_select</span> MaterialSymbolsRounded.timer_10_select
+/// <span class="material-symbols-rounded">timer_10_alt_1</span> MaterialSymbolsRounded.timer_10_alt_1
 ///
-  /// <span class="material-symbols-rounded">timer_3</span> MaterialSymbolsRounded.timer_3
+/// <span class="material-symbols-rounded">timer_10_select</span> MaterialSymbolsRounded.timer_10_select
 ///
-  /// <span class="material-symbols-rounded">timer_3_alt_1</span> MaterialSymbolsRounded.timer_3_alt_1
+/// <span class="material-symbols-rounded">timer_3</span> MaterialSymbolsRounded.timer_3
 ///
-  /// <span class="material-symbols-rounded">timer_3_select</span> MaterialSymbolsRounded.timer_3_select
+/// <span class="material-symbols-rounded">timer_3_alt_1</span> MaterialSymbolsRounded.timer_3_alt_1
 ///
-  /// <span class="material-symbols-rounded">timer_off</span> MaterialSymbolsRounded.timer_off
+/// <span class="material-symbols-rounded">timer_3_select</span> MaterialSymbolsRounded.timer_3_select
 ///
-  /// <span class="material-symbols-rounded">tips_and_updates</span> MaterialSymbolsRounded.tips_and_updates
+/// <span class="material-symbols-rounded">timer_off</span> MaterialSymbolsRounded.timer_off
 ///
-  /// <span class="material-symbols-rounded">tire_repair</span> MaterialSymbolsRounded.tire_repair
+/// <span class="material-symbols-rounded">tips_and_updates</span> MaterialSymbolsRounded.tips_and_updates
 ///
-  /// <span class="material-symbols-rounded">title</span> MaterialSymbolsRounded.title
+/// <span class="material-symbols-rounded">tire_repair</span> MaterialSymbolsRounded.tire_repair
 ///
-  /// <span class="material-symbols-rounded">toc</span> MaterialSymbolsRounded.toc
+/// <span class="material-symbols-rounded">title</span> MaterialSymbolsRounded.title
 ///
-  /// <span class="material-symbols-rounded">today</span> MaterialSymbolsRounded.today
+/// <span class="material-symbols-rounded">toc</span> MaterialSymbolsRounded.toc
 ///
-  /// <span class="material-symbols-rounded">toggle_off</span> MaterialSymbolsRounded.toggle_off
+/// <span class="material-symbols-rounded">today</span> MaterialSymbolsRounded.today
 ///
-  /// <span class="material-symbols-rounded">toggle_on</span> MaterialSymbolsRounded.toggle_on
+/// <span class="material-symbols-rounded">toggle_off</span> MaterialSymbolsRounded.toggle_off
 ///
-  /// <span class="material-symbols-rounded">token</span> MaterialSymbolsRounded.token
+/// <span class="material-symbols-rounded">toggle_on</span> MaterialSymbolsRounded.toggle_on
 ///
-  /// <span class="material-symbols-rounded">toll</span> MaterialSymbolsRounded.toll
+/// <span class="material-symbols-rounded">token</span> MaterialSymbolsRounded.token
 ///
-  /// <span class="material-symbols-rounded">tonality</span> MaterialSymbolsRounded.tonality
+/// <span class="material-symbols-rounded">toll</span> MaterialSymbolsRounded.toll
 ///
-  /// <span class="material-symbols-rounded">tools_flat_head</span> MaterialSymbolsRounded.tools_flat_head
+/// <span class="material-symbols-rounded">tonality</span> MaterialSymbolsRounded.tonality
 ///
-  /// <span class="material-symbols-rounded">tools_installation_kit</span> MaterialSymbolsRounded.tools_installation_kit
+/// <span class="material-symbols-rounded">tools_flat_head</span> MaterialSymbolsRounded.tools_flat_head
 ///
-  /// <span class="material-symbols-rounded">tools_ladder</span> MaterialSymbolsRounded.tools_ladder
+/// <span class="material-symbols-rounded">tools_installation_kit</span> MaterialSymbolsRounded.tools_installation_kit
 ///
-  /// <span class="material-symbols-rounded">tools_level</span> MaterialSymbolsRounded.tools_level
+/// <span class="material-symbols-rounded">tools_ladder</span> MaterialSymbolsRounded.tools_ladder
 ///
-  /// <span class="material-symbols-rounded">tools_phillips</span> MaterialSymbolsRounded.tools_phillips
+/// <span class="material-symbols-rounded">tools_level</span> MaterialSymbolsRounded.tools_level
 ///
-  /// <span class="material-symbols-rounded">tools_pliers_wire_stripper</span> MaterialSymbolsRounded.tools_pliers_wire_stripper
+/// <span class="material-symbols-rounded">tools_phillips</span> MaterialSymbolsRounded.tools_phillips
 ///
-  /// <span class="material-symbols-rounded">tools_power_drill</span> MaterialSymbolsRounded.tools_power_drill
+/// <span class="material-symbols-rounded">tools_pliers_wire_stripper</span> MaterialSymbolsRounded.tools_pliers_wire_stripper
 ///
-  /// <span class="material-symbols-rounded">tools_wrench</span> MaterialSymbolsRounded.tools_wrench
+/// <span class="material-symbols-rounded">tools_power_drill</span> MaterialSymbolsRounded.tools_power_drill
 ///
-  /// <span class="material-symbols-rounded">top_panel_close</span> MaterialSymbolsRounded.top_panel_close
+/// <span class="material-symbols-rounded">tools_wrench</span> MaterialSymbolsRounded.tools_wrench
 ///
-  /// <span class="material-symbols-rounded">top_panel_open</span> MaterialSymbolsRounded.top_panel_open
+/// <span class="material-symbols-rounded">top_panel_close</span> MaterialSymbolsRounded.top_panel_close
 ///
-  /// <span class="material-symbols-rounded">topic</span> MaterialSymbolsRounded.topic
+/// <span class="material-symbols-rounded">top_panel_open</span> MaterialSymbolsRounded.top_panel_open
 ///
-  /// <span class="material-symbols-rounded">tornado</span> MaterialSymbolsRounded.tornado
+/// <span class="material-symbols-rounded">topic</span> MaterialSymbolsRounded.topic
 ///
-  /// <span class="material-symbols-rounded">total_dissolved_solids</span> MaterialSymbolsRounded.total_dissolved_solids
+/// <span class="material-symbols-rounded">tornado</span> MaterialSymbolsRounded.tornado
 ///
-  /// <span class="material-symbols-rounded">touch_app</span> MaterialSymbolsRounded.touch_app
+/// <span class="material-symbols-rounded">total_dissolved_solids</span> MaterialSymbolsRounded.total_dissolved_solids
 ///
-  /// <span class="material-symbols-rounded">tour</span> MaterialSymbolsRounded.tour
+/// <span class="material-symbols-rounded">touch_app</span> MaterialSymbolsRounded.touch_app
 ///
-  /// <span class="material-symbols-rounded">toys</span> MaterialSymbolsRounded.toys
+/// <span class="material-symbols-rounded">tour</span> MaterialSymbolsRounded.tour
 ///
-  /// <span class="material-symbols-rounded">toys_fan</span> MaterialSymbolsRounded.toys_fan
+/// <span class="material-symbols-rounded">toys</span> MaterialSymbolsRounded.toys
 ///
-  /// <span class="material-symbols-rounded">track_changes</span> MaterialSymbolsRounded.track_changes
+/// <span class="material-symbols-rounded">toys_fan</span> MaterialSymbolsRounded.toys_fan
 ///
-  /// <span class="material-symbols-rounded">traffic</span> MaterialSymbolsRounded.traffic
+/// <span class="material-symbols-rounded">track_changes</span> MaterialSymbolsRounded.track_changes
 ///
-  /// <span class="material-symbols-rounded">trail_length</span> MaterialSymbolsRounded.trail_length
+/// <span class="material-symbols-rounded">traffic</span> MaterialSymbolsRounded.traffic
 ///
-  /// <span class="material-symbols-rounded">trail_length_medium</span> MaterialSymbolsRounded.trail_length_medium
+/// <span class="material-symbols-rounded">trail_length</span> MaterialSymbolsRounded.trail_length
 ///
-  /// <span class="material-symbols-rounded">trail_length_short</span> MaterialSymbolsRounded.trail_length_short
+/// <span class="material-symbols-rounded">trail_length_medium</span> MaterialSymbolsRounded.trail_length_medium
 ///
-  /// <span class="material-symbols-rounded">train</span> MaterialSymbolsRounded.train
+/// <span class="material-symbols-rounded">trail_length_short</span> MaterialSymbolsRounded.trail_length_short
 ///
-  /// <span class="material-symbols-rounded">tram</span> MaterialSymbolsRounded.tram
+/// <span class="material-symbols-rounded">train</span> MaterialSymbolsRounded.train
 ///
-  /// <span class="material-symbols-rounded">transcribe</span> MaterialSymbolsRounded.transcribe
+/// <span class="material-symbols-rounded">tram</span> MaterialSymbolsRounded.tram
 ///
-  /// <span class="material-symbols-rounded">transfer_within_a_station</span> MaterialSymbolsRounded.transfer_within_a_station
+/// <span class="material-symbols-rounded">transcribe</span> MaterialSymbolsRounded.transcribe
 ///
-  /// <span class="material-symbols-rounded">transform</span> MaterialSymbolsRounded.transform
+/// <span class="material-symbols-rounded">transfer_within_a_station</span> MaterialSymbolsRounded.transfer_within_a_station
 ///
-  /// <span class="material-symbols-rounded">transgender</span> MaterialSymbolsRounded.transgender
+/// <span class="material-symbols-rounded">transform</span> MaterialSymbolsRounded.transform
 ///
-  /// <span class="material-symbols-rounded">transit_enterexit</span> MaterialSymbolsRounded.transit_enterexit
+/// <span class="material-symbols-rounded">transgender</span> MaterialSymbolsRounded.transgender
 ///
-  /// <span class="material-symbols-rounded">translate</span> MaterialSymbolsRounded.translate
+/// <span class="material-symbols-rounded">transit_enterexit</span> MaterialSymbolsRounded.transit_enterexit
 ///
-  /// <span class="material-symbols-rounded">transportation</span> MaterialSymbolsRounded.transportation
+/// <span class="material-symbols-rounded">translate</span> MaterialSymbolsRounded.translate
 ///
-  /// <span class="material-symbols-rounded">travel_explore</span> MaterialSymbolsRounded.travel_explore
+/// <span class="material-symbols-rounded">transportation</span> MaterialSymbolsRounded.transportation
 ///
-  /// <span class="material-symbols-rounded">trending_down</span> MaterialSymbolsRounded.trending_down
+/// <span class="material-symbols-rounded">travel_explore</span> MaterialSymbolsRounded.travel_explore
 ///
-  /// <span class="material-symbols-rounded">trending_flat</span> MaterialSymbolsRounded.trending_flat
+/// <span class="material-symbols-rounded">trending_down</span> MaterialSymbolsRounded.trending_down
 ///
-  /// <span class="material-symbols-rounded">trending_up</span> MaterialSymbolsRounded.trending_up
+/// <span class="material-symbols-rounded">trending_flat</span> MaterialSymbolsRounded.trending_flat
 ///
-  /// <span class="material-symbols-rounded">trip_origin</span> MaterialSymbolsRounded.trip_origin
+/// <span class="material-symbols-rounded">trending_up</span> MaterialSymbolsRounded.trending_up
 ///
-  /// <span class="material-symbols-rounded">trolley</span> MaterialSymbolsRounded.trolley
+/// <span class="material-symbols-rounded">trip_origin</span> MaterialSymbolsRounded.trip_origin
 ///
-  /// <span class="material-symbols-rounded">try</span> MaterialSymbolsRounded.$try
+/// <span class="material-symbols-rounded">trolley</span> MaterialSymbolsRounded.trolley
 ///
-  /// <span class="material-symbols-rounded">tsunami</span> MaterialSymbolsRounded.tsunami
+/// <span class="material-symbols-rounded">try</span> MaterialSymbolsRounded.$try
 ///
-  /// <span class="material-symbols-rounded">tty</span> MaterialSymbolsRounded.tty
+/// <span class="material-symbols-rounded">tsunami</span> MaterialSymbolsRounded.tsunami
 ///
-  /// <span class="material-symbols-rounded">tune</span> MaterialSymbolsRounded.tune
+/// <span class="material-symbols-rounded">tty</span> MaterialSymbolsRounded.tty
 ///
-  /// <span class="material-symbols-rounded">tungsten</span> MaterialSymbolsRounded.tungsten
+/// <span class="material-symbols-rounded">tune</span> MaterialSymbolsRounded.tune
 ///
-  /// <span class="material-symbols-rounded">turn_left</span> MaterialSymbolsRounded.turn_left
+/// <span class="material-symbols-rounded">tungsten</span> MaterialSymbolsRounded.tungsten
 ///
-  /// <span class="material-symbols-rounded">turn_right</span> MaterialSymbolsRounded.turn_right
+/// <span class="material-symbols-rounded">turn_left</span> MaterialSymbolsRounded.turn_left
 ///
-  /// <span class="material-symbols-rounded">turn_sharp_left</span> MaterialSymbolsRounded.turn_sharp_left
+/// <span class="material-symbols-rounded">turn_right</span> MaterialSymbolsRounded.turn_right
 ///
-  /// <span class="material-symbols-rounded">turn_sharp_right</span> MaterialSymbolsRounded.turn_sharp_right
+/// <span class="material-symbols-rounded">turn_sharp_left</span> MaterialSymbolsRounded.turn_sharp_left
 ///
-  /// <span class="material-symbols-rounded">turn_slight_left</span> MaterialSymbolsRounded.turn_slight_left
+/// <span class="material-symbols-rounded">turn_sharp_right</span> MaterialSymbolsRounded.turn_sharp_right
 ///
-  /// <span class="material-symbols-rounded">turn_slight_right</span> MaterialSymbolsRounded.turn_slight_right
+/// <span class="material-symbols-rounded">turn_slight_left</span> MaterialSymbolsRounded.turn_slight_left
 ///
-  /// <span class="material-symbols-rounded">turned_in</span> MaterialSymbolsRounded.turned_in
+/// <span class="material-symbols-rounded">turn_slight_right</span> MaterialSymbolsRounded.turn_slight_right
 ///
-  /// <span class="material-symbols-rounded">turned_in_not</span> MaterialSymbolsRounded.turned_in_not
+/// <span class="material-symbols-rounded">turned_in</span> MaterialSymbolsRounded.turned_in
 ///
-  /// <span class="material-symbols-rounded">tv</span> MaterialSymbolsRounded.tv
+/// <span class="material-symbols-rounded">turned_in_not</span> MaterialSymbolsRounded.turned_in_not
 ///
-  /// <span class="material-symbols-rounded">tv_gen</span> MaterialSymbolsRounded.tv_gen
+/// <span class="material-symbols-rounded">tv</span> MaterialSymbolsRounded.tv
 ///
-  /// <span class="material-symbols-rounded">tv_off</span> MaterialSymbolsRounded.tv_off
+/// <span class="material-symbols-rounded">tv_gen</span> MaterialSymbolsRounded.tv_gen
 ///
-  /// <span class="material-symbols-rounded">tv_with_assistant</span> MaterialSymbolsRounded.tv_with_assistant
+/// <span class="material-symbols-rounded">tv_off</span> MaterialSymbolsRounded.tv_off
 ///
-  /// <span class="material-symbols-rounded">two_wheeler</span> MaterialSymbolsRounded.two_wheeler
+/// <span class="material-symbols-rounded">tv_with_assistant</span> MaterialSymbolsRounded.tv_with_assistant
 ///
-  /// <span class="material-symbols-rounded">type_specimen</span> MaterialSymbolsRounded.type_specimen
+/// <span class="material-symbols-rounded">two_wheeler</span> MaterialSymbolsRounded.two_wheeler
 ///
-  /// <span class="material-symbols-rounded">u_turn_left</span> MaterialSymbolsRounded.u_turn_left
+/// <span class="material-symbols-rounded">type_specimen</span> MaterialSymbolsRounded.type_specimen
 ///
-  /// <span class="material-symbols-rounded">u_turn_right</span> MaterialSymbolsRounded.u_turn_right
+/// <span class="material-symbols-rounded">u_turn_left</span> MaterialSymbolsRounded.u_turn_left
 ///
-  /// <span class="material-symbols-rounded">ulna_radius</span> MaterialSymbolsRounded.ulna_radius
+/// <span class="material-symbols-rounded">u_turn_right</span> MaterialSymbolsRounded.u_turn_right
 ///
-  /// <span class="material-symbols-rounded">ulna_radius_alt</span> MaterialSymbolsRounded.ulna_radius_alt
+/// <span class="material-symbols-rounded">ulna_radius</span> MaterialSymbolsRounded.ulna_radius
 ///
-  /// <span class="material-symbols-rounded">umbrella</span> MaterialSymbolsRounded.umbrella
+/// <span class="material-symbols-rounded">ulna_radius_alt</span> MaterialSymbolsRounded.ulna_radius_alt
 ///
-  /// <span class="material-symbols-rounded">unarchive</span> MaterialSymbolsRounded.unarchive
+/// <span class="material-symbols-rounded">umbrella</span> MaterialSymbolsRounded.umbrella
 ///
-  /// <span class="material-symbols-rounded">undo</span> MaterialSymbolsRounded.undo
+/// <span class="material-symbols-rounded">unarchive</span> MaterialSymbolsRounded.unarchive
 ///
-  /// <span class="material-symbols-rounded">unfloat_landscape</span> MaterialSymbolsRounded.unfloat_landscape
+/// <span class="material-symbols-rounded">undo</span> MaterialSymbolsRounded.undo
 ///
-  /// <span class="material-symbols-rounded">unfloat_portrait</span> MaterialSymbolsRounded.unfloat_portrait
+/// <span class="material-symbols-rounded">unfloat_landscape</span> MaterialSymbolsRounded.unfloat_landscape
 ///
-  /// <span class="material-symbols-rounded">unfold_less</span> MaterialSymbolsRounded.unfold_less
+/// <span class="material-symbols-rounded">unfloat_portrait</span> MaterialSymbolsRounded.unfloat_portrait
 ///
-  /// <span class="material-symbols-rounded">unfold_less_double</span> MaterialSymbolsRounded.unfold_less_double
+/// <span class="material-symbols-rounded">unfold_less</span> MaterialSymbolsRounded.unfold_less
 ///
-  /// <span class="material-symbols-rounded">unfold_more</span> MaterialSymbolsRounded.unfold_more
+/// <span class="material-symbols-rounded">unfold_less_double</span> MaterialSymbolsRounded.unfold_less_double
 ///
-  /// <span class="material-symbols-rounded">unfold_more_double</span> MaterialSymbolsRounded.unfold_more_double
+/// <span class="material-symbols-rounded">unfold_more</span> MaterialSymbolsRounded.unfold_more
 ///
-  /// <span class="material-symbols-rounded">ungroup</span> MaterialSymbolsRounded.ungroup
+/// <span class="material-symbols-rounded">unfold_more_double</span> MaterialSymbolsRounded.unfold_more_double
 ///
-  /// <span class="material-symbols-rounded">unknown_document</span> MaterialSymbolsRounded.unknown_document
+/// <span class="material-symbols-rounded">ungroup</span> MaterialSymbolsRounded.ungroup
 ///
-  /// <span class="material-symbols-rounded">unknown_med</span> MaterialSymbolsRounded.unknown_med
+/// <span class="material-symbols-rounded">unknown_document</span> MaterialSymbolsRounded.unknown_document
 ///
-  /// <span class="material-symbols-rounded">unpublished</span> MaterialSymbolsRounded.unpublished
+/// <span class="material-symbols-rounded">unknown_med</span> MaterialSymbolsRounded.unknown_med
 ///
-  /// <span class="material-symbols-rounded">unsubscribe</span> MaterialSymbolsRounded.unsubscribe
+/// <span class="material-symbols-rounded">unpublished</span> MaterialSymbolsRounded.unpublished
 ///
-  /// <span class="material-symbols-rounded">upcoming</span> MaterialSymbolsRounded.upcoming
+/// <span class="material-symbols-rounded">unsubscribe</span> MaterialSymbolsRounded.unsubscribe
 ///
-  /// <span class="material-symbols-rounded">update</span> MaterialSymbolsRounded.update
+/// <span class="material-symbols-rounded">upcoming</span> MaterialSymbolsRounded.upcoming
 ///
-  /// <span class="material-symbols-rounded">update_disabled</span> MaterialSymbolsRounded.update_disabled
+/// <span class="material-symbols-rounded">update</span> MaterialSymbolsRounded.update
 ///
-  /// <span class="material-symbols-rounded">upgrade</span> MaterialSymbolsRounded.upgrade
+/// <span class="material-symbols-rounded">update_disabled</span> MaterialSymbolsRounded.update_disabled
 ///
-  /// <span class="material-symbols-rounded">upload</span> MaterialSymbolsRounded.upload
+/// <span class="material-symbols-rounded">upgrade</span> MaterialSymbolsRounded.upgrade
 ///
-  /// <span class="material-symbols-rounded">upload_file</span> MaterialSymbolsRounded.upload_file
+/// <span class="material-symbols-rounded">upload</span> MaterialSymbolsRounded.upload
 ///
-  /// <span class="material-symbols-rounded">urology</span> MaterialSymbolsRounded.urology
+/// <span class="material-symbols-rounded">upload_file</span> MaterialSymbolsRounded.upload_file
 ///
-  /// <span class="material-symbols-rounded">usb</span> MaterialSymbolsRounded.usb
+/// <span class="material-symbols-rounded">urology</span> MaterialSymbolsRounded.urology
 ///
-  /// <span class="material-symbols-rounded">usb_off</span> MaterialSymbolsRounded.usb_off
+/// <span class="material-symbols-rounded">usb</span> MaterialSymbolsRounded.usb
 ///
-  /// <span class="material-symbols-rounded">vaccines</span> MaterialSymbolsRounded.vaccines
+/// <span class="material-symbols-rounded">usb_off</span> MaterialSymbolsRounded.usb_off
 ///
-  /// <span class="material-symbols-rounded">valve</span> MaterialSymbolsRounded.valve
+/// <span class="material-symbols-rounded">vaccines</span> MaterialSymbolsRounded.vaccines
 ///
-  /// <span class="material-symbols-rounded">vape_free</span> MaterialSymbolsRounded.vape_free
+/// <span class="material-symbols-rounded">valve</span> MaterialSymbolsRounded.valve
 ///
-  /// <span class="material-symbols-rounded">vaping_rooms</span> MaterialSymbolsRounded.vaping_rooms
+/// <span class="material-symbols-rounded">vape_free</span> MaterialSymbolsRounded.vape_free
 ///
-  /// <span class="material-symbols-rounded">variables</span> MaterialSymbolsRounded.variables
+/// <span class="material-symbols-rounded">vaping_rooms</span> MaterialSymbolsRounded.vaping_rooms
 ///
-  /// <span class="material-symbols-rounded">ventilator</span> MaterialSymbolsRounded.ventilator
+/// <span class="material-symbols-rounded">variables</span> MaterialSymbolsRounded.variables
 ///
-  /// <span class="material-symbols-rounded">verified</span> MaterialSymbolsRounded.verified
+/// <span class="material-symbols-rounded">ventilator</span> MaterialSymbolsRounded.ventilator
 ///
-  /// <span class="material-symbols-rounded">verified_user</span> MaterialSymbolsRounded.verified_user
+/// <span class="material-symbols-rounded">verified</span> MaterialSymbolsRounded.verified
 ///
-  /// <span class="material-symbols-rounded">vertical_align_bottom</span> MaterialSymbolsRounded.vertical_align_bottom
+/// <span class="material-symbols-rounded">verified_user</span> MaterialSymbolsRounded.verified_user
 ///
-  /// <span class="material-symbols-rounded">vertical_align_center</span> MaterialSymbolsRounded.vertical_align_center
+/// <span class="material-symbols-rounded">vertical_align_bottom</span> MaterialSymbolsRounded.vertical_align_bottom
 ///
-  /// <span class="material-symbols-rounded">vertical_align_top</span> MaterialSymbolsRounded.vertical_align_top
+/// <span class="material-symbols-rounded">vertical_align_center</span> MaterialSymbolsRounded.vertical_align_center
 ///
-  /// <span class="material-symbols-rounded">vertical_distribute</span> MaterialSymbolsRounded.vertical_distribute
+/// <span class="material-symbols-rounded">vertical_align_top</span> MaterialSymbolsRounded.vertical_align_top
 ///
-  /// <span class="material-symbols-rounded">vertical_shades</span> MaterialSymbolsRounded.vertical_shades
+/// <span class="material-symbols-rounded">vertical_distribute</span> MaterialSymbolsRounded.vertical_distribute
 ///
-  /// <span class="material-symbols-rounded">vertical_shades_closed</span> MaterialSymbolsRounded.vertical_shades_closed
+/// <span class="material-symbols-rounded">vertical_shades</span> MaterialSymbolsRounded.vertical_shades
 ///
-  /// <span class="material-symbols-rounded">vertical_split</span> MaterialSymbolsRounded.vertical_split
+/// <span class="material-symbols-rounded">vertical_shades_closed</span> MaterialSymbolsRounded.vertical_shades_closed
 ///
-  /// <span class="material-symbols-rounded">vibration</span> MaterialSymbolsRounded.vibration
+/// <span class="material-symbols-rounded">vertical_split</span> MaterialSymbolsRounded.vertical_split
 ///
-  /// <span class="material-symbols-rounded">video_call</span> MaterialSymbolsRounded.video_call
+/// <span class="material-symbols-rounded">vibration</span> MaterialSymbolsRounded.vibration
 ///
-  /// <span class="material-symbols-rounded">video_camera_back</span> MaterialSymbolsRounded.video_camera_back
+/// <span class="material-symbols-rounded">video_call</span> MaterialSymbolsRounded.video_call
 ///
-  /// <span class="material-symbols-rounded">video_camera_front</span> MaterialSymbolsRounded.video_camera_front
+/// <span class="material-symbols-rounded">video_camera_back</span> MaterialSymbolsRounded.video_camera_back
 ///
-  /// <span class="material-symbols-rounded">video_camera_front_off</span> MaterialSymbolsRounded.video_camera_front_off
+/// <span class="material-symbols-rounded">video_camera_front</span> MaterialSymbolsRounded.video_camera_front
 ///
-  /// <span class="material-symbols-rounded">video_chat</span> MaterialSymbolsRounded.video_chat
+/// <span class="material-symbols-rounded">video_camera_front_off</span> MaterialSymbolsRounded.video_camera_front_off
 ///
-  /// <span class="material-symbols-rounded">video_file</span> MaterialSymbolsRounded.video_file
+/// <span class="material-symbols-rounded">video_chat</span> MaterialSymbolsRounded.video_chat
 ///
-  /// <span class="material-symbols-rounded">video_label</span> MaterialSymbolsRounded.video_label
+/// <span class="material-symbols-rounded">video_file</span> MaterialSymbolsRounded.video_file
 ///
-  /// <span class="material-symbols-rounded">video_library</span> MaterialSymbolsRounded.video_library
+/// <span class="material-symbols-rounded">video_label</span> MaterialSymbolsRounded.video_label
 ///
-  /// <span class="material-symbols-rounded">video_settings</span> MaterialSymbolsRounded.video_settings
+/// <span class="material-symbols-rounded">video_library</span> MaterialSymbolsRounded.video_library
 ///
-  /// <span class="material-symbols-rounded">video_stable</span> MaterialSymbolsRounded.video_stable
+/// <span class="material-symbols-rounded">video_settings</span> MaterialSymbolsRounded.video_settings
 ///
-  /// <span class="material-symbols-rounded">videocam</span> MaterialSymbolsRounded.videocam
+/// <span class="material-symbols-rounded">video_stable</span> MaterialSymbolsRounded.video_stable
 ///
-  /// <span class="material-symbols-rounded">videocam_off</span> MaterialSymbolsRounded.videocam_off
+/// <span class="material-symbols-rounded">videocam</span> MaterialSymbolsRounded.videocam
 ///
-  /// <span class="material-symbols-rounded">videogame_asset</span> MaterialSymbolsRounded.videogame_asset
+/// <span class="material-symbols-rounded">videocam_off</span> MaterialSymbolsRounded.videocam_off
 ///
-  /// <span class="material-symbols-rounded">videogame_asset_off</span> MaterialSymbolsRounded.videogame_asset_off
+/// <span class="material-symbols-rounded">videogame_asset</span> MaterialSymbolsRounded.videogame_asset
 ///
-  /// <span class="material-symbols-rounded">view_agenda</span> MaterialSymbolsRounded.view_agenda
+/// <span class="material-symbols-rounded">videogame_asset_off</span> MaterialSymbolsRounded.videogame_asset_off
 ///
-  /// <span class="material-symbols-rounded">view_array</span> MaterialSymbolsRounded.view_array
+/// <span class="material-symbols-rounded">view_agenda</span> MaterialSymbolsRounded.view_agenda
 ///
-  /// <span class="material-symbols-rounded">view_carousel</span> MaterialSymbolsRounded.view_carousel
+/// <span class="material-symbols-rounded">view_array</span> MaterialSymbolsRounded.view_array
 ///
-  /// <span class="material-symbols-rounded">view_column</span> MaterialSymbolsRounded.view_column
+/// <span class="material-symbols-rounded">view_carousel</span> MaterialSymbolsRounded.view_carousel
 ///
-  /// <span class="material-symbols-rounded">view_column_2</span> MaterialSymbolsRounded.view_column_2
+/// <span class="material-symbols-rounded">view_column</span> MaterialSymbolsRounded.view_column
 ///
-  /// <span class="material-symbols-rounded">view_comfy</span> MaterialSymbolsRounded.view_comfy
+/// <span class="material-symbols-rounded">view_column_2</span> MaterialSymbolsRounded.view_column_2
 ///
-  /// <span class="material-symbols-rounded">view_comfy_alt</span> MaterialSymbolsRounded.view_comfy_alt
+/// <span class="material-symbols-rounded">view_comfy</span> MaterialSymbolsRounded.view_comfy
 ///
-  /// <span class="material-symbols-rounded">view_compact</span> MaterialSymbolsRounded.view_compact
+/// <span class="material-symbols-rounded">view_comfy_alt</span> MaterialSymbolsRounded.view_comfy_alt
 ///
-  /// <span class="material-symbols-rounded">view_compact_alt</span> MaterialSymbolsRounded.view_compact_alt
+/// <span class="material-symbols-rounded">view_compact</span> MaterialSymbolsRounded.view_compact
 ///
-  /// <span class="material-symbols-rounded">view_cozy</span> MaterialSymbolsRounded.view_cozy
+/// <span class="material-symbols-rounded">view_compact_alt</span> MaterialSymbolsRounded.view_compact_alt
 ///
-  /// <span class="material-symbols-rounded">view_day</span> MaterialSymbolsRounded.view_day
+/// <span class="material-symbols-rounded">view_cozy</span> MaterialSymbolsRounded.view_cozy
 ///
-  /// <span class="material-symbols-rounded">view_headline</span> MaterialSymbolsRounded.view_headline
+/// <span class="material-symbols-rounded">view_day</span> MaterialSymbolsRounded.view_day
 ///
-  /// <span class="material-symbols-rounded">view_in_ar</span> MaterialSymbolsRounded.view_in_ar
+/// <span class="material-symbols-rounded">view_headline</span> MaterialSymbolsRounded.view_headline
 ///
-  /// <span class="material-symbols-rounded">view_in_ar_new</span> MaterialSymbolsRounded.view_in_ar_new
+/// <span class="material-symbols-rounded">view_in_ar</span> MaterialSymbolsRounded.view_in_ar
 ///
-  /// <span class="material-symbols-rounded">view_kanban</span> MaterialSymbolsRounded.view_kanban
+/// <span class="material-symbols-rounded">view_in_ar_new</span> MaterialSymbolsRounded.view_in_ar_new
 ///
-  /// <span class="material-symbols-rounded">view_list</span> MaterialSymbolsRounded.view_list
+/// <span class="material-symbols-rounded">view_kanban</span> MaterialSymbolsRounded.view_kanban
 ///
-  /// <span class="material-symbols-rounded">view_module</span> MaterialSymbolsRounded.view_module
+/// <span class="material-symbols-rounded">view_list</span> MaterialSymbolsRounded.view_list
 ///
-  /// <span class="material-symbols-rounded">view_quilt</span> MaterialSymbolsRounded.view_quilt
+/// <span class="material-symbols-rounded">view_module</span> MaterialSymbolsRounded.view_module
 ///
-  /// <span class="material-symbols-rounded">view_sidebar</span> MaterialSymbolsRounded.view_sidebar
+/// <span class="material-symbols-rounded">view_quilt</span> MaterialSymbolsRounded.view_quilt
 ///
-  /// <span class="material-symbols-rounded">view_stream</span> MaterialSymbolsRounded.view_stream
+/// <span class="material-symbols-rounded">view_sidebar</span> MaterialSymbolsRounded.view_sidebar
 ///
-  /// <span class="material-symbols-rounded">view_timeline</span> MaterialSymbolsRounded.view_timeline
+/// <span class="material-symbols-rounded">view_stream</span> MaterialSymbolsRounded.view_stream
 ///
-  /// <span class="material-symbols-rounded">view_week</span> MaterialSymbolsRounded.view_week
+/// <span class="material-symbols-rounded">view_timeline</span> MaterialSymbolsRounded.view_timeline
 ///
-  /// <span class="material-symbols-rounded">vignette</span> MaterialSymbolsRounded.vignette
+/// <span class="material-symbols-rounded">view_week</span> MaterialSymbolsRounded.view_week
 ///
-  /// <span class="material-symbols-rounded">villa</span> MaterialSymbolsRounded.villa
+/// <span class="material-symbols-rounded">vignette</span> MaterialSymbolsRounded.vignette
 ///
-  /// <span class="material-symbols-rounded">visibility</span> MaterialSymbolsRounded.visibility
+/// <span class="material-symbols-rounded">villa</span> MaterialSymbolsRounded.villa
 ///
-  /// <span class="material-symbols-rounded">visibility_off</span> MaterialSymbolsRounded.visibility_off
+/// <span class="material-symbols-rounded">visibility</span> MaterialSymbolsRounded.visibility
 ///
-  /// <span class="material-symbols-rounded">vital_signs</span> MaterialSymbolsRounded.vital_signs
+/// <span class="material-symbols-rounded">visibility_off</span> MaterialSymbolsRounded.visibility_off
 ///
-  /// <span class="material-symbols-rounded">vitals</span> MaterialSymbolsRounded.vitals
+/// <span class="material-symbols-rounded">vital_signs</span> MaterialSymbolsRounded.vital_signs
 ///
-  /// <span class="material-symbols-rounded">voice_chat</span> MaterialSymbolsRounded.voice_chat
+/// <span class="material-symbols-rounded">vitals</span> MaterialSymbolsRounded.vitals
 ///
-  /// <span class="material-symbols-rounded">voice_over_off</span> MaterialSymbolsRounded.voice_over_off
+/// <span class="material-symbols-rounded">voice_chat</span> MaterialSymbolsRounded.voice_chat
 ///
-  /// <span class="material-symbols-rounded">voicemail</span> MaterialSymbolsRounded.voicemail
+/// <span class="material-symbols-rounded">voice_over_off</span> MaterialSymbolsRounded.voice_over_off
 ///
-  /// <span class="material-symbols-rounded">volcano</span> MaterialSymbolsRounded.volcano
+/// <span class="material-symbols-rounded">voicemail</span> MaterialSymbolsRounded.voicemail
 ///
-  /// <span class="material-symbols-rounded">volume_down</span> MaterialSymbolsRounded.volume_down
+/// <span class="material-symbols-rounded">volcano</span> MaterialSymbolsRounded.volcano
 ///
-  /// <span class="material-symbols-rounded">volume_down_alt</span> MaterialSymbolsRounded.volume_down_alt
+/// <span class="material-symbols-rounded">volume_down</span> MaterialSymbolsRounded.volume_down
 ///
-  /// <span class="material-symbols-rounded">volume_mute</span> MaterialSymbolsRounded.volume_mute
+/// <span class="material-symbols-rounded">volume_down_alt</span> MaterialSymbolsRounded.volume_down_alt
 ///
-  /// <span class="material-symbols-rounded">volume_off</span> MaterialSymbolsRounded.volume_off
+/// <span class="material-symbols-rounded">volume_mute</span> MaterialSymbolsRounded.volume_mute
 ///
-  /// <span class="material-symbols-rounded">volume_up</span> MaterialSymbolsRounded.volume_up
+/// <span class="material-symbols-rounded">volume_off</span> MaterialSymbolsRounded.volume_off
 ///
-  /// <span class="material-symbols-rounded">volunteer_activism</span> MaterialSymbolsRounded.volunteer_activism
+/// <span class="material-symbols-rounded">volume_up</span> MaterialSymbolsRounded.volume_up
 ///
-  /// <span class="material-symbols-rounded">voting_chip</span> MaterialSymbolsRounded.voting_chip
+/// <span class="material-symbols-rounded">volunteer_activism</span> MaterialSymbolsRounded.volunteer_activism
 ///
-  /// <span class="material-symbols-rounded">vpn_key</span> MaterialSymbolsRounded.vpn_key
+/// <span class="material-symbols-rounded">voting_chip</span> MaterialSymbolsRounded.voting_chip
 ///
-  /// <span class="material-symbols-rounded">vpn_key_alert</span> MaterialSymbolsRounded.vpn_key_alert
+/// <span class="material-symbols-rounded">vpn_key</span> MaterialSymbolsRounded.vpn_key
 ///
-  /// <span class="material-symbols-rounded">vpn_key_off</span> MaterialSymbolsRounded.vpn_key_off
+/// <span class="material-symbols-rounded">vpn_key_alert</span> MaterialSymbolsRounded.vpn_key_alert
 ///
-  /// <span class="material-symbols-rounded">vpn_lock</span> MaterialSymbolsRounded.vpn_lock
+/// <span class="material-symbols-rounded">vpn_key_off</span> MaterialSymbolsRounded.vpn_key_off
 ///
-  /// <span class="material-symbols-rounded">vrpano</span> MaterialSymbolsRounded.vrpano
+/// <span class="material-symbols-rounded">vpn_lock</span> MaterialSymbolsRounded.vpn_lock
 ///
-  /// <span class="material-symbols-rounded">wall_lamp</span> MaterialSymbolsRounded.wall_lamp
+/// <span class="material-symbols-rounded">vrpano</span> MaterialSymbolsRounded.vrpano
 ///
-  /// <span class="material-symbols-rounded">wallet</span> MaterialSymbolsRounded.wallet
+/// <span class="material-symbols-rounded">wall_lamp</span> MaterialSymbolsRounded.wall_lamp
 ///
-  /// <span class="material-symbols-rounded">wallpaper</span> MaterialSymbolsRounded.wallpaper
+/// <span class="material-symbols-rounded">wallet</span> MaterialSymbolsRounded.wallet
 ///
-  /// <span class="material-symbols-rounded">ward</span> MaterialSymbolsRounded.ward
+/// <span class="material-symbols-rounded">wallpaper</span> MaterialSymbolsRounded.wallpaper
 ///
-  /// <span class="material-symbols-rounded">warehouse</span> MaterialSymbolsRounded.warehouse
+/// <span class="material-symbols-rounded">ward</span> MaterialSymbolsRounded.ward
 ///
-  /// <span class="material-symbols-rounded">warning</span> MaterialSymbolsRounded.warning
+/// <span class="material-symbols-rounded">warehouse</span> MaterialSymbolsRounded.warehouse
 ///
-  /// <span class="material-symbols-rounded">warning_amber</span> MaterialSymbolsRounded.warning_amber
+/// <span class="material-symbols-rounded">warning</span> MaterialSymbolsRounded.warning
 ///
-  /// <span class="material-symbols-rounded">warning_off</span> MaterialSymbolsRounded.warning_off
+/// <span class="material-symbols-rounded">warning_amber</span> MaterialSymbolsRounded.warning_amber
 ///
-  /// <span class="material-symbols-rounded">wash</span> MaterialSymbolsRounded.wash
+/// <span class="material-symbols-rounded">warning_off</span> MaterialSymbolsRounded.warning_off
 ///
-  /// <span class="material-symbols-rounded">watch</span> MaterialSymbolsRounded.watch
+/// <span class="material-symbols-rounded">wash</span> MaterialSymbolsRounded.wash
 ///
-  /// <span class="material-symbols-rounded">watch_button_press</span> MaterialSymbolsRounded.watch_button_press
+/// <span class="material-symbols-rounded">watch</span> MaterialSymbolsRounded.watch
 ///
-  /// <span class="material-symbols-rounded">watch_later</span> MaterialSymbolsRounded.watch_later
+/// <span class="material-symbols-rounded">watch_button_press</span> MaterialSymbolsRounded.watch_button_press
 ///
-  /// <span class="material-symbols-rounded">watch_off</span> MaterialSymbolsRounded.watch_off
+/// <span class="material-symbols-rounded">watch_later</span> MaterialSymbolsRounded.watch_later
 ///
-  /// <span class="material-symbols-rounded">watch_screentime</span> MaterialSymbolsRounded.watch_screentime
+/// <span class="material-symbols-rounded">watch_off</span> MaterialSymbolsRounded.watch_off
 ///
-  /// <span class="material-symbols-rounded">watch_wake</span> MaterialSymbolsRounded.watch_wake
+/// <span class="material-symbols-rounded">watch_screentime</span> MaterialSymbolsRounded.watch_screentime
 ///
-  /// <span class="material-symbols-rounded">water</span> MaterialSymbolsRounded.water
+/// <span class="material-symbols-rounded">watch_wake</span> MaterialSymbolsRounded.watch_wake
 ///
-  /// <span class="material-symbols-rounded">water_bottle</span> MaterialSymbolsRounded.water_bottle
+/// <span class="material-symbols-rounded">water</span> MaterialSymbolsRounded.water
 ///
-  /// <span class="material-symbols-rounded">water_bottle_large</span> MaterialSymbolsRounded.water_bottle_large
+/// <span class="material-symbols-rounded">water_bottle</span> MaterialSymbolsRounded.water_bottle
 ///
-  /// <span class="material-symbols-rounded">water_damage</span> MaterialSymbolsRounded.water_damage
+/// <span class="material-symbols-rounded">water_bottle_large</span> MaterialSymbolsRounded.water_bottle_large
 ///
-  /// <span class="material-symbols-rounded">water_do</span> MaterialSymbolsRounded.water_do
+/// <span class="material-symbols-rounded">water_damage</span> MaterialSymbolsRounded.water_damage
 ///
-  /// <span class="material-symbols-rounded">water_drop</span> MaterialSymbolsRounded.water_drop
+/// <span class="material-symbols-rounded">water_do</span> MaterialSymbolsRounded.water_do
 ///
-  /// <span class="material-symbols-rounded">water_ec</span> MaterialSymbolsRounded.water_ec
+/// <span class="material-symbols-rounded">water_drop</span> MaterialSymbolsRounded.water_drop
 ///
-  /// <span class="material-symbols-rounded">water_full</span> MaterialSymbolsRounded.water_full
+/// <span class="material-symbols-rounded">water_ec</span> MaterialSymbolsRounded.water_ec
 ///
-  /// <span class="material-symbols-rounded">water_heater</span> MaterialSymbolsRounded.water_heater
+/// <span class="material-symbols-rounded">water_full</span> MaterialSymbolsRounded.water_full
 ///
-  /// <span class="material-symbols-rounded">water_lock</span> MaterialSymbolsRounded.water_lock
+/// <span class="material-symbols-rounded">water_heater</span> MaterialSymbolsRounded.water_heater
 ///
-  /// <span class="material-symbols-rounded">water_loss</span> MaterialSymbolsRounded.water_loss
+/// <span class="material-symbols-rounded">water_lock</span> MaterialSymbolsRounded.water_lock
 ///
-  /// <span class="material-symbols-rounded">water_lux</span> MaterialSymbolsRounded.water_lux
+/// <span class="material-symbols-rounded">water_loss</span> MaterialSymbolsRounded.water_loss
 ///
-  /// <span class="material-symbols-rounded">water_medium</span> MaterialSymbolsRounded.water_medium
+/// <span class="material-symbols-rounded">water_lux</span> MaterialSymbolsRounded.water_lux
 ///
-  /// <span class="material-symbols-rounded">water_orp</span> MaterialSymbolsRounded.water_orp
+/// <span class="material-symbols-rounded">water_medium</span> MaterialSymbolsRounded.water_medium
 ///
-  /// <span class="material-symbols-rounded">water_ph</span> MaterialSymbolsRounded.water_ph
+/// <span class="material-symbols-rounded">water_orp</span> MaterialSymbolsRounded.water_orp
 ///
-  /// <span class="material-symbols-rounded">water_voc</span> MaterialSymbolsRounded.water_voc
+/// <span class="material-symbols-rounded">water_ph</span> MaterialSymbolsRounded.water_ph
 ///
-  /// <span class="material-symbols-rounded">waterfall_chart</span> MaterialSymbolsRounded.waterfall_chart
+/// <span class="material-symbols-rounded">water_voc</span> MaterialSymbolsRounded.water_voc
 ///
-  /// <span class="material-symbols-rounded">waves</span> MaterialSymbolsRounded.waves
+/// <span class="material-symbols-rounded">waterfall_chart</span> MaterialSymbolsRounded.waterfall_chart
 ///
-  /// <span class="material-symbols-rounded">waving_hand</span> MaterialSymbolsRounded.waving_hand
+/// <span class="material-symbols-rounded">waves</span> MaterialSymbolsRounded.waves
 ///
-  /// <span class="material-symbols-rounded">wb_auto</span> MaterialSymbolsRounded.wb_auto
+/// <span class="material-symbols-rounded">waving_hand</span> MaterialSymbolsRounded.waving_hand
 ///
-  /// <span class="material-symbols-rounded">wb_cloudy</span> MaterialSymbolsRounded.wb_cloudy
+/// <span class="material-symbols-rounded">wb_auto</span> MaterialSymbolsRounded.wb_auto
 ///
-  /// <span class="material-symbols-rounded">wb_incandescent</span> MaterialSymbolsRounded.wb_incandescent
+/// <span class="material-symbols-rounded">wb_cloudy</span> MaterialSymbolsRounded.wb_cloudy
 ///
-  /// <span class="material-symbols-rounded">wb_iridescent</span> MaterialSymbolsRounded.wb_iridescent
+/// <span class="material-symbols-rounded">wb_incandescent</span> MaterialSymbolsRounded.wb_incandescent
 ///
-  /// <span class="material-symbols-rounded">wb_shade</span> MaterialSymbolsRounded.wb_shade
+/// <span class="material-symbols-rounded">wb_iridescent</span> MaterialSymbolsRounded.wb_iridescent
 ///
-  /// <span class="material-symbols-rounded">wb_sunny</span> MaterialSymbolsRounded.wb_sunny
+/// <span class="material-symbols-rounded">wb_shade</span> MaterialSymbolsRounded.wb_shade
 ///
-  /// <span class="material-symbols-rounded">wb_twilight</span> MaterialSymbolsRounded.wb_twilight
+/// <span class="material-symbols-rounded">wb_sunny</span> MaterialSymbolsRounded.wb_sunny
 ///
-  /// <span class="material-symbols-rounded">wc</span> MaterialSymbolsRounded.wc
+/// <span class="material-symbols-rounded">wb_twilight</span> MaterialSymbolsRounded.wb_twilight
 ///
-  /// <span class="material-symbols-rounded">weather_snowy</span> MaterialSymbolsRounded.weather_snowy
+/// <span class="material-symbols-rounded">wc</span> MaterialSymbolsRounded.wc
 ///
-  /// <span class="material-symbols-rounded">web</span> MaterialSymbolsRounded.web
+/// <span class="material-symbols-rounded">weather_snowy</span> MaterialSymbolsRounded.weather_snowy
 ///
-  /// <span class="material-symbols-rounded">web_asset</span> MaterialSymbolsRounded.web_asset
+/// <span class="material-symbols-rounded">web</span> MaterialSymbolsRounded.web
 ///
-  /// <span class="material-symbols-rounded">web_asset_off</span> MaterialSymbolsRounded.web_asset_off
+/// <span class="material-symbols-rounded">web_asset</span> MaterialSymbolsRounded.web_asset
 ///
-  /// <span class="material-symbols-rounded">web_stories</span> MaterialSymbolsRounded.web_stories
+/// <span class="material-symbols-rounded">web_asset_off</span> MaterialSymbolsRounded.web_asset_off
 ///
-  /// <span class="material-symbols-rounded">webhook</span> MaterialSymbolsRounded.webhook
+/// <span class="material-symbols-rounded">web_stories</span> MaterialSymbolsRounded.web_stories
 ///
-  /// <span class="material-symbols-rounded">weekend</span> MaterialSymbolsRounded.weekend
+/// <span class="material-symbols-rounded">webhook</span> MaterialSymbolsRounded.webhook
 ///
-  /// <span class="material-symbols-rounded">weight</span> MaterialSymbolsRounded.weight
+/// <span class="material-symbols-rounded">weekend</span> MaterialSymbolsRounded.weekend
 ///
-  /// <span class="material-symbols-rounded">west</span> MaterialSymbolsRounded.west
+/// <span class="material-symbols-rounded">weight</span> MaterialSymbolsRounded.weight
 ///
-  /// <span class="material-symbols-rounded">whatshot</span> MaterialSymbolsRounded.whatshot
+/// <span class="material-symbols-rounded">west</span> MaterialSymbolsRounded.west
 ///
-  /// <span class="material-symbols-rounded">wheelchair_pickup</span> MaterialSymbolsRounded.wheelchair_pickup
+/// <span class="material-symbols-rounded">whatshot</span> MaterialSymbolsRounded.whatshot
 ///
-  /// <span class="material-symbols-rounded">where_to_vote</span> MaterialSymbolsRounded.where_to_vote
+/// <span class="material-symbols-rounded">wheelchair_pickup</span> MaterialSymbolsRounded.wheelchair_pickup
 ///
-  /// <span class="material-symbols-rounded">widgets</span> MaterialSymbolsRounded.widgets
+/// <span class="material-symbols-rounded">where_to_vote</span> MaterialSymbolsRounded.where_to_vote
 ///
-  /// <span class="material-symbols-rounded">width</span> MaterialSymbolsRounded.width
+/// <span class="material-symbols-rounded">widgets</span> MaterialSymbolsRounded.widgets
 ///
-  /// <span class="material-symbols-rounded">width_full</span> MaterialSymbolsRounded.width_full
+/// <span class="material-symbols-rounded">width</span> MaterialSymbolsRounded.width
 ///
-  /// <span class="material-symbols-rounded">width_normal</span> MaterialSymbolsRounded.width_normal
+/// <span class="material-symbols-rounded">width_full</span> MaterialSymbolsRounded.width_full
 ///
-  /// <span class="material-symbols-rounded">width_wide</span> MaterialSymbolsRounded.width_wide
+/// <span class="material-symbols-rounded">width_normal</span> MaterialSymbolsRounded.width_normal
 ///
-  /// <span class="material-symbols-rounded">wifi</span> MaterialSymbolsRounded.wifi
+/// <span class="material-symbols-rounded">width_wide</span> MaterialSymbolsRounded.width_wide
 ///
-  /// <span class="material-symbols-rounded">wifi_1_bar</span> MaterialSymbolsRounded.wifi_1_bar
+/// <span class="material-symbols-rounded">wifi</span> MaterialSymbolsRounded.wifi
 ///
-  /// <span class="material-symbols-rounded">wifi_2_bar</span> MaterialSymbolsRounded.wifi_2_bar
+/// <span class="material-symbols-rounded">wifi_1_bar</span> MaterialSymbolsRounded.wifi_1_bar
 ///
-  /// <span class="material-symbols-rounded">wifi_add</span> MaterialSymbolsRounded.wifi_add
+/// <span class="material-symbols-rounded">wifi_2_bar</span> MaterialSymbolsRounded.wifi_2_bar
 ///
-  /// <span class="material-symbols-rounded">wifi_calling</span> MaterialSymbolsRounded.wifi_calling
+/// <span class="material-symbols-rounded">wifi_add</span> MaterialSymbolsRounded.wifi_add
 ///
-  /// <span class="material-symbols-rounded">wifi_calling_1</span> MaterialSymbolsRounded.wifi_calling_1
+/// <span class="material-symbols-rounded">wifi_calling</span> MaterialSymbolsRounded.wifi_calling
 ///
-  /// <span class="material-symbols-rounded">wifi_calling_2</span> MaterialSymbolsRounded.wifi_calling_2
+/// <span class="material-symbols-rounded">wifi_calling_1</span> MaterialSymbolsRounded.wifi_calling_1
 ///
-  /// <span class="material-symbols-rounded">wifi_calling_3</span> MaterialSymbolsRounded.wifi_calling_3
+/// <span class="material-symbols-rounded">wifi_calling_2</span> MaterialSymbolsRounded.wifi_calling_2
 ///
-  /// <span class="material-symbols-rounded">wifi_channel</span> MaterialSymbolsRounded.wifi_channel
+/// <span class="material-symbols-rounded">wifi_calling_3</span> MaterialSymbolsRounded.wifi_calling_3
 ///
-  /// <span class="material-symbols-rounded">wifi_find</span> MaterialSymbolsRounded.wifi_find
+/// <span class="material-symbols-rounded">wifi_channel</span> MaterialSymbolsRounded.wifi_channel
 ///
-  /// <span class="material-symbols-rounded">wifi_lock</span> MaterialSymbolsRounded.wifi_lock
+/// <span class="material-symbols-rounded">wifi_find</span> MaterialSymbolsRounded.wifi_find
 ///
-  /// <span class="material-symbols-rounded">wifi_off</span> MaterialSymbolsRounded.wifi_off
+/// <span class="material-symbols-rounded">wifi_lock</span> MaterialSymbolsRounded.wifi_lock
 ///
-  /// <span class="material-symbols-rounded">wifi_password</span> MaterialSymbolsRounded.wifi_password
+/// <span class="material-symbols-rounded">wifi_off</span> MaterialSymbolsRounded.wifi_off
 ///
-  /// <span class="material-symbols-rounded">wifi_protected_setup</span> MaterialSymbolsRounded.wifi_protected_setup
+/// <span class="material-symbols-rounded">wifi_password</span> MaterialSymbolsRounded.wifi_password
 ///
-  /// <span class="material-symbols-rounded">wifi_proxy</span> MaterialSymbolsRounded.wifi_proxy
+/// <span class="material-symbols-rounded">wifi_protected_setup</span> MaterialSymbolsRounded.wifi_protected_setup
 ///
-  /// <span class="material-symbols-rounded">wifi_tethering</span> MaterialSymbolsRounded.wifi_tethering
+/// <span class="material-symbols-rounded">wifi_proxy</span> MaterialSymbolsRounded.wifi_proxy
 ///
-  /// <span class="material-symbols-rounded">wifi_tethering_error</span> MaterialSymbolsRounded.wifi_tethering_error
+/// <span class="material-symbols-rounded">wifi_tethering</span> MaterialSymbolsRounded.wifi_tethering
 ///
-  /// <span class="material-symbols-rounded">wifi_tethering_off</span> MaterialSymbolsRounded.wifi_tethering_off
+/// <span class="material-symbols-rounded">wifi_tethering_error</span> MaterialSymbolsRounded.wifi_tethering_error
 ///
-  /// <span class="material-symbols-rounded">wind_power</span> MaterialSymbolsRounded.wind_power
+/// <span class="material-symbols-rounded">wifi_tethering_off</span> MaterialSymbolsRounded.wifi_tethering_off
 ///
-  /// <span class="material-symbols-rounded">window</span> MaterialSymbolsRounded.window
+/// <span class="material-symbols-rounded">wind_power</span> MaterialSymbolsRounded.wind_power
 ///
-  /// <span class="material-symbols-rounded">window_closed</span> MaterialSymbolsRounded.window_closed
+/// <span class="material-symbols-rounded">window</span> MaterialSymbolsRounded.window
 ///
-  /// <span class="material-symbols-rounded">window_open</span> MaterialSymbolsRounded.window_open
+/// <span class="material-symbols-rounded">window_closed</span> MaterialSymbolsRounded.window_closed
 ///
-  /// <span class="material-symbols-rounded">window_sensor</span> MaterialSymbolsRounded.window_sensor
+/// <span class="material-symbols-rounded">window_open</span> MaterialSymbolsRounded.window_open
 ///
-  /// <span class="material-symbols-rounded">wine_bar</span> MaterialSymbolsRounded.wine_bar
+/// <span class="material-symbols-rounded">window_sensor</span> MaterialSymbolsRounded.window_sensor
 ///
-  /// <span class="material-symbols-rounded">woman</span> MaterialSymbolsRounded.woman
+/// <span class="material-symbols-rounded">wine_bar</span> MaterialSymbolsRounded.wine_bar
 ///
-  /// <span class="material-symbols-rounded">woman_2</span> MaterialSymbolsRounded.woman_2
+/// <span class="material-symbols-rounded">woman</span> MaterialSymbolsRounded.woman
 ///
-  /// <span class="material-symbols-rounded">work</span> MaterialSymbolsRounded.work
+/// <span class="material-symbols-rounded">woman_2</span> MaterialSymbolsRounded.woman_2
 ///
-  /// <span class="material-symbols-rounded">work_history</span> MaterialSymbolsRounded.work_history
+/// <span class="material-symbols-rounded">work</span> MaterialSymbolsRounded.work
 ///
-  /// <span class="material-symbols-rounded">work_off</span> MaterialSymbolsRounded.work_off
+/// <span class="material-symbols-rounded">work_history</span> MaterialSymbolsRounded.work_history
 ///
-  /// <span class="material-symbols-rounded">work_outline</span> MaterialSymbolsRounded.work_outline
+/// <span class="material-symbols-rounded">work_off</span> MaterialSymbolsRounded.work_off
 ///
-  /// <span class="material-symbols-rounded">workspace_premium</span> MaterialSymbolsRounded.workspace_premium
+/// <span class="material-symbols-rounded">work_outline</span> MaterialSymbolsRounded.work_outline
 ///
-  /// <span class="material-symbols-rounded">workspaces</span> MaterialSymbolsRounded.workspaces
+/// <span class="material-symbols-rounded">workspace_premium</span> MaterialSymbolsRounded.workspace_premium
 ///
-  /// <span class="material-symbols-rounded">workspaces_outline</span> MaterialSymbolsRounded.workspaces_outline
+/// <span class="material-symbols-rounded">workspaces</span> MaterialSymbolsRounded.workspaces
 ///
-  /// <span class="material-symbols-rounded">wounds_injuries</span> MaterialSymbolsRounded.wounds_injuries
+/// <span class="material-symbols-rounded">workspaces_outline</span> MaterialSymbolsRounded.workspaces_outline
 ///
-  /// <span class="material-symbols-rounded">wrap_text</span> MaterialSymbolsRounded.wrap_text
+/// <span class="material-symbols-rounded">wounds_injuries</span> MaterialSymbolsRounded.wounds_injuries
 ///
-  /// <span class="material-symbols-rounded">wrist</span> MaterialSymbolsRounded.wrist
+/// <span class="material-symbols-rounded">wrap_text</span> MaterialSymbolsRounded.wrap_text
 ///
-  /// <span class="material-symbols-rounded">wrong_location</span> MaterialSymbolsRounded.wrong_location
+/// <span class="material-symbols-rounded">wrist</span> MaterialSymbolsRounded.wrist
 ///
-  /// <span class="material-symbols-rounded">wysiwyg</span> MaterialSymbolsRounded.wysiwyg
+/// <span class="material-symbols-rounded">wrong_location</span> MaterialSymbolsRounded.wrong_location
 ///
-  /// <span class="material-symbols-rounded">yard</span> MaterialSymbolsRounded.yard
+/// <span class="material-symbols-rounded">wysiwyg</span> MaterialSymbolsRounded.wysiwyg
 ///
-  /// <span class="material-symbols-rounded">youtube_activity</span> MaterialSymbolsRounded.youtube_activity
+/// <span class="material-symbols-rounded">yard</span> MaterialSymbolsRounded.yard
 ///
-  /// <span class="material-symbols-rounded">youtube_searched_for</span> MaterialSymbolsRounded.youtube_searched_for
+/// <span class="material-symbols-rounded">youtube_activity</span> MaterialSymbolsRounded.youtube_activity
 ///
-  /// <span class="material-symbols-rounded">zone_person_alert</span> MaterialSymbolsRounded.zone_person_alert
+/// <span class="material-symbols-rounded">youtube_searched_for</span> MaterialSymbolsRounded.youtube_searched_for
 ///
-  /// <span class="material-symbols-rounded">zone_person_idle</span> MaterialSymbolsRounded.zone_person_idle
+/// <span class="material-symbols-rounded">zone_person_alert</span> MaterialSymbolsRounded.zone_person_alert
 ///
-  /// <span class="material-symbols-rounded">zone_person_urgent</span> MaterialSymbolsRounded.zone_person_urgent
+/// <span class="material-symbols-rounded">zone_person_idle</span> MaterialSymbolsRounded.zone_person_idle
 ///
-  /// <span class="material-symbols-rounded">zoom_in</span> MaterialSymbolsRounded.zoom_in
+/// <span class="material-symbols-rounded">zone_person_urgent</span> MaterialSymbolsRounded.zone_person_urgent
 ///
-  /// <span class="material-symbols-rounded">zoom_in_map</span> MaterialSymbolsRounded.zoom_in_map
+/// <span class="material-symbols-rounded">zoom_in</span> MaterialSymbolsRounded.zoom_in
 ///
-  /// <span class="material-symbols-rounded">zoom_out</span> MaterialSymbolsRounded.zoom_out
+/// <span class="material-symbols-rounded">zoom_in_map</span> MaterialSymbolsRounded.zoom_in_map
 ///
-  /// <span class="material-symbols-rounded">zoom_out_map</span> MaterialSymbolsRounded.zoom_out_map
+/// <span class="material-symbols-rounded">zoom_out</span> MaterialSymbolsRounded.zoom_out
+///
+/// <span class="material-symbols-rounded">zoom_out_map</span> MaterialSymbolsRounded.zoom_out_map
 
 
 //pub.dev does not like//@staticIconProvider

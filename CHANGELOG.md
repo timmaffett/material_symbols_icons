@@ -4,6 +4,7 @@
 
 * Remove @staticIconProvider annotation because pub.dev does not like it no matter what the flutter version is.
 * Added @nodoc to prevent documentation for outlined_suffix, rounded, rounded_suffix, sharp and sharp_suffix because dart doc is so large and inefficient that pub.dev generates 12gigs of docs otherwise.  Added listing of icon names/symbols for each class in lieu of proper dart docs.
+
 ## 4.39.2
 
 * Changes to flutter 3.7.0/dart sdk 2.19.0 to get pub.dev to accept @staticIconProvider annotation

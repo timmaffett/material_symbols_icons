@@ -2,13 +2,13 @@
 
 ## 4.39.5
 
-*  Made dart format/analyze happy, fixed update_package.dart to generate dart format safe code.
+* Made dart format/analyze happy, fixed update_package.dart to generate dart format safe code.
 
 ## 4.39.4
 
-*  Changed package to conform to the document defining the future built in 'native' support of the Material Symbols Icons fonts.
-*  The instructions and use should now be compatible with the future Flutter implementation as defined in [here](https://docs.google.com/document/d/1UHRKDl8-lzl_hW_K2AHnpMwvdPo0vGPbDI7mqACWXJY/edit).
-*  Added option to Remove @nodoc tag from symbols.dart for when dart doc supports removal of sidebar.. someday...
+* Changed package to conform to the document defining the future built in 'native' support of the Material Symbols Icons fonts.
+* The instructions and use should now be compatible with the future Flutter implementation as defined in [here](https://docs.google.com/document/d/1UHRKDl8-lzl_hW_K2AHnpMwvdPo0vGPbDI7mqACWXJY/edit).
+* Added option to Remove @nodoc tag from symbols.dart for when dart doc supports removal of sidebar.. someday...
 
 ## 4.39.3
 

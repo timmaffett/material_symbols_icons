@@ -25,7 +25,7 @@ class IconInfo {
   final String iconName;
   final String codePoint;
 
-  IconInfo( this.originalIconName, this.iconName, this.codePoint );
+  IconInfo(this.originalIconName, this.iconName, this.codePoint);
 }
 
 class MaterialSymbolsVariableFont {
@@ -61,7 +61,9 @@ List<MaterialSymbolsVariableFont> variableFontFlavors = [
       'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf'),
 ];
 
-const Map<String, List<String>> _platformAdaptiveIdentifiers = <String, List<String>>{
+/* NOT CURRENTLY USED
+const Map<String, List<String>> _platformAdaptiveIdentifiers =
+    <String, List<String>>{
   // Mapping of Flutter IDs to an Android/agnostic ID and an iOS ID.
   // Flutter IDs can be anything, but should be chosen to be agnostic.
   'arrow_back': <String>['arrow_back', 'arrow_back_ios'],
@@ -70,6 +72,7 @@ const Map<String, List<String>> _platformAdaptiveIdentifiers = <String, List<Str
   'more': <String>['more_vert', 'more_horiz'],
   'share': <String>['share', 'ios_share'],
 };
+*/
 
 // Rewrite certain Flutter IDs (numbers) using prefix matching.
 const Map<String, String> _identifierPrefixRewrites = <String, String>{
@@ -179,7 +182,8 @@ Future<void> main(List<String> args) async {
       abbr: 'f',
       negatable: true,
       defaultsTo: true,
-      help: 'Adds @nodocs to Symbols class constants and instead adds `fake` dart docs settings. Reduces doc size by 8gigs!',
+      help:
+          'Adds @nodocs to Symbols class constants and instead adds `fake` dart docs settings. Reduces doc size by 8gigs!',
     )
     ..addFlag(
       'downloadfonts',
@@ -220,11 +224,12 @@ Future<void> main(List<String> args) async {
 
   final downloadFontsFlag = results['downloadfonts'] as bool;
   verboseFlag = results['verbose'] as bool;
-  final combinedFutureSymbolsSupportCompatible = results['combined_symbols'] as bool;
+  final combinedFutureSymbolsSupportCompatible =
+      results['combined_symbols'] as bool;
   final legacySuffixIconNames = results['legacy_suffix_icon_names'] as bool;
   fakeDartDocsFlag = results['fake_dart_docs'] as bool;
-  
-  if(fakeDartDocsFlag) {
+
+  if (fakeDartDocsFlag) {
     noDocUsage = '@nodoc ';
   }
 
@@ -311,7 +316,7 @@ Future<void> main(List<String> args) async {
     print('Renamed icon names $renamedIconNames');
   }
 
-  if( legacySuffixIconNames ) {
+  if (legacySuffixIconNames) {
     // Now we have loaded up [variableFontFlavors] with the downloaded code point info.
     // We are ready to write the source files.
     for (final fontFlavor in variableFontFlavors) {
@@ -375,11 +380,15 @@ void writeCombinedSourceFile(
   StringBuffer getFakeDartDocsForIconNames() {
     final fakeDartDocs = StringBuffer();
 
-    fakeDartDocs.writeln('/// NOTE: IMPORTANT - Because of the current gross inefficiencies of dart doc ALL icon member names');
-    fakeDartDocs.writeln('/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data.  (This is caused');
-    fakeDartDocs.writeln('/// by dart doc including a repeated sidebar of all class members within every class members file).');
+    fakeDartDocs.writeln(
+        '/// NOTE: IMPORTANT - Because of the current gross inefficiencies of dart doc ALL icon member names');
+    fakeDartDocs.writeln(
+        '/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data.  (This is caused');
+    fakeDartDocs.writeln(
+        '/// by dart doc including a repeated sidebar of all class members within every class members file).');
     fakeDartDocs.writeln('///');
-    fakeDartDocs.writeln('/// The icons and corresponding symbols names follow:');
+    fakeDartDocs
+        .writeln('/// The icons and corresponding symbols names follow:');
     fakeDartDocs.writeln('///');
 
     // all font flavors should have same number of codepoints
@@ -396,7 +405,7 @@ void writeCombinedSourceFile(
         final iconInfo = fontinfo.iconInfoList[i];
         var iconname = iconInfo.iconName;
 
-        if (suffixVersion && fontinfo.flavor!='outlined') {
+        if (suffixVersion && fontinfo.flavor != 'outlined') {
           iconname = '${iconname}_${fontinfo.flavor}';
         }
         fakeDartDocs.writeln('///');
@@ -449,17 +458,17 @@ import 'material_symbols_icons.dart';
 
 /// Access icons using `Symbols.iconname` for the outlined version, or `Symbols.iconname_style` for the rounded and sharp versions of
 /// each icon (with _style appended to the identifiers).
-/// 
+///
 /// This is intended to be compatible with the future Flutter implementation as defined in [here](https://docs.google.com/document/d/1UHRKDl8-lzl_hW_K2AHnpMwvdPo0vGPbDI7mqACWXJY/edit).
 /// Once flutter natively supports the Material Symbols icons all that should be needed is removal of the import statement for this package.
-/// 
+///
 /// Explore available icons at [Google Font's Material Symbols Explorer](https://fonts.google.com/icons?selected=Material+Symbols).
 /// <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><style>span.material-symbols-outlined, span.material-symbols-rounded, span.material-symbols-sharp { font-size:48px; color: teal; }</style>
-/// 
+///
 /// All icons share the same name they had in the Material Icons [Icons] class.
 /// All icon names that start with a number (like '360' or '9mp') but have their icon name changed so that the number is written out and may have
 /// added '_' separating numbers.  For example '3d_rotation' becomes 'threed_rotation', '123' becomes 'onetwothree', '360' becomes 'threesixty',
-/// '9mp' becomes 'nine_mp', '10' becomes 'ten_', '2d' becomes 'twod', '3d' becomes 'threed'. 
+/// '9mp' becomes 'nine_mp', '10' becomes 'ten_', '2d' becomes 'twod', '3d' becomes 'threed'.
 /// This is done to generate valid dart class member names.
 /// For example if you want to access the icon with the name '360' you use `Symbols.threesixty` instead.
 ///
@@ -543,7 +552,7 @@ class Symbols extends MaterialSymbolsBase {
       var iconname = iconInfo.iconName;
       final codepoint = iconInfo.codePoint;
 
-      if (suffixVersion && fontinfo.flavor!='outlined') {
+      if (suffixVersion && fontinfo.flavor != 'outlined') {
         iconname = '${iconname}_${fontinfo.flavor}';
       }
       sourceFileContent.writeln();
@@ -563,7 +572,6 @@ class Symbols extends MaterialSymbolsBase {
 
   print('Wrote $iconCount COMBINED icons to $sourceFilename');
 }
-
 
 /// Write a combined version of the `Symbols` class with outlined, rounded and sharp versions of
 /// each icon.  The outlined version has no suffix and each rounded and sharp icon name has a
@@ -622,11 +630,10 @@ Map<String, IconData> materialSymbolsMap = {
       var iconInfo = fontinfo.iconInfoList[i];
       var iconname = iconInfo.iconName;
 
-      if (suffixVersion && fontinfo.flavor!='outlined') {
+      if (suffixVersion && fontinfo.flavor != 'outlined') {
         iconname = '${iconname}_${fontinfo.flavor}';
       }
-      final lineStr =
-          "  '$iconname': Symbols.$iconname,";
+      final lineStr = "  '$iconname': Symbols.$iconname,";
       if (lineStr.length <= 80) {
         sourceFileContent.writeln(lineStr);
       } else {
@@ -645,28 +652,28 @@ Map<String, IconData> materialSymbolsMap = {
   print('Wrote $iconCount COMBINED icons to $exampleSourceFilename');
 }
 
-
-
 /// This mimics the flutter icon renaming in flutter engine \dev\tools\update_icons.dart
 /// and it essentially copied from there, but needlessly a little faster
 String _generateFlutterId(String id) {
   String flutterId = id;
   bool fixApplied = false;
   // Exact identifier rewrites.
-  for (final MapEntry<String, String> rewritePair in _identifierExactRewrites.entries) {
+  for (final MapEntry<String, String> rewritePair
+      in _identifierExactRewrites.entries) {
     if (id == rewritePair.key) {
       flutterId = id.replaceFirst(
         rewritePair.key,
         _identifierExactRewrites[rewritePair.key]!,
       );
       fixApplied = true;
-      break;  // done we got exact match and replaced
+      break; // done we got exact match and replaced
     }
   }
   // Prefix identifier rewrites. [_identifierPrefixRewrites] is sorted longest to shortest, so once we find a prefix match
   // we can break.
-  if(!fixApplied) {
-    for (final MapEntry<String, String> rewritePair in _identifierPrefixRewrites.entries) {
+  if (!fixApplied) {
+    for (final MapEntry<String, String> rewritePair
+        in _identifierPrefixRewrites.entries) {
       if (id.startsWith(rewritePair.key)) {
         flutterId = id.replaceFirst(
           rewritePair.key,
@@ -678,8 +685,8 @@ String _generateFlutterId(String id) {
     }
   }
 
-  if(!fixApplied) {
-    throw('Iconname $id which needed a fix applied but none were found.');
+  if (!fixApplied) {
+    throw ('Iconname $id which needed a fix applied but none were found.');
   }
 
   // Prevent double underscores.
@@ -688,12 +695,7 @@ String _generateFlutterId(String id) {
   return flutterId;
 }
 
-
-
-
-
-
-/******
+/*
  * 
  * OBSOLETE CODE follows - this is no longer used when generating this class and is included only for legacy reasons
  * 
@@ -705,7 +707,6 @@ void writeSourceFile(
     String sourceFilename,
     {bool suffixVersion = false,
     bool suffixIconNames = false}) {
-
   late final String classFlavor;
   late final String libraryFlavor;
   late final String categoryFlavor;
@@ -727,11 +728,15 @@ void writeSourceFile(
   StringBuffer getFakeDartDocsForIconNames() {
     final fakeDartDocs = StringBuffer();
 
-    fakeDartDocs.writeln('/// NOTE: IMPORTANT - Because of the current gross inefficiencies of dart doc ALL icon member names');
-    fakeDartDocs.writeln('/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data.  (This is caused');
-    fakeDartDocs.writeln('/// by dart doc including a repeated sidebar of all class members within every class members file).');
+    fakeDartDocs.writeln(
+        '/// NOTE: IMPORTANT - Because of the current gross inefficiencies of dart doc ALL icon member names');
+    fakeDartDocs.writeln(
+        '/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data.  (This is caused');
+    fakeDartDocs.writeln(
+        '/// by dart doc including a repeated sidebar of all class members within every class members file).');
     fakeDartDocs.writeln('///');
-    fakeDartDocs.writeln('/// The icons and corresponding symbols names follow:');
+    fakeDartDocs
+        .writeln('/// The icons and corresponding symbols names follow:');
     fakeDartDocs.writeln('///');
 
     final iconInfoList = fontinfo.iconInfoList;
@@ -927,8 +932,7 @@ Map<String, IconData> materialSymbols${classFlavor}Map = {
     if (suffixIconNames) {
       iconname = '${iconname}_${fontinfo.flavor}';
     }
-    final testStr =
-        "  '$iconname': MaterialSymbols$classFlavor.$iconname,";
+    final testStr = "  '$iconname': MaterialSymbols$classFlavor.$iconname,";
     if (testStr.length <= 80) {
       sourceFileContent.writeln(testStr);
     } else {
@@ -946,6 +950,3 @@ Map<String, IconData> materialSymbols${classFlavor}Map = {
 
   print('Wrote $iconCount icons to $exampleSourceFilename');
 }
-
-
-

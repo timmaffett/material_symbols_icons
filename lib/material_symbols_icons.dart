@@ -31,7 +31,7 @@ class IconVariationDefaults {
 /// annotation so that method itself is not tree-shaken.  This method referes to all three material symbols icon fonts so that the
 /// build tools know to tree-shake each of these icon fonts.  (Otherwise unreferenced icon fonts would be included in their entirety
 /// into the built application).
-/// 
+///
 /// [MaterialSymbolsBase] class with methods for setting the default variations for each style.  These default variations are
 /// used when using `VariedIcon.varied()` as alternative to the `Icon()` constructor.
 ///
@@ -41,8 +41,8 @@ class IconVariationDefaults {
 /// or universal versions of this class), as well as [MaterialSymbolsOutlined], [MaterialSymbolsRounded] and [MaterialSymbolsSharp].
 /// The user of this package chooses the method they prefer to access the desired icons, and imports the corresponding
 /// dart file into their files.)
-/// 
- 
+///
+
 class MaterialSymbolsBase {
   /// Our map of font family names to font variation default information.
   static Map<String, IconVariationDefaults> globalIconVariationDefaults = {};

@@ -15,15 +15,15 @@ const outlinedColor = Colors.red;
 const roundedColor = Colors.blue;
 const sharpColor = Colors.teal;
 
-Map<String,IconData> materialSymbolsOutlinedMap = {};
-Map<String,IconData> materialSymbolsRoundedMap = {};
-Map<String,IconData> materialSymbolsSharpMap = {};
+Map<String, IconData> materialSymbolsOutlinedMap = {};
+Map<String, IconData> materialSymbolsRoundedMap = {};
+Map<String, IconData> materialSymbolsSharpMap = {};
 
 void makeSymbolsByStyleMaps() {
-  for(final key in materialSymbolsMap.keys.toList()) {
-    if(key.endsWith('_rounded')) {
+  for (final key in materialSymbolsMap.keys.toList()) {
+    if (key.endsWith('_rounded')) {
       materialSymbolsRoundedMap[key] = materialSymbolsMap[key]!;
-    } else if(key.endsWith('_sharp')) {
+    } else if (key.endsWith('_sharp')) {
       materialSymbolsSharpMap[key] = materialSymbolsMap[key]!;
     } else {
       materialSymbolsOutlinedMap[key] = materialSymbolsMap[key]!;
@@ -32,7 +32,6 @@ void makeSymbolsByStyleMaps() {
 }
 
 void main() {
-
   // create separate iconname->icon map for each style
   makeSymbolsByStyleMaps();
 
@@ -662,8 +661,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                           launchUrl(Uri.parse(
                                               'https://fonts.google.com/icons?icon.set=Material+Symbols'));
                                         },
-                                        icon: const Icon(
-                                            Symbols.open_in_new),
+                                        icon: const Icon(Symbols.open_in_new),
                                         style: IconButton.styleFrom(
                                           foregroundColor:
                                               colors.onSecondaryContainer,

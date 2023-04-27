@@ -179,7 +179,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "4.39.4"
+    version: "4.39.5"
   meta:
     dependency: transitive
     description:

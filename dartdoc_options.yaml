@@ -1,21 +1,8 @@
 dartdoc:
-#  categories:
-#    "First Category":
-#      markdown: doc/First.md
-#      name: Awesome
-#    "Second Category":
-#      markdown: doc/Second.md
-#      name: Great
-#  categoryOrder: ["First Category", "Second Category"]
-#  examplePathPrefix: 'subdir/with/examples'
-#  includeExternal: ['bin/unusually_located_library.dart']
-#  DDnodoc: ['lib/rounded.dart','lib/sharp.dart','lib/outlined_suffix.dart','lib/rounded_suffix.dart','lib/sharp_suffix.dart']
-#  linkTo:
-#    url: "https://my.dartdocumentationsite.org/dev/%v%"
-#  showUndocumentedCategories: true
   ignore:
     - ambiguous-doc-reference
     - unresolved-doc-reference
   errors:
+    - nothing
   warnings:
     - tool-error

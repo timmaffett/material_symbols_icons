@@ -20,14 +20,22 @@ import 'package:path/path.dart' as path;
 
 late final bool verboseFlag;
 
+const String noDocUsage = ''; //'@nodoc ' for NO DOCS to prevent HUGE doc files
+class IconInfo {
+  final String originalIconName;
+  final String iconName;
+  final String codePoint;
+
+  IconInfo( this.originalIconName, this.iconName, this.codePoint );
+}
+
 class MaterialSymbolsVariableFont {
   final String flavor;
   final String familyNameToUse;
   final String codepointFileUrl;
   final String ttfFontFileUrl;
   late final String filename;
-  final List<String> iconNameList = [];
-  final List<String> codePointList = [];
+  final List<IconInfo> iconInfoList = [];
 
   MaterialSymbolsVariableFont(this.flavor, this.familyNameToUse,
       this.codepointFileUrl, this.ttfFontFileUrl) {
@@ -54,14 +62,62 @@ List<MaterialSymbolsVariableFont> variableFontFlavors = [
       'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf'),
 ];
 
-final dartReservedWords = [
-  'class',
-  'switch',
-  'try',
-];
+const Map<String, List<String>> _platformAdaptiveIdentifiers = <String, List<String>>{
+  // Mapping of Flutter IDs to an Android/agnostic ID and an iOS ID.
+  // Flutter IDs can be anything, but should be chosen to be agnostic.
+  'arrow_back': <String>['arrow_back', 'arrow_back_ios'],
+  'arrow_forward': <String>['arrow_forward', 'arrow_forward_ios'],
+  'flip_camera': <String>['flip_camera_android', 'flip_camera_ios'],
+  'more': <String>['more_vert', 'more_horiz'],
+  'share': <String>['share', 'ios_share'],
+};
 
-/// This is the prefix that we will place before iconnames which are not valid class member names because they are numbers or reserved words.
-const prefixForReservedWordsAndNumbers = '\$';
+// Rewrite certain Flutter IDs (numbers) using prefix matching.
+const Map<String, String> _identifierPrefixRewrites = <String, String>{
+  '3d_rotation': 'threed_rotation',
+  '123': 'onetwothree',
+  '360': 'threesixty',
+  '10': 'ten_',
+  '11': 'eleven_',
+  '12': 'twelve_',
+  '13': 'thirteen_',
+  '14': 'fourteen_',
+  '15': 'fifteen_',
+  '16': 'sixteen_',
+  '17': 'seventeen_',
+  '18': 'eighteen_',
+  '19': 'nineteen_',
+  '20': 'twenty_',
+  '21': 'twenty_one_',
+  '22': 'twenty_two_',
+  '23': 'twenty_three_',
+  '24': 'twenty_four_',
+  '30': 'thirty_',
+  '60': 'sixty_',
+  '2d': 'twod',
+  '3d': 'threed',
+  '1': 'one_',
+  '2': 'two_',
+  '3': 'three_',
+  '4': 'four_',
+  '5': 'five_',
+  '6': 'six_',
+  '7': 'seven_',
+  '8': 'eight_',
+  '9': 'nine_',
+};
+
+// Rewrite certain Flutter IDs (reserved keywords) using exact matching.
+const Map<String, String> _identifierExactRewrites = <String, String>{
+  'class': 'class_',
+  'new': 'new_',
+  'switch': 'switch_',
+  'try': 'try_sms_star',
+  'door_back': 'door_back_door',
+  'door_front': 'door_front_door',
+  'power_rounded': 'power_rounded_power',
+  'error_circle_rounded': 'error_circle_rounded_error',
+};
 
 /// Path to write the downloaded TTF files to `../rawFontsUnfixed`
 /// KLUDGE - currently we have to patch the fonts with the correct metrics to get them to render correctly in flutter.
@@ -121,19 +177,20 @@ Future<void> main(List<String> args) async {
           'The TTF font files will be downloaded to the $pathToWriteTTFFiles directory if this flag is passed.',
     )
     ..addFlag(
-      'suffix_icon_names',
-      abbr: 's',
+      'legacy_suffix_icon_names',
+      abbr: 'l',
       negatable: false,
       help:
           'Add `_outlined`, `_rounded` or `_sharp` suffixes to every icon name in corresponding MaterialSymbols, MaterialSymbolsOutlined, MaterialSymbolsRounded and MaterialSymbolsSharp classes.',
     )
     ..addFlag(
-      'combined_universal',
+      'combined_symbols',
       abbr: 'c',
-      negatable: false,
+      negatable: true,
       defaultsTo: true,
       help:
-          'If this flag is supplied a `universal.dart` will be created with all 3 flavors combined into a single class.',
+          'If this flag is supplied a `symbols.dart` will be created with all 3 flavors combined into a single class.'
+          'The outline version has no suffix and the `sharp` and `rounded` versions have `_sharp` and `_rounded` suffixes appended',
     );
   late final ArgResults results;
 
@@ -151,8 +208,8 @@ Future<void> main(List<String> args) async {
 
   final downloadFontsFlag = results['downloadfonts'] as bool;
   verboseFlag = results['verbose'] as bool;
-  final combinedUniversal = results['combined_universal'] as bool;
-  final suffixIconNames = results['suffix_icon_names'] as bool;
+  final combinedFutureSymbolsSupportCompatible = results['combined_symbols'] as bool;
+  final legacySuffixIconNames = results['legacy_suffix_icon_names'] as bool;
 
   /*
    The codepoint files are in the form:
@@ -170,8 +227,7 @@ Future<void> main(List<String> args) async {
 
   final client = HttpClient();
   for (final fontFlavor in variableFontFlavors) {
-    final iconNameList = fontFlavor.iconNameList;
-    final codePointList = fontFlavor.codePointList;
+    final iconInfoList = fontFlavor.iconInfoList;
 
     print(
       'Attempting to retrieve codepoint file from `${fontFlavor.codepointFileUrl}`',
@@ -202,21 +258,21 @@ Future<void> main(List<String> args) async {
             final parts = iconnameCodePointPair.split(' ');
             assert(parts.length == 2,
                 'Expected 2 parts on the line `$iconnameCodePointPair`');
-            var iconname = parts[0];
-            final codepoint = parts[1];
-            if (dartReservedWords.contains(iconname) ||
-                iconname.startsWith(RegExp(r'[0-9]'))) {
-              renamedIconNames.add(iconname);
-              iconname = '$prefixForReservedWordsAndNumbers$iconname';
+            final orginalName = parts[0];
+            final codePoint = parts[1];
+            var iconName = orginalName;
+            if (_identifierExactRewrites.keys.contains(iconName) ||
+                iconName.startsWith(RegExp(r'[0-9]'))) {
+              iconName = _generateFlutterId(iconName);
+              renamedIconNames.add('$orginalName => $iconName');
             }
 
-            iconNameList.add(iconname);
-            codePointList.add(codepoint);
+            iconInfoList.add(IconInfo(orginalName, iconName, codePoint));
           }
         },
       );
       print(
-        'Read ${iconNameList.length} codepoints from `${fontFlavor.codepointFileUrl}`',
+        'Read ${iconInfoList.length} codepoints from `${fontFlavor.codepointFileUrl}`',
       );
     }
 
@@ -235,40 +291,42 @@ Future<void> main(List<String> args) async {
   }
 
   if (verboseFlag) {
-    print('Renamed icon names which had _ added as prefix $renamedIconNames');
+    print('Renamed icon names $renamedIconNames');
   }
 
-  // Now we have loaded up [variableFontFlavors] with the downloaded code point info.
-  // We are ready to write the source files.
-  for (final fontFlavor in variableFontFlavors) {
-    final sourceFilename = '$pathToWriteDartFiles${fontFlavor.flavor}.dart';
-    final exampleSourceFilename =
-        '$pathToWriteExampleDartFiles${fontFlavor.flavor}_map.dart';
+  if( legacySuffixIconNames ) {
+    // Now we have loaded up [variableFontFlavors] with the downloaded code point info.
+    // We are ready to write the source files.
+    for (final fontFlavor in variableFontFlavors) {
+      final sourceFilename = '$pathToWriteDartFiles${fontFlavor.flavor}.dart';
+      final exampleSourceFilename =
+          '$pathToWriteExampleDartFiles${fontFlavor.flavor}_map.dart';
 
-    writeSourceFile(fontFlavor, variableFontFlavors, sourceFilename);
+      writeSourceFile(fontFlavor, variableFontFlavors, sourceFilename);
 
-    writeExampleSourceFile(fontFlavor, exampleSourceFilename, sourceFilename);
+      writeExampleSourceFile(fontFlavor, exampleSourceFilename, sourceFilename);
 
-    final suffixSourceFilename =
-        '$pathToWriteDartFiles${fontFlavor.flavor}_suffix.dart';
-    writeSourceFile(fontFlavor, variableFontFlavors, suffixSourceFilename,
-        suffixVersion: true, suffixIconNames: suffixIconNames);
+      final suffixSourceFilename =
+          '$pathToWriteDartFiles${fontFlavor.flavor}_suffix.dart';
+      writeSourceFile(fontFlavor, variableFontFlavors, suffixSourceFilename,
+          suffixVersion: true, suffixIconNames: legacySuffixIconNames);
 
-    final suffixExampleSourceFilename =
-        '$pathToWriteExampleDartFiles${fontFlavor.flavor}_suffix_map.dart';
-    writeExampleSourceFile(
-        fontFlavor, suffixExampleSourceFilename, suffixSourceFilename,
-        suffixVersion: true, suffixIconNames: suffixIconNames);
+      final suffixExampleSourceFilename =
+          '$pathToWriteExampleDartFiles${fontFlavor.flavor}_suffix_map.dart';
+      writeExampleSourceFile(
+          fontFlavor, suffixExampleSourceFilename, suffixSourceFilename,
+          suffixVersion: true, suffixIconNames: legacySuffixIconNames);
+    }
   }
 
-  if (combinedUniversal) {
+  if (combinedFutureSymbolsSupportCompatible) {
     // write all flavors together with suffixed symbol names
-    const combinedSourceFilename = '${pathToWriteDartFiles}universal.dart';
+    const combinedSourceFilename = '${pathToWriteDartFiles}symbols.dart';
     writeCombinedSourceFile(variableFontFlavors, combinedSourceFilename,
         suffixVersion: true);
 
     const combinedExampleSourceFilename =
-        '${pathToWriteExampleDartFiles}universal_map.dart';
+        '${pathToWriteExampleDartFiles}symbols_map.dart';
     writeCombinedExampleSourceFile(variableFontFlavors,
         combinedExampleSourceFilename, combinedSourceFilename,
         suffixVersion: true);
@@ -291,13 +349,340 @@ ${parser.usage}
   );
 }
 
+/// Write a combined version of the `Symbols` class with outlined, rounded and sharp versions of
+/// each icon.  The outline version has no suffix and each rounded and sharp icon name has a
+/// corresponding suffix (`_rounded` and `_sharp`).
+void writeCombinedSourceFile(
+    List<MaterialSymbolsVariableFont> fontinfoList, String sourceFilename,
+    {bool suffixVersion = true}) {
+  StringBuffer getFakeDartDocsForIconNames() {
+    final fakeDartDocs = StringBuffer();
+    // all font flavors should have same number of codepoints
+    int? lastCount;
+    for (final fontinfo in fontinfoList) {
+      if (lastCount != null) {
+        assert(fontinfo.iconInfoList.length == lastCount);
+      }
+      lastCount = fontinfo.iconInfoList.length;
+    }
+
+    for (int i = 0; i < lastCount!; i++) {
+      for (final fontinfo in fontinfoList) {
+        final iconInfo = fontinfo.iconInfoList[i];
+        var iconname = iconInfo.iconName;
+
+        if (suffixVersion && fontinfo.flavor!='outlined') {
+          iconname = '${iconname}_${fontinfo.flavor}';
+        }
+        fakeDartDocs.writeln('///');
+        fakeDartDocs.writeln(
+            '/// <span class="material-symbols-${fontinfo.flavor}">${iconInfo.originalIconName}</span> Symbols.$iconname');
+      }
+    }
+    return fakeDartDocs;
+  }
+
+  final fakeDartDocs = getFakeDartDocsForIconNames();
+
+  final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
+//
+// To edit this file modify the generator file `generator/update_package.dart` and
+// re-generate.
+// This file was generated using the Material Symbols codepoint files
+// localed at ${fontinfoList[0].codepointFileUrl},
+// ${fontinfoList[1].codepointFileUrl} and
+// ${fontinfoList[2].codepointFileUrl}.
+// These codepoints correspond to symbols within the corresponding variable font.
+// The fonts were downloaded from
+// ${fontinfoList[0].ttfFontFileUrl},
+// ${fontinfoList[1].ttfFontFileUrl}, and
+// ${fontinfoList[2].ttfFontFileUrl}
+// and added to this package.
+// This file was generated ${DateTime.now()} by the dart file
+// `generator/update_package.dart`.
+//
+// Copyright 2023 . All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+/// All three Material Symbols icon styles within [Symbols] - The outline versions have no suffix and the sharp and rounded versions of each icon
+/// have the style as a suffix to the icon name.
+/// The outlined style versions are accessed via `Symbols.iconname`.
+/// The sharp and rounded styles are accessed via `Symbols.iconname_style`, for example `Symbols.circle_sharp` or
+/// `Symbols.circle_rounded`.<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+///
+/// `import 'package:material_symbols_icons/symbols.dart';`
+///
+/// {@category Symbols}
+library symbols;
+
+import 'package:flutter/widgets.dart';
+import 'material_symbols_icons.dart';
+
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: non_constant_identifier_names
+
+/// Access icons using `Symbols.iconname` for the outlined version, or `Symbols.iconname_style` for the rounded and sharp versions of
+/// each icon (with _style appended to the identifiers).
+/// This is intended to be compatible with the future Flutter implementation as defined in [here].(https://docs.google.com/document/d/1UHRKDl8-lzl_hW_K2AHnpMwvdPo0vGPbDI7mqACWXJY/edit)
+/// 
+/// Explore available icons at [Google Font's Material Symbols Explorer](https://fonts.google.com/icons?selected=Material+Symbols).
+/// <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><style>span.material-symbols-outlined, span.material-symbols-rounded, span.material-symbols-sharp { font-size:48px; color: teal; }</style>
+/// 
+/// All icons share the same name they had in the Material Icons [Icons] class.
+/// All icon names that start with a number (like `360` or `9mp`) but have their icon name changed so that the number is written out and may have
+/// added '_' separating numbers.  For example '3d_rotation' becomes 'threed_rotation', '123' becomes 'onetwothree', '360' becomes 'threesixty',
+/// '9mp' becomes 'nine_mp', '10' becomes 'ten_', '2d' becomes 'twod', '3d' becomes 'threed'. 
+/// This is done to generate valid dart class member names.
+/// For example if you want to access the icon with the name `360` you use `Symbols.threesixty` instead.
+///
+/// Additionally the iconnames `class`, `switch`, and `try` have also been renamed with a trailing `_` (`class_`, `switch_` and `try_`) as these are dart language
+/// reserved words.  `door_back` and `door_front` have also been renamed `door_back_door` and `door_front_door` respectively.
+/// `power_rounded` becomes `power_rounded_power` (and therefor `power_rounded_power_rounded` for the rounded version and
+/// `power_rounded_power_sharp` for the sharp version.
+/// (likewise `error_circle_rounded` becomes `error_circle_rounded_error`).
+///
+/// Use with the [Icon] class to show specific icons. Icons are identified by
+/// their name FOLLOWED by the desired style as a suffix, as listed below, e.g. [Symbols.airplanemode_active_rounded].
+///
+/// Search and find the perfect icon on the [Google Fonts](https://fonts.google.com/icons?selected=Material+Symbols) website.
+///
+///
+/// This example shows how to create a [Row] of [Icon]s in different colors and
+/// sizes. The first [Icon] uses a [Icon.semanticLabel] to announce in accessibility
+/// modes like TalkBack and VoiceOver.
+///
+/// ![The following code snippet would generate a row of icons consisting of a pink bike (outlined style), a green sun (rounded style), and a blue beach umbrella (sharp style), each progressively bigger than the last.](https://github.com/timmaffett/material_symbols_icons/raw/master/media/universal_example.png)
+///
+/// ```dart
+/// const Row(
+///   mainAxisAlignment: MainAxisAlignment.spaceAround,
+///   children: <Widget>[
+///     Icon(
+///       Symbols.pedal_bike,
+///       color: Colors.pink,
+///       size: 24.0,
+///       semanticLabel: 'Text to announce in accessibility modes',
+///     ),
+///     Icon(
+///       Symbols.sunny_rounded,
+///       color: Colors.green,
+///       size: 30.0,
+///     ),
+///     Icon(
+///       Symbols.beach_access_sharp,
+///       color: Colors.blue,
+///       size: 36.0,
+///     ),
+///   ],
+/// )
+/// ```
+///
+/// See also:
+///
+///  * [Icon]
+///  * [IconButton]
+///  * <https://fonts.google.com/icons?selected=Material+Symbols>
+///
+/// NOTE: IMPORTANT - Because of the gross inefficiencies of dart doc ALL icon member names
+/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data.
+/// The icons and corresponding symbols names follow:
+///
+$fakeDartDocs//pub.dev does not like//@staticIconProvider
+class Symbols extends MaterialSymbolsBase {
+  // This class is not meant to be instantiated or extended; this constructor
+  // prevents instantiation and extension.
+  Symbols._();
+
+  // BEGIN GENERATED ICONS
+''');
+
+  // all font flavors should have same number of codepoints
+  int? lastCount;
+  for (final fontinfo in fontinfoList) {
+    if (lastCount != null) {
+      assert(fontinfo.iconInfoList.length == lastCount);
+    }
+    lastCount = fontinfo.iconInfoList.length;
+
+    // write constant names
+    sourceFileContent.writeln(
+        "  static const _family_${fontinfo.flavor} = '${fontinfo.familyNameToUse}';");
+  }
+  sourceFileContent
+      .writeln("  static const _package = 'material_symbols_icons';");
+
+  var iconCount = 0;
+
+  for (int i = 0; i < lastCount!; i++) {
+    for (final fontinfo in fontinfoList) {
+      final iconInfo = fontinfo.iconInfoList[i];
+      var iconname = iconInfo.iconName;
+      final codepoint = iconInfo.codePoint;
+
+      if (suffixVersion && fontinfo.flavor!='outlined') {
+        iconname = '${iconname}_${fontinfo.flavor}';
+      }
+      sourceFileContent.writeln();
+      sourceFileContent.writeln(
+          //ALL OUTLINE  '  /// <span class="material-symbols-outlined">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
+          '  /// $noDocUsage<span class="material-symbols-${fontinfo.flavor}">${iconInfo.originalIconName}</span> material symbol named "$iconname".');
+      sourceFileContent.writeln("  static const IconData $iconname =");
+      sourceFileContent.writeln(
+          "      IconData(0x$codepoint, fontFamily: _family_${fontinfo.flavor}, fontPackage: _package);");
+      iconCount++;
+    }
+  }
+  sourceFileContent.writeln('  // END GENERATED ICONS');
+  sourceFileContent.writeln('}');
+
+  File(sourceFilename).writeAsStringSync(sourceFileContent.toString());
+
+  print('Wrote $iconCount COMBINED icons to $sourceFilename');
+}
+
+
+/// Write a combined version of the `Symbols` class with outlined, rounded and sharp versions of
+/// each icon.  The outlined version has no suffix and each rounded and sharp icon name has a
+/// corresponding suffix (`_rounded` and `_sharp`).
+void writeCombinedExampleSourceFile(
+    List<MaterialSymbolsVariableFont> fontinfoList,
+    String exampleSourceFilename,
+    String sourceFilename,
+    {bool suffixVersion = true}) {
+  sourceFilename = path.basename(sourceFilename);
+
+  final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
+//
+// To edit this file modify the generator file `generator/update_package.dart` and
+// re-generate.
+// This file was generated using the Material Symbols codepoint files
+// localed at ${fontinfoList[0].codepointFileUrl},
+// ${fontinfoList[1].codepointFileUrl} and
+// ${fontinfoList[2].codepointFileUrl}.
+// These codepoints correspond to symbols within the corresponding variable font.
+// The fonts were downloaded from
+// ${fontinfoList[0].ttfFontFileUrl},
+// ${fontinfoList[1].ttfFontFileUrl}, and
+// ${fontinfoList[2].ttfFontFileUrl}
+// and added to this package.
+// This file was generated ${DateTime.now()} by the dart file
+// `generator/update_package.dart`.
+//
+// Copyright 2023 . All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+import 'package:flutter/widgets.dart';
+import 'package:material_symbols_icons/$sourceFilename';
+
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: non_constant_identifier_names
+
+// BEGIN GENERATED static array
+Map<String, IconData> materialSymbolsMap = {
+''');
+
+  // all font flavors should have same number of codepoints
+  int? lastCount;
+  for (final fontinfo in fontinfoList) {
+    if (lastCount != null) {
+      assert(fontinfo.iconInfoList.length == lastCount);
+    }
+    lastCount = fontinfo.iconInfoList.length;
+  }
+
+  var iconCount = 0;
+
+  for (int i = 0; i < lastCount!; i++) {
+    for (final fontinfo in fontinfoList) {
+      var iconInfo = fontinfo.iconInfoList[i];
+      var iconname = iconInfo.iconName;
+
+      if (suffixVersion && fontinfo.flavor!='outlined') {
+        iconname = '${iconname}_${fontinfo.flavor}';
+      }
+      final lineStr =
+          "  '$iconname': Symbols.$iconname,";
+      if (lineStr.length <= 80) {
+        sourceFileContent.writeln(lineStr);
+      } else {
+        // SPLIT THE LINE
+        sourceFileContent.writeln("  '$iconname':");
+        sourceFileContent.writeln("      Symbols.$iconname,");
+      }
+      iconCount++;
+    }
+  }
+  sourceFileContent.writeln('};');
+  sourceFileContent.writeln('// END GENERATED ICONS');
+
+  File(exampleSourceFilename).writeAsStringSync(sourceFileContent.toString());
+
+  print('Wrote $iconCount COMBINED icons to $exampleSourceFilename');
+}
+
+
+
+/// This mimics the flutter icon renaming in flutter engine \dev\tools\update_icons.dart
+/// and it essentially copied from there, but needlessly a little faster
+String _generateFlutterId(String id) {
+  String flutterId = id;
+  bool fixApplied = false;
+  // Exact identifier rewrites.
+  for (final MapEntry<String, String> rewritePair in _identifierExactRewrites.entries) {
+    if (id == rewritePair.key) {
+      flutterId = id.replaceFirst(
+        rewritePair.key,
+        _identifierExactRewrites[rewritePair.key]!,
+      );
+      fixApplied = true;
+      break;  // done we got exact match and replaced
+    }
+  }
+  // Prefix identifier rewrites. [_identifierPrefixRewrites] is sorted longest to shortest, so once we find a prefix match
+  // we can break.
+  if(!fixApplied) {
+    for (final MapEntry<String, String> rewritePair in _identifierPrefixRewrites.entries) {
+      if (id.startsWith(rewritePair.key)) {
+        flutterId = id.replaceFirst(
+          rewritePair.key,
+          _identifierPrefixRewrites[rewritePair.key]!,
+        );
+        fixApplied = true;
+        break; // done we got the longest prefix match we will encounter
+      }
+    }
+  }
+
+  if(!fixApplied) {
+    throw('Iconname $id which needed a fix applied but none were found.');
+  }
+
+  // Prevent double underscores.
+  flutterId = flutterId.replaceAll('__', '_');
+
+  return flutterId;
+}
+
+
+
+
+
+
+/******
+ * 
+ * OBSOLETE CODE follows - this is no longer used when generating this class and is included only for legacy reasons
+ * 
+ */
+
 void writeSourceFile(
     MaterialSymbolsVariableFont fontinfo,
     List<MaterialSymbolsVariableFont> allFlavorFontInfoList,
     String sourceFilename,
     {bool suffixVersion = false,
     bool suffixIconNames = false}) {
-  assert(fontinfo.iconNameList.length == fontinfo.codePointList.length);
+
   late final String classFlavor;
   late final String libraryFlavor;
   late final String categoryFlavor;
@@ -318,23 +703,17 @@ void writeSourceFile(
 
   StringBuffer getFakeDartDocsForIconNames() {
     final fakeDartDocs = StringBuffer();
-    final iconNameList = fontinfo.iconNameList;
-    final codePointList = fontinfo.codePointList;
-    for (int i = 0; i < iconNameList.length; i++) {
-      var iconname = iconNameList[i];
-      final codepoint = codePointList[i];
+    final iconInfoList = fontinfo.iconInfoList;
+    for (int i = 0; i < iconInfoList.length; i++) {
+      var iconInfo = iconInfoList[i];
+      var iconname = iconInfo.iconName;
 
-      // if we added a _ because it started with a number the remove it for html
-      final iconnameNoLeadingPrefix =
-          iconname.startsWith(prefixForReservedWordsAndNumbers)
-              ? iconname.substring(prefixForReservedWordsAndNumbers.length)
-              : iconname;
       if (suffixIconNames) {
         iconname = '${iconname}_${fontinfo.flavor}';
       }
       fakeDartDocs.writeln('///');
       fakeDartDocs.writeln(
-          '/// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> MaterialSymbols$classFlavor.$iconname');
+          '/// <span class="material-symbols-${fontinfo.flavor}">${iconInfo.originalIconName}</span> MaterialSymbols$classFlavor.$iconname');
     }
     return fakeDartDocs;
   }
@@ -372,11 +751,17 @@ import 'material_symbols_icons.dart';
 
 /// Access icons using `MaterialSymbols$classFlavor.iconname` with icon names as identifiers. Explore available icons at [Google Font's Material Symbols Explorer](https://fonts.google.com/icons?selected=Material+Symbols).
 /// <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><style>span.material-symbols-outlined, span.material-symbols-rounded, span.material-symbols-sharp { font-size:48px; color: teal; }</style>
-/// All icon names that start with a number (like `360` or `9M`) but have their icon names prefixed with a `\$` to make the names valid dart class member names.
-/// For example if you want to access the icon with the name `360` you use `MaterialSymbols$classFlavor.\$360` instead.
+/// 
+/// All icons share the same name they had in the Material Icons [Icons] class.
+/// All icon names that start with a number (like `360` or `9mp`) but have their icon name changed so that the number is written out and may have
+/// added '_' separating numbers.  For example '3d_rotation' becomes 'threed_rotation', '123' becomes 'onetwothree', '360' becomes 'threesixty',
+/// '9mp' becomes 'nine_mp', '10' becomes 'ten_', '2d' becomes 'twod', '3d' becomes 'threed'. 
+/// This is done to generate valid dart class member names.
+/// For example if you want to access the icon with the name `360` you use `MaterialSymbols$classFlavor.threesixty` instead.
 ///
-/// Additionally the iconnames `class`, `switch` and `try` have also been renamed with a leading `\$` (`\$class`, `\$switch` and `\$try`) as these are dart language
-/// reserved words.
+/// Additionally the iconnames `class`, `switch`, and `try` have also been renamed with a trailing `_` (`class_`, `switch_` and `try_`) as these are dart language
+/// reserved words.  `door_back` and `door_front` have also been renamed `door_back_door` and `door_front_door` respectively.
+/// 
 ///
 /// Use with the [Icon] class to show specific icons. Icons are identified by
 /// their name as listed below, e.g. [MaterialSymbols$classFlavor.airplanemode_active].
@@ -424,7 +809,7 @@ import 'material_symbols_icons.dart';
 /// have to be marked with `@ nodoc` because it generates 12gigs of redundant data.
 /// The icons and corresponding symbols names follow:
 ///
-$fakeDartDocs//pub.dev does not like//@staticIconProvider
+$fakeDartDocs//pub.dev does not like @staticIconProvider but this is how web icon font tree shaking works in mater channel //@staticIconProvider
 class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
   // This class is not meant to be instantiated or extended; this constructor
   // prevents instantiation and extension.
@@ -436,24 +821,19 @@ class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
 ''');
 
   var iconCount = 0;
-  final iconNameList = fontinfo.iconNameList;
-  final codePointList = fontinfo.codePointList;
-  for (int i = 0; i < iconNameList.length; i++) {
-    var iconname = iconNameList[i];
-    final codepoint = codePointList[i];
+  final iconInfoList = fontinfo.iconInfoList;
+  for (int i = 0; i < iconInfoList.length; i++) {
+    final iconInfo = iconInfoList[i];
+    var iconname = iconInfo.iconName;
+    final codepoint = iconInfo.codePoint;
 
-    // if we added a _ because it started with a number the remove it for html
-    final iconnameNoLeadingPrefix =
-        iconname.startsWith(prefixForReservedWordsAndNumbers)
-            ? iconname.substring(prefixForReservedWordsAndNumbers.length)
-            : iconname;
     if (suffixIconNames) {
       iconname = '${iconname}_${fontinfo.flavor}';
     }
     sourceFileContent.writeln();
     sourceFileContent.writeln(
         //ALL OUTLINE'  /// <span class="material-symbols-outlined">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
-        '  /// @nodoc <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
+        '  /// $noDocUsage<span class="material-symbols-${fontinfo.flavor}">${iconInfo.originalIconName}</span> material symbol named "$iconname".');
     sourceFileContent.writeln("  static const IconData $iconname =");
     sourceFileContent.writeln(
         "      IconData(0x$codepoint, fontFamily: _family, fontPackage: _package);");
@@ -469,200 +849,9 @@ class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
   print('Wrote $iconCount icons to $sourceFilename');
 }
 
-/// Write a combined version of the MaterialSymbols class with outlined, rounded and sharp versions of
-/// each icon.  Each icon name has a corresponding suffix (`_outlined`, `_rounded` and `_sharp`).
-void writeCombinedSourceFile(
-    List<MaterialSymbolsVariableFont> fontinfoList, String sourceFilename,
-    {bool suffixVersion = true}) {
-  StringBuffer getFakeDartDocsForIconNames() {
-    final fakeDartDocs = StringBuffer();
-    // all font flavors should have same number of codepoints
-    int? lastCount;
-    for (final fontinfo in fontinfoList) {
-      assert(fontinfo.iconNameList.length == fontinfo.codePointList.length);
-      if (lastCount != null) {
-        assert(fontinfo.iconNameList.length == lastCount);
-      }
-      lastCount = fontinfo.iconNameList.length;
-    }
-
-    var iconCount = 0;
-
-    for (int i = 0; i < lastCount!; i++) {
-      for (final fontinfo in fontinfoList) {
-        var iconname = fontinfo.iconNameList[i];
-        final codepoint = fontinfo.codePointList[i];
-
-        // if we added a _ because it started with a number the remove it for html
-        final iconnameNoLeadingPrefix =
-            iconname.startsWith(prefixForReservedWordsAndNumbers)
-                ? iconname.substring(prefixForReservedWordsAndNumbers.length)
-                : iconname;
-        if (suffixVersion) {
-          iconname = '${iconname}_${fontinfo.flavor}';
-        }
-        fakeDartDocs.writeln('///');
-        fakeDartDocs.writeln(
-            '/// <span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> MaterialSymbols.$iconname');
-      }
-    }
-    return fakeDartDocs;
-  }
-
-  final fakeDartDocs = getFakeDartDocsForIconNames();
-
-  final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
-//
-// To edit this file modify the generator file `generator/update_package.dart` and
-// re-generate.
-// This file was generated using the Material Symbols codepoint files
-// localed at ${fontinfoList[0].codepointFileUrl},
-// ${fontinfoList[1].codepointFileUrl} and
-// ${fontinfoList[2].codepointFileUrl}.
-// These codepoints correspond to symbols within the corresponding variable font.
-// The fonts were downloaded from
-// ${fontinfoList[0].ttfFontFileUrl},
-// ${fontinfoList[1].ttfFontFileUrl}, and
-// ${fontinfoList[2].ttfFontFileUrl}
-// and added to this package.
-// This file was generated ${DateTime.now()} by the dart file
-// `generator/update_package.dart`.
-//
-// Copyright 2023 . All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
-/// Combined verions of all three styles within [MaterialSymbols] - all icon names have the style as a suffix to the icon name.
-/// Accessed via `MaterialSymbols.iconname_style`, for example `MaterialSymbols.circle_outlined` or
-/// `MaterialSymbols.circle_sharp`.<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-///
-/// `import 'package:material_symbols_icons/universal.dart';`
-///
-/// {@category CombinedUniversal}
-library combined_universal;
-
-import 'package:flutter/widgets.dart';
-import 'material_symbols_icons.dart';
-
-// ignore_for_file: constant_identifier_names
-// ignore_for_file: non_constant_identifier_names
-
-/// Access icons using `MaterialSymbols.iconname_style` with iconname_style as identifiers. Explore available icons at [Google Font's Material Symbols Explorer](https://fonts.google.com/icons?selected=Material+Symbols).
-/// <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><style>span.material-symbols-outlined, span.material-symbols-rounded, span.material-symbols-sharp { font-size:48px; color: teal; }</style>
-/// All icon names that start with a number (like `360` or `9M`) but have their icon names prefixed with a `\$` to make the names valid dart class member names.
-/// For example if you want to access the icon with the name `360` you use `MaterialSymbols.\$360` instead.
-///
-/// Additionally the iconnames `class`, `switch` and `try` have also been renamed with a leading `\$` (`\$class`, `\$switch` and `\$try`) as these are dart language
-/// reserved words.
-///
-/// Use with the [Icon] class to show specific icons. Icons are identified by
-/// their name FOLLOWED by the desired style as a suffix, as listed below, e.g. [MaterialSymbols.airplanemode_active_rounded].
-///
-/// Search and find the perfect icon on the [Google Fonts](https://fonts.google.com/icons?selected=Material+Symbols) website.
-///
-///
-/// This example shows how to create a [Row] of [Icon]s in different colors and
-/// sizes. The first [Icon] uses a [Icon.semanticLabel] to announce in accessibility
-/// modes like TalkBack and VoiceOver.
-///
-/// ![The following code snippet would generate a row of icons consisting of a pink bike (outlined style), a green sun (rounded style), and a blue beach umbrella (sharp style), each progressively bigger than the last.](https://github.com/timmaffett/material_symbols_icons/raw/master/media/universal_example.png)
-///
-/// ```dart
-/// const Row(
-///   mainAxisAlignment: MainAxisAlignment.spaceAround,
-///   children: <Widget>[
-///     Icon(
-///       MaterialSymbols.pedal_bike_outlined,
-///       color: Colors.pink,
-///       size: 24.0,
-///       semanticLabel: 'Text to announce in accessibility modes',
-///     ),
-///     Icon(
-///       MaterialSymbols.sunny_rounded,
-///       color: Colors.green,
-///       size: 30.0,
-///     ),
-///     Icon(
-///       MaterialSymbols.beach_access_sharp,
-///       color: Colors.blue,
-///       size: 36.0,
-///     ),
-///   ],
-/// )
-/// ```
-///
-/// See also:
-///
-///  * [Icon]
-///  * [IconButton]
-///  * <https://fonts.google.com/icons?selected=Material+Symbols>
-///
-/// NOTE: IMPORTANT - Because of the gross inefficiencies of dart doc ALL icon member names
-/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data.
-/// The icons and corresponding symbols names follow:
-///
-$fakeDartDocs//pub.dev does not like//@staticIconProvider
-class MaterialSymbols extends MaterialSymbolsBase {
-  // This class is not meant to be instantiated or extended; this constructor
-  // prevents instantiation and extension.
-  MaterialSymbols._();
-
-  // BEGIN GENERATED ICONS
-''');
-
-  // all font flavors should have same number of codepoints
-  int? lastCount;
-  for (final fontinfo in fontinfoList) {
-    assert(fontinfo.iconNameList.length == fontinfo.codePointList.length);
-    if (lastCount != null) {
-      assert(fontinfo.iconNameList.length == lastCount);
-    }
-    lastCount = fontinfo.iconNameList.length;
-
-    // write constant names
-    sourceFileContent.writeln(
-        "  static const _family_${fontinfo.flavor} = '${fontinfo.familyNameToUse}';");
-  }
-  sourceFileContent
-      .writeln("  static const _package = 'material_symbols_icons';");
-
-  var iconCount = 0;
-
-  for (int i = 0; i < lastCount!; i++) {
-    for (final fontinfo in fontinfoList) {
-      var iconname = fontinfo.iconNameList[i];
-      final codepoint = fontinfo.codePointList[i];
-
-      // if we added a _ because it started with a number the remove it for html
-      final iconnameNoLeadingPrefix =
-          iconname.startsWith(prefixForReservedWordsAndNumbers)
-              ? iconname.substring(prefixForReservedWordsAndNumbers.length)
-              : iconname;
-      if (suffixVersion) {
-        iconname = '${iconname}_${fontinfo.flavor}';
-      }
-      sourceFileContent.writeln();
-      sourceFileContent.writeln(
-          //ALL OUTLINE  '  /// <span class="material-symbols-outlined">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
-          '  /// @nodoc<span class="material-symbols-${fontinfo.flavor}">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
-      sourceFileContent.writeln("  static const IconData $iconname =");
-      sourceFileContent.writeln(
-          "      IconData(0x$codepoint, fontFamily: _family_${fontinfo.flavor}, fontPackage: _package);");
-      iconCount++;
-    }
-  }
-  sourceFileContent.writeln('  // END GENERATED ICONS');
-  sourceFileContent.writeln('}');
-
-  File(sourceFilename).writeAsStringSync(sourceFileContent.toString());
-
-  print('Wrote $iconCount COMBINED icons to $sourceFilename');
-}
-
 void writeExampleSourceFile(MaterialSymbolsVariableFont fontinfo,
     String exampleSourceFilename, String sourceFilename,
     {bool suffixVersion = false, bool suffixIconNames = false}) {
-  assert(fontinfo.iconNameList.length == fontinfo.codePointList.length);
   late final String classFlavor;
   if (suffixVersion) {
     classFlavor =
@@ -699,20 +888,21 @@ Map<String, IconData> materialSymbols${classFlavor}Map = {
 ''');
 
   var iconCount = 0;
-  final iconNameList = fontinfo.iconNameList;
-  for (int i = 0; i < iconNameList.length; i++) {
-    var iconname = iconNameList[i];
+  final iconInfoList = fontinfo.iconInfoList;
+  for (int i = 0; i < iconInfoList.length; i++) {
+    final iconInfo = iconInfoList[i];
+    var iconname = iconInfo.iconName;
 
     if (suffixIconNames) {
       iconname = '${iconname}_${fontinfo.flavor}';
     }
     final testStr =
-        "  '${iconname.replaceAll('\$', '\\\$')}': MaterialSymbols$classFlavor.$iconname,";
+        "  '$iconname': MaterialSymbols$classFlavor.$iconname,";
     if (testStr.length <= 80) {
       sourceFileContent.writeln(testStr);
     } else {
       // SPLIT THE LINE
-      sourceFileContent.writeln("  '${iconname.replaceAll('\$', '\\\$')}':");
+      sourceFileContent.writeln("  '$iconname':");
       sourceFileContent.writeln("      MaterialSymbols$classFlavor.$iconname,");
     }
     iconCount++;
@@ -726,81 +916,5 @@ Map<String, IconData> materialSymbols${classFlavor}Map = {
   print('Wrote $iconCount icons to $exampleSourceFilename');
 }
 
-/// Write a combined version of the MaterialSymbols class with outlined, rounded and sharp versions of
-/// each icon.  Each icon name has a corresponding suffix (`_outlined`, `_rounded` and `_sharp`).
-void writeCombinedExampleSourceFile(
-    List<MaterialSymbolsVariableFont> fontinfoList,
-    String exampleSourceFilename,
-    String sourceFilename,
-    {bool suffixVersion = true}) {
-  sourceFilename = path.basename(sourceFilename);
 
-  final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
-//
-// To edit this file modify the generator file `generator/update_package.dart` and
-// re-generate.
-// This file was generated using the Material Symbols codepoint files
-// localed at ${fontinfoList[0].codepointFileUrl},
-// ${fontinfoList[1].codepointFileUrl} and
-// ${fontinfoList[2].codepointFileUrl}.
-// These codepoints correspond to symbols within the corresponding variable font.
-// The fonts were downloaded from
-// ${fontinfoList[0].ttfFontFileUrl},
-// ${fontinfoList[1].ttfFontFileUrl}, and
-// ${fontinfoList[2].ttfFontFileUrl}
-// and added to this package.
-// This file was generated ${DateTime.now()} by the dart file
-// `generator/update_package.dart`.
-//
-// Copyright 2023 . All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
 
-import 'package:flutter/widgets.dart';
-import 'package:material_symbols_icons/$sourceFilename';
-
-// ignore_for_file: constant_identifier_names
-// ignore_for_file: non_constant_identifier_names
-
-// BEGIN GENERATED static array
-Map<String, IconData> materialSymbolsUniversalMap = {
-''');
-
-  // all font flavors should have same number of codepoints
-  int? lastCount;
-  for (final fontinfo in fontinfoList) {
-    assert(fontinfo.iconNameList.length == fontinfo.codePointList.length);
-    if (lastCount != null) {
-      assert(fontinfo.iconNameList.length == lastCount);
-    }
-    lastCount = fontinfo.iconNameList.length;
-  }
-
-  var iconCount = 0;
-
-  for (int i = 0; i < lastCount!; i++) {
-    for (final fontinfo in fontinfoList) {
-      var iconname = fontinfo.iconNameList[i];
-
-      if (suffixVersion) {
-        iconname = '${iconname}_${fontinfo.flavor}';
-      }
-      final lineStr =
-          "  '${iconname.replaceAll('\$', '\\\$')}': MaterialSymbols.$iconname,";
-      if (lineStr.length <= 80) {
-        sourceFileContent.writeln(lineStr);
-      } else {
-        // SPLIT THE LINE
-        sourceFileContent.writeln("  '${iconname.replaceAll('\$', '\\\$')}':");
-        sourceFileContent.writeln("      MaterialSymbols.$iconname,");
-      }
-      iconCount++;
-    }
-  }
-  sourceFileContent.writeln('};');
-  sourceFileContent.writeln('// END GENERATED ICONS');
-
-  File(exampleSourceFilename).writeAsStringSync(sourceFileContent.toString());
-
-  print('Wrote $iconCount COMBINED icons to $exampleSourceFilename');
-}

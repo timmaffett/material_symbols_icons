@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:material_symbols_icons/outlined.dart';
-import 'package:material_symbols_icons/outlined_suffix.dart';
-import 'package:material_symbols_icons/rounded_suffix.dart';
-import 'package:material_symbols_icons/sharp_suffix.dart';
+import 'package:material_symbols_icons/symbols.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:splittable_flexible_row/splittable_flexible_row.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import 'outlined_suffix_map.dart';
-import 'rounded_suffix_map.dart';
-import 'sharp_suffix_map.dart';
-import 'universal_map.dart';
+import 'symbols_map.dart';
 
 import 'package:device_preview/device_preview.dart'; // required when useDevicePreview==true
 
@@ -21,17 +15,29 @@ const outlinedColor = Colors.red;
 const roundedColor = Colors.blue;
 const sharpColor = Colors.teal;
 
+Map<String,IconData> materialSymbolsOutlinedMap = {};
+Map<String,IconData> materialSymbolsRoundedMap = {};
+Map<String,IconData> materialSymbolsSharpMap = {};
+
+void makeSymbolsByStyleMaps() {
+  for(final key in materialSymbolsMap.keys.toList()) {
+    if(key.endsWith('_rounded')) {
+      materialSymbolsRoundedMap[key] = materialSymbolsMap[key]!;
+    } else if(key.endsWith('_sharp')) {
+      materialSymbolsSharpMap[key] = materialSymbolsMap[key]!;
+    } else {
+      materialSymbolsOutlinedMap[key] = materialSymbolsMap[key]!;
+    }
+  }
+}
+
+final ff = Icons.power;
+
+
 void main() {
-  /*
-    This called forces a reference to each of the 3 possible Material Symbols Icon fonts
-    so that tree shaking can take place and unused fonts will be removed.  If 
-    this is NOT done then any un-referenced fonts (such as rounded and sharp if you were
-    using outlined) will NOT BE SHOOK from the tree and your executable will include
-    these!
-    (Strictly speaking in this example, where we reference every icon in every font style, 
-    this is not needed, but in real world this is ALWAYS needed, so it is included here.
-  */
-  MaterialSymbolsBase.forceCompileTimeTreeShaking();
+
+  // create separate iconname->icon map for each style
+  makeSymbolsByStyleMaps();
 
   /*
     Here we can set default Icon VARATIONS which can be specific to Outlined, Rounded or Sharp icons,
@@ -171,8 +177,8 @@ class _MyHomePageState extends State<MyHomePage> {
           iconNameList = materialSymbolsSharpMap.keys.toList();
           break;
         case FontListType.universal:
-          iconList = materialSymbolsUniversalMap.values.toList();
-          iconNameList = materialSymbolsUniversalMap.keys.toList();
+          iconList = materialSymbolsMap.values.toList();
+          iconNameList = materialSymbolsMap.keys.toList();
           break;
       }
     });
@@ -311,7 +317,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   resetVariationSettings();
                 });
               },
-              icon: const Icon(MaterialSymbols.restart_alt),
+              icon: const Icon(Symbols.restart_alt),
               style: IconButton.styleFrom(
                 foregroundColor: colors.onSecondaryContainer,
                 disabledBackgroundColor: colors.onSurface.withOpacity(0.12),
@@ -546,7 +552,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   launchUrl(Uri.parse(
                       'https://pub.dev/packages/material_symbols_icons'));
                 },
-                icon: const Icon(MaterialSymbols.open_in_new),
+                icon: const Icon(Symbols.open_in_new),
               ),
             ),
           ],
@@ -660,7 +666,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                               'https://fonts.google.com/icons?icon.set=Material+Symbols'));
                                         },
                                         icon: const Icon(
-                                            MaterialSymbols.open_in_new),
+                                            Symbols.open_in_new),
                                         style: IconButton.styleFrom(
                                           foregroundColor:
                                               colors.onSecondaryContainer,
@@ -705,7 +711,7 @@ class _MyHomePageState extends State<MyHomePage> {
           );
         },
         tooltip: 'Scroll to top',
-        child: const Icon(MaterialSymbols.arrow_upward),
+        child: const Icon(Symbols.arrow_upward),
       ),
     );
   }
@@ -747,7 +753,7 @@ class IconSearchStringInputState extends State<IconSearchStringInput> {
           controller: searchController,
           decoration: InputDecoration(
             prefixIcon: const Icon(
-              MaterialSymbols.search,
+              Symbols.search,
             ),
             label: const Text(
               'Search Material Symbol Icons',
@@ -758,7 +764,7 @@ class IconSearchStringInputState extends State<IconSearchStringInput> {
             ),
             suffixIcon: _isSearchFocused
                 ? IconButton(
-                    icon: const Icon(MaterialSymbols.cancel),
+                    icon: const Icon(Symbols.cancel),
                     onPressed: () {
                       FocusScope.of(context).unfocus();
                       searchController.clear();

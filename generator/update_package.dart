@@ -20,7 +20,6 @@ import 'package:path/path.dart' as path;
 
 late final bool verboseFlag;
 
-const String noDocUsage = ''; //'@nodoc ' for NO DOCS to prevent HUGE doc files
 class IconInfo {
   final String originalIconName;
   final String iconName;
@@ -138,6 +137,12 @@ const pathToWriteDartFiles = '../lib/';
 /// Path to write example dart source files to
 const pathToWriteExampleDartFiles = '../example/lib/';
 
+/// Flag to fake the dart docs and use @nodoc flags on all the constants in the Symbols class
+bool fakeDartDocsFlag = true;
+
+// '@nodoc ' for NO DOCS to prevent HUGE doc files
+String noDocUsage = '';
+
 Future<void> downloadURLASBinaryFile(
     HttpClient client, String url, String filename) async {
   final request = await client.getUrl(Uri.parse(url));
@@ -168,6 +173,13 @@ Future<void> main(List<String> args) async {
       abbr: 'v',
       negatable: false,
       help: 'Print extra info during processing.',
+    )
+    ..addFlag(
+      'fake_dart_docs',
+      abbr: 'f',
+      negatable: true,
+      defaultsTo: true,
+      help: 'Adds @nodocs to Symbols class constants and instead adds `fake` dart docs settings. Reduces doc size by 8gigs!',
     )
     ..addFlag(
       'downloadfonts',
@@ -210,6 +222,11 @@ Future<void> main(List<String> args) async {
   verboseFlag = results['verbose'] as bool;
   final combinedFutureSymbolsSupportCompatible = results['combined_symbols'] as bool;
   final legacySuffixIconNames = results['legacy_suffix_icon_names'] as bool;
+  fakeDartDocsFlag = results['fake_dart_docs'] as bool;
+  
+  if(fakeDartDocsFlag) {
+    noDocUsage = '@nodoc ';
+  }
 
   /*
    The codepoint files are in the form:
@@ -382,7 +399,7 @@ void writeCombinedSourceFile(
     return fakeDartDocs;
   }
 
-  final fakeDartDocs = getFakeDartDocsForIconNames();
+  final fakeDartDocs = fakeDartDocsFlag ? getFakeDartDocsForIconNames() : '';
 
   final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
 //
@@ -424,7 +441,8 @@ import 'material_symbols_icons.dart';
 
 /// Access icons using `Symbols.iconname` for the outlined version, or `Symbols.iconname_style` for the rounded and sharp versions of
 /// each icon (with _style appended to the identifiers).
-/// This is intended to be compatible with the future Flutter implementation as defined in [here].(https://docs.google.com/document/d/1UHRKDl8-lzl_hW_K2AHnpMwvdPo0vGPbDI7mqACWXJY/edit)
+/// This is intended to be compatible with the future Flutter implementation as defined in [here](https://docs.google.com/document/d/1UHRKDl8-lzl_hW_K2AHnpMwvdPo0vGPbDI7mqACWXJY/edit).
+/// Once flutter natively supports the Material Symbols icons all that should be needed is removal of the import statement for this package.
 /// 
 /// Explore available icons at [Google Font's Material Symbols Explorer](https://fonts.google.com/icons?selected=Material+Symbols).
 /// <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><style>span.material-symbols-outlined, span.material-symbols-rounded, span.material-symbols-sharp { font-size:48px; color: teal; }</style>
@@ -436,7 +454,7 @@ import 'material_symbols_icons.dart';
 /// This is done to generate valid dart class member names.
 /// For example if you want to access the icon with the name `360` you use `Symbols.threesixty` instead.
 ///
-/// Additionally the iconnames `class`, `switch`, and `try` have also been renamed with a trailing `_` (`class_`, `switch_` and `try_`) as these are dart language
+/// Additionally the iconnames `class`, `switch`, and `try` have also been renamed with a trailing `'_'` (`class_`, `switch_` and `try_`) as these are dart language
 /// reserved words.  `door_back` and `door_front` have also been renamed `door_back_door` and `door_front_door` respectively.
 /// `power_rounded` becomes `power_rounded_power` (and therefor `power_rounded_power_rounded` for the rounded version and
 /// `power_rounded_power_sharp` for the sharp version.
@@ -718,7 +736,7 @@ void writeSourceFile(
     return fakeDartDocs;
   }
 
-  final fakeDartDocs = getFakeDartDocsForIconNames();
+  final fakeDartDocs = fakeDartDocsFlag ? getFakeDartDocsForIconNames() : '';
 
   final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
 //
@@ -759,7 +777,7 @@ import 'material_symbols_icons.dart';
 /// This is done to generate valid dart class member names.
 /// For example if you want to access the icon with the name `360` you use `MaterialSymbols$classFlavor.threesixty` instead.
 ///
-/// Additionally the iconnames `class`, `switch`, and `try` have also been renamed with a trailing `_` (`class_`, `switch_` and `try_`) as these are dart language
+/// Additionally the iconnames `class`, `switch`, and `try` have also been renamed with a trailing `'_'` (`class_`, `switch_` and `try_`) as these are dart language
 /// reserved words.  `door_back` and `door_front` have also been renamed `door_back_door` and `door_front_door` respectively.
 /// 
 ///

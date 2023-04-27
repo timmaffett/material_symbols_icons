@@ -31,9 +31,6 @@ void makeSymbolsByStyleMaps() {
   }
 }
 
-final ff = Icons.power;
-
-
 void main() {
 
   // create separate iconname->icon map for each style

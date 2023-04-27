@@ -6,6 +6,8 @@
 
 This package is intended to be COMPLETELY compatible with the future flutter 'native' implementation of Material Symbols Icons support
 as defined in this [specification document](https://docs.google.com/document/d/1UHRKDl8-lzl_hW_K2AHnpMwvdPo0vGPbDI7mqACWXJY/edit).
+Once flutter natively supports the Material Symbols icons all that should be needed is removal of the import statement for this package.
+
 
 
 These icons also support the complete set of icon variation parameters defined for the Material Symbols Icons.  This includes setting fill/not filled, various weights, grades and optical sizes.
@@ -40,7 +42,7 @@ added `_` separating numbers.  For example `3d_rotation` becomes `threed_rotatio
 This is done to generate valid dart class member names.
 For example if you want to access the icon with the name `360` you use `Symbols.threesixty` instead.
 
-Additionally the iconnames `class`, `switch`, and `try` have also been renamed with a trailing `_` (`class_`, `switch_` and `try_`) as these are dart language
+Additionally the iconnames `class`, `switch`, and `try` have also been renamed with a trailing `'_'` (`class_`, `switch_` and `try_`) as these are dart language
 reserved words.  `door_back` and `door_front` have also been renamed `door_back_door` and `door_front_door` respectively.
 `power_rounded` becomes `power_rounded_power` (and therefor `power_rounded_power_rounded` for the rounded version and
 `power_rounded_power_sharp` for the sharp version.

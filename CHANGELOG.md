@@ -1,5 +1,9 @@
 # Changelog for Material Symbols Icons package
 
+## 4.39.5
+
+*  Made dart format/analyze happy, fixed update_package.dart to generate dart format safe code.
+
 ## 4.39.4
 
 *  Changed package to conform to the document defining the future built in 'native' support of the Material Symbols Icons fonts.

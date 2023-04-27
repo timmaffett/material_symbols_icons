@@ -8,6 +8,9 @@ This package is intended to be COMPLETELY compatible with the future flutter 'na
 as defined in this [specification document](https://docs.google.com/document/d/1UHRKDl8-lzl_hW_K2AHnpMwvdPo0vGPbDI7mqACWXJY/edit).
 Once flutter natively supports the Material Symbols icons all that should be needed is removal of the import statement for this package.
 
+Icons are referenced using the [Symbols] class and the name of the desired icon.  For Example `Symbols.pedal_bike`, or you can access
+the rounded version using `Symbols.pedal_bike_rounded` and the sharp version using `Symbols.pedal_bike_sharp`.
+
 
 
 These icons also support the complete set of icon variation parameters defined for the Material Symbols Icons.  This includes setting fill/not filled, various weights, grades and optical sizes.

@@ -143,6 +143,9 @@ const pathToWriteExampleDartFiles = '../example/lib/';
 /// Flag to fake the dart docs and use @nodoc flags on all the constants in the Symbols class
 bool fakeDartDocsFlag = true;
 
+/// Flag if we want to output a
+bool writeUnicodeCodepoints = false;
+
 // '@nodoc ' for NO DOCS to prevent HUGE doc files
 String noDocUsage = '';
 
@@ -200,6 +203,13 @@ Future<void> main(List<String> args) async {
           'Add `_outlined`, `_rounded` or `_sharp` suffixes to every icon name in corresponding MaterialSymbols, MaterialSymbolsOutlined, MaterialSymbolsRounded and MaterialSymbolsSharp classes.',
     )
     ..addFlag(
+      'write_unicode_codepoints',
+      abbr: 'u',
+      negatable: false,
+      help:
+          'Writes out a `$pathToWriteTTFFiles/icon_unicodes.txt` file with all icon unicodes, one per line, for use by `pyftsubset` to trim font.',
+    )
+    ..addFlag(
       'combined_symbols',
       abbr: 'c',
       negatable: true,
@@ -228,6 +238,7 @@ Future<void> main(List<String> args) async {
       results['combined_symbols'] as bool;
   final legacySuffixIconNames = results['legacy_suffix_icon_names'] as bool;
   fakeDartDocsFlag = results['fake_dart_docs'] as bool;
+  writeUnicodeCodepoints = results['write_unicode_codepoints'] as bool;
 
   if (fakeDartDocsFlag) {
     noDocUsage = '@nodoc ';
@@ -352,6 +363,33 @@ Future<void> main(List<String> args) async {
     writeCombinedExampleSourceFile(variableFontFlavors,
         combinedExampleSourceFilename, combinedSourceFilename,
         suffixVersion: true);
+  }
+
+  if (combinedFutureSymbolsSupportCompatible) {
+    // write all flavors together with suffixed symbol names
+    const iconUnicodesFilename = '${pathToWriteTTFFiles}icon_unicodes.txt';
+    List<String> unicodes = [];
+    bool first = true;
+    final unicodeBuffer = StringBuffer();
+    for (final fontFlavor in variableFontFlavors) {
+      final iconInfoList = fontFlavor.iconInfoList;
+      for (var info in iconInfoList) {
+        if (first) {
+          unicodes.add(info.codePoint);
+          unicodeBuffer.writeln('${info.codePoint}  # ${info.iconName}');
+        } else {
+          if (!unicodes.contains(info.codePoint)) {
+            throw ('Unicode ${info.codePoint} was missing from first fonts list and found in ${fontFlavor.flavor}');
+          }
+        }
+      }
+      first = false;
+    }
+
+    File(iconUnicodesFilename).writeAsStringSync(unicodeBuffer.toString());
+
+    print(
+        'Wrote ${unicodes.length} icon unicode codepoints to $iconUnicodesFilename');
   }
 
   exit(0);

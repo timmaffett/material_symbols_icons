@@ -1,0 +1,18 @@
+# The font metrics within the release fonts are incorrect.  This requires them to be replaced so that they render correctly
+# within flutter.
+# This script requires that fonttools is installed
+#  Python 3.8 or later is required.
+#      pip install fonttools        (or pip3 install fonttools)
+#    https://fonttools.readthedocs.io/en/latest/index.html
+# THis is using TTX to merge the correct metrics into the font files
+#      ttx info: https://fonttools.readthedocs.io/en/latest/ttx.html
+
+rm ../lib/fonts/*.ttf
+ttx -m 'MaterialSymbolsOutlined[FILL,GRAD,opsz,wght].ttf' -b --no-recalc-timestamp -o 'MaterialSymbolsOutlined[FILL,GRAD,opsz,wght]_metricsfixed.ttf' good_outlined_hhea_os2_tables.ttx
+ttx -m 'MaterialSymbolsRounded[FILL,GRAD,opsz,wght].ttf' -b --no-recalc-timestamp -o 'MaterialSymbolsRounded[FILL,GRAD,opsz,wght]_metricsfixed.ttf' good_rounded_hhea_os2_tables.ttx
+ttx -m 'MaterialSymbolsSharp[FILL,GRAD,opsz,wght].ttf' -b --no-recalc-timestamp -o 'MaterialSymbolsSharp[FILL,GRAD,opsz,wght]_metricsfixed.ttf' good_sharp_hhea_os2_tables.ttx
+
+pyftsubset 'MaterialSymbolsOutlined[FILL,GRAD,opsz,wght]_metricsfixed.ttf' --unicodes-file=icon_unicodes.txt --output-file='../lib/fonts/MaterialSymbolsOutlined[FILL,GRAD,opsz,wght].ttf'
+pyftsubset 'MaterialSymbolsRounded[FILL,GRAD,opsz,wght]_metricsfixed.ttf' --unicodes-file=icon_unicodes.txt --output-file='../lib/fonts/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].ttf' 
+pyftsubset 'MaterialSymbolsSharp[FILL,GRAD,opsz,wght]_metricsfixed.ttf' --unicodes-file=icon_unicodes.txt --output-file='../lib/fonts/MaterialSymbolsSharp[FILL,GRAD,opsz,wght].ttf'   
+

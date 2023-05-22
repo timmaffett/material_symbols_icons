@@ -18,7 +18,8 @@ dependencies:
     path: ../
   device_preview: ^1.1.0    # required only for virtual device screen testing
   splittable_flexible_row: ^1.0.0
-
+  universal_html: 2.2.2
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -4,6 +4,9 @@ import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:splittable_flexible_row/splittable_flexible_row.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'package:flutter_web_plugins/url_strategy.dart';
+import 'package:universal_html/html.dart' show window;
+
 import 'symbols_map.dart';
 
 import 'package:device_preview/device_preview.dart'; // required when useDevicePreview==true
@@ -32,6 +35,10 @@ void makeSymbolsByStyleMaps() {
 }
 
 void main() {
+  // prevent engine from removing query url parameters
+  setUrlStrategy(PathUrlStrategy());
+
+
   // create separate iconname->icon map for each style
   makeSymbolsByStyleMaps();
 
@@ -93,8 +100,8 @@ enum FontListType { outlined, rounded, sharp, universal }
 class _MyHomePageState extends State<MyHomePage> {
   final ScrollController _scrollController = ScrollController();
 
-  var iconList = materialSymbolsOutlinedMap.values.toList();
-  var iconNameList = materialSymbolsOutlinedMap.keys.toList();
+  List<IconData> iconList = [];
+  List<String> iconNameList = [];
 
   String _iconSearchText = '';
 
@@ -103,25 +110,125 @@ class _MyHomePageState extends State<MyHomePage> {
   /// icon font size
   double _iconFontSize = 48.0;
 
+  /// possible fill values
+  List<double> _fillValues = [0.0,1.0];
+  
   /// default fill variation
   double _fillVariation = 0.0;
 
+  /// possible weight values
+  List<double> _weightValues = [100.0,200.0,300.0,400.0,500.0,600.0,700.0];
   /// default weight variation
   double _weightVariation = 400.0;
 
   /// possible grade values
-  List<double> grades = [0.25, 0.0, 200.0];
-  double _gradeSliderPos = 1;
+  List<double> _grades = [0.25, 0.0, 200.0];
+
+  // default grade
   double _gradeVariation = 0.0;
+  double _gradeSliderPos = 1;
 
   /// possible optical size values
-  List<double> opticalSizes = [20.0, 24.0, 40.0, 48.0];
-  double _opticalSliderPos = 3;
+  List<double> _opticalSizes = [20.0, 24.0, 40.0, 48.0];
+
+  // default optical size
   double _opticalSizeVariation = 48.0;
+  double _opticalSliderPos = 3;
+
+  void setQueryParametersToMatchState() {
+    var uri = Uri.parse(window.location.href);
+
+    uri = uri.replace(queryParameters: {
+            'query': _iconSearchText,
+            'iconSize': _iconFontSize.toString(),
+            'fontType': _fontListType.toString().replaceAll('FontListType.',''),
+            'fill' : _fillVariation.toString(),
+            'weight' : _weightVariation.toString(),
+            'grade' : _gradeVariation.toString(),
+            'opticalSize' : _opticalSizeVariation.toString(),
+          });
+    String uriString = uri.toString();
+    window.history.pushState({'path': uriString}, '', uriString ); //window.location.href = uri.toString();
+  }
+
+  void grabInitialStateFromUrl() {
+    // Get the query parameters from the URL (if we are a web app)
+    final queryParms = Uri.base.queryParameters;
+    _iconSearchText = queryParms['query'] ?? '';
+    if(queryParms['iconSize']!=null) {
+      final iconSizeParse = double.tryParse(queryParms['iconSize']!);
+      if(iconSizeParse!=null) {
+        if(iconSizeParse>=22.0 && iconSizeParse<=88.0) {
+          _iconFontSize = iconSizeParse;
+        }
+      }
+    }
+    if(queryParms['fontType']!=null) {
+      switch(queryParms['fontType']!.toLowerCase()) {
+        case 'outlined':
+          _fontListType = FontListType.outlined;
+          break;
+        case 'rounded':
+          _fontListType = FontListType.rounded;
+          break;
+        case 'sharp':
+          _fontListType = FontListType.sharp;
+          break;
+        case 'universal':
+        default:
+          _fontListType = FontListType.universal;
+          break;
+      }
+    }
+    if(queryParms['fill']!=null) {
+      final fillParse = double.tryParse(queryParms['fill']!);
+      if(fillParse!=null) {
+        if(_fillValues.contains(fillParse)) {
+          _fillVariation = fillParse;
+        }
+      }
+    }
+    if(queryParms['weight']!=null) {
+      final weightParse = double.tryParse(queryParms['weight']!);
+      if(weightParse!=null) {
+        if(_weightValues.contains(weightParse)) {
+          _weightVariation = weightParse;
+        }
+      }
+    }
+    if(queryParms['grade']!=null) {
+      final gradeParse = double.tryParse(queryParms['grade']!);
+      if(gradeParse!=null) {
+        if(_grades.contains(gradeParse)) {
+          _gradeVariation = gradeParse;
+          _gradeSliderPos = _grades.indexOf(_gradeVariation).toDouble();
+        }
+      }
+    }
+    if(queryParms['opticalSize']!=null) {
+      final opticalParse = double.tryParse(queryParms['opticalSize']!);
+      if(opticalParse!=null) {
+        if(_opticalSizes.contains(opticalParse)) {
+          _opticalSizeVariation = opticalParse;
+          _opticalSliderPos = _opticalSizes.indexOf(_opticalSizeVariation).toDouble();
+        }
+      }
+    }
+  }
+
 
   @override
   void initState() {
     super.initState();
+    _onFontListTypeChange(_fontListType);
+
+    // Fill in all possible state information from anything present in the URL
+    grabInitialStateFromUrl();
+
+    // set variation defaults to match state
+    setAllVariationsSettings();
+
+    // set the font lists to match [_fontListType] state
     _onFontListTypeChange(_fontListType);
   }
 
@@ -129,9 +236,9 @@ class _MyHomePageState extends State<MyHomePage> {
     _fillVariation = 0.0;
     _weightVariation = 400.0;
     _gradeVariation = 0.0;
-    _gradeSliderPos = grades.indexOf(_gradeVariation).toDouble();
+    _gradeSliderPos = _grades.indexOf(_gradeVariation).toDouble();
     _opticalSizeVariation = 48.0;
-    _opticalSliderPos = opticalSizes.indexOf(_opticalSizeVariation).toDouble();
+    _opticalSliderPos = _opticalSizes.indexOf(_opticalSizeVariation).toDouble();
     setAllVariationsSettings();
   }
 
@@ -154,6 +261,8 @@ class _MyHomePageState extends State<MyHomePage> {
         weight: _weightVariation,
         grade: _gradeVariation,
         opticalSize: _opticalSizeVariation);
+    // the the URL match the current state
+    setQueryParametersToMatchState();
   }
 
   void _onFontListTypeChange(FontListType? val) {
@@ -401,7 +510,7 @@ class _MyHomePageState extends State<MyHomePage> {
             onChanged: (value) {
               setState(() {
                 _gradeSliderPos = value.round().toDouble();
-                _gradeVariation = grades[_gradeSliderPos.round()];
+                _gradeVariation = _grades[_gradeSliderPos.round()];
                 setAllVariationsSettings();
               });
             },
@@ -423,7 +532,7 @@ class _MyHomePageState extends State<MyHomePage> {
             onChanged: (value) {
               setState(() {
                 _opticalSliderPos = value.round().toDouble();
-                _opticalSizeVariation = opticalSizes[_opticalSliderPos.round()];
+                _opticalSizeVariation = _opticalSizes[_opticalSliderPos.round()];
                 setAllVariationsSettings();
               });
             },
@@ -521,6 +630,16 @@ class _MyHomePageState extends State<MyHomePage> {
     return matchIndices;
   }
 
+  void setNewSearchText(String newSearchText) {
+    setState(() {
+      newSearchText = newSearchText.trim();
+
+      _iconSearchText = newSearchText;
+
+      setQueryParametersToMatchState();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -584,11 +703,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 screenWidth > 500 ? 400 : screenWidth * 0.8,
                           ),
                           child: IconSearchStringInput(
-                            onSearchTextChanged: (newSearchText) {
-                              setState(() {
-                                _iconSearchText = newSearchText.trim();
-                              });
-                            },
+                            initialSearchText: _iconSearchText,
+                            onSearchTextChanged: setNewSearchText,
                           ),
                         ),
                       ]),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:material_symbols_icons/symbols.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:splittable_flexible_row/splittable_flexible_row.dart';
@@ -715,28 +716,40 @@ class _MyHomePageState extends State<MyHomePage> {
                         SliverGrid(
                             delegate: SliverChildBuilderDelegate(
                               (context, index) => Center(
-                                child: Column(children: [
-                                  VariedIcon.varied(
-                                    searchActive
-                                        ? iconList[matches[index]]
-                                        : iconList[index],
-                                    size: _iconFontSize,
-                                  ),
-                                  if (_iconFontSize <= 64)
-                                    const SizedBox(height: 5),
-                                  if (_iconFontSize <= 64)
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          4.0, 0.0, 4.0, 0.0),
-                                      child: Text(
-                                        (searchActive
-                                            ? iconNameList[matches[index]]
-                                            : iconNameList[index]),
-                                        style: const TextStyle(fontSize: 8),
-                                        textAlign: TextAlign.center,
+                                child: MouseRegion(
+                                  cursor: SystemMouseCursors.click,
+                                  child: GestureDetector( 
+                                    onTap: () {
+                                      final iconName = 'Symbols.${searchActive ? iconNameList[matches[index]] : iconNameList[index]}';
+                                      Clipboard.setData(ClipboardData(text: iconName)).then((_) {
+                                        ScaffoldMessenger.of(context).showSnackBar(
+                                            SnackBar(content: Text('Copied "$iconName" to the clipboard.')));
+                                      });
+                                    },
+                                    child:Column(children: [
+                                      VariedIcon.varied(
+                                        searchActive
+                                            ? iconList[matches[index]]
+                                            : iconList[index],
+                                        size: _iconFontSize,
                                       ),
-                                    )
-                                ]),
+                                      if (_iconFontSize <= 64)
+                                        const SizedBox(height: 5),
+                                      if (_iconFontSize <= 64)
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              4.0, 0.0, 4.0, 0.0),
+                                          child: Text(
+                                            (searchActive
+                                                ? iconNameList[matches[index]]
+                                                : iconNameList[index]),
+                                            style: const TextStyle(fontSize: 8),
+                                            textAlign: TextAlign.center,
+                                          ),
+                                        )
+                                    ]),
+                                  ),
+                                )
                               ),
                               childCount: searchActive
                                   ? matches.length

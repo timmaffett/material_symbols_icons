@@ -726,28 +726,31 @@ class _MyHomePageState extends State<MyHomePage> {
                                             SnackBar(content: Text('Copied "$iconName" to the clipboard.')));
                                       });
                                     },
-                                    child:Column(children: [
-                                      VariedIcon.varied(
-                                        searchActive
-                                            ? iconList[matches[index]]
-                                            : iconList[index],
-                                        size: _iconFontSize,
-                                      ),
-                                      if (_iconFontSize <= 64)
-                                        const SizedBox(height: 5),
-                                      if (_iconFontSize <= 64)
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                              4.0, 0.0, 4.0, 0.0),
-                                          child: Text(
-                                            (searchActive
-                                                ? iconNameList[matches[index]]
-                                                : iconNameList[index]),
-                                            style: const TextStyle(fontSize: 8),
-                                            textAlign: TextAlign.center,
-                                          ),
-                                        )
-                                    ]),
+                                    child:Tooltip(
+                                      message: 'Symbols.${searchActive ? iconNameList[matches[index]] : iconNameList[index]}',
+                                      child: Column(children: [
+                                        VariedIcon.varied(
+                                          searchActive
+                                              ? iconList[matches[index]]
+                                              : iconList[index],
+                                          size: _iconFontSize,
+                                        ),
+                                        if (_iconFontSize <= 64)
+                                          const SizedBox(height: 5),
+                                        if (_iconFontSize <= 64)
+                                          Padding(
+                                            padding: const EdgeInsets.fromLTRB(
+                                                4.0, 0.0, 4.0, 0.0),
+                                            child: Text(
+                                              (searchActive
+                                                  ? iconNameList[matches[index]]
+                                                  : iconNameList[index]),
+                                              style: const TextStyle(fontSize: 8),
+                                              textAlign: TextAlign.center,
+                                            ),
+                                          )
+                                      ]),
+                                    ),
                                   ),
                                 )
                               ),

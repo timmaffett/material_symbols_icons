@@ -297,7 +297,6 @@ class _MyHomePageState extends State<MyHomePage> {
           iconNameList = materialSymbolsMap.keys.toList();
           break;
       }
-
     });
     setQueryParametersToMatchState();
   }

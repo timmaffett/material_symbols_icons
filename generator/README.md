@@ -5,13 +5,16 @@ The `update_package.dart` program downloads the latest code point and font files
 The command to do this is :
 
 ```shell
-dart run update_package.dart -d
+dart run update_package.dart -d -u
 ```
 
+THe `-u` argument instructs the tool to re-generate the `icon_unicodes.txt` file in the `../rawFontsUnfixed' directory.
 The `-d` argument instucts the tool to also download the latest font files and place them in the `../rawFontsUnfixed' directory.
 Currently the fonts have incorrect font metrics and do no render correctly within flutter  - so the `../rawFontsUnfixed' directory
 contains correct metric files and a script that uses the python `fonttools` package to rebuild the fonts with the correct font metrics.
 The ``../rawFontsUnfixed/fixFontMetricsAndUpdateLibFonts.sh` script then places the updated (now working) fonts within the `../lib/fonts' directory.
+
+
 
 You run this script from the `../rawFontsUnfixed` directory using the `fixFontMetricsAndUpdateLibFonts.sh` script.
 

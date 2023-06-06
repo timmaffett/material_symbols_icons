@@ -11,16 +11,13 @@ Once flutter natively supports the Material Symbols icons all that should be nee
 Icons are referenced using the [Symbols] class and the name of the desired icon.  For Example `Symbols.pedal_bike`, or you can access
 the rounded version using `Symbols.pedal_bike_rounded` and the sharp version using `Symbols.pedal_bike_sharp`.
 
-
-
 These icons also support the complete set of icon variation parameters defined for the Material Symbols Icons.  This includes setting fill/not filled, various weights, grades and optical sizes.
 
 ## [Live Flutter Web Example with Material Symbols Icons style and variation customization](https://timmaffett.github.io/material_symbols_icons)
 
 Here is a [live example](https://timmaffett.github.io/material_symbols_icons) of the current version of this package where you can test any Material Symbols icon name to verify it's availability.  The example also allows playing with all of the font variation options to explore further customizing the look of our Material Symbols.
 
-
-TO use this package simply 
+TO use this package simply
 
 ```dart
 import 'material_symbols_icons\symbols.dart'
@@ -53,9 +50,7 @@ reserved words.  `door_back` and `door_front` have also been renamed `door_back_
 
 ----------------------------------------------------------------
 
-The `4.39` prefix of the version number for this package matches the corresponding `ttLibVersion` property of the Material Symbols Icons
-variable font true type (.ttf) source files used to generated the icon data.
-Thus it can be used to determine the variable source font TTF version numbers used to generate a given version of this package.
+The middle `2659` number of the version number corresponds to the version number of of the variable fonts used to generated the icon data (with the decimal point removed).  (`2659` corresponding version number (`Version 2.659`)).  This is found in the `name` table of the variable font true type (.ttf)).  Thus it can be used to determine the variable source font TTF version numbers used to generate a given version of this package.  (The version number can also be found in the `fontRevision` property of the `head` table of the .ttf font files).
 
 ----------------------------------------------------------------
 

@@ -5,6 +5,7 @@ import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:splittable_flexible_row/splittable_flexible_row.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+// ignore: depend_on_referenced_packages
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:universal_html/html.dart' show window;
 
@@ -37,8 +38,7 @@ void makeSymbolsByStyleMaps() {
 
 void main() {
   // prevent engine from removing query url parameters
-  setUrlStrategy(PathUrlStrategy());
-
+  setUrlStrategy(const PathUrlStrategy());
 
   // create separate iconname->icon map for each style
   makeSymbolsByStyleMaps();
@@ -112,25 +112,34 @@ class _MyHomePageState extends State<MyHomePage> {
   double _iconFontSize = 48.0;
 
   /// possible fill values
-  List<double> _fillValues = [0.0,1.0];
-  
+  final List<double> _fillValues = [0.0, 1.0];
+
   /// default fill variation
   double _fillVariation = 0.0;
 
   /// possible weight values
-  List<double> _weightValues = [100.0,200.0,300.0,400.0,500.0,600.0,700.0];
+  final List<double> _weightValues = [
+    100.0,
+    200.0,
+    300.0,
+    400.0,
+    500.0,
+    600.0,
+    700.0
+  ];
+
   /// default weight variation
   double _weightVariation = 400.0;
 
   /// possible grade values
-  List<double> _grades = [0.25, 0.0, 200.0];
+  final List<double> _grades = [0.25, 0.0, 200.0];
 
   // default grade
   double _gradeVariation = 0.0;
   double _gradeSliderPos = 1;
 
   /// possible optical size values
-  List<double> _opticalSizes = [20.0, 24.0, 40.0, 48.0];
+  final List<double> _opticalSizes = [20.0, 24.0, 40.0, 48.0];
 
   // default optical size
   double _opticalSizeVariation = 48.0;
@@ -140,32 +149,33 @@ class _MyHomePageState extends State<MyHomePage> {
     var uri = Uri.parse(window.location.href);
 
     uri = uri.replace(queryParameters: {
-            'query': _iconSearchText,
-            'iconSize': _iconFontSize.toString(),
-            'fontType': _fontListType.toString().replaceAll('FontListType.',''),
-            'fill' : _fillVariation.toString(),
-            'weight' : _weightVariation.toString(),
-            'grade' : _gradeVariation.toString(),
-            'opticalSize' : _opticalSizeVariation.toString(),
-          });
+      'query': _iconSearchText,
+      'iconSize': _iconFontSize.toString(),
+      'fontType': _fontListType.toString().replaceAll('FontListType.', ''),
+      'fill': _fillVariation.toString(),
+      'weight': _weightVariation.toString(),
+      'grade': _gradeVariation.toString(),
+      'opticalSize': _opticalSizeVariation.toString(),
+    });
     String uriString = uri.toString();
-    window.history.pushState({'path': uriString}, '', uriString ); //window.location.href = uri.toString();
+    window.history.pushState({'path': uriString}, '',
+        uriString); //window.location.href = uri.toString();
   }
 
   void grabInitialStateFromUrl() {
     // Get the query parameters from the URL (if we are a web app)
     final queryParms = Uri.base.queryParameters;
     _iconSearchText = queryParms['query'] ?? '';
-    if(queryParms['iconSize']!=null) {
+    if (queryParms['iconSize'] != null) {
       final iconSizeParse = double.tryParse(queryParms['iconSize']!);
-      if(iconSizeParse!=null) {
-        if(iconSizeParse>=22.0 && iconSizeParse<=88.0) {
+      if (iconSizeParse != null) {
+        if (iconSizeParse >= 22.0 && iconSizeParse <= 88.0) {
           _iconFontSize = iconSizeParse;
         }
       }
     }
-    if(queryParms['fontType']!=null) {
-      switch(queryParms['fontType']!.toLowerCase()) {
+    if (queryParms['fontType'] != null) {
+      switch (queryParms['fontType']!.toLowerCase()) {
         case 'outlined':
           _fontListType = FontListType.outlined;
           break;
@@ -181,42 +191,42 @@ class _MyHomePageState extends State<MyHomePage> {
           break;
       }
     }
-    if(queryParms['fill']!=null) {
+    if (queryParms['fill'] != null) {
       final fillParse = double.tryParse(queryParms['fill']!);
-      if(fillParse!=null) {
-        if(_fillValues.contains(fillParse)) {
+      if (fillParse != null) {
+        if (_fillValues.contains(fillParse)) {
           _fillVariation = fillParse;
         }
       }
     }
-    if(queryParms['weight']!=null) {
+    if (queryParms['weight'] != null) {
       final weightParse = double.tryParse(queryParms['weight']!);
-      if(weightParse!=null) {
-        if(_weightValues.contains(weightParse)) {
+      if (weightParse != null) {
+        if (_weightValues.contains(weightParse)) {
           _weightVariation = weightParse;
         }
       }
     }
-    if(queryParms['grade']!=null) {
+    if (queryParms['grade'] != null) {
       final gradeParse = double.tryParse(queryParms['grade']!);
-      if(gradeParse!=null) {
-        if(_grades.contains(gradeParse)) {
+      if (gradeParse != null) {
+        if (_grades.contains(gradeParse)) {
           _gradeVariation = gradeParse;
           _gradeSliderPos = _grades.indexOf(_gradeVariation).toDouble();
         }
       }
     }
-    if(queryParms['opticalSize']!=null) {
+    if (queryParms['opticalSize'] != null) {
       final opticalParse = double.tryParse(queryParms['opticalSize']!);
-      if(opticalParse!=null) {
-        if(_opticalSizes.contains(opticalParse)) {
+      if (opticalParse != null) {
+        if (_opticalSizes.contains(opticalParse)) {
           _opticalSizeVariation = opticalParse;
-          _opticalSliderPos = _opticalSizes.indexOf(_opticalSizeVariation).toDouble();
+          _opticalSliderPos =
+              _opticalSizes.indexOf(_opticalSizeVariation).toDouble();
         }
       }
     }
   }
-
 
   @override
   void initState() {
@@ -533,7 +543,8 @@ class _MyHomePageState extends State<MyHomePage> {
             onChanged: (value) {
               setState(() {
                 _opticalSliderPos = value.round().toDouble();
-                _opticalSizeVariation = _opticalSizes[_opticalSliderPos.round()];
+                _opticalSizeVariation =
+                    _opticalSizes[_opticalSliderPos.round()];
                 setAllVariationsSettings();
               });
             },
@@ -716,44 +727,49 @@ class _MyHomePageState extends State<MyHomePage> {
                         SliverGrid(
                             delegate: SliverChildBuilderDelegate(
                               (context, index) => Center(
-                                child: MouseRegion(
-                                  cursor: SystemMouseCursors.click,
-                                  child: GestureDetector( 
-                                    onTap: () {
-                                      final iconName = 'Symbols.${searchActive ? iconNameList[matches[index]] : iconNameList[index]}';
-                                      Clipboard.setData(ClipboardData(text: iconName)).then((_) {
-                                        ScaffoldMessenger.of(context).showSnackBar(
-                                            SnackBar(content: Text('Copied "$iconName" to the clipboard.')));
-                                      });
-                                    },
-                                    child:Tooltip(
-                                      message: 'Symbols.${searchActive ? iconNameList[matches[index]] : iconNameList[index]}',
-                                      child: Column(children: [
-                                        VariedIcon.varied(
-                                          searchActive
-                                              ? iconList[matches[index]]
-                                              : iconList[index],
-                                          size: _iconFontSize,
-                                        ),
-                                        if (_iconFontSize <= 64)
-                                          const SizedBox(height: 5),
-                                        if (_iconFontSize <= 64)
-                                          Padding(
-                                            padding: const EdgeInsets.fromLTRB(
-                                                4.0, 0.0, 4.0, 0.0),
-                                            child: Text(
-                                              (searchActive
-                                                  ? iconNameList[matches[index]]
-                                                  : iconNameList[index]),
-                                              style: const TextStyle(fontSize: 8),
-                                              textAlign: TextAlign.center,
-                                            ),
-                                          )
-                                      ]),
-                                    ),
+                                  child: MouseRegion(
+                                cursor: SystemMouseCursors.click,
+                                child: GestureDetector(
+                                  onTap: () {
+                                    final iconName =
+                                        'Symbols.${searchActive ? iconNameList[matches[index]] : iconNameList[index]}';
+                                    Clipboard.setData(
+                                            ClipboardData(text: iconName))
+                                        .then((_) {
+                                      ScaffoldMessenger.of(context)
+                                          .showSnackBar(SnackBar(
+                                              content: Text(
+                                                  'Copied "$iconName" to the clipboard.')));
+                                    });
+                                  },
+                                  child: Tooltip(
+                                    message:
+                                        'Symbols.${searchActive ? iconNameList[matches[index]] : iconNameList[index]}',
+                                    child: Column(children: [
+                                      VariedIcon.varied(
+                                        searchActive
+                                            ? iconList[matches[index]]
+                                            : iconList[index],
+                                        size: _iconFontSize,
+                                      ),
+                                      if (_iconFontSize <= 64)
+                                        const SizedBox(height: 5),
+                                      if (_iconFontSize <= 64)
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              4.0, 0.0, 4.0, 0.0),
+                                          child: Text(
+                                            (searchActive
+                                                ? iconNameList[matches[index]]
+                                                : iconNameList[index]),
+                                            style: const TextStyle(fontSize: 8),
+                                            textAlign: TextAlign.center,
+                                          ),
+                                        )
+                                    ]),
                                   ),
-                                )
-                              ),
+                                ),
+                              )),
                               childCount: searchActive
                                   ? matches.length
                                   : iconNameList.length,

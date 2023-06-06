@@ -2,8 +2,9 @@
 
 ## 4.2659.0  
 
-* Updated the font variable symbol fonts to versions 2.659 from 6/5/2023 (from https://github.com/google/material-design-icons repo variablefonts)
+* Updated the font variable symbol fonts to versions 2.659 from 6/5/2023 from [official material symbols icon repo](https://github.com/google/material-design-icons)
 * Example enhanced to save state in URL of web version, and to copy the symbol name to the clipboard when icon is pressed.
+
 ## 4.39.5
 
 * Made dart format/analyze happy, fixed update_package.dart to generate dart format safe code.

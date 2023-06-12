@@ -20,6 +20,7 @@ e95f  # twenty_one_mp
 e960  # twenty_two_mp
 e961  # twenty_three_mp
 e962  # twenty_four_mp
+ef37  # twod
 e963  # two_k
 e964  # two_k_plus
 e965  # two_mp
@@ -79,11 +80,15 @@ f7b3  # account_circle_off
 e97a  # account_tree
 e1e6  # activity_zone
 e4cb  # acute
+e65a  # ad
+e65b  # ad_group
+eae5  # ad_group_off
 f7b2  # ad_off
 ef39  # ad_units
 e60e  # adb
 e145  # add
 e439  # add_a_photo
+e72a  # add_ad
 e856  # add_alarm
 e003  # add_alert
 e146  # add_box
@@ -197,6 +202,7 @@ f88e  # apk_document
 f88f  # apk_install
 f72f  # app_badging
 ef3f  # app_blocking
+e981  # app_promo
 ef40  # app_registration
 ef41  # app_settings_alt
 eae4  # app_shortcut
@@ -204,6 +210,7 @@ e982  # approval
 f84a  # approval_delegation
 e5c3  # apps
 e7cc  # apps_outage
+ef7c  # ar_on_you
 ea3b  # architecture
 e149  # archive
 e770  # area_chart
@@ -217,6 +224,7 @@ eaa7  # arrow_circle_left
 eaaa  # arrow_circle_right
 f182  # arrow_circle_up
 e5db  # arrow_downward
+e984  # arrow_downward_alt
 e5c5  # arrow_drop_down
 e5c6  # arrow_drop_down_circle
 e5c7  # arrow_drop_up
@@ -224,15 +232,18 @@ e5c8  # arrow_forward
 e5e1  # arrow_forward_ios
 f837  # arrow_insert
 e5de  # arrow_left
+ef7d  # arrow_left_alt
 f5d6  # arrow_or_edge
 f8ce  # arrow_outward
 f69b  # arrow_range
 e5df  # arrow_right
 e941  # arrow_right_alt
 f82f  # arrow_selector_tool
+e985  # arrow_split
 f72e  # arrow_top_left
 f72d  # arrow_top_right
 e5d8  # arrow_upward
+e986  # arrow_upward_alt
 f8ab  # arrows_more_down
 f8ac  # arrows_more_up
 f72c  # arrows_outward
@@ -286,6 +297,7 @@ f219  # auto_read_pause
 f216  # auto_read_play
 e214  # auto_schedule
 e666  # auto_stories
+ef7f  # auto_timer
 f6c0  # auto_videocam
 efdc  # autofps_select
 f6b6  # autopause
@@ -378,6 +390,8 @@ eb76  # bedtime_off
 e52d  # beenhere
 f1f4  # bento
 f6eb  # bia
+e667  # bid_landscape
+ef81  # bid_landscape_disabled
 ef45  # bike_scooter
 ea3a  # biotech
 e828  # blanket
@@ -424,12 +438,18 @@ e230  # border_right
 e231  # border_style
 e232  # border_top
 e233  # border_vertical
+e730  # bottom_app_bar
+e72d  # bottom_drawer
+e98c  # bottom_navigation
 f72a  # bottom_panel_close
 f729  # bottom_panel_open
 f684  # bottom_right_click
+e98d  # bottom_sheets
 eb67  # boy
+e98e  # brand_awareness
 e06b  # branding_watermark
 ea54  # breakfast_dining
+ea08  # breaking_news
 f0ba  # breaking_news_alt_1
 f856  # breastfeeding
 e3fa  # brightness_1
@@ -439,6 +459,7 @@ e3a9  # brightness_4
 e3aa  # brightness_5
 e3ab  # brightness_6
 e3ac  # brightness_7
+f5cf  # brightness_alert
 e1ab  # brightness_auto
 f7e8  # brightness_empty
 e1ac  # brightness_high
@@ -448,12 +469,14 @@ e016  # bring_your_own_ip
 f8f8  # broadcast_on_home
 f8f9  # broadcast_on_personal
 e3ad  # broken_image
+eb13  # browse
 f8a5  # browse_activity
 ebd1  # browse_gallery
 ef47  # browser_not_supported
 e7cf  # browser_updated
 ea73  # brunch_dining
 e3ae  # brush
+ef83  # bubble
 e6dd  # bubble_chart
 f64e  # bubbles
 e868  # bug_report
@@ -465,6 +488,8 @@ e98f  # bus_alert
 e7ee  # business
 eb3f  # business_center
 f84c  # business_chip
+ef84  # business_messages
+e72f  # buttons_alt
 e589  # cabin
 efe6  # cable
 e86a  # cached
@@ -515,6 +540,7 @@ e8f6  # card_giftcard
 e8f7  # card_membership
 e8f8  # card_travel
 e09c  # cardiology
+e991  # cards
 f1f8  # carpenter
 e992  # cases
 eb40  # casino
@@ -565,6 +591,7 @@ e5cc  # chevron_right
 eb41  # child_care
 eb42  # child_friendly
 f821  # chip_extraction
+e993  # chips
 e86d  # chrome_reader_mode
 f17b  # chromecast_2
 e83c  # chromecast_device
@@ -573,6 +600,8 @@ eaae  # church
 f853  # cinematic_blur
 ef4a  # circle
 e994  # circle_notifications
+e7ea  # circles
+e7ec  # circles_ext
 f0bf  # clarify
 e865  # class_
 f21f  # clean_hands
@@ -614,16 +643,20 @@ e4f3  # code_off
 efef  # coffee
 eff0  # coffee_maker
 e09f  # cognition
+e944  # collapse_all
 e3d3  # collections
 e431  # collections_bookmark
 e40a  # color_lens
 e3b8  # colorize
+e997  # colors
 f5dd  # comic_bubble
 e24c  # comment
 ea4e  # comment_bank
 e7a2  # comments_disabled
 eaf5  # commit
 e27c  # communication
+e7ed  # communities
+e7ed  # communities_filled
 e940  # commute
 e3b9  # compare
 e915  # compare_arrows
@@ -703,8 +736,10 @@ e3c5  # crop_portrait
 e437  # crop_rotate
 e3c6  # crop_square
 f5e5  # crossword
+eb18  # crowdsource
 e799  # cruelty_free
 eb93  # css
+e6cf  # csv
 ebc5  # currency_bitcoin
 eb70  # currency_exchange
 eafa  # currency_franc
@@ -716,6 +751,7 @@ eafb  # currency_yen
 eaf9  # currency_yuan
 ec1e  # curtains
 ec1d  # curtains_closed
+e732  # custom_typography
 f08b  # cut
 f854  # cycle
 ebd5  # cyclone
@@ -728,9 +764,11 @@ ead1  # data_array
 f7f2  # data_check
 e76f  # data_exploration
 f7f5  # data_info_alert
+e2dc  # data_loss_prevention
 ead3  # data_object
 eff2  # data_saver_off
 eff3  # data_saver_on
+e99c  # data_table
 eb9f  # data_thresholding
 eff2  # data_usage
 f20e  # database
@@ -777,7 +815,9 @@ e285  # detector_smoke
 e1e8  # detector_status
 e30d  # developer_board
 e4ff  # developer_board_off
+e99e  # developer_guide
 e1b0  # developer_mode
+e874  # developer_mode_tv
 e335  # device_hub
 e8b3  # device_reset
 e1ff  # device_thermostat
@@ -790,6 +830,7 @@ f6ab  # devices_wearables
 f879  # dew_point
 e0a8  # diagnosis
 e0bb  # dialer_sip
+e99f  # dialogs
 e0bc  # dialpad
 ead5  # diamond
 eb7d  # difference
@@ -815,6 +856,7 @@ effa  # directions_subway_filled
 effa  # directions_transit
 effa  # directions_transit_filled
 e536  # directions_walk
+e394  # directory_sync
 ef4b  # dirty_lens
 f230  # disabled_by_default
 e76e  # disabled_visible
@@ -889,6 +931,8 @@ e9a1  # drive_file_move_outline
 e9a1  # drive_file_move_rtl
 e9a2  # drive_file_rename_outline
 e9a3  # drive_folder_upload
+e667  # drive_fusiontable
+e9a4  # dropdown
 f1b3  # dry
 ea58  # dry_cleaning
 f6cf  # dual_screen
@@ -944,6 +988,7 @@ e82a  # emergency_home
 ebf4  # emergency_recording
 ebf6  # emergency_share
 ea22  # emoji_emotions
+ea23  # emoji_events
 ea1a  # emoji_flags
 ea1b  # emoji_food_beverage
 ea1c  # emoji_nature
@@ -954,6 +999,7 @@ ea1f  # emoji_transportation
 e5f3  # emoticon
 f844  # empty_dashboard
 f188  # enable
+e593  # encrypted
 e0a9  # endocrinology
 f15f  # energy_program_saving
 f161  # energy_program_time_used
@@ -987,6 +1033,7 @@ f22f  # exclamation
 f6e6  # exercise
 e879  # exit_to_app
 e94f  # expand
+e946  # expand_all
 e7cd  # expand_circle_down
 f5d2  # expand_circle_up
 f830  # expand_content
@@ -1020,6 +1067,7 @@ ebbc  # factory
 f60d  # falling
 e21c  # familiar_face_and_zone
 e0ad  # family_history
+eb19  # family_link
 f1a2  # family_restroom
 e01f  # fast_forward
 e020  # fast_rewind
@@ -1028,6 +1076,7 @@ e278  # faucet
 e87e  # favorite
 e87e  # favorite_border
 ead8  # fax
+e9a9  # feature_search
 e06d  # featured_play_list
 e06e  # featured_video
 f009  # feed
@@ -1075,6 +1124,7 @@ eb57  # filter_list_off
 e3e0  # filter_none
 e3e2  # filter_tilt_shift
 e3e3  # filter_vintage
+e6bf  # finance
 f84e  # finance_chip
 e880  # find_in_page
 e881  # find_replace
@@ -1106,6 +1156,7 @@ e539  # flight
 e7cb  # flight_class
 e904  # flight_land
 e905  # flight_takeoff
+e6ca  # flightsmode
 e3e8  # flip
 ea37  # flip_camera_android
 ea38  # flip_camera_ios
@@ -1211,6 +1262,7 @@ eb44  # free_breakfast
 e748  # free_cancellation
 e769  # front_hand
 f869  # front_loader
+eb12  # full_coverage
 f212  # full_stacked_bar_chart
 e5d0  # fullscreen
 e5d1  # fullscreen_exit
@@ -1231,6 +1283,7 @@ e277  # gate
 e90e  # gavel
 e749  # generating_tokens
 e0f3  # genetics
+e022  # genres
 e155  # gesture
 f657  # gesture_select
 f090  # get_app
@@ -1283,10 +1336,13 @@ f7e0  # h_mobiledata_badge
 f019  # h_plus_mobiledata
 f7df  # h_plus_mobiledata_badge
 e9b1  # hail
+e6f8  # hallway
 f894  # hand_bones
 ef9c  # hand_gesture
 ebcb  # handshake
 f10b  # handyman
+e0c1  # hangout_video
+e0c2  # hangout_video_off
 f80e  # hard_drive
 f7a4  # hard_drive_2
 ea59  # hardware
@@ -1393,6 +1449,7 @@ f87e  # humidity_percentage
 f10e  # hvac
 e50b  # ice_skating
 ea69  # icecream
+e025  # ifl
 f71b  # iframe
 f71c  # iframe_off
 e3f4  # image
@@ -1413,6 +1470,11 @@ e79b  # incomplete_circle
 e909  # indeterminate_check_box
 e88e  # info
 f87c  # infrared
+e6d0  # ink_eraser
+e7e3  # ink_eraser_off
+e6d1  # ink_highlighter
+e6d2  # ink_marker
+e6d3  # ink_pen
 e0fe  # inpatient
 e890  # input
 f71a  # input_circle
@@ -1430,6 +1492,7 @@ f827  # insert_text
 f092  # insights
 eb71  # install_desktop
 eb72  # install_mobile
+e026  # instant_mix
 ef54  # integration_instructions
 f7ff  # interactive_space
 e7c8  # interests
@@ -1441,6 +1504,7 @@ e0c4  # invert_colors_off
 e6b8  # ios_share
 e583  # iron
 e3f6  # iso
+e9b5  # jamboard_kiosk
 eb7c  # javascript
 f84f  # join
 eaeb  # join_full
@@ -1518,6 +1582,7 @@ e31e  # laptop
 e31f  # laptop_chromebook
 e320  # laptop_mac
 e321  # laptop_windows
+eb03  # lasso_select
 e5dd  # last_page
 e89e  # launch
 e2a8  # laundry
@@ -1569,6 +1634,7 @@ ea60  # liquor
 e896  # list
 e0ee  # list_alt
 f756  # list_alt_add
+e9b9  # lists
 e0c6  # live_help
 e63b  # live_tv
 f02b  # living
@@ -1676,6 +1742,7 @@ f18a  # mark_email_unread
 eb9d  # mark_unread_chat_alt
 e159  # markunread
 e89b  # markunread_mailbox
+e72e  # masked_transitions
 f218  # masks
 f6f1  # match_case
 f6f0  # match_word
@@ -1713,6 +1780,8 @@ e10c  # microbiology
 f204  # microwave
 e847  # microwave_gen
 ea3f  # military_tech
+e9be  # mimo
+e9bf  # mimo_disconnect
 f6e0  # mindfulness
 e931  # minimize
 ebf1  # minor_crash
@@ -1766,6 +1835,7 @@ f0d0  # motion_blur
 f842  # motion_mode
 f03a  # motion_photos_auto
 e9c0  # motion_photos_off
+e9c1  # motion_photos_on
 f349  # motion_photos_pause
 f349  # motion_photos_paused
 e792  # motion_sensor_active
@@ -1778,6 +1848,7 @@ e323  # mouse
 e740  # move
 eb61  # move_down
 f715  # move_group
+f1ff  # move_item
 e741  # move_location
 f714  # move_selection_down
 f713  # move_selection_left
@@ -1785,10 +1856,12 @@ f712  # move_selection_right
 f711  # move_selection_up
 e168  # move_to_inbox
 eb64  # move_up
+e594  # moved_location
 e404  # movie
 e404  # movie_creation
 f840  # movie_edit
 e43a  # movie_filter
+e02d  # movie_info
 e501  # moving
 e73d  # moving_beds
 e73e  # moving_ministry
@@ -1810,6 +1883,7 @@ e409  # navigate_next
 e55d  # navigation
 e569  # near_me
 f1ef  # near_me_disabled
+e6b7  # nearby
 f03b  # nearby_error
 f03c  # nearby_off
 e10d  # nephrology
@@ -1840,11 +1914,13 @@ e82c  # nest_hello_doorbell
 f8c1  # nest_locator_tag
 e789  # nest_mini
 f8c2  # nest_multi_room
+e68e  # nest_protect
 f5db  # nest_remote
 f12a  # nest_remote_comfort_sensor
 f12b  # nest_secure_alarm
 f8c3  # nest_sunblock
 f8c1  # nest_tag
+e68f  # nest_thermostat
 f12d  # nest_thermostat_e_eu
 f12e  # nest_thermostat_gen_3
 f12f  # nest_thermostat_sensor
@@ -1873,6 +1949,8 @@ e10e  # neurology
 e609  # new_label
 ef76  # new_releases
 f710  # new_window
+e032  # news
+efad  # newsmode
 eb81  # newspaper
 ef5d  # next_plan
 e16a  # next_week
@@ -1900,6 +1978,7 @@ f1d6  # no_meals
 eb4e  # no_meeting_room
 f1a8  # no_photography
 e1ce  # no_sim
+e710  # no_sound
 f1af  # no_stroller
 f1d5  # no_transfer
 ebec  # noise_aware
@@ -1919,6 +1998,7 @@ f040  # note_alt
 e26c  # notes
 e399  # notification_add
 e004  # notification_important
+e6c2  # notification_multiple
 e7f5  # notifications
 e7f7  # notifications_active
 e7f5  # notifications_none
@@ -1926,6 +2006,8 @@ e7f6  # notifications_off
 e7f8  # notifications_paused
 eac7  # numbers
 e110  # nutrition
+e6e8  # ods
+e6e9  # odt
 e932  # offline_bolt
 e90a  # offline_pin
 e9c5  # offline_share
@@ -1941,6 +2023,8 @@ f1ce  # open_in_full
 e89e  # open_in_new
 f70f  # open_in_new_down
 e4f6  # open_in_new_off
+e702  # open_in_phone
+efae  # open_jam
 e89f  # open_with
 e115  # ophthalmology
 e116  # oral_disease
@@ -1951,6 +2035,7 @@ e47b  # other_admission
 e58c  # other_houses
 e1ca  # outbound
 ef5f  # outbox
+eb17  # outbox_alt
 e205  # outdoor_garden
 ea47  # outdoor_grill
 f0d2  # outgoing_mail
@@ -1968,6 +2053,7 @@ f6b8  # pace
 e656  # pacemaker
 e48f  # package
 e9c8  # padding
+e731  # page_control
 f614  # page_info
 e7f9  # pages
 e8a0  # pageview
@@ -1988,6 +2074,7 @@ ea63  # park
 f172  # partly_cloudy_day
 f174  # partly_cloudy_night
 f7f9  # partner_exchange
+efaf  # partner_reports
 e7fa  # party_mode
 f042  # password
 e653  # patient_list
@@ -2013,6 +2100,7 @@ ea21  # people
 ea21  # people_alt
 ea21  # people_outline
 eb58  # percent
+e51a  # performance_max
 e203  # pergola
 e8a2  # perm_camera_mic
 e8a3  # perm_contact_calendar
@@ -2043,6 +2131,7 @@ e6da  # personal_injury
 e333  # personal_video
 f0fa  # pest_control
 f0fd  # pest_control_rodent
+efb1  # pet_supplies
 e91d  # pets
 ead7  # phishing
 f0d4  # phone
@@ -2073,6 +2162,7 @@ ef69  # photo_camera_front
 e43b  # photo_filter
 f0d9  # photo_frame
 e413  # photo_library
+efb2  # photo_prints
 e432  # photo_size_select_actual
 e433  # photo_size_select_large
 e434  # photo_size_select_small
@@ -2102,11 +2192,13 @@ e9ce  # pivot_table_chart
 f1db  # place
 f1f0  # place_item
 ea5a  # plagiarism
+e692  # planner_banner_ad_pt
 e037  # play_arrow
 e1c4  # play_circle
 ef6a  # play_disabled
 e906  # play_for_work
 f047  # play_lesson
+e022  # play_music
 f137  # play_pause
 f7fc  # play_shapes
 f5dc  # playing_cards
@@ -2133,6 +2225,7 @@ e851  # portrait
 f70b  # position_bottom_left
 f70a  # position_bottom_right
 f709  # position_top_right
+e705  # post
 ea20  # post_add
 f8aa  # potted_plant
 e63c  # power
@@ -2167,6 +2260,7 @@ e651  # procedure
 f855  # process_chart
 e1d1  # production_quantity_limits
 e296  # productivity
+e9d0  # progress_activity
 ec14  # propane
 ec13  # propane_tank
 e123  # psychiatry
@@ -2238,6 +2332,8 @@ f750  # regular_expression
 f6dc  # relax
 f654  # release_alert
 f051  # remember_me
+e695  # reminder
+e695  # reminders_alt
 e83e  # remote_gen
 e15b  # remove
 f08f  # remove_circle
@@ -2247,6 +2343,7 @@ e067  # remove_from_queue
 e9d4  # remove_moderator
 e8f4  # remove_red_eye
 ebfc  # remove_road
+e9d5  # remove_selection
 e928  # remove_shopping_cart
 f708  # reopen_window
 e8fe  # reorder
@@ -2280,6 +2377,7 @@ e938  # restore_from_trash
 e929  # restore_page
 f7d0  # resume
 f054  # reviews
+efb6  # rewarded_ads
 e128  # rheumatology
 f898  # rib_cage
 f1f5  # rice_bowl
@@ -2288,7 +2386,9 @@ f705  # right_panel_close
 f704  # right_panel_open
 f0dd  # ring_volume
 f0dd  # ring_volume_filled
+e9db  # ripples
 f882  # robot
+f5d0  # robot_2
 eba5  # rocket
 eb9b  # rocket_launch
 ec12  # roller_shades
@@ -2359,6 +2459,7 @@ f7d3  # screenshot_keyboard
 ec08  # screenshot_monitor
 f7d2  # screenshot_region
 f697  # screenshot_tablet
+e9dc  # scrollable_header
 ebce  # scuba_diving
 e9dd  # sd
 e623  # sd_card
@@ -2376,11 +2477,14 @@ f74d  # select
 e162  # select_all
 f1fe  # select_check_box
 f7cf  # select_to_speak
+e6fa  # select_window
+e506  # select_window_off
 f86d  # self_care
 ea78  # self_improvement
 f05b  # sell
 e163  # send
 ea0c  # send_and_archive
+e8b7  # send_money
 eadb  # send_time_extension
 f05c  # send_to_mobile
 f1b5  # sensor_door
@@ -2436,6 +2540,7 @@ f621  # settings_video_camera
 e8c8  # settings_voice
 e2ac  # settop_component
 ebd3  # severe_cold
+e9df  # shadow
 f8d3  # shape_line
 e602  # shapes
 e80d  # share
@@ -2471,6 +2576,7 @@ e043  # shuffle
 e9e1  # shuffle_on
 e43d  # shutter_speed
 f220  # sick
+e9e2  # side_navigation
 ebe5  # sign_language
 f0a8  # signal_cellular_0_bar
 f0a9  # signal_cellular_1_bar
@@ -2513,6 +2619,7 @@ e512  # sledding
 e213  # sleep
 f6b7  # sleep_score
 f822  # slide_library
+e9e3  # sliders
 e41b  # slideshow
 e068  # slow_motion_video
 f1c1  # smart_button
@@ -2603,6 +2710,8 @@ f609  # stack
 f608  # stack_off
 f607  # stack_star
 e9e6  # stacked_bar_chart
+e6c7  # stacked_email
+e6c9  # stacked_inbox
 f22b  # stacked_line_chart
 f135  # stadia_controller
 eb90  # stadium
@@ -2617,6 +2726,12 @@ f0ec  # star_rate
 ec45  # star_rate_half
 e8d0  # stars
 e089  # start
+e698  # stat_1
+e699  # stat_2
+e69a  # stat_3
+e69b  # stat_minus_1
+e69c  # stat_minus_2
+e69d  # stat_minus_3
 e0d3  # stay_current_landscape
 e0d4  # stay_current_portrait
 e0d5  # stay_primary_landscape
@@ -2625,10 +2740,12 @@ f6fe  # step
 f701  # step_into
 f700  # step_out
 f6ff  # step_over
+e9e7  # steppers
 f6da  # steps
 f805  # stethoscope
 f807  # stethoscope_arrow
 f806  # stethoscope_check
+e9e8  # sticky_note
 f1fc  # sticky_note_2
 e047  # stop
 ef71  # stop_circle
@@ -2656,6 +2773,7 @@ f747  # stylus_laser_pointer
 f603  # stylus_note
 e5d9  # subdirectory_arrow_left
 e5da  # subdirectory_arrow_right
+e9ea  # subheader
 e8d2  # subject
 f111  # subscript
 e064  # subscriptions
@@ -2675,10 +2793,12 @@ e515  # surfing
 e131  # surgical
 e049  # surround_sound
 e0d7  # swap_calls
+e69f  # swap_driving_apps_wheel
 e8d4  # swap_horiz
 e933  # swap_horizontal_circle
 e8d5  # swap_vert
 e8d6  # swap_vertical_circle
+e6ac  # sweep
 e9ec  # swipe
 eb53  # swipe_down
 eb30  # swipe_down_alt
@@ -2698,6 +2818,7 @@ e41e  # switch_camera
 f1d1  # switch_left
 f1d2  # switch_right
 e41f  # switch_video
+e733  # switches
 f5de  # sword_rose
 f889  # swords
 e132  # symptoms
@@ -2735,6 +2856,7 @@ f1be  # table_view
 e32f  # tablet
 e330  # tablet_android
 e331  # tablet_mac
+e9ee  # tabs
 e9ef  # tag
 ea22  # tag_faces
 ea74  # takeout_dining
@@ -2742,6 +2864,7 @@ e82e  # tamper_detection_off
 f8c8  # tamper_detection_on
 e62b  # tap_and_play
 f1e9  # tapas
+e719  # target
 f075  # task
 e2e6  # task_alt
 f69f  # taunt
@@ -2754,6 +2877,7 @@ eaaf  # temple_hindu
 f0e3  # tenancy
 eb8e  # terminal
 e564  # terrain
+e728  # text_ad
 eadd  # text_decrease
 e262  # text_fields
 e165  # text_format
@@ -2816,6 +2940,7 @@ e426  # timer_off
 e79a  # tips_and_updates
 ebc8  # tire_repair
 e264  # title
+efc1  # toast
 e8de  # toc
 e8df  # today
 e9f5  # toggle_off
@@ -2823,6 +2948,7 @@ e9f6  # toggle_on
 ea25  # token
 e8e0  # toll
 e427  # tonality
+e9f7  # toolbar
 f8cb  # tools_flat_head
 e2ab  # tools_installation_kit
 e2cb  # tools_ladder
@@ -2831,6 +2957,7 @@ f8cc  # tools_phillips
 e2aa  # tools_pliers_wire_stripper
 e1e9  # tools_power_drill
 f8cd  # tools_wrench
+e9f8  # tooltip
 f733  # top_panel_close
 f732  # top_panel_open
 f1c8  # topic
@@ -2855,14 +2982,18 @@ e58d  # transgender
 e579  # transit_enterexit
 e8e2  # translate
 e21d  # transportation
+e6ca  # travel
 e2db  # travel_explore
 e8e3  # trending_down
 e8e4  # trending_flat
 e8e5  # trending_up
 e57b  # trip_origin
 f86b  # trolley
+ea23  # trophy
+e1d2  # troubleshoot
 f054  # try_sms_star
 ebd8  # tsunami
+e6d6  # tsv
 f1aa  # tty
 e429  # tune
 f00d  # tungsten
@@ -2876,8 +3007,11 @@ e8e7  # turned_in
 e8e7  # turned_in_not
 e333  # tv
 e830  # tv_gen
+e1dc  # tv_guide
 e647  # tv_off
+e1dd  # tv_options_edit_channels
 f5d9  # tv_remote
+e71b  # tv_signin
 e785  # tv_with_assistant
 e9f9  # two_wheeler
 f8f0  # type_specimen
@@ -2893,6 +3027,9 @@ f8cf  # unfold_less_double
 e5d7  # unfold_more
 f8d0  # unfold_more_double
 f731  # ungroup
+e734  # universal_currency_alt
+e6a2  # unknown_2
+e6a5  # unknown_5
 f804  # unknown_document
 eabd  # unknown_med
 f236  # unpublished
@@ -2930,6 +3067,7 @@ f8a0  # video_chat
 eb87  # video_file
 e071  # video_label
 e04a  # video_library
+efc6  # video_search
 ea75  # video_settings
 f081  # video_stable
 e04b  # videocam
@@ -2981,7 +3119,9 @@ e0da  # vpn_key
 f6cc  # vpn_key_alert
 eb7a  # vpn_key_off
 e62f  # vpn_lock
+efca  # vr180_create2d
 f082  # vrpano
+efcb  # wall_art
 e2b4  # wall_lamp
 f8ff  # wallet
 e1bc  # wallpaper
@@ -3079,6 +3219,7 @@ ec09  # work_history
 e942  # work_off
 e943  # work_outline
 f5f8  # work_update
+e985  # workflow
 e7af  # workspace_premium
 e1a0  # workspaces
 e1a0  # workspaces_outline
@@ -3088,6 +3229,7 @@ f69c  # wrist
 ef78  # wrong_location
 f1c3  # wysiwyg
 f089  # yard
+eb2b  # your_trips
 f85a  # youtube_activity
 e8fa  # youtube_searched_for
 e781  # zone_person_alert

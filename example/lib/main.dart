@@ -38,7 +38,7 @@ void makeSymbolsByStyleMaps() {
 
 void main() {
   // prevent engine from removing query url parameters
-  setUrlStrategy(const PathUrlStrategy());
+  setUrlStrategy(PathUrlStrategy());
 
   // create separate iconname->icon map for each style
   makeSymbolsByStyleMaps();

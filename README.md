@@ -1,5 +1,9 @@
 # Material Symbols Icons for Flutter
 
+### Using Official Material Symbols Icons variable fonts version 2.661 released 06/09/2023 from [material font repo](https://github.com/google/material-design-icons).
+
+----------------------
+
 <img src="https://github.com/timmaffett/material_symbols_icons/raw/master/media/example.png" width="100%">
 
 ### (with full variation support and automatic code generation capability for updating icon definition files)

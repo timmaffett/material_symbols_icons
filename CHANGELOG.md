@@ -1,5 +1,9 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2661.1
+
+* Add version number of material symbols icons variable fonts to top of README.md
+
 ## 4.2661.0  
 
 * Updated the font variable symbol fonts to versions 2.661 from 6/9/2023 from [official material symbols icon repo](https://github.com/google/material-design-icons)

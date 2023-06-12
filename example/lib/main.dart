@@ -24,6 +24,9 @@ Map<String, IconData> materialSymbolsOutlinedMap = {};
 Map<String, IconData> materialSymbolsRoundedMap = {};
 Map<String, IconData> materialSymbolsSharpMap = {};
 
+const String materialSymbolsIconsSourceFontVersionNumber = '2.661';  // must update for each new font update
+int totalMaterialSymbolsIcons=0;
+
 void makeSymbolsByStyleMaps() {
   for (final key in materialSymbolsMap.keys.toList()) {
     if (key.endsWith('_rounded')) {
@@ -55,6 +58,8 @@ void main() {
       color: roundedColor, fill: 0.0);
   MaterialSymbolsBase.setSharpVariationDefaults(color: sharpColor, fill: 0.0);
 
+  totalMaterialSymbolsIcons = (materialSymbolsMap.length / 3).floor();
+
   if (useDevicePreview) {
     //TEST various on various device screens//
     runApp(DevicePreview(
@@ -82,15 +87,16 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Roboto',
         iconTheme: const IconThemeData(color: Colors.black),
       ),
-      home: const MyHomePage(title: 'Material Symbols Icons For Flutter'),
+      home: MyHomePage(title: 'Material Symbols Icons For Flutter', subtitle:'(v$materialSymbolsIconsSourceFontVersionNumber fonts w/ $totalMaterialSymbolsIcons icons)'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  const MyHomePage({super.key, required this.title,  required this.subtitle});
 
   final String title;
+  final String subtitle;
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -667,11 +673,15 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 20,
+        toolbarHeight: 22,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Text(widget.title, style: const TextStyle(fontSize: 18)),
+            RichText(
+              text: TextSpan( text: widget.title, style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
+                children: [ TextSpan(text: '   ${widget.subtitle}', style: const TextStyle(color: Colors.blue, fontSize: 12)) ], 
+              )
+            ),
             SizedBox.square(
               dimension: 40,
               child: IconButton(

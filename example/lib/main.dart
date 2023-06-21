@@ -24,7 +24,7 @@ Map<String, IconData> materialSymbolsOutlinedMap = {};
 Map<String, IconData> materialSymbolsRoundedMap = {};
 Map<String, IconData> materialSymbolsSharpMap = {};
 
-const String materialSymbolsIconsSourceFontVersionNumber = '2.661';  // must update for each new font update
+const String materialSymbolsIconsSourceFontVersionNumber = '2.662';  // must update for each new font update
 int totalMaterialSymbolsIcons=0;
 
 void makeSymbolsByStyleMaps() {

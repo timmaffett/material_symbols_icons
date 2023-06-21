@@ -24,3 +24,21 @@ is that this is a NO FIX - as I suspected it might be - for compatibility with a
 
 ~~A issue has been filed for this problem and if the google repo corrects the building of the fonts to include correct metrics then the `update_package.dart` tool will be updated to directly download the fonts to the `../lib/fonts' directoty.
 (This may not be possible for them to fix the metrics as existing users may depend on the incorrect metrics ?! I am not sure but I hope they can fix the metrics so we don't have to.)~~
+
+
+## Steps to update to new variable fonts release
+-----
+Steps to update pakcage when new fonts are released.
+```
+0) copy rawFontsUnfixed icon_unicodes.txt to LAST_VERSION directory with added date
+1) dart run update_package.dart -d -u
+2) figure put source font version number with `ttx -s oneofthefonts.ttf`
+3) Update `CHANGELOG.md` with version number of new fonts, update `pubspec.yaml` with new fonts version number
+4) linux run the rawFontsUnfixed/fixFontMetricsAndUpdateLibFonts.sh to patch fonts/install into lib/fonts
+5) update source font version number in example\main.dart
+6) buildWeb.bat example
+7) update timmaffett.github.io with example
+8) sync source to github
+9) dart pub publish --dry-run  package
+10) dart pub publish package
+```

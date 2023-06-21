@@ -445,6 +445,9 @@ f72a  # bottom_panel_close
 f729  # bottom_panel_open
 f684  # bottom_right_click
 e98d  # bottom_sheets
+f5a4  # box
+f5a5  # box_add
+f5a6  # box_edit
 eb67  # boy
 e98e  # brand_awareness
 e06b  # branding_watermark
@@ -687,6 +690,9 @@ e14f  # content_paste
 ea8e  # content_paste_go
 e4f8  # content_paste_off
 ea9b  # content_paste_search
+f5a0  # contract
+f5a2  # contract_delete
+f5a1  # contract_edit
 eb37  # contrast
 ec72  # contrast_rtl_off
 e074  # control_camera
@@ -1961,7 +1967,6 @@ f1f9  # night_sight_auto_off
 f6c3  # night_sight_max
 ea62  # nightlife
 f03d  # nightlight
-f7bf  # nightlight_off
 f03d  # nightlight_round
 ea46  # nights_stay
 f03e  # no_accounts
@@ -2117,6 +2122,7 @@ f8e6  # person_4
 ea4d  # person_add
 ea4d  # person_add_alt
 e9cb  # person_add_disabled
+f5a3  # person_apron
 f5e8  # person_book
 f7fe  # person_celebrate
 f0d3  # person_filled
@@ -2593,6 +2599,7 @@ e1ce  # signal_cellular_no_sim
 f062  # signal_cellular_nodata
 e1cf  # signal_cellular_null
 e1d0  # signal_cellular_off
+f5a7  # signal_cellular_pause
 f239  # signal_disconnected
 f0b0  # signal_wifi_0_bar
 f065  # signal_wifi_4_bar

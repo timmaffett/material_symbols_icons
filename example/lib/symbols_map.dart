@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-06-12 08:54:51.792317 by the dart file
+// This file was generated 2023-06-21 10:53:22.391832 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -1381,6 +1381,15 @@ Map<String, IconData> materialSymbolsMap = {
   'bottom_sheets': Symbols.bottom_sheets,
   'bottom_sheets_rounded': Symbols.bottom_sheets_rounded,
   'bottom_sheets_sharp': Symbols.bottom_sheets_sharp,
+  'box': Symbols.box,
+  'box_rounded': Symbols.box_rounded,
+  'box_sharp': Symbols.box_sharp,
+  'box_add': Symbols.box_add,
+  'box_add_rounded': Symbols.box_add_rounded,
+  'box_add_sharp': Symbols.box_add_sharp,
+  'box_edit': Symbols.box_edit,
+  'box_edit_rounded': Symbols.box_edit_rounded,
+  'box_edit_sharp': Symbols.box_edit_sharp,
   'boy': Symbols.boy,
   'boy_rounded': Symbols.boy_rounded,
   'boy_sharp': Symbols.boy_sharp,
@@ -2108,6 +2117,15 @@ Map<String, IconData> materialSymbolsMap = {
   'content_paste_search': Symbols.content_paste_search,
   'content_paste_search_rounded': Symbols.content_paste_search_rounded,
   'content_paste_search_sharp': Symbols.content_paste_search_sharp,
+  'contract': Symbols.contract,
+  'contract_rounded': Symbols.contract_rounded,
+  'contract_sharp': Symbols.contract_sharp,
+  'contract_delete': Symbols.contract_delete,
+  'contract_delete_rounded': Symbols.contract_delete_rounded,
+  'contract_delete_sharp': Symbols.contract_delete_sharp,
+  'contract_edit': Symbols.contract_edit,
+  'contract_edit_rounded': Symbols.contract_edit_rounded,
+  'contract_edit_sharp': Symbols.contract_edit_sharp,
   'contrast': Symbols.contrast,
   'contrast_rounded': Symbols.contrast_rounded,
   'contrast_sharp': Symbols.contrast_sharp,
@@ -5963,9 +5981,6 @@ Map<String, IconData> materialSymbolsMap = {
   'nightlight': Symbols.nightlight,
   'nightlight_rounded': Symbols.nightlight_rounded,
   'nightlight_sharp': Symbols.nightlight_sharp,
-  'nightlight_off': Symbols.nightlight_off,
-  'nightlight_off_rounded': Symbols.nightlight_off_rounded,
-  'nightlight_off_sharp': Symbols.nightlight_off_sharp,
   'nightlight_round': Symbols.nightlight_round,
   'nightlight_round_rounded': Symbols.nightlight_round_rounded,
   'nightlight_round_sharp': Symbols.nightlight_round_sharp,
@@ -6433,6 +6448,9 @@ Map<String, IconData> materialSymbolsMap = {
   'person_add_disabled': Symbols.person_add_disabled,
   'person_add_disabled_rounded': Symbols.person_add_disabled_rounded,
   'person_add_disabled_sharp': Symbols.person_add_disabled_sharp,
+  'person_apron': Symbols.person_apron,
+  'person_apron_rounded': Symbols.person_apron_rounded,
+  'person_apron_sharp': Symbols.person_apron_sharp,
   'person_book': Symbols.person_book,
   'person_book_rounded': Symbols.person_book_rounded,
   'person_book_sharp': Symbols.person_book_sharp,
@@ -7875,6 +7893,9 @@ Map<String, IconData> materialSymbolsMap = {
   'signal_cellular_off': Symbols.signal_cellular_off,
   'signal_cellular_off_rounded': Symbols.signal_cellular_off_rounded,
   'signal_cellular_off_sharp': Symbols.signal_cellular_off_sharp,
+  'signal_cellular_pause': Symbols.signal_cellular_pause,
+  'signal_cellular_pause_rounded': Symbols.signal_cellular_pause_rounded,
+  'signal_cellular_pause_sharp': Symbols.signal_cellular_pause_sharp,
   'signal_disconnected': Symbols.signal_disconnected,
   'signal_disconnected_rounded': Symbols.signal_disconnected_rounded,
   'signal_disconnected_sharp': Symbols.signal_disconnected_sharp,

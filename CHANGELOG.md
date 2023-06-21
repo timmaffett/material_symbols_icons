@@ -1,5 +1,10 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2662.0
+
+* Updsate to version 2.662 of material symbols icons variable fonts
+* Added pub.dev shield link to README.md - fixes #5
+
 ## 4.2661.1
 
 * Add version number of material symbols icons variable fonts to top of README.md

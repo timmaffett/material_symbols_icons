@@ -32,7 +32,7 @@ Steps to update pakcage when new fonts are released.
 ```
 0) copy rawFontsUnfixed icon_unicodes.txt to LAST_VERSION directory with added date
 1) dart run update_package.dart -d -u
-2) figure put source font version number with `ttx -s oneofthefonts.ttf`
+2) figure out source font version number with `ttx -s oneofthefonts.ttf`
 3) Update `CHANGELOG.md` with version number of new fonts, update `pubspec.yaml` with new fonts version number
 4) linux run the rawFontsUnfixed/fixFontMetricsAndUpdateLibFonts.sh to patch fonts/install into lib/fonts
 5) update source font version number in example\main.dart

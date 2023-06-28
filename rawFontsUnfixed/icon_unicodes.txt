@@ -993,6 +993,7 @@ f15d  # emergency_heat
 e82a  # emergency_home
 ebf4  # emergency_recording
 ebf6  # emergency_share
+f59e  # emergency_share_off
 ea22  # emoji_emotions
 ea23  # emoji_events
 ea1a  # emoji_flags
@@ -1475,6 +1476,7 @@ f859  # inbox_customize
 e79b  # incomplete_circle
 e909  # indeterminate_check_box
 e88e  # info
+f59b  # info_i
 f87c  # infrared
 e6d0  # ink_eraser
 e7e3  # ink_eraser_off
@@ -2131,6 +2133,7 @@ f0d3  # person_outline
 e55a  # person_pin
 e56a  # person_pin_circle
 f7fd  # person_play
+f59a  # person_raised_hand
 ef66  # person_remove
 f106  # person_search
 e6da  # personal_injury
@@ -2425,6 +2428,7 @@ ef6f  # run_circle
 e51d  # running_with_errors
 e642  # rv_hookup
 ebef  # safety_check
+f59d  # safety_check_off
 e1cc  # safety_divider
 e502  # sailing
 f876  # salinity

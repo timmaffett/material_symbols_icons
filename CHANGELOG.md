@@ -1,5 +1,11 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2663.0
+
+* Update to version 2.663 of the material symbols icons variable fonts released 6/22/2023
+* Added f59e  # emergency_share_off, f59b  # info_i, f59a  # person_raised_hand, and f59d  # safety_check_off
+* Update readme files
+
 ## 4.2662.0
 
 * Updsate to version 2.662 of material symbols icons variable fonts

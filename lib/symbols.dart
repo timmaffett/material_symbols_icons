@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-06-21 10:53:22.303750 by the dart file
+// This file was generated 2023-06-28 09:23:32.696264 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -6077,6 +6077,12 @@ import 'material_symbols_icons.dart';
 ///
 /// <span class="material-symbols-sharp">emergency_share</span> Symbols.emergency_share_sharp
 ///
+/// <span class="material-symbols-outlined">emergency_share_off</span> Symbols.emergency_share_off
+///
+/// <span class="material-symbols-rounded">emergency_share_off</span> Symbols.emergency_share_off_rounded
+///
+/// <span class="material-symbols-sharp">emergency_share_off</span> Symbols.emergency_share_off_sharp
+///
 /// <span class="material-symbols-outlined">emoji_emotions</span> Symbols.emoji_emotions
 ///
 /// <span class="material-symbols-rounded">emoji_emotions</span> Symbols.emoji_emotions_rounded
@@ -8968,6 +8974,12 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">info</span> Symbols.info_rounded
 ///
 /// <span class="material-symbols-sharp">info</span> Symbols.info_sharp
+///
+/// <span class="material-symbols-outlined">info_i</span> Symbols.info_i
+///
+/// <span class="material-symbols-rounded">info_i</span> Symbols.info_i_rounded
+///
+/// <span class="material-symbols-sharp">info_i</span> Symbols.info_i_sharp
 ///
 /// <span class="material-symbols-outlined">infrared</span> Symbols.infrared
 ///
@@ -12905,6 +12917,12 @@ import 'material_symbols_icons.dart';
 ///
 /// <span class="material-symbols-sharp">person_play</span> Symbols.person_play_sharp
 ///
+/// <span class="material-symbols-outlined">person_raised_hand</span> Symbols.person_raised_hand
+///
+/// <span class="material-symbols-rounded">person_raised_hand</span> Symbols.person_raised_hand_rounded
+///
+/// <span class="material-symbols-sharp">person_raised_hand</span> Symbols.person_raised_hand_sharp
+///
 /// <span class="material-symbols-outlined">person_remove</span> Symbols.person_remove
 ///
 /// <span class="material-symbols-rounded">person_remove</span> Symbols.person_remove_rounded
@@ -14668,6 +14686,12 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">safety_check</span> Symbols.safety_check_rounded
 ///
 /// <span class="material-symbols-sharp">safety_check</span> Symbols.safety_check_sharp
+///
+/// <span class="material-symbols-outlined">safety_check_off</span> Symbols.safety_check_off
+///
+/// <span class="material-symbols-rounded">safety_check_off</span> Symbols.safety_check_off_rounded
+///
+/// <span class="material-symbols-sharp">safety_check_off</span> Symbols.safety_check_off_sharp
 ///
 /// <span class="material-symbols-outlined">safety_divider</span> Symbols.safety_divider
 ///
@@ -31546,6 +31570,18 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData emergency_share_sharp =
       IconData(0xebf6, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">emergency_share_off</span> material symbol named "emergency_share_off".
+  static const IconData emergency_share_off =
+      IconData(0xf59e, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">emergency_share_off</span> material symbol named "emergency_share_off_rounded".
+  static const IconData emergency_share_off_rounded =
+      IconData(0xf59e, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">emergency_share_off</span> material symbol named "emergency_share_off_sharp".
+  static const IconData emergency_share_off_sharp =
+      IconData(0xf59e, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">emoji_emotions</span> material symbol named "emoji_emotions".
   static const IconData emoji_emotions =
       IconData(0xea22, fontFamily: _family_outlined, fontPackage: _package);
@@ -37329,6 +37365,18 @@ class Symbols extends MaterialSymbolsBase {
   /// @nodoc <span class="material-symbols-sharp">info</span> material symbol named "info_sharp".
   static const IconData info_sharp =
       IconData(0xe88e, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">info_i</span> material symbol named "info_i".
+  static const IconData info_i =
+      IconData(0xf59b, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">info_i</span> material symbol named "info_i_rounded".
+  static const IconData info_i_rounded =
+      IconData(0xf59b, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">info_i</span> material symbol named "info_i_sharp".
+  static const IconData info_i_sharp =
+      IconData(0xf59b, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">infrared</span> material symbol named "infrared".
   static const IconData infrared =
@@ -45202,6 +45250,18 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData person_play_sharp =
       IconData(0xf7fd, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">person_raised_hand</span> material symbol named "person_raised_hand".
+  static const IconData person_raised_hand =
+      IconData(0xf59a, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">person_raised_hand</span> material symbol named "person_raised_hand_rounded".
+  static const IconData person_raised_hand_rounded =
+      IconData(0xf59a, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">person_raised_hand</span> material symbol named "person_raised_hand_sharp".
+  static const IconData person_raised_hand_sharp =
+      IconData(0xf59a, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">person_remove</span> material symbol named "person_remove".
   static const IconData person_remove =
       IconData(0xef66, fontFamily: _family_outlined, fontPackage: _package);
@@ -48729,6 +48789,18 @@ class Symbols extends MaterialSymbolsBase {
   /// @nodoc <span class="material-symbols-sharp">safety_check</span> material symbol named "safety_check_sharp".
   static const IconData safety_check_sharp =
       IconData(0xebef, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">safety_check_off</span> material symbol named "safety_check_off".
+  static const IconData safety_check_off =
+      IconData(0xf59d, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">safety_check_off</span> material symbol named "safety_check_off_rounded".
+  static const IconData safety_check_off_rounded =
+      IconData(0xf59d, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">safety_check_off</span> material symbol named "safety_check_off_sharp".
+  static const IconData safety_check_off_sharp =
+      IconData(0xf59d, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">safety_divider</span> material symbol named "safety_divider".
   static const IconData safety_divider =

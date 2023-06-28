@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-06-21 10:53:22.391832 by the dart file
+// This file was generated 2023-06-28 09:23:32.731827 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -3031,6 +3031,9 @@ Map<String, IconData> materialSymbolsMap = {
   'emergency_share': Symbols.emergency_share,
   'emergency_share_rounded': Symbols.emergency_share_rounded,
   'emergency_share_sharp': Symbols.emergency_share_sharp,
+  'emergency_share_off': Symbols.emergency_share_off,
+  'emergency_share_off_rounded': Symbols.emergency_share_off_rounded,
+  'emergency_share_off_sharp': Symbols.emergency_share_off_sharp,
   'emoji_emotions': Symbols.emoji_emotions,
   'emoji_emotions_rounded': Symbols.emoji_emotions_rounded,
   'emoji_emotions_sharp': Symbols.emoji_emotions_sharp,
@@ -4488,6 +4491,9 @@ Map<String, IconData> materialSymbolsMap = {
   'info': Symbols.info,
   'info_rounded': Symbols.info_rounded,
   'info_sharp': Symbols.info_sharp,
+  'info_i': Symbols.info_i,
+  'info_i_rounded': Symbols.info_i_rounded,
+  'info_i_sharp': Symbols.info_i_sharp,
   'infrared': Symbols.infrared,
   'infrared_rounded': Symbols.infrared_rounded,
   'infrared_sharp': Symbols.infrared_sharp,
@@ -6475,6 +6481,9 @@ Map<String, IconData> materialSymbolsMap = {
   'person_play': Symbols.person_play,
   'person_play_rounded': Symbols.person_play_rounded,
   'person_play_sharp': Symbols.person_play_sharp,
+  'person_raised_hand': Symbols.person_raised_hand,
+  'person_raised_hand_rounded': Symbols.person_raised_hand_rounded,
+  'person_raised_hand_sharp': Symbols.person_raised_hand_sharp,
   'person_remove': Symbols.person_remove,
   'person_remove_rounded': Symbols.person_remove_rounded,
   'person_remove_sharp': Symbols.person_remove_sharp,
@@ -7359,6 +7368,9 @@ Map<String, IconData> materialSymbolsMap = {
   'safety_check': Symbols.safety_check,
   'safety_check_rounded': Symbols.safety_check_rounded,
   'safety_check_sharp': Symbols.safety_check_sharp,
+  'safety_check_off': Symbols.safety_check_off,
+  'safety_check_off_rounded': Symbols.safety_check_off_rounded,
+  'safety_check_off_sharp': Symbols.safety_check_off_sharp,
   'safety_divider': Symbols.safety_divider,
   'safety_divider_rounded': Symbols.safety_divider_rounded,
   'safety_divider_sharp': Symbols.safety_divider_sharp,

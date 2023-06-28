@@ -34,6 +34,7 @@ Steps to update pakcage when new fonts are released.
 1) dart run update_package.dart -d -u
 2) figure out source font version number with `ttx -s oneofthefonts.ttf`
 3) Update `CHANGELOG.md` with version number of new fonts, update `pubspec.yaml` with new fonts version number
+3.5) Update root `README.md` with version number of new fonts and date of their release on google material design github
 4) linux run the rawFontsUnfixed/fixFontMetricsAndUpdateLibFonts.sh to patch fonts/install into lib/fonts
 5) update source font version number in example\main.dart
 6) buildWeb.bat example

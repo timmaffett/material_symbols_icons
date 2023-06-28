@@ -2,7 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/material_symbols_icons.svg)](https://pub.dev/packages/material_symbols_icons)
 
-### Using Official Material Symbols Icons variable fonts version 2.662 released 06/15/2023 from [material font repo](https://github.com/google/material-design-icons).
+### Using Official Material Symbols Icons variable fonts version 2.663 released 06/22/2023 from [material font repo](https://github.com/google/material-design-icons).
 
 ----------------------
 

@@ -1042,6 +1042,7 @@ e879  # exit_to_app
 e94f  # expand
 e946  # expand_all
 e7cd  # expand_circle_down
+f591  # expand_circle_right
 f5d2  # expand_circle_up
 f830  # expand_content
 e5ce  # expand_less
@@ -1178,6 +1179,7 @@ e483  # fluid
 f80d  # fluid_balance
 f80c  # fluid_med
 f00d  # fluorescent
+f1dd  # flutter
 e00b  # flutter_dash
 f00e  # fmd_bad
 f1db  # fmd_good
@@ -2564,6 +2566,7 @@ f702  # shelf_position
 f86e  # shelves
 e9e0  # shield
 f686  # shield_lock
+f592  # shield_locked
 eaa9  # shield_moon
 f650  # shield_person
 e78f  # shield_with_heart

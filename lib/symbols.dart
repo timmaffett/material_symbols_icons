@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-06-28 09:23:32.696264 by the dart file
+// This file was generated 2023-07-18 18:52:31.594869 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -6371,6 +6371,12 @@ import 'material_symbols_icons.dart';
 ///
 /// <span class="material-symbols-sharp">expand_circle_down</span> Symbols.expand_circle_down_sharp
 ///
+/// <span class="material-symbols-outlined">expand_circle_right</span> Symbols.expand_circle_right
+///
+/// <span class="material-symbols-rounded">expand_circle_right</span> Symbols.expand_circle_right_rounded
+///
+/// <span class="material-symbols-sharp">expand_circle_right</span> Symbols.expand_circle_right_sharp
+///
 /// <span class="material-symbols-outlined">expand_circle_up</span> Symbols.expand_circle_up
 ///
 /// <span class="material-symbols-rounded">expand_circle_up</span> Symbols.expand_circle_up_rounded
@@ -7186,6 +7192,12 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">fluorescent</span> Symbols.fluorescent_rounded
 ///
 /// <span class="material-symbols-sharp">fluorescent</span> Symbols.fluorescent_sharp
+///
+/// <span class="material-symbols-outlined">flutter</span> Symbols.flutter
+///
+/// <span class="material-symbols-rounded">flutter</span> Symbols.flutter_rounded
+///
+/// <span class="material-symbols-sharp">flutter</span> Symbols.flutter_sharp
 ///
 /// <span class="material-symbols-outlined">flutter_dash</span> Symbols.flutter_dash
 ///
@@ -15502,6 +15514,12 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">shield_lock</span> Symbols.shield_lock_rounded
 ///
 /// <span class="material-symbols-sharp">shield_lock</span> Symbols.shield_lock_sharp
+///
+/// <span class="material-symbols-outlined">shield_locked</span> Symbols.shield_locked
+///
+/// <span class="material-symbols-rounded">shield_locked</span> Symbols.shield_locked_rounded
+///
+/// <span class="material-symbols-sharp">shield_locked</span> Symbols.shield_locked_sharp
 ///
 /// <span class="material-symbols-outlined">shield_moon</span> Symbols.shield_moon
 ///
@@ -32158,6 +32176,18 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData expand_circle_down_sharp =
       IconData(0xe7cd, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">expand_circle_right</span> material symbol named "expand_circle_right".
+  static const IconData expand_circle_right =
+      IconData(0xf591, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">expand_circle_right</span> material symbol named "expand_circle_right_rounded".
+  static const IconData expand_circle_right_rounded =
+      IconData(0xf591, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">expand_circle_right</span> material symbol named "expand_circle_right_sharp".
+  static const IconData expand_circle_right_sharp =
+      IconData(0xf591, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">expand_circle_up</span> material symbol named "expand_circle_up".
   static const IconData expand_circle_up =
       IconData(0xf5d2, fontFamily: _family_outlined, fontPackage: _package);
@@ -33789,6 +33819,18 @@ class Symbols extends MaterialSymbolsBase {
   /// @nodoc <span class="material-symbols-sharp">fluorescent</span> material symbol named "fluorescent_sharp".
   static const IconData fluorescent_sharp =
       IconData(0xf00d, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">flutter</span> material symbol named "flutter".
+  static const IconData flutter =
+      IconData(0xf1dd, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">flutter</span> material symbol named "flutter_rounded".
+  static const IconData flutter_rounded =
+      IconData(0xf1dd, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">flutter</span> material symbol named "flutter_sharp".
+  static const IconData flutter_sharp =
+      IconData(0xf1dd, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">flutter_dash</span> material symbol named "flutter_dash".
   static const IconData flutter_dash =
@@ -50421,6 +50463,18 @@ class Symbols extends MaterialSymbolsBase {
   /// @nodoc <span class="material-symbols-sharp">shield_lock</span> material symbol named "shield_lock_sharp".
   static const IconData shield_lock_sharp =
       IconData(0xf686, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">shield_locked</span> material symbol named "shield_locked".
+  static const IconData shield_locked =
+      IconData(0xf592, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">shield_locked</span> material symbol named "shield_locked_rounded".
+  static const IconData shield_locked_rounded =
+      IconData(0xf592, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">shield_locked</span> material symbol named "shield_locked_sharp".
+  static const IconData shield_locked_sharp =
+      IconData(0xf592, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">shield_moon</span> material symbol named "shield_moon".
   static const IconData shield_moon =

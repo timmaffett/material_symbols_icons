@@ -24,7 +24,7 @@ Map<String, IconData> materialSymbolsOutlinedMap = {};
 Map<String, IconData> materialSymbolsRoundedMap = {};
 Map<String, IconData> materialSymbolsSharpMap = {};
 
-const String materialSymbolsIconsSourceFontVersionNumber = '2.663';  // must update for each new font update
+const String materialSymbolsIconsSourceFontVersionNumber = '2.667';  // must update for each new font update
 int totalMaterialSymbolsIcons=0;
 
 void makeSymbolsByStyleMaps() {
@@ -155,7 +155,7 @@ class _MyHomePageState extends State<MyHomePage> {
     var uri = Uri.parse(window.location.href);
 
     uri = uri.replace(queryParameters: {
-      'query': _iconSearchText,
+      'iconSearchText': _iconSearchText,
       'iconSize': _iconFontSize.toString(),
       'fontType': _fontListType.toString().replaceAll('FontListType.', ''),
       'fill': _fillVariation.toString(),
@@ -171,7 +171,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void grabInitialStateFromUrl() {
     // Get the query parameters from the URL (if we are a web app)
     final queryParms = Uri.base.queryParameters;
-    _iconSearchText = queryParms['query'] ?? '';
+    _iconSearchText = queryParms['iconSearchText'] ?? '';
     if (queryParms['iconSize'] != null) {
       final iconSizeParse = double.tryParse(queryParms['iconSize']!);
       if (iconSizeParse != null) {

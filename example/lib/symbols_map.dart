@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-06-28 09:23:32.731827 by the dart file
+// This file was generated 2023-07-18 18:52:31.641942 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -3179,6 +3179,9 @@ Map<String, IconData> materialSymbolsMap = {
   'expand_circle_down': Symbols.expand_circle_down,
   'expand_circle_down_rounded': Symbols.expand_circle_down_rounded,
   'expand_circle_down_sharp': Symbols.expand_circle_down_sharp,
+  'expand_circle_right': Symbols.expand_circle_right,
+  'expand_circle_right_rounded': Symbols.expand_circle_right_rounded,
+  'expand_circle_right_sharp': Symbols.expand_circle_right_sharp,
   'expand_circle_up': Symbols.expand_circle_up,
   'expand_circle_up_rounded': Symbols.expand_circle_up_rounded,
   'expand_circle_up_sharp': Symbols.expand_circle_up_sharp,
@@ -3587,6 +3590,9 @@ Map<String, IconData> materialSymbolsMap = {
   'fluorescent': Symbols.fluorescent,
   'fluorescent_rounded': Symbols.fluorescent_rounded,
   'fluorescent_sharp': Symbols.fluorescent_sharp,
+  'flutter': Symbols.flutter,
+  'flutter_rounded': Symbols.flutter_rounded,
+  'flutter_sharp': Symbols.flutter_sharp,
   'flutter_dash': Symbols.flutter_dash,
   'flutter_dash_rounded': Symbols.flutter_dash_rounded,
   'flutter_dash_sharp': Symbols.flutter_dash_sharp,
@@ -7780,6 +7786,9 @@ Map<String, IconData> materialSymbolsMap = {
   'shield_lock': Symbols.shield_lock,
   'shield_lock_rounded': Symbols.shield_lock_rounded,
   'shield_lock_sharp': Symbols.shield_lock_sharp,
+  'shield_locked': Symbols.shield_locked,
+  'shield_locked_rounded': Symbols.shield_locked_rounded,
+  'shield_locked_sharp': Symbols.shield_locked_sharp,
   'shield_moon': Symbols.shield_moon,
   'shield_moon_rounded': Symbols.shield_moon_rounded,
   'shield_moon_sharp': Symbols.shield_moon_sharp,

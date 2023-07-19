@@ -1,5 +1,15 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2667.0
+
+* Update to version 2.667 of the material symbols icons variable fonts released 07/13/2023
+* Added f591  # expand_circle_right, f592  # shield_locked
+
+## 4.2665.0
+
+* Update to version 2.665 of the material symbols icons variable fonts released 6/29/2023
+* Added f1dd  #flutter
+
 ## 4.2663.0
 
 * Update to version 2.663 of the material symbols icons variable fonts released 6/22/2023

@@ -1,5 +1,17 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2668.0
+
+* Update to version 2.668 of the material symbols icons variable fonts released 07/20/2023
+* Added f587  # article_shortcut,f58c  # audio_description, f588  # candle,f585  # destruction,
+  f580  # ev_shadow_add, f57f  # ev_shadow_minus, f586  # folder_data, f58b  # full_hd, f58f  # network_wifi_1_bar_locked,
+  f58e  # network_wifi_2_bar_locked, f58d  # network_wifi_3_bar_locked, f584  # shadow_add, f583  # shadow_minus,
+  f57e  # shutter_speed_add, f57d  # shutter_speed_minus, f57c  # texture_add, f57b  # texture_minus, f582  # thermometer_add
+  f581  # thermometer_minus, f58a  # voice_selection
+* Changed code points for battery_charging_30, battery_charging_50, battery_charging_60, battery_charging_80, battery_charging_90
+  battery_charging_full, forward,  google_plus_reshare, google_wifi, nest_gale_wifi, shortcut, thumb_down, thumb_down_alt, thumb_down_filled,
+  thumb_down_off, thumb_down_off_alt, thumb_up, thumb_up_alt, thumb_up_filled, thumb_up_off, thumb_up_off_alt
+
 ## 4.2667.0
 
 * Update to version 2.667 of the material symbols icons variable fonts released 07/13/2023

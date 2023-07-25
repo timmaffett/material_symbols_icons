@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-07-18 18:52:31.594869 by the dart file
+// This file was generated 2023-07-25 11:00:03.905193 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -1613,6 +1613,12 @@ import 'material_symbols_icons.dart';
 ///
 /// <span class="material-symbols-sharp">article</span> Symbols.article_sharp
 ///
+/// <span class="material-symbols-outlined">article_shortcut</span> Symbols.article_shortcut
+///
+/// <span class="material-symbols-rounded">article_shortcut</span> Symbols.article_shortcut_rounded
+///
+/// <span class="material-symbols-sharp">article_shortcut</span> Symbols.article_shortcut_sharp
+///
 /// <span class="material-symbols-outlined">aspect_ratio</span> Symbols.aspect_ratio
 ///
 /// <span class="material-symbols-rounded">aspect_ratio</span> Symbols.aspect_ratio_rounded
@@ -1774,6 +1780,12 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">attribution</span> Symbols.attribution_rounded
 ///
 /// <span class="material-symbols-sharp">attribution</span> Symbols.attribution_sharp
+///
+/// <span class="material-symbols-outlined">audio_description</span> Symbols.audio_description
+///
+/// <span class="material-symbols-rounded">audio_description</span> Symbols.audio_description_rounded
+///
+/// <span class="material-symbols-sharp">audio_description</span> Symbols.audio_description_sharp
 ///
 /// <span class="material-symbols-outlined">audio_file</span> Symbols.audio_file
 ///
@@ -3316,6 +3328,12 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">cancel_schedule_send</span> Symbols.cancel_schedule_send_rounded
 ///
 /// <span class="material-symbols-sharp">cancel_schedule_send</span> Symbols.cancel_schedule_send_sharp
+///
+/// <span class="material-symbols-outlined">candle</span> Symbols.candle
+///
+/// <span class="material-symbols-rounded">candle</span> Symbols.candle_rounded
+///
+/// <span class="material-symbols-sharp">candle</span> Symbols.candle_sharp
 ///
 /// <span class="material-symbols-outlined">candlestick_chart</span> Symbols.candlestick_chart
 ///
@@ -4979,6 +4997,12 @@ import 'material_symbols_icons.dart';
 ///
 /// <span class="material-symbols-sharp">desktop_windows</span> Symbols.desktop_windows_sharp
 ///
+/// <span class="material-symbols-outlined">destruction</span> Symbols.destruction
+///
+/// <span class="material-symbols-rounded">destruction</span> Symbols.destruction_rounded
+///
+/// <span class="material-symbols-sharp">destruction</span> Symbols.destruction_sharp
+///
 /// <span class="material-symbols-outlined">details</span> Symbols.details
 ///
 /// <span class="material-symbols-rounded">details</span> Symbols.details_rounded
@@ -6281,6 +6305,18 @@ import 'material_symbols_icons.dart';
 ///
 /// <span class="material-symbols-sharp">ev_shadow</span> Symbols.ev_shadow_sharp
 ///
+/// <span class="material-symbols-outlined">ev_shadow_add</span> Symbols.ev_shadow_add
+///
+/// <span class="material-symbols-rounded">ev_shadow_add</span> Symbols.ev_shadow_add_rounded
+///
+/// <span class="material-symbols-sharp">ev_shadow_add</span> Symbols.ev_shadow_add_sharp
+///
+/// <span class="material-symbols-outlined">ev_shadow_minus</span> Symbols.ev_shadow_minus
+///
+/// <span class="material-symbols-rounded">ev_shadow_minus</span> Symbols.ev_shadow_minus_rounded
+///
+/// <span class="material-symbols-sharp">ev_shadow_minus</span> Symbols.ev_shadow_minus_sharp
+///
 /// <span class="material-symbols-outlined">ev_station</span> Symbols.ev_station
 ///
 /// <span class="material-symbols-rounded">ev_station</span> Symbols.ev_station_rounded
@@ -7241,6 +7277,12 @@ import 'material_symbols_icons.dart';
 ///
 /// <span class="material-symbols-sharp">folder_copy</span> Symbols.folder_copy_sharp
 ///
+/// <span class="material-symbols-outlined">folder_data</span> Symbols.folder_data
+///
+/// <span class="material-symbols-rounded">folder_data</span> Symbols.folder_data_rounded
+///
+/// <span class="material-symbols-sharp">folder_data</span> Symbols.folder_data_sharp
+///
 /// <span class="material-symbols-outlined">folder_delete</span> Symbols.folder_delete
 ///
 /// <span class="material-symbols-rounded">folder_delete</span> Symbols.folder_delete_rounded
@@ -7750,6 +7792,12 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">full_coverage</span> Symbols.full_coverage_rounded
 ///
 /// <span class="material-symbols-sharp">full_coverage</span> Symbols.full_coverage_sharp
+///
+/// <span class="material-symbols-outlined">full_hd</span> Symbols.full_hd
+///
+/// <span class="material-symbols-rounded">full_hd</span> Symbols.full_hd_rounded
+///
+/// <span class="material-symbols-sharp">full_hd</span> Symbols.full_hd_sharp
 ///
 /// <span class="material-symbols-outlined">full_stacked_bar_chart</span> Symbols.full_stacked_bar_chart
 ///
@@ -11837,17 +11885,35 @@ import 'material_symbols_icons.dart';
 ///
 /// <span class="material-symbols-sharp">network_wifi_1_bar</span> Symbols.network_wifi_1_bar_sharp
 ///
+/// <span class="material-symbols-outlined">network_wifi_1_bar_locked</span> Symbols.network_wifi_1_bar_locked
+///
+/// <span class="material-symbols-rounded">network_wifi_1_bar_locked</span> Symbols.network_wifi_1_bar_locked_rounded
+///
+/// <span class="material-symbols-sharp">network_wifi_1_bar_locked</span> Symbols.network_wifi_1_bar_locked_sharp
+///
 /// <span class="material-symbols-outlined">network_wifi_2_bar</span> Symbols.network_wifi_2_bar
 ///
 /// <span class="material-symbols-rounded">network_wifi_2_bar</span> Symbols.network_wifi_2_bar_rounded
 ///
 /// <span class="material-symbols-sharp">network_wifi_2_bar</span> Symbols.network_wifi_2_bar_sharp
 ///
+/// <span class="material-symbols-outlined">network_wifi_2_bar_locked</span> Symbols.network_wifi_2_bar_locked
+///
+/// <span class="material-symbols-rounded">network_wifi_2_bar_locked</span> Symbols.network_wifi_2_bar_locked_rounded
+///
+/// <span class="material-symbols-sharp">network_wifi_2_bar_locked</span> Symbols.network_wifi_2_bar_locked_sharp
+///
 /// <span class="material-symbols-outlined">network_wifi_3_bar</span> Symbols.network_wifi_3_bar
 ///
 /// <span class="material-symbols-rounded">network_wifi_3_bar</span> Symbols.network_wifi_3_bar_rounded
 ///
 /// <span class="material-symbols-sharp">network_wifi_3_bar</span> Symbols.network_wifi_3_bar_sharp
+///
+/// <span class="material-symbols-outlined">network_wifi_3_bar_locked</span> Symbols.network_wifi_3_bar_locked
+///
+/// <span class="material-symbols-rounded">network_wifi_3_bar_locked</span> Symbols.network_wifi_3_bar_locked_rounded
+///
+/// <span class="material-symbols-sharp">network_wifi_3_bar_locked</span> Symbols.network_wifi_3_bar_locked_sharp
 ///
 /// <span class="material-symbols-outlined">neurology</span> Symbols.neurology
 ///
@@ -15437,6 +15503,18 @@ import 'material_symbols_icons.dart';
 ///
 /// <span class="material-symbols-sharp">shadow</span> Symbols.shadow_sharp
 ///
+/// <span class="material-symbols-outlined">shadow_add</span> Symbols.shadow_add
+///
+/// <span class="material-symbols-rounded">shadow_add</span> Symbols.shadow_add_rounded
+///
+/// <span class="material-symbols-sharp">shadow_add</span> Symbols.shadow_add_sharp
+///
+/// <span class="material-symbols-outlined">shadow_minus</span> Symbols.shadow_minus
+///
+/// <span class="material-symbols-rounded">shadow_minus</span> Symbols.shadow_minus_rounded
+///
+/// <span class="material-symbols-sharp">shadow_minus</span> Symbols.shadow_minus_sharp
+///
 /// <span class="material-symbols-outlined">shape_line</span> Symbols.shape_line
 ///
 /// <span class="material-symbols-rounded">shape_line</span> Symbols.shape_line_rounded
@@ -15646,6 +15724,18 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">shutter_speed</span> Symbols.shutter_speed_rounded
 ///
 /// <span class="material-symbols-sharp">shutter_speed</span> Symbols.shutter_speed_sharp
+///
+/// <span class="material-symbols-outlined">shutter_speed_add</span> Symbols.shutter_speed_add
+///
+/// <span class="material-symbols-rounded">shutter_speed_add</span> Symbols.shutter_speed_add_rounded
+///
+/// <span class="material-symbols-sharp">shutter_speed_add</span> Symbols.shutter_speed_add_sharp
+///
+/// <span class="material-symbols-outlined">shutter_speed_minus</span> Symbols.shutter_speed_minus
+///
+/// <span class="material-symbols-rounded">shutter_speed_minus</span> Symbols.shutter_speed_minus_rounded
+///
+/// <span class="material-symbols-sharp">shutter_speed_minus</span> Symbols.shutter_speed_minus_sharp
 ///
 /// <span class="material-symbols-outlined">sick</span> Symbols.sick
 ///
@@ -17615,6 +17705,18 @@ import 'material_symbols_icons.dart';
 ///
 /// <span class="material-symbols-sharp">texture</span> Symbols.texture_sharp
 ///
+/// <span class="material-symbols-outlined">texture_add</span> Symbols.texture_add
+///
+/// <span class="material-symbols-rounded">texture_add</span> Symbols.texture_add_rounded
+///
+/// <span class="material-symbols-sharp">texture_add</span> Symbols.texture_add_sharp
+///
+/// <span class="material-symbols-outlined">texture_minus</span> Symbols.texture_minus
+///
+/// <span class="material-symbols-rounded">texture_minus</span> Symbols.texture_minus_rounded
+///
+/// <span class="material-symbols-sharp">texture_minus</span> Symbols.texture_minus_sharp
+///
 /// <span class="material-symbols-outlined">theater_comedy</span> Symbols.theater_comedy
 ///
 /// <span class="material-symbols-rounded">theater_comedy</span> Symbols.theater_comedy_rounded
@@ -17633,6 +17735,12 @@ import 'material_symbols_icons.dart';
 ///
 /// <span class="material-symbols-sharp">thermometer</span> Symbols.thermometer_sharp
 ///
+/// <span class="material-symbols-outlined">thermometer_add</span> Symbols.thermometer_add
+///
+/// <span class="material-symbols-rounded">thermometer_add</span> Symbols.thermometer_add_rounded
+///
+/// <span class="material-symbols-sharp">thermometer_add</span> Symbols.thermometer_add_sharp
+///
 /// <span class="material-symbols-outlined">thermometer_gain</span> Symbols.thermometer_gain
 ///
 /// <span class="material-symbols-rounded">thermometer_gain</span> Symbols.thermometer_gain_rounded
@@ -17644,6 +17752,12 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">thermometer_loss</span> Symbols.thermometer_loss_rounded
 ///
 /// <span class="material-symbols-sharp">thermometer_loss</span> Symbols.thermometer_loss_sharp
+///
+/// <span class="material-symbols-outlined">thermometer_minus</span> Symbols.thermometer_minus
+///
+/// <span class="material-symbols-rounded">thermometer_minus</span> Symbols.thermometer_minus_rounded
+///
+/// <span class="material-symbols-sharp">thermometer_minus</span> Symbols.thermometer_minus_sharp
 ///
 /// <span class="material-symbols-outlined">thermostat</span> Symbols.thermostat
 ///
@@ -18838,6 +18952,12 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">voice_over_off</span> Symbols.voice_over_off_rounded
 ///
 /// <span class="material-symbols-sharp">voice_over_off</span> Symbols.voice_over_off_sharp
+///
+/// <span class="material-symbols-outlined">voice_selection</span> Symbols.voice_selection
+///
+/// <span class="material-symbols-rounded">voice_selection</span> Symbols.voice_selection_rounded
+///
+/// <span class="material-symbols-sharp">voice_selection</span> Symbols.voice_selection_sharp
 ///
 /// <span class="material-symbols-outlined">voicemail</span> Symbols.voicemail
 ///
@@ -22660,6 +22780,18 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData article_sharp =
       IconData(0xef42, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">article_shortcut</span> material symbol named "article_shortcut".
+  static const IconData article_shortcut =
+      IconData(0xf587, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">article_shortcut</span> material symbol named "article_shortcut_rounded".
+  static const IconData article_shortcut_rounded =
+      IconData(0xf587, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">article_shortcut</span> material symbol named "article_shortcut_sharp".
+  static const IconData article_shortcut_sharp =
+      IconData(0xf587, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">aspect_ratio</span> material symbol named "aspect_ratio".
   static const IconData aspect_ratio =
       IconData(0xe85b, fontFamily: _family_outlined, fontPackage: _package);
@@ -22983,6 +23115,18 @@ class Symbols extends MaterialSymbolsBase {
   /// @nodoc <span class="material-symbols-sharp">attribution</span> material symbol named "attribution_sharp".
   static const IconData attribution_sharp =
       IconData(0xefdb, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">audio_description</span> material symbol named "audio_description".
+  static const IconData audio_description =
+      IconData(0xf58c, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">audio_description</span> material symbol named "audio_description_rounded".
+  static const IconData audio_description_rounded =
+      IconData(0xf58c, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">audio_description</span> material symbol named "audio_description_sharp".
+  static const IconData audio_description_sharp =
+      IconData(0xf58c, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">audio_file</span> material symbol named "audio_file".
   static const IconData audio_file =
@@ -23946,75 +24090,75 @@ class Symbols extends MaterialSymbolsBase {
 
   /// @nodoc <span class="material-symbols-outlined">battery_charging_30</span> material symbol named "battery_charging_30".
   static const IconData battery_charging_30 =
-      IconData(0xf0a2, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf0a3, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">battery_charging_30</span> material symbol named "battery_charging_30_rounded".
   static const IconData battery_charging_30_rounded =
-      IconData(0xf0a2, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf0a3, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">battery_charging_30</span> material symbol named "battery_charging_30_sharp".
   static const IconData battery_charging_30_sharp =
-      IconData(0xf0a2, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf0a3, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">battery_charging_50</span> material symbol named "battery_charging_50".
   static const IconData battery_charging_50 =
-      IconData(0xf0a2, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf0a4, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">battery_charging_50</span> material symbol named "battery_charging_50_rounded".
   static const IconData battery_charging_50_rounded =
-      IconData(0xf0a2, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf0a4, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">battery_charging_50</span> material symbol named "battery_charging_50_sharp".
   static const IconData battery_charging_50_sharp =
-      IconData(0xf0a2, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf0a4, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">battery_charging_60</span> material symbol named "battery_charging_60".
   static const IconData battery_charging_60 =
-      IconData(0xf0a2, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf0a5, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">battery_charging_60</span> material symbol named "battery_charging_60_rounded".
   static const IconData battery_charging_60_rounded =
-      IconData(0xf0a2, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf0a5, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">battery_charging_60</span> material symbol named "battery_charging_60_sharp".
   static const IconData battery_charging_60_sharp =
-      IconData(0xf0a2, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf0a5, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">battery_charging_80</span> material symbol named "battery_charging_80".
   static const IconData battery_charging_80 =
-      IconData(0xf0a2, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf0a6, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">battery_charging_80</span> material symbol named "battery_charging_80_rounded".
   static const IconData battery_charging_80_rounded =
-      IconData(0xf0a2, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf0a6, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">battery_charging_80</span> material symbol named "battery_charging_80_sharp".
   static const IconData battery_charging_80_sharp =
-      IconData(0xf0a2, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf0a6, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">battery_charging_90</span> material symbol named "battery_charging_90".
   static const IconData battery_charging_90 =
-      IconData(0xf0a2, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf0a7, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">battery_charging_90</span> material symbol named "battery_charging_90_rounded".
   static const IconData battery_charging_90_rounded =
-      IconData(0xf0a2, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf0a7, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">battery_charging_90</span> material symbol named "battery_charging_90_sharp".
   static const IconData battery_charging_90_sharp =
-      IconData(0xf0a2, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf0a7, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">battery_charging_full</span> material symbol named "battery_charging_full".
   static const IconData battery_charging_full =
-      IconData(0xf0a2, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xe1a3, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">battery_charging_full</span> material symbol named "battery_charging_full_rounded".
   static const IconData battery_charging_full_rounded =
-      IconData(0xf0a2, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xe1a3, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">battery_charging_full</span> material symbol named "battery_charging_full_sharp".
   static const IconData battery_charging_full_sharp =
-      IconData(0xf0a2, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xe1a3, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">battery_error</span> material symbol named "battery_error".
   static const IconData battery_error =
@@ -26067,6 +26211,18 @@ class Symbols extends MaterialSymbolsBase {
   /// @nodoc <span class="material-symbols-sharp">cancel_schedule_send</span> material symbol named "cancel_schedule_send_sharp".
   static const IconData cancel_schedule_send_sharp =
       IconData(0xea39, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">candle</span> material symbol named "candle".
+  static const IconData candle =
+      IconData(0xf588, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">candle</span> material symbol named "candle_rounded".
+  static const IconData candle_rounded =
+      IconData(0xf588, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">candle</span> material symbol named "candle_sharp".
+  static const IconData candle_sharp =
+      IconData(0xf588, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">candlestick_chart</span> material symbol named "candlestick_chart".
   static const IconData candlestick_chart =
@@ -29392,6 +29548,18 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData desktop_windows_sharp =
       IconData(0xe30c, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">destruction</span> material symbol named "destruction".
+  static const IconData destruction =
+      IconData(0xf585, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">destruction</span> material symbol named "destruction_rounded".
+  static const IconData destruction_rounded =
+      IconData(0xf585, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">destruction</span> material symbol named "destruction_sharp".
+  static const IconData destruction_sharp =
+      IconData(0xf585, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">details</span> material symbol named "details".
   static const IconData details =
       IconData(0xe3c8, fontFamily: _family_outlined, fontPackage: _package);
@@ -31996,6 +32164,30 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData ev_shadow_sharp =
       IconData(0xef8f, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">ev_shadow_add</span> material symbol named "ev_shadow_add".
+  static const IconData ev_shadow_add =
+      IconData(0xf580, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">ev_shadow_add</span> material symbol named "ev_shadow_add_rounded".
+  static const IconData ev_shadow_add_rounded =
+      IconData(0xf580, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">ev_shadow_add</span> material symbol named "ev_shadow_add_sharp".
+  static const IconData ev_shadow_add_sharp =
+      IconData(0xf580, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">ev_shadow_minus</span> material symbol named "ev_shadow_minus".
+  static const IconData ev_shadow_minus =
+      IconData(0xf57f, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">ev_shadow_minus</span> material symbol named "ev_shadow_minus_rounded".
+  static const IconData ev_shadow_minus_rounded =
+      IconData(0xf57f, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">ev_shadow_minus</span> material symbol named "ev_shadow_minus_sharp".
+  static const IconData ev_shadow_minus_sharp =
+      IconData(0xf57f, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">ev_station</span> material symbol named "ev_station".
   static const IconData ev_station =
       IconData(0xe56d, fontFamily: _family_outlined, fontPackage: _package);
@@ -33916,6 +34108,18 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData folder_copy_sharp =
       IconData(0xebbd, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">folder_data</span> material symbol named "folder_data".
+  static const IconData folder_data =
+      IconData(0xf586, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">folder_data</span> material symbol named "folder_data_rounded".
+  static const IconData folder_data_rounded =
+      IconData(0xf586, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">folder_data</span> material symbol named "folder_data_sharp".
+  static const IconData folder_data_sharp =
+      IconData(0xf586, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">folder_delete</span> material symbol named "folder_delete".
   static const IconData folder_delete =
       IconData(0xeb34, fontFamily: _family_outlined, fontPackage: _package);
@@ -34722,15 +34926,15 @@ class Symbols extends MaterialSymbolsBase {
 
   /// @nodoc <span class="material-symbols-outlined">forward</span> material symbol named "forward".
   static const IconData forward =
-      IconData(0xf060, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf57a, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">forward</span> material symbol named "forward_rounded".
   static const IconData forward_rounded =
-      IconData(0xf060, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf57a, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">forward</span> material symbol named "forward_sharp".
   static const IconData forward_sharp =
-      IconData(0xf060, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf57a, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">forward_10</span> material symbol named "forward_10".
   static const IconData forward_10 =
@@ -34935,6 +35139,18 @@ class Symbols extends MaterialSymbolsBase {
   /// @nodoc <span class="material-symbols-sharp">full_coverage</span> material symbol named "full_coverage_sharp".
   static const IconData full_coverage_sharp =
       IconData(0xeb12, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">full_hd</span> material symbol named "full_hd".
+  static const IconData full_hd =
+      IconData(0xf58b, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">full_hd</span> material symbol named "full_hd_rounded".
+  static const IconData full_hd_rounded =
+      IconData(0xf58b, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">full_hd</span> material symbol named "full_hd_sharp".
+  static const IconData full_hd_sharp =
+      IconData(0xf58b, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">full_stacked_bar_chart</span> material symbol named "full_stacked_bar_chart".
   static const IconData full_stacked_bar_chart =
@@ -35358,15 +35574,15 @@ class Symbols extends MaterialSymbolsBase {
 
   /// @nodoc <span class="material-symbols-outlined">google_plus_reshare</span> material symbol named "google_plus_reshare".
   static const IconData google_plus_reshare =
-      IconData(0xf060, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf57a, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">google_plus_reshare</span> material symbol named "google_plus_reshare_rounded".
   static const IconData google_plus_reshare_rounded =
-      IconData(0xf060, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf57a, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">google_plus_reshare</span> material symbol named "google_plus_reshare_sharp".
   static const IconData google_plus_reshare_sharp =
-      IconData(0xf060, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf57a, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">google_tv_remote</span> material symbol named "google_tv_remote".
   static const IconData google_tv_remote =
@@ -35382,15 +35598,15 @@ class Symbols extends MaterialSymbolsBase {
 
   /// @nodoc <span class="material-symbols-outlined">google_wifi</span> material symbol named "google_wifi".
   static const IconData google_wifi =
-      IconData(0xe840, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf579, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">google_wifi</span> material symbol named "google_wifi_rounded".
   static const IconData google_wifi_rounded =
-      IconData(0xe840, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf579, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">google_wifi</span> material symbol named "google_wifi_sharp".
   static const IconData google_wifi_sharp =
-      IconData(0xe840, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf579, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">gpp_bad</span> material symbol named "gpp_bad".
   static const IconData gpp_bad =
@@ -42678,15 +42894,15 @@ class Symbols extends MaterialSymbolsBase {
 
   /// @nodoc <span class="material-symbols-outlined">nest_gale_wifi</span> material symbol named "nest_gale_wifi".
   static const IconData nest_gale_wifi =
-      IconData(0xe840, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf579, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">nest_gale_wifi</span> material symbol named "nest_gale_wifi_rounded".
   static const IconData nest_gale_wifi_rounded =
-      IconData(0xe840, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf579, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">nest_gale_wifi</span> material symbol named "nest_gale_wifi_sharp".
   static const IconData nest_gale_wifi_sharp =
-      IconData(0xe840, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf579, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">nest_heat_link_e</span> material symbol named "nest_heat_link_e".
   static const IconData nest_heat_link_e =
@@ -43108,6 +43324,18 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData network_wifi_1_bar_sharp =
       IconData(0xebe4, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">network_wifi_1_bar_locked</span> material symbol named "network_wifi_1_bar_locked".
+  static const IconData network_wifi_1_bar_locked =
+      IconData(0xf58f, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">network_wifi_1_bar_locked</span> material symbol named "network_wifi_1_bar_locked_rounded".
+  static const IconData network_wifi_1_bar_locked_rounded =
+      IconData(0xf58f, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">network_wifi_1_bar_locked</span> material symbol named "network_wifi_1_bar_locked_sharp".
+  static const IconData network_wifi_1_bar_locked_sharp =
+      IconData(0xf58f, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">network_wifi_2_bar</span> material symbol named "network_wifi_2_bar".
   static const IconData network_wifi_2_bar =
       IconData(0xebd6, fontFamily: _family_outlined, fontPackage: _package);
@@ -43120,6 +43348,18 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData network_wifi_2_bar_sharp =
       IconData(0xebd6, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">network_wifi_2_bar_locked</span> material symbol named "network_wifi_2_bar_locked".
+  static const IconData network_wifi_2_bar_locked =
+      IconData(0xf58e, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">network_wifi_2_bar_locked</span> material symbol named "network_wifi_2_bar_locked_rounded".
+  static const IconData network_wifi_2_bar_locked_rounded =
+      IconData(0xf58e, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">network_wifi_2_bar_locked</span> material symbol named "network_wifi_2_bar_locked_sharp".
+  static const IconData network_wifi_2_bar_locked_sharp =
+      IconData(0xf58e, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">network_wifi_3_bar</span> material symbol named "network_wifi_3_bar".
   static const IconData network_wifi_3_bar =
       IconData(0xebe1, fontFamily: _family_outlined, fontPackage: _package);
@@ -43131,6 +43371,18 @@ class Symbols extends MaterialSymbolsBase {
   /// @nodoc <span class="material-symbols-sharp">network_wifi_3_bar</span> material symbol named "network_wifi_3_bar_sharp".
   static const IconData network_wifi_3_bar_sharp =
       IconData(0xebe1, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">network_wifi_3_bar_locked</span> material symbol named "network_wifi_3_bar_locked".
+  static const IconData network_wifi_3_bar_locked =
+      IconData(0xf58d, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">network_wifi_3_bar_locked</span> material symbol named "network_wifi_3_bar_locked_rounded".
+  static const IconData network_wifi_3_bar_locked_rounded =
+      IconData(0xf58d, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">network_wifi_3_bar_locked</span> material symbol named "network_wifi_3_bar_locked_sharp".
+  static const IconData network_wifi_3_bar_locked_sharp =
+      IconData(0xf58d, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">neurology</span> material symbol named "neurology".
   static const IconData neurology =
@@ -50308,6 +50560,30 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData shadow_sharp =
       IconData(0xe9df, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">shadow_add</span> material symbol named "shadow_add".
+  static const IconData shadow_add =
+      IconData(0xf584, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">shadow_add</span> material symbol named "shadow_add_rounded".
+  static const IconData shadow_add_rounded =
+      IconData(0xf584, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">shadow_add</span> material symbol named "shadow_add_sharp".
+  static const IconData shadow_add_sharp =
+      IconData(0xf584, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">shadow_minus</span> material symbol named "shadow_minus".
+  static const IconData shadow_minus =
+      IconData(0xf583, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">shadow_minus</span> material symbol named "shadow_minus_rounded".
+  static const IconData shadow_minus_rounded =
+      IconData(0xf583, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">shadow_minus</span> material symbol named "shadow_minus_sharp".
+  static const IconData shadow_minus_sharp =
+      IconData(0xf583, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">shape_line</span> material symbol named "shape_line".
   static const IconData shape_line =
       IconData(0xf8d3, fontFamily: _family_outlined, fontPackage: _package);
@@ -50658,15 +50934,15 @@ class Symbols extends MaterialSymbolsBase {
 
   /// @nodoc <span class="material-symbols-outlined">shortcut</span> material symbol named "shortcut".
   static const IconData shortcut =
-      IconData(0xf060, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf57a, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">shortcut</span> material symbol named "shortcut_rounded".
   static const IconData shortcut_rounded =
-      IconData(0xf060, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf57a, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">shortcut</span> material symbol named "shortcut_sharp".
   static const IconData shortcut_sharp =
-      IconData(0xf060, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf57a, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">show_chart</span> material symbol named "show_chart".
   static const IconData show_chart =
@@ -50727,6 +51003,30 @@ class Symbols extends MaterialSymbolsBase {
   /// @nodoc <span class="material-symbols-sharp">shutter_speed</span> material symbol named "shutter_speed_sharp".
   static const IconData shutter_speed_sharp =
       IconData(0xe43d, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">shutter_speed_add</span> material symbol named "shutter_speed_add".
+  static const IconData shutter_speed_add =
+      IconData(0xf57e, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">shutter_speed_add</span> material symbol named "shutter_speed_add_rounded".
+  static const IconData shutter_speed_add_rounded =
+      IconData(0xf57e, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">shutter_speed_add</span> material symbol named "shutter_speed_add_sharp".
+  static const IconData shutter_speed_add_sharp =
+      IconData(0xf57e, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">shutter_speed_minus</span> material symbol named "shutter_speed_minus".
+  static const IconData shutter_speed_minus =
+      IconData(0xf57d, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">shutter_speed_minus</span> material symbol named "shutter_speed_minus_rounded".
+  static const IconData shutter_speed_minus_rounded =
+      IconData(0xf57d, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">shutter_speed_minus</span> material symbol named "shutter_speed_minus_sharp".
+  static const IconData shutter_speed_minus_sharp =
+      IconData(0xf57d, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">sick</span> material symbol named "sick".
   static const IconData sick =
@@ -54664,6 +54964,30 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData texture_sharp =
       IconData(0xe421, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">texture_add</span> material symbol named "texture_add".
+  static const IconData texture_add =
+      IconData(0xf57c, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">texture_add</span> material symbol named "texture_add_rounded".
+  static const IconData texture_add_rounded =
+      IconData(0xf57c, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">texture_add</span> material symbol named "texture_add_sharp".
+  static const IconData texture_add_sharp =
+      IconData(0xf57c, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">texture_minus</span> material symbol named "texture_minus".
+  static const IconData texture_minus =
+      IconData(0xf57b, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">texture_minus</span> material symbol named "texture_minus_rounded".
+  static const IconData texture_minus_rounded =
+      IconData(0xf57b, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">texture_minus</span> material symbol named "texture_minus_sharp".
+  static const IconData texture_minus_sharp =
+      IconData(0xf57b, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">theater_comedy</span> material symbol named "theater_comedy".
   static const IconData theater_comedy =
       IconData(0xea66, fontFamily: _family_outlined, fontPackage: _package);
@@ -54700,6 +55024,18 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData thermometer_sharp =
       IconData(0xe846, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">thermometer_add</span> material symbol named "thermometer_add".
+  static const IconData thermometer_add =
+      IconData(0xf582, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">thermometer_add</span> material symbol named "thermometer_add_rounded".
+  static const IconData thermometer_add_rounded =
+      IconData(0xf582, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">thermometer_add</span> material symbol named "thermometer_add_sharp".
+  static const IconData thermometer_add_sharp =
+      IconData(0xf582, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">thermometer_gain</span> material symbol named "thermometer_gain".
   static const IconData thermometer_gain =
       IconData(0xf6d8, fontFamily: _family_outlined, fontPackage: _package);
@@ -54723,6 +55059,18 @@ class Symbols extends MaterialSymbolsBase {
   /// @nodoc <span class="material-symbols-sharp">thermometer_loss</span> material symbol named "thermometer_loss_sharp".
   static const IconData thermometer_loss_sharp =
       IconData(0xf6d7, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">thermometer_minus</span> material symbol named "thermometer_minus".
+  static const IconData thermometer_minus =
+      IconData(0xf581, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">thermometer_minus</span> material symbol named "thermometer_minus_rounded".
+  static const IconData thermometer_minus_rounded =
+      IconData(0xf581, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">thermometer_minus</span> material symbol named "thermometer_minus_sharp".
+  static const IconData thermometer_minus_sharp =
+      IconData(0xf581, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">thermostat</span> material symbol named "thermostat".
   static const IconData thermostat =
@@ -54762,123 +55110,123 @@ class Symbols extends MaterialSymbolsBase {
 
   /// @nodoc <span class="material-symbols-outlined">thumb_down</span> material symbol named "thumb_down".
   static const IconData thumb_down =
-      IconData(0xe8db, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">thumb_down</span> material symbol named "thumb_down_rounded".
   static const IconData thumb_down_rounded =
-      IconData(0xe8db, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">thumb_down</span> material symbol named "thumb_down_sharp".
   static const IconData thumb_down_sharp =
-      IconData(0xe8db, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">thumb_down_alt</span> material symbol named "thumb_down_alt".
   static const IconData thumb_down_alt =
-      IconData(0xe8db, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">thumb_down_alt</span> material symbol named "thumb_down_alt_rounded".
   static const IconData thumb_down_alt_rounded =
-      IconData(0xe8db, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">thumb_down_alt</span> material symbol named "thumb_down_alt_sharp".
   static const IconData thumb_down_alt_sharp =
-      IconData(0xe8db, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">thumb_down_filled</span> material symbol named "thumb_down_filled".
   static const IconData thumb_down_filled =
-      IconData(0xe8db, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">thumb_down_filled</span> material symbol named "thumb_down_filled_rounded".
   static const IconData thumb_down_filled_rounded =
-      IconData(0xe8db, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">thumb_down_filled</span> material symbol named "thumb_down_filled_sharp".
   static const IconData thumb_down_filled_sharp =
-      IconData(0xe8db, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">thumb_down_off</span> material symbol named "thumb_down_off".
   static const IconData thumb_down_off =
-      IconData(0xe8db, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">thumb_down_off</span> material symbol named "thumb_down_off_rounded".
   static const IconData thumb_down_off_rounded =
-      IconData(0xe8db, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">thumb_down_off</span> material symbol named "thumb_down_off_sharp".
   static const IconData thumb_down_off_sharp =
-      IconData(0xe8db, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">thumb_down_off_alt</span> material symbol named "thumb_down_off_alt".
   static const IconData thumb_down_off_alt =
-      IconData(0xe8db, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">thumb_down_off_alt</span> material symbol named "thumb_down_off_alt_rounded".
   static const IconData thumb_down_off_alt_rounded =
-      IconData(0xe8db, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">thumb_down_off_alt</span> material symbol named "thumb_down_off_alt_sharp".
   static const IconData thumb_down_off_alt_sharp =
-      IconData(0xe8db, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf578, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">thumb_up</span> material symbol named "thumb_up".
   static const IconData thumb_up =
-      IconData(0xf079, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">thumb_up</span> material symbol named "thumb_up_rounded".
   static const IconData thumb_up_rounded =
-      IconData(0xf079, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">thumb_up</span> material symbol named "thumb_up_sharp".
   static const IconData thumb_up_sharp =
-      IconData(0xf079, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">thumb_up_alt</span> material symbol named "thumb_up_alt".
   static const IconData thumb_up_alt =
-      IconData(0xf079, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">thumb_up_alt</span> material symbol named "thumb_up_alt_rounded".
   static const IconData thumb_up_alt_rounded =
-      IconData(0xf079, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">thumb_up_alt</span> material symbol named "thumb_up_alt_sharp".
   static const IconData thumb_up_alt_sharp =
-      IconData(0xf079, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">thumb_up_filled</span> material symbol named "thumb_up_filled".
   static const IconData thumb_up_filled =
-      IconData(0xf079, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">thumb_up_filled</span> material symbol named "thumb_up_filled_rounded".
   static const IconData thumb_up_filled_rounded =
-      IconData(0xf079, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">thumb_up_filled</span> material symbol named "thumb_up_filled_sharp".
   static const IconData thumb_up_filled_sharp =
-      IconData(0xf079, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">thumb_up_off</span> material symbol named "thumb_up_off".
   static const IconData thumb_up_off =
-      IconData(0xf079, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">thumb_up_off</span> material symbol named "thumb_up_off_rounded".
   static const IconData thumb_up_off_rounded =
-      IconData(0xf079, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">thumb_up_off</span> material symbol named "thumb_up_off_sharp".
   static const IconData thumb_up_off_sharp =
-      IconData(0xf079, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">thumb_up_off_alt</span> material symbol named "thumb_up_off_alt".
   static const IconData thumb_up_off_alt =
-      IconData(0xf079, fontFamily: _family_outlined, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_outlined, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-rounded">thumb_up_off_alt</span> material symbol named "thumb_up_off_alt_rounded".
   static const IconData thumb_up_off_alt_rounded =
-      IconData(0xf079, fontFamily: _family_rounded, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_rounded, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-sharp">thumb_up_off_alt</span> material symbol named "thumb_up_off_alt_sharp".
   static const IconData thumb_up_off_alt_sharp =
-      IconData(0xf079, fontFamily: _family_sharp, fontPackage: _package);
+      IconData(0xf577, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">thumbnail_bar</span> material symbol named "thumbnail_bar".
   static const IconData thumbnail_bar =
@@ -57111,6 +57459,18 @@ class Symbols extends MaterialSymbolsBase {
   /// @nodoc <span class="material-symbols-sharp">voice_over_off</span> material symbol named "voice_over_off_sharp".
   static const IconData voice_over_off_sharp =
       IconData(0xe94a, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">voice_selection</span> material symbol named "voice_selection".
+  static const IconData voice_selection =
+      IconData(0xf58a, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">voice_selection</span> material symbol named "voice_selection_rounded".
+  static const IconData voice_selection_rounded =
+      IconData(0xf58a, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">voice_selection</span> material symbol named "voice_selection_sharp".
+  static const IconData voice_selection_sharp =
+      IconData(0xf58a, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">voicemail</span> material symbol named "voicemail".
   static const IconData voicemail =

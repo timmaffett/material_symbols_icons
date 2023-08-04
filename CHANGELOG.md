@@ -1,5 +1,11 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2670.0
+
+* Update to version 2.670 of the material symbols icons variable fonts released 07/27/2023
+* Added < f87f  # passkey, f571  # vr180_create2d_off
+* Changed many codepoints, see 'diff icon_unicodes_08_04_23.txt icon_unicodes_07_25_23.txt' for details
+
 ## 4.2668.0
 
 * Update to version 2.668 of the material symbols icons variable fonts released 07/20/2023

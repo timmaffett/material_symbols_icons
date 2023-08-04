@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-07-25 11:00:03.939712 by the dart file
+// This file was generated 2023-08-04 10:26:01.286742 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -6373,6 +6373,9 @@ Map<String, IconData> materialSymbolsMap = {
   'party_mode': Symbols.party_mode,
   'party_mode_rounded': Symbols.party_mode_rounded,
   'party_mode_sharp': Symbols.party_mode_sharp,
+  'passkey': Symbols.passkey,
+  'passkey_rounded': Symbols.passkey_rounded,
+  'passkey_sharp': Symbols.passkey_sharp,
   'password': Symbols.password,
   'password_rounded': Symbols.password_rounded,
   'password_sharp': Symbols.password_sharp,
@@ -8441,6 +8444,9 @@ Map<String, IconData> materialSymbolsMap = {
   'sticky_note_2': Symbols.sticky_note_2,
   'sticky_note_2_rounded': Symbols.sticky_note_2_rounded,
   'sticky_note_2_sharp': Symbols.sticky_note_2_sharp,
+  'stock_media': Symbols.stock_media,
+  'stock_media_rounded': Symbols.stock_media_rounded,
+  'stock_media_sharp': Symbols.stock_media_sharp,
   'stop': Symbols.stop,
   'stop_rounded': Symbols.stop_rounded,
   'stop_sharp': Symbols.stop_sharp,
@@ -9593,6 +9599,9 @@ Map<String, IconData> materialSymbolsMap = {
   'vr180_create2d': Symbols.vr180_create2d,
   'vr180_create2d_rounded': Symbols.vr180_create2d_rounded,
   'vr180_create2d_sharp': Symbols.vr180_create2d_sharp,
+  'vr180_create2d_off': Symbols.vr180_create2d_off,
+  'vr180_create2d_off_rounded': Symbols.vr180_create2d_off_rounded,
+  'vr180_create2d_off_sharp': Symbols.vr180_create2d_off_sharp,
   'vrpano': Symbols.vrpano,
   'vrpano_rounded': Symbols.vrpano_rounded,
   'vrpano_sharp': Symbols.vrpano_sharp,

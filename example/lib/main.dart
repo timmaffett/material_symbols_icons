@@ -24,7 +24,7 @@ Map<String, IconData> materialSymbolsOutlinedMap = {};
 Map<String, IconData> materialSymbolsRoundedMap = {};
 Map<String, IconData> materialSymbolsSharpMap = {};
 
-const String materialSymbolsIconsSourceFontVersionNumber = '2.668';  // must update for each new font update
+const String materialSymbolsIconsSourceFontVersionNumber = '2.670';  // must update for each new font update
 int totalMaterialSymbolsIcons=0;
 
 void makeSymbolsByStyleMaps() {
@@ -440,6 +440,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   resetVariationSettings();
                 });
               },
+              //icon: const Icon(Icons.feed),
               icon: const Icon(Symbols.restart_alt),
               style: IconButton.styleFrom(
                 foregroundColor: colors.onSecondaryContainer,

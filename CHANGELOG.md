@@ -1,5 +1,13 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2671.0
+
+* Update to version 2.671 of the material symbols icons variable fonts released 08/24/2023
+* Added f568  # bomb,f561  # concierge,e64c  # globe,f56d  # indeterminate_question_box,f56f  # keep_public,
+  f56b  # nest_wifi_pro,f56a  # nest_wifi_pro_2,f56e  # network_node,f562  # note_stack,f563  # note_stack_add,
+  f569  # package_2,f567  # person_alert,f566  # person_cancel,f565  # person_check,f560  # radio_button_partial,
+  f56c  # reset_wrench,,f564  # tactic
+  
 ## 4.2670.0
 
 * Update to version 2.670 of the material symbols icons variable fonts released 07/27/2023

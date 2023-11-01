@@ -29,19 +29,23 @@ is that this is a NO FIX - as I suspected it might be - for compatibility with a
 ## Steps to update to new variable fonts release
 -----
 Steps to update pakcage when new fonts are released.
-```
-0) copy rawFontsUnfixed icon_unicodes.txt to LAST_VERSION directory with added date
+
 0.5) cd to \generator
-1) `dart run update_package.dart -d -u`
+1) `dart run update_package.dart -d -u` 
+1.5)  (DONE AUTOMATICALLY NOW) ~~copy rawFontsUnfixed icon_unicodes.txt to LAST_VERSION directory with added date~~
 2) figure out source font version number with `ttx -s oneofthefonts.ttf`
+    (cd ~/source/fonttools; copy font there  and then ttx)./fix
 3) Update `CHANGELOG.md` with version number of new fonts
+3.05) Do a diff of last two LAST_VERSION/icon_unicodes
 3.1) Update `pubspec.yaml` with new fonts version number
 3.5) Update root `README.md` with version number of new fonts and date of their release on google material design github
 4) linux run the rawFontsUnfixed/fixFontMetricsAndUpdateLibFonts.sh to patch fonts/install into lib/fonts
 5) update source font version number in example\main.dart
 6) `buildWeb.bat` example
 7) update timmaffett.github.io with example
+     cp /mnt/c/src/material_symbols_icons/example/build/web/* . -r
+      git add -A *
+       git add -m 'version'
 8) sync source to github
 9) `dart pub publish --dry-run`  package
 10) `dart pub publish` package
-```

@@ -1,5 +1,39 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2706.0
+* Changed update_package.dart to also automatically write rawFontsUnfixed/LAST_VERSION/icon_unicodes_MM_DD_YY.dart file
+* Update to version 2.67X of the material symbols icons variable fonts released 10/26/2023
+* Added e852  # account_child,e659  # account_child_invert, e97e  # air_purifier, ef7b  # apparel, f55a  # aq,
+  f55b  # aq_indoor, e983  # ar_stickers, e01a  # artist, e987  # assistant_device, f525  # asterisk,
+  e98a  # auto_draw_solid, e71e  # auto_towing, f53f  # auto_transmission, e669  # bigtop_updates,
+  f53e  # book_2,f53d  # book_3,f53c  # book_4,f53b  # book_5,f540  # calendar_clock,eb08  # carry_on_bag,
+  eb0b  # carry_on_bag_checked,eb0a  # carry_on_bag_inactive,eb09  # carry_on_bag_question,f52b  # chat_info,
+  e70d  # checkbook,eb0c  # checked_bag,eb0d  # checked_bag_question,e995  # cleaning,e999  # contacts_product,
+  f52d  # credit_card_gear,f52c  # credit_card_heart,f549  # crop_9_16,f518  # delete_history,
+  f51b  # deployed_code_account,f539  # dictionary,ef86  # digital_wellbeing,e9a0  # dishwasher,f523  # download_2,
+  eb00  # drawing_recognition,f528  # editor_choice,e9a6  # energy,e70e  # enterprise,eb4d  # enterprise_off,
+  e686  # experiment,e538  # explore_nearby,eb26  # family_home,f527  # family_star,f559  # farsight_digital,
+  ef91  # featured_seasonal_and_gifts,e2c5  # file_map,f17f  # file_save,e505  # file_save_off,e3e1  # filter_retrolux,
+  ef92  # finance_mode,e9ab  # flights_and_hotels,e9ac  # for_you,e714  # garage_door,e6de  # general_device,
+  e715  # google_home_devices,ef97  # grocery,eb02  # handwriting_recognition,e3ef  # hdr_plus_off,
+  ef9d  # health_and_beauty,f537  # heat,f54b  # high_res,ef9f  # home_and_garden,efa0  # home_improvement_and_tools,
+  ebff  # hourglass,efa1  # household_supplies,f558  # humidity_indoor,f524  # ink_highlighter_move,e027  # ios,
+  f56f  # keep_public,f51a  # key_vertical,f526  # kid_star,eb04  # license,e9b8  # light_off,efa4  # lightning_stand,
+  f535  # linked_services,e726  # manufacturing,f552  # markdown,f553  # markdown_copy,f554  # markdown_paste,
+  efa9  # mintmark,e701  # missing_controller,f547  # mitre,f557  # mode_dual,eb1a  # music_cast,
+  f532  # network_wifi_locked,e9c4  # newsstand,f54a  # not_accessible_forward,e6c3  # on_hub_device,eb14  # orders,
+  e9c7  # oven,f52a  # p2p,eb0e  # personal_bag,eb0f  # personal_bag_off,eb10  # personal_bag_question,
+  e703  # personal_places,f530  # photo_auto_merge,f550  # picture_in_picture_center,f54f  # picture_in_picture_large,
+  f54e  # picture_in_picture_medium,f517  # picture_in_picture_mobile,f52f  # picture_in_picture_off,
+  f54d  # picture_in_picture_small,e694  # planner_review,eb15  # quick_reorder,f555  # raven,e9da  # responsive_layout,
+  eb27  # rubric,f542  # science_off,e720  # sdk,e696  # search_hands_free,f556  # sensors_krx,e717  # service_toolbox,
+  f522  # settings_heart,eb01  # shape_recognition,f529  # shield_question,efb7  # shoppingmode,f543  # skillet,
+  f544  # skillet_cooktop,e527  # source_environment,efb8  # sports_and_outdoors,e697  # stat_0,f545  # stockpot,
+  e69e  # swap_driving_apps,e9f1  # text_fields_alt,eb2a  # things_to_do,efc2  # toys_and_games,
+  efc3  # travel_luggage_and_bags,e6fb  # trip,e1de  # tv_options_input_settings,f51f  # two_pager,
+  e9fa  # universal_currency,e9fb  # universal_local,eb05  # unlicense,f521  # upload_2,e708  # user_attributes,
+  efc5  # vacuum,f51e  # variable_add,f51d  # variable_insert,f51c  # variable_remove,ea03  # web_traffic
+
 ## 4.2671.0
 
 * Update to version 2.671 of the material symbols icons variable fonts released 08/24/2023

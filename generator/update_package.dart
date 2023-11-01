@@ -133,6 +133,7 @@ const Map<String, String> _identifierExactRewrites = <String, String>{
 /// If this is not done then Flutter renders the icons lower in the text box then they should be
 /// (ie. *not centered*).
 const pathToWriteTTFFiles = '../rawFontsUnfixed/';
+String pathToWriteDateMarkedIconUnicodeFiles = '${pathToWriteTTFFiles}LAST_VERSION/';
 
 /// Path to write the dart source files to
 const pathToWriteDartFiles = '../lib/';
@@ -368,6 +369,11 @@ Future<void> main(List<String> args) async {
   if (combinedFutureSymbolsSupportCompatible) {
     // write all flavors together with suffixed symbol names
     const iconUnicodesFilename = '${pathToWriteTTFFiles}icon_unicodes.txt';
+    final now = DateTime.now();
+    String year = now.year.toString().substring(2).padLeft(2,'0');
+    String month = now.month.toString().padLeft(2,'0');
+    String day = now.day.toString().padLeft(2,'0');
+    String dateStampedLastVersionIconUnicodesFilename = '${pathToWriteDateMarkedIconUnicodeFiles}icon_unicodes_${month}_${day}_${year}.txt';
     List<String> unicodes = [];
     bool first = true;
     final unicodeBuffer = StringBuffer();
@@ -387,9 +393,11 @@ Future<void> main(List<String> args) async {
     }
 
     File(iconUnicodesFilename).writeAsStringSync(unicodeBuffer.toString());
-
+    File(dateStampedLastVersionIconUnicodesFilename).writeAsStringSync(unicodeBuffer.toString());
     print(
         'Wrote ${unicodes.length} icon unicode codepoints to $iconUnicodesFilename');
+    print(
+        'ALSO Wrote ${unicodes.length} icon unicode codepoints to $dateStampedLastVersionIconUnicodesFilename');
   }
 
   exit(0);

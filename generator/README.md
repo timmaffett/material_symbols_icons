@@ -45,7 +45,7 @@ Steps to update pakcage when new fonts are released.
 7) update timmaffett.github.io with example
      cp /mnt/c/src/material_symbols_icons/example/build/web/* . -r
       git add -A *
-       git add -m 'version'
+       git commit -m 'version'
 8) sync source to github
 9) `dart pub publish --dry-run`  package
 10) `dart pub publish` package

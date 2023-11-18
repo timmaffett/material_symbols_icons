@@ -40,7 +40,8 @@ Steps to update pakcage when new fonts are released.
 3.1) Update `pubspec.yaml` with new fonts version number
 3.5) Update root `README.md` with version number of new fonts and date of their release on google material design github
 4) linux run the rawFontsUnfixed/fixFontMetricsAndUpdateLibFonts.sh to patch fonts/install into lib/fonts
-5) update source font version number in example\main.dart
+5) update source font `materialSymbolsIconsSourceFontVersionNumber` and
+   `materialSymbolsIconsSourceReleaseDate` to example\main.dart
 6) `buildWeb.bat` example
 7) update timmaffett.github.io with example
      cp /mnt/c/src/material_symbols_icons/example/build/web/* . -r

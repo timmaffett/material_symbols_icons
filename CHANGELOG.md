@@ -1,6 +1,13 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2711.0
+
+* Updated to version 2.711 of the material icons variable fonts release 11/16/2023
+* Added f502  # action_key,f4fe  # notifications_unread,f501  # pulse_alert,
+  f503  # security_key, f500  # stacks
+
 ## 4.2709.0
+
 * Updated to version 2.709 of the material icons variable fonts release 11/09/2023
 * Fixed version typo in 4.2706.0 change log message
 * Added f514  # background_dot_small,f508  # close_small,f507  # collapse_content,f510  # highlight_keyboard_focus,
@@ -9,6 +16,7 @@
   f50c  # transition_fade,f50b  # transition_push,f50a  # transition_slide
 
 ## 4.2706.0
+
 * Changed update_package.dart to also automatically write rawFontsUnfixed/LAST_VERSION/icon_unicodes_MM_DD_YY.dart file
 * Update to version 2.706 of the material symbols icons variable fonts released 10/26/2023
 * Added e852  # account_child,e659  # account_child_invert, e97e  # air_purifier, ef7b  # apparel, f55a  # aq,

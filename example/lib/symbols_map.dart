@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-11-10 07:26:14.690246 by the dart file
+// This file was generated 2023-11-18 07:12:11.906294 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -273,6 +273,9 @@ Map<String, IconData> materialSymbolsMap = {
   'account_tree': Symbols.account_tree,
   'account_tree_rounded': Symbols.account_tree_rounded,
   'account_tree_sharp': Symbols.account_tree_sharp,
+  'action_key': Symbols.action_key,
+  'action_key_rounded': Symbols.action_key_rounded,
+  'action_key_sharp': Symbols.action_key_sharp,
   'activity_zone': Symbols.activity_zone,
   'activity_zone_rounded': Symbols.activity_zone_rounded,
   'activity_zone_sharp': Symbols.activity_zone_sharp,
@@ -6479,6 +6482,9 @@ Map<String, IconData> materialSymbolsMap = {
   'notifications_paused': Symbols.notifications_paused,
   'notifications_paused_rounded': Symbols.notifications_paused_rounded,
   'notifications_paused_sharp': Symbols.notifications_paused_sharp,
+  'notifications_unread': Symbols.notifications_unread,
+  'notifications_unread_rounded': Symbols.notifications_unread_rounded,
+  'notifications_unread_sharp': Symbols.notifications_unread_sharp,
   'numbers': Symbols.numbers,
   'numbers_rounded': Symbols.numbers_rounded,
   'numbers_sharp': Symbols.numbers_sharp,
@@ -7357,6 +7363,9 @@ Map<String, IconData> materialSymbolsMap = {
   'pulmonology': Symbols.pulmonology,
   'pulmonology_rounded': Symbols.pulmonology_rounded,
   'pulmonology_sharp': Symbols.pulmonology_sharp,
+  'pulse_alert': Symbols.pulse_alert,
+  'pulse_alert_rounded': Symbols.pulse_alert_rounded,
+  'pulse_alert_sharp': Symbols.pulse_alert_sharp,
   'punch_clock': Symbols.punch_clock,
   'punch_clock_rounded': Symbols.punch_clock_rounded,
   'punch_clock_sharp': Symbols.punch_clock_sharp,
@@ -7981,6 +7990,9 @@ Map<String, IconData> materialSymbolsMap = {
   'security': Symbols.security,
   'security_rounded': Symbols.security_rounded,
   'security_sharp': Symbols.security_sharp,
+  'security_key': Symbols.security_key,
+  'security_key_rounded': Symbols.security_key_rounded,
+  'security_key_sharp': Symbols.security_key_sharp,
   'security_update': Symbols.security_update,
   'security_update_rounded': Symbols.security_update_rounded,
   'security_update_sharp': Symbols.security_update_sharp,
@@ -8790,6 +8802,9 @@ Map<String, IconData> materialSymbolsMap = {
   'stacked_line_chart': Symbols.stacked_line_chart,
   'stacked_line_chart_rounded': Symbols.stacked_line_chart_rounded,
   'stacked_line_chart_sharp': Symbols.stacked_line_chart_sharp,
+  'stacks': Symbols.stacks,
+  'stacks_rounded': Symbols.stacks_rounded,
+  'stacks_sharp': Symbols.stacks_sharp,
   'stadia_controller': Symbols.stadia_controller,
   'stadia_controller_rounded': Symbols.stadia_controller_rounded,
   'stadia_controller_sharp': Symbols.stadia_controller_sharp,

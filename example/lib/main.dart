@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:material_symbols_icons/symbols.dart';
@@ -24,7 +25,8 @@ Map<String, IconData> materialSymbolsOutlinedMap = {};
 Map<String, IconData> materialSymbolsRoundedMap = {};
 Map<String, IconData> materialSymbolsSharpMap = {};
 
-const String materialSymbolsIconsSourceFontVersionNumber = '2.709';  // must update for each new font update
+const String materialSymbolsIconsSourceFontVersionNumber = '2.711';  // must update for each new font update
+const String materialSymbolsIconsSourceReleaseDate = 'Nov. 16, 2023';  // must update for each new font update
 int totalMaterialSymbolsIcons=0;
 
 void makeSymbolsByStyleMaps() {
@@ -87,7 +89,8 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Roboto',
         iconTheme: const IconThemeData(color: Colors.black),
       ),
-      home: MyHomePage(title: 'Material Symbols Icons For Flutter', subtitle:'(v$materialSymbolsIconsSourceFontVersionNumber fonts w/ $totalMaterialSymbolsIcons icons)'),
+      home: MyHomePage(title: 'Material Symbols Icons For Flutter',
+      subtitle:'(v$materialSymbolsIconsSourceFontVersionNumber fonts, released $materialSymbolsIconsSourceReleaseDate w/ $totalMaterialSymbolsIcons icons)'),
     );
   }
 }
@@ -680,7 +683,16 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             RichText(
               text: TextSpan( text: widget.title, style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
-                children: [ TextSpan(text: '   ${widget.subtitle}', style: const TextStyle(color: Colors.blue, fontSize: 12)) ], 
+                children: [ 
+                  TextSpan(text: '   ${widget.subtitle}', 
+                      style: const TextStyle(color: Colors.blue, fontSize: 12, decoration: TextDecoration.underline),
+                      recognizer: TapGestureRecognizer()
+                          ..onTap = () async {
+                                  launchUrl(Uri.parse(
+                                      'https://github.com/google/material-design-icons/tree/master/variablefont'));
+                          },
+                    ),
+                  ], 
               )
             ),
             SizedBox.square(

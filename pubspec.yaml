@@ -21,7 +21,7 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^3.0.1
   args: ^2.3.1
-  path: ^1.8.2
+  path: ^1.8.3
 
 flutter:
   fonts:

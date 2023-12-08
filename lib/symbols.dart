@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-11-18 07:12:11.746248 by the dart file
+// This file was generated 2023-12-08 08:37:15.737305 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -13667,6 +13667,12 @@ import 'material_symbols_icons.dart';
 ///
 /// <span class="material-symbols-sharp">person_check</span> Symbols.person_check_sharp
 ///
+/// <span class="material-symbols-outlined">person_edit</span> Symbols.person_edit
+///
+/// <span class="material-symbols-rounded">person_edit</span> Symbols.person_edit_rounded
+///
+/// <span class="material-symbols-sharp">person_edit</span> Symbols.person_edit_sharp
+///
 /// <span class="material-symbols-outlined">person_filled</span> Symbols.person_filled
 ///
 /// <span class="material-symbols-rounded">person_filled</span> Symbols.person_filled_rounded
@@ -14596,6 +14602,12 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">progress_activity</span> Symbols.progress_activity_rounded
 ///
 /// <span class="material-symbols-sharp">progress_activity</span> Symbols.progress_activity_sharp
+///
+/// <span class="material-symbols-outlined">prompt_suggestion</span> Symbols.prompt_suggestion
+///
+/// <span class="material-symbols-rounded">prompt_suggestion</span> Symbols.prompt_suggestion_rounded
+///
+/// <span class="material-symbols-sharp">prompt_suggestion</span> Symbols.prompt_suggestion_sharp
 ///
 /// <span class="material-symbols-outlined">propane</span> Symbols.propane
 ///
@@ -16559,6 +16571,12 @@ import 'material_symbols_icons.dart';
 ///
 /// <span class="material-symbols-sharp">shopping_cart_checkout</span> Symbols.shopping_cart_checkout_sharp
 ///
+/// <span class="material-symbols-outlined">shopping_cart_off</span> Symbols.shopping_cart_off
+///
+/// <span class="material-symbols-rounded">shopping_cart_off</span> Symbols.shopping_cart_off_rounded
+///
+/// <span class="material-symbols-sharp">shopping_cart_off</span> Symbols.shopping_cart_off_sharp
+///
 /// <span class="material-symbols-outlined">shoppingmode</span> Symbols.shoppingmode
 ///
 /// <span class="material-symbols-rounded">shoppingmode</span> Symbols.shoppingmode_rounded
@@ -17249,6 +17267,12 @@ import 'material_symbols_icons.dart';
 ///
 /// <span class="material-symbols-sharp">splitscreen</span> Symbols.splitscreen_sharp
 ///
+/// <span class="material-symbols-outlined">splitscreen_add</span> Symbols.splitscreen_add
+///
+/// <span class="material-symbols-rounded">splitscreen_add</span> Symbols.splitscreen_add_rounded
+///
+/// <span class="material-symbols-sharp">splitscreen_add</span> Symbols.splitscreen_add_sharp
+///
 /// <span class="material-symbols-outlined">splitscreen_bottom</span> Symbols.splitscreen_bottom
 ///
 /// <span class="material-symbols-rounded">splitscreen_bottom</span> Symbols.splitscreen_bottom_rounded
@@ -17272,6 +17296,12 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">splitscreen_top</span> Symbols.splitscreen_top_rounded
 ///
 /// <span class="material-symbols-sharp">splitscreen_top</span> Symbols.splitscreen_top_sharp
+///
+/// <span class="material-symbols-outlined">splitscreen_vertical_add</span> Symbols.splitscreen_vertical_add
+///
+/// <span class="material-symbols-rounded">splitscreen_vertical_add</span> Symbols.splitscreen_vertical_add_rounded
+///
+/// <span class="material-symbols-sharp">splitscreen_vertical_add</span> Symbols.splitscreen_vertical_add_sharp
 ///
 /// <span class="material-symbols-outlined">spo2</span> Symbols.spo2
 ///
@@ -18742,6 +18772,12 @@ import 'material_symbols_icons.dart';
 /// <span class="material-symbols-rounded">things_to_do</span> Symbols.things_to_do_rounded
 ///
 /// <span class="material-symbols-sharp">things_to_do</span> Symbols.things_to_do_sharp
+///
+/// <span class="material-symbols-outlined">thread_unread</span> Symbols.thread_unread
+///
+/// <span class="material-symbols-rounded">thread_unread</span> Symbols.thread_unread_rounded
+///
+/// <span class="material-symbols-sharp">thread_unread</span> Symbols.thread_unread_sharp
 ///
 /// <span class="material-symbols-outlined">thumb_down</span> Symbols.thumb_down
 ///
@@ -47980,6 +48016,18 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData person_check_sharp =
       IconData(0xf565, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">person_edit</span> material symbol named "person_edit".
+  static const IconData person_edit =
+      IconData(0xf4fa, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">person_edit</span> material symbol named "person_edit_rounded".
+  static const IconData person_edit_rounded =
+      IconData(0xf4fa, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">person_edit</span> material symbol named "person_edit_sharp".
+  static const IconData person_edit_sharp =
+      IconData(0xf4fa, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">person_filled</span> material symbol named "person_filled".
   static const IconData person_filled =
       IconData(0xf0d3, fontFamily: _family_outlined, fontPackage: _package);
@@ -49839,6 +49887,18 @@ class Symbols extends MaterialSymbolsBase {
   /// @nodoc <span class="material-symbols-sharp">progress_activity</span> material symbol named "progress_activity_sharp".
   static const IconData progress_activity_sharp =
       IconData(0xe9d0, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">prompt_suggestion</span> material symbol named "prompt_suggestion".
+  static const IconData prompt_suggestion =
+      IconData(0xf4f6, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">prompt_suggestion</span> material symbol named "prompt_suggestion_rounded".
+  static const IconData prompt_suggestion_rounded =
+      IconData(0xf4f6, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">prompt_suggestion</span> material symbol named "prompt_suggestion_sharp".
+  static const IconData prompt_suggestion_sharp =
+      IconData(0xf4f6, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">propane</span> material symbol named "propane".
   static const IconData propane =
@@ -53764,6 +53824,18 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData shopping_cart_checkout_sharp =
       IconData(0xeb88, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">shopping_cart_off</span> material symbol named "shopping_cart_off".
+  static const IconData shopping_cart_off =
+      IconData(0xf4f7, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">shopping_cart_off</span> material symbol named "shopping_cart_off_rounded".
+  static const IconData shopping_cart_off_rounded =
+      IconData(0xf4f7, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">shopping_cart_off</span> material symbol named "shopping_cart_off_sharp".
+  static const IconData shopping_cart_off_sharp =
+      IconData(0xf4f7, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">shoppingmode</span> material symbol named "shoppingmode".
   static const IconData shoppingmode =
       IconData(0xefb7, fontFamily: _family_outlined, fontPackage: _package);
@@ -55144,6 +55216,18 @@ class Symbols extends MaterialSymbolsBase {
   static const IconData splitscreen_sharp =
       IconData(0xf06d, fontFamily: _family_sharp, fontPackage: _package);
 
+  /// @nodoc <span class="material-symbols-outlined">splitscreen_add</span> material symbol named "splitscreen_add".
+  static const IconData splitscreen_add =
+      IconData(0xf4fd, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">splitscreen_add</span> material symbol named "splitscreen_add_rounded".
+  static const IconData splitscreen_add_rounded =
+      IconData(0xf4fd, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">splitscreen_add</span> material symbol named "splitscreen_add_sharp".
+  static const IconData splitscreen_add_sharp =
+      IconData(0xf4fd, fontFamily: _family_sharp, fontPackage: _package);
+
   /// @nodoc <span class="material-symbols-outlined">splitscreen_bottom</span> material symbol named "splitscreen_bottom".
   static const IconData splitscreen_bottom =
       IconData(0xf676, fontFamily: _family_outlined, fontPackage: _package);
@@ -55191,6 +55275,18 @@ class Symbols extends MaterialSymbolsBase {
   /// @nodoc <span class="material-symbols-sharp">splitscreen_top</span> material symbol named "splitscreen_top_sharp".
   static const IconData splitscreen_top_sharp =
       IconData(0xf673, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">splitscreen_vertical_add</span> material symbol named "splitscreen_vertical_add".
+  static const IconData splitscreen_vertical_add =
+      IconData(0xf4fc, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">splitscreen_vertical_add</span> material symbol named "splitscreen_vertical_add_rounded".
+  static const IconData splitscreen_vertical_add_rounded =
+      IconData(0xf4fc, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">splitscreen_vertical_add</span> material symbol named "splitscreen_vertical_add_sharp".
+  static const IconData splitscreen_vertical_add_sharp =
+      IconData(0xf4fc, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">spo2</span> material symbol named "spo2".
   static const IconData spo2 =
@@ -58131,6 +58227,18 @@ class Symbols extends MaterialSymbolsBase {
   /// @nodoc <span class="material-symbols-sharp">things_to_do</span> material symbol named "things_to_do_sharp".
   static const IconData things_to_do_sharp =
       IconData(0xeb2a, fontFamily: _family_sharp, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-outlined">thread_unread</span> material symbol named "thread_unread".
+  static const IconData thread_unread =
+      IconData(0xf4f9, fontFamily: _family_outlined, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-rounded">thread_unread</span> material symbol named "thread_unread_rounded".
+  static const IconData thread_unread_rounded =
+      IconData(0xf4f9, fontFamily: _family_rounded, fontPackage: _package);
+
+  /// @nodoc <span class="material-symbols-sharp">thread_unread</span> material symbol named "thread_unread_sharp".
+  static const IconData thread_unread_sharp =
+      IconData(0xf4f9, fontFamily: _family_sharp, fontPackage: _package);
 
   /// @nodoc <span class="material-symbols-outlined">thumb_down</span> material symbol named "thumb_down".
   static const IconData thumb_down =

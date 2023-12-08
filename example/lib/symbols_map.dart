@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2023-11-18 07:12:11.906294 by the dart file
+// This file was generated 2023-12-08 08:37:15.778384 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -6863,6 +6863,9 @@ Map<String, IconData> materialSymbolsMap = {
   'person_check': Symbols.person_check,
   'person_check_rounded': Symbols.person_check_rounded,
   'person_check_sharp': Symbols.person_check_sharp,
+  'person_edit': Symbols.person_edit,
+  'person_edit_rounded': Symbols.person_edit_rounded,
+  'person_edit_sharp': Symbols.person_edit_sharp,
   'person_filled': Symbols.person_filled,
   'person_filled_rounded': Symbols.person_filled_rounded,
   'person_filled_sharp': Symbols.person_filled_sharp,
@@ -7333,6 +7336,9 @@ Map<String, IconData> materialSymbolsMap = {
   'progress_activity': Symbols.progress_activity,
   'progress_activity_rounded': Symbols.progress_activity_rounded,
   'progress_activity_sharp': Symbols.progress_activity_sharp,
+  'prompt_suggestion': Symbols.prompt_suggestion,
+  'prompt_suggestion_rounded': Symbols.prompt_suggestion_rounded,
+  'prompt_suggestion_sharp': Symbols.prompt_suggestion_sharp,
   'propane': Symbols.propane,
   'propane_rounded': Symbols.propane_rounded,
   'propane_sharp': Symbols.propane_sharp,
@@ -8318,6 +8324,9 @@ Map<String, IconData> materialSymbolsMap = {
   'shopping_cart_checkout': Symbols.shopping_cart_checkout,
   'shopping_cart_checkout_rounded': Symbols.shopping_cart_checkout_rounded,
   'shopping_cart_checkout_sharp': Symbols.shopping_cart_checkout_sharp,
+  'shopping_cart_off': Symbols.shopping_cart_off,
+  'shopping_cart_off_rounded': Symbols.shopping_cart_off_rounded,
+  'shopping_cart_off_sharp': Symbols.shopping_cart_off_sharp,
   'shoppingmode': Symbols.shoppingmode,
   'shoppingmode_rounded': Symbols.shoppingmode_rounded,
   'shoppingmode_sharp': Symbols.shoppingmode_sharp,
@@ -8685,6 +8694,9 @@ Map<String, IconData> materialSymbolsMap = {
   'splitscreen': Symbols.splitscreen,
   'splitscreen_rounded': Symbols.splitscreen_rounded,
   'splitscreen_sharp': Symbols.splitscreen_sharp,
+  'splitscreen_add': Symbols.splitscreen_add,
+  'splitscreen_add_rounded': Symbols.splitscreen_add_rounded,
+  'splitscreen_add_sharp': Symbols.splitscreen_add_sharp,
   'splitscreen_bottom': Symbols.splitscreen_bottom,
   'splitscreen_bottom_rounded': Symbols.splitscreen_bottom_rounded,
   'splitscreen_bottom_sharp': Symbols.splitscreen_bottom_sharp,
@@ -8697,6 +8709,9 @@ Map<String, IconData> materialSymbolsMap = {
   'splitscreen_top': Symbols.splitscreen_top,
   'splitscreen_top_rounded': Symbols.splitscreen_top_rounded,
   'splitscreen_top_sharp': Symbols.splitscreen_top_sharp,
+  'splitscreen_vertical_add': Symbols.splitscreen_vertical_add,
+  'splitscreen_vertical_add_rounded': Symbols.splitscreen_vertical_add_rounded,
+  'splitscreen_vertical_add_sharp': Symbols.splitscreen_vertical_add_sharp,
   'spo2': Symbols.spo2,
   'spo2_rounded': Symbols.spo2_rounded,
   'spo2_sharp': Symbols.spo2_sharp,
@@ -9448,6 +9463,9 @@ Map<String, IconData> materialSymbolsMap = {
   'things_to_do': Symbols.things_to_do,
   'things_to_do_rounded': Symbols.things_to_do_rounded,
   'things_to_do_sharp': Symbols.things_to_do_sharp,
+  'thread_unread': Symbols.thread_unread,
+  'thread_unread_rounded': Symbols.thread_unread_rounded,
+  'thread_unread_sharp': Symbols.thread_unread_sharp,
   'thumb_down': Symbols.thumb_down,
   'thumb_down_rounded': Symbols.thumb_down_rounded,
   'thumb_down_sharp': Symbols.thumb_down_sharp,

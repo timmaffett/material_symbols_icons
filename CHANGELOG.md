@@ -1,5 +1,11 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2713.0
+
+* Updated to version 2.713 of the material icons variable fonts release 12/07/2023
+* Added f4fa  # person_edit, f4f6  # prompt_suggestion, f4f7  # shopping_cart_off,
+  f4fd  # splitscreen_add, f4fc  # splitscreen_vertical_add, f4f9  # thread_unread
+
 ## 4.2711.0
 
 * Updated to version 2.711 of the material icons variable fonts release 11/16/2023

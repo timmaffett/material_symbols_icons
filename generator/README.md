@@ -35,18 +35,23 @@ Steps to update pakcage when new fonts are released.
 1.5)  (DONE AUTOMATICALLY NOW) ~~copy rawFontsUnfixed icon_unicodes.txt to LAST_VERSION directory with added date~~
 2) figure out source font version number with `ttx -s oneofthefonts.ttf`
     (cd ~/source/fonttools; copy font there  and then ttx)./fix
+    (version number found at `fontRevision` entry in `MaterialSymbolsXXXXX._h_e_a_d.ttx`)
 3) Update `CHANGELOG.md` with version number of new fonts
 3.05) Do a diff of last two LAST_VERSION/icon_unicodes
+      Edit and incorporate added/changed icons into the `CHANGELOG.md`
 3.1) Update `pubspec.yaml` with new fonts version number
 3.5) Update root `README.md` with version number of new fonts and date of their release on google material design github
 4) linux run the rawFontsUnfixed/fixFontMetricsAndUpdateLibFonts.sh to patch fonts/install into lib/fonts
+     `cd /material_symbols_icons/rawFontsUnfixed`
+     `./fixFontMetricsAndUpdateLibFonts.sh`
 5) update source font `materialSymbolsIconsSourceFontVersionNumber` and
    `materialSymbolsIconsSourceReleaseDate` to example\main.dart
 6) `buildWeb.bat` example
 7) update timmaffett.github.io with example
-     cp /mnt/c/src/material_symbols_icons/example/build/web/* . -r
-      git add -A *
-       git commit -m 'version'
+     `cp /mnt/c/src/material_symbols_icons/example/build/web/* . -r`
+     `git add -A *`
+     `git commit -m 'update to official font version XXX'`
+     `git push https://timmaffett:.....`
 8) sync source to github
 9) `dart pub publish --dry-run`  package
 10) `dart pub publish` package

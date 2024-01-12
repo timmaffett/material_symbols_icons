@@ -6,13 +6,17 @@
 #    https://fonttools.readthedocs.io/en/latest/index.html
 # THis is using TTX to merge the correct metrics into the font files
 #      ttx info: https://fonttools.readthedocs.io/en/latest/ttx.html
+# TMM Jan 12, 2024 - Now change the names of the fonts to remove the "[FILL,Grad,opsz,wght]" because the brackets [] were
+#     having to be URL encoded by part of the flutter build process and then the testing harness could not load the fonts
+#     because the URL encoded names are embedded in the flutter app and they can't be used on filesystem to load the fonts.
+#     (See https://github.com/timmaffett/material_symbols_icons/issues/12 )
 
 rm ../lib/fonts/*.ttf
 ttx -m 'MaterialSymbolsOutlined[FILL,GRAD,opsz,wght].ttf' -b --no-recalc-timestamp -o 'MaterialSymbolsOutlined[FILL,GRAD,opsz,wght]_metricsfixed.ttf' good_outlined_hhea_os2_tables.ttx
 ttx -m 'MaterialSymbolsRounded[FILL,GRAD,opsz,wght].ttf' -b --no-recalc-timestamp -o 'MaterialSymbolsRounded[FILL,GRAD,opsz,wght]_metricsfixed.ttf' good_rounded_hhea_os2_tables.ttx
 ttx -m 'MaterialSymbolsSharp[FILL,GRAD,opsz,wght].ttf' -b --no-recalc-timestamp -o 'MaterialSymbolsSharp[FILL,GRAD,opsz,wght]_metricsfixed.ttf' good_sharp_hhea_os2_tables.ttx
 
-pyftsubset 'MaterialSymbolsOutlined[FILL,GRAD,opsz,wght]_metricsfixed.ttf' --unicodes-file=icon_unicodes.txt --output-file='../lib/fonts/MaterialSymbolsOutlined[FILL,GRAD,opsz,wght].ttf'
-pyftsubset 'MaterialSymbolsRounded[FILL,GRAD,opsz,wght]_metricsfixed.ttf' --unicodes-file=icon_unicodes.txt --output-file='../lib/fonts/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].ttf' 
-pyftsubset 'MaterialSymbolsSharp[FILL,GRAD,opsz,wght]_metricsfixed.ttf' --unicodes-file=icon_unicodes.txt --output-file='../lib/fonts/MaterialSymbolsSharp[FILL,GRAD,opsz,wght].ttf'   
+pyftsubset 'MaterialSymbolsOutlined[FILL,GRAD,opsz,wght]_metricsfixed.ttf' --unicodes-file=icon_unicodes.txt --output-file='../lib/fonts/MaterialSymbolsOutlined.ttf'
+pyftsubset 'MaterialSymbolsRounded[FILL,GRAD,opsz,wght]_metricsfixed.ttf' --unicodes-file=icon_unicodes.txt --output-file='../lib/fonts/MaterialSymbolsRounded.ttf' 
+pyftsubset 'MaterialSymbolsSharp[FILL,GRAD,opsz,wght]_metricsfixed.ttf' --unicodes-file=icon_unicodes.txt --output-file='../lib/fonts/MaterialSymbolsSharp.ttf'   
 

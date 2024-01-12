@@ -1,6 +1,6 @@
 name: material_symbols_icons
 description: Full flutter support for latest Google Material Symbols Icons.
-version: 4.2713.0
+version: 4.2716.0
 homepage: https://github.com/timmaffett/material_symbols_icons
 screenshots:
   - description: 'example flutter material symbols icon browser'
@@ -27,13 +27,13 @@ flutter:
   fonts:
     - family: MaterialSymbolsOutlined
       fonts:
-       - asset: lib/fonts/MaterialSymbolsOutlined[FILL,GRAD,opsz,wght].ttf
+       - asset: lib/fonts/MaterialSymbolsOutlined.ttf
        
     - family: MaterialSymbolsRounded
       fonts:
-       - asset: lib/fonts/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].ttf
+       - asset: lib/fonts/MaterialSymbolsRounded.ttf
        
     - family: MaterialSymbolsSharp
       fonts:
-       - asset: lib/fonts/MaterialSymbolsSharp[FILL,GRAD,opsz,wght].ttf
+       - asset: lib/fonts/MaterialSymbolsSharp.ttf
     

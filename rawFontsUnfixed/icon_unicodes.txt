@@ -334,6 +334,7 @@ f514  # background_dot_small
 f79d  # background_grid_small
 f20a  # background_replace
 f7ed  # backlight_high
+f4ef  # backlight_high_off
 f7ec  # backlight_low
 f19c  # backpack
 e14a  # backspace
@@ -473,6 +474,7 @@ f5a5  # box_add
 f5a6  # box_edit
 eb67  # boy
 e98e  # brand_awareness
+f4f1  # brand_family
 e06b  # branding_watermark
 ea54  # breakfast_dining
 ea08  # breaking_news
@@ -564,6 +566,7 @@ f727  # capture
 ebf2  # car_crash
 ea55  # car_rental
 ea56  # car_repair
+f4e3  # car_tag
 e8f6  # card_giftcard
 e8f7  # card_membership
 e8f8  # card_travel
@@ -1040,6 +1043,7 @@ f1a0  # elevator
 e159  # email
 e1eb  # emergency
 f15d  # emergency_heat
+f4e5  # emergency_heat_2
 e82a  # emergency_home
 ebf4  # emergency_recording
 ebf6  # emergency_share
@@ -1256,6 +1260,7 @@ e2c7  # folder
 ebbd  # folder_copy
 f586  # folder_data
 eb34  # folder_delete
+f4e4  # folder_limited
 f775  # folder_managed
 eb83  # folder_off
 e2c8  # folder_open
@@ -1864,6 +1869,8 @@ f6af  # measuring_tape
 f031  # media_bluetooth_off
 f032  # media_bluetooth_on
 f83f  # media_link
+f4f2  # media_output
+f4f3  # media_output_off
 efa7  # mediation
 ebed  # medical_information
 f80a  # medical_mask
@@ -2856,6 +2863,10 @@ f74a  # special_character
 f872  # specific_gravity
 f8a7  # speech_to_text
 e9e4  # speed
+f4e2  # speed_0_5
+f4e1  # speed_1_2
+f4e0  # speed_1_5
+f4eb  # speed_2x
 e8ce  # spellcheck
 f06d  # splitscreen
 f4fd  # splitscreen_add
@@ -3165,6 +3176,7 @@ e199  # tornado
 f877  # total_dissolved_solids
 e913  # touch_app
 f687  # touchpad_mouse
+f4e6  # touchpad_mouse_off
 ef75  # tour
 e332  # toys
 efc2  # toys_and_games

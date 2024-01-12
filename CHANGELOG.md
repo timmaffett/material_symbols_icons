@@ -1,20 +1,33 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2716.0
+* Updated to version 2.716 of the material icons variable fonts released 01/11/2024 with 3475 icons
+* Added f4ef  # backlight_high_off, f4f1  # brand_family, f4e3  # car_tag, f4e5  # emergency_heat_2, f4e4  # folder_limited,
+  f4f2  # media_output, f4f3  # media_output_off, f4e2  # speed_0_5, f4e1  # speed_1_2, f4e0  # speed_1_5,
+  f4eb  # speed_2x, f4e6  # touchpad_mouse_off
+* Now generate `lib\iconname_to_unicode_map.dart` file which contains a iconname -> unicode codepoint map.
+  Fixes [https://github.com/timmaffett/material_symbols_icons/issues/16](https://github.com/timmaffett/material_symbols_icons/issues/16)
+  This file can optionally be used by users of the package to get a map of all iconnames to codepoint within the font.
+* Now change the names of the fonts to remove the `[FILL,Grad,opsz,wght]` because the brackets [] were
+   having to be URL encoded by part of the flutter build process and then the testing harness could not load the fonts
+   because the URL encoded names are embedded in the flutter app and they can't be used on filesystem to load the fonts.
+   (Fixes [https://github.com/timmaffett/material_symbols_icons/issues/12](https://github.com/timmaffett/material_symbols_icons/issues/12))
+
 ## 4.2713.0
 
-* Updated to version 2.713 of the material icons variable fonts release 12/07/2023
+* Updated to version 2.713 of the material icons variable fonts released 12/07/2023
 * Added f4fa  # person_edit, f4f6  # prompt_suggestion, f4f7  # shopping_cart_off,
   f4fd  # splitscreen_add, f4fc  # splitscreen_vertical_add, f4f9  # thread_unread
 
 ## 4.2711.0
 
-* Updated to version 2.711 of the material icons variable fonts release 11/16/2023
+* Updated to version 2.711 of the material icons variable fonts released 11/16/2023
 * Added f502  # action_key,f4fe  # notifications_unread,f501  # pulse_alert,
   f503  # security_key, f500  # stacks
 
 ## 4.2709.0
 
-* Updated to version 2.709 of the material icons variable fonts release 11/09/2023
+* Updated to version 2.709 of the material icons variable fonts released 11/09/2023
 * Fixed version typo in 4.2706.0 change log message
 * Added f514  # background_dot_small,f508  # close_small,f507  # collapse_content,f510  # highlight_keyboard_focus,
   f511  # highlight_mouse_cursor,f512  # highlight_text_cursor,f513  # language_japanese_kana,f509  # pageless,

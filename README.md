@@ -164,7 +164,7 @@ If you find yourself using more than one of the styles simultaneously this packa
         opticalSize: 20.0);
 
     // then use VariedIcon.varied() to create your icons - instead of Icon() directly
-    Icon example = VariedIcon.varied( MaterialSymbols.developer );
+    Icon example = VariedIcon.varied( Symbols.developer );
 
 ```
 

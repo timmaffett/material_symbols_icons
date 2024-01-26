@@ -1,5 +1,12 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2718.1
+
+* Changes to update_package.dart so that dart format is happy and does not change symbols.dart or
+  iconanem_to_unicode_map.dart
+* Previous changes in 4.2716.1 do not seem to help IntelliJ show icon previews :(
+  (but filesize is still smaller, so we will leave that for now)
+
 ## 4.2718.0
 
 * Updated to version 2.718 of the material icons variable fonts released 01/25/2024 with 3478 icons

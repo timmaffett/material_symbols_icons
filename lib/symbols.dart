@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-01-25 21:24:14.773592 by the dart file
+// This file was generated 2024-01-25 21:31:49.995361 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -31,8 +31,9 @@
 library symbols;
 
 import 'package:flutter/widgets.dart';
-import 'material_symbols_icons.dart';
+export 'material_symbols_icons.dart';
 import 'src/icon_data.dart';
+export 'src/icon_data.dart';
 
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: non_constant_identifier_names
@@ -21013,7 +21014,7 @@ class Symbols {
         fontFamily: 'MaterialSymbolsSharp',
         fontPackage: 'material_symbols_icons');
   }
-
+  
   // BEGIN GENERATED ICONS
 
   /// @nodoc <span class="material-symbols-outlined">10k</span> material symbol named "ten_k".

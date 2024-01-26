@@ -543,8 +543,9 @@ void writeCombinedSourceFile(
 library symbols;
 
 import 'package:flutter/widgets.dart';
-import 'material_symbols_icons.dart';
+export 'material_symbols_icons.dart';
 import 'src/icon_data.dart';
+export 'src/icon_data.dart';
 
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: non_constant_identifier_names
@@ -651,7 +652,7 @@ class Symbols {
         fontFamily: 'MaterialSymbolsSharp',
         fontPackage: 'material_symbols_icons');
   }
-
+  
   // BEGIN GENERATED ICONS
 ''');
 

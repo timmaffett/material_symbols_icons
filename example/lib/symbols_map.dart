@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-01-12 08:08:39.647374 by the dart file
+// This file was generated 2024-01-25 21:24:14.817107 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -898,6 +898,9 @@ Map<String, IconData> materialSymbolsMap = {
   'attach_file_add': Symbols.attach_file_add,
   'attach_file_add_rounded': Symbols.attach_file_add_rounded,
   'attach_file_add_sharp': Symbols.attach_file_add_sharp,
+  'attach_file_off': Symbols.attach_file_off,
+  'attach_file_off_rounded': Symbols.attach_file_off_rounded,
+  'attach_file_off_sharp': Symbols.attach_file_off_sharp,
   'attach_money': Symbols.attach_money,
   'attach_money_rounded': Symbols.attach_money_rounded,
   'attach_money_sharp': Symbols.attach_money_sharp,
@@ -3553,6 +3556,9 @@ Map<String, IconData> materialSymbolsMap = {
   'file_copy': Symbols.file_copy,
   'file_copy_rounded': Symbols.file_copy_rounded,
   'file_copy_sharp': Symbols.file_copy_sharp,
+  'file_copy_off': Symbols.file_copy_off,
+  'file_copy_off_rounded': Symbols.file_copy_off_rounded,
+  'file_copy_off_sharp': Symbols.file_copy_off_sharp,
   'file_download': Symbols.file_download,
   'file_download_rounded': Symbols.file_download_rounded,
   'file_download_sharp': Symbols.file_download_sharp,
@@ -4556,6 +4562,9 @@ Map<String, IconData> materialSymbolsMap = {
   'history_edu': Symbols.history_edu,
   'history_edu_rounded': Symbols.history_edu_rounded,
   'history_edu_sharp': Symbols.history_edu_sharp,
+  'history_off': Symbols.history_off,
+  'history_off_rounded': Symbols.history_off_rounded,
+  'history_off_sharp': Symbols.history_off_sharp,
   'history_toggle_off': Symbols.history_toggle_off,
   'history_toggle_off_rounded': Symbols.history_toggle_off_rounded,
   'history_toggle_off_sharp': Symbols.history_toggle_off_sharp,

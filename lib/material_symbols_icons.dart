@@ -7,6 +7,7 @@
 library material_symbols_icons;
 
 import 'package:flutter/widgets.dart';
+export 'symbols.dart';
 
 /// Class to store our icon variation defaults which we allow to be stored by _font family name_,
 /// so that there can be different defaults for different icon font families.

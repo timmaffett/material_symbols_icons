@@ -1,5 +1,13 @@
 # Changelog for Material Symbols Icons package
 
+## 4/2716.1
+* Re-enable @staticIconProvider to see if pub.dev will take it now (other icon packages use this now)
+  (previously was rejected by pub.dev)
+* Rework how IconData is defined to use classes for IconDataOutlined,IconDataRounded and IconDataSharp
+  and the classes hold the family name/package.  Reduces size of file and hopefully allows us to work
+  with icon preview in IntelliJ
+* Symbols class does not extend any class anymore (again hoping this will allow IntelliJ to work)
+
 ## 4.2716.0
 * Updated to version 2.716 of the material icons variable fonts released 01/11/2024 with 3475 icons
 * Added f4ef  # backlight_high_off, f4f1  # brand_family, f4e3  # car_tag, f4e5  # emergency_heat_2, f4e4  # folder_limited,

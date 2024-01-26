@@ -30,13 +30,14 @@ class IconInfo {
 
 class MaterialSymbolsVariableFont {
   final String flavor;
+  final String iconDataClass;
   final String familyNameToUse;
   final String codepointFileUrl;
   final String ttfFontFileUrl;
   late final String filename;
   final List<IconInfo> iconInfoList = [];
 
-  MaterialSymbolsVariableFont(this.flavor, this.familyNameToUse,
+  MaterialSymbolsVariableFont(this.flavor, this.iconDataClass, this.familyNameToUse,
       this.codepointFileUrl, this.ttfFontFileUrl) {
     final urlfilename = path.basename(ttfFontFileUrl);
     filename = Uri.decodeFull(urlfilename);
@@ -46,16 +47,19 @@ class MaterialSymbolsVariableFont {
 List<MaterialSymbolsVariableFont> variableFontFlavors = [
   MaterialSymbolsVariableFont(
       'outlined',
+      'IconDataOutlined',
       'MaterialSymbolsOutlined',
       'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints',
       'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf'),
   MaterialSymbolsVariableFont(
       'rounded',
+      'IconDataRounded',
       'MaterialSymbolsRounded',
       'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints',
       'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf'),
   MaterialSymbolsVariableFont(
       'sharp',
+      'IconDataSharp',
       'MaterialSymbolsSharp',
       'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints',
       'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf'),
@@ -540,6 +544,7 @@ library symbols;
 
 import 'package:flutter/widgets.dart';
 import 'material_symbols_icons.dart';
+import 'src/icon_data.dart';
 
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: non_constant_identifier_names
@@ -608,11 +613,44 @@ import 'material_symbols_icons.dart';
 ///  * [IconButton]
 ///  * <https://fonts.google.com/icons?selected=Material+Symbols>
 ///
-$fakeDartDocs//pub.dev does not like//@staticIconProvider
-class Symbols extends MaterialSymbolsBase {
+$fakeDartDocs
+@staticIconProvider
+class Symbols {
   // This class is not meant to be instantiated or extended; this constructor
   // prevents instantiation and extension.
   Symbols._();
+
+  /// This routine exists to FORCE TREE SHAKING of the icon fonts that may not be referenced
+  /// at all within the application.  This is required because the Material Symbols Icons
+  /// have 3 font varieties and it is very likely only one will be used.
+  /// Tree shaking DOES NOT OCCUR for fonts that are never referenced, so having a this
+  /// method FORCES a reference to the fonts - and invokes tree shaking for
+  /// each of the three fonts.  In this way any unused fonts are reduced to around 2k, which
+  /// the icon tree shake will report as 100.0% reduction.
+  /// (Tree shaking occurs when a *const* declaration to an IconData() class occurs.)
+  ///
+  /// NOTE: VERY IMPORTANT - the `@pargma('vm:entry-point')` annotation is REQUIRED
+  /// and it is being used to force the dart compilation process to believe that this
+  /// method is required and that it CAN NOT tree-shake this method when it never
+  /// finds a call to it in the dart source code.
+  @pragma('vm:entry-point')
+  static void forceCompileTimeTreeShaking() {
+    // these variables must be declared as var to trigger tree shaking, when declared as const
+    // then the tree shaking is not triggered.  These are references to the 'check_indeterminate_small'
+    // icon in each of the fonts (one of the smallest glyphs we can include).
+    // ignore: unused_local_variable
+    var forceOutlinedTreeShake = const IconData(0xf88a,
+        fontFamily: 'MaterialSymbolsOutlined',
+        fontPackage: 'material_symbols_icons');
+    // ignore: unused_local_variable
+    var forceRoundedTreeShake = const IconData(0xf88a,
+        fontFamily: 'MaterialSymbolsRounded',
+        fontPackage: 'material_symbols_icons');
+    // ignore: unused_local_variable
+    var forceSharpTreeShake = const IconData(0xf88a,
+        fontFamily: 'MaterialSymbolsSharp',
+        fontPackage: 'material_symbols_icons');
+  }
 
   // BEGIN GENERATED ICONS
 ''');
@@ -625,12 +663,18 @@ class Symbols extends MaterialSymbolsBase {
     }
     lastCount = fontinfo.iconInfoList.length;
 
+/*OBSOLETE
     // write constant names
     sourceFileContent.writeln(
         "  static const _family_${fontinfo.flavor} = '${fontinfo.familyNameToUse}';");
+OBSOLETE*/
+
   }
+
+/*OBSOLETE
   sourceFileContent
       .writeln("  static const _package = 'material_symbols_icons';");
+OBSOLETE*/
 
   var iconCount = 0;
 
@@ -639,6 +683,7 @@ class Symbols extends MaterialSymbolsBase {
       final iconInfo = fontinfo.iconInfoList[i];
       var iconname = iconInfo.iconName;
       final codepoint = iconInfo.codePoint;
+      final iconDataClass = fontinfo.iconDataClass;
 
       if (suffixVersion && fontinfo.flavor != 'outlined') {
         iconname = '${iconname}_${fontinfo.flavor}';
@@ -647,9 +692,7 @@ class Symbols extends MaterialSymbolsBase {
       sourceFileContent.writeln(
           //ALL OUTLINE  '  /// <span class="material-symbols-outlined">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
           '  /// $noDocUsage<span class="material-symbols-${fontinfo.flavor}">${iconInfo.originalIconName}</span> material symbol named "$iconname".');
-      sourceFileContent.writeln("  static const IconData $iconname =");
-      sourceFileContent.writeln(
-          "      IconData(0x$codepoint, fontFamily: _family_${fontinfo.flavor}, fontPackage: _package);");
+      sourceFileContent.writeln("  static const IconData $iconname = $iconDataClass(0x$codepoint);");
       iconCount++;
     }
   }

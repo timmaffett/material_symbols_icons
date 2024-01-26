@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-01-12 08:08:39.660607 by the dart file
+// This file was generated 2024-01-25 21:24:14.834669 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -312,6 +312,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'attach_email' : 0xea5e,
   'attach_file' : 0xe226,
   'attach_file_add' : 0xf841,
+  'attach_file_off' : 0xf4d9,
   'attach_money' : 0xe227,
   'attachment' : 0xe2bc,
   'attractions' : 0xea52,
@@ -1194,6 +1195,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'fiber_pin' : 0xe06a,
   'fiber_smart_record' : 0xe062,
   'file_copy' : 0xe173,
+  'file_copy_off' : 0xf4d8,
   'file_download' : 0xf090,
   'file_download_done' : 0xf091,
   'file_download_off' : 0xe4fe,
@@ -1525,6 +1527,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'hiking' : 0xe50a,
   'history' : 0xe8b3,
   'history_edu' : 0xea3e,
+  'history_off' : 0xf4da,
   'history_toggle_off' : 0xf17d,
   'hive' : 0xeaa6,
   'hls' : 0xeb8a,

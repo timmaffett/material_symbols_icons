@@ -1,6 +1,12 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2718.0
+
+* Updated to version 2.718 of the material icons variable fonts released 01/25/2024 with 3478 icons
+* Added f4d9  # attach_file_off,  f4d8  # file_copy_off, and f4da  # history_off
+
 ## 4.2716.1
+
 * Re-enable @staticIconProvider to see if pub.dev will take it now (other icon packages use this now)
   (previously was rejected by pub.dev)
 * Rework how IconData is defined to use classes for IconDataOutlined,IconDataRounded and IconDataSharp
@@ -13,6 +19,7 @@
   Symbols.)
 
 ## 4.2716.0
+
 * Updated to version 2.716 of the material icons variable fonts released 01/11/2024 with 3475 icons
 * Added f4ef  # backlight_high_off, f4f1  # brand_family, f4e3  # car_tag, f4e5  # emergency_heat_2, f4e4  # folder_limited,
   f4f2  # media_output, f4f3  # media_output_off, f4e2  # speed_0_5, f4e1  # speed_1_2, f4e0  # speed_1_5,

@@ -422,7 +422,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
           unicodes.add(info.codePoint);
           unicodeBuffer.writeln('${info.codePoint}  # ${info.iconName}');
 
-          unicodeMapSourceFileContent.writeln("  '${info.iconName}' : 0x${info.codePoint},");   
+          unicodeMapSourceFileContent.writeln("  '${info.iconName}': 0x${info.codePoint},");   
         } else {
           if (!unicodes.contains(info.codePoint)) {
             throw ('Unicode ${info.codePoint} was missing from first fonts list and found in ${fontFlavor.flavor}');
@@ -652,7 +652,7 @@ class Symbols {
         fontFamily: 'MaterialSymbolsSharp',
         fontPackage: 'material_symbols_icons');
   }
-  
+
   // BEGIN GENERATED ICONS
 ''');
 
@@ -693,7 +693,15 @@ OBSOLETE*/
       sourceFileContent.writeln(
           //ALL OUTLINE  '  /// <span class="material-symbols-outlined">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
           '  /// $noDocUsage<span class="material-symbols-${fontinfo.flavor}">${iconInfo.originalIconName}</span> material symbol named "$iconname".');
-      sourceFileContent.writeln("  static const IconData $iconname = $iconDataClass(0x$codepoint);");
+      String proposedSingleLine = "  static const IconData $iconname = $iconDataClass(0x$codepoint);";
+      if(proposedSingleLine.length>80) {
+        //split to two lines
+        sourceFileContent.writeln("  static const IconData $iconname =");
+        sourceFileContent.writeln("      $iconDataClass(0x$codepoint);");
+      } else {
+        // one line
+        sourceFileContent.writeln(proposedSingleLine);
+      }
       iconCount++;
     }
   }

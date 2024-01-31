@@ -25,9 +25,11 @@ Map<String, IconData> materialSymbolsOutlinedMap = {};
 Map<String, IconData> materialSymbolsRoundedMap = {};
 Map<String, IconData> materialSymbolsSharpMap = {};
 
-const String materialSymbolsIconsSourceFontVersionNumber = '2.718';  // must update for each new font update
-const String materialSymbolsIconsSourceReleaseDate = 'Jan. 25, 2024';  // must update for each new font update
-int totalMaterialSymbolsIcons=0;
+const String materialSymbolsIconsSourceFontVersionNumber =
+    '2.718'; // must update for each new font update
+const String materialSymbolsIconsSourceReleaseDate =
+    'Jan. 25, 2024'; // must update for each new font update
+int totalMaterialSymbolsIcons = 0;
 
 void makeSymbolsByStyleMaps() {
   for (final key in materialSymbolsMap.keys.toList()) {
@@ -55,10 +57,17 @@ void main() {
     have different variation settings for different icons from different font families.
   */
   MaterialSymbolsBase.setOutlinedVariationDefaults(
-      color: outlinedColor, fill: 0.0);
+    color: outlinedColor,
+    fill: 0.0,
+  );
   MaterialSymbolsBase.setRoundedVariationDefaults(
-      color: roundedColor, fill: 0.0);
-  MaterialSymbolsBase.setSharpVariationDefaults(color: sharpColor, fill: 0.0);
+    color: roundedColor,
+    fill: 0.0,
+  );
+  MaterialSymbolsBase.setSharpVariationDefaults(
+    color: sharpColor,
+    fill: 0.0,
+  );
 
   totalMaterialSymbolsIcons = (materialSymbolsMap.length / 3).floor();
 
@@ -89,14 +98,16 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Roboto',
         iconTheme: const IconThemeData(color: Colors.black),
       ),
-      home: MyHomePage(title: 'Material Symbols Icons For Flutter',
-      subtitle:'(v$materialSymbolsIconsSourceFontVersionNumber fonts, released $materialSymbolsIconsSourceReleaseDate w/ $totalMaterialSymbolsIcons icons)'),
+      home: MyHomePage(
+          title: 'Material Symbols Icons For Flutter',
+          subtitle:
+              '(v$materialSymbolsIconsSourceFontVersionNumber fonts, released $materialSymbolsIconsSourceReleaseDate w/ $totalMaterialSymbolsIcons icons)'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title,  required this.subtitle});
+  const MyHomePage({super.key, required this.title, required this.subtitle});
 
   final String title;
   final String subtitle;
@@ -677,37 +688,31 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 22,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            RichText(
-              text: TextSpan( text: widget.title, style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
-                children: [ 
-                  TextSpan(text: '   ${widget.subtitle}', 
-                      style: const TextStyle(color: Colors.blue, fontSize: 12, decoration: TextDecoration.underline),
-                      recognizer: TapGestureRecognizer()
-                          ..onTap = () async {
-                                  launchUrl(Uri.parse(
-                                      'https://github.com/google/material-design-icons/tree/master/variablefont'));
-                          },
-                    ),
-                  ], 
-              )
-            ),
-            SizedBox.square(
-              dimension: 40,
-              child: IconButton(
-                color: Colors.blue,
-                onPressed: () {
-                  launchUrl(Uri.parse(
-                      'https://pub.dev/packages/material_symbols_icons'));
-                },
-                icon: const Icon(Symbols.open_in_new),
+        title: const Text("Material Symbols Icons for Flutter"),
+        centerTitle: true,
+        leading: IconButton(
+          onPressed: () async {
+            await launchUrl(
+              Uri.parse(
+                'https://github.com/google/material-design-icons/tree/master/variablefont',
               ),
-            ),
-          ],
+            );
+          },
+          tooltip: widget.subtitle,
+          icon: const Icon(Symbols.info_rounded),
         ),
+        actions: [
+          IconButton(
+            onPressed: () async {
+              await launchUrl(
+                Uri.parse(
+                  'https://pub.dev/packages/material_symbols_icons',
+                ),
+              );
+            },
+            icon: const Icon(Symbols.open_in_new_rounded),
+          ),
+        ],
       ),
       body: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints viewportConstraints) {

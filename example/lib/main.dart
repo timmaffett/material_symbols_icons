@@ -1,4 +1,5 @@
-import 'package:flutter/gestures.dart';
+import 'package:example_using_material_symbols_icons/extensions/theme_extension.dart';
+import 'package:example_using_material_symbols_icons/widgets/style_choice_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:material_symbols_icons/symbols.dart';
@@ -93,15 +94,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material Symbols Icons For Flutter',
       theme: ThemeData(
-        primarySwatch: Colors.teal,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.red,
+        ),
         useMaterial3: true,
         fontFamily: 'Roboto',
         iconTheme: const IconThemeData(color: Colors.black),
       ),
       home: MyHomePage(
-          title: 'Material Symbols Icons For Flutter',
-          subtitle:
-              '(v$materialSymbolsIconsSourceFontVersionNumber fonts, released $materialSymbolsIconsSourceReleaseDate w/ $totalMaterialSymbolsIcons icons)'),
+        title: 'Material Symbols Icons For Flutter',
+        subtitle:
+            '(v$materialSymbolsIconsSourceFontVersionNumber fonts, released $materialSymbolsIconsSourceReleaseDate w/ $totalMaterialSymbolsIcons icons)',
+      ),
     );
   }
 }
@@ -178,8 +182,11 @@ class _MyHomePageState extends State<MyHomePage> {
       'opticalSize': _opticalSizeVariation.toString(),
     });
     String uriString = uri.toString();
-    window.history.pushState({'path': uriString}, '',
-        uriString); //window.location.href = uri.toString();
+    window.history.pushState(
+      {'path': uriString},
+      '',
+      uriString,
+    ); //window.location.href = uri.toString();
   }
 
   void grabInitialStateFromUrl() {
@@ -343,95 +350,6 @@ class _MyHomePageState extends State<MyHomePage> {
     final mainAxisAlignment =
         willSplitRows ? MainAxisAlignment.start : MainAxisAlignment.center;
     final controlPanelItems = <Widget>[
-      ...Splittable.flexibleRow(
-        context: context,
-        forceSplit: screenWidth <= 600,
-        splitAtIndicesByWidth: {
-          300: [0, 2, 4, 6],
-          600: [0, 4],
-        },
-        splitWidgetBehavior: SplitWidgetBehavior.includeInThisRow,
-        mainAxisAlignment: mainAxisAlignment,
-        children: <Widget>[
-          const Text(
-            'Style :',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16.0,
-            ),
-          ),
-          Radio<FontListType>(
-            value: FontListType.outlined,
-            groupValue: _fontListType,
-            onChanged: _onFontListTypeChange,
-          ),
-          const Text(
-            'Outlined',
-            style: TextStyle(fontSize: 16.0, color: outlinedColor),
-          ),
-          Radio<FontListType>(
-            value: FontListType.rounded,
-            groupValue: _fontListType,
-            onChanged: _onFontListTypeChange,
-          ),
-          const Text(
-            'Rounded',
-            style: TextStyle(fontSize: 16.0, color: roundedColor),
-          ),
-          Radio<FontListType>(
-            value: FontListType.sharp,
-            groupValue: _fontListType,
-            onChanged: _onFontListTypeChange,
-          ),
-          const Text(
-            'Sharp',
-            style: TextStyle(fontSize: 16.0, color: sharpColor),
-          ),
-          Radio<FontListType>(
-            value: FontListType.universal,
-            groupValue: _fontListType,
-            onChanged: _onFontListTypeChange,
-          ),
-          Text(
-            screenWidth > 400
-                ? 'Universal set (all 3 w/suffixes)'
-                : 'Universal set',
-            style: const TextStyle(
-              fontSize: 16.0,
-            ),
-          ),
-        ],
-      ),
-      ...Splittable.flexibleRow(
-        context: context,
-        splitAtIndicesByWidth: {
-          300: [0, 1],
-        },
-        forceSplit: screenWidth < 600,
-        splitWidgetBehavior: SplitWidgetBehavior.includeInNextRow,
-        mainAxisAlignment: mainAxisAlignment,
-        children: <Widget>[
-          Text(
-            screenWidth > 400 ? 'Icon size: ${_iconFontSize}px' : 'Icon size:',
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16.0,
-            ),
-          ),
-          Slider(
-            min: 20.0,
-            max: 88.0,
-            divisions: 34,
-            value: _iconFontSize,
-            onChanged: (value) {
-              setState(() {
-                _iconFontSize = value.round().toDouble();
-                setAllVariationsSettings();
-              });
-            },
-          ),
-        ],
-      ),
       ...Splittable.flexibleRow(
         context: context,
         splitEveryN: 1,
@@ -712,6 +630,7 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             icon: const Icon(Symbols.open_in_new_rounded),
           ),
+          const SizedBox(width: 10),
         ],
       ),
       body: LayoutBuilder(
@@ -727,6 +646,86 @@ class _MyHomePageState extends State<MyHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Text(
+                            "Style:",
+                            style: context.textTheme.titleLarge,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  StyleChoiceWidget(
+                                    title: "Outlined",
+                                    color: Colors.red,
+                                    value: FontListType.outlined,
+                                    groupValue: _fontListType,
+                                    onChanged: _onFontListTypeChange,
+                                  ),
+                                  StyleChoiceWidget(
+                                    title: "Rounded",
+                                    color: Colors.blue,
+                                    value: FontListType.rounded,
+                                    groupValue: _fontListType,
+                                    onChanged: _onFontListTypeChange,
+                                  ),
+                                ],
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  StyleChoiceWidget(
+                                    title: "Sharp",
+                                    color: Colors.teal,
+                                    value: FontListType.sharp,
+                                    groupValue: _fontListType,
+                                    onChanged: _onFontListTypeChange,
+                                  ),
+                                  StyleChoiceWidget(
+                                    title: "All",
+                                    color: context.colorScheme.onBackground,
+                                    value: FontListType.universal,
+                                    groupValue: _fontListType,
+                                    onChanged: _onFontListTypeChange,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                "Icon size: $_iconFontSize",
+                                style: context.textTheme.titleMedium,
+                              ),
+                              SizedBox(
+                                width: MediaQuery.of(context).size.width * 0.3,
+                                child: Slider(
+                                  min: 20.0,
+                                  max: 88.0,
+                                  divisions: 34,
+                                  value: _iconFontSize,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      _iconFontSize = value.round().toDouble();
+                                      setAllVariationsSettings();
+                                    });
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                   ...buildFlexibleOptionsCustomizationPanel(context),
                   const Text(
                     'Material Symbols Icons (using above settings):',

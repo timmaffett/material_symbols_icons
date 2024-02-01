@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:material_symbols_icons/symbols.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
-import 'package:splittable_flexible_row/splittable_flexible_row.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // ignore: depend_on_referenced_packages
@@ -330,247 +329,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   bool? configPanelExpanded;
 
-  List<Widget> buildFlexibleOptionsCustomizationPanel(BuildContext context) {
-    final colors = Theme.of(context).colorScheme;
-    final size = MediaQuery.of(context).size;
-    final screenWidth = size.width;
-    Splittable.splitWidth = 400;
-    var willSplitRows = Splittable.willSplitRows(context);
-    final bool useExpandPanel = willSplitRows || (size.height < 500);
-    // if we are going to use the expand panel because short then FORCE split
-    if (useExpandPanel && !willSplitRows) willSplitRows = true;
-
-    // we set the initial value of configPanelExpanded depending on
-    // how we initially have to render it.  If we don't initially have
-    // to split the rows then we will init it to 'expanded', that way if the
-    // window shrinks and we are forced to use it it will already be expanded,
-    // (as it is when it is NOT rendered in a panel)
-    configPanelExpanded ??= !useExpandPanel;
-
-    final mainAxisAlignment =
-        willSplitRows ? MainAxisAlignment.start : MainAxisAlignment.center;
-    final controlPanelItems = <Widget>[
-      ...Splittable.flexibleRow(
-        context: context,
-        splitEveryN: 1,
-        forceSplit: screenWidth < 300,
-        splitWidgetBehavior: SplitWidgetBehavior.includeInNextRow,
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: <Widget>[
-          const Text(
-            'Customize Variation Settings:',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16.0,
-            ),
-          ),
-          SizedBox.square(
-            dimension: 40,
-            child: IconButton(
-              onPressed: () {
-                setState(() {
-                  resetVariationSettings();
-                });
-              },
-              //icon: const Icon(Icons.feed),
-              icon: const Icon(Symbols.restart_alt),
-              style: IconButton.styleFrom(
-                foregroundColor: colors.onSecondaryContainer,
-                disabledBackgroundColor: colors.onSurface.withOpacity(0.12),
-                hoverColor: colors.onSecondaryContainer.withOpacity(0.08),
-                focusColor: colors.onSecondaryContainer.withOpacity(0.12),
-                highlightColor: colors.onSecondaryContainer.withOpacity(0.12),
-              ),
-            ),
-          ),
-        ],
-      ),
-      const SizedBox(height: 10),
-      ...Splittable.flexibleRow(
-        context: context,
-        splitAtIndicesByWidth: {
-          500: [1, 3, 5, 7],
-          700: [2, 4],
-        },
-        splitWidgetBehavior: SplitWidgetBehavior.includeInThisRow,
-        mainAxisAlignment: mainAxisAlignment,
-        children: <Widget>[
-          Text(
-            screenWidth > 400 ? 'Fill: $_fillVariation' : 'Fill:',
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16.0,
-            ),
-          ),
-          Slider(
-            min: 0.0,
-            max: 1.0,
-            divisions: 1,
-            value: _fillVariation,
-            onChanged: (value) {
-              setState(() {
-                _fillVariation = value.round().toDouble();
-                setAllVariationsSettings();
-              });
-            },
-          ),
-          Text(
-            screenWidth > 400 ? 'Weight: $_weightVariation' : 'Weight:',
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16.0,
-            ),
-          ),
-          Slider(
-            min: 100.0,
-            max: 700.0,
-            divisions: 6,
-            value: _weightVariation,
-            onChanged: (value) {
-              setState(() {
-                double rv = value / 100.0;
-                value = rv.round().toDouble() * 100.0;
-                _weightVariation = value.round().toDouble();
-                setAllVariationsSettings();
-              });
-            },
-          ),
-        ],
-      ),
-      ...Splittable.flexibleRow(
-        context: context,
-        splitAtIndicesByWidth: {
-          500: [1, 3, 5, 7],
-          700: [2, 4],
-        },
-        splitWidgetBehavior: SplitWidgetBehavior.includeInThisRow,
-        mainAxisAlignment: mainAxisAlignment,
-        children: <Widget>[
-          Text(
-            screenWidth > 400 ? 'Grade: $_gradeVariation' : 'Grade:',
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16.0,
-            ),
-          ),
-          Slider(
-            min: 0.0,
-            max: 2.0,
-            divisions: 2,
-            value: _gradeSliderPos,
-            onChanged: (value) {
-              setState(() {
-                _gradeSliderPos = value.round().toDouble();
-                _gradeVariation = _grades[_gradeSliderPos.round()];
-                setAllVariationsSettings();
-              });
-            },
-          ),
-          Text(
-            screenWidth > 400
-                ? 'Optical Size: ${_opticalSizeVariation}px'
-                : 'OpticalSize:',
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16.0,
-            ),
-          ),
-          Slider(
-            min: 0.0,
-            max: 3.0,
-            divisions: 3,
-            value: _opticalSliderPos.toDouble(),
-            onChanged: (value) {
-              setState(() {
-                _opticalSliderPos = value.round().toDouble();
-                _opticalSizeVariation =
-                    _opticalSizes[_opticalSliderPos.round()];
-                setAllVariationsSettings();
-              });
-            },
-          ),
-        ],
-      ),
-      Center(
-          child: Text(
-              'Fill: $_fillVariation Weight: $_weightVariation Grade: $_gradeVariation Optical Size: $_opticalSizeVariation ',
-              style: const TextStyle(
-                  color: Colors.blue,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16))),
-      const SizedBox(width: 30),
-      if (!willSplitRows)
-        Padding(
-          padding: const EdgeInsets.all(12.0),
-          child: Container(height: 2, color: Colors.black),
-        ),
-    ];
-
-    final controlPanelColumn = Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: <Widget>[
-        ...controlPanelItems,
-      ],
-    );
-
-    // Return either the control panel widgets directly or place them in a
-    // ExpansionPanelList/ExpansionPanel.
-    return [
-      if (!useExpandPanel) ...[
-        const SizedBox(height: 12),
-        const Text(
-          'Style & Variation settings : ',
-          style: TextStyle(
-            color: Colors.black,
-            fontWeight: FontWeight.bold,
-            fontSize: 16.0,
-          ),
-        ),
-        const SizedBox(height: 12),
-      ],
-      !useExpandPanel
-          ? controlPanelColumn
-          : ExpansionPanelList(
-              animationDuration: const Duration(milliseconds: 500),
-              expandIconColor: Colors.green,
-              expandedHeaderPadding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-              elevation: 1,
-              children: [
-                ExpansionPanel(
-                  backgroundColor: const Color.fromARGB(255, 220, 220, 220),
-                  body: Container(
-                    padding: const EdgeInsets.fromLTRB(20, 8, 10, 0),
-                    child: controlPanelColumn,
-                  ),
-                  headerBuilder: (BuildContext context, bool isExpanded) {
-                    return Container(
-                      color: Colors.teal,
-                      padding: const EdgeInsets.fromLTRB(20.0, 14.0, 6.0, 0),
-                      child: const Text(
-                        'Style & Variation settings : ',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 14.0,
-                        ),
-                      ),
-                    );
-                  },
-                  isExpanded: configPanelExpanded!,
-                  canTapOnHeader: true,
-                ),
-              ],
-              expansionCallback: (int item, bool status) {
-                setState(() {
-                  configPanelExpanded = !configPanelExpanded!;
-                });
-              },
-            ),
-      const SizedBox(height: 12),
-    ];
-  }
-
   List<int> searchIconNameList(String searchString) {
     List<int> matchIndices = [];
     searchString = searchString.toLowerCase();
@@ -726,7 +484,172 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                   ),
-                  ...buildFlexibleOptionsCustomizationPanel(context),
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                "Customize Variation Settings:",
+                                style: context.textTheme.titleLarge,
+                              ),
+                              IconButton(
+                                onPressed: () {
+                                  setState(() {
+                                    resetVariationSettings();
+                                  });
+                                },
+                                tooltip: "Set default",
+                                icon: const Icon(Symbols.restart_alt),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: [
+                                      IconButton(
+                                        onPressed: () async {
+                                          await launchUrl(
+                                            Uri.parse(
+                                              "https://m3.material.io/styles/icons/applying-icons#ebb3ae7d-d274-4a25-9356-436e82084f1f",
+                                            ),
+                                          );
+                                        },
+                                        icon: const Icon(Symbols.info_rounded),
+                                      ),
+                                      const SizedBox(width: 10),
+                                      Text("Fill: $_fillVariation"),
+                                      Slider(
+                                        min: 0.0,
+                                        max: 1.0,
+                                        divisions: 10,
+                                        value: _fillVariation,
+                                        onChanged: (value) {
+                                          setState(() {
+                                            _fillVariation = value.toDouble();
+                                            setAllVariationsSettings();
+                                          });
+                                        },
+                                      ),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      IconButton(
+                                        onPressed: () async {
+                                          await launchUrl(
+                                            Uri.parse(
+                                              "https://m3.material.io/styles/icons/applying-icons#3ad55207-1cb0-43af-8092-fad2762f69f7",
+                                            ),
+                                          );
+                                        },
+                                        icon: const Icon(Symbols.info_rounded),
+                                      ),
+                                      const SizedBox(width: 10),
+                                      Text("Grade: $_gradeVariation"),
+                                      Slider(
+                                        min: 0.0,
+                                        max: 2.0,
+                                        divisions: 2,
+                                        value: _gradeSliderPos,
+                                        onChanged: (value) {
+                                          setState(() {
+                                            _gradeSliderPos =
+                                                value.round().toDouble();
+                                            _gradeVariation = _grades[
+                                                _gradeSliderPos.round()];
+                                            setAllVariationsSettings();
+                                          });
+                                        },
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: [
+                                      IconButton(
+                                        onPressed: () async {
+                                          await launchUrl(
+                                            Uri.parse(
+                                              "https://m3.material.io/styles/icons/applying-icons#d7f45762-67ac-473d-95b0-9214c791e242",
+                                            ),
+                                          );
+                                        },
+                                        icon: const Icon(Symbols.info_rounded),
+                                      ),
+                                      const SizedBox(width: 10),
+                                      Text("Weight: $_weightVariation"),
+                                      Slider(
+                                        min: 100.0,
+                                        max: 700.0,
+                                        divisions: 6,
+                                        value: _weightVariation,
+                                        onChanged: (value) {
+                                          setState(() {
+                                            double rv = value / 100.0;
+                                            value =
+                                                rv.round().toDouble() * 100.0;
+                                            _weightVariation =
+                                                value.round().toDouble();
+                                            setAllVariationsSettings();
+                                          });
+                                        },
+                                      ),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      IconButton(
+                                        onPressed: () async {
+                                          await launchUrl(
+                                            Uri.parse(
+                                              "https://m3.material.io/styles/icons/applying-icons#b41cbc01-9b49-4a44-a525-d153d1ea1425",
+                                            ),
+                                          );
+                                        },
+                                        icon: const Icon(Symbols.info_rounded),
+                                      ),
+                                      const SizedBox(width: 10),
+                                      Text(
+                                          "Optical Size: ${_opticalSizeVariation}px"),
+                                      Slider(
+                                        min: 0.0,
+                                        max: 3.0,
+                                        divisions: 3,
+                                        value: _opticalSliderPos.toDouble(),
+                                        onChanged: (value) {
+                                          setState(() {
+                                            _opticalSliderPos =
+                                                value.round().toDouble();
+                                            _opticalSizeVariation =
+                                                _opticalSizes[
+                                                    _opticalSliderPos.round()];
+                                            setAllVariationsSettings();
+                                          });
+                                        },
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
                   const Text(
                     'Material Symbols Icons (using above settings):',
                     style: TextStyle(

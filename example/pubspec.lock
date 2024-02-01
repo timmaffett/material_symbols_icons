@@ -337,14 +337,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.10.0"
-  splittable_flexible_row:
-    dependency: "direct main"
-    description:
-      name: splittable_flexible_row
-      sha256: "3d28a40b40f46ba9d1e35a57df10e59b5dda2ec14e1e40e0e0064c42b54d8248"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.1"
   stack_trace:
     dependency: transitive
     description:

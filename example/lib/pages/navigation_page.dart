@@ -25,6 +25,15 @@ class _NavigationPageState extends State<NavigationPage> {
     SettingsPage(),
   ];
 
+  PageController pageController = PageController();
+
+  @override
+  void dispose() {
+    pageController.dispose();
+
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,7 +83,56 @@ class _NavigationPageState extends State<NavigationPage> {
           });
         },
       ),
-      body: pages[currentPage],
+      body: Stack(
+        alignment: Alignment.center,
+        children: [
+          PageView(
+            controller: pageController,
+            children: pages,
+            onPageChanged: (value) {
+              setState(() {
+                currentPage = value;
+              });
+            },
+          ),
+          if (currentPage == 1)
+            Positioned(
+              left: 15,
+              child: IconButton.filledTonal(
+                onPressed: () {
+                  setState(() {
+                    currentPage = 0;
+                  });
+                  pageController.animateToPage(
+                    currentPage,
+                    duration: const Duration(milliseconds: 200),
+                    curve: Curves.easeInOut,
+                  );
+                },
+                iconSize: 40,
+                icon: const Icon(Symbols.arrow_left_rounded),
+              ),
+            ),
+          if (currentPage == 0)
+            Positioned(
+              right: 15,
+              child: IconButton.filledTonal(
+                onPressed: () {
+                  setState(() {
+                    currentPage = 1;
+                  });
+                  pageController.animateToPage(
+                    currentPage,
+                    duration: const Duration(milliseconds: 200),
+                    curve: Curves.easeInOut,
+                  );
+                },
+                iconSize: 40,
+                icon: const Icon(Symbols.arrow_right_rounded),
+              ),
+            ),
+        ],
+      ),
     );
   }
 }

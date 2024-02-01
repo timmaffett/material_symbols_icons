@@ -5,8 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
 
 class IconProvider extends ChangeNotifier {
-  FontListType _fontListType = FontListType.outlined;
-  FontListType get fontListType => _fontListType;
+  IconProvider() {
+    setAllVariationsSettings();
+    onFontListTypeChange(fontListType);
+  }
+
+  FontListType fontListType = FontListType.outlined;
 
   double iconFontSize = 48.0;
 
@@ -18,9 +22,7 @@ class IconProvider extends ChangeNotifier {
 
   double opticalSizeVariation = 48.0;
 
-  // List<IconData> iconList = [];
-  // List<String> iconNameList = [];
-  Map<String, IconData> iconList = {};
+  Map<String, IconData> icons = {};
 
   // default grade
   double gradeSliderPos = 1;
@@ -60,20 +62,20 @@ class IconProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void onFontListTypeChange(FontListType? val) {
-    _fontListType = val ?? FontListType.outlined;
-    switch (_fontListType) {
+  void onFontListTypeChange(FontListType? value) {
+    fontListType = value ?? FontListType.outlined;
+    switch (fontListType) {
       case FontListType.outlined:
-        iconList = materialSymbolsOutlinedMap;
+        icons = materialSymbolsOutlinedMap;
         break;
       case FontListType.rounded:
-        iconList = materialSymbolsRoundedMap;
+        icons = materialSymbolsRoundedMap;
         break;
       case FontListType.sharp:
-        iconList = materialSymbolsSharpMap;
+        icons = materialSymbolsSharpMap;
         break;
       case FontListType.universal:
-        iconList = materialSymbolsMap;
+        icons = materialSymbolsMap;
         break;
     }
 

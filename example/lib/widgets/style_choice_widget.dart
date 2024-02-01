@@ -1,4 +1,4 @@
-import 'package:example_using_material_symbols_icons/main.dart';
+import 'package:example_using_material_symbols_icons/models/font_list_type_model.dart';
 import 'package:flutter/material.dart';
 
 class StyleChoiceWidget extends StatelessWidget {

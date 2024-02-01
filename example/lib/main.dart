@@ -1,9 +1,12 @@
-import 'package:example_using_material_symbols_icons/extensions/theme_extension.dart';
-import 'package:example_using_material_symbols_icons/widgets/style_choice_widget.dart';
+import 'package:example_using_material_symbols_icons/models/font_list_type_model.dart';
+import 'package:example_using_material_symbols_icons/pages/navigation_page.dart';
+import 'package:example_using_material_symbols_icons/pages/settings_page.dart';
+import 'package:example_using_material_symbols_icons/provider/icon_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:material_symbols_icons/symbols.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
+import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // ignore: depend_on_referenced_packages
@@ -73,12 +76,30 @@ void main() {
 
   if (useDevicePreview) {
     //TEST various on various device screens//
-    runApp(DevicePreview(
-      builder: (context) => const MyApp(), // Wrap your app
-      enabled: true,
-    ));
+    runApp(
+      MultiProvider(
+        providers: [
+          ChangeNotifierProvider(
+            create: (_) => IconProvider(),
+          ),
+        ],
+        child: DevicePreview(
+          enabled: true,
+          builder: (context) => const MyApp(), // Wrap your app
+        ),
+      ),
+    );
   } else {
-    runApp(const MyApp());
+    runApp(
+      MultiProvider(
+        providers: [
+          ChangeNotifierProvider(
+            create: (_) => IconProvider(),
+          ),
+        ],
+        child: const MyApp(),
+      ),
+    );
   }
 }
 
@@ -100,7 +121,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Roboto',
         iconTheme: const IconThemeData(color: Colors.black),
       ),
-      home: MyHomePage(
+      home: NavigationPage(
         title: 'Material Symbols Icons For Flutter',
         subtitle:
             '(v$materialSymbolsIconsSourceFontVersionNumber fonts, released $materialSymbolsIconsSourceReleaseDate w/ $totalMaterialSymbolsIcons icons)',
@@ -119,9 +140,11 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-enum FontListType { outlined, rounded, sharp, universal }
-
 class _MyHomePageState extends State<MyHomePage> {
+  List<Widget> pages = [
+    const SettingsPage(),
+  ];
+
   final ScrollController _scrollController = ScrollController();
 
   List<IconData> iconList = [];
@@ -350,6 +373,8 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  int currentPage = 0;
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -391,411 +416,24 @@ class _MyHomePageState extends State<MyHomePage> {
           const SizedBox(width: 10),
         ],
       ),
-      body: LayoutBuilder(
-          builder: (BuildContext context, BoxConstraints viewportConstraints) {
-        return ConstrainedBox(
-          constraints: BoxConstraints(
-            minHeight: viewportConstraints.maxHeight,
+      bottomNavigationBar: NavigationBar(
+        destinations: const [
+          NavigationDestination(
+            icon: Icon(Symbols.recommend_rounded),
+            label: 'Icons',
           ),
-          child: IntrinsicHeight(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(12.0, 5.0, 12.0, 5.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Column(
-                        children: [
-                          Text(
-                            "Style:",
-                            style: context.textTheme.titleLarge,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  StyleChoiceWidget(
-                                    title: "Outlined",
-                                    color: Colors.red,
-                                    value: FontListType.outlined,
-                                    groupValue: _fontListType,
-                                    onChanged: _onFontListTypeChange,
-                                  ),
-                                  StyleChoiceWidget(
-                                    title: "Rounded",
-                                    color: Colors.blue,
-                                    value: FontListType.rounded,
-                                    groupValue: _fontListType,
-                                    onChanged: _onFontListTypeChange,
-                                  ),
-                                ],
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  StyleChoiceWidget(
-                                    title: "Sharp",
-                                    color: Colors.teal,
-                                    value: FontListType.sharp,
-                                    groupValue: _fontListType,
-                                    onChanged: _onFontListTypeChange,
-                                  ),
-                                  StyleChoiceWidget(
-                                    title: "All",
-                                    color: context.colorScheme.onBackground,
-                                    value: FontListType.universal,
-                                    groupValue: _fontListType,
-                                    onChanged: _onFontListTypeChange,
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                          Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(
-                                "Icon size: $_iconFontSize",
-                                style: context.textTheme.titleMedium,
-                              ),
-                              SizedBox(
-                                width: MediaQuery.of(context).size.width * 0.3,
-                                child: Slider(
-                                  min: 20.0,
-                                  max: 88.0,
-                                  divisions: 34,
-                                  value: _iconFontSize,
-                                  onChanged: (value) {
-                                    setState(() {
-                                      _iconFontSize = value.round().toDouble();
-                                      setAllVariationsSettings();
-                                    });
-                                  },
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(8),
-                      child: Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Text(
-                                "Customize Variation Settings:",
-                                style: context.textTheme.titleLarge,
-                              ),
-                              IconButton(
-                                onPressed: () {
-                                  setState(() {
-                                    resetVariationSettings();
-                                  });
-                                },
-                                tooltip: "Set default",
-                                icon: const Icon(Symbols.restart_alt),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Row(
-                                    children: [
-                                      IconButton(
-                                        onPressed: () async {
-                                          await launchUrl(
-                                            Uri.parse(
-                                              "https://m3.material.io/styles/icons/applying-icons#ebb3ae7d-d274-4a25-9356-436e82084f1f",
-                                            ),
-                                          );
-                                        },
-                                        icon: const Icon(Symbols.info_rounded),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      Text("Fill: $_fillVariation"),
-                                      Slider(
-                                        min: 0.0,
-                                        max: 1.0,
-                                        divisions: 10,
-                                        value: _fillVariation,
-                                        onChanged: (value) {
-                                          setState(() {
-                                            _fillVariation = value.toDouble();
-                                            setAllVariationsSettings();
-                                          });
-                                        },
-                                      ),
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      IconButton(
-                                        onPressed: () async {
-                                          await launchUrl(
-                                            Uri.parse(
-                                              "https://m3.material.io/styles/icons/applying-icons#3ad55207-1cb0-43af-8092-fad2762f69f7",
-                                            ),
-                                          );
-                                        },
-                                        icon: const Icon(Symbols.info_rounded),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      Text("Grade: $_gradeVariation"),
-                                      Slider(
-                                        min: 0.0,
-                                        max: 2.0,
-                                        divisions: 2,
-                                        value: _gradeSliderPos,
-                                        onChanged: (value) {
-                                          setState(() {
-                                            _gradeSliderPos =
-                                                value.round().toDouble();
-                                            _gradeVariation = _grades[
-                                                _gradeSliderPos.round()];
-                                            setAllVariationsSettings();
-                                          });
-                                        },
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Row(
-                                    children: [
-                                      IconButton(
-                                        onPressed: () async {
-                                          await launchUrl(
-                                            Uri.parse(
-                                              "https://m3.material.io/styles/icons/applying-icons#d7f45762-67ac-473d-95b0-9214c791e242",
-                                            ),
-                                          );
-                                        },
-                                        icon: const Icon(Symbols.info_rounded),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      Text("Weight: $_weightVariation"),
-                                      Slider(
-                                        min: 100.0,
-                                        max: 700.0,
-                                        divisions: 6,
-                                        value: _weightVariation,
-                                        onChanged: (value) {
-                                          setState(() {
-                                            double rv = value / 100.0;
-                                            value =
-                                                rv.round().toDouble() * 100.0;
-                                            _weightVariation =
-                                                value.round().toDouble();
-                                            setAllVariationsSettings();
-                                          });
-                                        },
-                                      ),
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      IconButton(
-                                        onPressed: () async {
-                                          await launchUrl(
-                                            Uri.parse(
-                                              "https://m3.material.io/styles/icons/applying-icons#b41cbc01-9b49-4a44-a525-d153d1ea1425",
-                                            ),
-                                          );
-                                        },
-                                        icon: const Icon(Symbols.info_rounded),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      Text(
-                                          "Optical Size: ${_opticalSizeVariation}px"),
-                                      Slider(
-                                        min: 0.0,
-                                        max: 3.0,
-                                        divisions: 3,
-                                        value: _opticalSliderPos.toDouble(),
-                                        onChanged: (value) {
-                                          setState(() {
-                                            _opticalSliderPos =
-                                                value.round().toDouble();
-                                            _opticalSizeVariation =
-                                                _opticalSizes[
-                                                    _opticalSliderPos.round()];
-                                            setAllVariationsSettings();
-                                          });
-                                        },
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                  const Text(
-                    'Material Symbols Icons (using above settings):',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16.0,
-                    ),
-                  ),
-                  Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        ConstrainedBox(
-                          constraints: BoxConstraints(
-                            maxWidth:
-                                screenWidth > 500 ? 400 : screenWidth * 0.8,
-                          ),
-                          child: IconSearchStringInput(
-                            initialSearchText: _iconSearchText,
-                            onSearchTextChanged: setNewSearchText,
-                          ),
-                        ),
-                      ]),
-                  Expanded(
-                    child: CustomScrollView(
-                      controller: _scrollController,
-                      slivers: [
-                        SliverGrid(
-                            delegate: SliverChildBuilderDelegate(
-                              (context, index) => Center(
-                                  child: MouseRegion(
-                                cursor: SystemMouseCursors.click,
-                                child: GestureDetector(
-                                  onTap: () {
-                                    final iconName =
-                                        'Symbols.${searchActive ? iconNameList[matches[index]] : iconNameList[index]}';
-                                    Clipboard.setData(
-                                            ClipboardData(text: iconName))
-                                        .then((_) {
-                                      ScaffoldMessenger.of(context)
-                                          .showSnackBar(SnackBar(
-                                              content: Text(
-                                                  'Copied "$iconName" to the clipboard.')));
-                                    });
-                                  },
-                                  child: Tooltip(
-                                    message:
-                                        'Symbols.${searchActive ? iconNameList[matches[index]] : iconNameList[index]}',
-                                    child: Column(children: [
-                                      VariedIcon.varied(
-                                        searchActive
-                                            ? iconList[matches[index]]
-                                            : iconList[index],
-                                        size: _iconFontSize,
-                                      ),
-                                      if (_iconFontSize <= 64)
-                                        const SizedBox(height: 5),
-                                      if (_iconFontSize <= 64)
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                              4.0, 0.0, 4.0, 0.0),
-                                          child: Text(
-                                            (searchActive
-                                                ? iconNameList[matches[index]]
-                                                : iconNameList[index]),
-                                            style: const TextStyle(fontSize: 8),
-                                            textAlign: TextAlign.center,
-                                          ),
-                                        )
-                                    ]),
-                                  ),
-                                ),
-                              )),
-                              childCount: searchActive
-                                  ? matches.length
-                                  : iconNameList.length,
-                            ),
-                            gridDelegate:
-                                const SliverGridDelegateWithMaxCrossAxisExtent(
-                              maxCrossAxisExtent: 100,
-                            )),
-                        SliverPadding(
-                          padding: const EdgeInsets.symmetric(),
-                          sliver: SliverToBoxAdapter(
-                            child: Card(
-                              margin: const EdgeInsets.symmetric(
-                                horizontal: 12,
-                                vertical: 12,
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 12, vertical: 12),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceAround,
-                                  children: [
-                                    Text(
-                                      'Browse Material Symbols Icons at fonts.google.com',
-                                      textAlign: TextAlign.left,
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .bodyMedium,
-                                      maxLines: 3,
-                                    ),
-                                    SizedBox.square(
-                                      dimension: 40,
-                                      child: IconButton.outlined(
-                                        color: Colors.grey,
-                                        onPressed: () {
-                                          launchUrl(Uri.parse(
-                                              'https://fonts.google.com/icons?icon.set=Material+Symbols'));
-                                        },
-                                        icon: const Icon(Symbols.open_in_new),
-                                        style: IconButton.styleFrom(
-                                          foregroundColor:
-                                              colors.onSecondaryContainer,
-                                          backgroundColor:
-                                              colors.secondaryContainer,
-                                          disabledBackgroundColor: colors
-                                              .onSurface
-                                              .withOpacity(0.12),
-                                          hoverColor: colors
-                                              .onSecondaryContainer
-                                              .withOpacity(0.08),
-                                          focusColor: colors
-                                              .onSecondaryContainer
-                                              .withOpacity(0.12),
-                                          highlightColor: colors
-                                              .onSecondaryContainer
-                                              .withOpacity(0.12),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ), //sizedbox
-                ],
-              ),
-            ),
+          NavigationDestination(
+            icon: Icon(Symbols.settings),
+            label: 'Settings',
           ),
-        );
-      }),
+        ],
+        selectedIndex: currentPage,
+        onDestinationSelected: (value) {
+          setState(() {
+            currentPage = value;
+          });
+        },
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           _scrollController.animateTo(
@@ -806,6 +444,136 @@ class _MyHomePageState extends State<MyHomePage> {
         },
         tooltip: 'Scroll to top',
         child: const Icon(Symbols.arrow_upward),
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          const Text(
+            'Material Symbols Icons (using above settings):',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 16.0,
+            ),
+          ),
+          Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+            ConstrainedBox(
+              constraints: BoxConstraints(
+                maxWidth: screenWidth > 500 ? 400 : screenWidth * 0.8,
+              ),
+              child: IconSearchStringInput(
+                initialSearchText: _iconSearchText,
+                onSearchTextChanged: setNewSearchText,
+              ),
+            ),
+          ]),
+          Expanded(
+            child: CustomScrollView(
+              controller: _scrollController,
+              slivers: [
+                SliverGrid(
+                  delegate: SliverChildBuilderDelegate(
+                    (context, index) => Center(
+                        child: MouseRegion(
+                      cursor: SystemMouseCursors.click,
+                      child: GestureDetector(
+                        onTap: () {
+                          final iconName =
+                              'Symbols.${searchActive ? iconNameList[matches[index]] : iconNameList[index]}';
+                          Clipboard.setData(ClipboardData(text: iconName))
+                              .then((_) {
+                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                                content: Text(
+                                    'Copied "$iconName" to the clipboard.')));
+                          });
+                        },
+                        child: Tooltip(
+                          message:
+                              'Symbols.${searchActive ? iconNameList[matches[index]] : iconNameList[index]}',
+                          child: Column(children: [
+                            VariedIcon.varied(
+                              searchActive
+                                  ? iconList[matches[index]]
+                                  : iconList[index],
+                              size: _iconFontSize,
+                            ),
+                            if (_iconFontSize <= 64) const SizedBox(height: 5),
+                            if (_iconFontSize <= 64)
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(
+                                    4.0, 0.0, 4.0, 0.0),
+                                child: Text(
+                                  (searchActive
+                                      ? iconNameList[matches[index]]
+                                      : iconNameList[index]),
+                                  style: const TextStyle(fontSize: 8),
+                                  textAlign: TextAlign.center,
+                                ),
+                              )
+                          ]),
+                        ),
+                      ),
+                    )),
+                    childCount:
+                        searchActive ? matches.length : iconNameList.length,
+                  ),
+                  gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                    maxCrossAxisExtent: 100,
+                  ),
+                ),
+                SliverPadding(
+                  padding: const EdgeInsets.symmetric(),
+                  sliver: SliverToBoxAdapter(
+                    child: Card(
+                      margin: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 12,
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 12, vertical: 12),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Text(
+                              'Browse Material Symbols Icons at fonts.google.com',
+                              textAlign: TextAlign.left,
+                              style: Theme.of(context).textTheme.bodyMedium,
+                              maxLines: 3,
+                            ),
+                            SizedBox.square(
+                              dimension: 40,
+                              child: IconButton.outlined(
+                                color: Colors.grey,
+                                onPressed: () {
+                                  launchUrl(Uri.parse(
+                                      'https://fonts.google.com/icons?icon.set=Material+Symbols'));
+                                },
+                                icon: const Icon(Symbols.open_in_new),
+                                style: IconButton.styleFrom(
+                                  foregroundColor: colors.onSecondaryContainer,
+                                  backgroundColor: colors.secondaryContainer,
+                                  disabledBackgroundColor:
+                                      colors.onSurface.withOpacity(0.12),
+                                  hoverColor: colors.onSecondaryContainer
+                                      .withOpacity(0.08),
+                                  focusColor: colors.onSecondaryContainer
+                                      .withOpacity(0.12),
+                                  highlightColor: colors.onSecondaryContainer
+                                      .withOpacity(0.12),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ), //sizedbox
+        ],
       ),
     );
   }

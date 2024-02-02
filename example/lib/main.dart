@@ -1,4 +1,4 @@
-import 'package:example_using_material_symbols_icons/pages/navigation_page.dart';
+import 'package:example_using_material_symbols_icons/presentation/pages/navigation_page.dart';
 import 'package:example_using_material_symbols_icons/provider/icon_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/symbols.dart';

@@ -1,7 +1,7 @@
 import 'package:example_using_material_symbols_icons/extensions/theme_extension.dart';
 import 'package:example_using_material_symbols_icons/models/font_list_type_model.dart';
 import 'package:example_using_material_symbols_icons/provider/icon_provider.dart';
-import 'package:example_using_material_symbols_icons/widgets/style_choice_widget.dart';
+import 'package:example_using_material_symbols_icons/presentation/widgets/style_choice_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/symbols.dart';
 import 'package:provider/provider.dart';
@@ -70,30 +70,6 @@ class SettingsPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(
-                        "Icon size: ${iconProvider.iconFontSize}",
-                        style: context.textTheme.titleMedium,
-                      ),
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.3,
-                        child: Slider(
-                          min: 20.0,
-                          max: 88.0,
-                          divisions: 34,
-                          value: iconProvider.iconFontSize,
-                          onChanged: (value) {
-                            iconProvider.iconFontSize =
-                                value.round().toDouble();
-
-                            iconProvider.setAllVariationsSettings();
-                          },
-                        ),
-                      ),
-                    ],
-                  ),
                 ],
               ),
             ),
@@ -139,7 +115,7 @@ class SettingsPage extends StatelessWidget {
                                 icon: const Icon(Symbols.info_rounded),
                               ),
                               const SizedBox(width: 10),
-                              Text("Fill: $iconProvider.fillVariation"),
+                              Text("Fill: ${iconProvider.fillVariation}"),
                               Slider(
                                 min: 0.0,
                                 max: 1.0,

@@ -12,8 +12,6 @@ class IconProvider extends ChangeNotifier {
 
   FontListType fontListType = FontListType.outlined;
 
-  double iconFontSize = 48.0;
-
   double fillVariation = 0.0;
 
   double weightVariation = 400.0;

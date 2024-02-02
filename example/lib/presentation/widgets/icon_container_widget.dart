@@ -49,6 +49,7 @@ class IconContainer extends StatelessWidget {
               Expanded(
                 child: Icon(
                   icon,
+                  color: getIconColor(),
                   size: opticalSize,
                 ),
               ),
@@ -67,5 +68,16 @@ class IconContainer extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  Color getIconColor() {
+    if (iconName.contains("rounded")) {
+      return Colors.blue;
+    }
+    if (iconName.contains("sharp")) {
+      return Colors.teal;
+    }
+
+    return Colors.red;
   }
 }

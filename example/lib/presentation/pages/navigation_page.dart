@@ -1,5 +1,5 @@
-import 'package:example_using_material_symbols_icons/pages/icon_page.dart';
-import 'package:example_using_material_symbols_icons/pages/settings_page.dart';
+import 'package:example_using_material_symbols_icons/presentation/pages/icon_page.dart';
+import 'package:example_using_material_symbols_icons/presentation/pages/settings_page.dart';
 import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/symbols.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -60,6 +60,7 @@ class _NavigationPageState extends State<NavigationPage> {
                 ),
               );
             },
+            tooltip: "Visit pub.dev",
             icon: const Icon(Symbols.open_in_new_rounded),
           ),
           const SizedBox(width: 10),
@@ -78,9 +79,7 @@ class _NavigationPageState extends State<NavigationPage> {
         ],
         selectedIndex: currentPage,
         onDestinationSelected: (value) {
-          setState(() {
-            currentPage = value;
-          });
+          changePage(value);
         },
       ),
       body: Stack(
@@ -100,14 +99,7 @@ class _NavigationPageState extends State<NavigationPage> {
               left: 15,
               child: IconButton.filledTonal(
                 onPressed: () {
-                  setState(() {
-                    currentPage = 0;
-                  });
-                  pageController.animateToPage(
-                    currentPage,
-                    duration: const Duration(milliseconds: 200),
-                    curve: Curves.easeInOut,
-                  );
+                  changePage(0);
                 },
                 iconSize: 40,
                 icon: const Icon(Symbols.arrow_left_rounded),
@@ -118,14 +110,7 @@ class _NavigationPageState extends State<NavigationPage> {
               right: 15,
               child: IconButton.filledTonal(
                 onPressed: () {
-                  setState(() {
-                    currentPage = 1;
-                  });
-                  pageController.animateToPage(
-                    currentPage,
-                    duration: const Duration(milliseconds: 200),
-                    curve: Curves.easeInOut,
-                  );
+                  changePage(1);
                 },
                 iconSize: 40,
                 icon: const Icon(Symbols.arrow_right_rounded),
@@ -133,6 +118,18 @@ class _NavigationPageState extends State<NavigationPage> {
             ),
         ],
       ),
+    );
+  }
+
+  void changePage(int newPage) {
+    setState(() {
+      currentPage = newPage;
+    });
+
+    pageController.animateToPage(
+      currentPage,
+      duration: const Duration(milliseconds: 200),
+      curve: Curves.easeInOut,
     );
   }
 }

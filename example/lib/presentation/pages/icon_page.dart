@@ -1,6 +1,6 @@
 import 'package:example_using_material_symbols_icons/provider/icon_provider.dart';
-import 'package:example_using_material_symbols_icons/widgets/icon_container_widget.dart';
-import 'package:example_using_material_symbols_icons/widgets/search_list_item_widget.dart';
+import 'package:example_using_material_symbols_icons/presentation/widgets/icon_container_widget.dart';
+import 'package:example_using_material_symbols_icons/presentation/widgets/search_list_item_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -31,6 +31,12 @@ class IconPage extends StatelessWidget {
                 },
               ).toList();
             },
+          ),
+        ),
+        const SizedBox(height: 10),
+        Center(
+          child: Text(
+            "Fill: ${iconProvider.fillVariation} | Weight: ${iconProvider.weightVariation} | Grade: ${iconProvider.gradeVariation} | Optical Size: ${iconProvider.opticalSizeVariation}",
           ),
         ),
         const SizedBox(height: 15),

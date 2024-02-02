@@ -30,10 +30,17 @@ void main() {
     have different variation settings for different icons from different font families.
   */
   MaterialSymbolsBase.setOutlinedVariationDefaults(
-      color: outlinedColor, fill: 0.0);
+    color: outlinedColor,
+    fill: 0.0,
+  );
   MaterialSymbolsBase.setRoundedVariationDefaults(
-      color: roundedColor, fill: 0.0);
-  MaterialSymbolsBase.setSharpVariationDefaults(color: sharpColor, fill: 0.0);
+    color: roundedColor,
+    fill: 0.0,
+  );
+  MaterialSymbolsBase.setSharpVariationDefaults(
+    color: sharpColor,
+    fill: 0.0,
+  );
 
   if (useDevicePreview) {
     //TEST various on various device screens//

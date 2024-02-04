@@ -28,7 +28,7 @@ Here is a [live example](https://timmaffett.github.io/material_symbols_icons) of
 TO use this package simply
 
 ```dart
-import 'material_symbols_icons\symbols.dart'
+import 'material_symbols_icons/symbols.dart'
 
 final myIcon = Icon( Symbols.add_task);
 final myRoundedIcon = Icon( Symbols.add_task_rounded);

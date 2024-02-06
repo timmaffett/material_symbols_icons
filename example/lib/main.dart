@@ -569,6 +569,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.blue,
                   fontWeight: FontWeight.bold,
                   fontSize: 16))),
+      Center(
+          child: Text(
+              'eg: Icon( Symbols.settings, size: $_iconFontSize${_fillVariation!=0?', fill: $_fillVariation':''}${_weightVariation!=400?', weight: $_weightVariation':''}${_gradeVariation!=0?', grade: $_gradeVariation':''}${_opticalSizeVariation!=24?', opticalSize: $_opticalSizeVariation':''} )',
+              style: const TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.normal,
+                  fontSize: 10))),
       const SizedBox(width: 30),
       if (!willSplitRows)
         Padding(

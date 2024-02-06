@@ -1,5 +1,11 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2719.1
+
+* Fix incorrect import statement in README.md example.
+* Added `Icon(...)` example text to the example app to illustrate widget parameters needs to accomplish
+  the visible font axis settings.
+
 ## 4.2719.0
 
 * Update to version 2.719 of the material icons variable fonts released 02/01/2024 with 3479 icons

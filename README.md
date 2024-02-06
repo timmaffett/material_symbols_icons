@@ -62,7 +62,7 @@ The middle `2659` number of the version number corresponds to the version number
 
 ----------------------------------------------------------------
 
-The Material Symbols Icon fonts are variable fonts, so it is possible to further modify (or animate!) the icons by specifying your own parameters for fill, weight, grade, and optical size when creating your icons.
+The Material Symbols Icon fonts are variable fonts, so it is possible to further modify (or animate!) the icons by specifying your own parameters for fill, weight, grade, and optical size when creating your icons.  The [live web example app](https://timmaffett.github.io/material_symbols_icons) will show you a preview of the `Icon(...)` statement required to accomplish the currently visible axis settings.  This takes into account the default configuration for each axis, wichi is weight at 400, optical size at 48, grade at 0 and fill also 0.  Any axis which differs from the default will be included in the shown `Icon(...)` example.
 
 ```dart
     

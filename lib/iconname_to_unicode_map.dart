@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-01-26 06:44:36.697975 by the dart file
+// This file was generated 2024-02-06 06:24:58.665131 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -720,6 +720,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'color_lens': 0xe40a,
   'colorize': 0xe3b8,
   'colors': 0xe997,
+  'comedy_mask': 0xf4d6,
   'comic_bubble': 0xf5dd,
   'comment': 0xe24c,
   'comment_bank': 0xea4e,

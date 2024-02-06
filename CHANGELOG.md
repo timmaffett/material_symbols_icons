@@ -1,9 +1,14 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2719.0
+
+* Update to version 2.719 of the material icons variable fonts released 02/01/2024 with 3479 icons
+* added f4d6  # comedy_mask
+
 ## 4.2718.1
 
 * Changes to update_package.dart so that dart format is happy and does not change symbols.dart or
-  iconanem_to_unicode_map.dart
+  iconname_to_unicode_map.dart
 * Previous changes in 4.2716.1 do not seem to help IntelliJ show icon previews :(
   (but filesize is still smaller, so we will leave that for now)
 

@@ -2,7 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/material_symbols_icons.svg)](https://pub.dev/packages/material_symbols_icons)
 
-### Using Official Material Symbols Icons variable fonts version 2.718 released 01/25/2024 from [material font repo](https://github.com/google/material-design-icons) with 3478 icons.
+### Using Official Material Symbols Icons variable fonts version 2.719 released 02/01/2024 from [material font repo](https://github.com/google/material-design-icons) with 3479 icons.
 
 [Complete interactive icon map can be found here.](https://timmaffett.github.io/material_symbols_icons)
 
@@ -25,10 +25,10 @@ These icons also support the complete set of icon variation parameters defined f
 
 Here is a [live example](https://timmaffett.github.io/material_symbols_icons) of the current version of this package where you can test any Material Symbols icon name to verify it's availability.  The example also allows playing with all of the font variation options to explore further customizing the look of our Material Symbols.
 
-TO use this package simply
+To use this package simply
 
 ```dart
-import 'material_symbols_icons\symbols.dart'
+import 'package:material_symbols_icons/symbols.dart';
 
 final myIcon = Icon( Symbols.add_task);
 final myRoundedIcon = Icon( Symbols.add_task_rounded);

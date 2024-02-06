@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-01-26 06:44:36.633031 by the dart file
+// This file was generated 2024-02-06 06:24:58.615931 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -4272,6 +4272,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">colors</span> Symbols.colors_rounded
 ///
 /// <span class="material-symbols-sharp">colors</span> Symbols.colors_sharp
+///
+/// <span class="material-symbols-outlined">comedy_mask</span> Symbols.comedy_mask
+///
+/// <span class="material-symbols-rounded">comedy_mask</span> Symbols.comedy_mask_rounded
+///
+/// <span class="material-symbols-sharp">comedy_mask</span> Symbols.comedy_mask_sharp
 ///
 /// <span class="material-symbols-outlined">comic_bubble</span> Symbols.comic_bubble
 ///
@@ -27297,6 +27303,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">colors</span> material symbol named "colors_sharp".
   static const IconData colors_sharp = IconDataSharp(0xe997);
+
+  /// @nodoc <span class="material-symbols-outlined">comedy_mask</span> material symbol named "comedy_mask".
+  static const IconData comedy_mask = IconDataOutlined(0xf4d6);
+
+  /// @nodoc <span class="material-symbols-rounded">comedy_mask</span> material symbol named "comedy_mask_rounded".
+  static const IconData comedy_mask_rounded = IconDataRounded(0xf4d6);
+
+  /// @nodoc <span class="material-symbols-sharp">comedy_mask</span> material symbol named "comedy_mask_sharp".
+  static const IconData comedy_mask_sharp = IconDataSharp(0xf4d6);
 
   /// @nodoc <span class="material-symbols-outlined">comic_bubble</span> material symbol named "comic_bubble".
   static const IconData comic_bubble = IconDataOutlined(0xf5dd);

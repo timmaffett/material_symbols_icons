@@ -82,6 +82,7 @@ class MyApp extends StatelessWidget {
       Set default IconThemeData() for ALL icons
     */
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Material Symbols Icons For Flutter',
       theme: ThemeData(
         primarySwatch: Colors.teal,
@@ -310,6 +311,90 @@ class _MyHomePageState extends State<MyHomePage> {
     setQueryParametersToMatchState();
   }
 
+  String getStyleSummary() {
+    String style='';
+    switch(_fontListType) {
+        case FontListType.outlined:
+          style = 'Outlined';
+          break;
+        case FontListType.rounded:
+          style = 'Rounded';
+          break;
+        case FontListType.sharp:
+          style = 'Sharp';
+          break;
+        case FontListType.universal:
+          style = 'All 3 Styles';
+    }
+    return 'Showing $style';
+  }
+
+  TextSpan buildSummaryWidgetOfStyleAndVariation() {
+    return TextSpan(
+      text: '  (${getStyleSummary()} with Fill: $_fillVariation Weight: $_weightVariation Grade: $_gradeVariation Optical Size: $_opticalSizeVariation )  ',
+      style: const TextStyle(
+          color: Colors.blue,
+          fontWeight: FontWeight.bold,
+          fontSize: 16),
+      children: const [
+        WidgetSpan(
+          child: Icon(
+            Symbols.settings,
+            color: Colors.blue,
+            size: 18,
+          ),
+        ),
+      ],
+    );
+  }
+
+  String getIconCodeStringForCurrentSettings() {
+    return 'eg: Icon( Symbols.settings, size: $_iconFontSize${_fillVariation!=0?', fill: $_fillVariation':''}${_weightVariation!=400?', weight: $_weightVariation':''}${_gradeVariation!=0?', grade: $_gradeVariation':''}${_opticalSizeVariation!=24?', opticalSize: $_opticalSizeVariation':''} )';
+  }
+
+  Widget buildIconCodeSummaryWidget() {
+    return Center(
+          child: Text(
+              getIconCodeStringForCurrentSettings(),
+              style: const TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.normal,
+                  fontSize: 10)));
+  }
+
+  Widget buildPossiblyContstrainedAppBarTitle( bool constrained ) {
+    return Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            RichText(
+              text: TextSpan( text: widget.title, style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
+              ),
+            ),
+            if(!constrained) RichText(
+                text: TextSpan(text: widget.subtitle, 
+                      style: const TextStyle(color: Colors.blue, fontSize: 12, decoration: TextDecoration.underline),
+                      recognizer: TapGestureRecognizer()
+                          ..onTap = () async {
+                                  launchUrl(Uri.parse(
+                                      'https://github.com/google/material-design-icons/tree/master/variablefont'));
+                          },
+                   ),
+            ),
+            SizedBox.square(
+              dimension: 40,
+              child: IconButton(
+                color: Colors.blue,
+                onPressed: () {
+                  launchUrl(Uri.parse(
+                      'https://pub.dev/packages/material_symbols_icons'));
+                },
+                icon: const Icon(Symbols.open_in_new),
+              ),
+            ),
+          ],
+        );
+  }
+
   bool? configPanelExpanded;
 
   List<Widget> buildFlexibleOptionsCustomizationPanel(BuildContext context) {
@@ -318,7 +403,9 @@ class _MyHomePageState extends State<MyHomePage> {
     final screenWidth = size.width;
     Splittable.splitWidth = 400;
     var willSplitRows = Splittable.willSplitRows(context);
-    final bool useExpandPanel = willSplitRows || (size.height < 500);
+    bool sizeDictatesUsingExpansionPanel = willSplitRows || (size.height < 500);
+    bool hardCodedUseExpansionPanel = size.height<2600;  // basically let's always use expanded panel
+    final bool useExpandPanel = hardCodedUseExpansionPanel || sizeDictatesUsingExpansionPanel;
     // if we are going to use the expand panel because short then FORCE split
     if (useExpandPanel && !willSplitRows) willSplitRows = true;
 
@@ -327,10 +414,10 @@ class _MyHomePageState extends State<MyHomePage> {
     // to split the rows then we will init it to 'expanded', that way if the
     // window shrinks and we are forced to use it it will already be expanded,
     // (as it is when it is NOT rendered in a panel)
-    configPanelExpanded ??= !useExpandPanel;
+    configPanelExpanded ??= !useExpandPanel || hardCodedUseExpansionPanel;
 
     final mainAxisAlignment =
-        willSplitRows ? MainAxisAlignment.start : MainAxisAlignment.center;
+        willSplitRows ? MainAxisAlignment.center : MainAxisAlignment.center;
     final controlPanelItems = <Widget>[
       ...Splittable.flexibleRow(
         context: context,
@@ -569,13 +656,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.blue,
                   fontWeight: FontWeight.bold,
                   fontSize: 16))),
-      Center(
-          child: Text(
-              'eg: Icon( Symbols.settings, size: $_iconFontSize${_fillVariation!=0?', fill: $_fillVariation':''}${_weightVariation!=400?', weight: $_weightVariation':''}${_gradeVariation!=0?', grade: $_gradeVariation':''}${_opticalSizeVariation!=24?', opticalSize: $_opticalSizeVariation':''} )',
-              style: const TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.normal,
-                  fontSize: 10))),
+      buildIconCodeSummaryWidget(),
       const SizedBox(width: 30),
       if (!willSplitRows)
         Padding(
@@ -616,22 +697,37 @@ class _MyHomePageState extends State<MyHomePage> {
               elevation: 1,
               children: [
                 ExpansionPanel(
-                  backgroundColor: const Color.fromARGB(255, 220, 220, 220),
+                  backgroundColor: const Color.fromARGB(255, 245, 245, 245),
                   body: Container(
                     padding: const EdgeInsets.fromLTRB(20, 8, 10, 0),
-                    child: controlPanelColumn,
+                    child: Center( child: controlPanelColumn ),
                   ),
                   headerBuilder: (BuildContext context, bool isExpanded) {
                     return Container(
-                      color: Colors.teal,
-                      padding: const EdgeInsets.fromLTRB(20.0, 14.0, 6.0, 0),
-                      child: const Text(
-                        'Style & Variation settings : ',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 14.0,
-                        ),
+                      color: const Color.fromARGB(255, 235, 235, 235),
+                      padding: const EdgeInsets.fromLTRB(20.0, 4.0, 6.0, 0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          RichText(
+                              textAlign: TextAlign.center,
+                              text: TextSpan(
+                                children: [
+                                  const TextSpan(
+                                    text:'Style & Variation settings :',
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18.0,
+                                    ),
+                                  ),
+                                  if(!configPanelExpanded!) buildSummaryWidgetOfStyleAndVariation(),
+                                ]
+                            ),
+                          ),
+                          if(!configPanelExpanded!) buildIconCodeSummaryWidget(),
+                        ],
                       ),
                     );
                   },
@@ -645,7 +741,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 });
               },
             ),
-      const SizedBox(height: 12),
     ];
   }
 
@@ -685,36 +780,12 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 22,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            RichText(
-              text: TextSpan( text: widget.title, style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
-                children: [ 
-                  TextSpan(text: '   ${widget.subtitle}', 
-                      style: const TextStyle(color: Colors.blue, fontSize: 12, decoration: TextDecoration.underline),
-                      recognizer: TapGestureRecognizer()
-                          ..onTap = () async {
-                                  launchUrl(Uri.parse(
-                                      'https://github.com/google/material-design-icons/tree/master/variablefont'));
-                          },
-                    ),
-                  ], 
-              )
-            ),
-            SizedBox.square(
-              dimension: 40,
-              child: IconButton(
-                color: Colors.blue,
-                onPressed: () {
-                  launchUrl(Uri.parse(
-                      'https://pub.dev/packages/material_symbols_icons'));
-                },
-                icon: const Icon(Symbols.open_in_new),
-              ),
-            ),
-          ],
-        ),
+        title: LayoutBuilder(
+            builder: (context, constraints) {
+              debugPrint('constraints.maxWidth=${constraints.maxWidth}');
+              return buildPossiblyContstrainedAppBarTitle( (constraints.maxWidth < 640) );
+            },
+          ),
       ),
       body: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints viewportConstraints) {
@@ -730,7 +801,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   ...buildFlexibleOptionsCustomizationPanel(context),
-                  const Text(
+                  if(false) const Text(
                     'Material Symbols Icons (using above settings):',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,

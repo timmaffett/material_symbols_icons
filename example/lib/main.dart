@@ -8,11 +8,6 @@ import 'package:flutter_web_plugins/url_strategy.dart';
 
 import 'symbols_map.dart';
 
-import 'package:device_preview/device_preview.dart'; // required when useDevicePreview==true
-
-/// Set [useDevicePreview] to allow testing layouts on virtual device screens
-const useDevicePreview = true;
-
 const outlinedColor = Colors.red;
 const roundedColor = Colors.blue;
 const sharpColor = Colors.teal;
@@ -48,33 +43,16 @@ void main() {
 
   totalMaterialSymbolsIcons = (materialSymbolsMap.length / 3).floor();
 
-  if (useDevicePreview) {
-    //TEST various on various device screens//
-    runApp(
-      MultiProvider(
-        providers: [
-          ChangeNotifierProvider(
-            create: (_) => IconProvider(),
-          ),
-        ],
-        child: DevicePreview(
-          enabled: true,
-          builder: (context) => const MyApp(), // Wrap your app
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (_) => IconProvider(),
         ),
-      ),
-    );
-  } else {
-    runApp(
-      MultiProvider(
-        providers: [
-          ChangeNotifierProvider(
-            create: (_) => IconProvider(),
-          ),
-        ],
-        child: const MyApp(),
-      ),
-    );
-  }
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {

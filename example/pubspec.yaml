@@ -12,13 +12,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+    
   url_launcher: ^6.1.7
-  cupertino_icons: ^1.0.5
   material_symbols_icons:
     path: ../
-  device_preview: ^1.1.0    # required only for virtual device screen testing
-  splittable_flexible_row: ^1.0.0
-  universal_html: ^2.2.3
+  provider: ^6.1.1
   
 dev_dependencies:
   flutter_test:

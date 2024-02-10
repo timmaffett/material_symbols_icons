@@ -1,8 +1,6 @@
-import 'package:example_using_material_symbols_icons/presentation/pages/navigation_page.dart';
+import 'package:example_using_material_symbols_icons/presentation/pages/icon_page.dart';
 import 'package:example_using_material_symbols_icons/provider/icon_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:material_symbols_icons/symbols.dart';
-import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:provider/provider.dart';
 
 // ignore: depend_on_referenced_packages
@@ -13,7 +11,7 @@ import 'symbols_map.dart';
 import 'package:device_preview/device_preview.dart'; // required when useDevicePreview==true
 
 /// Set [useDevicePreview] to allow testing layouts on virtual device screens
-const useDevicePreview = false;
+const useDevicePreview = true;
 
 const outlinedColor = Colors.red;
 const roundedColor = Colors.blue;
@@ -43,29 +41,10 @@ void makeSymbolsByStyleMaps() {
 
 void main() {
   // prevent engine from removing query url parameters
-  setUrlStrategy(PathUrlStrategy());
+  usePathUrlStrategy();
 
   // create separate iconname->icon map for each style
   makeSymbolsByStyleMaps();
-
-  /*
-    Here we can set default Icon VARATIONS which can be specific to Outlined, Rounded or Sharp icons,
-    each with their own settings.  These will take PRIORITY over IconThemeData()
-    This is totally optional and IconThemeData() can just be used if you do not need to
-    have different variation settings for different icons from different font families.
-  */
-  MaterialSymbolsBase.setOutlinedVariationDefaults(
-    color: outlinedColor,
-    fill: 0.0,
-  );
-  MaterialSymbolsBase.setRoundedVariationDefaults(
-    color: roundedColor,
-    fill: 0.0,
-  );
-  MaterialSymbolsBase.setSharpVariationDefaults(
-    color: sharpColor,
-    fill: 0.0,
-  );
 
   totalMaterialSymbolsIcons = (materialSymbolsMap.length / 3).floor();
 
@@ -110,17 +89,20 @@ class MyApp extends StatelessWidget {
       title: 'Material Symbols Icons For Flutter',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.red,
+          seedColor: Colors.green[300]!,
         ),
         useMaterial3: true,
         fontFamily: 'Roboto',
         iconTheme: const IconThemeData(color: Colors.black),
       ),
-      home: NavigationPage(
-        title: 'Material Symbols Icons For Flutter',
-        subtitle:
-            '(v$materialSymbolsIconsSourceFontVersionNumber fonts, released $materialSymbolsIconsSourceReleaseDate w/ $totalMaterialSymbolsIcons icons)',
-      ),
+      routes: {
+        '/': (context) => IconPage(
+              title: 'Material Symbols Icons For Flutter',
+              subtitle:
+                  '(v$materialSymbolsIconsSourceFontVersionNumber fonts, released $materialSymbolsIconsSourceReleaseDate w/ $totalMaterialSymbolsIcons icons)',
+            ),
+      },
+      initialRoute: '/',
     );
   }
 }

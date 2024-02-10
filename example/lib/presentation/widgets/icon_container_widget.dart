@@ -4,14 +4,12 @@ import 'package:flutter/services.dart';
 
 class IconContainer extends StatelessWidget {
   final String iconName;
-  final IconData icon;
-  final double opticalSize;
+  final Icon icon;
 
   const IconContainer({
     super.key,
     required this.iconName,
     required this.icon,
-    required this.opticalSize,
   });
 
   @override
@@ -47,11 +45,7 @@ class IconContainer extends StatelessWidget {
           child: Column(
             children: [
               Expanded(
-                child: Icon(
-                  icon,
-                  color: getIconColor(),
-                  size: opticalSize,
-                ),
+                child: icon,
               ),
               Padding(
                 padding: const EdgeInsets.all(4.0),
@@ -70,14 +64,5 @@ class IconContainer extends StatelessWidget {
     );
   }
 
-  Color getIconColor() {
-    if (iconName.contains("rounded")) {
-      return Colors.blue;
-    }
-    if (iconName.contains("sharp")) {
-      return Colors.teal;
-    }
-
-    return Colors.red;
-  }
+  
 }

@@ -41,6 +41,35 @@ and then access the icons from the `Symbols` class.
 This class contains outlined, rounded and sharp versions of every icon.  You access them using `Symbols.iconname` (for the outlined version),
 and `Symbols.iconname_rounded` or `Symbols.iconname_sharp` for the rounded and sharp versions respectively.
 
+Additionally the Material Symbols [specification](https://docs.google.com/document/d/1UHRKDl8-lzl_hW_K2AHnpMwvdPo0vGPbDI7mqACWXJY/) document also specifies
+a Symbols.get(String name, SymbolStyle style) method that can be used to return the IconData for any icon using it's
+icon name and style (SymbolStyle.outlined, SymbolStyle.rounded, or SymbolStyle.sharp).  The get() method is not included on
+Symbols by default to avoid needlessly bringing in the large name->codepoint map, it can be included by using import 'package:material_symbols_icons/get.dart'.
+When using the get() method *tree-shaking must be turned off* using
+`--no-tree-shake-icons` as there is no way for the compiler to know what icons are being used.
+`Symbols.values` can be used to access an `Iterable<String>` of the icon names for each available icon.
+`Symbols.map` can be used to access a `Map<String,int>` of the icon names to unicode code points for each icon.
+
+```dart
+// icon tree-shaking must be turned off when using the get() method!
+//  build with `--no-tree-shake-icons`
+import 'package:material_symbols_icons/get.dart';
+
+
+final iconRounded = Symbols.get('airplane',SymbolStyle.rounded);
+final iconSharp = Symbols.get('airplane',SymbolStyle.sharp);
+final iconOutlined = Symbols.get('airplane',SymbolStyle.outlined);
+
+// access iconname->codepoint map
+final unicodeCodePointAirplane = Symbols.map['airplane'];
+
+// iterate on and print all available icon names
+for(var iconname in Symbols.values) {
+  print(iconname);
+}
+
+```
+
 ----------------------------------------------------------------
 
 All icons share the same name they had in the Material Icons [Icons] class.

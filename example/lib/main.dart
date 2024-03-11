@@ -349,13 +349,24 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   String getIconCodeStringForCurrentSettings() {
-    return 'eg: Icon( Symbols.settings, size: $_iconFontSize${_fillVariation!=0?', fill: $_fillVariation':''}${_weightVariation!=400?', weight: $_weightVariation':''}${_gradeVariation!=0?', grade: $_gradeVariation':''}${_opticalSizeVariation!=24?', opticalSize: $_opticalSizeVariation':''} )';
+    return 'Icon( Symbols.settings, size: $_iconFontSize${_fillVariation!=0?', fill: $_fillVariation':''}${_weightVariation!=400?', weight: $_weightVariation':''}${_gradeVariation!=0?', grade: $_gradeVariation':''}${_opticalSizeVariation!=24?', opticalSize: $_opticalSizeVariation':''} )';
   }
 
   Widget buildIconCodeSummaryWidget() {
     return Center(
-          child: Text(
-              getIconCodeStringForCurrentSettings(),
+          child: SelectableText(
+             onTap: () {
+                final exampleIconCode = getIconCodeStringForCurrentSettings();
+                Clipboard.setData(
+                        ClipboardData(text: exampleIconCode))
+                    .then((_) {
+                  ScaffoldMessenger.of(context)
+                      .showSnackBar(SnackBar(
+                          content: Text(
+                              'Copied "$exampleIconCode" to the clipboard.')));
+                });
+              },
+              'eg: ${getIconCodeStringForCurrentSettings()}',
               style: const TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.normal,

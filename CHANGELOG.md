@@ -1,5 +1,18 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2719.3
+
+* Added static IconData get(String name, SymbolStyle style) method on Symbols that is specified in the official Material
+  Symbols [specification](https://docs.google.com/document/d/1UHRKDl8-lzl_hW_K2AHnpMwvdPo0vGPbDI7mqACWXJY/)
+  This is included using import 'package:material_symbols_icons/get.dart';
+  `Symbols.values` can be used to access an `Iterable<String>` of the icon names for each available icon.
+  `Symbols.map` can be used to access a `Map<String,int>` of the icon names to unicode code points for each icon.
+
+## 4.2719.2
+
+* Make the `Icon(...)` example text selectable using SelectableText() widget - also copied example code to clipboard
+  when the text is clicked - or a sub-selection can be selected and copied manually.
+
 ## 4.2719.1
 
 * Fix incorrect import statement in README.md example.

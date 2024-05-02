@@ -47,8 +47,8 @@ icon name and style (SymbolStyle.outlined, SymbolStyle.rounded, or SymbolStyle.s
 Symbols by default to avoid needlessly bringing in the large name->codepoint map, it can be included by using import 'package:material_symbols_icons/get.dart'.
 When using the get() method *tree-shaking must be turned off* using
 `--no-tree-shake-icons` as there is no way for the compiler to know what icons are being used.
-`Symbols.values` can be used to access an `Iterable<String>` of the icon names for each available icon.
-`Symbols.map` can be used to access a `Map<String,int>` of the icon names to unicode code points for each icon.
+`SymbolsGet.values` can be used to access an `Iterable<String>` of the icon names for each available icon.
+`SymbolsGet.map` can be used to access a `Map<String,int>` of the icon names to unicode code points for each icon.
 
 ```dart
 // icon tree-shaking must be turned off when using the get() method!
@@ -56,15 +56,15 @@ When using the get() method *tree-shaking must be turned off* using
 import 'package:material_symbols_icons/get.dart';
 
 
-final iconRounded = Symbols.get('airplane',SymbolStyle.rounded);
-final iconSharp = Symbols.get('airplane',SymbolStyle.sharp);
-final iconOutlined = Symbols.get('airplane',SymbolStyle.outlined);
+final iconRounded = SymbolsGet.get('airplane',SymbolStyle.rounded);
+final iconSharp = SymbolsGet.get('airplane',SymbolStyle.sharp);
+final iconOutlined = SymbolsGet.get('airplane',SymbolStyle.outlined);
 
 // access iconname->codepoint map
-final unicodeCodePointAirplane = Symbols.map['airplane'];
+final unicodeCodePointAirplane = SymbolsGet.map['airplane'];
 
 // iterate on and print all available icon names
-for(var iconname in Symbols.values) {
+for(var iconname in SymbolsGet.values) {
   print(iconname);
 }
 

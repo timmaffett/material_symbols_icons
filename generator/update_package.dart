@@ -201,13 +201,6 @@ Future<void> main(List<String> args) async {
           'The TTF font files will be downloaded to the $pathToWriteTTFFiles directory if this flag is passed.',
     )
     ..addFlag(
-      'legacy_suffix_icon_names',
-      abbr: 'l',
-      negatable: false,
-      help:
-          'Add `_outlined`, `_rounded` or `_sharp` suffixes to every icon name in corresponding MaterialSymbols, MaterialSymbolsOutlined, MaterialSymbolsRounded and MaterialSymbolsSharp classes.',
-    )
-    ..addFlag(
       'write_unicode_codepoints',
       abbr: 'u',
       negatable: false,
@@ -241,7 +234,6 @@ Future<void> main(List<String> args) async {
   verboseFlag = results['verbose'] as bool;
   final combinedFutureSymbolsSupportCompatible =
       results['combined_symbols'] as bool;
-  final legacySuffixIconNames = results['legacy_suffix_icon_names'] as bool;
   fakeDartDocsFlag = results['fake_dart_docs'] as bool;
   writeUnicodeCodepoints = results['write_unicode_codepoints'] as bool;
 
@@ -330,31 +322,6 @@ Future<void> main(List<String> args) async {
 
   if (verboseFlag) {
     print('Renamed icon names $renamedIconNames');
-  }
-
-  if (legacySuffixIconNames) {
-    // Now we have loaded up [variableFontFlavors] with the downloaded code point info.
-    // We are ready to write the source files.
-    for (final fontFlavor in variableFontFlavors) {
-      final sourceFilename = '$pathToWriteDartFiles${fontFlavor.flavor}.dart';
-      final exampleSourceFilename =
-          '$pathToWriteExampleDartFiles${fontFlavor.flavor}_map.dart';
-
-      writeSourceFile(fontFlavor, variableFontFlavors, sourceFilename);
-
-      writeExampleSourceFile(fontFlavor, exampleSourceFilename, sourceFilename);
-
-      final suffixSourceFilename =
-          '$pathToWriteDartFiles${fontFlavor.flavor}_suffix.dart';
-      writeSourceFile(fontFlavor, variableFontFlavors, suffixSourceFilename,
-          suffixVersion: true, suffixIconNames: legacySuffixIconNames);
-
-      final suffixExampleSourceFilename =
-          '$pathToWriteExampleDartFiles${fontFlavor.flavor}_suffix_map.dart';
-      writeExampleSourceFile(
-          fontFlavor, suffixExampleSourceFilename, suffixSourceFilename,
-          suffixVersion: true, suffixIconNames: legacySuffixIconNames);
-    }
   }
 
   if (combinedFutureSymbolsSupportCompatible) {
@@ -663,19 +630,7 @@ class Symbols {
       assert(fontinfo.iconInfoList.length == lastCount);
     }
     lastCount = fontinfo.iconInfoList.length;
-
-/*OBSOLETE
-    // write constant names
-    sourceFileContent.writeln(
-        "  static const _family_${fontinfo.flavor} = '${fontinfo.familyNameToUse}';");
-OBSOLETE*/
-
   }
-
-/*OBSOLETE
-  sourceFileContent
-      .writeln("  static const _package = 'material_symbols_icons';");
-OBSOLETE*/
 
   var iconCount = 0;
 
@@ -833,260 +788,4 @@ String _generateFlutterId(String id) {
   flutterId = flutterId.replaceAll('__', '_');
 
   return flutterId;
-}
-
-/*
- * 
- * OBSOLETE CODE follows - this is no longer used when generating this class and is included only for legacy reasons
- * 
- */
-
-void writeSourceFile(
-    MaterialSymbolsVariableFont fontinfo,
-    List<MaterialSymbolsVariableFont> allFlavorFontInfoList,
-    String sourceFilename,
-    {bool suffixVersion = false,
-    bool suffixIconNames = false}) {
-  late final String classFlavor;
-  late final String libraryFlavor;
-  late final String categoryFlavor;
-  late final String extraMessage;
-  if (suffixVersion) {
-    classFlavor =
-        '${fontinfo.flavor[0].toUpperCase()}${fontinfo.flavor.substring(1).toLowerCase()}';
-    categoryFlavor = '${classFlavor}_Suffix';
-    libraryFlavor = '${fontinfo.flavor.toLowerCase()}_suffix';
-    extraMessage = ' (with style as suffix appended to the class name)';
-  } else {
-    classFlavor = '';
-    categoryFlavor =
-        '${fontinfo.flavor[0].toUpperCase()}${fontinfo.flavor.substring(1).toLowerCase()}';
-    libraryFlavor = fontinfo.flavor.toLowerCase();
-    extraMessage = '';
-  }
-
-  StringBuffer getFakeDartDocsForIconNames() {
-    final fakeDartDocs = StringBuffer();
-
-    fakeDartDocs.writeln(
-        '/// NOTE: IMPORTANT - Because of the current gross inefficiencies of dart doc ALL icon member names');
-    fakeDartDocs.writeln(
-        '/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data.  (This is caused');
-    fakeDartDocs.writeln(
-        '/// by dart doc including a repeated sidebar of all class members within every class members file).');
-    fakeDartDocs.writeln('///');
-    fakeDartDocs
-        .writeln('/// The icons and corresponding symbols names follow:');
-    fakeDartDocs.writeln('///');
-
-    final iconInfoList = fontinfo.iconInfoList;
-    for (int i = 0; i < iconInfoList.length; i++) {
-      var iconInfo = iconInfoList[i];
-      var iconname = iconInfo.iconName;
-
-      if (suffixIconNames) {
-        iconname = '${iconname}_${fontinfo.flavor}';
-      }
-      fakeDartDocs.writeln('///');
-      fakeDartDocs.writeln(
-          '/// <span class="material-symbols-${fontinfo.flavor}">${iconInfo.originalIconName}</span> MaterialSymbols$classFlavor.$iconname');
-    }
-    return fakeDartDocs;
-  }
-
-  final fakeDartDocs = fakeDartDocsFlag ? getFakeDartDocsForIconNames() : '';
-
-  final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
-//
-// To edit this file modify the generator file `generator/update_package.dart` and
-// re-generate.
-// This file was generated using the Material Symbols codepoint file
-// localed at ${fontinfo.codepointFileUrl}.
-// These codepoints correspond to symbols within the corresponding variable font.
-// The font was downloaded from ${fontinfo.ttfFontFileUrl} and added to this package.
-// This file was generated ${DateTime.now()} by the dart file
-// `generator/update_package.dart`.
-//
-// Copyright 2023 . All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
-/// ${libraryFlavor[0].toUpperCase()}${libraryFlavor.substring(1).toLowerCase()} style version of icons.  Accessed via [MaterialSymbols$classFlavor]$extraMessage<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-/// by using the icon name`MaterialSymbols$classFlavor.iconname`, for example `MaterialSymbols$classFlavor.circle` or `MaterialSymbols$classFlavor.square`.
-///
-/// `import 'package:material_symbols_icons/$libraryFlavor.dart';`
-///
-/// {@category $categoryFlavor}
-library $libraryFlavor;
-
-import 'package:flutter/widgets.dart';
-import 'material_symbols_icons.dart';
-
-// ignore_for_file: constant_identifier_names
-// ignore_for_file: non_constant_identifier_names
-
-/// Access icons using `MaterialSymbols$classFlavor.iconname` with icon names as identifiers. Explore available icons at [Google Font's Material Symbols Explorer](https://fonts.google.com/icons?selected=Material+Symbols).
-/// <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><style>span.material-symbols-outlined, span.material-symbols-rounded, span.material-symbols-sharp { font-size:48px; color: teal; }</style>
-/// 
-/// All icons share the same name they had in the Material Icons [Icons] class.
-/// All icon names that start with a number (like '360' or '9mp') but have their icon name changed so that the number is written out and may have
-/// added '_' separating numbers.  For example '3d_rotation' becomes 'threed_rotation', '123' becomes 'onetwothree', '360' becomes 'threesixty',
-/// '9mp' becomes 'nine_mp', '10' becomes 'ten_', '2d' becomes 'twod', '3d' becomes 'threed'. 
-/// This is done to generate valid dart class member names.
-/// For example if you want to access the icon with the name '360' you use `MaterialSymbols$classFlavor.threesixty` instead.
-///
-/// Additionally the iconnames 'class', 'switch', and 'try' have also been renamed with a trailing '_' ('class_', 'switch_' and 'try_') as these are dart language
-/// reserved words.  'door_back' and 'door_front' have also been renamed 'door_back_door' and 'door_front_door' respectively.
-/// 
-///
-/// Use with the [Icon] class to show specific icons. Icons are identified by
-/// their name as listed below, e.g. [MaterialSymbols$classFlavor.airplanemode_active].
-///
-/// Search and find the perfect icon on the [Google Font's Material Symbols Explorer](https://fonts.google.com/icons?selected=Material+Symbols) website.
-///
-///
-/// This example shows how to create a [Row] of [Icon]s in different colors and
-/// sizes. The first [Icon] uses a [Icon.semanticLabel] to announce in accessibility
-/// modes like TalkBack and VoiceOver.
-///
-/// ![The following code snippet would generate a row of icons consisting of a pink bike, a green sun, and a blue beach umbrella, each progressively bigger than the last.](https://github.com/timmaffett/material_symbols_icons/raw/master/media/${libraryFlavor}_example.png)
-///
-/// ```dart
-/// const Row(
-///   mainAxisAlignment: MainAxisAlignment.spaceAround,
-///   children: <Widget>[
-///     Icon(
-///       MaterialSymbols$classFlavor.pedal_bike,
-///       color: Colors.pink,
-///       size: 24.0,
-///       semanticLabel: 'Text to announce in accessibility modes',
-///     ),
-///     Icon(
-///       MaterialSymbols$classFlavor.sunny,
-///       color: Colors.green,
-///       size: 30.0,
-///     ),
-///     Icon(
-///       MaterialSymbols$classFlavor.beach_access,
-///       color: Colors.blue,
-///       size: 36.0,
-///     ),
-///   ],
-/// )
-/// ```
-///
-/// See also:
-///
-///  * [Icon]
-///  * [IconButton]
-///  * <https://fonts.google.com/icons?selected=Material+Symbols>
-///
-/// NOTE: IMPORTANT - Because of the gross inefficiencies of dart doc ALL icon member names
-/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data.
-/// The icons and corresponding symbols names follow:
-///
-$fakeDartDocs//pub.dev does not like @staticIconProvider but this is how web icon font tree shaking works in mater channel //@staticIconProvider
-class MaterialSymbols$classFlavor extends MaterialSymbolsBase {
-  // This class is not meant to be instantiated or extended; this constructor
-  // prevents instantiation and extension.
-  MaterialSymbols$classFlavor._();
-
-  // BEGIN GENERATED ICONS
-  static const _family = '${fontinfo.familyNameToUse}';
-  static const _package = 'material_symbols_icons';
-''');
-
-  var iconCount = 0;
-  final iconInfoList = fontinfo.iconInfoList;
-  for (int i = 0; i < iconInfoList.length; i++) {
-    final iconInfo = iconInfoList[i];
-    var iconname = iconInfo.iconName;
-    final codepoint = iconInfo.codePoint;
-
-    if (suffixIconNames) {
-      iconname = '${iconname}_${fontinfo.flavor}';
-    }
-    sourceFileContent.writeln();
-    sourceFileContent.writeln(
-        //ALL OUTLINE'  /// <span class="material-symbols-outlined">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
-        '  /// $noDocUsage<span class="material-symbols-${fontinfo.flavor}">${iconInfo.originalIconName}</span> material symbol named "$iconname".');
-    sourceFileContent.writeln("  static const IconData $iconname =");
-    sourceFileContent.writeln(
-        "      IconData(0x$codepoint, fontFamily: _family, fontPackage: _package);");
-    iconCount++;
-  }
-
-  sourceFileContent.writeln();
-  sourceFileContent.writeln('  // END GENERATED ICONS');
-  sourceFileContent.writeln('}');
-
-  File(sourceFilename).writeAsStringSync(sourceFileContent.toString());
-
-  print('Wrote $iconCount icons to $sourceFilename');
-}
-
-void writeExampleSourceFile(MaterialSymbolsVariableFont fontinfo,
-    String exampleSourceFilename, String sourceFilename,
-    {bool suffixVersion = false, bool suffixIconNames = false}) {
-  late final String classFlavor;
-  if (suffixVersion) {
-    classFlavor =
-        '${fontinfo.flavor[0].toUpperCase()}${fontinfo.flavor.substring(1).toLowerCase()}';
-  } else {
-    classFlavor = '';
-  }
-
-  sourceFilename = path.basename(sourceFilename);
-
-  final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
-//
-// To edit this file modify the generator file `generator/update_package.dart` and
-// re-generate.
-// This file was generated using the Material Symbols codepoint file
-// localed at ${fontinfo.codepointFileUrl}.
-// These codepoints correspond to symbols within the corresponding variable font.
-// The font was downloaded from ${fontinfo.ttfFontFileUrl} and added to this package.
-// This file was generated ${DateTime.now()} by the dart file
-// `generator/update_package.dart`.
-//
-// Copyright 2023 . All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
-import 'package:flutter/widgets.dart';
-import 'package:material_symbols_icons/$sourceFilename';
-
-// ignore_for_file: constant_identifier_names
-// ignore_for_file: non_constant_identifier_names
-
-// BEGIN GENERATED static array
-Map<String, IconData> materialSymbols${classFlavor}Map = {
-''');
-
-  var iconCount = 0;
-  final iconInfoList = fontinfo.iconInfoList;
-  for (int i = 0; i < iconInfoList.length; i++) {
-    final iconInfo = iconInfoList[i];
-    var iconname = iconInfo.iconName;
-
-    if (suffixIconNames) {
-      iconname = '${iconname}_${fontinfo.flavor}';
-    }
-    final testStr = "  '$iconname': MaterialSymbols$classFlavor.$iconname,";
-    if (testStr.length <= 80) {
-      sourceFileContent.writeln(testStr);
-    } else {
-      // SPLIT THE LINE
-      sourceFileContent.writeln("  '$iconname':");
-      sourceFileContent.writeln("      MaterialSymbols$classFlavor.$iconname,");
-    }
-    iconCount++;
-  }
-
-  sourceFileContent.writeln('};');
-  sourceFileContent.writeln('// END GENERATED ICONS');
-
-  File(exampleSourceFilename).writeAsStringSync(sourceFileContent.toString());
-
-  print('Wrote $iconCount icons to $exampleSourceFilename');
 }

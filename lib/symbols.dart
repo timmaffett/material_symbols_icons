@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-04-01 10:26:58.527627 by the dart file
+// This file was generated 2024-05-05 15:35:11.701669 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -649,6 +649,18 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">ad_units</span> Symbols.ad_units_sharp
 ///
+/// <span class="material-symbols-outlined">adaptive_audio_mic</span> Symbols.adaptive_audio_mic
+///
+/// <span class="material-symbols-rounded">adaptive_audio_mic</span> Symbols.adaptive_audio_mic_rounded
+///
+/// <span class="material-symbols-sharp">adaptive_audio_mic</span> Symbols.adaptive_audio_mic_sharp
+///
+/// <span class="material-symbols-outlined">adaptive_audio_mic_off</span> Symbols.adaptive_audio_mic_off
+///
+/// <span class="material-symbols-rounded">adaptive_audio_mic_off</span> Symbols.adaptive_audio_mic_off_rounded
+///
+/// <span class="material-symbols-sharp">adaptive_audio_mic_off</span> Symbols.adaptive_audio_mic_off_sharp
+///
 /// <span class="material-symbols-outlined">adb</span> Symbols.adb
 ///
 /// <span class="material-symbols-rounded">adb</span> Symbols.adb_rounded
@@ -732,6 +744,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">add_comment</span> Symbols.add_comment_rounded
 ///
 /// <span class="material-symbols-sharp">add_comment</span> Symbols.add_comment_sharp
+///
+/// <span class="material-symbols-outlined">add_diamond</span> Symbols.add_diamond
+///
+/// <span class="material-symbols-rounded">add_diamond</span> Symbols.add_diamond_rounded
+///
+/// <span class="material-symbols-sharp">add_diamond</span> Symbols.add_diamond_sharp
 ///
 /// <span class="material-symbols-outlined">add_home</span> Symbols.add_home
 ///
@@ -834,6 +852,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">add_to_queue</span> Symbols.add_to_queue_rounded
 ///
 /// <span class="material-symbols-sharp">add_to_queue</span> Symbols.add_to_queue_sharp
+///
+/// <span class="material-symbols-outlined">add_triangle</span> Symbols.add_triangle
+///
+/// <span class="material-symbols-rounded">add_triangle</span> Symbols.add_triangle_rounded
+///
+/// <span class="material-symbols-sharp">add_triangle</span> Symbols.add_triangle_sharp
 ///
 /// <span class="material-symbols-outlined">addchart</span> Symbols.addchart
 ///
@@ -1291,6 +1315,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">android</span> Symbols.android_sharp
 ///
+/// <span class="material-symbols-outlined">animated_images</span> Symbols.animated_images
+///
+/// <span class="material-symbols-rounded">animated_images</span> Symbols.animated_images_rounded
+///
+/// <span class="material-symbols-sharp">animated_images</span> Symbols.animated_images_sharp
+///
 /// <span class="material-symbols-outlined">animation</span> Symbols.animation
 ///
 /// <span class="material-symbols-rounded">animation</span> Symbols.animation_rounded
@@ -1507,6 +1537,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">arrow_circle_up</span> Symbols.arrow_circle_up_sharp
 ///
+/// <span class="material-symbols-outlined">arrow_cool_down</span> Symbols.arrow_cool_down
+///
+/// <span class="material-symbols-rounded">arrow_cool_down</span> Symbols.arrow_cool_down_rounded
+///
+/// <span class="material-symbols-sharp">arrow_cool_down</span> Symbols.arrow_cool_down_sharp
+///
 /// <span class="material-symbols-outlined">arrow_downward</span> Symbols.arrow_downward
 ///
 /// <span class="material-symbols-rounded">arrow_downward</span> Symbols.arrow_downward_rounded
@@ -1632,6 +1668,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">arrow_upward_alt</span> Symbols.arrow_upward_alt_rounded
 ///
 /// <span class="material-symbols-sharp">arrow_upward_alt</span> Symbols.arrow_upward_alt_sharp
+///
+/// <span class="material-symbols-outlined">arrow_warm_up</span> Symbols.arrow_warm_up
+///
+/// <span class="material-symbols-rounded">arrow_warm_up</span> Symbols.arrow_warm_up_rounded
+///
+/// <span class="material-symbols-sharp">arrow_warm_up</span> Symbols.arrow_warm_up_sharp
 ///
 /// <span class="material-symbols-outlined">arrows_more_down</span> Symbols.arrows_more_down
 ///
@@ -2053,11 +2095,23 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">autostop</span> Symbols.autostop_sharp
 ///
+/// <span class="material-symbols-outlined">av1</span> Symbols.av1
+///
+/// <span class="material-symbols-rounded">av1</span> Symbols.av1_rounded
+///
+/// <span class="material-symbols-sharp">av1</span> Symbols.av1_sharp
+///
 /// <span class="material-symbols-outlined">av_timer</span> Symbols.av_timer
 ///
 /// <span class="material-symbols-rounded">av_timer</span> Symbols.av_timer_rounded
 ///
 /// <span class="material-symbols-sharp">av_timer</span> Symbols.av_timer_sharp
+///
+/// <span class="material-symbols-outlined">avc</span> Symbols.avc
+///
+/// <span class="material-symbols-rounded">avc</span> Symbols.avc_rounded
+///
+/// <span class="material-symbols-sharp">avc</span> Symbols.avc_sharp
 ///
 /// <span class="material-symbols-outlined">avg_pace</span> Symbols.avg_pace
 ///
@@ -3253,6 +3307,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">cached</span> Symbols.cached_sharp
 ///
+/// <span class="material-symbols-outlined">cadence</span> Symbols.cadence
+///
+/// <span class="material-symbols-rounded">cadence</span> Symbols.cadence_rounded
+///
+/// <span class="material-symbols-sharp">cadence</span> Symbols.cadence_sharp
+///
 /// <span class="material-symbols-outlined">cake</span> Symbols.cake
 ///
 /// <span class="material-symbols-rounded">cake</span> Symbols.cake_rounded
@@ -3546,6 +3606,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">card_travel</span> Symbols.card_travel_rounded
 ///
 /// <span class="material-symbols-sharp">card_travel</span> Symbols.card_travel_sharp
+///
+/// <span class="material-symbols-outlined">cardio_load</span> Symbols.cardio_load
+///
+/// <span class="material-symbols-rounded">cardio_load</span> Symbols.cardio_load_rounded
+///
+/// <span class="material-symbols-sharp">cardio_load</span> Symbols.cardio_load_sharp
 ///
 /// <span class="material-symbols-outlined">cardiology</span> Symbols.cardiology
 ///
@@ -4105,6 +4171,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">closed_caption</span> Symbols.closed_caption_sharp
 ///
+/// <span class="material-symbols-outlined">closed_caption_add</span> Symbols.closed_caption_add
+///
+/// <span class="material-symbols-rounded">closed_caption_add</span> Symbols.closed_caption_add_rounded
+///
+/// <span class="material-symbols-sharp">closed_caption_add</span> Symbols.closed_caption_add_sharp
+///
 /// <span class="material-symbols-outlined">closed_caption_disabled</span> Symbols.closed_caption_disabled
 ///
 /// <span class="material-symbols-rounded">closed_caption_disabled</span> Symbols.closed_caption_disabled_rounded
@@ -4543,11 +4615,23 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">contrast</span> Symbols.contrast_sharp
 ///
+/// <span class="material-symbols-outlined">contrast_circle</span> Symbols.contrast_circle
+///
+/// <span class="material-symbols-rounded">contrast_circle</span> Symbols.contrast_circle_rounded
+///
+/// <span class="material-symbols-sharp">contrast_circle</span> Symbols.contrast_circle_sharp
+///
 /// <span class="material-symbols-outlined">contrast_rtl_off</span> Symbols.contrast_rtl_off
 ///
 /// <span class="material-symbols-rounded">contrast_rtl_off</span> Symbols.contrast_rtl_off_rounded
 ///
 /// <span class="material-symbols-sharp">contrast_rtl_off</span> Symbols.contrast_rtl_off_sharp
+///
+/// <span class="material-symbols-outlined">contrast_square</span> Symbols.contrast_square
+///
+/// <span class="material-symbols-rounded">contrast_square</span> Symbols.contrast_square_rounded
+///
+/// <span class="material-symbols-sharp">contrast_square</span> Symbols.contrast_square_sharp
 ///
 /// <span class="material-symbols-outlined">control_camera</span> Symbols.control_camera
 ///
@@ -6445,6 +6529,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">emoji_food_beverage</span> Symbols.emoji_food_beverage_sharp
 ///
+/// <span class="material-symbols-outlined">emoji_language</span> Symbols.emoji_language
+///
+/// <span class="material-symbols-rounded">emoji_language</span> Symbols.emoji_language_rounded
+///
+/// <span class="material-symbols-sharp">emoji_language</span> Symbols.emoji_language_sharp
+///
 /// <span class="material-symbols-outlined">emoji_nature</span> Symbols.emoji_nature
 ///
 /// <span class="material-symbols-rounded">emoji_nature</span> Symbols.emoji_nature_rounded
@@ -6858,6 +6948,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">extension_off</span> Symbols.extension_off_rounded
 ///
 /// <span class="material-symbols-sharp">extension_off</span> Symbols.extension_off_sharp
+///
+/// <span class="material-symbols-outlined">eye_tracking</span> Symbols.eye_tracking
+///
+/// <span class="material-symbols-rounded">eye_tracking</span> Symbols.eye_tracking_rounded
+///
+/// <span class="material-symbols-sharp">eye_tracking</span> Symbols.eye_tracking_sharp
 ///
 /// <span class="material-symbols-outlined">eyeglasses</span> Symbols.eyeglasses
 ///
@@ -7380,6 +7476,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">fingerprint</span> Symbols.fingerprint_rounded
 ///
 /// <span class="material-symbols-sharp">fingerprint</span> Symbols.fingerprint_sharp
+///
+/// <span class="material-symbols-outlined">fingerprint_off</span> Symbols.fingerprint_off
+///
+/// <span class="material-symbols-rounded">fingerprint_off</span> Symbols.fingerprint_off_rounded
+///
+/// <span class="material-symbols-sharp">fingerprint_off</span> Symbols.fingerprint_off_sharp
 ///
 /// <span class="material-symbols-outlined">fire_extinguisher</span> Symbols.fire_extinguisher
 ///
@@ -8071,6 +8173,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">format_textdirection_r_to_l</span> Symbols.format_textdirection_r_to_l_sharp
 ///
+/// <span class="material-symbols-outlined">format_textdirection_vertical</span> Symbols.format_textdirection_vertical
+///
+/// <span class="material-symbols-rounded">format_textdirection_vertical</span> Symbols.format_textdirection_vertical_rounded
+///
+/// <span class="material-symbols-sharp">format_textdirection_vertical</span> Symbols.format_textdirection_vertical_sharp
+///
 /// <span class="material-symbols-outlined">format_underlined</span> Symbols.format_underlined
 ///
 /// <span class="material-symbols-rounded">format_underlined</span> Symbols.format_underlined_rounded
@@ -8166,6 +8274,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">frame_person</span> Symbols.frame_person_rounded
 ///
 /// <span class="material-symbols-sharp">frame_person</span> Symbols.frame_person_sharp
+///
+/// <span class="material-symbols-outlined">frame_person_mic</span> Symbols.frame_person_mic
+///
+/// <span class="material-symbols-rounded">frame_person_mic</span> Symbols.frame_person_mic_rounded
+///
+/// <span class="material-symbols-sharp">frame_person_mic</span> Symbols.frame_person_mic_sharp
 ///
 /// <span class="material-symbols-outlined">frame_person_off</span> Symbols.frame_person_off
 ///
@@ -8653,6 +8767,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">groups_3</span> Symbols.groups_3_sharp
 ///
+/// <span class="material-symbols-outlined">guardian</span> Symbols.guardian
+///
+/// <span class="material-symbols-rounded">guardian</span> Symbols.guardian_rounded
+///
+/// <span class="material-symbols-sharp">guardian</span> Symbols.guardian_sharp
+///
 /// <span class="material-symbols-outlined">gynecology</span> Symbols.gynecology
 ///
 /// <span class="material-symbols-rounded">gynecology</span> Symbols.gynecology_rounded
@@ -8706,6 +8826,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">hand_gesture</span> Symbols.hand_gesture_rounded
 ///
 /// <span class="material-symbols-sharp">hand_gesture</span> Symbols.hand_gesture_sharp
+///
+/// <span class="material-symbols-outlined">handheld_controller</span> Symbols.handheld_controller
+///
+/// <span class="material-symbols-rounded">handheld_controller</span> Symbols.handheld_controller_rounded
+///
+/// <span class="material-symbols-sharp">handheld_controller</span> Symbols.handheld_controller_sharp
 ///
 /// <span class="material-symbols-outlined">handshake</span> Symbols.handshake
 ///
@@ -8826,6 +8952,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">hdr_weak</span> Symbols.hdr_weak_rounded
 ///
 /// <span class="material-symbols-sharp">hdr_weak</span> Symbols.hdr_weak_sharp
+///
+/// <span class="material-symbols-outlined">head_mounted_device</span> Symbols.head_mounted_device
+///
+/// <span class="material-symbols-rounded">head_mounted_device</span> Symbols.head_mounted_device_rounded
+///
+/// <span class="material-symbols-sharp">head_mounted_device</span> Symbols.head_mounted_device_sharp
 ///
 /// <span class="material-symbols-outlined">headphones</span> Symbols.headphones
 ///
@@ -9451,6 +9583,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">icecream</span> Symbols.icecream_sharp
 ///
+/// <span class="material-symbols-outlined">id_card</span> Symbols.id_card
+///
+/// <span class="material-symbols-rounded">id_card</span> Symbols.id_card_rounded
+///
+/// <span class="material-symbols-sharp">id_card</span> Symbols.id_card_sharp
+///
 /// <span class="material-symbols-outlined">ifl</span> Symbols.ifl
 ///
 /// <span class="material-symbols-rounded">ifl</span> Symbols.ifl_rounded
@@ -9871,6 +10009,30 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">kebab_dining</span> Symbols.kebab_dining_sharp
 ///
+/// <span class="material-symbols-outlined">keep</span> Symbols.keep
+///
+/// <span class="material-symbols-rounded">keep</span> Symbols.keep_rounded
+///
+/// <span class="material-symbols-sharp">keep</span> Symbols.keep_sharp
+///
+/// <span class="material-symbols-outlined">keep_off</span> Symbols.keep_off
+///
+/// <span class="material-symbols-rounded">keep_off</span> Symbols.keep_off_rounded
+///
+/// <span class="material-symbols-sharp">keep_off</span> Symbols.keep_off_sharp
+///
+/// <span class="material-symbols-outlined">keep_pin</span> Symbols.keep_pin
+///
+/// <span class="material-symbols-rounded">keep_pin</span> Symbols.keep_pin_rounded
+///
+/// <span class="material-symbols-sharp">keep_pin</span> Symbols.keep_pin_sharp
+///
+/// <span class="material-symbols-outlined">keep_public</span> Symbols.keep_public
+///
+/// <span class="material-symbols-rounded">keep_public</span> Symbols.keep_public_rounded
+///
+/// <span class="material-symbols-sharp">keep_public</span> Symbols.keep_public_sharp
+///
 /// <span class="material-symbols-outlined">kettle</span> Symbols.kettle
 ///
 /// <span class="material-symbols-rounded">kettle</span> Symbols.kettle_rounded
@@ -10015,6 +10177,18 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">keyboard_keys</span> Symbols.keyboard_keys_sharp
 ///
+/// <span class="material-symbols-outlined">keyboard_lock</span> Symbols.keyboard_lock
+///
+/// <span class="material-symbols-rounded">keyboard_lock</span> Symbols.keyboard_lock_rounded
+///
+/// <span class="material-symbols-sharp">keyboard_lock</span> Symbols.keyboard_lock_sharp
+///
+/// <span class="material-symbols-outlined">keyboard_lock_off</span> Symbols.keyboard_lock_off
+///
+/// <span class="material-symbols-rounded">keyboard_lock_off</span> Symbols.keyboard_lock_off_rounded
+///
+/// <span class="material-symbols-sharp">keyboard_lock_off</span> Symbols.keyboard_lock_off_sharp
+///
 /// <span class="material-symbols-outlined">keyboard_off</span> Symbols.keyboard_off
 ///
 /// <span class="material-symbols-rounded">keyboard_off</span> Symbols.keyboard_off_rounded
@@ -10152,6 +10326,18 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">landscape</span> Symbols.landscape_rounded
 ///
 /// <span class="material-symbols-sharp">landscape</span> Symbols.landscape_sharp
+///
+/// <span class="material-symbols-outlined">landscape_2</span> Symbols.landscape_2
+///
+/// <span class="material-symbols-rounded">landscape_2</span> Symbols.landscape_2_rounded
+///
+/// <span class="material-symbols-sharp">landscape_2</span> Symbols.landscape_2_sharp
+///
+/// <span class="material-symbols-outlined">landscape_2_off</span> Symbols.landscape_2_off
+///
+/// <span class="material-symbols-rounded">landscape_2_off</span> Symbols.landscape_2_off_rounded
+///
+/// <span class="material-symbols-sharp">landscape_2_off</span> Symbols.landscape_2_off_sharp
 ///
 /// <span class="material-symbols-outlined">landslide</span> Symbols.landslide
 ///
@@ -11029,6 +11215,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">low_priority</span> Symbols.low_priority_sharp
 ///
+/// <span class="material-symbols-outlined">lowercase</span> Symbols.lowercase
+///
+/// <span class="material-symbols-rounded">lowercase</span> Symbols.lowercase_rounded
+///
+/// <span class="material-symbols-sharp">lowercase</span> Symbols.lowercase_sharp
+///
 /// <span class="material-symbols-outlined">loyalty</span> Symbols.loyalty
 ///
 /// <span class="material-symbols-rounded">loyalty</span> Symbols.loyalty_rounded
@@ -11142,6 +11334,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">mail_lock</span> Symbols.mail_lock_rounded
 ///
 /// <span class="material-symbols-sharp">mail_lock</span> Symbols.mail_lock_sharp
+///
+/// <span class="material-symbols-outlined">mail_off</span> Symbols.mail_off
+///
+/// <span class="material-symbols-rounded">mail_off</span> Symbols.mail_off_rounded
+///
+/// <span class="material-symbols-sharp">mail_off</span> Symbols.mail_off_sharp
 ///
 /// <span class="material-symbols-outlined">mail_outline</span> Symbols.mail_outline
 ///
@@ -11953,6 +12151,18 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">mouse</span> Symbols.mouse_sharp
 ///
+/// <span class="material-symbols-outlined">mouse_lock</span> Symbols.mouse_lock
+///
+/// <span class="material-symbols-rounded">mouse_lock</span> Symbols.mouse_lock_rounded
+///
+/// <span class="material-symbols-sharp">mouse_lock</span> Symbols.mouse_lock_sharp
+///
+/// <span class="material-symbols-outlined">mouse_lock_off</span> Symbols.mouse_lock_off
+///
+/// <span class="material-symbols-rounded">mouse_lock_off</span> Symbols.mouse_lock_off_rounded
+///
+/// <span class="material-symbols-sharp">mouse_lock_off</span> Symbols.mouse_lock_off_sharp
+///
 /// <span class="material-symbols-outlined">move</span> Symbols.move
 ///
 /// <span class="material-symbols-rounded">move</span> Symbols.move_rounded
@@ -12054,6 +12264,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">movie_info</span> Symbols.movie_info_rounded
 ///
 /// <span class="material-symbols-sharp">movie_info</span> Symbols.movie_info_sharp
+///
+/// <span class="material-symbols-outlined">movie_off</span> Symbols.movie_off
+///
+/// <span class="material-symbols-rounded">movie_off</span> Symbols.movie_off_rounded
+///
+/// <span class="material-symbols-sharp">movie_off</span> Symbols.movie_off_sharp
 ///
 /// <span class="material-symbols-outlined">moving</span> Symbols.moving
 ///
@@ -13015,6 +13231,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">offline_pin</span> Symbols.offline_pin_sharp
 ///
+/// <span class="material-symbols-outlined">offline_pin_off</span> Symbols.offline_pin_off
+///
+/// <span class="material-symbols-rounded">offline_pin_off</span> Symbols.offline_pin_off_rounded
+///
+/// <span class="material-symbols-sharp">offline_pin_off</span> Symbols.offline_pin_off_sharp
+///
 /// <span class="material-symbols-outlined">offline_share</span> Symbols.offline_share
 ///
 /// <span class="material-symbols-rounded">offline_share</span> Symbols.offline_share_rounded
@@ -13110,6 +13332,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">open_jam</span> Symbols.open_jam_rounded
 ///
 /// <span class="material-symbols-sharp">open_jam</span> Symbols.open_jam_sharp
+///
+/// <span class="material-symbols-outlined">open_run</span> Symbols.open_run
+///
+/// <span class="material-symbols-rounded">open_run</span> Symbols.open_run_rounded
+///
+/// <span class="material-symbols-sharp">open_run</span> Symbols.open_run_sharp
 ///
 /// <span class="material-symbols-outlined">open_with</span> Symbols.open_with
 ///
@@ -13458,6 +13686,18 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">password</span> Symbols.password_rounded
 ///
 /// <span class="material-symbols-sharp">password</span> Symbols.password_sharp
+///
+/// <span class="material-symbols-outlined">password_2</span> Symbols.password_2
+///
+/// <span class="material-symbols-rounded">password_2</span> Symbols.password_2_rounded
+///
+/// <span class="material-symbols-sharp">password_2</span> Symbols.password_2_sharp
+///
+/// <span class="material-symbols-outlined">password_2_off</span> Symbols.password_2_off
+///
+/// <span class="material-symbols-rounded">password_2_off</span> Symbols.password_2_off_rounded
+///
+/// <span class="material-symbols-sharp">password_2_off</span> Symbols.password_2_off_sharp
 ///
 /// <span class="material-symbols-outlined">patient_list</span> Symbols.patient_list
 ///
@@ -14395,6 +14635,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">point_scan</span> Symbols.point_scan_sharp
 ///
+/// <span class="material-symbols-outlined">poker_chip</span> Symbols.poker_chip
+///
+/// <span class="material-symbols-rounded">poker_chip</span> Symbols.poker_chip_rounded
+///
+/// <span class="material-symbols-sharp">poker_chip</span> Symbols.poker_chip_sharp
+///
 /// <span class="material-symbols-outlined">policy</span> Symbols.policy
 ///
 /// <span class="material-symbols-rounded">policy</span> Symbols.policy_rounded
@@ -15054,6 +15300,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">recent_patient</span> Symbols.recent_patient_rounded
 ///
 /// <span class="material-symbols-sharp">recent_patient</span> Symbols.recent_patient_sharp
+///
+/// <span class="material-symbols-outlined">recenter</span> Symbols.recenter
+///
+/// <span class="material-symbols-rounded">recenter</span> Symbols.recenter_rounded
+///
+/// <span class="material-symbols-sharp">recenter</span> Symbols.recenter_sharp
 ///
 /// <span class="material-symbols-outlined">recommend</span> Symbols.recommend
 ///
@@ -15979,6 +16231,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">search_hands_free</span> Symbols.search_hands_free_sharp
 ///
+/// <span class="material-symbols-outlined">search_insights</span> Symbols.search_insights
+///
+/// <span class="material-symbols-rounded">search_insights</span> Symbols.search_insights_rounded
+///
+/// <span class="material-symbols-sharp">search_insights</span> Symbols.search_insights_sharp
+///
 /// <span class="material-symbols-outlined">search_off</span> Symbols.search_off
 ///
 /// <span class="material-symbols-rounded">search_off</span> Symbols.search_off_rounded
@@ -16050,6 +16308,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">select_window</span> Symbols.select_window_rounded
 ///
 /// <span class="material-symbols-sharp">select_window</span> Symbols.select_window_sharp
+///
+/// <span class="material-symbols-outlined">select_window_2</span> Symbols.select_window_2
+///
+/// <span class="material-symbols-rounded">select_window_2</span> Symbols.select_window_2_rounded
+///
+/// <span class="material-symbols-sharp">select_window_2</span> Symbols.select_window_2_sharp
 ///
 /// <span class="material-symbols-outlined">select_window_off</span> Symbols.select_window_off
 ///
@@ -16230,6 +16494,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">sentiment_worried</span> Symbols.sentiment_worried_rounded
 ///
 /// <span class="material-symbols-sharp">sentiment_worried</span> Symbols.sentiment_worried_sharp
+///
+/// <span class="material-symbols-outlined">serif</span> Symbols.serif
+///
+/// <span class="material-symbols-rounded">serif</span> Symbols.serif_rounded
+///
+/// <span class="material-symbols-sharp">serif</span> Symbols.serif_sharp
 ///
 /// <span class="material-symbols-outlined">service_toolbox</span> Symbols.service_toolbox
 ///
@@ -16596,6 +16866,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">shift_lock</span> Symbols.shift_lock_rounded
 ///
 /// <span class="material-symbols-sharp">shift_lock</span> Symbols.shift_lock_sharp
+///
+/// <span class="material-symbols-outlined">shift_lock_off</span> Symbols.shift_lock_off
+///
+/// <span class="material-symbols-rounded">shift_lock_off</span> Symbols.shift_lock_off_rounded
+///
+/// <span class="material-symbols-sharp">shift_lock_off</span> Symbols.shift_lock_off_sharp
 ///
 /// <span class="material-symbols-outlined">shop</span> Symbols.shop
 ///
@@ -16969,6 +17245,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">skull</span> Symbols.skull_sharp
 ///
+/// <span class="material-symbols-outlined">slab_serif</span> Symbols.slab_serif
+///
+/// <span class="material-symbols-rounded">slab_serif</span> Symbols.slab_serif_rounded
+///
+/// <span class="material-symbols-sharp">slab_serif</span> Symbols.slab_serif_sharp
+///
 /// <span class="material-symbols-outlined">sledding</span> Symbols.sledding
 ///
 /// <span class="material-symbols-rounded">sledding</span> Symbols.sledding_rounded
@@ -17016,6 +17298,18 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">smart_button</span> Symbols.smart_button_rounded
 ///
 /// <span class="material-symbols-sharp">smart_button</span> Symbols.smart_button_sharp
+///
+/// <span class="material-symbols-outlined">smart_card_reader</span> Symbols.smart_card_reader
+///
+/// <span class="material-symbols-rounded">smart_card_reader</span> Symbols.smart_card_reader_rounded
+///
+/// <span class="material-symbols-sharp">smart_card_reader</span> Symbols.smart_card_reader_sharp
+///
+/// <span class="material-symbols-outlined">smart_card_reader_off</span> Symbols.smart_card_reader_off
+///
+/// <span class="material-symbols-rounded">smart_card_reader_off</span> Symbols.smart_card_reader_off_rounded
+///
+/// <span class="material-symbols-sharp">smart_card_reader_off</span> Symbols.smart_card_reader_off_sharp
 ///
 /// <span class="material-symbols-outlined">smart_display</span> Symbols.smart_display
 ///
@@ -17263,6 +17557,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">spatial_audio_off</span> Symbols.spatial_audio_off_sharp
 ///
+/// <span class="material-symbols-outlined">spatial_speaker</span> Symbols.spatial_speaker
+///
+/// <span class="material-symbols-rounded">spatial_speaker</span> Symbols.spatial_speaker_rounded
+///
+/// <span class="material-symbols-sharp">spatial_speaker</span> Symbols.spatial_speaker_sharp
+///
 /// <span class="material-symbols-outlined">spatial_tracking</span> Symbols.spatial_tracking
 ///
 /// <span class="material-symbols-rounded">spatial_tracking</span> Symbols.spatial_tracking_rounded
@@ -17323,11 +17623,41 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">speed</span> Symbols.speed_sharp
 ///
+/// <span class="material-symbols-outlined">speed_0_25</span> Symbols.speed_0_25
+///
+/// <span class="material-symbols-rounded">speed_0_25</span> Symbols.speed_0_25_rounded
+///
+/// <span class="material-symbols-sharp">speed_0_25</span> Symbols.speed_0_25_sharp
+///
+/// <span class="material-symbols-outlined">speed_0_2x</span> Symbols.speed_0_2x
+///
+/// <span class="material-symbols-rounded">speed_0_2x</span> Symbols.speed_0_2x_rounded
+///
+/// <span class="material-symbols-sharp">speed_0_2x</span> Symbols.speed_0_2x_sharp
+///
 /// <span class="material-symbols-outlined">speed_0_5</span> Symbols.speed_0_5
 ///
 /// <span class="material-symbols-rounded">speed_0_5</span> Symbols.speed_0_5_rounded
 ///
 /// <span class="material-symbols-sharp">speed_0_5</span> Symbols.speed_0_5_sharp
+///
+/// <span class="material-symbols-outlined">speed_0_5x</span> Symbols.speed_0_5x
+///
+/// <span class="material-symbols-rounded">speed_0_5x</span> Symbols.speed_0_5x_rounded
+///
+/// <span class="material-symbols-sharp">speed_0_5x</span> Symbols.speed_0_5x_sharp
+///
+/// <span class="material-symbols-outlined">speed_0_75</span> Symbols.speed_0_75
+///
+/// <span class="material-symbols-rounded">speed_0_75</span> Symbols.speed_0_75_rounded
+///
+/// <span class="material-symbols-sharp">speed_0_75</span> Symbols.speed_0_75_sharp
+///
+/// <span class="material-symbols-outlined">speed_0_7x</span> Symbols.speed_0_7x
+///
+/// <span class="material-symbols-rounded">speed_0_7x</span> Symbols.speed_0_7x_rounded
+///
+/// <span class="material-symbols-sharp">speed_0_7x</span> Symbols.speed_0_7x_sharp
 ///
 /// <span class="material-symbols-outlined">speed_1_2</span> Symbols.speed_1_2
 ///
@@ -17335,11 +17665,41 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">speed_1_2</span> Symbols.speed_1_2_sharp
 ///
+/// <span class="material-symbols-outlined">speed_1_25</span> Symbols.speed_1_25
+///
+/// <span class="material-symbols-rounded">speed_1_25</span> Symbols.speed_1_25_rounded
+///
+/// <span class="material-symbols-sharp">speed_1_25</span> Symbols.speed_1_25_sharp
+///
+/// <span class="material-symbols-outlined">speed_1_2x</span> Symbols.speed_1_2x
+///
+/// <span class="material-symbols-rounded">speed_1_2x</span> Symbols.speed_1_2x_rounded
+///
+/// <span class="material-symbols-sharp">speed_1_2x</span> Symbols.speed_1_2x_sharp
+///
 /// <span class="material-symbols-outlined">speed_1_5</span> Symbols.speed_1_5
 ///
 /// <span class="material-symbols-rounded">speed_1_5</span> Symbols.speed_1_5_rounded
 ///
 /// <span class="material-symbols-sharp">speed_1_5</span> Symbols.speed_1_5_sharp
+///
+/// <span class="material-symbols-outlined">speed_1_5x</span> Symbols.speed_1_5x
+///
+/// <span class="material-symbols-rounded">speed_1_5x</span> Symbols.speed_1_5x_rounded
+///
+/// <span class="material-symbols-sharp">speed_1_5x</span> Symbols.speed_1_5x_sharp
+///
+/// <span class="material-symbols-outlined">speed_1_75</span> Symbols.speed_1_75
+///
+/// <span class="material-symbols-rounded">speed_1_75</span> Symbols.speed_1_75_rounded
+///
+/// <span class="material-symbols-sharp">speed_1_75</span> Symbols.speed_1_75_sharp
+///
+/// <span class="material-symbols-outlined">speed_1_7x</span> Symbols.speed_1_7x
+///
+/// <span class="material-symbols-rounded">speed_1_7x</span> Symbols.speed_1_7x_rounded
+///
+/// <span class="material-symbols-sharp">speed_1_7x</span> Symbols.speed_1_7x_sharp
 ///
 /// <span class="material-symbols-outlined">speed_2x</span> Symbols.speed_2x
 ///
@@ -18775,6 +19135,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">text_to_speech</span> Symbols.text_to_speech_sharp
 ///
+/// <span class="material-symbols-outlined">text_up</span> Symbols.text_up
+///
+/// <span class="material-symbols-rounded">text_up</span> Symbols.text_up_rounded
+///
+/// <span class="material-symbols-sharp">text_up</span> Symbols.text_up_sharp
+///
 /// <span class="material-symbols-outlined">textsms</span> Symbols.textsms
 ///
 /// <span class="material-symbols-rounded">textsms</span> Symbols.textsms_rounded
@@ -19027,11 +19393,35 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">timer_3_select</span> Symbols.timer_3_select_sharp
 ///
+/// <span class="material-symbols-outlined">timer_5</span> Symbols.timer_5
+///
+/// <span class="material-symbols-rounded">timer_5</span> Symbols.timer_5_rounded
+///
+/// <span class="material-symbols-sharp">timer_5</span> Symbols.timer_5_sharp
+///
+/// <span class="material-symbols-outlined">timer_5_shutter</span> Symbols.timer_5_shutter
+///
+/// <span class="material-symbols-rounded">timer_5_shutter</span> Symbols.timer_5_shutter_rounded
+///
+/// <span class="material-symbols-sharp">timer_5_shutter</span> Symbols.timer_5_shutter_sharp
+///
 /// <span class="material-symbols-outlined">timer_off</span> Symbols.timer_off
 ///
 /// <span class="material-symbols-rounded">timer_off</span> Symbols.timer_off_rounded
 ///
 /// <span class="material-symbols-sharp">timer_off</span> Symbols.timer_off_sharp
+///
+/// <span class="material-symbols-outlined">timer_pause</span> Symbols.timer_pause
+///
+/// <span class="material-symbols-rounded">timer_pause</span> Symbols.timer_pause_rounded
+///
+/// <span class="material-symbols-sharp">timer_pause</span> Symbols.timer_pause_sharp
+///
+/// <span class="material-symbols-outlined">timer_play</span> Symbols.timer_play
+///
+/// <span class="material-symbols-rounded">timer_play</span> Symbols.timer_play_rounded
+///
+/// <span class="material-symbols-sharp">timer_play</span> Symbols.timer_play_sharp
 ///
 /// <span class="material-symbols-outlined">tips_and_updates</span> Symbols.tips_and_updates
 ///
@@ -19050,6 +19440,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">title</span> Symbols.title_rounded
 ///
 /// <span class="material-symbols-sharp">title</span> Symbols.title_sharp
+///
+/// <span class="material-symbols-outlined">titlecase</span> Symbols.titlecase
+///
+/// <span class="material-symbols-rounded">titlecase</span> Symbols.titlecase_rounded
+///
+/// <span class="material-symbols-sharp">titlecase</span> Symbols.titlecase_sharp
 ///
 /// <span class="material-symbols-outlined">toast</span> Symbols.toast
 ///
@@ -19236,6 +19632,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">track_changes</span> Symbols.track_changes_rounded
 ///
 /// <span class="material-symbols-sharp">track_changes</span> Symbols.track_changes_sharp
+///
+/// <span class="material-symbols-outlined">trackpad_input</span> Symbols.trackpad_input
+///
+/// <span class="material-symbols-rounded">trackpad_input</span> Symbols.trackpad_input_rounded
+///
+/// <span class="material-symbols-sharp">trackpad_input</span> Symbols.trackpad_input_sharp
 ///
 /// <span class="material-symbols-outlined">traffic</span> Symbols.traffic
 ///
@@ -19669,6 +20071,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">unknown_5</span> Symbols.unknown_5_sharp
 ///
+/// <span class="material-symbols-outlined">unknown_7</span> Symbols.unknown_7
+///
+/// <span class="material-symbols-rounded">unknown_7</span> Symbols.unknown_7_rounded
+///
+/// <span class="material-symbols-sharp">unknown_7</span> Symbols.unknown_7_sharp
+///
 /// <span class="material-symbols-outlined">unknown_document</span> Symbols.unknown_document
 ///
 /// <span class="material-symbols-rounded">unknown_document</span> Symbols.unknown_document_rounded
@@ -19686,6 +20094,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">unlicense</span> Symbols.unlicense_rounded
 ///
 /// <span class="material-symbols-sharp">unlicense</span> Symbols.unlicense_sharp
+///
+/// <span class="material-symbols-outlined">unpin</span> Symbols.unpin
+///
+/// <span class="material-symbols-rounded">unpin</span> Symbols.unpin_rounded
+///
+/// <span class="material-symbols-sharp">unpin</span> Symbols.unpin_sharp
 ///
 /// <span class="material-symbols-outlined">unpublished</span> Symbols.unpublished
 ///
@@ -19740,6 +20154,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">upload_file</span> Symbols.upload_file_rounded
 ///
 /// <span class="material-symbols-sharp">upload_file</span> Symbols.upload_file_sharp
+///
+/// <span class="material-symbols-outlined">uppercase</span> Symbols.uppercase
+///
+/// <span class="material-symbols-rounded">uppercase</span> Symbols.uppercase_rounded
+///
+/// <span class="material-symbols-sharp">uppercase</span> Symbols.uppercase_sharp
 ///
 /// <span class="material-symbols-outlined">urology</span> Symbols.urology
 ///
@@ -20089,6 +20509,12 @@ export 'src/icon_data.dart';
 ///
 /// <span class="material-symbols-sharp">view_quilt</span> Symbols.view_quilt_sharp
 ///
+/// <span class="material-symbols-outlined">view_real_size</span> Symbols.view_real_size
+///
+/// <span class="material-symbols-rounded">view_real_size</span> Symbols.view_real_size_rounded
+///
+/// <span class="material-symbols-sharp">view_real_size</span> Symbols.view_real_size_sharp
+///
 /// <span class="material-symbols-outlined">view_sidebar</span> Symbols.view_sidebar
 ///
 /// <span class="material-symbols-rounded">view_sidebar</span> Symbols.view_sidebar_rounded
@@ -20154,6 +20580,12 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">vitals</span> Symbols.vitals_rounded
 ///
 /// <span class="material-symbols-sharp">vitals</span> Symbols.vitals_sharp
+///
+/// <span class="material-symbols-outlined">vo2_max</span> Symbols.vo2_max
+///
+/// <span class="material-symbols-rounded">vo2_max</span> Symbols.vo2_max_rounded
+///
+/// <span class="material-symbols-sharp">vo2_max</span> Symbols.vo2_max_sharp
 ///
 /// <span class="material-symbols-outlined">voice_chat</span> Symbols.voice_chat
 ///
@@ -21839,6 +22271,25 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">ad_units</span> material symbol named "ad_units_sharp".
   static const IconData ad_units_sharp = IconDataSharp(0xef39);
 
+  /// @nodoc <span class="material-symbols-outlined">adaptive_audio_mic</span> material symbol named "adaptive_audio_mic".
+  static const IconData adaptive_audio_mic = IconDataOutlined(0xf4cc);
+
+  /// @nodoc <span class="material-symbols-rounded">adaptive_audio_mic</span> material symbol named "adaptive_audio_mic_rounded".
+  static const IconData adaptive_audio_mic_rounded = IconDataRounded(0xf4cc);
+
+  /// @nodoc <span class="material-symbols-sharp">adaptive_audio_mic</span> material symbol named "adaptive_audio_mic_sharp".
+  static const IconData adaptive_audio_mic_sharp = IconDataSharp(0xf4cc);
+
+  /// @nodoc <span class="material-symbols-outlined">adaptive_audio_mic_off</span> material symbol named "adaptive_audio_mic_off".
+  static const IconData adaptive_audio_mic_off = IconDataOutlined(0xf4cb);
+
+  /// @nodoc <span class="material-symbols-rounded">adaptive_audio_mic_off</span> material symbol named "adaptive_audio_mic_off_rounded".
+  static const IconData adaptive_audio_mic_off_rounded =
+      IconDataRounded(0xf4cb);
+
+  /// @nodoc <span class="material-symbols-sharp">adaptive_audio_mic_off</span> material symbol named "adaptive_audio_mic_off_sharp".
+  static const IconData adaptive_audio_mic_off_sharp = IconDataSharp(0xf4cb);
+
   /// @nodoc <span class="material-symbols-outlined">adb</span> material symbol named "adb".
   static const IconData adb = IconDataOutlined(0xe60e);
 
@@ -21964,6 +22415,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">add_comment</span> material symbol named "add_comment_sharp".
   static const IconData add_comment_sharp = IconDataSharp(0xe266);
+
+  /// @nodoc <span class="material-symbols-outlined">add_diamond</span> material symbol named "add_diamond".
+  static const IconData add_diamond = IconDataOutlined(0xf49c);
+
+  /// @nodoc <span class="material-symbols-rounded">add_diamond</span> material symbol named "add_diamond_rounded".
+  static const IconData add_diamond_rounded = IconDataRounded(0xf49c);
+
+  /// @nodoc <span class="material-symbols-sharp">add_diamond</span> material symbol named "add_diamond_sharp".
+  static const IconData add_diamond_sharp = IconDataSharp(0xf49c);
 
   /// @nodoc <span class="material-symbols-outlined">add_home</span> material symbol named "add_home".
   static const IconData add_home = IconDataOutlined(0xf8eb);
@@ -22117,6 +22577,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">add_to_queue</span> material symbol named "add_to_queue_sharp".
   static const IconData add_to_queue_sharp = IconDataSharp(0xe05c);
+
+  /// @nodoc <span class="material-symbols-outlined">add_triangle</span> material symbol named "add_triangle".
+  static const IconData add_triangle = IconDataOutlined(0xf48e);
+
+  /// @nodoc <span class="material-symbols-rounded">add_triangle</span> material symbol named "add_triangle_rounded".
+  static const IconData add_triangle_rounded = IconDataRounded(0xf48e);
+
+  /// @nodoc <span class="material-symbols-sharp">add_triangle</span> material symbol named "add_triangle_sharp".
+  static const IconData add_triangle_sharp = IconDataSharp(0xf48e);
 
   /// @nodoc <span class="material-symbols-outlined">addchart</span> material symbol named "addchart".
   static const IconData addchart = IconDataOutlined(0xef3c);
@@ -22825,6 +23294,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">android</span> material symbol named "android_sharp".
   static const IconData android_sharp = IconDataSharp(0xe859);
 
+  /// @nodoc <span class="material-symbols-outlined">animated_images</span> material symbol named "animated_images".
+  static const IconData animated_images = IconDataOutlined(0xf49a);
+
+  /// @nodoc <span class="material-symbols-rounded">animated_images</span> material symbol named "animated_images_rounded".
+  static const IconData animated_images_rounded = IconDataRounded(0xf49a);
+
+  /// @nodoc <span class="material-symbols-sharp">animated_images</span> material symbol named "animated_images_sharp".
+  static const IconData animated_images_sharp = IconDataSharp(0xf49a);
+
   /// @nodoc <span class="material-symbols-outlined">animation</span> material symbol named "animation".
   static const IconData animation = IconDataOutlined(0xe71c);
 
@@ -23149,6 +23627,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">arrow_circle_up</span> material symbol named "arrow_circle_up_sharp".
   static const IconData arrow_circle_up_sharp = IconDataSharp(0xf182);
 
+  /// @nodoc <span class="material-symbols-outlined">arrow_cool_down</span> material symbol named "arrow_cool_down".
+  static const IconData arrow_cool_down = IconDataOutlined(0xf4b6);
+
+  /// @nodoc <span class="material-symbols-rounded">arrow_cool_down</span> material symbol named "arrow_cool_down_rounded".
+  static const IconData arrow_cool_down_rounded = IconDataRounded(0xf4b6);
+
+  /// @nodoc <span class="material-symbols-sharp">arrow_cool_down</span> material symbol named "arrow_cool_down_sharp".
+  static const IconData arrow_cool_down_sharp = IconDataSharp(0xf4b6);
+
   /// @nodoc <span class="material-symbols-outlined">arrow_downward</span> material symbol named "arrow_downward".
   static const IconData arrow_downward = IconDataOutlined(0xe5db);
 
@@ -23338,6 +23825,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">arrow_upward_alt</span> material symbol named "arrow_upward_alt_sharp".
   static const IconData arrow_upward_alt_sharp = IconDataSharp(0xe986);
+
+  /// @nodoc <span class="material-symbols-outlined">arrow_warm_up</span> material symbol named "arrow_warm_up".
+  static const IconData arrow_warm_up = IconDataOutlined(0xf4b5);
+
+  /// @nodoc <span class="material-symbols-rounded">arrow_warm_up</span> material symbol named "arrow_warm_up_rounded".
+  static const IconData arrow_warm_up_rounded = IconDataRounded(0xf4b5);
+
+  /// @nodoc <span class="material-symbols-sharp">arrow_warm_up</span> material symbol named "arrow_warm_up_sharp".
+  static const IconData arrow_warm_up_sharp = IconDataSharp(0xf4b5);
 
   /// @nodoc <span class="material-symbols-outlined">arrows_more_down</span> material symbol named "arrows_more_down".
   static const IconData arrows_more_down = IconDataOutlined(0xf8ab);
@@ -23969,6 +24465,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">autostop</span> material symbol named "autostop_sharp".
   static const IconData autostop_sharp = IconDataSharp(0xf682);
 
+  /// @nodoc <span class="material-symbols-outlined">av1</span> material symbol named "av1".
+  static const IconData av1 = IconDataOutlined(0xf4b0);
+
+  /// @nodoc <span class="material-symbols-rounded">av1</span> material symbol named "av1_rounded".
+  static const IconData av1_rounded = IconDataRounded(0xf4b0);
+
+  /// @nodoc <span class="material-symbols-sharp">av1</span> material symbol named "av1_sharp".
+  static const IconData av1_sharp = IconDataSharp(0xf4b0);
+
   /// @nodoc <span class="material-symbols-outlined">av_timer</span> material symbol named "av_timer".
   static const IconData av_timer = IconDataOutlined(0xe01b);
 
@@ -23977,6 +24482,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">av_timer</span> material symbol named "av_timer_sharp".
   static const IconData av_timer_sharp = IconDataSharp(0xe01b);
+
+  /// @nodoc <span class="material-symbols-outlined">avc</span> material symbol named "avc".
+  static const IconData avc = IconDataOutlined(0xf4af);
+
+  /// @nodoc <span class="material-symbols-rounded">avc</span> material symbol named "avc_rounded".
+  static const IconData avc_rounded = IconDataRounded(0xf4af);
+
+  /// @nodoc <span class="material-symbols-sharp">avc</span> material symbol named "avc_sharp".
+  static const IconData avc_sharp = IconDataSharp(0xf4af);
 
   /// @nodoc <span class="material-symbols-outlined">avg_pace</span> material symbol named "avg_pace".
   static const IconData avg_pace = IconDataOutlined(0xf6bb);
@@ -25771,6 +26285,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">cached</span> material symbol named "cached_sharp".
   static const IconData cached_sharp = IconDataSharp(0xe86a);
 
+  /// @nodoc <span class="material-symbols-outlined">cadence</span> material symbol named "cadence".
+  static const IconData cadence = IconDataOutlined(0xf4b4);
+
+  /// @nodoc <span class="material-symbols-rounded">cadence</span> material symbol named "cadence_rounded".
+  static const IconData cadence_rounded = IconDataRounded(0xf4b4);
+
+  /// @nodoc <span class="material-symbols-sharp">cadence</span> material symbol named "cadence_sharp".
+  static const IconData cadence_sharp = IconDataSharp(0xf4b4);
+
   /// @nodoc <span class="material-symbols-outlined">cake</span> material symbol named "cake".
   static const IconData cake = IconDataOutlined(0xe7e9);
 
@@ -26211,6 +26734,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">card_travel</span> material symbol named "card_travel_sharp".
   static const IconData card_travel_sharp = IconDataSharp(0xe8f8);
+
+  /// @nodoc <span class="material-symbols-outlined">cardio_load</span> material symbol named "cardio_load".
+  static const IconData cardio_load = IconDataOutlined(0xf4b9);
+
+  /// @nodoc <span class="material-symbols-rounded">cardio_load</span> material symbol named "cardio_load_rounded".
+  static const IconData cardio_load_rounded = IconDataRounded(0xf4b9);
+
+  /// @nodoc <span class="material-symbols-sharp">cardio_load</span> material symbol named "cardio_load_sharp".
+  static const IconData cardio_load_sharp = IconDataSharp(0xf4b9);
 
   /// @nodoc <span class="material-symbols-outlined">cardiology</span> material symbol named "cardiology".
   static const IconData cardiology = IconDataOutlined(0xe09c);
@@ -27051,6 +27583,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">closed_caption</span> material symbol named "closed_caption_sharp".
   static const IconData closed_caption_sharp = IconDataSharp(0xe996);
 
+  /// @nodoc <span class="material-symbols-outlined">closed_caption_add</span> material symbol named "closed_caption_add".
+  static const IconData closed_caption_add = IconDataOutlined(0xf4ae);
+
+  /// @nodoc <span class="material-symbols-rounded">closed_caption_add</span> material symbol named "closed_caption_add_rounded".
+  static const IconData closed_caption_add_rounded = IconDataRounded(0xf4ae);
+
+  /// @nodoc <span class="material-symbols-sharp">closed_caption_add</span> material symbol named "closed_caption_add_sharp".
+  static const IconData closed_caption_add_sharp = IconDataSharp(0xf4ae);
+
   /// @nodoc <span class="material-symbols-outlined">closed_caption_disabled</span> material symbol named "closed_caption_disabled".
   static const IconData closed_caption_disabled = IconDataOutlined(0xf1dc);
 
@@ -27710,6 +28251,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">contrast</span> material symbol named "contrast_sharp".
   static const IconData contrast_sharp = IconDataSharp(0xeb37);
 
+  /// @nodoc <span class="material-symbols-outlined">contrast_circle</span> material symbol named "contrast_circle".
+  static const IconData contrast_circle = IconDataOutlined(0xf49f);
+
+  /// @nodoc <span class="material-symbols-rounded">contrast_circle</span> material symbol named "contrast_circle_rounded".
+  static const IconData contrast_circle_rounded = IconDataRounded(0xf49f);
+
+  /// @nodoc <span class="material-symbols-sharp">contrast_circle</span> material symbol named "contrast_circle_sharp".
+  static const IconData contrast_circle_sharp = IconDataSharp(0xf49f);
+
   /// @nodoc <span class="material-symbols-outlined">contrast_rtl_off</span> material symbol named "contrast_rtl_off".
   static const IconData contrast_rtl_off = IconDataOutlined(0xec72);
 
@@ -27718,6 +28268,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">contrast_rtl_off</span> material symbol named "contrast_rtl_off_sharp".
   static const IconData contrast_rtl_off_sharp = IconDataSharp(0xec72);
+
+  /// @nodoc <span class="material-symbols-outlined">contrast_square</span> material symbol named "contrast_square".
+  static const IconData contrast_square = IconDataOutlined(0xf4a0);
+
+  /// @nodoc <span class="material-symbols-rounded">contrast_square</span> material symbol named "contrast_square_rounded".
+  static const IconData contrast_square_rounded = IconDataRounded(0xf4a0);
+
+  /// @nodoc <span class="material-symbols-sharp">contrast_square</span> material symbol named "contrast_square_sharp".
+  static const IconData contrast_square_sharp = IconDataSharp(0xf4a0);
 
   /// @nodoc <span class="material-symbols-outlined">control_camera</span> material symbol named "control_camera".
   static const IconData control_camera = IconDataOutlined(0xe074);
@@ -30576,6 +31135,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">emoji_food_beverage</span> material symbol named "emoji_food_beverage_sharp".
   static const IconData emoji_food_beverage_sharp = IconDataSharp(0xea1b);
 
+  /// @nodoc <span class="material-symbols-outlined">emoji_language</span> material symbol named "emoji_language".
+  static const IconData emoji_language = IconDataOutlined(0xf4cd);
+
+  /// @nodoc <span class="material-symbols-rounded">emoji_language</span> material symbol named "emoji_language_rounded".
+  static const IconData emoji_language_rounded = IconDataRounded(0xf4cd);
+
+  /// @nodoc <span class="material-symbols-sharp">emoji_language</span> material symbol named "emoji_language_sharp".
+  static const IconData emoji_language_sharp = IconDataSharp(0xf4cd);
+
   /// @nodoc <span class="material-symbols-outlined">emoji_nature</span> material symbol named "emoji_nature".
   static const IconData emoji_nature = IconDataOutlined(0xea1c);
 
@@ -31199,6 +31767,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">extension_off</span> material symbol named "extension_off_sharp".
   static const IconData extension_off_sharp = IconDataSharp(0xe4f5);
+
+  /// @nodoc <span class="material-symbols-outlined">eye_tracking</span> material symbol named "eye_tracking".
+  static const IconData eye_tracking = IconDataOutlined(0xf4c9);
+
+  /// @nodoc <span class="material-symbols-rounded">eye_tracking</span> material symbol named "eye_tracking_rounded".
+  static const IconData eye_tracking_rounded = IconDataRounded(0xf4c9);
+
+  /// @nodoc <span class="material-symbols-sharp">eye_tracking</span> material symbol named "eye_tracking_sharp".
+  static const IconData eye_tracking_sharp = IconDataSharp(0xf4c9);
 
   /// @nodoc <span class="material-symbols-outlined">eyeglasses</span> material symbol named "eyeglasses".
   static const IconData eyeglasses = IconDataOutlined(0xf6ee);
@@ -31986,6 +32563,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">fingerprint</span> material symbol named "fingerprint_sharp".
   static const IconData fingerprint_sharp = IconDataSharp(0xe90d);
+
+  /// @nodoc <span class="material-symbols-outlined">fingerprint_off</span> material symbol named "fingerprint_off".
+  static const IconData fingerprint_off = IconDataOutlined(0xf49d);
+
+  /// @nodoc <span class="material-symbols-rounded">fingerprint_off</span> material symbol named "fingerprint_off_rounded".
+  static const IconData fingerprint_off_rounded = IconDataRounded(0xf49d);
+
+  /// @nodoc <span class="material-symbols-sharp">fingerprint_off</span> material symbol named "fingerprint_off_sharp".
+  static const IconData fingerprint_off_sharp = IconDataSharp(0xf49d);
 
   /// @nodoc <span class="material-symbols-outlined">fire_extinguisher</span> material symbol named "fire_extinguisher".
   static const IconData fire_extinguisher = IconDataOutlined(0xf1d8);
@@ -33039,6 +33625,18 @@ class Symbols {
   static const IconData format_textdirection_r_to_l_sharp =
       IconDataSharp(0xe248);
 
+  /// @nodoc <span class="material-symbols-outlined">format_textdirection_vertical</span> material symbol named "format_textdirection_vertical".
+  static const IconData format_textdirection_vertical =
+      IconDataOutlined(0xf4b8);
+
+  /// @nodoc <span class="material-symbols-rounded">format_textdirection_vertical</span> material symbol named "format_textdirection_vertical_rounded".
+  static const IconData format_textdirection_vertical_rounded =
+      IconDataRounded(0xf4b8);
+
+  /// @nodoc <span class="material-symbols-sharp">format_textdirection_vertical</span> material symbol named "format_textdirection_vertical_sharp".
+  static const IconData format_textdirection_vertical_sharp =
+      IconDataSharp(0xf4b8);
+
   /// @nodoc <span class="material-symbols-outlined">format_underlined</span> material symbol named "format_underlined".
   static const IconData format_underlined = IconDataOutlined(0xe249);
 
@@ -33184,6 +33782,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">frame_person</span> material symbol named "frame_person_sharp".
   static const IconData frame_person_sharp = IconDataSharp(0xf8a6);
+
+  /// @nodoc <span class="material-symbols-outlined">frame_person_mic</span> material symbol named "frame_person_mic".
+  static const IconData frame_person_mic = IconDataOutlined(0xf4d5);
+
+  /// @nodoc <span class="material-symbols-rounded">frame_person_mic</span> material symbol named "frame_person_mic_rounded".
+  static const IconData frame_person_mic_rounded = IconDataRounded(0xf4d5);
+
+  /// @nodoc <span class="material-symbols-sharp">frame_person_mic</span> material symbol named "frame_person_mic_sharp".
+  static const IconData frame_person_mic_sharp = IconDataSharp(0xf4d5);
 
   /// @nodoc <span class="material-symbols-outlined">frame_person_off</span> material symbol named "frame_person_off".
   static const IconData frame_person_off = IconDataOutlined(0xf7d1);
@@ -33915,6 +34522,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">groups_3</span> material symbol named "groups_3_sharp".
   static const IconData groups_3_sharp = IconDataSharp(0xf8e0);
 
+  /// @nodoc <span class="material-symbols-outlined">guardian</span> material symbol named "guardian".
+  static const IconData guardian = IconDataOutlined(0xf4c1);
+
+  /// @nodoc <span class="material-symbols-rounded">guardian</span> material symbol named "guardian_rounded".
+  static const IconData guardian_rounded = IconDataRounded(0xf4c1);
+
+  /// @nodoc <span class="material-symbols-sharp">guardian</span> material symbol named "guardian_sharp".
+  static const IconData guardian_sharp = IconDataSharp(0xf4c1);
+
   /// @nodoc <span class="material-symbols-outlined">gynecology</span> material symbol named "gynecology".
   static const IconData gynecology = IconDataOutlined(0xe0f4);
 
@@ -33996,6 +34612,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">hand_gesture</span> material symbol named "hand_gesture_sharp".
   static const IconData hand_gesture_sharp = IconDataSharp(0xef9c);
+
+  /// @nodoc <span class="material-symbols-outlined">handheld_controller</span> material symbol named "handheld_controller".
+  static const IconData handheld_controller = IconDataOutlined(0xf4c6);
+
+  /// @nodoc <span class="material-symbols-rounded">handheld_controller</span> material symbol named "handheld_controller_rounded".
+  static const IconData handheld_controller_rounded = IconDataRounded(0xf4c6);
+
+  /// @nodoc <span class="material-symbols-sharp">handheld_controller</span> material symbol named "handheld_controller_sharp".
+  static const IconData handheld_controller_sharp = IconDataSharp(0xf4c6);
 
   /// @nodoc <span class="material-symbols-outlined">handshake</span> material symbol named "handshake".
   static const IconData handshake = IconDataOutlined(0xebcb);
@@ -34177,6 +34802,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">hdr_weak</span> material symbol named "hdr_weak_sharp".
   static const IconData hdr_weak_sharp = IconDataSharp(0xe3f2);
+
+  /// @nodoc <span class="material-symbols-outlined">head_mounted_device</span> material symbol named "head_mounted_device".
+  static const IconData head_mounted_device = IconDataOutlined(0xf4c5);
+
+  /// @nodoc <span class="material-symbols-rounded">head_mounted_device</span> material symbol named "head_mounted_device_rounded".
+  static const IconData head_mounted_device_rounded = IconDataRounded(0xf4c5);
+
+  /// @nodoc <span class="material-symbols-sharp">head_mounted_device</span> material symbol named "head_mounted_device_sharp".
+  static const IconData head_mounted_device_sharp = IconDataSharp(0xf4c5);
 
   /// @nodoc <span class="material-symbols-outlined">headphones</span> material symbol named "headphones".
   static const IconData headphones = IconDataOutlined(0xf01f);
@@ -35120,6 +35754,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">icecream</span> material symbol named "icecream_sharp".
   static const IconData icecream_sharp = IconDataSharp(0xea69);
 
+  /// @nodoc <span class="material-symbols-outlined">id_card</span> material symbol named "id_card".
+  static const IconData id_card = IconDataOutlined(0xf4ca);
+
+  /// @nodoc <span class="material-symbols-rounded">id_card</span> material symbol named "id_card_rounded".
+  static const IconData id_card_rounded = IconDataRounded(0xf4ca);
+
+  /// @nodoc <span class="material-symbols-sharp">id_card</span> material symbol named "id_card_sharp".
+  static const IconData id_card_sharp = IconDataSharp(0xf4ca);
+
   /// @nodoc <span class="material-symbols-outlined">ifl</span> material symbol named "ifl".
   static const IconData ifl = IconDataOutlined(0xe025);
 
@@ -35754,6 +36397,42 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">kebab_dining</span> material symbol named "kebab_dining_sharp".
   static const IconData kebab_dining_sharp = IconDataSharp(0xe842);
 
+  /// @nodoc <span class="material-symbols-outlined">keep</span> material symbol named "keep".
+  static const IconData keep = IconDataOutlined(0xf026);
+
+  /// @nodoc <span class="material-symbols-rounded">keep</span> material symbol named "keep_rounded".
+  static const IconData keep_rounded = IconDataRounded(0xf026);
+
+  /// @nodoc <span class="material-symbols-sharp">keep</span> material symbol named "keep_sharp".
+  static const IconData keep_sharp = IconDataSharp(0xf026);
+
+  /// @nodoc <span class="material-symbols-outlined">keep_off</span> material symbol named "keep_off".
+  static const IconData keep_off = IconDataOutlined(0xe6f9);
+
+  /// @nodoc <span class="material-symbols-rounded">keep_off</span> material symbol named "keep_off_rounded".
+  static const IconData keep_off_rounded = IconDataRounded(0xe6f9);
+
+  /// @nodoc <span class="material-symbols-sharp">keep_off</span> material symbol named "keep_off_sharp".
+  static const IconData keep_off_sharp = IconDataSharp(0xe6f9);
+
+  /// @nodoc <span class="material-symbols-outlined">keep_pin</span> material symbol named "keep_pin".
+  static const IconData keep_pin = IconDataOutlined(0xf026);
+
+  /// @nodoc <span class="material-symbols-rounded">keep_pin</span> material symbol named "keep_pin_rounded".
+  static const IconData keep_pin_rounded = IconDataRounded(0xf026);
+
+  /// @nodoc <span class="material-symbols-sharp">keep_pin</span> material symbol named "keep_pin_sharp".
+  static const IconData keep_pin_sharp = IconDataSharp(0xf026);
+
+  /// @nodoc <span class="material-symbols-outlined">keep_public</span> material symbol named "keep_public".
+  static const IconData keep_public = IconDataOutlined(0xf56f);
+
+  /// @nodoc <span class="material-symbols-rounded">keep_public</span> material symbol named "keep_public_rounded".
+  static const IconData keep_public_rounded = IconDataRounded(0xf56f);
+
+  /// @nodoc <span class="material-symbols-sharp">keep_public</span> material symbol named "keep_public_sharp".
+  static const IconData keep_public_sharp = IconDataSharp(0xf56f);
+
   /// @nodoc <span class="material-symbols-outlined">kettle</span> material symbol named "kettle".
   static const IconData kettle = IconDataOutlined(0xe2b9);
 
@@ -35979,6 +36658,24 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">keyboard_keys</span> material symbol named "keyboard_keys_sharp".
   static const IconData keyboard_keys_sharp = IconDataSharp(0xf67b);
 
+  /// @nodoc <span class="material-symbols-outlined">keyboard_lock</span> material symbol named "keyboard_lock".
+  static const IconData keyboard_lock = IconDataOutlined(0xf492);
+
+  /// @nodoc <span class="material-symbols-rounded">keyboard_lock</span> material symbol named "keyboard_lock_rounded".
+  static const IconData keyboard_lock_rounded = IconDataRounded(0xf492);
+
+  /// @nodoc <span class="material-symbols-sharp">keyboard_lock</span> material symbol named "keyboard_lock_sharp".
+  static const IconData keyboard_lock_sharp = IconDataSharp(0xf492);
+
+  /// @nodoc <span class="material-symbols-outlined">keyboard_lock_off</span> material symbol named "keyboard_lock_off".
+  static const IconData keyboard_lock_off = IconDataOutlined(0xf491);
+
+  /// @nodoc <span class="material-symbols-rounded">keyboard_lock_off</span> material symbol named "keyboard_lock_off_rounded".
+  static const IconData keyboard_lock_off_rounded = IconDataRounded(0xf491);
+
+  /// @nodoc <span class="material-symbols-sharp">keyboard_lock_off</span> material symbol named "keyboard_lock_off_sharp".
+  static const IconData keyboard_lock_off_sharp = IconDataSharp(0xf491);
+
   /// @nodoc <span class="material-symbols-outlined">keyboard_off</span> material symbol named "keyboard_off".
   static const IconData keyboard_off = IconDataOutlined(0xf67a);
 
@@ -36188,6 +36885,24 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">landscape</span> material symbol named "landscape_sharp".
   static const IconData landscape_sharp = IconDataSharp(0xe564);
+
+  /// @nodoc <span class="material-symbols-outlined">landscape_2</span> material symbol named "landscape_2".
+  static const IconData landscape_2 = IconDataOutlined(0xf4c4);
+
+  /// @nodoc <span class="material-symbols-rounded">landscape_2</span> material symbol named "landscape_2_rounded".
+  static const IconData landscape_2_rounded = IconDataRounded(0xf4c4);
+
+  /// @nodoc <span class="material-symbols-sharp">landscape_2</span> material symbol named "landscape_2_sharp".
+  static const IconData landscape_2_sharp = IconDataSharp(0xf4c4);
+
+  /// @nodoc <span class="material-symbols-outlined">landscape_2_off</span> material symbol named "landscape_2_off".
+  static const IconData landscape_2_off = IconDataOutlined(0xf4c3);
+
+  /// @nodoc <span class="material-symbols-rounded">landscape_2_off</span> material symbol named "landscape_2_off_rounded".
+  static const IconData landscape_2_off_rounded = IconDataRounded(0xf4c3);
+
+  /// @nodoc <span class="material-symbols-sharp">landscape_2_off</span> material symbol named "landscape_2_off_sharp".
+  static const IconData landscape_2_off_sharp = IconDataSharp(0xf4c3);
 
   /// @nodoc <span class="material-symbols-outlined">landslide</span> material symbol named "landslide".
   static const IconData landslide = IconDataOutlined(0xebd7);
@@ -37511,6 +38226,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">low_priority</span> material symbol named "low_priority_sharp".
   static const IconData low_priority_sharp = IconDataSharp(0xe16d);
 
+  /// @nodoc <span class="material-symbols-outlined">lowercase</span> material symbol named "lowercase".
+  static const IconData lowercase = IconDataOutlined(0xf48a);
+
+  /// @nodoc <span class="material-symbols-rounded">lowercase</span> material symbol named "lowercase_rounded".
+  static const IconData lowercase_rounded = IconDataRounded(0xf48a);
+
+  /// @nodoc <span class="material-symbols-sharp">lowercase</span> material symbol named "lowercase_sharp".
+  static const IconData lowercase_sharp = IconDataSharp(0xf48a);
+
   /// @nodoc <span class="material-symbols-outlined">loyalty</span> material symbol named "loyalty".
   static const IconData loyalty = IconDataOutlined(0xe89a);
 
@@ -37682,6 +38406,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">mail_lock</span> material symbol named "mail_lock_sharp".
   static const IconData mail_lock_sharp = IconDataSharp(0xec0a);
+
+  /// @nodoc <span class="material-symbols-outlined">mail_off</span> material symbol named "mail_off".
+  static const IconData mail_off = IconDataOutlined(0xf48b);
+
+  /// @nodoc <span class="material-symbols-rounded">mail_off</span> material symbol named "mail_off_rounded".
+  static const IconData mail_off_rounded = IconDataRounded(0xf48b);
+
+  /// @nodoc <span class="material-symbols-sharp">mail_off</span> material symbol named "mail_off_sharp".
+  static const IconData mail_off_sharp = IconDataSharp(0xf48b);
 
   /// @nodoc <span class="material-symbols-outlined">mail_outline</span> material symbol named "mail_outline".
   static const IconData mail_outline = IconDataOutlined(0xe159);
@@ -38899,6 +39632,24 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">mouse</span> material symbol named "mouse_sharp".
   static const IconData mouse_sharp = IconDataSharp(0xe323);
 
+  /// @nodoc <span class="material-symbols-outlined">mouse_lock</span> material symbol named "mouse_lock".
+  static const IconData mouse_lock = IconDataOutlined(0xf490);
+
+  /// @nodoc <span class="material-symbols-rounded">mouse_lock</span> material symbol named "mouse_lock_rounded".
+  static const IconData mouse_lock_rounded = IconDataRounded(0xf490);
+
+  /// @nodoc <span class="material-symbols-sharp">mouse_lock</span> material symbol named "mouse_lock_sharp".
+  static const IconData mouse_lock_sharp = IconDataSharp(0xf490);
+
+  /// @nodoc <span class="material-symbols-outlined">mouse_lock_off</span> material symbol named "mouse_lock_off".
+  static const IconData mouse_lock_off = IconDataOutlined(0xf48f);
+
+  /// @nodoc <span class="material-symbols-rounded">mouse_lock_off</span> material symbol named "mouse_lock_off_rounded".
+  static const IconData mouse_lock_off_rounded = IconDataRounded(0xf48f);
+
+  /// @nodoc <span class="material-symbols-sharp">mouse_lock_off</span> material symbol named "mouse_lock_off_sharp".
+  static const IconData mouse_lock_off_sharp = IconDataSharp(0xf48f);
+
   /// @nodoc <span class="material-symbols-outlined">move</span> material symbol named "move".
   static const IconData move = IconDataOutlined(0xe740);
 
@@ -39051,6 +39802,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">movie_info</span> material symbol named "movie_info_sharp".
   static const IconData movie_info_sharp = IconDataSharp(0xe02d);
+
+  /// @nodoc <span class="material-symbols-outlined">movie_off</span> material symbol named "movie_off".
+  static const IconData movie_off = IconDataOutlined(0xf499);
+
+  /// @nodoc <span class="material-symbols-rounded">movie_off</span> material symbol named "movie_off_rounded".
+  static const IconData movie_off_rounded = IconDataRounded(0xf499);
+
+  /// @nodoc <span class="material-symbols-sharp">movie_off</span> material symbol named "movie_off_sharp".
+  static const IconData movie_off_sharp = IconDataSharp(0xf499);
 
   /// @nodoc <span class="material-symbols-outlined">moving</span> material symbol named "moving".
   static const IconData moving = IconDataOutlined(0xe501);
@@ -40513,6 +41273,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">offline_pin</span> material symbol named "offline_pin_sharp".
   static const IconData offline_pin_sharp = IconDataSharp(0xe90a);
 
+  /// @nodoc <span class="material-symbols-outlined">offline_pin_off</span> material symbol named "offline_pin_off".
+  static const IconData offline_pin_off = IconDataOutlined(0xf4d0);
+
+  /// @nodoc <span class="material-symbols-rounded">offline_pin_off</span> material symbol named "offline_pin_off_rounded".
+  static const IconData offline_pin_off_rounded = IconDataRounded(0xf4d0);
+
+  /// @nodoc <span class="material-symbols-sharp">offline_pin_off</span> material symbol named "offline_pin_off_sharp".
+  static const IconData offline_pin_off_sharp = IconDataSharp(0xf4d0);
+
   /// @nodoc <span class="material-symbols-outlined">offline_share</span> material symbol named "offline_share".
   static const IconData offline_share = IconDataOutlined(0xe9c5);
 
@@ -40656,6 +41425,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">open_jam</span> material symbol named "open_jam_sharp".
   static const IconData open_jam_sharp = IconDataSharp(0xefae);
+
+  /// @nodoc <span class="material-symbols-outlined">open_run</span> material symbol named "open_run".
+  static const IconData open_run = IconDataOutlined(0xf4b7);
+
+  /// @nodoc <span class="material-symbols-rounded">open_run</span> material symbol named "open_run_rounded".
+  static const IconData open_run_rounded = IconDataRounded(0xf4b7);
+
+  /// @nodoc <span class="material-symbols-sharp">open_run</span> material symbol named "open_run_sharp".
+  static const IconData open_run_sharp = IconDataSharp(0xf4b7);
 
   /// @nodoc <span class="material-symbols-outlined">open_with</span> material symbol named "open_with".
   static const IconData open_with = IconDataOutlined(0xe89f);
@@ -41178,6 +41956,24 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">password</span> material symbol named "password_sharp".
   static const IconData password_sharp = IconDataSharp(0xf042);
+
+  /// @nodoc <span class="material-symbols-outlined">password_2</span> material symbol named "password_2".
+  static const IconData password_2 = IconDataOutlined(0xf4a9);
+
+  /// @nodoc <span class="material-symbols-rounded">password_2</span> material symbol named "password_2_rounded".
+  static const IconData password_2_rounded = IconDataRounded(0xf4a9);
+
+  /// @nodoc <span class="material-symbols-sharp">password_2</span> material symbol named "password_2_sharp".
+  static const IconData password_2_sharp = IconDataSharp(0xf4a9);
+
+  /// @nodoc <span class="material-symbols-outlined">password_2_off</span> material symbol named "password_2_off".
+  static const IconData password_2_off = IconDataOutlined(0xf4a8);
+
+  /// @nodoc <span class="material-symbols-rounded">password_2_off</span> material symbol named "password_2_off_rounded".
+  static const IconData password_2_off_rounded = IconDataRounded(0xf4a8);
+
+  /// @nodoc <span class="material-symbols-sharp">password_2_off</span> material symbol named "password_2_off_sharp".
+  static const IconData password_2_off_sharp = IconDataSharp(0xf4a8);
 
   /// @nodoc <span class="material-symbols-outlined">patient_list</span> material symbol named "patient_list".
   static const IconData patient_list = IconDataOutlined(0xe653);
@@ -42596,6 +43392,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">point_scan</span> material symbol named "point_scan_sharp".
   static const IconData point_scan_sharp = IconDataSharp(0xf70c);
 
+  /// @nodoc <span class="material-symbols-outlined">poker_chip</span> material symbol named "poker_chip".
+  static const IconData poker_chip = IconDataOutlined(0xf49b);
+
+  /// @nodoc <span class="material-symbols-rounded">poker_chip</span> material symbol named "poker_chip_rounded".
+  static const IconData poker_chip_rounded = IconDataRounded(0xf49b);
+
+  /// @nodoc <span class="material-symbols-sharp">poker_chip</span> material symbol named "poker_chip_sharp".
+  static const IconData poker_chip_sharp = IconDataSharp(0xf49b);
+
   /// @nodoc <span class="material-symbols-outlined">policy</span> material symbol named "policy".
   static const IconData policy = IconDataOutlined(0xea17);
 
@@ -43590,6 +44395,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">recent_patient</span> material symbol named "recent_patient_sharp".
   static const IconData recent_patient_sharp = IconDataSharp(0xf808);
+
+  /// @nodoc <span class="material-symbols-outlined">recenter</span> material symbol named "recenter".
+  static const IconData recenter = IconDataOutlined(0xf4c0);
+
+  /// @nodoc <span class="material-symbols-rounded">recenter</span> material symbol named "recenter_rounded".
+  static const IconData recenter_rounded = IconDataRounded(0xf4c0);
+
+  /// @nodoc <span class="material-symbols-sharp">recenter</span> material symbol named "recenter_sharp".
+  static const IconData recenter_sharp = IconDataSharp(0xf4c0);
 
   /// @nodoc <span class="material-symbols-outlined">recommend</span> material symbol named "recommend".
   static const IconData recommend = IconDataOutlined(0xe9d2);
@@ -44977,6 +45791,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">search_hands_free</span> material symbol named "search_hands_free_sharp".
   static const IconData search_hands_free_sharp = IconDataSharp(0xe696);
 
+  /// @nodoc <span class="material-symbols-outlined">search_insights</span> material symbol named "search_insights".
+  static const IconData search_insights = IconDataOutlined(0xf4bc);
+
+  /// @nodoc <span class="material-symbols-rounded">search_insights</span> material symbol named "search_insights_rounded".
+  static const IconData search_insights_rounded = IconDataRounded(0xf4bc);
+
+  /// @nodoc <span class="material-symbols-sharp">search_insights</span> material symbol named "search_insights_sharp".
+  static const IconData search_insights_sharp = IconDataSharp(0xf4bc);
+
   /// @nodoc <span class="material-symbols-outlined">search_off</span> material symbol named "search_off".
   static const IconData search_off = IconDataOutlined(0xea76);
 
@@ -45085,6 +45908,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">select_window</span> material symbol named "select_window_sharp".
   static const IconData select_window_sharp = IconDataSharp(0xe6fa);
+
+  /// @nodoc <span class="material-symbols-outlined">select_window_2</span> material symbol named "select_window_2".
+  static const IconData select_window_2 = IconDataOutlined(0xf4c8);
+
+  /// @nodoc <span class="material-symbols-rounded">select_window_2</span> material symbol named "select_window_2_rounded".
+  static const IconData select_window_2_rounded = IconDataRounded(0xf4c8);
+
+  /// @nodoc <span class="material-symbols-sharp">select_window_2</span> material symbol named "select_window_2_sharp".
+  static const IconData select_window_2_sharp = IconDataSharp(0xf4c8);
 
   /// @nodoc <span class="material-symbols-outlined">select_window_off</span> material symbol named "select_window_off".
   static const IconData select_window_off = IconDataOutlined(0xe506);
@@ -45363,6 +46195,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">sentiment_worried</span> material symbol named "sentiment_worried_sharp".
   static const IconData sentiment_worried_sharp = IconDataSharp(0xf6a1);
+
+  /// @nodoc <span class="material-symbols-outlined">serif</span> material symbol named "serif".
+  static const IconData serif = IconDataOutlined(0xf4ac);
+
+  /// @nodoc <span class="material-symbols-rounded">serif</span> material symbol named "serif_rounded".
+  static const IconData serif_rounded = IconDataRounded(0xf4ac);
+
+  /// @nodoc <span class="material-symbols-sharp">serif</span> material symbol named "serif_sharp".
+  static const IconData serif_sharp = IconDataSharp(0xf4ac);
 
   /// @nodoc <span class="material-symbols-outlined">service_toolbox</span> material symbol named "service_toolbox".
   static const IconData service_toolbox = IconDataOutlined(0xe717);
@@ -45919,6 +46760,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">shift_lock</span> material symbol named "shift_lock_sharp".
   static const IconData shift_lock_sharp = IconDataSharp(0xf7ae);
+
+  /// @nodoc <span class="material-symbols-outlined">shift_lock_off</span> material symbol named "shift_lock_off".
+  static const IconData shift_lock_off = IconDataOutlined(0xf483);
+
+  /// @nodoc <span class="material-symbols-rounded">shift_lock_off</span> material symbol named "shift_lock_off_rounded".
+  static const IconData shift_lock_off_rounded = IconDataRounded(0xf483);
+
+  /// @nodoc <span class="material-symbols-sharp">shift_lock_off</span> material symbol named "shift_lock_off_sharp".
+  static const IconData shift_lock_off_sharp = IconDataSharp(0xf483);
 
   /// @nodoc <span class="material-symbols-outlined">shop</span> material symbol named "shop".
   static const IconData shop = IconDataOutlined(0xe8c9);
@@ -46500,6 +47350,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">skull</span> material symbol named "skull_sharp".
   static const IconData skull_sharp = IconDataSharp(0xf89a);
 
+  /// @nodoc <span class="material-symbols-outlined">slab_serif</span> material symbol named "slab_serif".
+  static const IconData slab_serif = IconDataOutlined(0xf4ab);
+
+  /// @nodoc <span class="material-symbols-rounded">slab_serif</span> material symbol named "slab_serif_rounded".
+  static const IconData slab_serif_rounded = IconDataRounded(0xf4ab);
+
+  /// @nodoc <span class="material-symbols-sharp">slab_serif</span> material symbol named "slab_serif_sharp".
+  static const IconData slab_serif_sharp = IconDataSharp(0xf4ab);
+
   /// @nodoc <span class="material-symbols-outlined">sledding</span> material symbol named "sledding".
   static const IconData sledding = IconDataOutlined(0xe512);
 
@@ -46571,6 +47430,24 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">smart_button</span> material symbol named "smart_button_sharp".
   static const IconData smart_button_sharp = IconDataSharp(0xf1c1);
+
+  /// @nodoc <span class="material-symbols-outlined">smart_card_reader</span> material symbol named "smart_card_reader".
+  static const IconData smart_card_reader = IconDataOutlined(0xf4a5);
+
+  /// @nodoc <span class="material-symbols-rounded">smart_card_reader</span> material symbol named "smart_card_reader_rounded".
+  static const IconData smart_card_reader_rounded = IconDataRounded(0xf4a5);
+
+  /// @nodoc <span class="material-symbols-sharp">smart_card_reader</span> material symbol named "smart_card_reader_sharp".
+  static const IconData smart_card_reader_sharp = IconDataSharp(0xf4a5);
+
+  /// @nodoc <span class="material-symbols-outlined">smart_card_reader_off</span> material symbol named "smart_card_reader_off".
+  static const IconData smart_card_reader_off = IconDataOutlined(0xf4a6);
+
+  /// @nodoc <span class="material-symbols-rounded">smart_card_reader_off</span> material symbol named "smart_card_reader_off_rounded".
+  static const IconData smart_card_reader_off_rounded = IconDataRounded(0xf4a6);
+
+  /// @nodoc <span class="material-symbols-sharp">smart_card_reader_off</span> material symbol named "smart_card_reader_off_sharp".
+  static const IconData smart_card_reader_off_sharp = IconDataSharp(0xf4a6);
 
   /// @nodoc <span class="material-symbols-outlined">smart_display</span> material symbol named "smart_display".
   static const IconData smart_display = IconDataOutlined(0xf06a);
@@ -46947,6 +47824,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">spatial_audio_off</span> material symbol named "spatial_audio_off_sharp".
   static const IconData spatial_audio_off_sharp = IconDataSharp(0xebe8);
 
+  /// @nodoc <span class="material-symbols-outlined">spatial_speaker</span> material symbol named "spatial_speaker".
+  static const IconData spatial_speaker = IconDataOutlined(0xf4cf);
+
+  /// @nodoc <span class="material-symbols-rounded">spatial_speaker</span> material symbol named "spatial_speaker_rounded".
+  static const IconData spatial_speaker_rounded = IconDataRounded(0xf4cf);
+
+  /// @nodoc <span class="material-symbols-sharp">spatial_speaker</span> material symbol named "spatial_speaker_sharp".
+  static const IconData spatial_speaker_sharp = IconDataSharp(0xf4cf);
+
   /// @nodoc <span class="material-symbols-outlined">spatial_tracking</span> material symbol named "spatial_tracking".
   static const IconData spatial_tracking = IconDataOutlined(0xebea);
 
@@ -47037,6 +47923,24 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">speed</span> material symbol named "speed_sharp".
   static const IconData speed_sharp = IconDataSharp(0xe9e4);
 
+  /// @nodoc <span class="material-symbols-outlined">speed_0_25</span> material symbol named "speed_0_25".
+  static const IconData speed_0_25 = IconDataOutlined(0xf4d4);
+
+  /// @nodoc <span class="material-symbols-rounded">speed_0_25</span> material symbol named "speed_0_25_rounded".
+  static const IconData speed_0_25_rounded = IconDataRounded(0xf4d4);
+
+  /// @nodoc <span class="material-symbols-sharp">speed_0_25</span> material symbol named "speed_0_25_sharp".
+  static const IconData speed_0_25_sharp = IconDataSharp(0xf4d4);
+
+  /// @nodoc <span class="material-symbols-outlined">speed_0_2x</span> material symbol named "speed_0_2x".
+  static const IconData speed_0_2x = IconDataOutlined(0xf498);
+
+  /// @nodoc <span class="material-symbols-rounded">speed_0_2x</span> material symbol named "speed_0_2x_rounded".
+  static const IconData speed_0_2x_rounded = IconDataRounded(0xf498);
+
+  /// @nodoc <span class="material-symbols-sharp">speed_0_2x</span> material symbol named "speed_0_2x_sharp".
+  static const IconData speed_0_2x_sharp = IconDataSharp(0xf498);
+
   /// @nodoc <span class="material-symbols-outlined">speed_0_5</span> material symbol named "speed_0_5".
   static const IconData speed_0_5 = IconDataOutlined(0xf4e2);
 
@@ -47045,6 +47949,33 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">speed_0_5</span> material symbol named "speed_0_5_sharp".
   static const IconData speed_0_5_sharp = IconDataSharp(0xf4e2);
+
+  /// @nodoc <span class="material-symbols-outlined">speed_0_5x</span> material symbol named "speed_0_5x".
+  static const IconData speed_0_5x = IconDataOutlined(0xf497);
+
+  /// @nodoc <span class="material-symbols-rounded">speed_0_5x</span> material symbol named "speed_0_5x_rounded".
+  static const IconData speed_0_5x_rounded = IconDataRounded(0xf497);
+
+  /// @nodoc <span class="material-symbols-sharp">speed_0_5x</span> material symbol named "speed_0_5x_sharp".
+  static const IconData speed_0_5x_sharp = IconDataSharp(0xf497);
+
+  /// @nodoc <span class="material-symbols-outlined">speed_0_75</span> material symbol named "speed_0_75".
+  static const IconData speed_0_75 = IconDataOutlined(0xf4d3);
+
+  /// @nodoc <span class="material-symbols-rounded">speed_0_75</span> material symbol named "speed_0_75_rounded".
+  static const IconData speed_0_75_rounded = IconDataRounded(0xf4d3);
+
+  /// @nodoc <span class="material-symbols-sharp">speed_0_75</span> material symbol named "speed_0_75_sharp".
+  static const IconData speed_0_75_sharp = IconDataSharp(0xf4d3);
+
+  /// @nodoc <span class="material-symbols-outlined">speed_0_7x</span> material symbol named "speed_0_7x".
+  static const IconData speed_0_7x = IconDataOutlined(0xf496);
+
+  /// @nodoc <span class="material-symbols-rounded">speed_0_7x</span> material symbol named "speed_0_7x_rounded".
+  static const IconData speed_0_7x_rounded = IconDataRounded(0xf496);
+
+  /// @nodoc <span class="material-symbols-sharp">speed_0_7x</span> material symbol named "speed_0_7x_sharp".
+  static const IconData speed_0_7x_sharp = IconDataSharp(0xf496);
 
   /// @nodoc <span class="material-symbols-outlined">speed_1_2</span> material symbol named "speed_1_2".
   static const IconData speed_1_2 = IconDataOutlined(0xf4e1);
@@ -47055,6 +47986,24 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">speed_1_2</span> material symbol named "speed_1_2_sharp".
   static const IconData speed_1_2_sharp = IconDataSharp(0xf4e1);
 
+  /// @nodoc <span class="material-symbols-outlined">speed_1_25</span> material symbol named "speed_1_25".
+  static const IconData speed_1_25 = IconDataOutlined(0xf4d2);
+
+  /// @nodoc <span class="material-symbols-rounded">speed_1_25</span> material symbol named "speed_1_25_rounded".
+  static const IconData speed_1_25_rounded = IconDataRounded(0xf4d2);
+
+  /// @nodoc <span class="material-symbols-sharp">speed_1_25</span> material symbol named "speed_1_25_sharp".
+  static const IconData speed_1_25_sharp = IconDataSharp(0xf4d2);
+
+  /// @nodoc <span class="material-symbols-outlined">speed_1_2x</span> material symbol named "speed_1_2x".
+  static const IconData speed_1_2x = IconDataOutlined(0xf495);
+
+  /// @nodoc <span class="material-symbols-rounded">speed_1_2x</span> material symbol named "speed_1_2x_rounded".
+  static const IconData speed_1_2x_rounded = IconDataRounded(0xf495);
+
+  /// @nodoc <span class="material-symbols-sharp">speed_1_2x</span> material symbol named "speed_1_2x_sharp".
+  static const IconData speed_1_2x_sharp = IconDataSharp(0xf495);
+
   /// @nodoc <span class="material-symbols-outlined">speed_1_5</span> material symbol named "speed_1_5".
   static const IconData speed_1_5 = IconDataOutlined(0xf4e0);
 
@@ -47063,6 +48012,33 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">speed_1_5</span> material symbol named "speed_1_5_sharp".
   static const IconData speed_1_5_sharp = IconDataSharp(0xf4e0);
+
+  /// @nodoc <span class="material-symbols-outlined">speed_1_5x</span> material symbol named "speed_1_5x".
+  static const IconData speed_1_5x = IconDataOutlined(0xf494);
+
+  /// @nodoc <span class="material-symbols-rounded">speed_1_5x</span> material symbol named "speed_1_5x_rounded".
+  static const IconData speed_1_5x_rounded = IconDataRounded(0xf494);
+
+  /// @nodoc <span class="material-symbols-sharp">speed_1_5x</span> material symbol named "speed_1_5x_sharp".
+  static const IconData speed_1_5x_sharp = IconDataSharp(0xf494);
+
+  /// @nodoc <span class="material-symbols-outlined">speed_1_75</span> material symbol named "speed_1_75".
+  static const IconData speed_1_75 = IconDataOutlined(0xf4d1);
+
+  /// @nodoc <span class="material-symbols-rounded">speed_1_75</span> material symbol named "speed_1_75_rounded".
+  static const IconData speed_1_75_rounded = IconDataRounded(0xf4d1);
+
+  /// @nodoc <span class="material-symbols-sharp">speed_1_75</span> material symbol named "speed_1_75_sharp".
+  static const IconData speed_1_75_sharp = IconDataSharp(0xf4d1);
+
+  /// @nodoc <span class="material-symbols-outlined">speed_1_7x</span> material symbol named "speed_1_7x".
+  static const IconData speed_1_7x = IconDataOutlined(0xf493);
+
+  /// @nodoc <span class="material-symbols-rounded">speed_1_7x</span> material symbol named "speed_1_7x_rounded".
+  static const IconData speed_1_7x_rounded = IconDataRounded(0xf493);
+
+  /// @nodoc <span class="material-symbols-sharp">speed_1_7x</span> material symbol named "speed_1_7x_sharp".
+  static const IconData speed_1_7x_sharp = IconDataSharp(0xf493);
 
   /// @nodoc <span class="material-symbols-outlined">speed_2x</span> material symbol named "speed_2x".
   static const IconData speed_2x = IconDataOutlined(0xf4eb);
@@ -49251,6 +50227,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">text_to_speech</span> material symbol named "text_to_speech_sharp".
   static const IconData text_to_speech_sharp = IconDataSharp(0xf1bc);
 
+  /// @nodoc <span class="material-symbols-outlined">text_up</span> material symbol named "text_up".
+  static const IconData text_up = IconDataOutlined(0xf49e);
+
+  /// @nodoc <span class="material-symbols-rounded">text_up</span> material symbol named "text_up_rounded".
+  static const IconData text_up_rounded = IconDataRounded(0xf49e);
+
+  /// @nodoc <span class="material-symbols-sharp">text_up</span> material symbol named "text_up_sharp".
+  static const IconData text_up_sharp = IconDataSharp(0xf49e);
+
   /// @nodoc <span class="material-symbols-outlined">textsms</span> material symbol named "textsms".
   static const IconData textsms = IconDataOutlined(0xe625);
 
@@ -49629,6 +50614,24 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">timer_3_select</span> material symbol named "timer_3_select_sharp".
   static const IconData timer_3_select_sharp = IconDataSharp(0xf07b);
 
+  /// @nodoc <span class="material-symbols-outlined">timer_5</span> material symbol named "timer_5".
+  static const IconData timer_5 = IconDataOutlined(0xf4b1);
+
+  /// @nodoc <span class="material-symbols-rounded">timer_5</span> material symbol named "timer_5_rounded".
+  static const IconData timer_5_rounded = IconDataRounded(0xf4b1);
+
+  /// @nodoc <span class="material-symbols-sharp">timer_5</span> material symbol named "timer_5_sharp".
+  static const IconData timer_5_sharp = IconDataSharp(0xf4b1);
+
+  /// @nodoc <span class="material-symbols-outlined">timer_5_shutter</span> material symbol named "timer_5_shutter".
+  static const IconData timer_5_shutter = IconDataOutlined(0xf4b2);
+
+  /// @nodoc <span class="material-symbols-rounded">timer_5_shutter</span> material symbol named "timer_5_shutter_rounded".
+  static const IconData timer_5_shutter_rounded = IconDataRounded(0xf4b2);
+
+  /// @nodoc <span class="material-symbols-sharp">timer_5_shutter</span> material symbol named "timer_5_shutter_sharp".
+  static const IconData timer_5_shutter_sharp = IconDataSharp(0xf4b2);
+
   /// @nodoc <span class="material-symbols-outlined">timer_off</span> material symbol named "timer_off".
   static const IconData timer_off = IconDataOutlined(0xe426);
 
@@ -49637,6 +50640,24 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">timer_off</span> material symbol named "timer_off_sharp".
   static const IconData timer_off_sharp = IconDataSharp(0xe426);
+
+  /// @nodoc <span class="material-symbols-outlined">timer_pause</span> material symbol named "timer_pause".
+  static const IconData timer_pause = IconDataOutlined(0xf4bb);
+
+  /// @nodoc <span class="material-symbols-rounded">timer_pause</span> material symbol named "timer_pause_rounded".
+  static const IconData timer_pause_rounded = IconDataRounded(0xf4bb);
+
+  /// @nodoc <span class="material-symbols-sharp">timer_pause</span> material symbol named "timer_pause_sharp".
+  static const IconData timer_pause_sharp = IconDataSharp(0xf4bb);
+
+  /// @nodoc <span class="material-symbols-outlined">timer_play</span> material symbol named "timer_play".
+  static const IconData timer_play = IconDataOutlined(0xf4ba);
+
+  /// @nodoc <span class="material-symbols-rounded">timer_play</span> material symbol named "timer_play_rounded".
+  static const IconData timer_play_rounded = IconDataRounded(0xf4ba);
+
+  /// @nodoc <span class="material-symbols-sharp">timer_play</span> material symbol named "timer_play_sharp".
+  static const IconData timer_play_sharp = IconDataSharp(0xf4ba);
 
   /// @nodoc <span class="material-symbols-outlined">tips_and_updates</span> material symbol named "tips_and_updates".
   static const IconData tips_and_updates = IconDataOutlined(0xe79a);
@@ -49664,6 +50685,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">title</span> material symbol named "title_sharp".
   static const IconData title_sharp = IconDataSharp(0xe264);
+
+  /// @nodoc <span class="material-symbols-outlined">titlecase</span> material symbol named "titlecase".
+  static const IconData titlecase = IconDataOutlined(0xf489);
+
+  /// @nodoc <span class="material-symbols-rounded">titlecase</span> material symbol named "titlecase_rounded".
+  static const IconData titlecase_rounded = IconDataRounded(0xf489);
+
+  /// @nodoc <span class="material-symbols-sharp">titlecase</span> material symbol named "titlecase_sharp".
+  static const IconData titlecase_sharp = IconDataSharp(0xf489);
 
   /// @nodoc <span class="material-symbols-outlined">toast</span> material symbol named "toast".
   static const IconData toast = IconDataOutlined(0xefc1);
@@ -49947,6 +50977,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">track_changes</span> material symbol named "track_changes_sharp".
   static const IconData track_changes_sharp = IconDataSharp(0xe8e1);
+
+  /// @nodoc <span class="material-symbols-outlined">trackpad_input</span> material symbol named "trackpad_input".
+  static const IconData trackpad_input = IconDataOutlined(0xf4c7);
+
+  /// @nodoc <span class="material-symbols-rounded">trackpad_input</span> material symbol named "trackpad_input_rounded".
+  static const IconData trackpad_input_rounded = IconDataRounded(0xf4c7);
+
+  /// @nodoc <span class="material-symbols-sharp">trackpad_input</span> material symbol named "trackpad_input_sharp".
+  static const IconData trackpad_input_sharp = IconDataSharp(0xf4c7);
 
   /// @nodoc <span class="material-symbols-outlined">traffic</span> material symbol named "traffic".
   static const IconData traffic = IconDataOutlined(0xe565);
@@ -50584,13 +51623,13 @@ class Symbols {
   static const IconData universal_local_sharp = IconDataSharp(0xe9fb);
 
   /// @nodoc <span class="material-symbols-outlined">unknown_2</span> material symbol named "unknown_2".
-  static const IconData unknown_2 = IconDataOutlined(0xe6a2);
+  static const IconData unknown_2 = IconDataOutlined(0xf49f);
 
   /// @nodoc <span class="material-symbols-rounded">unknown_2</span> material symbol named "unknown_2_rounded".
-  static const IconData unknown_2_rounded = IconDataRounded(0xe6a2);
+  static const IconData unknown_2_rounded = IconDataRounded(0xf49f);
 
   /// @nodoc <span class="material-symbols-sharp">unknown_2</span> material symbol named "unknown_2_sharp".
-  static const IconData unknown_2_sharp = IconDataSharp(0xe6a2);
+  static const IconData unknown_2_sharp = IconDataSharp(0xf49f);
 
   /// @nodoc <span class="material-symbols-outlined">unknown_5</span> material symbol named "unknown_5".
   static const IconData unknown_5 = IconDataOutlined(0xe6a5);
@@ -50600,6 +51639,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">unknown_5</span> material symbol named "unknown_5_sharp".
   static const IconData unknown_5_sharp = IconDataSharp(0xe6a5);
+
+  /// @nodoc <span class="material-symbols-outlined">unknown_7</span> material symbol named "unknown_7".
+  static const IconData unknown_7 = IconDataOutlined(0xf49e);
+
+  /// @nodoc <span class="material-symbols-rounded">unknown_7</span> material symbol named "unknown_7_rounded".
+  static const IconData unknown_7_rounded = IconDataRounded(0xf49e);
+
+  /// @nodoc <span class="material-symbols-sharp">unknown_7</span> material symbol named "unknown_7_sharp".
+  static const IconData unknown_7_sharp = IconDataSharp(0xf49e);
 
   /// @nodoc <span class="material-symbols-outlined">unknown_document</span> material symbol named "unknown_document".
   static const IconData unknown_document = IconDataOutlined(0xf804);
@@ -50627,6 +51675,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">unlicense</span> material symbol named "unlicense_sharp".
   static const IconData unlicense_sharp = IconDataSharp(0xeb05);
+
+  /// @nodoc <span class="material-symbols-outlined">unpin</span> material symbol named "unpin".
+  static const IconData unpin = IconDataOutlined(0xe6f9);
+
+  /// @nodoc <span class="material-symbols-rounded">unpin</span> material symbol named "unpin_rounded".
+  static const IconData unpin_rounded = IconDataRounded(0xe6f9);
+
+  /// @nodoc <span class="material-symbols-sharp">unpin</span> material symbol named "unpin_sharp".
+  static const IconData unpin_sharp = IconDataSharp(0xe6f9);
 
   /// @nodoc <span class="material-symbols-outlined">unpublished</span> material symbol named "unpublished".
   static const IconData unpublished = IconDataOutlined(0xf236);
@@ -50708,6 +51765,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">upload_file</span> material symbol named "upload_file_sharp".
   static const IconData upload_file_sharp = IconDataSharp(0xe9fc);
+
+  /// @nodoc <span class="material-symbols-outlined">uppercase</span> material symbol named "uppercase".
+  static const IconData uppercase = IconDataOutlined(0xf488);
+
+  /// @nodoc <span class="material-symbols-rounded">uppercase</span> material symbol named "uppercase_rounded".
+  static const IconData uppercase_rounded = IconDataRounded(0xf488);
+
+  /// @nodoc <span class="material-symbols-sharp">uppercase</span> material symbol named "uppercase_sharp".
+  static const IconData uppercase_sharp = IconDataSharp(0xf488);
 
   /// @nodoc <span class="material-symbols-outlined">urology</span> material symbol named "urology".
   static const IconData urology = IconDataOutlined(0xe137);
@@ -51233,6 +52299,15 @@ class Symbols {
   /// @nodoc <span class="material-symbols-sharp">view_quilt</span> material symbol named "view_quilt_sharp".
   static const IconData view_quilt_sharp = IconDataSharp(0xe8f1);
 
+  /// @nodoc <span class="material-symbols-outlined">view_real_size</span> material symbol named "view_real_size".
+  static const IconData view_real_size = IconDataOutlined(0xf4c2);
+
+  /// @nodoc <span class="material-symbols-rounded">view_real_size</span> material symbol named "view_real_size_rounded".
+  static const IconData view_real_size_rounded = IconDataRounded(0xf4c2);
+
+  /// @nodoc <span class="material-symbols-sharp">view_real_size</span> material symbol named "view_real_size_sharp".
+  static const IconData view_real_size_sharp = IconDataSharp(0xf4c2);
+
   /// @nodoc <span class="material-symbols-outlined">view_sidebar</span> material symbol named "view_sidebar".
   static const IconData view_sidebar = IconDataOutlined(0xf114);
 
@@ -51331,6 +52406,15 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">vitals</span> material symbol named "vitals_sharp".
   static const IconData vitals_sharp = IconDataSharp(0xe13b);
+
+  /// @nodoc <span class="material-symbols-outlined">vo2_max</span> material symbol named "vo2_max".
+  static const IconData vo2_max = IconDataOutlined(0xf4aa);
+
+  /// @nodoc <span class="material-symbols-rounded">vo2_max</span> material symbol named "vo2_max_rounded".
+  static const IconData vo2_max_rounded = IconDataRounded(0xf4aa);
+
+  /// @nodoc <span class="material-symbols-sharp">vo2_max</span> material symbol named "vo2_max_sharp".
+  static const IconData vo2_max_sharp = IconDataSharp(0xf4aa);
 
   /// @nodoc <span class="material-symbols-outlined">voice_chat</span> material symbol named "voice_chat".
   static const IconData voice_chat = IconDataOutlined(0xe62e);

@@ -1,5 +1,23 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2741.0
+
+* Removed obsolete code for update_package.dart
+* Updated to 2.741 of the material symbols font now that the pipeline generating the official github repo as been fixed
+  (see [https://github.com/google/material-design-icons/issues/1706](https://github.com/google/material-design-icons/issues/1706) for more details.  This pipeline bug had delay releases for 3 months because the material symbols icon fonts where not being updated).
+  Added f4cc  # adaptive_audio_mic,f4cb  # adaptive_audio_mic_off, f49c  # add_diamond, f48e  # add_triangle, f49a  # animated_images,
+  f4b6  # arrow_cool_down, f4b5  # arrow_warm_up, f4b0  # av1, f4af  # avc, f4b4  # cadence, f4b9  # cardio_load, f4ae  # closed_caption_add, f49f  # contrast_circle, f4a0  # contrast_square, f4cd  # emoji_language, f4c9  # eye_tracking, f49d  # fingerprint_off,
+  f4b8  # format_textdirection_vertical, f4d5  # frame_person_mic, f4c1  # guardian, f4c6  # handheld_controller, f4c5  # head_mounted_device,
+  f4ca  # id_card, f026  # keep, e6f9  # keep_off, f026  # keep_pin, f56f  # keep_public, f492  # keyboard_lock, f491  # keyboard_lock_off,
+  f4c4  # landscape_2, f4c3  # landscape_2_off, f48a  # lowercase, f48b  # mail_off, f490  # mouse_lock, f48f  # mouse_lock_off,
+  f499  # movie_off, f4d0  # offline_pin_off, f4b7  # open_run, f4a9  # password_2, f4a8  # password_2_off, f49b  # poker_chip,
+  f4c0  # recenter, f4bc  # search_insights, f4c8  # select_window_2, f4ac  # serif, f483  # shift_lock_off, f4ab  # slab_serif,
+  f4a5  # smart_card_reader, f4a6  # smart_card_reader_off, f4cf  # spatial_speaker, f4d4  # speed_0_25, f498  # speed_0_2x,
+  f497  # speed_0_5x, f4d3  # speed_0_75, f496  # speed_0_7x, f4d2  # speed_1_25, f495  # speed_1_2x, f494  # speed_1_5x,
+  f4d1  # speed_1_75, f493  # speed_1_7x, f49e  # text_up, f4b1  # timer_5, f4b2  # timer_5_shutter, f4bb  # timer_pause,
+  f4ba  # timer_play, f489  # titlecase, f4c7  # trackpad_input, f49f  # unknown_2, e6a2  # unknown_2, f49e  # unknown_7, e6f9  # unpin,
+  f488  # uppercase, f4c2  # view_real_size and f4aa  # vo2_max
+
 ## 4.2719.3
 
 * Added static IconData get(String name, SymbolStyle style) method on Symbols that is specified in the official Material

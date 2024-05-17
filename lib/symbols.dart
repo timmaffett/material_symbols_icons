@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-05-05 15:35:11.701669 by the dart file
+// This file was generated 2024-05-17 11:55:52.214067 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -4590,6 +4590,18 @@ export 'src/icon_data.dart';
 /// <span class="material-symbols-rounded">content_paste_search</span> Symbols.content_paste_search_rounded
 ///
 /// <span class="material-symbols-sharp">content_paste_search</span> Symbols.content_paste_search_sharp
+///
+/// <span class="material-symbols-outlined">contextual_token</span> Symbols.contextual_token
+///
+/// <span class="material-symbols-rounded">contextual_token</span> Symbols.contextual_token_rounded
+///
+/// <span class="material-symbols-sharp">contextual_token</span> Symbols.contextual_token_sharp
+///
+/// <span class="material-symbols-outlined">contextual_token_add</span> Symbols.contextual_token_add
+///
+/// <span class="material-symbols-rounded">contextual_token_add</span> Symbols.contextual_token_add_rounded
+///
+/// <span class="material-symbols-sharp">contextual_token_add</span> Symbols.contextual_token_add_sharp
 ///
 /// <span class="material-symbols-outlined">contract</span> Symbols.contract
 ///
@@ -28214,6 +28226,24 @@ class Symbols {
 
   /// @nodoc <span class="material-symbols-sharp">content_paste_search</span> material symbol named "content_paste_search_sharp".
   static const IconData content_paste_search_sharp = IconDataSharp(0xea9b);
+
+  /// @nodoc <span class="material-symbols-outlined">contextual_token</span> material symbol named "contextual_token".
+  static const IconData contextual_token = IconDataOutlined(0xf486);
+
+  /// @nodoc <span class="material-symbols-rounded">contextual_token</span> material symbol named "contextual_token_rounded".
+  static const IconData contextual_token_rounded = IconDataRounded(0xf486);
+
+  /// @nodoc <span class="material-symbols-sharp">contextual_token</span> material symbol named "contextual_token_sharp".
+  static const IconData contextual_token_sharp = IconDataSharp(0xf486);
+
+  /// @nodoc <span class="material-symbols-outlined">contextual_token_add</span> material symbol named "contextual_token_add".
+  static const IconData contextual_token_add = IconDataOutlined(0xf485);
+
+  /// @nodoc <span class="material-symbols-rounded">contextual_token_add</span> material symbol named "contextual_token_add_rounded".
+  static const IconData contextual_token_add_rounded = IconDataRounded(0xf485);
+
+  /// @nodoc <span class="material-symbols-sharp">contextual_token_add</span> material symbol named "contextual_token_add_sharp".
+  static const IconData contextual_token_add_sharp = IconDataSharp(0xf485);
 
   /// @nodoc <span class="material-symbols-outlined">contract</span> material symbol named "contract".
   static const IconData contract = IconDataOutlined(0xf5a0);

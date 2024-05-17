@@ -1,5 +1,10 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2744.0
+
+* Update to version 2.744 of the material icons variable fonts released 05/16/2024 with 3553 icons
+* added f486  # contextual_token and f485  # contextual_token_add
+
 ## 4.2741.0
 
 * Removed obsolete code for update_package.dart

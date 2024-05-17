@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-05-05 15:35:11.756594 by the dart file
+// This file was generated 2024-05-17 11:55:52.261885 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2023 . All rights reserved.
@@ -2282,6 +2282,12 @@ Map<String, IconData> materialSymbolsMap = {
   'content_paste_search': Symbols.content_paste_search,
   'content_paste_search_rounded': Symbols.content_paste_search_rounded,
   'content_paste_search_sharp': Symbols.content_paste_search_sharp,
+  'contextual_token': Symbols.contextual_token,
+  'contextual_token_rounded': Symbols.contextual_token_rounded,
+  'contextual_token_sharp': Symbols.contextual_token_sharp,
+  'contextual_token_add': Symbols.contextual_token_add,
+  'contextual_token_add_rounded': Symbols.contextual_token_add_rounded,
+  'contextual_token_add_sharp': Symbols.contextual_token_add_sharp,
   'contract': Symbols.contract,
   'contract_rounded': Symbols.contract_rounded,
   'contract_sharp': Symbols.contract_sharp,

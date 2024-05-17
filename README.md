@@ -2,7 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/material_symbols_icons.svg)](https://pub.dev/packages/material_symbols_icons)
 
-### Using Official Material Symbols Icons variable fonts version 2.741 released 05/04/2024 from [material font repo](https://github.com/google/material-design-icons) with 3551 icons.
+### Using Official Material Symbols Icons variable fonts version 2.744 released 05/16/2024 from [material font repo](https://github.com/google/material-design-icons) with 3553 icons.
 
 [Complete interactive icon map can be found here.](https://timmaffett.github.io/material_symbols_icons)
 

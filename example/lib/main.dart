@@ -848,11 +848,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 return  Center(
                                   child: MouseRegion(
                                 cursor: SystemMouseCursors.click,
-                                onHover: (event) {
-                                  setState(() {
-                                    hoveredOverIconData = iconDataForIndex;
-                                  });
-                                },
+                                onEnter: (_) => setState(() => hoveredOverIconData = iconDataForIndex),
+                                onExit: (_) => setState(() => hoveredOverIconData = null),
                                 child: GestureDetector(
                                   onTap: () {
                                     final iconName =

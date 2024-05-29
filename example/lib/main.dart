@@ -12,7 +12,7 @@ import 'package:universal_html/html.dart' show window;
 
 import 'symbols_map.dart';
 
-import 'package:device_preview/device_preview.dart'; // required when useDevicePreview==true
+import 'package:device_preview_plus/device_preview_plus.dart'; // required when useDevicePreview==true
 
 /// Set [useDevicePreview] to allow testing layouts on virtual device screens
 const useDevicePreview = false;
@@ -113,6 +113,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   List<IconData> iconList = [];
   List<String> iconNameList = [];
+
+  /// The [IconData] for the icon currently hovered over.
+  IconData? hoveredOverIconData;
 
   String _iconSearchText = '';
 
@@ -839,13 +842,21 @@ class _MyHomePageState extends State<MyHomePage> {
                       slivers: [
                         SliverGrid(
                             delegate: SliverChildBuilderDelegate(
-                              (context, index) => Center(
+                              (context, index) {
+                                final iconNameForIndex = searchActive ? iconNameList[matches[index]] : iconNameList[index];
+                                final iconDataForIndex = searchActive ? iconList[matches[index]] : iconList[index];
+                                return  Center(
                                   child: MouseRegion(
                                 cursor: SystemMouseCursors.click,
+                                onHover: (event) {
+                                  setState(() {
+                                    hoveredOverIconData = iconDataForIndex;
+                                  });
+                                },
                                 child: GestureDetector(
                                   onTap: () {
                                     final iconName =
-                                        'Symbols.${searchActive ? iconNameList[matches[index]] : iconNameList[index]}';
+                                        'Symbols.$iconNameForIndex';
                                     Clipboard.setData(
                                             ClipboardData(text: iconName))
                                         .then((_) {
@@ -857,12 +868,16 @@ class _MyHomePageState extends State<MyHomePage> {
                                   },
                                   child: Tooltip(
                                     message:
-                                        'Symbols.${searchActive ? iconNameList[matches[index]] : iconNameList[index]}',
+                                        'Symbols.$iconNameForIndex',
                                     child: Column(children: [
-                                      VariedIcon.varied(
-                                        searchActive
-                                            ? iconList[matches[index]]
-                                            : iconList[index],
+                                      if(hoveredOverIconData == iconDataForIndex) 
+                                        VariedIcon.varied(
+                                          iconDataForIndex,
+                                          fill: _fillVariation==1.0 ? 0.0 : 1.0,   //  ON MOUSE OVER FILL !!
+                                          size: _iconFontSize,
+                                        )
+                                      else VariedIcon.varied(
+                                        iconDataForIndex,
                                         size: _iconFontSize,
                                       ),
                                       if (_iconFontSize <= 64)
@@ -872,17 +887,16 @@ class _MyHomePageState extends State<MyHomePage> {
                                           padding: const EdgeInsets.fromLTRB(
                                               4.0, 0.0, 4.0, 0.0),
                                           child: Text(
-                                            (searchActive
-                                                ? iconNameList[matches[index]]
-                                                : iconNameList[index]),
+                                            iconNameForIndex,
                                             style: const TextStyle(fontSize: 8),
                                             textAlign: TextAlign.center,
                                           ),
                                         )
-                                    ]),
+                                      ]),
+                                    ),
                                   ),
-                                ),
-                              )),
+                                ));
+                              } ,
                               childCount: searchActive
                                   ? matches.length
                                   : iconNameList.length,

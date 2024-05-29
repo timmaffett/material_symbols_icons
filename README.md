@@ -87,7 +87,7 @@ reserved words.  `door_back` and `door_front` have also been renamed `door_back_
 
 ----------------------------------------------------------------
 
-The middle `2659` number of the version number corresponds to the version number of of the variable fonts used to generated the icon data (with the decimal point removed).  (`2659` corresponding version number (`Version 2.659`)).  This is found in the `name` table of the variable font true type (.ttf)).  Thus it can be used to determine the variable source font TTF version numbers used to generate a given version of this package.  (The version number can also be found in the `fontRevision` property of the `head` table of the .ttf font files).
+The middle 4 digit number (for example `2744`) of the version number corresponds to the version number of of the variable fonts used to generated the icon data (with the decimal point removed).  (`2744` corresponds to version number (`Version 2.744`)).  This is found in the `name` table of the variable font true type (.ttf)).  Thus it can be used to determine the variable source font TTF version numbers used to generate a given version of this package.  (The version number can also be found in the `fontRevision` property of the `head` table of the .ttf font files).
 
 ----------------------------------------------------------------
 

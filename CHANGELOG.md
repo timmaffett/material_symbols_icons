@@ -1,5 +1,11 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2744.1
+
+* Update to use device_preview_plus for example (as device_preview no longer compiled with current
+  flutter master channel.
+* Changed example app to do toggle icon's fill state on mouse over.
+
 ## 4.2744.0
 
 * Update to version 2.744 of the material icons variable fonts released 05/16/2024 with 3553 icons

@@ -16,7 +16,7 @@ dependencies:
   cupertino_icons: ^1.0.5
   material_symbols_icons:
     path: ../
-  device_preview: ^1.1.0    # required only for virtual device screen testing
+  device_preview_plus: ^1.2.0    # (moved from `device_preview` to updated `device_preview_plus`) required only for virtual device screen testing
   splittable_flexible_row: ^1.0.0
   universal_html: ^2.2.3
   

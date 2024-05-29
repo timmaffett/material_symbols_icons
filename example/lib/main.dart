@@ -857,10 +857,12 @@ class _MyHomePageState extends State<MyHomePage> {
                                     Clipboard.setData(
                                             ClipboardData(text: iconName))
                                         .then((_) {
-                                      ScaffoldMessenger.of(context)
-                                          .showSnackBar(SnackBar(
-                                              content: Text(
-                                                  'Copied "$iconName" to the clipboard.')));
+                                      if(context.mounted) {
+                                        ScaffoldMessenger.of(context)
+                                            .showSnackBar(SnackBar(
+                                                content: Text(
+                                                    'Copied "$iconName" to the clipboard.')));
+                                      }
                                     });
                                   },
                                   child: Tooltip(

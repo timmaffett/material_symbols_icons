@@ -2,7 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/material_symbols_icons.svg)](https://pub.dev/packages/material_symbols_icons)
 
-### Using Official Material Symbols Icons variable fonts version 2.744 released 05/16/2024 from [material font repo](https://github.com/google/material-design-icons) with 3553 icons.
+### Using Official Material Symbols Icons variable fonts version 2.758 released 05/30/2024 from [material font repo](https://github.com/google/material-design-icons) with 3599 icons.
 
 [Complete interactive icon map can be found here.](https://timmaffett.github.io/material_symbols_icons)
 
@@ -49,12 +49,16 @@ When using the get() method *tree-shaking must be turned off* using
 `--no-tree-shake-icons` as there is no way for the compiler to know what icons are being used.
 `SymbolsGet.values` can be used to access an `Iterable<String>` of the icon names for each available icon.
 `SymbolsGet.map` can be used to access a `Map<String,int>` of the icon names to unicode code points for each icon.
+You can optionally `import 'package:material_symbols_icons/symbols_map.dart';` to force
+references to every icon's IconData object and prevent all tree-shaking from occuring.
+This is used by the example app to allow previewing of all icons.
 
 ```dart
-// icon tree-shaking must be turned off when using the get() method!
-//  build with `--no-tree-shake-icons`
+// `import 'package:material_symbols_icons/symbols_map.dart';` or 
+// optionally turn off icon tree-shaking when using the get() method!
+// ( build with `--no-tree-shake-icons` )
+import 'package:material_symbols_icons/symbols_map.dart';
 import 'package:material_symbols_icons/get.dart';
-
 
 final iconRounded = SymbolsGet.get('airplane',SymbolStyle.rounded);
 final iconSharp = SymbolsGet.get('airplane',SymbolStyle.sharp);
@@ -87,7 +91,7 @@ reserved words.  `door_back` and `door_front` have also been renamed `door_back_
 
 ----------------------------------------------------------------
 
-The middle 4 digit number (for example `2744`) of the version number corresponds to the version number of of the variable fonts used to generated the icon data (with the decimal point removed).  (`2744` corresponds to version number (`Version 2.744`)).  This is found in the `name` table of the variable font true type (.ttf)).  Thus it can be used to determine the variable source font TTF version numbers used to generate a given version of this package.  (The version number can also be found in the `fontRevision` property of the `head` table of the .ttf font files).
+The middle 4 digit number (for example `2758`) of the version number corresponds to the version number of of the variable fonts used to generated the icon data (with the decimal point removed).  (`2758` corresponds to version number (`Version 2.758`)).  This is found in the `name` table of the variable font true type (.ttf)).  Thus it can be used to determine the variable source font TTF version numbers used to generate a given version of this package.  (The version number can also be found in the `fontRevision` property of the `head` table of the .ttf font files).
 
 ----------------------------------------------------------------
 

@@ -1,5 +1,26 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2758.0
+
+* Update to version 2.758 of the material icons variable fonts released 05/30/2024 with 3599 icons
+* Added f47b  # bike_dock,f47a  # bike_lane,f457  # bookmark_check, f456  # bookmark_flag,
+  f455  # bookmark_heart,f454  # bookmark_star, f479  # cable_car, f46b  # chevron_backward,
+  f46a  # chevron_forward,f460  # currency_rupee_circle,f45e  # desktop_landscape,
+  f45d  # desktop_portrait, f462  # directions_railway_2, f463  # fitness_tracker,
+  f45c  # float_landscape_2, f45b  # float_portrait_2, f478  # flyover,
+  f45a  # fullscreen_portrait, f477  # funicular, f476  # gondola_lift,
+  f464  # hearing_aid, f475  # hov, f474  # metro, f473  # monorail, e408  # navigate_before,
+  e409  # navigate_next, e5cb  # navigate_before, e5cc  # navigate_next,
+  f461  # railway_alert_2, f482  # reset_brightness, f481  # reset_focus, f480  # reset_iso,
+  f47f  # reset_settings, f47e  # reset_shadow, f47d  # reset_shutter_speed,
+  f47c  # reset_white_balance, f472  # road, f471  # scooter, f45f  # script,
+  f469  # search_check_2, f470  # speed_camera, f459  # splitscreen_landscape,
+  f458  # splitscreen_portrait, f46c  # stairs_2, f466  # table_eye, f46f  # traffic_jam,
+  f46e  # trolley_cable_car, f46d  # unpaved_road, f468  # watch_check,
+  f467  # watch_vibration
+* Changed codepoint of wifi_calling_1 from f0f6 to f0e7,
+  changed codepoint of wifi_calling_3 from f0f6 to f0e7
+
 ## 4.2744.2
 
 * Added `data-XXX` attributes to the <span> tags for each IconData member.  This information

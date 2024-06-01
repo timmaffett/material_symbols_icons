@@ -5,10 +5,9 @@ The `update_package.dart` program downloads the latest code point and font files
 The command to do this is :
 
 ```shell
-dart run update_package.dart -d -u
+dart run update_package.dart -d
 ```
 
-THe `-u` argument instructs the tool to re-generate the `icon_unicodes.txt` file in the `../rawFontsUnfixed' directory.
 The `-d` argument instucts the tool to also download the latest font files and place them in the `../rawFontsUnfixed' directory.
 Currently the fonts have incorrect font metrics and do no render correctly within flutter  - so the `../rawFontsUnfixed' directory
 contains correct metric files and a script that uses the python `fonttools` package to rebuild the fonts with the correct font metrics.
@@ -31,8 +30,7 @@ is that this is a NO FIX - as I suspected it might be - for compatibility with a
 Steps to update pakcage when new fonts are released.
 
 0.5) cd to \generator
-1) `dart run update_package.dart -d -u` 
-1.5)  (DONE AUTOMATICALLY NOW) ~~copy rawFontsUnfixed icon_unicodes.txt to LAST_VERSION directory with added date~~
+1) `dart run update_package.dart -d` 
 2) figure out source font version number with `ttx -s oneofthefonts.ttf`
     (cd ~/source/fonttools; copy font there  and then ttx)./fix
     (version number found at `fontRevision` entry in `MaterialSymbolsXXXXX._h_e_a_d.ttx`)

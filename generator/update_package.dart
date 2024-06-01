@@ -1,4 +1,4 @@
-// Copyright (c) 2023, the Dart project authors.  Please see the AUTHORS file
+// Copyright (c) 2024, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
@@ -142,17 +142,8 @@ String pathToWriteDateMarkedIconUnicodeFiles = '${pathToWriteTTFFiles}LAST_VERSI
 /// Path to write the dart source files to
 const pathToWriteDartFiles = '../lib/';
 
-/// Path to write example dart source files to
-const pathToWriteExampleDartFiles = '../example/lib/';
-
-/// Flag to fake the dart docs and use @nodoc flags on all the constants in the Symbols class
-bool fakeDartDocsFlag = true;
-
 /// Flag if we want to output a
-bool writeUnicodeCodepoints = false;
-
-// '@nodoc ' for NO DOCS to prevent HUGE doc files
-String noDocUsage = '';
+bool writeUnicodeCodepoints = true;
 
 Future<void> downloadURLASBinaryFile(
     HttpClient client, String url, String filename) async {
@@ -160,7 +151,7 @@ Future<void> downloadURLASBinaryFile(
   final response = await request.close();
   if (response.statusCode == HttpStatus.ok) {
     if (verboseFlag) {
-      print('Got OK response for URL $url - copying to $filename');
+      print('Received OK response for URL $url - copying to $filename');
     }
     await response.pipe(File('./$filename').openWrite());
   } else {
@@ -186,35 +177,11 @@ Future<void> main(List<String> args) async {
       help: 'Print extra info during processing.',
     )
     ..addFlag(
-      'fake_dart_docs',
-      abbr: 'f',
-      negatable: true,
-      defaultsTo: true,
-      help:
-          'Adds @nodocs to Symbols class constants and instead adds `fake` dart docs settings. Reduces doc size by 8gigs!',
-    )
-    ..addFlag(
       'downloadfonts',
       abbr: 'd',
       negatable: false,
       help:
           'The TTF font files will be downloaded to the $pathToWriteTTFFiles directory if this flag is passed.',
-    )
-    ..addFlag(
-      'write_unicode_codepoints',
-      abbr: 'u',
-      negatable: false,
-      help:
-          'Writes out a `$pathToWriteTTFFiles/icon_unicodes.txt` file with all icon unicodes, one per line, for use by `pyftsubset` to trim font.',
-    )
-    ..addFlag(
-      'combined_symbols',
-      abbr: 'c',
-      negatable: true,
-      defaultsTo: true,
-      help:
-          'If this flag is supplied a `symbols.dart` will be created with all 3 flavors combined into a single class.'
-          'The outline version has no suffix and the `sharp` and `rounded` versions have `_sharp` and `_rounded` suffixes appended',
     );
   late final ArgResults results;
 
@@ -232,14 +199,6 @@ Future<void> main(List<String> args) async {
 
   final downloadFontsFlag = results['downloadfonts'] as bool;
   verboseFlag = results['verbose'] as bool;
-  final combinedFutureSymbolsSupportCompatible =
-      results['combined_symbols'] as bool;
-  fakeDartDocsFlag = results['fake_dart_docs'] as bool;
-  writeUnicodeCodepoints = results['write_unicode_codepoints'] as bool;
-
-  if (fakeDartDocsFlag) {
-    noDocUsage = '@nodoc ';
-  }
 
   /*
    The codepoint files are in the form:
@@ -305,9 +264,6 @@ Future<void> main(List<String> args) async {
         'Read ${iconInfoList.length} codepoints from `${fontFlavor.codepointFileUrl}`',
       );
     }
-
-    // Generate the source files needed for this flavor
-
     // Now Grab the latest font file
     String filenameWithPath = '$pathToWriteTTFFiles${fontFlavor.filename}';
     if (downloadFontsFlag) {
@@ -316,7 +272,7 @@ Future<void> main(List<String> args) async {
       await downloadURLASBinaryFile(
           client, fontFlavor.ttfFontFileUrl, filenameWithPath);
     } else {
-      print('SKIPPED downloading ${fontFlavor.ttfFontFileUrl}');
+      print('SKIPPED downloading font from ${fontFlavor.ttfFontFileUrl}');
     }
   }
 
@@ -324,20 +280,19 @@ Future<void> main(List<String> args) async {
     print('Renamed icon names $renamedIconNames');
   }
 
-  if (combinedFutureSymbolsSupportCompatible) {
-    // write all flavors together with suffixed symbol names
-    const combinedSourceFilename = '${pathToWriteDartFiles}symbols.dart';
-    writeCombinedSourceFile(variableFontFlavors, combinedSourceFilename,
-        suffixVersion: true);
+  // write all flavors together with suffixed symbol names
+  const combinedSourceFilename = '${pathToWriteDartFiles}symbols.dart';
+  writeCombinedSourceFile(variableFontFlavors, combinedSourceFilename,
+      suffixVersion: true);
 
-    const combinedExampleSourceFilename =
-        '${pathToWriteExampleDartFiles}symbols_map.dart';
-    writeCombinedExampleSourceFile(variableFontFlavors,
-        combinedExampleSourceFilename, combinedSourceFilename,
-        suffixVersion: true);
-  }
-
-
+  // write map file of all icon names to IconData objects - used by example
+  // program (or any other program) which needs to include EVERY icon in the
+  // build output program.
+  const combinedFullMapSourceFilename =
+      '${pathToWriteDartFiles}symbols_map.dart';
+  writeCombinedFullSymbolsMapSourceFile(variableFontFlavors,
+      combinedFullMapSourceFilename, combinedSourceFilename,
+      suffixVersion: true);
 
   final unicodeMapSourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
 //
@@ -357,7 +312,7 @@ Future<void> main(List<String> args) async {
 // This file was generated ${DateTime.now()} by the dart file
 // `generator/update_package.dart`.
 //
-// Copyright 2023 . All rights reserved.
+// Copyright 2024. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
@@ -365,53 +320,52 @@ Future<void> main(List<String> args) async {
 /// NOTE:  The 'outlined', 'rounded' and 'sharp' versions of the Material Symbols Icon fonts all share
 ///   the same codepoints for each named icon.  Within the Symbols.XXXX map the 'rounded' and 'sharp'
 ///   versions of each icon share these SAME NAMES, but with the word '_rounded' or '_sharp' appended.
+///   versions of each icon share these SAME NAMES, but with the word '_rounded' or '_sharp' appended.
 ///   Only the base name is included in the following map.
 Map<String, int> materialSymbolsIconNameToUnicodeMap = {
 ''');
 
 
-  if (writeUnicodeCodepoints || combinedFutureSymbolsSupportCompatible) {
-    // write all flavors together with suffixed symbol names
-    const iconUnicodesFilename = '${pathToWriteTTFFiles}icon_unicodes.txt';
-    final now = DateTime.now();
-    String year = now.year.toString().substring(2).padLeft(2,'0');
-    String month = now.month.toString().padLeft(2,'0');
-    String day = now.day.toString().padLeft(2,'0');
-    String dateStampedLastVersionIconUnicodesFilename = '${pathToWriteDateMarkedIconUnicodeFiles}icon_unicodes_${month}_${day}_${year}.txt';
-    List<String> unicodes = [];
-    bool first = true;
-    final unicodeBuffer = StringBuffer();
+  // write all flavors together with suffixed symbol names
+  const iconUnicodesFilename = '${pathToWriteTTFFiles}icon_unicodes.txt';
+  final now = DateTime.now();
+  String year = now.year.toString().substring(2).padLeft(2,'0');
+  String month = now.month.toString().padLeft(2,'0');
+  String day = now.day.toString().padLeft(2,'0');
+  String dateStampedLastVersionIconUnicodesFilename = '${pathToWriteDateMarkedIconUnicodeFiles}icon_unicodes_${year}_${month}_${day}.txt';
+  List<String> unicodes = [];
+  bool first = true;
+  final unicodeBuffer = StringBuffer();
 
-    for (final fontFlavor in variableFontFlavors) {
-      final iconInfoList = fontFlavor.iconInfoList;
-      for (var info in iconInfoList) {
-        if (first) {
-          unicodes.add(info.codePoint);
-          unicodeBuffer.writeln('${info.codePoint}  # ${info.iconName}');
+  for (final fontFlavor in variableFontFlavors) {
+    final iconInfoList = fontFlavor.iconInfoList;
+    for (var info in iconInfoList) {
+      if (first) {
+        unicodes.add(info.codePoint);
+        unicodeBuffer.writeln('${info.codePoint}  # ${info.iconName}');
 
-          unicodeMapSourceFileContent.writeln("  '${info.iconName}': 0x${info.codePoint},");   
-        } else {
-          if (!unicodes.contains(info.codePoint)) {
-            throw ('Unicode ${info.codePoint} was missing from first fonts list and found in ${fontFlavor.flavor}');
-          }
+        unicodeMapSourceFileContent.writeln("  '${info.iconName}': 0x${info.codePoint},");   
+      } else {
+        if (!unicodes.contains(info.codePoint)) {
+          throw ('Unicode ${info.codePoint} was missing from first fonts list and found in ${fontFlavor.flavor}');
         }
       }
-      first = false;
     }
-    unicodeMapSourceFileContent.writeln('};');   
-
-    const unicodeMapSourceFilename = '${pathToWriteDartFiles}iconname_to_unicode_map.dart';
-    File(unicodeMapSourceFilename).writeAsStringSync(unicodeMapSourceFileContent.toString());
-
-    File(iconUnicodesFilename).writeAsStringSync(unicodeBuffer.toString());
-    File(dateStampedLastVersionIconUnicodesFilename).writeAsStringSync(unicodeBuffer.toString());
-    print(
-        'Wrote ${unicodes.length} icon unicode codepoints to $iconUnicodesFilename');
-    print(
-        'ALSO Wrote ${unicodes.length} icon unicode codepoints to $dateStampedLastVersionIconUnicodesFilename');
-    print(
-        'Wrote $unicodeMapSourceFilename iconname to unicode map with ${unicodes.length} iconname -> unicode codepoints.');
+    first = false;
   }
+  unicodeMapSourceFileContent.writeln('};');   
+
+  const unicodeMapSourceFilename = '${pathToWriteDartFiles}iconname_to_unicode_map.dart';
+  File(unicodeMapSourceFilename).writeAsStringSync(unicodeMapSourceFileContent.toString());
+
+  File(iconUnicodesFilename).writeAsStringSync(unicodeBuffer.toString());
+  File(dateStampedLastVersionIconUnicodesFilename).writeAsStringSync(unicodeBuffer.toString());
+  print(
+      'Wrote ${unicodes.length} icon unicode codepoints to $iconUnicodesFilename');
+  print(
+      'ALSO Wrote ${unicodes.length} icon unicode codepoints to $dateStampedLastVersionIconUnicodesFilename');
+  print(
+      'Wrote $unicodeMapSourceFilename iconname to unicode map with ${unicodes.length} iconname -> unicode codepoints.');
 
   exit(0);
 }
@@ -436,6 +390,8 @@ ${parser.usage}
 void writeCombinedSourceFile(
     List<MaterialSymbolsVariableFont> fontinfoList, String sourceFilename,
     {bool suffixVersion = true}) {
+
+/*OBSOLETE - dart doc is FIXED!!!!
   StringBuffer getFakeDartDocsForIconNames() {
     final fakeDartDocs = StringBuffer();
 
@@ -474,8 +430,8 @@ void writeCombinedSourceFile(
     }
     return fakeDartDocs;
   }
-
-  final fakeDartDocs = fakeDartDocsFlag ? getFakeDartDocsForIconNames() : '';
+OBSOLETE */
+  //OBSOLETEfinal fakeDartDocs = fakeDartDocsFlag ? getFakeDartDocsForIconNames() : '';
 
   final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
 //
@@ -494,7 +450,7 @@ void writeCombinedSourceFile(
 // This file was generated ${DateTime.now()} by the dart file
 // `generator/update_package.dart`.
 //
-// Copyright 2023 . All rights reserved.
+// Copyright 2024. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
@@ -581,7 +537,7 @@ export 'src/icon_data.dart';
 ///  * [IconButton]
 ///  * <https://fonts.google.com/icons?selected=Material+Symbols>
 ///
-$fakeDartDocs
+
 @staticIconProvider
 class Symbols {
   // This class is not meant to be instantiated or extended; this constructor
@@ -646,8 +602,7 @@ class Symbols {
       }
       sourceFileContent.writeln();
       sourceFileContent.writeln(
-          //ALL OUTLINE  '  /// <span class="material-symbols-outlined">$iconnameNoLeadingPrefix</span> material symbol named "$iconname".');
-          '  /// $noDocUsage<span class="material-symbols-${fontinfo.flavor}">${iconInfo.originalIconName}</span> material symbol named "$iconname".');
+          '  /// <span class="material-symbols-${fontinfo.flavor}" data-variation="${fontinfo.flavor}" data-fontfamily="${fontinfo.familyNameToUse}" data-codepoint="$codepoint">${iconInfo.originalIconName}</span> material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
       String proposedSingleLine = "  static const IconData $iconname = $iconDataClass(0x$codepoint);";
       if(proposedSingleLine.length>80) {
         //split to two lines
@@ -671,7 +626,7 @@ class Symbols {
 /// Write a combined version of the `Symbols` class with outlined, rounded and sharp versions of
 /// each icon.  The outlined version has no suffix and each rounded and sharp icon name has a
 /// corresponding suffix (`_rounded` and `_sharp`).
-void writeCombinedExampleSourceFile(
+void writeCombinedFullSymbolsMapSourceFile(
     List<MaterialSymbolsVariableFont> fontinfoList,
     String exampleSourceFilename,
     String sourceFilename,
@@ -695,7 +650,7 @@ void writeCombinedExampleSourceFile(
 // This file was generated ${DateTime.now()} by the dart file
 // `generator/update_package.dart`.
 //
-// Copyright 2023 . All rights reserved.
+// Copyright 2024. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
@@ -704,6 +659,9 @@ import 'package:material_symbols_icons/$sourceFilename';
 
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: non_constant_identifier_names
+
+// WARNING! Including this file in your project will FORCE a reference to every
+// material symbols icon and PREVENT ALL TREE SHAKING of the material icons symbols fonts.
 
 // BEGIN GENERATED static array
 Map<String, IconData> materialSymbolsMap = {

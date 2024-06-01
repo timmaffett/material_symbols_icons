@@ -3,14 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:material_symbols_icons/symbols.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
+import 'package:material_symbols_icons/symbols_map.dart';
 import 'package:splittable_flexible_row/splittable_flexible_row.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // ignore: depend_on_referenced_packages
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:universal_html/html.dart' show window;
-
-import 'symbols_map.dart';
 
 import 'package:device_preview_plus/device_preview_plus.dart'; // required when useDevicePreview==true
 

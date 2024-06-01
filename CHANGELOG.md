@@ -1,5 +1,21 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2744.2
+
+* Added `data-XXX` attributes to the <span> tags for each IconData member.  This information
+  includes `data-fontfamily`, `data-codepoint` and `data-variation`.  This will allow my
+  modifications to the VSCode dart/flutter extension to show icon previews for any icon
+  package which includes this info (PR for [Dart-Code](https://github.com/Dart-Code/Dart-Code) to come).
+* Clean up `update_package.dart` removing obsolete code.
+* Remove @nodoc option from `update_package.dart` and always generate full dart docs because
+  dart doc has now been fixed to generate sensible docs when there are over 10000 members of
+  a class [dartdoc PR #3384](https://github.com/dart-lang/dartdoc/pull/3384).
+* Moved `symbols_map.dart` from example lib directory to main package directory.  Users
+  can include this if they chose to force references to every icon to prevent tree shaking.
+  (For example for icon preview applications).
+* Renamed all `rawFontsUnfixed/LAST_VERSION/icon_unicodes_XXXX.txt` files to use date
+  in the YY_MM_DD format so that the files sort alphabetically in date order.
+
 ## 4.2744.1
 
 * Update to use device_preview_plus for example (as device_preview no longer compiled with current

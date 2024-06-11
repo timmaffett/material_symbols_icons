@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-06-01 14:06:47.222838 by the dart file
+// This file was generated 2024-06-11 08:53:53.227326 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -7869,6 +7869,15 @@ Map<String, IconData> materialSymbolsMap = {
   'repeat_one_on': Symbols.repeat_one_on,
   'repeat_one_on_rounded': Symbols.repeat_one_on_rounded,
   'repeat_one_on_sharp': Symbols.repeat_one_on_sharp,
+  'replace_audio': Symbols.replace_audio,
+  'replace_audio_rounded': Symbols.replace_audio_rounded,
+  'replace_audio_sharp': Symbols.replace_audio_sharp,
+  'replace_image': Symbols.replace_image,
+  'replace_image_rounded': Symbols.replace_image_rounded,
+  'replace_image_sharp': Symbols.replace_image_sharp,
+  'replace_video': Symbols.replace_video,
+  'replace_video_rounded': Symbols.replace_video_rounded,
+  'replace_video_sharp': Symbols.replace_video_sharp,
   'replay': Symbols.replay,
   'replay_rounded': Symbols.replay_rounded,
   'replay_sharp': Symbols.replay_sharp,
@@ -8844,6 +8853,9 @@ Map<String, IconData> materialSymbolsMap = {
   'smartphone': Symbols.smartphone,
   'smartphone_rounded': Symbols.smartphone_rounded,
   'smartphone_sharp': Symbols.smartphone_sharp,
+  'smartphone_camera': Symbols.smartphone_camera,
+  'smartphone_camera_rounded': Symbols.smartphone_camera_rounded,
+  'smartphone_camera_sharp': Symbols.smartphone_camera_sharp,
   'smb_share': Symbols.smb_share,
   'smb_share_rounded': Symbols.smb_share_rounded,
   'smb_share_sharp': Symbols.smb_share_sharp,
@@ -9578,6 +9590,9 @@ Map<String, IconData> materialSymbolsMap = {
   'tab_group': Symbols.tab_group,
   'tab_group_rounded': Symbols.tab_group_rounded,
   'tab_group_sharp': Symbols.tab_group_sharp,
+  'tab_inactive': Symbols.tab_inactive,
+  'tab_inactive_rounded': Symbols.tab_inactive_rounded,
+  'tab_inactive_sharp': Symbols.tab_inactive_sharp,
   'tab_move': Symbols.tab_move,
   'tab_move_rounded': Symbols.tab_move_rounded,
   'tab_move_sharp': Symbols.tab_move_sharp,
@@ -9626,6 +9641,9 @@ Map<String, IconData> materialSymbolsMap = {
   'tablet_android': Symbols.tablet_android,
   'tablet_android_rounded': Symbols.tablet_android_rounded,
   'tablet_android_sharp': Symbols.tablet_android_sharp,
+  'tablet_camera': Symbols.tablet_camera,
+  'tablet_camera_rounded': Symbols.tablet_camera_rounded,
+  'tablet_camera_sharp': Symbols.tablet_camera_sharp,
   'tablet_mac': Symbols.tablet_mac,
   'tablet_mac_rounded': Symbols.tablet_mac_rounded,
   'tablet_mac_sharp': Symbols.tablet_mac_sharp,
@@ -10797,6 +10815,15 @@ Map<String, IconData> materialSymbolsMap = {
   'wifi_calling_3': Symbols.wifi_calling_3,
   'wifi_calling_3_rounded': Symbols.wifi_calling_3_rounded,
   'wifi_calling_3_sharp': Symbols.wifi_calling_3_sharp,
+  'wifi_calling_bar_1': Symbols.wifi_calling_bar_1,
+  'wifi_calling_bar_1_rounded': Symbols.wifi_calling_bar_1_rounded,
+  'wifi_calling_bar_1_sharp': Symbols.wifi_calling_bar_1_sharp,
+  'wifi_calling_bar_2': Symbols.wifi_calling_bar_2,
+  'wifi_calling_bar_2_rounded': Symbols.wifi_calling_bar_2_rounded,
+  'wifi_calling_bar_2_sharp': Symbols.wifi_calling_bar_2_sharp,
+  'wifi_calling_bar_3': Symbols.wifi_calling_bar_3,
+  'wifi_calling_bar_3_rounded': Symbols.wifi_calling_bar_3_rounded,
+  'wifi_calling_bar_3_sharp': Symbols.wifi_calling_bar_3_sharp,
   'wifi_channel': Symbols.wifi_channel,
   'wifi_channel_rounded': Symbols.wifi_channel_rounded,
   'wifi_channel_sharp': Symbols.wifi_channel_sharp,

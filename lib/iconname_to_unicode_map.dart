@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-06-01 14:06:47.245312 by the dart file
+// This file was generated 2024-06-11 08:53:53.247530 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -2619,6 +2619,9 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'repeat_on': 0xe9d6,
   'repeat_one': 0xe041,
   'repeat_one_on': 0xe9d7,
+  'replace_audio': 0xf451,
+  'replace_image': 0xf450,
+  'replace_video': 0xf44f,
   'replay': 0xe042,
   'replay_10': 0xe059,
   'replay_30': 0xe05a,
@@ -2937,6 +2940,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'smart_screen': 0xf06b,
   'smart_toy': 0xf06c,
   'smartphone': 0xe32c,
+  'smartphone_camera': 0xf44e,
   'smb_share': 0xf74b,
   'smoke_free': 0xeb4a,
   'smoking_rooms': 0xeb4b,
@@ -3178,6 +3182,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'tab_close_right': 0xf746,
   'tab_duplicate': 0xf744,
   'tab_group': 0xf743,
+  'tab_inactive': 0xf43b,
   'tab_move': 0xf742,
   'tab_new_right': 0xf741,
   'tab_recent': 0xf740,
@@ -3194,6 +3199,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'table_view': 0xf1be,
   'tablet': 0xe32f,
   'tablet_android': 0xe330,
+  'tablet_camera': 0xf44d,
   'tablet_mac': 0xe331,
   'tabs': 0xe9ee,
   'tactic': 0xf564,
@@ -3580,6 +3586,9 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'wifi_calling_1': 0xf0e7,
   'wifi_calling_2': 0xf0f6,
   'wifi_calling_3': 0xf0e7,
+  'wifi_calling_bar_1': 0xf44c,
+  'wifi_calling_bar_2': 0xf44b,
+  'wifi_calling_bar_3': 0xf44a,
   'wifi_channel': 0xeb6a,
   'wifi_find': 0xeb31,
   'wifi_home': 0xf671,

@@ -2,7 +2,10 @@
 
 [![pub package](https://img.shields.io/pub/v/material_symbols_icons.svg)](https://pub.dev/packages/material_symbols_icons)
 
-### Using Official Material Symbols Icons variable fonts version 2.758 released 05/30/2024 from [material font repo](https://github.com/google/material-design-icons) with 3599 icons.
+### Using Official Material Symbols Icons variable fonts version 2.762 released 06/06/2024 from [material font repo](https://github.com/google/material-design-icons) with 3608 icons.
+
+The dart docs and vscode hover docs now include icon preview (if you install the
+three MaterialSymbols*.ttf fonts locally on your machine).
 
 [Complete interactive icon map can be found here.](https://timmaffett.github.io/material_symbols_icons)
 

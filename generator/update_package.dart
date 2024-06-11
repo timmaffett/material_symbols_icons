@@ -20,6 +20,10 @@ import 'package:path/path.dart' as path;
 
 late final bool verboseFlag;
 
+/// Flag to include inline SVG previews of the icons in dart docs comments as markup
+bool svgDartDocsFlag = false;
+
+
 class IconInfo {
   final String originalIconName;
   final String iconName;
@@ -34,11 +38,15 @@ class MaterialSymbolsVariableFont {
   final String familyNameToUse;
   final String codepointFileUrl;
   final String ttfFontFileUrl;
+  final String woff2FontUrlForDartDocSVG;
+  final String svgFontFamily;
   late final String filename;
   final List<IconInfo> iconInfoList = [];
 
   MaterialSymbolsVariableFont(this.flavor, this.iconDataClass, this.familyNameToUse,
-      this.codepointFileUrl, this.ttfFontFileUrl) {
+                                this.codepointFileUrl, this.ttfFontFileUrl,
+                                this.woff2FontUrlForDartDocSVG, this.svgFontFamily
+                              ) {
     final urlfilename = path.basename(ttfFontFileUrl);
     filename = Uri.decodeFull(urlfilename);
   }
@@ -50,20 +58,39 @@ List<MaterialSymbolsVariableFont> variableFontFlavors = [
       'IconDataOutlined',
       'MaterialSymbolsOutlined',
       'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints',
-      'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf'),
+      'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf',
+      fixupStringForDataURIThatVSCodeWillAccept("url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v190/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format('woff2')"),
+      fixupStringForDataURIThatVSCodeWillAccept('Material Symbols Outlined'),
+      ),
   MaterialSymbolsVariableFont(
       'rounded',
       'IconDataRounded',
       'MaterialSymbolsRounded',
       'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints',
-      'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf'),
+      'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf',
+      fixupStringForDataURIThatVSCodeWillAccept("url(https://fonts.gstatic.com/s/materialsymbolsrounded/v188/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2) format('woff2')"),
+      fixupStringForDataURIThatVSCodeWillAccept('Material Symbols Rounded'),
+    ),
   MaterialSymbolsVariableFont(
       'sharp',
       'IconDataSharp',
       'MaterialSymbolsSharp',
       'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints',
-      'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf'),
+      'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf',
+      fixupStringForDataURIThatVSCodeWillAccept("url(https://fonts.gstatic.com/s/materialsymbolssharp/v186/gNMVW2J8Roq16WD5tFNRaeLQk6-SHQ_R00k4aWE.woff2) format('woff2')"),
+      fixupStringForDataURIThatVSCodeWillAccept('Material Symbols Sharp'),
+    ),
 ];
+
+
+String fixupStringForDataURIThatVSCodeWillAccept(String unencoded) {
+  return unencoded.replaceAll('"', "'")
+                                    .replaceAll(' ', '%20')
+                                    .replaceAll('<', '%3C')
+                                    .replaceAll('>', '%3E')
+                                    .replaceAll('(', '%28')
+                                    .replaceAll(')', '%29');
+}
 
 /* NOT CURRENTLY USED
 const Map<String, List<String>> _platformAdaptiveIdentifiers =
@@ -145,6 +172,31 @@ const pathToWriteDartFiles = '../lib/';
 /// Flag if we want to output a
 bool writeUnicodeCodepoints = true;
 
+/// Here is template to create INLINE svg images of the icons using SVG file and google fonts links to fonts
+/// $1 is fontfamily, $2 is the font src url, $3 is the codepoint
+//const svgIconTemplateRaw = r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face { font-family: "$1"; src: $2; font-weight:400;} text {font-family:"$1"; font-size: 32px; text-anchor: middle; dominant-baseline: text-bottom; fill: grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
+const svgIconTemplateRaw = r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face { font-family: "$1"; src: $2;} text {font-family:"$1"; font-size: 32px; text-anchor: middle; dominant-baseline: text-bottom; fill: grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
+String? svgIconTemplate;
+
+String getSVGDateUriFor( MaterialSymbolsVariableFont fontinfo, String codepoint ) {
+  // This replaces the characters double quote " (to single '), and < and > with %3C and %3E
+  // This is the only way to encode the SVG that I found worked in vscode.  
+  // Neither base64 or encodeURIComponent() encoding worked.
+  svgIconTemplate ??= svgIconTemplateRaw.replaceAll('"', "'")
+                                    .replaceAll(' ', '%20')
+                                    .replaceAll('<', '%3C')
+                                    .replaceAll('>', '%3E')
+                                    .replaceAll('(', '%28')
+                                    .replaceAll(')', '%29');
+
+  String dataUri = svgIconTemplate!.replaceAll(r'$1',fontinfo.svgFontFamily).
+                                      replaceFirst(r'$2',fontinfo.woff2FontUrlForDartDocSVG).
+                                      replaceFirst(r'$3',codepoint);
+                            
+  return dataUri;  
+}
+
+/// <span style="font-family: 'Material Symbols Outlined';color: red;font-size:32px;">&#xe53d;&#xf4af;&#xF4AF;</span>
 Future<void> downloadURLASBinaryFile(
     HttpClient client, String url, String filename) async {
   final request = await client.getUrl(Uri.parse(url));
@@ -177,6 +229,13 @@ Future<void> main(List<String> args) async {
       help: 'Print extra info during processing.',
     )
     ..addFlag(
+      'svg_icon_in_dart_docs',
+      abbr: 's',
+      defaultsTo: false,
+      negatable: true,
+      help: 'Include inline SVG icon in dart docs markup.',
+    )
+    ..addFlag(
       'downloadfonts',
       abbr: 'd',
       negatable: false,
@@ -198,6 +257,7 @@ Future<void> main(List<String> args) async {
   }
 
   final downloadFontsFlag = results['downloadfonts'] as bool;
+  svgDartDocsFlag = results['svg_icon_in_dart_docs'] as bool;
   verboseFlag = results['verbose'] as bool;
 
   /*
@@ -601,8 +661,13 @@ class Symbols {
         iconname = '${iconname}_${fontinfo.flavor}';
       }
       sourceFileContent.writeln();
-      sourceFileContent.writeln(
+      if(svgDartDocsFlag) {
+        final svgDataUUri = getSVGDateUriFor(fontinfo,codepoint);
+        sourceFileContent.writeln('  /// \![$iconname]($svgDataUUri|width=32,height=32)  material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
+      } else {
+        sourceFileContent.writeln(
           '  /// <span class="material-symbols-${fontinfo.flavor}" data-variation="${fontinfo.flavor}" data-fontfamily="${fontinfo.familyNameToUse}" data-codepoint="$codepoint">${iconInfo.originalIconName}</span> material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
+      }
       String proposedSingleLine = "  static const IconData $iconname = $iconDataClass(0x$codepoint);";
       if(proposedSingleLine.length>80) {
         //split to two lines

@@ -1,5 +1,14 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2762.0
+
+* Update to version 2.762 of the material icons variable fonts released 06/06/2024 with 3608 icons
+* Added f451  # replace_audio,f450  # replace_image, f44f  # replace_video,
+  f44e  # smartphone_camera, f43b  # tab_inactive, f44d  # tablet_camera,
+  f44c  # wifi_calling_bar_1, f44b  # wifi_calling_bar_2, f44a  # wifi_calling_bar_3
+* Added icon image preview to dart docs IF YOU INSTALL THE FONTS LOCALLY on your machine.
+  (You must install the 3 MaterialSymbols*.ttf fonts from lib\fonts\)
+  
 ## 4.2758.0
 
 * Update to version 2.758 of the material icons variable fonts released 05/30/2024 with 3599 icons

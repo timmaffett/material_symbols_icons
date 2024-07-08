@@ -1,5 +1,15 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2768.0
+
+* Update to version 2.768 of the material icons variable fonts released 07/05/2024 with 3628 icons
+* Added f425  # add_column_left, f424  # add_column_right, f423  # add_row_above,
+  f422  # add_row_below, f43a  # arrow_back_2, f421  # automation, f437  # category_search,
+  f420  # combine_columns, f438  # credit_card_clock, f439  # desktop_landscape_add,
+  f41e  # diagonal_line, f41d  # drive_export, f42d  # edit_audio, f429  # encrypted_add,
+  f42a  # encrypted_add_circle, f428  # encrypted_minus_circle, f427  # encrypted_off,
+  f42b  # masked_transitions_add, f426  # orbit, f432  # view_object_track
+
 ## 4.2762.0
 
 * Update to version 2.762 of the material icons variable fonts released 06/06/2024 with 3608 icons

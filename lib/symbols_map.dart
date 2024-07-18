@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-07-08 09:51:29.546856 by the dart file
+// This file was generated 2024-07-18 10:01:26.459740 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -2381,6 +2381,9 @@ Map<String, IconData> materialSymbolsMap = {
   'conversion_path_off': Symbols.conversion_path_off,
   'conversion_path_off_rounded': Symbols.conversion_path_off_rounded,
   'conversion_path_off_sharp': Symbols.conversion_path_off_sharp,
+  'convert_to_text': Symbols.convert_to_text,
+  'convert_to_text_rounded': Symbols.convert_to_text_rounded,
+  'convert_to_text_sharp': Symbols.convert_to_text_sharp,
   'conveyor_belt': Symbols.conveyor_belt,
   'conveyor_belt_rounded': Symbols.conveyor_belt_rounded,
   'conveyor_belt_sharp': Symbols.conveyor_belt_sharp,
@@ -6303,6 +6306,9 @@ Map<String, IconData> materialSymbolsMap = {
   'multiline_chart': Symbols.multiline_chart,
   'multiline_chart_rounded': Symbols.multiline_chart_rounded,
   'multiline_chart_sharp': Symbols.multiline_chart_sharp,
+  'multimodal_hand_eye': Symbols.multimodal_hand_eye,
+  'multimodal_hand_eye_rounded': Symbols.multimodal_hand_eye_rounded,
+  'multimodal_hand_eye_sharp': Symbols.multimodal_hand_eye_sharp,
   'multiple_stop': Symbols.multiple_stop,
   'multiple_stop_rounded': Symbols.multiple_stop_rounded,
   'multiple_stop_sharp': Symbols.multiple_stop_sharp,
@@ -7544,6 +7550,9 @@ Map<String, IconData> materialSymbolsMap = {
   'power_rounded_power': Symbols.power_rounded_power,
   'power_rounded_power_rounded': Symbols.power_rounded_power_rounded,
   'power_rounded_power_sharp': Symbols.power_rounded_power_sharp,
+  'power_settings_circle': Symbols.power_settings_circle,
+  'power_settings_circle_rounded': Symbols.power_settings_circle_rounded,
+  'power_settings_circle_sharp': Symbols.power_settings_circle_sharp,
   'power_settings_new': Symbols.power_settings_new,
   'power_settings_new_rounded': Symbols.power_settings_new_rounded,
   'power_settings_new_sharp': Symbols.power_settings_new_sharp,
@@ -8109,6 +8118,9 @@ Map<String, IconData> materialSymbolsMap = {
   'rotate_90_degrees_cw': Symbols.rotate_90_degrees_cw,
   'rotate_90_degrees_cw_rounded': Symbols.rotate_90_degrees_cw_rounded,
   'rotate_90_degrees_cw_sharp': Symbols.rotate_90_degrees_cw_sharp,
+  'rotate_auto': Symbols.rotate_auto,
+  'rotate_auto_rounded': Symbols.rotate_auto_rounded,
+  'rotate_auto_sharp': Symbols.rotate_auto_sharp,
   'rotate_left': Symbols.rotate_left,
   'rotate_left_rounded': Symbols.rotate_left_rounded,
   'rotate_left_sharp': Symbols.rotate_left_sharp,
@@ -9221,6 +9233,9 @@ Map<String, IconData> materialSymbolsMap = {
   'stack': Symbols.stack,
   'stack_rounded': Symbols.stack_rounded,
   'stack_sharp': Symbols.stack_sharp,
+  'stack_hexagon': Symbols.stack_hexagon,
+  'stack_hexagon_rounded': Symbols.stack_hexagon_rounded,
+  'stack_hexagon_sharp': Symbols.stack_hexagon_sharp,
   'stack_off': Symbols.stack_off,
   'stack_off_rounded': Symbols.stack_off_rounded,
   'stack_off_sharp': Symbols.stack_off_sharp,
@@ -9598,6 +9613,9 @@ Map<String, IconData> materialSymbolsMap = {
   'sync_alt': Symbols.sync_alt,
   'sync_alt_rounded': Symbols.sync_alt_rounded,
   'sync_alt_sharp': Symbols.sync_alt_sharp,
+  'sync_desktop': Symbols.sync_desktop,
+  'sync_desktop_rounded': Symbols.sync_desktop_rounded,
+  'sync_desktop_sharp': Symbols.sync_desktop_sharp,
   'sync_disabled': Symbols.sync_disabled,
   'sync_disabled_rounded': Symbols.sync_disabled_rounded,
   'sync_disabled_sharp': Symbols.sync_disabled_sharp,
@@ -10602,6 +10620,9 @@ Map<String, IconData> materialSymbolsMap = {
   'voice_selection': Symbols.voice_selection,
   'voice_selection_rounded': Symbols.voice_selection_rounded,
   'voice_selection_sharp': Symbols.voice_selection_sharp,
+  'voice_selection_off': Symbols.voice_selection_off,
+  'voice_selection_off_rounded': Symbols.voice_selection_off_rounded,
+  'voice_selection_off_sharp': Symbols.voice_selection_off_sharp,
   'voicemail': Symbols.voicemail,
   'voicemail_rounded': Symbols.voicemail_rounded,
   'voicemail_sharp': Symbols.voicemail_sharp,

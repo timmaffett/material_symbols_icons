@@ -1,5 +1,11 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2771.0
+
+* Update to version 2.771 of the material icons variable fonts released 07/11/2024 with 3635 icons
+* Added f41f  # convert_to_text, f41b  # multimodal_hand_eye, f418  # power_settings_circle,
+  f417  # rotate_auto, f41c  # stack_hexagon, f41a  # sync_desktop, f42c  # voice_selection_off
+
 ## 4.2768.0
 
 * Update to version 2.768 of the material icons variable fonts released 07/05/2024 with 3628 icons

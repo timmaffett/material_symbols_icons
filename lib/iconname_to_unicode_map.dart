@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-07-08 09:51:29.578252 by the dart file
+// This file was generated 2024-07-18 10:01:26.566801 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -806,6 +806,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'controller_gen': 0xe83d,
   'conversion_path': 0xf0c1,
   'conversion_path_off': 0xf7b4,
+  'convert_to_text': 0xf41f,
   'conveyor_belt': 0xf867,
   'cookie': 0xeaac,
   'cookie_off': 0xf79a,
@@ -2104,6 +2105,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'mp': 0xe9c3,
   'multicooker': 0xe293,
   'multiline_chart': 0xe6df,
+  'multimodal_hand_eye': 0xf41b,
   'multiple_stop': 0xf1b9,
   'museum': 0xea36,
   'music_cast': 0xeb1a,
@@ -2511,6 +2513,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'power_input': 0xe336,
   'power_off': 0xe646,
   'power_rounded_power': 0xf8c7,
+  'power_settings_circle': 0xf418,
   'power_settings_new': 0xf8c7,
   'prayer_times': 0xf838,
   'precision_manufacturing': 0xf049,
@@ -2699,6 +2702,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'room_service': 0xeb49,
   'rotate_90_degrees_ccw': 0xe418,
   'rotate_90_degrees_cw': 0xeaab,
+  'rotate_auto': 0xf417,
   'rotate_left': 0xe419,
   'rotate_right': 0xe41a,
   'roundabout_left': 0xeb99,
@@ -3061,6 +3065,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'square_foot': 0xea49,
   'ssid_chart': 0xeb66,
   'stack': 0xf609,
+  'stack_hexagon': 0xf41c,
   'stack_off': 0xf608,
   'stack_star': 0xf607,
   'stacked_bar_chart': 0xe9e6,
@@ -3186,6 +3191,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'synagogue': 0xeab0,
   'sync': 0xe627,
   'sync_alt': 0xea18,
+  'sync_desktop': 0xf41a,
   'sync_disabled': 0xe628,
   'sync_lock': 0xeaee,
   'sync_problem': 0xe629,
@@ -3515,6 +3521,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'voice_chat': 0xe62e,
   'voice_over_off': 0xe94a,
   'voice_selection': 0xf58a,
+  'voice_selection_off': 0xf42c,
   'voicemail': 0xe0d9,
   'volcano': 0xebda,
   'volume_down': 0xe04d,

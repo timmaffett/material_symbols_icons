@@ -32,7 +32,9 @@ Steps to update pakcage when new fonts are released.
 0.5) cd to \generator
 1) `dart run update_package.dart -d` 
 2) figure out source font version number with `ttx -s oneofthefonts.ttf`
-    (cd ~/source/fonttools; copy font there  and then ttx)./fix
+    (cd ~/source/fonttools; copy font there 
+      `cp /mnt/c/src/material_symbols_icons/rawFontsUnfixed/MaterialSymbolsOutline*.ttf .`
+     and then ttx).
     (version number found at `fontRevision` entry in `MaterialSymbolsXXXXX._h_e_a_d.ttx`)
 3) Update `CHANGELOG.md` with version number of new fonts
 3.05) Do a diff of last two LAST_VERSION/icon_unicodes

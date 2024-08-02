@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-07-18 10:01:26.459740 by the dart file
+// This file was generated 2024-08-01 21:25:27.725728 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -2630,6 +2630,9 @@ Map<String, IconData> materialSymbolsMap = {
   'database': Symbols.database,
   'database_rounded': Symbols.database_rounded,
   'database_sharp': Symbols.database_sharp,
+  'database_off': Symbols.database_off,
+  'database_off_rounded': Symbols.database_off_rounded,
+  'database_off_sharp': Symbols.database_off_sharp,
   'dataset': Symbols.dataset,
   'dataset_rounded': Symbols.dataset_rounded,
   'dataset_sharp': Symbols.dataset_sharp,
@@ -4176,6 +4179,9 @@ Map<String, IconData> materialSymbolsMap = {
   'format_quote': Symbols.format_quote,
   'format_quote_rounded': Symbols.format_quote_rounded,
   'format_quote_sharp': Symbols.format_quote_sharp,
+  'format_quote_off': Symbols.format_quote_off,
+  'format_quote_off_rounded': Symbols.format_quote_off_rounded,
+  'format_quote_off_sharp': Symbols.format_quote_off_sharp,
   'format_shapes': Symbols.format_shapes,
   'format_shapes_rounded': Symbols.format_shapes_rounded,
   'format_shapes_sharp': Symbols.format_shapes_sharp,

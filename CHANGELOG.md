@@ -1,5 +1,10 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2777.0
+
+* Update to version 2.777 of the material icons variable fonts released 08/01/2024 with 3637 icons
+* Added f414  # database_off, f413  # format_quote_off
+
 ## 4.2771.0
 
 * Update to version 2.771 of the material icons variable fonts released 07/11/2024 with 3635 icons

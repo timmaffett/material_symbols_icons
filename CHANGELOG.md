@@ -1,5 +1,9 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2777.1
+
+* Fix number of icons in README.md to 3637
+
 ## 4.2777.0
 
 * Update to version 2.777 of the material icons variable fonts released 08/01/2024 with 3637 icons

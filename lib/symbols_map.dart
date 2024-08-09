@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-08-01 21:25:27.725728 by the dart file
+// This file was generated 2024-08-09 15:34:48.158062 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -1141,6 +1141,9 @@ Map<String, IconData> materialSymbolsMap = {
   'bar_chart_4_bars': Symbols.bar_chart_4_bars,
   'bar_chart_4_bars_rounded': Symbols.bar_chart_4_bars_rounded,
   'bar_chart_4_bars_sharp': Symbols.bar_chart_4_bars_sharp,
+  'bar_chart_off': Symbols.bar_chart_off,
+  'bar_chart_off_rounded': Symbols.bar_chart_off_rounded,
+  'bar_chart_off_sharp': Symbols.bar_chart_off_sharp,
   'barcode': Symbols.barcode,
   'barcode_rounded': Symbols.barcode_rounded,
   'barcode_sharp': Symbols.barcode_sharp,
@@ -1441,6 +1444,9 @@ Map<String, IconData> materialSymbolsMap = {
   'bookmark_added': Symbols.bookmark_added,
   'bookmark_added_rounded': Symbols.bookmark_added_rounded,
   'bookmark_added_sharp': Symbols.bookmark_added_sharp,
+  'bookmark_bag': Symbols.bookmark_bag,
+  'bookmark_bag_rounded': Symbols.bookmark_bag_rounded,
+  'bookmark_bag_sharp': Symbols.bookmark_bag_sharp,
   'bookmark_border': Symbols.bookmark_border,
   'bookmark_border_rounded': Symbols.bookmark_border_rounded,
   'bookmark_border_sharp': Symbols.bookmark_border_sharp,
@@ -1501,6 +1507,9 @@ Map<String, IconData> materialSymbolsMap = {
   'border_vertical': Symbols.border_vertical,
   'border_vertical_rounded': Symbols.border_vertical_rounded,
   'border_vertical_sharp': Symbols.border_vertical_sharp,
+  'borg': Symbols.borg,
+  'borg_rounded': Symbols.borg_rounded,
+  'borg_sharp': Symbols.borg_sharp,
   'bottom_app_bar': Symbols.bottom_app_bar,
   'bottom_app_bar_rounded': Symbols.bottom_app_bar_rounded,
   'bottom_app_bar_sharp': Symbols.bottom_app_bar_sharp,
@@ -3874,6 +3883,9 @@ Map<String, IconData> materialSymbolsMap = {
   'flag': Symbols.flag,
   'flag_rounded': Symbols.flag_rounded,
   'flag_sharp': Symbols.flag_sharp,
+  'flag_2': Symbols.flag_2,
+  'flag_2_rounded': Symbols.flag_2_rounded,
+  'flag_2_sharp': Symbols.flag_2_sharp,
   'flag_circle': Symbols.flag_circle,
   'flag_circle_rounded': Symbols.flag_circle_rounded,
   'flag_circle_sharp': Symbols.flag_circle_sharp,
@@ -4381,6 +4393,9 @@ Map<String, IconData> materialSymbolsMap = {
   'gif': Symbols.gif,
   'gif_rounded': Symbols.gif_rounded,
   'gif_sharp': Symbols.gif_sharp,
+  'gif_2': Symbols.gif_2,
+  'gif_2_rounded': Symbols.gif_2_rounded,
+  'gif_2_sharp': Symbols.gif_2_sharp,
   'gif_box': Symbols.gif_box,
   'gif_box_rounded': Symbols.gif_box_rounded,
   'gif_box_sharp': Symbols.gif_box_sharp,
@@ -6213,6 +6228,9 @@ Map<String, IconData> materialSymbolsMap = {
   'motion_photos_paused': Symbols.motion_photos_paused,
   'motion_photos_paused_rounded': Symbols.motion_photos_paused_rounded,
   'motion_photos_paused_sharp': Symbols.motion_photos_paused_sharp,
+  'motion_play': Symbols.motion_play,
+  'motion_play_rounded': Symbols.motion_play_rounded,
+  'motion_play_sharp': Symbols.motion_play_sharp,
   'motion_sensor_active': Symbols.motion_sensor_active,
   'motion_sensor_active_rounded': Symbols.motion_sensor_active_rounded,
   'motion_sensor_active_sharp': Symbols.motion_sensor_active_sharp,
@@ -10479,6 +10497,9 @@ Map<String, IconData> materialSymbolsMap = {
   'video_camera_back': Symbols.video_camera_back,
   'video_camera_back_rounded': Symbols.video_camera_back_rounded,
   'video_camera_back_sharp': Symbols.video_camera_back_sharp,
+  'video_camera_back_add': Symbols.video_camera_back_add,
+  'video_camera_back_add_rounded': Symbols.video_camera_back_add_rounded,
+  'video_camera_back_add_sharp': Symbols.video_camera_back_add_sharp,
   'video_camera_front': Symbols.video_camera_front,
   'video_camera_front_rounded': Symbols.video_camera_front_rounded,
   'video_camera_front_sharp': Symbols.video_camera_front_sharp,

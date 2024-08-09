@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-08-01 21:25:27.757177 by the dart file
+// This file was generated 2024-08-09 15:34:48.218760 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -393,6 +393,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'ballot': 0xe172,
   'bar_chart': 0xe26b,
   'bar_chart_4_bars': 0xf681,
+  'bar_chart_off': 0xf411,
   'barcode': 0xe70b,
   'barcode_reader': 0xf85c,
   'barcode_scanner': 0xe70c,
@@ -493,6 +494,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'bookmark': 0xe8e7,
   'bookmark_add': 0xe598,
   'bookmark_added': 0xe599,
+  'bookmark_bag': 0xf410,
   'bookmark_border': 0xe8e7,
   'bookmark_check': 0xf457,
   'bookmark_flag': 0xf456,
@@ -513,6 +515,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'border_style': 0xe231,
   'border_top': 0xe232,
   'border_vertical': 0xe233,
+  'borg': 0xf40d,
   'bottom_app_bar': 0xe730,
   'bottom_drawer': 0xe72d,
   'bottom_navigation': 0xe98c,
@@ -1301,6 +1304,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'fitness_center': 0xeb43,
   'fitness_tracker': 0xf463,
   'flag': 0xf0c6,
+  'flag_2': 0xf40f,
   'flag_circle': 0xeaf8,
   'flag_filled': 0xf0c6,
   'flaky': 0xef50,
@@ -1466,6 +1470,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'gesture_select': 0xf657,
   'get_app': 0xf090,
   'gif': 0xe908,
+  'gif_2': 0xf40e,
   'gif_box': 0xe7a3,
   'girl': 0xeb68,
   'gite': 0xe58b,
@@ -2074,6 +2079,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'motion_photos_on': 0xe9c1,
   'motion_photos_pause': 0xf227,
   'motion_photos_paused': 0xf227,
+  'motion_play': 0xf40b,
   'motion_sensor_active': 0xe792,
   'motion_sensor_alert': 0xe784,
   'motion_sensor_idle': 0xe783,
@@ -3474,6 +3480,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'vibration': 0xe62d,
   'video_call': 0xe070,
   'video_camera_back': 0xf07f,
+  'video_camera_back_add': 0xf40c,
   'video_camera_front': 0xf080,
   'video_camera_front_off': 0xf83b,
   'video_chat': 0xf8a0,

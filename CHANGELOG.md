@@ -1,5 +1,11 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2780.0
+
+* Update to version 2.780 of the material icons variable fonts released 08/09/2024 with 3644 icons
+* Added f411  # bar_chart_off, f410  # bookmark_bag, f40d  # borg, f40f  # flag_2,
+  f40e  # gif_2, f40b  # motion_play, f40c  # video_camera_back_add
+
 ## 4.2777.1
 
 * Fix number of icons in README.md to 3637

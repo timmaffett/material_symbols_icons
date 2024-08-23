@@ -1,5 +1,15 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2784.0
+
+* Update to version 2.784 of the material icons variable fonts released 08/22/2024 with 3665 icons
+* Added f3f2  # twenty_four_fps_select, f3f4  # arrow_upload_progress, f406  # devices_fold_2,
+  f3fc  # eraser_size_1, f3fb  # eraser_size_2, f3fa  # eraser_size_3, f3f9  # eraser_size_4,
+  f3f8  # eraser_size_5, f402  # face_down, f401  # face_left, f400  # face_nod,
+  f3ff  # face_right, f3fe  # face_shake, f3fd  # face_up, f3f3  # hand_gesture_off,
+  f407  # policy_alert, f40a  # receipt_long_off, f409  # trackpad_input_2, f408  # trackpad_input_3,
+  f3f1  # transit_ticket
+
 ## 4.2780.0
 
 * Update to version 2.780 of the material icons variable fonts released 08/09/2024 with 3644 icons

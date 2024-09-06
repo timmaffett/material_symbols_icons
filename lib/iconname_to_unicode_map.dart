@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-08-23 06:29:57.701445 by the dart file
+// This file was generated 2024-09-06 10:36:40.552774 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -881,6 +881,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'dangerous': 0xe99a,
   'dark_mode': 0xe51c,
   'dashboard': 0xe871,
+  'dashboard_2': 0xf3ea,
   'dashboard_customize': 0xe99b,
   'data_alert': 0xf7f6,
   'data_array': 0xead1,
@@ -2068,6 +2069,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'model_training': 0xf0cf,
   'monetization_on': 0xe263,
   'money': 0xe57d,
+  'money_bag': 0xf3ee,
   'money_off': 0xf038,
   'money_off_csred': 0xf038,
   'monitor': 0xef5b,
@@ -2492,6 +2494,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'pip': 0xf64d,
   'pip_exit': 0xf70d,
   'pivot_table_chart': 0xe9ce,
+  'pixel_9_pro_fold': 0xf3f0,
   'place': 0xf1db,
   'place_item': 0xf1f0,
   'plagiarism': 0xea5a,
@@ -2643,6 +2646,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'redo': 0xe15a,
   'reduce_capacity': 0xf21c,
   'refresh': 0xe5d5,
+  'reg_logo_ift': 0xf3ef,
   'regular_expression': 0xf750,
   'relax': 0xf6dc,
   'release_alert': 0xf654,
@@ -3368,6 +3372,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'tools_power_drill': 0xe1e9,
   'tools_wrench': 0xf8cd,
   'tooltip': 0xe9f8,
+  'tooltip_2': 0xf3ed,
   'top_panel_close': 0xf733,
   'top_panel_open': 0xf732,
   'topic': 0xf1c8,
@@ -3431,8 +3436,10 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'turned_in': 0xe8e7,
   'turned_in_not': 0xe8e7,
   'tv': 0xe63b,
+  'tv_displays': 0xf3ec,
   'tv_gen': 0xe830,
   'tv_guide': 0xe1dc,
+  'tv_next': 0xf3eb,
   'tv_off': 0xe647,
   'tv_options_edit_channels': 0xe1dd,
   'tv_options_input_settings': 0xe1de,

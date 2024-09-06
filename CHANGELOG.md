@@ -1,5 +1,11 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2785.0
+
+* Update to version 2.784 of the material icons variable fonts released 09/5/2024 with 3672 icons
+* Added f3ea  # dashboard_2, f3ee  # money_bag, f3f0  # pixel_9_pro_fold, f3ef  # reg_logo_ift,
+  f3ed  # tooltip_2, f3ec  # tv_displays, f3eb  # tv_next
+
 ## 4.2784.0
 
 * Update to version 2.784 of the material icons variable fonts released 08/22/2024 with 3665 icons

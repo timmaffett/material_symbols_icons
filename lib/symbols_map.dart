@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-08-23 06:29:57.678029 by the dart file
+// This file was generated 2024-09-06 10:36:40.522650 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -2606,6 +2606,9 @@ Map<String, IconData> materialSymbolsMap = {
   'dashboard': Symbols.dashboard,
   'dashboard_rounded': Symbols.dashboard_rounded,
   'dashboard_sharp': Symbols.dashboard_sharp,
+  'dashboard_2': Symbols.dashboard_2,
+  'dashboard_2_rounded': Symbols.dashboard_2_rounded,
+  'dashboard_2_sharp': Symbols.dashboard_2_sharp,
   'dashboard_customize': Symbols.dashboard_customize,
   'dashboard_customize_rounded': Symbols.dashboard_customize_rounded,
   'dashboard_customize_sharp': Symbols.dashboard_customize_sharp,
@@ -6195,6 +6198,9 @@ Map<String, IconData> materialSymbolsMap = {
   'money': Symbols.money,
   'money_rounded': Symbols.money_rounded,
   'money_sharp': Symbols.money_sharp,
+  'money_bag': Symbols.money_bag,
+  'money_bag_rounded': Symbols.money_bag_rounded,
+  'money_bag_sharp': Symbols.money_bag_sharp,
   'money_off': Symbols.money_off,
   'money_off_rounded': Symbols.money_off_rounded,
   'money_off_sharp': Symbols.money_off_sharp,
@@ -7486,6 +7492,9 @@ Map<String, IconData> materialSymbolsMap = {
   'pivot_table_chart': Symbols.pivot_table_chart,
   'pivot_table_chart_rounded': Symbols.pivot_table_chart_rounded,
   'pivot_table_chart_sharp': Symbols.pivot_table_chart_sharp,
+  'pixel_9_pro_fold': Symbols.pixel_9_pro_fold,
+  'pixel_9_pro_fold_rounded': Symbols.pixel_9_pro_fold_rounded,
+  'pixel_9_pro_fold_sharp': Symbols.pixel_9_pro_fold_sharp,
   'place': Symbols.place,
   'place_rounded': Symbols.place_rounded,
   'place_sharp': Symbols.place_sharp,
@@ -7941,6 +7950,9 @@ Map<String, IconData> materialSymbolsMap = {
   'refresh': Symbols.refresh,
   'refresh_rounded': Symbols.refresh_rounded,
   'refresh_sharp': Symbols.refresh_sharp,
+  'reg_logo_ift': Symbols.reg_logo_ift,
+  'reg_logo_ift_rounded': Symbols.reg_logo_ift_rounded,
+  'reg_logo_ift_sharp': Symbols.reg_logo_ift_sharp,
   'regular_expression': Symbols.regular_expression,
   'regular_expression_rounded': Symbols.regular_expression_rounded,
   'regular_expression_sharp': Symbols.regular_expression_sharp,
@@ -10159,6 +10171,9 @@ Map<String, IconData> materialSymbolsMap = {
   'tooltip': Symbols.tooltip,
   'tooltip_rounded': Symbols.tooltip_rounded,
   'tooltip_sharp': Symbols.tooltip_sharp,
+  'tooltip_2': Symbols.tooltip_2,
+  'tooltip_2_rounded': Symbols.tooltip_2_rounded,
+  'tooltip_2_sharp': Symbols.tooltip_2_sharp,
   'top_panel_close': Symbols.top_panel_close,
   'top_panel_close_rounded': Symbols.top_panel_close_rounded,
   'top_panel_close_sharp': Symbols.top_panel_close_sharp,
@@ -10349,12 +10364,18 @@ Map<String, IconData> materialSymbolsMap = {
   'tv': Symbols.tv,
   'tv_rounded': Symbols.tv_rounded,
   'tv_sharp': Symbols.tv_sharp,
+  'tv_displays': Symbols.tv_displays,
+  'tv_displays_rounded': Symbols.tv_displays_rounded,
+  'tv_displays_sharp': Symbols.tv_displays_sharp,
   'tv_gen': Symbols.tv_gen,
   'tv_gen_rounded': Symbols.tv_gen_rounded,
   'tv_gen_sharp': Symbols.tv_gen_sharp,
   'tv_guide': Symbols.tv_guide,
   'tv_guide_rounded': Symbols.tv_guide_rounded,
   'tv_guide_sharp': Symbols.tv_guide_sharp,
+  'tv_next': Symbols.tv_next,
+  'tv_next_rounded': Symbols.tv_next_rounded,
+  'tv_next_sharp': Symbols.tv_next_sharp,
   'tv_off': Symbols.tv_off,
   'tv_off_rounded': Symbols.tv_off_rounded,
   'tv_off_sharp': Symbols.tv_off_sharp,

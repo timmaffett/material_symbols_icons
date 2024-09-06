@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-08-23 06:29:57.626617 by the dart file
+// This file was generated 2024-09-06 10:36:40.448003 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -7867,6 +7867,15 @@ class Symbols {
 
   /// <span class="material-symbols-sharp" data-variation="sharp" data-fontfamily="MaterialSymbolsSharp" data-codepoint="e871">dashboard</span> material symbols icon named "dashboard_sharp" (sharp variation).
   static const IconData dashboard_sharp = IconDataSharp(0xe871);
+
+  /// <span class="material-symbols-outlined" data-variation="outlined" data-fontfamily="MaterialSymbolsOutlined" data-codepoint="f3ea">dashboard_2</span> material symbols icon named "dashboard_2" (outlined variation).
+  static const IconData dashboard_2 = IconDataOutlined(0xf3ea);
+
+  /// <span class="material-symbols-rounded" data-variation="rounded" data-fontfamily="MaterialSymbolsRounded" data-codepoint="f3ea">dashboard_2</span> material symbols icon named "dashboard_2_rounded" (rounded variation).
+  static const IconData dashboard_2_rounded = IconDataRounded(0xf3ea);
+
+  /// <span class="material-symbols-sharp" data-variation="sharp" data-fontfamily="MaterialSymbolsSharp" data-codepoint="f3ea">dashboard_2</span> material symbols icon named "dashboard_2_sharp" (sharp variation).
+  static const IconData dashboard_2_sharp = IconDataSharp(0xf3ea);
 
   /// <span class="material-symbols-outlined" data-variation="outlined" data-fontfamily="MaterialSymbolsOutlined" data-codepoint="e99b">dashboard_customize</span> material symbols icon named "dashboard_customize" (outlined variation).
   static const IconData dashboard_customize = IconDataOutlined(0xe99b);
@@ -18629,6 +18638,15 @@ class Symbols {
   /// <span class="material-symbols-sharp" data-variation="sharp" data-fontfamily="MaterialSymbolsSharp" data-codepoint="e57d">money</span> material symbols icon named "money_sharp" (sharp variation).
   static const IconData money_sharp = IconDataSharp(0xe57d);
 
+  /// <span class="material-symbols-outlined" data-variation="outlined" data-fontfamily="MaterialSymbolsOutlined" data-codepoint="f3ee">money_bag</span> material symbols icon named "money_bag" (outlined variation).
+  static const IconData money_bag = IconDataOutlined(0xf3ee);
+
+  /// <span class="material-symbols-rounded" data-variation="rounded" data-fontfamily="MaterialSymbolsRounded" data-codepoint="f3ee">money_bag</span> material symbols icon named "money_bag_rounded" (rounded variation).
+  static const IconData money_bag_rounded = IconDataRounded(0xf3ee);
+
+  /// <span class="material-symbols-sharp" data-variation="sharp" data-fontfamily="MaterialSymbolsSharp" data-codepoint="f3ee">money_bag</span> material symbols icon named "money_bag_sharp" (sharp variation).
+  static const IconData money_bag_sharp = IconDataSharp(0xf3ee);
+
   /// <span class="material-symbols-outlined" data-variation="outlined" data-fontfamily="MaterialSymbolsOutlined" data-codepoint="f038">money_off</span> material symbols icon named "money_off" (outlined variation).
   static const IconData money_off = IconDataOutlined(0xf038);
 
@@ -22478,6 +22496,15 @@ class Symbols {
   /// <span class="material-symbols-sharp" data-variation="sharp" data-fontfamily="MaterialSymbolsSharp" data-codepoint="e9ce">pivot_table_chart</span> material symbols icon named "pivot_table_chart_sharp" (sharp variation).
   static const IconData pivot_table_chart_sharp = IconDataSharp(0xe9ce);
 
+  /// <span class="material-symbols-outlined" data-variation="outlined" data-fontfamily="MaterialSymbolsOutlined" data-codepoint="f3f0">pixel_9_pro_fold</span> material symbols icon named "pixel_9_pro_fold" (outlined variation).
+  static const IconData pixel_9_pro_fold = IconDataOutlined(0xf3f0);
+
+  /// <span class="material-symbols-rounded" data-variation="rounded" data-fontfamily="MaterialSymbolsRounded" data-codepoint="f3f0">pixel_9_pro_fold</span> material symbols icon named "pixel_9_pro_fold_rounded" (rounded variation).
+  static const IconData pixel_9_pro_fold_rounded = IconDataRounded(0xf3f0);
+
+  /// <span class="material-symbols-sharp" data-variation="sharp" data-fontfamily="MaterialSymbolsSharp" data-codepoint="f3f0">pixel_9_pro_fold</span> material symbols icon named "pixel_9_pro_fold_sharp" (sharp variation).
+  static const IconData pixel_9_pro_fold_sharp = IconDataSharp(0xf3f0);
+
   /// <span class="material-symbols-outlined" data-variation="outlined" data-fontfamily="MaterialSymbolsOutlined" data-codepoint="f1db">place</span> material symbols icon named "place" (outlined variation).
   static const IconData place = IconDataOutlined(0xf1db);
 
@@ -23842,6 +23869,15 @@ class Symbols {
 
   /// <span class="material-symbols-sharp" data-variation="sharp" data-fontfamily="MaterialSymbolsSharp" data-codepoint="e5d5">refresh</span> material symbols icon named "refresh_sharp" (sharp variation).
   static const IconData refresh_sharp = IconDataSharp(0xe5d5);
+
+  /// <span class="material-symbols-outlined" data-variation="outlined" data-fontfamily="MaterialSymbolsOutlined" data-codepoint="f3ef">reg_logo_ift</span> material symbols icon named "reg_logo_ift" (outlined variation).
+  static const IconData reg_logo_ift = IconDataOutlined(0xf3ef);
+
+  /// <span class="material-symbols-rounded" data-variation="rounded" data-fontfamily="MaterialSymbolsRounded" data-codepoint="f3ef">reg_logo_ift</span> material symbols icon named "reg_logo_ift_rounded" (rounded variation).
+  static const IconData reg_logo_ift_rounded = IconDataRounded(0xf3ef);
+
+  /// <span class="material-symbols-sharp" data-variation="sharp" data-fontfamily="MaterialSymbolsSharp" data-codepoint="f3ef">reg_logo_ift</span> material symbols icon named "reg_logo_ift_sharp" (sharp variation).
+  static const IconData reg_logo_ift_sharp = IconDataSharp(0xf3ef);
 
   /// <span class="material-symbols-outlined" data-variation="outlined" data-fontfamily="MaterialSymbolsOutlined" data-codepoint="f750">regular_expression</span> material symbols icon named "regular_expression" (outlined variation).
   static const IconData regular_expression = IconDataOutlined(0xf750);
@@ -30451,6 +30487,15 @@ class Symbols {
   /// <span class="material-symbols-sharp" data-variation="sharp" data-fontfamily="MaterialSymbolsSharp" data-codepoint="e9f8">tooltip</span> material symbols icon named "tooltip_sharp" (sharp variation).
   static const IconData tooltip_sharp = IconDataSharp(0xe9f8);
 
+  /// <span class="material-symbols-outlined" data-variation="outlined" data-fontfamily="MaterialSymbolsOutlined" data-codepoint="f3ed">tooltip_2</span> material symbols icon named "tooltip_2" (outlined variation).
+  static const IconData tooltip_2 = IconDataOutlined(0xf3ed);
+
+  /// <span class="material-symbols-rounded" data-variation="rounded" data-fontfamily="MaterialSymbolsRounded" data-codepoint="f3ed">tooltip_2</span> material symbols icon named "tooltip_2_rounded" (rounded variation).
+  static const IconData tooltip_2_rounded = IconDataRounded(0xf3ed);
+
+  /// <span class="material-symbols-sharp" data-variation="sharp" data-fontfamily="MaterialSymbolsSharp" data-codepoint="f3ed">tooltip_2</span> material symbols icon named "tooltip_2_sharp" (sharp variation).
+  static const IconData tooltip_2_sharp = IconDataSharp(0xf3ed);
+
   /// <span class="material-symbols-outlined" data-variation="outlined" data-fontfamily="MaterialSymbolsOutlined" data-codepoint="f733">top_panel_close</span> material symbols icon named "top_panel_close" (outlined variation).
   static const IconData top_panel_close = IconDataOutlined(0xf733);
 
@@ -31021,6 +31066,15 @@ class Symbols {
   /// <span class="material-symbols-sharp" data-variation="sharp" data-fontfamily="MaterialSymbolsSharp" data-codepoint="e63b">tv</span> material symbols icon named "tv_sharp" (sharp variation).
   static const IconData tv_sharp = IconDataSharp(0xe63b);
 
+  /// <span class="material-symbols-outlined" data-variation="outlined" data-fontfamily="MaterialSymbolsOutlined" data-codepoint="f3ec">tv_displays</span> material symbols icon named "tv_displays" (outlined variation).
+  static const IconData tv_displays = IconDataOutlined(0xf3ec);
+
+  /// <span class="material-symbols-rounded" data-variation="rounded" data-fontfamily="MaterialSymbolsRounded" data-codepoint="f3ec">tv_displays</span> material symbols icon named "tv_displays_rounded" (rounded variation).
+  static const IconData tv_displays_rounded = IconDataRounded(0xf3ec);
+
+  /// <span class="material-symbols-sharp" data-variation="sharp" data-fontfamily="MaterialSymbolsSharp" data-codepoint="f3ec">tv_displays</span> material symbols icon named "tv_displays_sharp" (sharp variation).
+  static const IconData tv_displays_sharp = IconDataSharp(0xf3ec);
+
   /// <span class="material-symbols-outlined" data-variation="outlined" data-fontfamily="MaterialSymbolsOutlined" data-codepoint="e830">tv_gen</span> material symbols icon named "tv_gen" (outlined variation).
   static const IconData tv_gen = IconDataOutlined(0xe830);
 
@@ -31038,6 +31092,15 @@ class Symbols {
 
   /// <span class="material-symbols-sharp" data-variation="sharp" data-fontfamily="MaterialSymbolsSharp" data-codepoint="e1dc">tv_guide</span> material symbols icon named "tv_guide_sharp" (sharp variation).
   static const IconData tv_guide_sharp = IconDataSharp(0xe1dc);
+
+  /// <span class="material-symbols-outlined" data-variation="outlined" data-fontfamily="MaterialSymbolsOutlined" data-codepoint="f3eb">tv_next</span> material symbols icon named "tv_next" (outlined variation).
+  static const IconData tv_next = IconDataOutlined(0xf3eb);
+
+  /// <span class="material-symbols-rounded" data-variation="rounded" data-fontfamily="MaterialSymbolsRounded" data-codepoint="f3eb">tv_next</span> material symbols icon named "tv_next_rounded" (rounded variation).
+  static const IconData tv_next_rounded = IconDataRounded(0xf3eb);
+
+  /// <span class="material-symbols-sharp" data-variation="sharp" data-fontfamily="MaterialSymbolsSharp" data-codepoint="f3eb">tv_next</span> material symbols icon named "tv_next_sharp" (sharp variation).
+  static const IconData tv_next_sharp = IconDataSharp(0xf3eb);
 
   /// <span class="material-symbols-outlined" data-variation="outlined" data-fontfamily="MaterialSymbolsOutlined" data-codepoint="e647">tv_off</span> material symbols icon named "tv_off" (outlined variation).
   static const IconData tv_off = IconDataOutlined(0xe647);

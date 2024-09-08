@@ -2,6 +2,7 @@
 /// name and desired style variation.  It also provides a [values] getter providing
 /// an array of all available icon names.   Additionally it provides a [map] getter to
 /// allow access to the map of icon names to code points.
+library;
 
 import 'package:flutter/widgets.dart';
 import 'package:material_symbols_icons/symbols.dart';

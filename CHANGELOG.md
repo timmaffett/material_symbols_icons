@@ -1,5 +1,10 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2785.1
+
+* Fix static analysis error 'Dangling library comment' in get.dart and material_symbols_icon.dart
+  by adding `library;` line
+
 ## 4.2785.0
 
 * Update to version 2.784 of the material icons variable fonts released 09/5/2024 with 3672 icons

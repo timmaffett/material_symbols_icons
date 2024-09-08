@@ -4,6 +4,8 @@
 /// by icon style (implemented using font family names to differentiate icon styles).
 ///
 /// {@category BaseClass}
+library;
+
 import 'package:flutter/widgets.dart';
 export 'symbols.dart';
 

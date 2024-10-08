@@ -1,5 +1,18 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2788.0
+
+* Update to version 2.788 of the material icons variable fonts released 10/4/2024 with 3698 icons
+* Added f3dd  # add_2, f3d3  # arrow_menu_close, f3d2  # arrow_menu_open,
+  f3e0  # book_4_spark, f3df  # book_6, f3e7  # book_ribbon, f3cc  # cloud_alert,
+  f3dc  # database_upload, f3db  # desktop_cloud, f3e2  # file_map_stack,
+  f3d1  # filter_arrow_right, f3d8  # flag_check, f3d7  # folder_check,
+  f3d6  # folder_check_2, f3d5  # folder_eye, f3d4  # folder_match, f3e4  # fork_spoon,
+  f3ce  # group_search, f3da  # hard_disk, f3e6  # history_2, f3d9  # host,
+  f3cd  # laptop_car, f3e3  # lightbulb_2, f3de  # list_alt_check, f3f0  # pixel_9_pro_fold,
+  f3ef  # reg_logo_ift, f3e5  # search_activity, f3e1  # simulation,
+  f3d0  # tab_close_inactive, f3cf  # upi_pay
+
 ## 4.2785.1
 
 * Fix static analysis error 'Dangling library comment' in get.dart and material_symbols_icon.dart

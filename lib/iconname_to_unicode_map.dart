@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-10-08 09:37:19.693797 by the dart file
+// This file was generated 2024-10-16 18:38:15.647825 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -675,6 +675,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'chat_error': 0xf7ac,
   'chat_info': 0xf52b,
   'chat_paste_go': 0xf6bd,
+  'chat_paste_go_2': 0xf3cb,
   'check': 0xe5ca,
   'check_box': 0xe834,
   'check_box_outline_blank': 0xe835,
@@ -1378,6 +1379,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'folder': 0xe2c7,
   'folder_check': 0xf3d7,
   'folder_check_2': 0xf3d6,
+  'folder_code': 0xf3c8,
   'folder_copy': 0xebbd,
   'folder_data': 0xf586,
   'folder_delete': 0xeb34,
@@ -1510,6 +1512,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'glass_cup': 0xf6e3,
   'globe': 0xe64c,
   'globe_asia': 0xf799,
+  'globe_book': 0xf3c9,
   'globe_uk': 0xf798,
   'glucose': 0xe4a0,
   'glyphs': 0xf8a3,
@@ -2001,6 +2004,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'manga': 0xf5e3,
   'manufacturing': 0xe726,
   'map': 0xe55b,
+  'map_search': 0xf3ca,
   'maps_home_work': 0xf030,
   'maps_ugc': 0xef58,
   'margin': 0xe9bb,
@@ -3271,6 +3275,8 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'table_bar': 0xead2,
   'table_chart': 0xe265,
   'table_chart_view': 0xf6ef,
+  'table_convert': 0xf3c7,
+  'table_edit': 0xf3c6,
   'table_eye': 0xf466,
   'table_lamp': 0xe1f2,
   'table_restaurant': 0xeac6,
@@ -3304,6 +3310,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'terminal': 0xeb8e,
   'terrain': 0xe564,
   'text_ad': 0xe728,
+  'text_compare': 0xf3c5,
   'text_decrease': 0xeadd,
   'text_fields': 0xe262,
   'text_fields_alt': 0xe9f1,
@@ -3359,6 +3366,9 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'thunderstorm': 0xebdb,
   'tibia': 0xf89b,
   'tibia_alt': 0xf89c,
+  'tile_large': 0xf3c3,
+  'tile_medium': 0xf3c2,
+  'tile_small': 0xf3c1,
   'time_auto': 0xf0e4,
   'time_to_leave': 0xeff7,
   'timelapse': 0xe422,
@@ -3472,6 +3482,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'tv_signin': 0xe71b,
   'tv_with_assistant': 0xe785,
   'two_pager': 0xf51f,
+  'two_pager_store': 0xf3c4,
   'two_wheeler': 0xe9f9,
   'type_specimen': 0xf8f0,
   'u_turn_left': 0xeba1,

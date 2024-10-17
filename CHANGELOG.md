@@ -3,8 +3,8 @@
 ## 4.2789.0
 
 * Update to version 2.789 of the material icons variable fonts released 10/11/2024 with 3709 icons
-* Added f3cb  # chat_paste_go_2, f3c8  # folder_code, f3c9  # globe_book, f3ca  # map_search, 
-  f3c7  # table_convert, f3c6  # table_edit, f3c5  # text_compare, f3c3  # tile_large, 
+* Added f3cb  # chat_paste_go_2, f3c8  # folder_code, f3c9  # globe_book, f3ca  # map_search,
+  f3c7  # table_convert, f3c6  # table_edit, f3c5  # text_compare, f3c3  # tile_large,
   f3c2  # tile_medium, f3c1  # tile_small and f3c4  # two_pager_store
 
 ## 4.2788.0

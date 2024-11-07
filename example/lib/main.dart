@@ -24,6 +24,8 @@ Map<String, IconData> materialSymbolsOutlinedMap = {};
 Map<String, IconData> materialSymbolsRoundedMap = {};
 Map<String, IconData> materialSymbolsSharpMap = {};
 
+List<String> renamedMaterialSymbolsMapKeys = [];
+
 const String materialSymbolsIconsSourceFontVersionNumber = '2.791';  // must update for each new font update
 const String materialSymbolsIconsSourceReleaseDate = 'October 17, 2024';  // must update for each new font update
 int totalMaterialSymbolsIcons=0;
@@ -38,6 +40,8 @@ void makeSymbolsByStyleMaps() {
       materialSymbolsOutlinedMap[key] = materialSymbolsMap[key]!;
     }
   }
+  // make a list of renamed icons
+  renamedMaterialSymbolsMapKeys = renamedMaterialSymbolsMap.keys.toList();
 }
 
 Map<String,String>? startupQueryParameters;
@@ -796,6 +800,17 @@ class _MyHomePageState extends State<MyHomePage> {
     for (int i = 0; i < iconNameList.length; i++) {
       if (iconNameList[i].toLowerCase().contains(searchString)) {
         matchIndices.add(i);
+      }
+    }
+    for (int j = 0; j < renamedMaterialSymbolsMapKeys.length; j++) {
+      if (renamedMaterialSymbolsMapKeys[j].toLowerCase().contains(searchString)) {
+        // get renamed name and find it's indices
+        final iconWasRenamedTo = renamedMaterialSymbolsMap[renamedMaterialSymbolsMapKeys[j]]!;  // we know this is a valid key
+        int i = iconNameList.indexOf(iconWasRenamedTo);
+        if(i!=-1 && !matchIndices.contains(i)) {
+          // add to list if it's not there already
+          matchIndices.add(i);
+        }
       }
     }
     return matchIndices;

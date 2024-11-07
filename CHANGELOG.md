@@ -15,6 +15,7 @@
   `materialSymbolsMap` map in `symbols_map.dart` and added them instead to a new
   Map called `renamedMaterialSymbolsMap` in `symbols_map.dart`.  This map contains the
   original name as the key and the renamed name as the value.
+* Fix example app to transparently support searching over the original material symbols names
 
 ## 4.2791.0
 

@@ -2,6 +2,7 @@
 
 ## 4.2791.1
 
+* Total icons now 3736 after removing the two duplicated and erroneous icon names
 * Fix symbol renaming so it makes more sense and does not rename symbols that do not need to be
   renamed.  This has resulted in some name changes to symbols - but it should make the symbol names
   more closely match the names of the Material Symbols Icons in Google Fonts.

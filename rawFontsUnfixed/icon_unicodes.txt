@@ -483,6 +483,7 @@ f7b1  # bookmark_manager
 e59a  # bookmark_remove
 f454  # bookmark_star
 e98b  # bookmarks
+ef82  # books_movies_and_music
 e228  # border_all
 e229  # border_bottom
 e22a  # border_clear
@@ -664,6 +665,7 @@ e6b3  # checklist_rtl
 f19e  # checkroom
 f6a8  # cheer
 f5e7  # chess
+f3b6  # chess_pawn
 f46b  # chevron_backward
 f46a  # chevron_forward
 e5cb  # chevron_left
@@ -727,6 +729,7 @@ e4f3  # code_off
 efef  # coffee
 eff0  # coffee_maker
 e09f  # cognition
+f3b5  # cognition_2
 e944  # collapse_all
 f507  # collapse_content
 e3d3  # collections
@@ -891,6 +894,7 @@ e92b  # delete_forever
 f518  # delete_history
 e92e  # delete_outline
 e16c  # delete_sweep
+eb28  # delivery_dining
 e489  # demography
 eba9  # density_large
 eb9e  # density_medium
@@ -910,6 +914,7 @@ f8f4  # desk
 f7fa  # deskphone
 e99d  # desktop_access_disabled
 f3db  # desktop_cloud
+f3be  # desktop_cloud_stack
 f45e  # desktop_landscape
 f439  # desktop_landscape_add
 e30b  # desktop_mac
@@ -1004,6 +1009,7 @@ e30e  # dock
 f7e6  # dock_to_bottom
 f7e5  # dock_to_left
 f7e4  # dock_to_right
+ea7d  # docs
 f0c2  # docs_add_on
 f0c3  # docs_apps_script
 e5fa  # document_scanner
@@ -1180,6 +1186,8 @@ f5d2  # expand_circle_up
 f830  # expand_content
 e5ce  # expand_less
 e5cf  # expand_more
+ef90  # expansion_panels
+ef90  # expension_panels
 e686  # experiment
 e01e  # explicit
 e87a  # explore
@@ -1251,14 +1259,18 @@ f4d8  # file_copy_off
 f090  # file_download
 f091  # file_download_done
 e4fe  # file_download_off
+f3b2  # file_export
+f3bb  # file_json
 e2c5  # file_map
 f3e2  # file_map_stack
 eaf3  # file_open
+f3bc  # file_png
 ea0e  # file_present
 f17f  # file_save
 e505  # file_save_off
 f09b  # file_upload
 f886  # file_upload_off
+ea85  # files
 e3d3  # filter
 e3d0  # filter_1
 e3d1  # filter_2
@@ -1597,6 +1609,7 @@ f79c  # high_density
 e024  # high_quality
 f54b  # high_res
 e25f  # highlight
+ef52  # highlight_alt
 f510  # highlight_keyboard_focus
 f511  # highlight_mouse_cursor
 e888  # highlight_off
@@ -1668,6 +1681,8 @@ f10e  # hvac
 e50b  # ice_skating
 ea69  # icecream
 f4ca  # id_card
+e2dd  # identity_aware_proxy
+ebb7  # identity_platform
 e025  # ifl
 f71b  # iframe
 f71c  # iframe_off
@@ -1697,6 +1712,7 @@ e6d1  # ink_highlighter
 f524  # ink_highlighter_move
 e6d2  # ink_marker
 e6d3  # ink_pen
+ef52  # ink_selection
 e0fe  # inpatient
 e890  # input
 f71a  # input_circle
@@ -2082,6 +2098,7 @@ f473  # monorail
 ea22  # mood
 e7f3  # mood_bad
 e28d  # mop
+eb28  # moped
 e619  # more
 f196  # more_down
 e5d3  # more_horiz
@@ -2131,6 +2148,7 @@ e9c3  # mp
 e293  # multicooker
 e6df  # multiline_chart
 f41b  # multimodal_hand_eye
+efab  # multiple_airports
 f1b9  # multiple_stop
 ea36  # museum
 eb1a  # music_cast
@@ -2202,6 +2220,7 @@ f56a  # nest_wifi_pro_2
 f133  # nest_wifi_router
 e1b9  # network_cell
 e640  # network_check
+efac  # network_intelligence
 f5f6  # network_intelligence_history
 f5f5  # network_intelligence_update
 e61a  # network_locked
@@ -2329,6 +2348,7 @@ e9c7  # oven
 e843  # oven_gen
 e4a7  # overview
 f7d4  # overview_key
+f3b4  # owl
 e4de  # oxygen_saturation
 f52a  # p2p
 f6b8  # pace
@@ -2621,6 +2641,7 @@ eb9c  # ramp_left
 eb96  # ramp_right
 e1ea  # range_hood
 e560  # rate_review
+e706  # rate_review_rtl
 f555  # raven
 f04f  # raw_off
 f050  # raw_on
@@ -2851,6 +2872,7 @@ e814  # sentiment_very_dissatisfied
 e815  # sentiment_very_satisfied
 f6a1  # sentiment_worried
 f4ac  # serif
+f3bd  # server_person
 e717  # service_toolbox
 f1ea  # set_meal
 e8b8  # settings
@@ -2894,6 +2916,7 @@ f8d3  # shape_line
 eb01  # shape_recognition
 e602  # shapes
 e80d  # share
+e5f7  # share_eta
 f05f  # share_location
 f6cb  # share_off
 f8a4  # share_reviews
@@ -3056,6 +3079,7 @@ f493  # speed_1_7x
 f4eb  # speed_2x
 f470  # speed_camera
 e8ce  # spellcheck
+f3bf  # split_scene
 f06d  # splitscreen
 f4fd  # splitscreen_add
 f676  # splitscreen_bottom
@@ -3091,6 +3115,7 @@ ea31  # sports_volleyball
 e29a  # sprinkler
 f81f  # sprint
 eb36  # square
+f3b3  # square_dot
 ea49  # square_foot
 eb66  # ssid_chart
 f609  # stack
@@ -3322,6 +3347,7 @@ f077  # thermostat_auto
 f178  # thermostat_carbon
 eb2a  # things_to_do
 f4f9  # thread_unread
+eaed  # threat_intelligence
 f578  # thumb_down
 f578  # thumb_down_alt
 f578  # thumb_down_filled
@@ -3645,6 +3671,9 @@ f1e6  # west
 e80e  # whatshot
 f1ab  # wheelchair_pickup
 e177  # where_to_vote
+f3ba  # widget_medium
+f3b9  # widget_small
+f3b8  # widget_width
 e1bd  # widgets
 f730  # width
 f8f5  # width_full

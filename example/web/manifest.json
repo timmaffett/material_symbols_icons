@@ -1,6 +1,6 @@
 {
-    "name": "example",
-    "short_name": "example",
+    "name": "example_using_material_symbols_icons",
+    "short_name": "example_using_material_symbols_icons",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

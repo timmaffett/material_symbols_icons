@@ -24,8 +24,8 @@ Map<String, IconData> materialSymbolsOutlinedMap = {};
 Map<String, IconData> materialSymbolsRoundedMap = {};
 Map<String, IconData> materialSymbolsSharpMap = {};
 
-const String materialSymbolsIconsSourceFontVersionNumber = '2.789';  // must update for each new font update
-const String materialSymbolsIconsSourceReleaseDate = 'October 11, 2024';  // must update for each new font update
+const String materialSymbolsIconsSourceFontVersionNumber = '2.791';  // must update for each new font update
+const String materialSymbolsIconsSourceReleaseDate = 'October 17, 2024';  // must update for each new font update
 int totalMaterialSymbolsIcons=0;
 
 void makeSymbolsByStyleMaps() {
@@ -40,15 +40,27 @@ void makeSymbolsByStyleMaps() {
   }
 }
 
+Map<String,String>? startupQueryParameters;
+
 void main() {
   // prevent engine from removing query url parameters
   setUrlStrategy(PathUrlStrategy());
+
+  // we need to grab these now because startup inside flutter will
+  // throw exception for unknown route and clear our query parameters
+  startupQueryParameters = Uri.base.queryParameters;
+
+  debugPrint('Uri.base.queryParameters=${Uri.base.queryParameters}');
+  debugPrint('Uri.base.hasQuery=${Uri.base.hasQuery}');
+  debugPrint('Uri.base.query=${Uri.base.query}');
+  debugPrint('Uri.base.queryParametersAll=${Uri.base.queryParametersAll}');
+  debugPrint('Uri.base=${Uri.base}');
 
   // create separate iconname->icon map for each style
   makeSymbolsByStyleMaps();
 
   /*
-    Here we can set default Icon VARATIONS which can be specific to Outlined, Rounded or Sharp icons,
+    Here we can set default Icon VARIATIONS which can be specific to Outlined, Rounded or Sharp icons,
     each with their own settings.  These will take PRIORITY over IconThemeData()
     This is totally optional and IconThemeData() can just be used if you do not need to
     have different variation settings for different icons from different font families.
@@ -83,14 +95,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material Symbols Icons For Flutter',
+      // Note: I added the initialRoute and routes to try and prevent flutter exception on startup - did not work...
+      initialRoute: '/',
+      routes: <String, WidgetBuilder> {
+        "/": (context) => MyHomePage(title: 'Material Symbols Icons For Flutter',
+                            subtitle:'(v$materialSymbolsIconsSourceFontVersionNumber fonts, released $materialSymbolsIconsSourceReleaseDate w/ $totalMaterialSymbolsIcons icons)'
+                          ),
+      },      
       theme: ThemeData(
         primarySwatch: Colors.teal,
         useMaterial3: true,
         fontFamily: 'Roboto',
         iconTheme: const IconThemeData(color: Colors.black),
       ),
-      home: MyHomePage(title: 'Material Symbols Icons For Flutter',
-      subtitle:'(v$materialSymbolsIconsSourceFontVersionNumber fonts, released $materialSymbolsIconsSourceReleaseDate w/ $totalMaterialSymbolsIcons icons)'),
+      // changed to using routes above to avoid exception on startup (did not work)
+      //home: MyHomePage(title: 'Material Symbols Icons For Flutter',
+      //  subtitle:'(v$materialSymbolsIconsSourceFontVersionNumber fonts, released $materialSymbolsIconsSourceReleaseDate w/ $totalMaterialSymbolsIcons icons)'),
     );
   }
 }
@@ -176,7 +196,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void grabInitialStateFromUrl() {
     // Get the query parameters from the URL (if we are a web app)
-    final queryParms = Uri.base.queryParameters;
+    final queryParms = startupQueryParameters ?? Uri.base.queryParameters;
+
+    bool needToRebuildQueryParams = false;
+    if(startupQueryParameters!=null) {
+      startupQueryParameters = null; // grab them once and then clear them..
+      needToRebuildQueryParams = true;
+    }
     _iconSearchText = queryParms['iconSearchText'] ?? '';
     if (queryParms['iconSize'] != null) {
       final iconSizeParse = double.tryParse(queryParms['iconSize']!);
@@ -237,6 +263,13 @@ class _MyHomePageState extends State<MyHomePage> {
               _opticalSizes.indexOf(_opticalSizeVariation).toDouble();
         }
       }
+    }
+    if(needToRebuildQueryParams) {
+      // at startup flutter throws because of our query parameters do not map to a route it knows
+      // about, so it cleared the query parameters, lets put them back
+      // (but we have to wait a bit so that we don't get cleared again)
+      Future.delayed( Duration(milliseconds:150), 
+            setQueryParametersToMatchState );
     }
   }
 
@@ -375,7 +408,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   fontSize: 10)));
   }
 
-  Widget buildPossiblyContstrainedAppBarTitle( bool constrained ) {
+  Widget buildPossiblyConstrainedAppBarTitle( bool constrained ) {
     return Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
@@ -795,8 +828,8 @@ class _MyHomePageState extends State<MyHomePage> {
         toolbarHeight: 22,
         title: LayoutBuilder(
             builder: (context, constraints) {
-              debugPrint('constraints.maxWidth=${constraints.maxWidth}');
-              return buildPossiblyContstrainedAppBarTitle( (constraints.maxWidth < 640) );
+              //DEBUGdebugPrint('constraints.maxWidth=${constraints.maxWidth}');
+              return buildPossiblyConstrainedAppBarTitle( (constraints.maxWidth < 640) );
             },
           ),
       ),

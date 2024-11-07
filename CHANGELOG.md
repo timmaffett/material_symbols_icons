@@ -1,5 +1,19 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2791.0
+
+* Update to version 2.791 of the material icons variable fonts released 10/17/2024 with 3738 icons
+* Added ef82  # books_movies_and_music, f3b6  # chess_pawn, f3b5  # cognition_2, eb28  # delivery_dining,
+  f3be  # desktop_cloud_stack, ea7d  # docs, ef90  # expansion_panels, ef90  # expension_panels,
+  f3b2  # file_export, f3bb  # file_json, f3bc  # file_png, ea85  # files, ef52  # highlight_alt,
+  e2dd  # identity_aware_proxy, ebb7  # identity_platform, ef52  # ink_selection, eb28  # moped,
+  efab  # multiple_airports, efac  # network_intelligence, f3b4  # owl, e706  # rate_review_rtl,
+  f3bd  # server_person, e5f7  # share_eta, f3bf  # split_scene, f3b3  # square_dot,
+  eaed  # threat_intelligence, f3ba  # widget_medium, f3b9  # widget_small, f3b8  # widget_width
+* Fixed [issue #9](https://github.com/timmaffett/material_symbols_icons/issues/9) so that URL query parameters
+  now work again and URLs to example app state will properly restore that state (all settings and search
+  parameters)
+
 ## 4.2789.0
 
 * Update to version 2.789 of the material icons variable fonts released 10/11/2024 with 3709 icons

@@ -23,7 +23,6 @@ late final bool verboseFlag;
 /// Flag to include inline SVG previews of the icons in dart docs comments as markup
 bool svgDartDocsFlag = false;
 
-
 class IconInfo {
   final String originalIconName;
   final String iconName;
@@ -43,10 +42,14 @@ class MaterialSymbolsVariableFont {
   late final String filename;
   final List<IconInfo> iconInfoList = [];
 
-  MaterialSymbolsVariableFont(this.flavor, this.iconDataClass, this.familyNameToUse,
-                                this.codepointFileUrl, this.ttfFontFileUrl,
-                                this.woff2FontUrlForDartDocSVG, this.svgFontFamily
-                              ) {
+  MaterialSymbolsVariableFont(
+      this.flavor,
+      this.iconDataClass,
+      this.familyNameToUse,
+      this.codepointFileUrl,
+      this.ttfFontFileUrl,
+      this.woff2FontUrlForDartDocSVG,
+      this.svgFontFamily) {
     final urlfilename = path.basename(ttfFontFileUrl);
     filename = Uri.decodeFull(urlfilename);
   }
@@ -54,42 +57,45 @@ class MaterialSymbolsVariableFont {
 
 List<MaterialSymbolsVariableFont> variableFontFlavors = [
   MaterialSymbolsVariableFont(
-      'outlined',
-      'IconDataOutlined',
-      'MaterialSymbolsOutlined',
-      'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints',
-      'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf',
-      fixupStringForDataURIThatVSCodeWillAccept("url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v190/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format('woff2')"),
-      fixupStringForDataURIThatVSCodeWillAccept('Material Symbols Outlined'),
-      ),
+    'outlined',
+    'IconDataOutlined',
+    'MaterialSymbolsOutlined',
+    'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints',
+    'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf',
+    fixupStringForDataURIThatVSCodeWillAccept(
+        "url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v190/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format('woff2')"),
+    fixupStringForDataURIThatVSCodeWillAccept('Material Symbols Outlined'),
+  ),
   MaterialSymbolsVariableFont(
-      'rounded',
-      'IconDataRounded',
-      'MaterialSymbolsRounded',
-      'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints',
-      'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf',
-      fixupStringForDataURIThatVSCodeWillAccept("url(https://fonts.gstatic.com/s/materialsymbolsrounded/v188/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2) format('woff2')"),
-      fixupStringForDataURIThatVSCodeWillAccept('Material Symbols Rounded'),
-    ),
+    'rounded',
+    'IconDataRounded',
+    'MaterialSymbolsRounded',
+    'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints',
+    'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf',
+    fixupStringForDataURIThatVSCodeWillAccept(
+        "url(https://fonts.gstatic.com/s/materialsymbolsrounded/v188/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2) format('woff2')"),
+    fixupStringForDataURIThatVSCodeWillAccept('Material Symbols Rounded'),
+  ),
   MaterialSymbolsVariableFont(
-      'sharp',
-      'IconDataSharp',
-      'MaterialSymbolsSharp',
-      'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints',
-      'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf',
-      fixupStringForDataURIThatVSCodeWillAccept("url(https://fonts.gstatic.com/s/materialsymbolssharp/v186/gNMVW2J8Roq16WD5tFNRaeLQk6-SHQ_R00k4aWE.woff2) format('woff2')"),
-      fixupStringForDataURIThatVSCodeWillAccept('Material Symbols Sharp'),
-    ),
+    'sharp',
+    'IconDataSharp',
+    'MaterialSymbolsSharp',
+    'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints',
+    'https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf',
+    fixupStringForDataURIThatVSCodeWillAccept(
+        "url(https://fonts.gstatic.com/s/materialsymbolssharp/v186/gNMVW2J8Roq16WD5tFNRaeLQk6-SHQ_R00k4aWE.woff2) format('woff2')"),
+    fixupStringForDataURIThatVSCodeWillAccept('Material Symbols Sharp'),
+  ),
 ];
 
-
 String fixupStringForDataURIThatVSCodeWillAccept(String unencoded) {
-  return unencoded.replaceAll('"', "'")
-                                    .replaceAll(' ', '%20')
-                                    .replaceAll('<', '%3C')
-                                    .replaceAll('>', '%3E')
-                                    .replaceAll('(', '%28')
-                                    .replaceAll(')', '%29');
+  return unencoded
+      .replaceAll('"', "'")
+      .replaceAll(' ', '%20')
+      .replaceAll('<', '%3C')
+      .replaceAll('>', '%3E')
+      .replaceAll('(', '%28')
+      .replaceAll(')', '%29');
 }
 
 /* NOT CURRENTLY USED
@@ -150,7 +156,10 @@ const Map<String, String> _identifierExactRewrites = <String, String>{
   'door_front': 'door_front_door',
   'power_rounded': 'power_rounded_power',
   'error_circle_rounded': 'error_circle_rounded_error',
+  //NO IT IS DUPPED WITH SAME codepoint 'expension_panels': 'expansion_panels',  // SPELLING ERROR
 };
+
+Map<String, String> renamedSymbolsToAugmentMap = {};
 
 /// Path to write the downloaded TTF files to `../rawFontsUnfixed`
 /// KLUDGE - currently we have to patch the fonts with the correct metrics to get them to render correctly in flutter.
@@ -164,7 +173,8 @@ const Map<String, String> _identifierExactRewrites = <String, String>{
 /// If this is not done then Flutter renders the icons lower in the text box then they should be
 /// (ie. *not centered*).
 const pathToWriteTTFFiles = '../rawFontsUnfixed/';
-String pathToWriteDateMarkedIconUnicodeFiles = '${pathToWriteTTFFiles}LAST_VERSION/';
+String pathToWriteDateMarkedIconUnicodeFiles =
+    '${pathToWriteTTFFiles}LAST_VERSION/';
 
 /// Path to write the dart source files to
 const pathToWriteDartFiles = '../lib/';
@@ -175,25 +185,29 @@ bool writeUnicodeCodepoints = true;
 /// Here is template to create INLINE svg images of the icons using SVG file and google fonts links to fonts
 /// $1 is fontfamily, $2 is the font src url, $3 is the codepoint
 //const svgIconTemplateRaw = r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face { font-family: "$1"; src: $2; font-weight:400;} text {font-family:"$1"; font-size: 32px; text-anchor: middle; dominant-baseline: text-bottom; fill: grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
-const svgIconTemplateRaw = r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face { font-family: "$1"; src: $2;} text {font-family:"$1"; font-size: 32px; text-anchor: middle; dominant-baseline: text-bottom; fill: grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
+const svgIconTemplateRaw =
+    r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face { font-family: "$1"; src: $2;} text {font-family:"$1"; font-size: 32px; text-anchor: middle; dominant-baseline: text-bottom; fill: grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
 String? svgIconTemplate;
 
-String getSVGDateUriFor( MaterialSymbolsVariableFont fontinfo, String codepoint ) {
+String getSVGDateUriFor(
+    MaterialSymbolsVariableFont fontinfo, String codepoint) {
   // This replaces the characters double quote " (to single '), and < and > with %3C and %3E
-  // This is the only way to encode the SVG that I found worked in vscode.  
+  // This is the only way to encode the SVG that I found worked in vscode.
   // Neither base64 or encodeURIComponent() encoding worked.
-  svgIconTemplate ??= svgIconTemplateRaw.replaceAll('"', "'")
-                                    .replaceAll(' ', '%20')
-                                    .replaceAll('<', '%3C')
-                                    .replaceAll('>', '%3E')
-                                    .replaceAll('(', '%28')
-                                    .replaceAll(')', '%29');
+  svgIconTemplate ??= svgIconTemplateRaw
+      .replaceAll('"', "'")
+      .replaceAll(' ', '%20')
+      .replaceAll('<', '%3C')
+      .replaceAll('>', '%3E')
+      .replaceAll('(', '%28')
+      .replaceAll(')', '%29');
 
-  String dataUri = svgIconTemplate!.replaceAll(r'$1',fontinfo.svgFontFamily).
-                                      replaceFirst(r'$2',fontinfo.woff2FontUrlForDartDocSVG).
-                                      replaceFirst(r'$3',codepoint);
-                            
-  return dataUri;  
+  String dataUri = svgIconTemplate!
+      .replaceAll(r'$1', fontinfo.svgFontFamily)
+      .replaceFirst(r'$2', fontinfo.woff2FontUrlForDartDocSVG)
+      .replaceFirst(r'$3', codepoint);
+
+  return dataUri;
 }
 
 /// <span style="font-family: 'Material Symbols Outlined';color: red;font-size:32px;">&#xe53d;&#xf4af;&#xF4AF;</span>
@@ -307,16 +321,18 @@ Future<void> main(List<String> args) async {
             final parts = iconnameCodePointPair.split(' ');
             assert(parts.length == 2,
                 'Expected 2 parts on the line `$iconnameCodePointPair`');
-            final orginalName = parts[0];
+            final originalName = parts[0];
             final codePoint = parts[1];
-            var iconName = orginalName;
+            var iconName = originalName;
             if (_identifierExactRewrites.keys.contains(iconName) ||
                 iconName.startsWith(RegExp(r'[0-9]'))) {
               iconName = _generateFlutterId(iconName);
-              renamedIconNames.add('$orginalName => $iconName');
+              renamedIconNames.add('$originalName => $iconName');
+              // Keep track of the renamed symbols so we can augment the symbols name map with the original names
+              renamedSymbolsToAugmentMap[originalName] = iconName;
             }
 
-            iconInfoList.add(IconInfo(orginalName, iconName, codePoint));
+            iconInfoList.add(IconInfo(originalName, iconName, codePoint));
           }
         },
       );
@@ -354,7 +370,8 @@ Future<void> main(List<String> args) async {
       combinedFullMapSourceFilename, combinedSourceFilename,
       suffixVersion: true);
 
-  final unicodeMapSourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
+  final unicodeMapSourceFileContent =
+      StringBuffer('''// GENERATED FILE. DO NOT EDIT.
 //
 // To edit this file modify the generator file `generator/update_package.dart` and
 // re-generate.
@@ -385,17 +402,18 @@ Future<void> main(List<String> args) async {
 Map<String, int> materialSymbolsIconNameToUnicodeMap = {
 ''');
 
-
   // write all flavors together with suffixed symbol names
   const iconUnicodesFilename = '${pathToWriteTTFFiles}icon_unicodes.txt';
   final now = DateTime.now();
-  String year = now.year.toString().substring(2).padLeft(2,'0');
-  String month = now.month.toString().padLeft(2,'0');
-  String day = now.day.toString().padLeft(2,'0');
-  String dateStampedLastVersionIconUnicodesFilename = '${pathToWriteDateMarkedIconUnicodeFiles}icon_unicodes_${year}_${month}_${day}.txt';
+  String year = now.year.toString().substring(2).padLeft(2, '0');
+  String month = now.month.toString().padLeft(2, '0');
+  String day = now.day.toString().padLeft(2, '0');
+  String dateStampedLastVersionIconUnicodesFilename =
+      '${pathToWriteDateMarkedIconUnicodeFiles}icon_unicodes_${year}_${month}_${day}.txt';
   List<String> unicodes = [];
   bool first = true;
   final unicodeBuffer = StringBuffer();
+  int numberOfRenamedIconsFound = 0;
 
   for (final fontFlavor in variableFontFlavors) {
     final iconInfoList = fontFlavor.iconInfoList;
@@ -404,7 +422,14 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
         unicodes.add(info.codePoint);
         unicodeBuffer.writeln('${info.codePoint}  # ${info.iconName}');
 
-        unicodeMapSourceFileContent.writeln("  '${info.iconName}': 0x${info.codePoint},");   
+        unicodeMapSourceFileContent
+            .writeln("  '${info.iconName}': 0x${info.codePoint},");
+        // Check for renamed icons and add the original name to the map also
+        if (info.originalIconName != info.iconName) {
+          unicodeMapSourceFileContent
+              .writeln("  '${info.originalIconName}': 0x${info.codePoint},");
+          numberOfRenamedIconsFound++;
+        }
       } else {
         if (!unicodes.contains(info.codePoint)) {
           throw ('Unicode ${info.codePoint} was missing from first fonts list and found in ${fontFlavor.flavor}');
@@ -413,19 +438,24 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
     }
     first = false;
   }
-  unicodeMapSourceFileContent.writeln('};');   
+  unicodeMapSourceFileContent.writeln('};');
 
-  const unicodeMapSourceFilename = '${pathToWriteDartFiles}iconname_to_unicode_map.dart';
-  File(unicodeMapSourceFilename).writeAsStringSync(unicodeMapSourceFileContent.toString());
+  const unicodeMapSourceFilename =
+      '${pathToWriteDartFiles}iconname_to_unicode_map.dart';
+  File(unicodeMapSourceFilename)
+      .writeAsStringSync(unicodeMapSourceFileContent.toString());
 
   File(iconUnicodesFilename).writeAsStringSync(unicodeBuffer.toString());
-  File(dateStampedLastVersionIconUnicodesFilename).writeAsStringSync(unicodeBuffer.toString());
+  File(dateStampedLastVersionIconUnicodesFilename)
+      .writeAsStringSync(unicodeBuffer.toString());
   print(
       'Wrote ${unicodes.length} icon unicode codepoints to $iconUnicodesFilename');
   print(
       'ALSO Wrote ${unicodes.length} icon unicode codepoints to $dateStampedLastVersionIconUnicodesFilename');
   print(
       'Wrote $unicodeMapSourceFilename iconname to unicode map with ${unicodes.length} iconname -> unicode codepoints.');
+  print(
+      'Augmented unicode map with $numberOfRenamedIconsFound entries containing original names (for icons that had to be renamed)');
 
   exit(0);
 }
@@ -450,7 +480,6 @@ ${parser.usage}
 void writeCombinedSourceFile(
     List<MaterialSymbolsVariableFont> fontinfoList, String sourceFilename,
     {bool suffixVersion = true}) {
-
 /*OBSOLETE - dart doc is FIXED!!!!
   StringBuffer getFakeDartDocsForIconNames() {
     final fakeDartDocs = StringBuffer();
@@ -661,15 +690,17 @@ class Symbols {
         iconname = '${iconname}_${fontinfo.flavor}';
       }
       sourceFileContent.writeln();
-      if(svgDartDocsFlag) {
-        final svgDataUUri = getSVGDateUriFor(fontinfo,codepoint);
-        sourceFileContent.writeln('  /// \![$iconname]($svgDataUUri|width=32,height=32)  material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
+      if (svgDartDocsFlag) {
+        final svgDataUUri = getSVGDateUriFor(fontinfo, codepoint);
+        sourceFileContent.writeln(
+            '  /// \![$iconname]($svgDataUUri|width=32,height=32)  material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
       } else {
         sourceFileContent.writeln(
-          '  /// <span class="material-symbols-${fontinfo.flavor}" data-variation="${fontinfo.flavor}" data-fontfamily="${fontinfo.familyNameToUse}" data-codepoint="$codepoint">${iconInfo.originalIconName}</span> material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
+            '  /// <span class="material-symbols-${fontinfo.flavor}" data-variation="${fontinfo.flavor}" data-fontfamily="${fontinfo.familyNameToUse}" data-codepoint="$codepoint">${iconInfo.originalIconName}</span> material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
       }
-      String proposedSingleLine = "  static const IconData $iconname = $iconDataClass(0x$codepoint);";
-      if(proposedSingleLine.length>80) {
+      String proposedSingleLine =
+          "  static const IconData $iconname = $iconDataClass(0x$codepoint);";
+      if (proposedSingleLine.length > 80) {
         //split to two lines
         sourceFileContent.writeln("  static const IconData $iconname =");
         sourceFileContent.writeln("      $iconDataClass(0x$codepoint);");
@@ -742,12 +773,17 @@ Map<String, IconData> materialSymbolsMap = {
   }
 
   var iconCount = 0;
+  var renamedMapEntries = 0;
 
   for (int i = 0; i < lastCount!; i++) {
     for (final fontinfo in fontinfoList) {
       var iconInfo = fontinfo.iconInfoList[i];
       var iconname = iconInfo.iconName;
-
+      var originalMaterialName = iconInfo.originalIconName;
+      bool iconWasRenamed = false;
+      if (iconname != originalMaterialName) {
+        iconWasRenamed = true;
+      }
       if (suffixVersion && fontinfo.flavor != 'outlined') {
         iconname = '${iconname}_${fontinfo.flavor}';
       }
@@ -760,6 +796,21 @@ Map<String, IconData> materialSymbolsMap = {
         sourceFileContent.writeln("      Symbols.$iconname,");
       }
       iconCount++;
+      if (iconWasRenamed) {
+        // WE NEED TO WRITE THE ORIGINAL NAME info the map also...
+        if (suffixVersion && fontinfo.flavor != 'outlined') {
+          originalMaterialName = '${originalMaterialName}_${fontinfo.flavor}';
+        }
+        final lineStr = "  '$originalMaterialName': Symbols.$iconname,";
+        if (lineStr.length <= 80) {
+          sourceFileContent.writeln(lineStr);
+        } else {
+          // SPLIT THE LINE
+          sourceFileContent.writeln("  '$originalMaterialName':");
+          sourceFileContent.writeln("      Symbols.$iconname,");
+        }
+        renamedMapEntries++;
+      }
     }
   }
   sourceFileContent.writeln('};');
@@ -768,6 +819,8 @@ Map<String, IconData> materialSymbolsMap = {
   File(exampleSourceFilename).writeAsStringSync(sourceFileContent.toString());
 
   print('Wrote $iconCount COMBINED icons to $exampleSourceFilename');
+  print(
+      'Augmented map with entries for $renamedMapEntries icons that were renamed from the original material names (which could not be used because they were invalid Dart symbol names).');
 }
 
 /// This mimics the flutter icon renaming in flutter engine \dev\tools\update_icons.dart

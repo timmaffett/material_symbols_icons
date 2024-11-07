@@ -152,12 +152,19 @@ const Map<String, String> _identifierExactRewrites = <String, String>{
   'new': 'new_',
   'switch': 'switch_',
   'try': 'try_sms_star',
-  'door_back': 'door_back_door',
-  'door_front': 'door_front_door',
-  'power_rounded': 'power_rounded_power',
-  'error_circle_rounded': 'error_circle_rounded_error',
-  //NO IT IS DUPPED WITH SAME codepoint 'expension_panels': 'expansion_panels',  // SPELLING ERROR
+
+  //NO LONGER NEEDED//'door_back': 'door_back_door',
+  //NO LONGER NEEDED//'door_front': 'door_front_door',
+  //NOW EXCLUDED//'power_rounded': 'power_rounded_duplicate_of_power_settings_new',  // NEEDED because of 'power' icon creates 'power_rounded' so this is DUP otherwise
+  //NEVER WAS NEEDED//'error_circle_rounded': 'error_circle_rounded_error',
 };
+
+// Icon names which are DUPLICATES and we should EXCLUDE
+const List<String> _identifierExcludeNames = <String>[
+  'power_rounded',  // THis is a DUPLICATE icon of 'power_settings_new' and if we included it it would create 'power_rounded' which would collide with 'power' 's 'power_rounded'
+  'expension_panels', // spelling error in Google's 2.791 version of codepoint files
+];
+
 
 Map<String, String> renamedSymbolsToAugmentMap = {};
 
@@ -324,15 +331,16 @@ Future<void> main(List<String> args) async {
             final originalName = parts[0];
             final codePoint = parts[1];
             var iconName = originalName;
-            if (_identifierExactRewrites.keys.contains(iconName) ||
-                iconName.startsWith(RegExp(r'[0-9]'))) {
-              iconName = _generateFlutterId(iconName);
-              renamedIconNames.add('$originalName => $iconName');
-              // Keep track of the renamed symbols so we can augment the symbols name map with the original names
-              renamedSymbolsToAugmentMap[originalName] = iconName;
+            if(!_identifierExcludeNames.contains(iconName)) {
+              if (_identifierExactRewrites.keys.contains(iconName) ||
+                  iconName.startsWith(RegExp(r'[0-9]'))) {
+                iconName = _generateFlutterId(iconName);
+                renamedIconNames.add('$originalName => $iconName');
+                // Keep track of the renamed symbols so we can augment the symbols name map with the original names
+                renamedSymbolsToAugmentMap[originalName] = iconName;
+              }
+              iconInfoList.add(IconInfo(originalName, iconName, codePoint));
             }
-
-            iconInfoList.add(IconInfo(originalName, iconName, codePoint));
           }
         },
       );
@@ -763,6 +771,17 @@ import 'package:material_symbols_icons/$sourceFilename';
 Map<String, IconData> materialSymbolsMap = {
 ''');
 
+final renamedIconsContent = StringBuffer('''
+// Map of Material Symbols Icon names that were renamed to
+// valid Dart variable/symbol names. (ie. not starting with numbers
+// and not being a Dart reserved word).
+// To lookup the IconData Symbol.XXX object using a original icon name
+// use `materialSymbolsMap[materialSymbolsMap[originalName]]`
+//
+// BEGIN GENERATED static array
+Map<String, String> renamedMaterialSymbolsMap = {
+''');
+
   // all font flavors should have same number of codepoints
   int? lastCount;
   for (final fontinfo in fontinfoList) {
@@ -779,9 +798,9 @@ Map<String, IconData> materialSymbolsMap = {
     for (final fontinfo in fontinfoList) {
       var iconInfo = fontinfo.iconInfoList[i];
       var iconname = iconInfo.iconName;
-      var originalMaterialName = iconInfo.originalIconName;
+      var originalIconName = iconInfo.originalIconName;
       bool iconWasRenamed = false;
-      if (iconname != originalMaterialName) {
+      if (iconname != originalIconName) {
         iconWasRenamed = true;
       }
       if (suffixVersion && fontinfo.flavor != 'outlined') {
@@ -799,20 +818,23 @@ Map<String, IconData> materialSymbolsMap = {
       if (iconWasRenamed) {
         // WE NEED TO WRITE THE ORIGINAL NAME info the map also...
         if (suffixVersion && fontinfo.flavor != 'outlined') {
-          originalMaterialName = '${originalMaterialName}_${fontinfo.flavor}';
+          originalIconName = '${originalIconName}_${fontinfo.flavor}';
         }
-        final lineStr = "  '$originalMaterialName': Symbols.$iconname,";
+        final lineStr = "  '$originalIconName': '$iconname',";
         if (lineStr.length <= 80) {
-          sourceFileContent.writeln(lineStr);
+          renamedIconsContent.writeln(lineStr);
         } else {
           // SPLIT THE LINE
-          sourceFileContent.writeln("  '$originalMaterialName':");
-          sourceFileContent.writeln("      Symbols.$iconname,");
+          renamedIconsContent.writeln("  '$originalIconName':");
+          renamedIconsContent.writeln("      '$iconname',");
         }
         renamedMapEntries++;
       }
     }
   }
+  sourceFileContent.writeln('};');
+  // write the additional renamed icons info
+  sourceFileContent.writeln(renamedIconsContent);
   sourceFileContent.writeln('};');
   sourceFileContent.writeln('// END GENERATED ICONS');
 
@@ -828,6 +850,10 @@ Map<String, IconData> materialSymbolsMap = {
 String _generateFlutterId(String id) {
   String flutterId = id;
   bool fixApplied = false;
+  if(_identifierExcludeNames.contains(id)) {
+    throw('_generateFlutterId() encounted "$id" which is an excluded icon name and should have been pruned from lists.');
+  }
+
   // Exact identifier rewrites.
   for (final MapEntry<String, String> rewritePair
       in _identifierExactRewrites.entries) {

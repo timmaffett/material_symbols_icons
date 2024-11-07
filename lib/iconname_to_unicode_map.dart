@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-11-07 08:40:33.150648 by the dart file
+// This file was generated 2024-11-07 15:35:57.082162 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -1118,9 +1118,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'done_outline': 0xe92f,
   'donut_large': 0xe917,
   'donut_small': 0xe918,
-  'door_back_door': 0xeffc,
   'door_back': 0xeffc,
-  'door_front_door': 0xeffd,
   'door_front': 0xeffd,
   'door_open': 0xe77c,
   'door_sensor': 0xe28a,
@@ -1250,7 +1248,6 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'eraser_size_4': 0xf3f9,
   'eraser_size_5': 0xf3f8,
   'error': 0xf8b6,
-  'error_circle_rounded_error': 0xf8b6,
   'error_circle_rounded': 0xf8b6,
   'error_med': 0xe49b,
   'error_outline': 0xf8b6,
@@ -1284,7 +1281,6 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'expand_less': 0xe5ce,
   'expand_more': 0xe5cf,
   'expansion_panels': 0xef90,
-  'expension_panels': 0xef90,
   'experiment': 0xe686,
   'explicit': 0xe01e,
   'explore': 0xe87a,
@@ -2655,8 +2651,6 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'power': 0xe63c,
   'power_input': 0xe336,
   'power_off': 0xe646,
-  'power_rounded_power': 0xf8c7,
-  'power_rounded': 0xf8c7,
   'power_settings_circle': 0xf418,
   'power_settings_new': 0xf8c7,
   'prayer_times': 0xf838,

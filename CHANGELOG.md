@@ -1,5 +1,20 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2791.1
+
+* Fix symbol renaming so it makes more sense and does not rename symbols that do not need to be
+  renamed.  This has resulted in some name changes to symbols - but it should make the symbol names
+  more closely match the names of the Material Symbols Icons in Google Fonts.
+* Rename 'door_back_door' to 'door_back'
+* Rename 'door_front_door' to 'door_front'
+* Rename 'error_circle_rounded_error' to 'error_circle_rounded'
+* Remove 'power_rounded_power' - it was just a duplicate of 'power_settings_new'
+* Remove 'expension_panels' (only found in 4.2791.0) - a spelling error in 2.791 codepoint files
+* Removed original material symbols icons names which had to be renamed for dart to
+  `materialSymbolsMap` map in `symbols_map.dart` and added them instead to a new
+  Map called `renamedMaterialSymbolsMap` in `symbols_map.dart`.  This map contains the
+  original name as the key and the renamed name as the value.
+
 ## 4.2791.0
 
 * Update to version 2.791 of the material icons variable fonts released 10/17/2024 with 3738 icons
@@ -13,6 +28,11 @@
 * Fixed [issue #9](https://github.com/timmaffett/material_symbols_icons/issues/9) so that URL query parameters
   now work again and URLs to example app state will properly restore that state (all settings and search
   parameters)
+  Added original material symbols icons names which had to be renamed for dart to
+  `materialSymbolsMap` map in `symbols_map.dart`
+  Added original material symbols icons names which had to be renamed for dart to
+  `materialSymbolsIconNameToUnicodeMap` map in `iconname_to_unicode_map.dart`
+
 
 ## 4.2789.0
 

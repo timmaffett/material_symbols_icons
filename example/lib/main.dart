@@ -26,9 +26,11 @@ Map<String, IconData> materialSymbolsSharpMap = {};
 
 List<String> renamedMaterialSymbolsMapKeys = [];
 
-const String materialSymbolsIconsSourceFontVersionNumber = '2.791';  // must update for each new font update
-const String materialSymbolsIconsSourceReleaseDate = 'October 17, 2024';  // must update for each new font update
-int totalMaterialSymbolsIcons=0;
+const String materialSymbolsIconsSourceFontVersionNumber =
+    '2.791'; // must update for each new font update
+const String materialSymbolsIconsSourceReleaseDate =
+    'October 17, 2024'; // must update for each new font update
+int totalMaterialSymbolsIcons = 0;
 
 void makeSymbolsByStyleMaps() {
   for (final key in materialSymbolsMap.keys.toList()) {
@@ -44,7 +46,7 @@ void makeSymbolsByStyleMaps() {
   renamedMaterialSymbolsMapKeys = renamedMaterialSymbolsMap.keys.toList();
 }
 
-Map<String,String>? startupQueryParameters;
+Map<String, String>? startupQueryParameters;
 
 void main() {
   // prevent engine from removing query url parameters
@@ -101,11 +103,12 @@ class MyApp extends StatelessWidget {
       title: 'Material Symbols Icons For Flutter',
       // Note: I added the initialRoute and routes to try and prevent flutter exception on startup - did not work...
       initialRoute: '/',
-      routes: <String, WidgetBuilder> {
-        "/": (context) => MyHomePage(title: 'Material Symbols Icons For Flutter',
-                            subtitle:'(v$materialSymbolsIconsSourceFontVersionNumber fonts, released $materialSymbolsIconsSourceReleaseDate w/ $totalMaterialSymbolsIcons icons)'
-                          ),
-      },      
+      routes: <String, WidgetBuilder>{
+        "/": (context) => MyHomePage(
+            title: 'Material Symbols Icons For Flutter',
+            subtitle:
+                '(v$materialSymbolsIconsSourceFontVersionNumber fonts, released $materialSymbolsIconsSourceReleaseDate w/ $totalMaterialSymbolsIcons icons)'),
+      },
       theme: ThemeData(
         primarySwatch: Colors.teal,
         useMaterial3: true,
@@ -120,7 +123,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title,  required this.subtitle});
+  const MyHomePage({super.key, required this.title, required this.subtitle});
 
   final String title;
   final String subtitle;
@@ -203,7 +206,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final queryParms = startupQueryParameters ?? Uri.base.queryParameters;
 
     bool needToRebuildQueryParams = false;
-    if(startupQueryParameters!=null) {
+    if (startupQueryParameters != null) {
       startupQueryParameters = null; // grab them once and then clear them..
       needToRebuildQueryParams = true;
     }
@@ -268,12 +271,12 @@ class _MyHomePageState extends State<MyHomePage> {
         }
       }
     }
-    if(needToRebuildQueryParams) {
+    if (needToRebuildQueryParams) {
       // at startup flutter throws because of our query parameters do not map to a route it knows
       // about, so it cleared the query parameters, lets put them back
       // (but we have to wait a bit so that we don't get cleared again)
-      Future.delayed( Duration(milliseconds:150), 
-            setQueryParametersToMatchState );
+      Future.delayed(
+          Duration(milliseconds: 150), setQueryParametersToMatchState);
     }
   }
 
@@ -351,30 +354,29 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   String getStyleSummary() {
-    String style='';
-    switch(_fontListType) {
-        case FontListType.outlined:
-          style = 'Outlined';
-          break;
-        case FontListType.rounded:
-          style = 'Rounded';
-          break;
-        case FontListType.sharp:
-          style = 'Sharp';
-          break;
-        case FontListType.universal:
-          style = 'All 3 Styles';
+    String style = '';
+    switch (_fontListType) {
+      case FontListType.outlined:
+        style = 'Outlined';
+        break;
+      case FontListType.rounded:
+        style = 'Rounded';
+        break;
+      case FontListType.sharp:
+        style = 'Sharp';
+        break;
+      case FontListType.universal:
+        style = 'All 3 Styles';
     }
     return 'Showing $style';
   }
 
   TextSpan buildSummaryWidgetOfStyleAndVariation() {
     return TextSpan(
-      text: '  (${getStyleSummary()} with Fill: $_fillVariation Weight: $_weightVariation Grade: $_gradeVariation Optical Size: $_opticalSizeVariation )  ',
+      text:
+          '  (${getStyleSummary()} with Fill: $_fillVariation Weight: $_weightVariation Grade: $_gradeVariation Optical Size: $_opticalSizeVariation )  ',
       style: const TextStyle(
-          color: Colors.blue,
-          fontWeight: FontWeight.bold,
-          fontSize: 16),
+          color: Colors.blue, fontWeight: FontWeight.bold, fontSize: 16),
       children: const [
         WidgetSpan(
           child: Icon(
@@ -388,61 +390,63 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   String getIconCodeStringForCurrentSettings() {
-    return 'Icon( Symbols.settings, size: $_iconFontSize${_fillVariation!=0?', fill: $_fillVariation':''}${_weightVariation!=400?', weight: $_weightVariation':''}${_gradeVariation!=0?', grade: $_gradeVariation':''}${_opticalSizeVariation!=24?', opticalSize: $_opticalSizeVariation':''} )';
+    return 'Icon( Symbols.settings, size: $_iconFontSize${_fillVariation != 0 ? ', fill: $_fillVariation' : ''}${_weightVariation != 400 ? ', weight: $_weightVariation' : ''}${_gradeVariation != 0 ? ', grade: $_gradeVariation' : ''}${_opticalSizeVariation != 24 ? ', opticalSize: $_opticalSizeVariation' : ''} )';
   }
 
   Widget buildIconCodeSummaryWidget() {
     return Center(
-          child: SelectableText(
-             onTap: () {
-                final exampleIconCode = getIconCodeStringForCurrentSettings();
-                Clipboard.setData(
-                        ClipboardData(text: exampleIconCode))
-                    .then((_) {
-                  ScaffoldMessenger.of(context)
-                      .showSnackBar(SnackBar(
-                          content: Text(
-                              'Copied "$exampleIconCode" to the clipboard.')));
-                });
-              },
-              'eg: ${getIconCodeStringForCurrentSettings()}',
-              style: const TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.normal,
-                  fontSize: 10)));
+        child: SelectableText(onTap: () {
+      final exampleIconCode = getIconCodeStringForCurrentSettings();
+      Clipboard.setData(ClipboardData(text: exampleIconCode)).then((_) {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+            content: Text('Copied "$exampleIconCode" to the clipboard.')));
+      });
+    }, 'eg: ${getIconCodeStringForCurrentSettings()}',
+            style: const TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.normal,
+                fontSize: 10)));
   }
 
-  Widget buildPossiblyConstrainedAppBarTitle( bool constrained ) {
+  Widget buildPossiblyConstrainedAppBarTitle(bool constrained) {
     return Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            RichText(
-              text: TextSpan( text: widget.title, style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
-              ),
-            ),
-            if(!constrained) RichText(
-                text: TextSpan(text: widget.subtitle, 
-                      style: const TextStyle(color: Colors.blue, fontSize: 12, decoration: TextDecoration.underline),
-                      recognizer: TapGestureRecognizer()
-                          ..onTap = () async {
-                                  launchUrl(Uri.parse(
-                                      'https://github.com/google/material-design-icons/tree/master/variablefont'));
-                          },
-                   ),
-            ),
-            SizedBox.square(
-              dimension: 40,
-              child: IconButton(
-                color: Colors.blue,
-                onPressed: () {
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        RichText(
+          text: TextSpan(
+            text: widget.title,
+            style: const TextStyle(
+                color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
+          ),
+        ),
+        if (!constrained)
+          RichText(
+            text: TextSpan(
+              text: widget.subtitle,
+              style: const TextStyle(
+                  color: Colors.blue,
+                  fontSize: 12,
+                  decoration: TextDecoration.underline),
+              recognizer: TapGestureRecognizer()
+                ..onTap = () async {
                   launchUrl(Uri.parse(
-                      'https://pub.dev/packages/material_symbols_icons'));
+                      'https://github.com/google/material-design-icons/tree/master/variablefont'));
                 },
-                icon: const Icon(Symbols.open_in_new),
-              ),
             ),
-          ],
-        );
+          ),
+        SizedBox.square(
+          dimension: 40,
+          child: IconButton(
+            color: Colors.blue,
+            onPressed: () {
+              launchUrl(
+                  Uri.parse('https://pub.dev/packages/material_symbols_icons'));
+            },
+            icon: const Icon(Symbols.open_in_new),
+          ),
+        ),
+      ],
+    );
   }
 
   bool? configPanelExpanded;
@@ -454,8 +458,10 @@ class _MyHomePageState extends State<MyHomePage> {
     Splittable.splitWidth = 400;
     var willSplitRows = Splittable.willSplitRows(context);
     bool sizeDictatesUsingExpansionPanel = willSplitRows || (size.height < 500);
-    bool hardCodedUseExpansionPanel = size.height<2600;  // basically let's always use expanded panel
-    final bool useExpandPanel = hardCodedUseExpansionPanel || sizeDictatesUsingExpansionPanel;
+    bool hardCodedUseExpansionPanel =
+        size.height < 2600; // basically let's always use expanded panel
+    final bool useExpandPanel =
+        hardCodedUseExpansionPanel || sizeDictatesUsingExpansionPanel;
     // if we are going to use the expand panel because short then FORCE split
     if (useExpandPanel && !willSplitRows) willSplitRows = true;
 
@@ -750,7 +756,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   backgroundColor: const Color.fromARGB(255, 245, 245, 245),
                   body: Container(
                     padding: const EdgeInsets.fromLTRB(20, 8, 10, 0),
-                    child: Center( child: controlPanelColumn ),
+                    child: Center(child: controlPanelColumn),
                   ),
                   headerBuilder: (BuildContext context, bool isExpanded) {
                     return Container(
@@ -761,22 +767,22 @@ class _MyHomePageState extends State<MyHomePage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           RichText(
-                              textAlign: TextAlign.center,
-                              text: TextSpan(
-                                children: [
-                                  const TextSpan(
-                                    text:'Style & Variation settings :',
-                                    style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 18.0,
-                                    ),
-                                  ),
-                                  if(!configPanelExpanded!) buildSummaryWidgetOfStyleAndVariation(),
-                                ]
-                            ),
+                            textAlign: TextAlign.center,
+                            text: TextSpan(children: [
+                              const TextSpan(
+                                text: 'Style & Variation settings :',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18.0,
+                                ),
+                              ),
+                              if (!configPanelExpanded!)
+                                buildSummaryWidgetOfStyleAndVariation(),
+                            ]),
                           ),
-                          if(!configPanelExpanded!) buildIconCodeSummaryWidget(),
+                          if (!configPanelExpanded!)
+                            buildIconCodeSummaryWidget(),
                         ],
                       ),
                     );
@@ -803,11 +809,14 @@ class _MyHomePageState extends State<MyHomePage> {
       }
     }
     for (int j = 0; j < renamedMaterialSymbolsMapKeys.length; j++) {
-      if (renamedMaterialSymbolsMapKeys[j].toLowerCase().contains(searchString)) {
+      if (renamedMaterialSymbolsMapKeys[j]
+          .toLowerCase()
+          .contains(searchString)) {
         // get renamed name and find it's indices
-        final iconWasRenamedTo = renamedMaterialSymbolsMap[renamedMaterialSymbolsMapKeys[j]]!;  // we know this is a valid key
+        final iconWasRenamedTo = renamedMaterialSymbolsMap[
+            renamedMaterialSymbolsMapKeys[j]]!; // we know this is a valid key
         int i = iconNameList.indexOf(iconWasRenamedTo);
-        if(i!=-1 && !matchIndices.contains(i)) {
+        if (i != -1 && !matchIndices.contains(i)) {
           // add to list if it's not there already
           matchIndices.add(i);
         }
@@ -842,11 +851,12 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         toolbarHeight: 22,
         title: LayoutBuilder(
-            builder: (context, constraints) {
-              //DEBUGdebugPrint('constraints.maxWidth=${constraints.maxWidth}');
-              return buildPossiblyConstrainedAppBarTitle( (constraints.maxWidth < 640) );
-            },
-          ),
+          builder: (context, constraints) {
+            //DEBUGdebugPrint('constraints.maxWidth=${constraints.maxWidth}');
+            return buildPossiblyConstrainedAppBarTitle(
+                (constraints.maxWidth < 640));
+          },
+        ),
       ),
       body: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints viewportConstraints) {
@@ -862,13 +872,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   ...buildFlexibleOptionsCustomizationPanel(context),
-                  if(false) const Text(
-                    'Material Symbols Icons (using above settings):',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16.0,
+                  if (false)
+                    const Text(
+                      'Material Symbols Icons (using above settings):',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16.0,
+                      ),
                     ),
-                  ),
                   Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
@@ -890,59 +901,69 @@ class _MyHomePageState extends State<MyHomePage> {
                         SliverGrid(
                             delegate: SliverChildBuilderDelegate(
                               (context, index) {
-                                final iconNameForIndex = searchActive ? iconNameList[matches[index]] : iconNameList[index];
-                                final iconDataForIndex = searchActive ? iconList[matches[index]] : iconList[index];
-                                return  Center(
-                                  child: MouseRegion(
-                                cursor: SystemMouseCursors.click,
-                                onEnter: (_) => setState(() => hoveredOverIconData = iconDataForIndex),
-                                onExit: (_) => setState(() => hoveredOverIconData = null),
-                                child: GestureDetector(
-                                  onTap: () {
-                                    final iconName =
-                                        'Symbols.$iconNameForIndex';
-                                    Clipboard.setData(
-                                            ClipboardData(text: iconName))
-                                        .then((_) {
-                                      if(context.mounted) {
-                                        ScaffoldMessenger.of(context)
-                                            .showSnackBar(SnackBar(
-                                                content: Text(
-                                                    'Copied "$iconName" to the clipboard.')));
-                                      }
-                                    });
-                                  },
-                                  child: Tooltip(
-                                    message:
-                                        'Symbols.$iconNameForIndex',
-                                    child: Column(children: [
-                                      if(hoveredOverIconData == iconDataForIndex) 
-                                        VariedIcon.varied(
-                                          iconDataForIndex,
-                                          fill: _fillVariation==1.0 ? 0.0 : 1.0,   //  ON MOUSE OVER FILL !!
-                                          size: _iconFontSize,
-                                        )
-                                      else VariedIcon.varied(
-                                        iconDataForIndex,
-                                        size: _iconFontSize,
-                                      ),
-                                      if (_iconFontSize <= 64)
-                                        const SizedBox(height: 5),
-                                      if (_iconFontSize <= 64)
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                              4.0, 0.0, 4.0, 0.0),
-                                          child: Text(
-                                            iconNameForIndex,
-                                            style: const TextStyle(fontSize: 8),
-                                            textAlign: TextAlign.center,
+                                final iconNameForIndex = searchActive
+                                    ? iconNameList[matches[index]]
+                                    : iconNameList[index];
+                                final iconDataForIndex = searchActive
+                                    ? iconList[matches[index]]
+                                    : iconList[index];
+                                return Center(
+                                    child: MouseRegion(
+                                  cursor: SystemMouseCursors.click,
+                                  onEnter: (_) => setState(() =>
+                                      hoveredOverIconData = iconDataForIndex),
+                                  onExit: (_) => setState(
+                                      () => hoveredOverIconData = null),
+                                  child: GestureDetector(
+                                    onTap: () {
+                                      final iconName =
+                                          'Symbols.$iconNameForIndex';
+                                      Clipboard.setData(
+                                              ClipboardData(text: iconName))
+                                          .then((_) {
+                                        if (context.mounted) {
+                                          ScaffoldMessenger.of(context)
+                                              .showSnackBar(SnackBar(
+                                                  content: Text(
+                                                      'Copied "$iconName" to the clipboard.')));
+                                        }
+                                      });
+                                    },
+                                    child: Tooltip(
+                                      message: 'Symbols.$iconNameForIndex',
+                                      child: Column(children: [
+                                        if (hoveredOverIconData ==
+                                            iconDataForIndex)
+                                          VariedIcon.varied(
+                                            iconDataForIndex,
+                                            fill: _fillVariation == 1.0
+                                                ? 0.0
+                                                : 1.0, //  ON MOUSE OVER FILL !!
+                                            size: _iconFontSize,
+                                          )
+                                        else
+                                          VariedIcon.varied(
+                                            iconDataForIndex,
+                                            size: _iconFontSize,
                                           ),
-                                        )
+                                        if (_iconFontSize <= 64)
+                                          const SizedBox(height: 5),
+                                        if (_iconFontSize <= 64)
+                                          Padding(
+                                            padding: const EdgeInsets.fromLTRB(
+                                                4.0, 0.0, 4.0, 0.0),
+                                            child: Text(
+                                              iconNameForIndex,
+                                              style:
+                                                  const TextStyle(fontSize: 8),
+                                              textAlign: TextAlign.center,
+                                            ),
+                                          )
                                       ]),
                                     ),
                                   ),
                                 ));
-                              } ,
+                              },
                               childCount: searchActive
                                   ? matches.length
                                   : iconNameList.length,

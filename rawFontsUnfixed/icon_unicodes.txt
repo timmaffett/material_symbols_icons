@@ -270,8 +270,10 @@ f3f5  # arrow_upload_ready
 e5d8  # arrow_upward
 e986  # arrow_upward_alt
 f4b5  # arrow_warm_up
+f394  # arrows_input
 f8ab  # arrows_more_down
 f8ac  # arrows_more_up
+f393  # arrows_output
 f72c  # arrows_outward
 e060  # art_track
 ef42  # article
@@ -426,7 +428,7 @@ efdf  # bed
 efe0  # bedroom_baby
 efe1  # bedroom_child
 efe2  # bedroom_parent
-ef44  # bedtime
+f159  # bedtime
 eb76  # bedtime_off
 e52d  # beenhere
 f1f4  # bento
@@ -610,6 +612,7 @@ e8f8  # card_travel
 f4b9  # cardio_load
 e09c  # cardiology
 e991  # cards
+f375  # cards_star
 f1f8  # carpenter
 eb08  # carry_on_bag
 eb0b  # carry_on_bag_checked
@@ -696,6 +699,8 @@ f157  # clear_day
 f159  # clear_night
 f8b5  # climate_mini_split
 e09e  # clinical_notes
+f382  # clock_arrow_down
+f381  # clock_arrow_up
 f726  # clock_loader_10
 f725  # clock_loader_20
 f724  # clock_loader_40
@@ -895,6 +900,8 @@ f518  # delete_history
 e92e  # delete_outline
 e16c  # delete_sweep
 eb28  # delivery_dining
+f3a2  # delivery_truck_bolt
+f3a1  # delivery_truck_speed
 e489  # demography
 eba9  # density_large
 eb9e  # density_medium
@@ -1083,6 +1090,7 @@ f6e8  # eda
 f005  # edgesensor_high
 f006  # edgesensor_low
 f097  # edit
+f37f  # edit_arrow_up
 e578  # edit_attributes
 f42d  # edit_audio
 e742  # edit_calendar
@@ -1309,6 +1317,7 @@ f8f2  # fire_truck
 ea43  # fireplace
 e5dc  # first_page
 f77a  # fit_page
+f397  # fit_page_height
 ea10  # fit_screen
 f779  # fit_width
 eb43  # fitness_center
@@ -1346,6 +1355,7 @@ ebe6  # flood
 f6e4  # floor
 e21e  # floor_lamp
 f07d  # flourescent
+f38d  # flowchart
 e0ae  # flowsheet
 e483  # fluid
 f80d  # fluid_balance
@@ -1511,10 +1521,16 @@ f014  # gpp_maybe
 e55c  # gps_fixed
 e1b7  # gps_not_fixed
 e1b6  # gps_off
-e885  # grade
+f09a  # grade
 e3e9  # gradient
 ea4f  # grading
 e3ea  # grain
+f3a0  # graph_1
+f39f  # graph_2
+f39e  # graph_3
+f39d  # graph_4
+f39c  # graph_5
+f39b  # graph_6
 e1b8  # graphic_eq
 f205  # grass
 f015  # grid_3x3
@@ -1584,6 +1600,7 @@ f76d  # heap_snapshot_multiple
 f76c  # heap_snapshot_thumbnail
 e023  # hearing
 f464  # hearing_aid
+f3b0  # hearing_aid_disabled
 f104  # hearing_disabled
 eac2  # heart_broken
 f60a  # heart_check
@@ -1699,6 +1716,7 @@ e833  # in_home_mode
 e0fc  # inactive_order
 e156  # inbox
 f859  # inbox_customize
+f399  # inbox_text
 e79b  # incomplete_circle
 e909  # indeterminate_check_box
 f56d  # indeterminate_question_box
@@ -2038,6 +2056,7 @@ e10b  # metabolism
 f474  # metro
 f11d  # mfg_nest_yale_lock
 e31d  # mic
+f392  # mic_alert
 f5d1  # mic_double
 ef59  # mic_external_off
 ef5a  # mic_external_on
@@ -2081,6 +2100,7 @@ e7ce  # mode_of_travel
 f16f  # mode_off_on
 f037  # mode_standby
 f0cf  # model_training
+f3aa  # modeling
 e263  # monetization_on
 e57d  # money
 f3ee  # money_bag
@@ -2152,6 +2172,7 @@ f1b9  # multiple_stop
 ea36  # museum
 eb1a  # music_cast
 e405  # music_note
+f391  # music_note_add
 e440  # music_off
 e063  # music_video
 e55c  # my_location
@@ -2506,6 +2527,8 @@ f045  # pin
 e55e  # pin_drop
 e767  # pin_end
 e763  # pin_invoke
+f3ab  # pinboard
+f3ac  # pinboard_unread
 eb38  # pinch
 f1fa  # pinch_zoom_in
 f1fb  # pinch_zoom_out
@@ -2515,6 +2538,7 @@ e9ce  # pivot_table_chart
 f1db  # place
 f1f0  # place_item
 ea5a  # plagiarism
+f387  # planet
 e692  # planner_banner_ad_pt
 e694  # planner_review
 e037  # play_arrow
@@ -2618,8 +2642,8 @@ e46e  # quick_reference
 f801  # quick_reference_all
 eb15  # quick_reorder
 ef6c  # quickreply
-e1f9  # quiet_time
-e291  # quiet_time_active
+f159  # quiet_time
+eb76  # quiet_time_active
 f04c  # quiz
 f04d  # r_mobiledata
 f04e  # radar
@@ -2780,6 +2804,7 @@ f6f7  # sauna
 e161  # save
 f090  # save_alt
 eb60  # save_as
+f398  # save_clock
 ea11  # saved_search
 e2eb  # savings
 eb5f  # scale
@@ -2938,6 +2963,7 @@ e8c9  # shop
 e8ca  # shop_2
 e8ca  # shop_two
 f1cc  # shopping_bag
+f39a  # shopping_bag_speed
 e8cb  # shopping_basket
 e8cc  # shopping_cart
 eb88  # shopping_cart_checkout
@@ -2990,6 +3016,10 @@ f068  # sim_card_download
 f3e1  # simulation
 ea48  # single_bed
 f069  # sip
+f3a7  # siren
+f3a6  # siren_check
+f3a5  # siren_open
+f3a4  # siren_question
 e511  # skateboarding
 f899  # skeleton
 f543  # skillet
@@ -3243,6 +3273,8 @@ e132  # symptoms
 eab0  # synagogue
 e627  # sync
 ea18  # sync_alt
+f37c  # sync_arrow_down
+f37b  # sync_arrow_up
 f41a  # sync_desktop
 e628  # sync_disabled
 eaee  # sync_lock
@@ -3377,6 +3409,8 @@ efc0  # timer_3_alt_1
 f07b  # timer_3_select
 f4b1  # timer_5
 f4b2  # timer_5_shutter
+f378  # timer_arrow_down
+f377  # timer_arrow_up
 e426  # timer_off
 f4bb  # timer_pause
 f4ba  # timer_play
@@ -3409,6 +3443,9 @@ f1c8  # topic
 e199  # tornado
 f877  # total_dissolved_solids
 e913  # touch_app
+f38b  # touch_double
+f38a  # touch_long
+f389  # touch_triple
 f687  # touchpad_mouse
 f4e6  # touchpad_mouse_off
 ef75  # tour
@@ -3551,6 +3588,7 @@ efc6  # video_search
 ea75  # video_settings
 f081  # video_stable
 e04b  # videocam
+f390  # videocam_alert
 e04c  # videocam_off
 e338  # videogame_asset
 e500  # videogame_asset_off

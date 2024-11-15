@@ -1,5 +1,20 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2799.0
+
+* Update to version 2.799 of the material icons variable fonts released 11/15/2024 with 3774 icons
+* Added f394  # arrows_input, f393  # arrows_output, f159  # bedtime, ef44  # bedtime,f375  # cards_star,
+  f382  # clock_arrow_down, f381  # clock_arrow_up, f3a2  # delivery_truck_bolt, f3a1  # delivery_truck_speed,
+  f37f  # edit_arrow_up, f397  # fit_page_height, f38d  # flowchart, f3a0  # graph_1, f39f  # graph_2,
+  f39e  # graph_3, f39d  # graph_4, f39c  # graph_5, f39b  # graph_6, f3b0  # hearing_aid_disabled,
+  f399  # inbox_text, f392  # mic_alert, f3aa  # modeling, f391  # music_note_add, f3ab  # pinboard,
+  f3ac  # pinboard_unread, f387  # planet, f159  # quiet_time, eb76  # quiet_time_active, e1f9  # quiet_time,
+  e291  # quiet_time_active, f398  # save_clock, f39a  # shopping_bag_speed, f3a7  # siren, f3a6  # siren_check,
+  f3a5  # siren_open, f3a4  # siren_question, f37c  # sync_arrow_down, f37b  # sync_arrow_up,
+  f378  # timer_arrow_down, f377  # timer_arrow_up, f38b  # touch_double, f38a  # touch_long,
+  f389  # touch_triple, f390  # videocam_alert
+* Changed code point of `grade` from e885 to f09a  
+
 ## 4.2791.1
 
 * Total icons now 3736 after removing the two duplicated and erroneous icon names

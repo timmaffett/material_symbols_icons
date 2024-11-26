@@ -1,5 +1,14 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2800.0
+
+* Update to version 2.800 of the material icons variable fonts released 11/22/2024 with 3793 icons
+* Added f388  # brick, f386  # cloud_lock, f38e  # database_search, f385  # document_search,
+  f380  # edit_arrow_down, f396  # fit_page_width, f395  # folder_info, f37e  # hourglass_arrow_down,
+  f37d  # hourglass_arrow_up, f38c  # hourglass_pause, f36f  # match_case_off, f371  # network_intel_node,
+  f383  # page_footer, f384  # page_header, f374  # screenshot_frame_2, f370  # skull_list,
+  f37a  # thermostat_arrow_down, f379  # thermostat_arrow_up, f376  # view_apps
+
 ## 4.2799.0
 
 * Update to version 2.799 of the material icons variable fonts released 11/15/2024 with 3774 icons

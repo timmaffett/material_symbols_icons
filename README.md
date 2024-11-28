@@ -21,8 +21,8 @@ Easiest way to install the fonts (after already adding the package in your pubsp
    the corresponding font/codepoint to show the icon.  (If you do not have the font
    installed you will see a box/missing glyph symbol).
 6) Unfortunately you will need to install the new fonts with each new release
-   (or whenever there you are using a new symbol which was not in the previously
-   installed font.
+   (or whenever there you are using a new symbol which was not present in the
+   previously installed font).
 ```
 
 [Complete interactive icon map can be found here.](https://timmaffett.github.io/material_symbols_icons)

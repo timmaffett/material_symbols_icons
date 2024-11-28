@@ -1,5 +1,9 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2800.2
+
+* Update the README.md file to include some info on installing the fonts directly from the package.
+
 ## 4.2800.1
 
 * Regenerate the files with `update_package.dart -s` flag to generate the dart doc code for inline svg's that allow

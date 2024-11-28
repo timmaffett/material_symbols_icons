@@ -6,8 +6,10 @@
 
 The dart docs and vscode hover docs now include icon preview (if you install [the
 three MaterialSymbols*.ttf fonts](https://github.com/google/material-design-icons/tree/master/variablefont) locally on your machine).
+
 ```
-Easiest way to install the fonts (after already adding the package in your pubspec.yaml):
+To enable icon preview within VSCode you must install the 3 MaterialSymbolsXXXX.ttf font files.
+The easiest way to install the fonts (after already adding the package in your pubspec.yaml) is to:
 1) Follow a Symbols.XXXX identifier with right click 'Go to Definition [F12]'
    in VSCode to the symbols.dart file.
 2) Right click on symbols.dart tab and select 'Reveal in Finder' (OSX) or 

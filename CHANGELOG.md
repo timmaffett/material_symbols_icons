@@ -1,5 +1,11 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2800.1
+
+* Regenerate the files with `update_package.dart -s` flag to generate the dart doc code for inline svg's that allow
+  icon preview when the fonts are installed locally.  I had been missing this when generating the dart docs
+  for some time !?
+
 ## 4.2800.0
 
 * Update to version 2.800 of the material icons variable fonts released 11/22/2024 with 3793 icons

@@ -176,7 +176,7 @@ Map<String, String> renamedSymbolsToAugmentMap = {};
 ///
 /// Once the fonts have been corrected in their github repository this step will not be required.
 ///
-/// THIS IS NON-IDEAL (obvisouly!!) - and we have submitted a issue to the material symbols github repo
+/// THIS IS NON-IDEAL (obviously!!) - and we have submitted a issue to the material symbols github repo
 /// If this is not done then Flutter renders the icons lower in the text box then they should be
 /// (ie. *not centered*).
 const pathToWriteTTFFiles = '../rawFontsUnfixed/';
@@ -405,7 +405,6 @@ Future<void> main(List<String> args) async {
 /// NOTE:  The 'outlined', 'rounded' and 'sharp' versions of the Material Symbols Icon fonts all share
 ///   the same codepoints for each named icon.  Within the Symbols.XXXX map the 'rounded' and 'sharp'
 ///   versions of each icon share these SAME NAMES, but with the word '_rounded' or '_sharp' appended.
-///   versions of each icon share these SAME NAMES, but with the word '_rounded' or '_sharp' appended.
 ///   Only the base name is included in the following map.
 Map<String, int> materialSymbolsIconNameToUnicodeMap = {
 ''');
@@ -488,47 +487,6 @@ ${parser.usage}
 void writeCombinedSourceFile(
     List<MaterialSymbolsVariableFont> fontinfoList, String sourceFilename,
     {bool suffixVersion = true}) {
-/*OBSOLETE - dart doc is FIXED!!!!
-  StringBuffer getFakeDartDocsForIconNames() {
-    final fakeDartDocs = StringBuffer();
-
-    fakeDartDocs.writeln(
-        '/// NOTE: IMPORTANT - Because of the current gross inefficiencies of dart doc ALL icon member names');
-    fakeDartDocs.writeln(
-        '/// have to be marked with `@ nodoc` because it generates 12gigs of redundant data.  (This is caused');
-    fakeDartDocs.writeln(
-        '/// by dart doc including a repeated sidebar of all class members within every class members file).');
-    fakeDartDocs.writeln('///');
-    fakeDartDocs
-        .writeln('/// The icons and corresponding symbols names follow:');
-    fakeDartDocs.writeln('///');
-
-    // all font flavors should have same number of codepoints
-    int? lastCount;
-    for (final fontinfo in fontinfoList) {
-      if (lastCount != null) {
-        assert(fontinfo.iconInfoList.length == lastCount);
-      }
-      lastCount = fontinfo.iconInfoList.length;
-    }
-
-    for (int i = 0; i < lastCount!; i++) {
-      for (final fontinfo in fontinfoList) {
-        final iconInfo = fontinfo.iconInfoList[i];
-        var iconname = iconInfo.iconName;
-
-        if (suffixVersion && fontinfo.flavor != 'outlined') {
-          iconname = '${iconname}_${fontinfo.flavor}';
-        }
-        fakeDartDocs.writeln('///');
-        fakeDartDocs.writeln(
-            '/// <span class="material-symbols-${fontinfo.flavor}">${iconInfo.originalIconName}</span> Symbols.$iconname');
-      }
-    }
-    return fakeDartDocs;
-  }
-OBSOLETE */
-  //OBSOLETEfinal fakeDartDocs = fakeDartDocsFlag ? getFakeDartDocsForIconNames() : '';
 
   final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
 //

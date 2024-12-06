@@ -1,5 +1,10 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2801.0
+
+* Update to version 2.801 of the material icons variable fonts released 12/05/2024 with 3797 icons
+* Added f36d  # boat_bus, f36c  # boat_railway, f36b  # bus_railway, ecb3  # crown
+
 ## 4.2800.2
 
 * Update the README.md file to include some info on installing the fonts directly from the package.

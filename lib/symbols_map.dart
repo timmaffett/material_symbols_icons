@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-11-27 20:12:15.660771 by the dart file
+// This file was generated 2024-12-06 08:32:27.114459 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -1429,6 +1429,12 @@ Map<String, IconData> materialSymbolsMap = {
   'blur_short': Symbols.blur_short,
   'blur_short_rounded': Symbols.blur_short_rounded,
   'blur_short_sharp': Symbols.blur_short_sharp,
+  'boat_bus': Symbols.boat_bus,
+  'boat_bus_rounded': Symbols.boat_bus_rounded,
+  'boat_bus_sharp': Symbols.boat_bus_sharp,
+  'boat_railway': Symbols.boat_railway,
+  'boat_railway_rounded': Symbols.boat_railway_rounded,
+  'boat_railway_sharp': Symbols.boat_railway_sharp,
   'body_fat': Symbols.body_fat,
   'body_fat_rounded': Symbols.body_fat_rounded,
   'body_fat_sharp': Symbols.body_fat_sharp,
@@ -1702,6 +1708,9 @@ Map<String, IconData> materialSymbolsMap = {
   'bus_alert': Symbols.bus_alert,
   'bus_alert_rounded': Symbols.bus_alert_rounded,
   'bus_alert_sharp': Symbols.bus_alert_sharp,
+  'bus_railway': Symbols.bus_railway,
+  'bus_railway_rounded': Symbols.bus_railway_rounded,
+  'bus_railway_sharp': Symbols.bus_railway_sharp,
   'business': Symbols.business,
   'business_rounded': Symbols.business_rounded,
   'business_sharp': Symbols.business_sharp,
@@ -2594,6 +2603,9 @@ Map<String, IconData> materialSymbolsMap = {
   'crowdsource': Symbols.crowdsource,
   'crowdsource_rounded': Symbols.crowdsource_rounded,
   'crowdsource_sharp': Symbols.crowdsource_sharp,
+  'crown': Symbols.crown,
+  'crown_rounded': Symbols.crown_rounded,
+  'crown_sharp': Symbols.crown_sharp,
   'cruelty_free': Symbols.cruelty_free,
   'cruelty_free_rounded': Symbols.cruelty_free_rounded,
   'cruelty_free_sharp': Symbols.cruelty_free_sharp,

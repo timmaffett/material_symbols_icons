@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-11-27 20:12:15.682217 by the dart file
+// This file was generated 2024-12-06 08:32:27.137452 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -23,7 +23,6 @@
 // BEGIN GENERATED static array
 /// NOTE:  The 'outlined', 'rounded' and 'sharp' versions of the Material Symbols Icon fonts all share
 ///   the same codepoints for each named icon.  Within the Symbols.XXXX map the 'rounded' and 'sharp'
-///   versions of each icon share these SAME NAMES, but with the word '_rounded' or '_sharp' appended.
 ///   versions of each icon share these SAME NAMES, but with the word '_rounded' or '_sharp' appended.
 ///   Only the base name is included in the following map.
 Map<String, int> materialSymbolsIconNameToUnicodeMap = {
@@ -553,6 +552,8 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'blur_off': 0xe3a4,
   'blur_on': 0xe3a5,
   'blur_short': 0xe8cf,
+  'boat_bus': 0xf36d,
+  'boat_railway': 0xf36c,
   'body_fat': 0xe098,
   'body_system': 0xe099,
   'bolt': 0xea0b,
@@ -644,6 +645,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'bungalow': 0xe591,
   'burst_mode': 0xe43c,
   'bus_alert': 0xe98f,
+  'bus_railway': 0xf36b,
   'business': 0xe7ee,
   'business_center': 0xeb3f,
   'business_chip': 0xf84c,
@@ -942,6 +944,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'crop_square': 0xe3c6,
   'crossword': 0xf5e5,
   'crowdsource': 0xeb18,
+  'crown': 0xecb3,
   'cruelty_free': 0xe799,
   'css': 0xeb93,
   'csv': 0xe6cf,

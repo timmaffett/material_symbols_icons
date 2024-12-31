@@ -1,5 +1,10 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2801.1
+
+* Fix update_package.dart so that the generated `symbols_map.dart` file matches the dart format output and
+  package does not get docked for having file that does not match dart format.
+
 ## 4.2801.0
 
 * Update to version 2.801 of the material icons variable fonts released 12/05/2024 with 3797 icons

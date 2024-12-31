@@ -184,7 +184,7 @@
 
 ## 4.2744.2
 
-* Added `data-XXX` attributes to the <span> tags for each IconData member.  This information
+* Added `data-XXX` attributes to the `<span>` tags for each IconData member.  This information
   includes `data-fontfamily`, `data-codepoint` and `data-variation`.  This will allow my
   modifications to the VSCode dart/flutter extension to show icon previews for any icon
   package which includes this info (PR for [Dart-Code](https://github.com/Dart-Code/Dart-Code) to come).

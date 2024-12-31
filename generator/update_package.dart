@@ -11,7 +11,7 @@ import 'dart:io';
 import 'package:args/args.dart';
 import 'package:path/path.dart' as path;
 
-///  This program goes to the https://github.com/google/material-design-icons repository and retreives the variable fonts and codepoint information
+///  This program goes to the https://github.com/google/material-design-icons repository and retrieves the variable fonts and codepoint information
 /// for the Material Symbols Icon fonts
 ///
 /// https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints

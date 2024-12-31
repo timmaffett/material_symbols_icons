@@ -50,7 +50,7 @@ Map<String, String>? startupQueryParameters;
 
 void main() {
   // prevent engine from removing query url parameters
-  setUrlStrategy(PathUrlStrategy());
+  setUrlStrategy(const PathUrlStrategy());
 
   // we need to grab these now because startup inside flutter will
   // throw exception for unknown route and clear our query parameters
@@ -276,7 +276,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // about, so it cleared the query parameters, lets put them back
       // (but we have to wait a bit so that we don't get cleared again)
       Future.delayed(
-          Duration(milliseconds: 150), setQueryParametersToMatchState);
+          const Duration(milliseconds: 150), setQueryParametersToMatchState);
     }
   }
 

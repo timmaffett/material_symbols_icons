@@ -792,7 +792,7 @@ Map<String, String> renamedMaterialSymbolsMap = {
   }
   sourceFileContent.writeln('};');
   // write the additional renamed icons info
-  sourceFileContent.writeln(renamedIconsContent);
+  sourceFileContent.write(renamedIconsContent);
   sourceFileContent.writeln('};');
   sourceFileContent.writeln('// END GENERATED ICONS');
 

@@ -11738,6 +11738,5 @@ Map<String, String> renamedMaterialSymbolsMap = {
   'try': 'try_sms_star',
   'try_rounded': 'try_sms_star_rounded',
   'try_sharp': 'try_sms_star_sharp',
-
 };
 // END GENERATED ICONS

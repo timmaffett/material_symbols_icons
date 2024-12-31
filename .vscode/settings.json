@@ -1,3 +1,7 @@
 {
-    "cmake.sourceDirectory": "C:/src/material_symbols_icons/example/linux"
+    "cmake.sourceDirectory": "C:/src/material_symbols_icons/example/linux",
+    "cSpell.words": [
+        "fontinfo",
+        "iconname"
+    ]
 }

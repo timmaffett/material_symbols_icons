@@ -29,10 +29,10 @@ is that this is a NO FIX - as I suspected it might be - for compatibility with a
 -----
 Steps to update package when new fonts are released.
 
-0.5) cd to \generator
+0.5) cd to `\generator`
 1) `dart run update_package.dart -s -d` 
 2) figure out source font version number with `ttx -s oneofthefonts.ttf`
-    (cd ~/source/fonttools; copy font there 
+    (`cd ~/source/fonttools`; copy font there 
       `cp /mnt/c/src/material_symbols_icons/rawFontsUnfixed/MaterialSymbolsOutline*.ttf .`
      and then ttx).
     (version number found at `fontRevision` entry in `MaterialSymbolsXXXXX._h_e_a_d.ttx`)

@@ -79,7 +79,6 @@
   Added original material symbols icons names which had to be renamed for dart to
   `materialSymbolsIconNameToUnicodeMap` map in `iconname_to_unicode_map.dart`
 
-
 ## 4.2789.0
 
 * Update to version 2.789 of the material icons variable fonts released 10/11/2024 with 3709 icons

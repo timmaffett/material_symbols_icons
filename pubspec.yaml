@@ -1,12 +1,15 @@
 name: material_symbols_icons
 description: Full flutter support for latest Google Material Symbols Icons.
-version: 4.2801.1
+version: 4.2801.2
 homepage: https://github.com/timmaffett/material_symbols_icons
 screenshots:
   - description: 'example flutter material symbols icon browser'
     path: media/example.png
   - description: 'google material symbols icon browser'
     path: media/google_icon_fonts.png
+
+executables:
+  install_material_symbols_icons_fonts:
 
 environment:
   sdk: '>=2.19.0 <4.0.0'
@@ -16,12 +19,15 @@ dependencies:
   flutter:
     sdk: flutter
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.1
-  args: ^2.3.1
-  path: ^1.8.3
+  args: ^2.6.0
+  path: ^1.9.1
+  glob: ^2.1.2
+  chalkdart: ^2.2.1
 
 flutter:
   fonts:

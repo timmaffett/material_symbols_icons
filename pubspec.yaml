@@ -18,14 +18,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  args: ^2.6.0
+  path: ^1.9.1
+  chalkdart: ^2.2.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.1
-  args: ^2.6.0
-  path: ^1.9.1
-  chalkdart: ^2.2.1
 
 flutter:
   fonts:

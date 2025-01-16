@@ -67,14 +67,11 @@ void main(List<String> args) async {
       help:
           'Debug scripts.',
     )
-    //NOT NEEDED//..addOption(
-    //NOT NEEDED//  _Options.path.name,
-    //NOT NEEDED//  defaultsTo: './bin',
-    //NOT NEEDED//  help: 'Path to the scripts directory.',
-    //NOT NEEDED//)
-    ;
-  if(Platform.isMacOS) {
-      parser..addFlag(
+    ..addOption(
+      Options.path.name,
+      defaultsTo: './bin',
+      help: 'Path to the scripts directory.',
+    )..addFlag(
       Options.global.name,
       defaultsTo: false,
       negatable: false,
@@ -87,17 +84,13 @@ void main(List<String> args) async {
       negatable: false,
       help:
           'MacOS specific flag to additionally validate fonts using FontBook.',
-    );
-  }
-  if(Platform.isWindows) {
-    parser.addFlag(
+    )..addFlag(
       Options.uninstall.name,
       defaultsTo: false,
       negatable: false,
       help:
           'Uninstall the material symbols icons fonts.',
     );
-  }
 
   late final ArgResults parsedArgs;
 
@@ -237,7 +230,7 @@ void runShellInstallFontsScriptLinux() {
   if(macOSUseFontBook) {
     scriptName = 'install-fonts-withFontBook.sh';
   }
-  final scriptPath = path.join(rootDir, scriptName);  
+  final scriptPath = path.join('..', '..', 'bin', scriptName);
   final fontWorkingDir = path.join(rootDir, '..', 'lib', 'fonts' );
   //print(chalk.red('scriptPath=$scriptPath  fontWorkingDir=$fontWorkingDir'));  
   final processResult = Process.runSync(
@@ -256,7 +249,7 @@ void runShellInstallFontsScriptGloballyOnMacOS() {
   if(macOSUseFontBook) {
     scriptName = 'install-fonts-macAlt-withFontBook.sh';
   }
-  final scriptPath = path.join(rootDir, scriptName);
+  final scriptPath = path.join('..', '..', 'bin', scriptName);
   final fontWorkingDir = path.join(rootDir, '..', 'lib', 'fonts' );
   //print(chalk.red('scriptPath=$scriptPath  fontWorkingDir=$fontWorkingDir'));
   final processResult = Process.runSync(

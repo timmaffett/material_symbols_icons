@@ -1,5 +1,9 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2801.3
+
+* Fixes to `install_material_symbols_icons_fonts` command
+
 ## 4.2801.2
 
 * Add support for `dart pub global activate material_symbols_icons` and `install_material_symbols_icons_fonts` command

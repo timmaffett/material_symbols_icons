@@ -8,9 +8,12 @@ Icon previews are supported in VSCode.
 
 ### To enable icon preview within VSCode you can execute the following commands to install the fonts:
 ```
-dart pub global activate material_symbols_icons --overwrite
+dart pub global activate material_symbols_icons
+                           [this only needs to be done once to activate
+                                the install_material_symbols_icons_fonts command]
 install_material_symbols_icons_fonts  
-                          [execute any time you wish to update the icons/fonts to the current package version]
+                           [execute any time you wish to update the icon fonts
+                                to the latest package versions]
 ```
 
 ### [Complete interactive icon map can be found here.](https://timmaffett.github.io/material_symbols_icons)

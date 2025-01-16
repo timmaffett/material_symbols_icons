@@ -10,10 +10,11 @@ Icon previews are supported in VSCode.
 ```
 dart pub global activate material_symbols_icons
                            [this only needs to be done once to activate
-                                the install_material_symbols_icons_fonts command]
+                                the install_material_symbols_icons_fonts command.]
 install_material_symbols_icons_fonts  
-                           [execute any time you wish to update the icon fonts
-                                to the latest package versions]
+                           [execute once to install the material symbols icons fonts and
+                                again any time you wish to update the icon fonts
+                                to the latest package versions.]
 ```
 
 ### [Complete interactive icon map can be found here.](https://timmaffett.github.io/material_symbols_icons)

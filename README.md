@@ -4,10 +4,9 @@
 
 ### Using Official Material Symbols Icons variable fonts version 2.801 released 12/05/2024 from [material font repo](https://github.com/google/material-design-icons) with 3797  icons.
 
-The dart docs and vscode hover docs now include icon preview (if you install [the
-three MaterialSymbols*.ttf fonts](https://github.com/google/material-design-icons/tree/master/variablefont) locally on your machine).
+Icon previews are supported in VSCode.
 
-### To enable icon preview within VSCode you can execute the following to install the fonts:
+### To enable icon preview within VSCode you can execute the following commands to install the fonts:
 ```
 dart pub global activate material_symbols_icons            [this must only be executed once to activate the
                                                                  install_material_symbols_icons_fonts command]

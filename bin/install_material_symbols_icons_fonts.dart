@@ -35,7 +35,7 @@ enum Options {
 bool globalMacOSInstall = false;
 bool macOSUseFontBook = false;
 bool debugScripts = true;
-String rootDir = '.';
+String rootDir = './bin';
 
 void main(List<String> args) async {
   final parser = ArgParser()
@@ -118,9 +118,9 @@ void main(List<String> args) async {
     return;
   }
 
-  if (parsedArgs[Options.path.name] != '.') {
+  if (parsedArgs[Options.path.name] != './bin') {
     rootDir = parsedArgs[Options.path.name];
-    //print('Got path arg $rootDir');
+    print('Got path arg $rootDir');
   } else {
     final pathToScript = Platform.script.toFilePath();
     rootDir = path.dirname(pathToScript);

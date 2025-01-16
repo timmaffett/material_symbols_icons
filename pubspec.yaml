@@ -8,9 +8,6 @@ screenshots:
   - description: 'google material symbols icon browser'
     path: media/google_icon_fonts.png
 
-executables:
-  install_material_symbols_icons_fonts:
-
 environment:
   sdk: '>=2.19.0 <4.0.0'
   flutter: '>=3.7.0'
@@ -41,3 +38,6 @@ flutter:
       fonts:
        - asset: lib/fonts/MaterialSymbolsSharp.ttf
     
+executables:
+  install_material_symbols_icons_fonts:
+

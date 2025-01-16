@@ -1,5 +1,10 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2801.2
+
+* Add support for `dart pub global activate material_symbols_icons` and `install_material_symbols_icons_fonts` command
+  to automatically install the fonts on windows, macos and linux to support VSCode icon previews.
+
 ## 4.2801.1
 
 * Fix update_package.dart so that the generated `symbols_map.dart` file matches the dart format output and

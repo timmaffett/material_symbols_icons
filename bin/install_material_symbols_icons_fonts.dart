@@ -15,6 +15,8 @@
 import 'dart:io';
 import 'package:chalkdart/chalk.dart';
 import 'package:args/args.dart';
+import 'package:glob/glob.dart';
+import 'package:glob/list_local_fs.dart';
 import 'package:path/path.dart' as path;
 
 enum Options {
@@ -34,8 +36,45 @@ enum Options {
 
 bool globalMacOSInstall = false;
 bool macOSUseFontBook = false;
-bool debugScripts = true;
+bool debugScripts = false;
 String rootDir = './bin';
+
+// We need to get to the files of the LATEST material_symbols_icons package that is in the pub cache
+String getRootPathsToLatestInstalledPackage() {
+  final pathToScript = Platform.script.toFilePath();
+  rootDir = path.dirname(pathToScript);
+
+  // following for testing
+  if(!rootDir.contains('global_packages')) {
+    rootDir = r"C:\Users\Tim\AppData\Local\Pub\Cache\global_packages\dart_frog_cli\bin";
+  }
+
+  String pubDevPackagesDir = path.join(rootDir, '..', '..', '..', 'hosted', 'pub.dev');
+
+  print('pubDevPackagesDir=$pubDevPackagesDir');
+
+  final packageDirs = Glob('material_symbols_icons-*', caseSensitive:false, recursive:false);
+  final baseToChop = 'material_symbols_icons-';
+
+  final listFSE = packageDirs.listSync(root:pubDevPackagesDir);
+  String highestVersion = '4.2600.0';
+  String latestPackageDir = '';
+
+  for(final fse in listFSE) {
+    String dirName = fse.basename;
+    String version = dirName.substring(baseToChop.length);
+    //print('Found directory $dirName version=$version');
+    if(version.length>=8) {
+      if(version.compareTo(highestVersion)>0) {
+        highestVersion = version;
+        latestPackageDir = fse.path;
+      }
+    }
+  }
+  print('Highest Version = $highestVersion');
+  print('latestPackageDir = $latestPackageDir');
+  return path.join(latestPackageDir, 'bin');
+}
 
 void main(List<String> args) async {
   final parser = ArgParser()
@@ -127,6 +166,8 @@ void main(List<String> args) async {
     print('Got pathToScript=$pathToScript arg $rootDir  curdir=${Directory.current.path}');
   }
   print(chalk.yellowBright('Root directory: $rootDir'));
+
+  rootDir = getRootPathsToLatestInstalledPackage();
 
   if (parsedArgs[Options.uninstall.name] == true) {
     print(chalk.yellowBright('Uninstalling Material Symbols Icons fonts...'));

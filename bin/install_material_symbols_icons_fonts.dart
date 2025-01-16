@@ -124,7 +124,7 @@ void main(List<String> args) async {
   } else {
     final pathToScript = Platform.script.toFilePath();
     rootDir = path.dirname(pathToScript);
-    //print('Got pathToScript=$pathToScript arg $rootDir');
+    print('Got pathToScript=$pathToScript arg $rootDir  curdir=${Directory.current.path}');
   }
   print(chalk.yellowBright('Root directory: $rootDir'));
 
@@ -230,7 +230,7 @@ void runShellInstallFontsScriptLinux() {
   if(macOSUseFontBook) {
     scriptName = 'install-fonts-withFontBook.sh';
   }
-  final scriptPath = path.join('..', '..', 'bin', scriptName);
+  final scriptPath = path.join(rootDir, scriptName);//path.join('..', '..', 'bin', scriptName);
   final fontWorkingDir = path.join(rootDir, '..', 'lib', 'fonts' );
   //print(chalk.red('scriptPath=$scriptPath  fontWorkingDir=$fontWorkingDir'));  
   final processResult = Process.runSync(
@@ -249,7 +249,7 @@ void runShellInstallFontsScriptGloballyOnMacOS() {
   if(macOSUseFontBook) {
     scriptName = 'install-fonts-macAlt-withFontBook.sh';
   }
-  final scriptPath = path.join('..', '..', 'bin', scriptName);
+  final scriptPath = path.join(rootDir, scriptName);//path.join('..', '..', 'bin', scriptName);
   final fontWorkingDir = path.join(rootDir, '..', 'lib', 'fonts' );
   //print(chalk.red('scriptPath=$scriptPath  fontWorkingDir=$fontWorkingDir'));
   final processResult = Process.runSync(

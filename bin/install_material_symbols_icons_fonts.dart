@@ -1,4 +1,4 @@
-//  Copyright 2023 Google LLC
+//  Copyright 2025 Tim Maffett
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -14,71 +14,90 @@
 
 import 'dart:io';
 import 'package:chalkdart/chalk.dart';
-import 'package:chalkdart/chalk_x11.dart';
 import 'package:args/args.dart';
-import 'package:glob/glob.dart';
 import 'package:path/path.dart' as path;
 
-enum _Options {
+enum Options {
   install('install'),
   uninstall('uninstall'),
   global('global'),
+  usefontbook('usefontbook'),
   usage('usage'),
   help('help'),
   debug('debug'),
   path('path');
 
-  const _Options(this.name);
+  const Options(this.name);
 
   final String name;
 }
 
-bool debugScripts = false;
+bool globalMacOSInstall = false;
+bool macOSUseFontBook = false;
+bool debugScripts = true;
 String rootDir = '.';
 
 void main(List<String> args) async {
   final parser = ArgParser()
     ..addFlag(
-      _Options.usage.name,
+      Options.usage.name,
       defaultsTo: false,
+      negatable: false,
       help:
-          'Prints help on how to use the command. The same as --${_Options.usage.name}.',
+          'Prints help on how to use the command. The same as --${Options.usage.name}.',
     )
     ..addFlag(
-      _Options.help.name,
+      Options.help.name,
       defaultsTo: false,
+      negatable: false,
       help:
-          'Prints help on how to use the command. The same as --${_Options.help.name}.',
+          'Prints help on how to use the command. The same as --${Options.help.name}.',
     )
     ..addFlag(
-      _Options.install.name,
+      Options.install.name,
       defaultsTo: true,
+      negatable: false,
       help:
           'Install the material symbols icons fonts - optional as it is the default.',
     )
     ..addFlag(
-      _Options.uninstall.name,
+      Options.debug.name,
       defaultsTo: false,
-      help:
-          'Uninstall the material symbols icons fonts.',
-    )
-    //NOT SUPPORTED YET//..addFlag(
-    //NOT SUPPORTED YET//  _Options.global.name,
-    //NOT SUPPORTED YET//  defaultsTo: false,
-    //NOT SUPPORTED YET//  help:
-    //NOT SUPPORTED YET//      'MacOS specific flag to specify installing the fonts globally in /Library/Fonts instead of ~/Library/Fonts .',
-    //NOT SUPPORTED YET//)
-    ..addFlag(
-      _Options.debug.name,
-      defaultsTo: false,
+      negatable: false,
       help:
           'Debug scripts.',
     )
-    ..addOption(
-      _Options.path.name,
-      defaultsTo: '.',
-      help: 'Path to the script directory.',
+    //NOT NEEDED//..addOption(
+    //NOT NEEDED//  _Options.path.name,
+    //NOT NEEDED//  defaultsTo: './bin',
+    //NOT NEEDED//  help: 'Path to the scripts directory.',
+    //NOT NEEDED//)
+    ;
+  if(Platform.isMacOS) {
+      parser..addFlag(
+      Options.global.name,
+      defaultsTo: false,
+      negatable: false,
+      help:
+          'MacOS specific flag to specify installing the fonts globally in /Library/Fonts instead of ~/Library/Fonts .',
+    )
+    ..addFlag(
+      Options.usefontbook.name,
+      defaultsTo: false,
+      negatable: false,
+      help:
+          'MacOS specific flag to additionally validate fonts using FontBook.',
     );
+  }
+  if(Platform.isWindows) {
+    parser.addFlag(
+      Options.uninstall.name,
+      defaultsTo: false,
+      negatable: false,
+      help:
+          'Uninstall the material symbols icons fonts.',
+    );
+  }
 
   late final ArgResults parsedArgs;
 
@@ -90,82 +109,86 @@ void main(List<String> args) async {
     return;
   }
 
-  if (parsedArgs[_Options.debug.name] == true) {
+  if (parsedArgs[Options.debug.name] == true) {
     debugScripts = true;
   }
+  if (parsedArgs[Options.global.name] == true) {
+    globalMacOSInstall = true;
+  }
+  if (parsedArgs[Options.usefontbook.name] == true) {
+    macOSUseFontBook = true;
+  }
 
-  if (parsedArgs[_Options.usage.name] == true ||
-      parsedArgs[_Options.help.name] == true) {
+  if (parsedArgs[Options.usage.name] == true ||
+      parsedArgs[Options.help.name] == true) {
     print(parser.usage);
     return;
   }
 
-  if (parsedArgs[_Options.path.name] != '.') {
-    rootDir = parsedArgs[_Options.path.name];
-    print('Got path arg $rootDir');
+  if (parsedArgs[Options.path.name] != '.') {
+    rootDir = parsedArgs[Options.path.name];
+    //print('Got path arg $rootDir');
   } else {
     final pathToScript = Platform.script.toFilePath();
     rootDir = path.dirname(pathToScript);
-    print('Got pathToScript=$pathToScript arg $rootDir');
+    //print('Got pathToScript=$pathToScript arg $rootDir');
   }
-  print(chalk.purple('Root directory: $rootDir'));
+  print(chalk.yellowBright('Root directory: $rootDir'));
 
-  if (parsedArgs[_Options.uninstall.name] == true) {
-    print(chalk.yellow('Uninstalling Material Symbols Icons fonts...'));
+  if (parsedArgs[Options.uninstall.name] == true) {
+    print(chalk.yellowBright('Uninstalling Material Symbols Icons fonts...'));
     uninstallMaterialSymbolsIconsFonts();
   } else {
-    print(chalk.green('Uninstalling Material Symbols Icons fonts...'));
+    print(chalk.greenBright('Installing Material Symbols Icons fonts...'));
     installMaterialSymbolsIconsFonts();
   }
 }
 
 void installMaterialSymbolsIconsFonts() {
-  print(chalk.pink('running on ${Platform.operatingSystem}'));
+  print(chalk.cyanBright('running on ${Platform.operatingSystem}'));
   switch (Platform.operatingSystem) {
     case 'windows':
       installMaterialSymbolsIconsFontWindows();
       break;
     case 'macos':
-      print(chalk.red('Installing Material Symbols Icons fonts is not supported on MacOS yet.'));
       installMaterialSymbolsIconsFontMacOS();
       break;
     case 'linux':
-      print(chalk.red('Installing Material Symbols Icons fonts is not supported on Linux yet.'));
       installMaterialSymbolsIconsFontLinux();
       break;
     default:
-      print(chalk.red('Unsupported operating system: ${Platform.operatingSystem}'));
+      print(chalk.redBright('Unsupported operating system: ${Platform.operatingSystem}'));
   }
 }
 void uninstallMaterialSymbolsIconsFonts() {
-  print(chalk.pink('running on ${Platform.operatingSystem}'));
+  print(chalk.cyanBright('running on ${Platform.operatingSystem}'));
   switch (Platform.operatingSystem) {
     case 'windows':
       uninstallMaterialSymbolsIconsFontWindows();
       break;
     case 'macos':
-      print(chalk.red('Uninstalling Material Symbols Icons fonts is not supported on MacOS yet.'));
+      print(chalk.redBright('Uninstalling Material Symbols Icons fonts is not supported on MacOS yet.'));
       //uninstallMaterialSymbolsIconsFontMacOS();
       break;
     case 'linux':
-      print(chalk.red('Uninstalling Material Symbols Icons fonts is not supported on Linux yet.'));
+      print(chalk.redBright('Uninstalling Material Symbols Icons fonts is not supported on Linux yet.'));
       //uninstallMaterialSymbolsIconsFontLinux();
       break;
     default:
-      print(chalk.red('Unsupported operating system: ${Platform.operatingSystem}'));
+      print(chalk.redBright('Unsupported operating system: ${Platform.operatingSystem}'));
   }
 }
 
 //Windows specific functions
 void installMaterialSymbolsIconsFontWindows() {
-  print(chalk.pink('running powershell scripts to install Material Symbols Icons fonts...'));
+  print(chalk.cyanBright('running powershell scripts to install Material Symbols Icons fonts...'));
   runPowerShellInstallFont(r'..\lib\fonts\MaterialSymbolsOutlined.ttf');
   runPowerShellInstallFont(r'..\lib\fonts\MaterialSymbolsRounded.ttf');
   runPowerShellInstallFont(r'..\lib\fonts\MaterialSymbolsSharp.ttf');
 }
 
 void uninstallMaterialSymbolsIconsFontWindows() {
-  print(chalk.pink('running powershell scripts to UNINSTALL Material Symbols Icons fonts...'));
+  print(chalk.cyanBright('running powershell scripts to UNINSTALL Material Symbols Icons fonts...'));
   runPowerShellUninstallFont(r'..\lib\fonts\MaterialSymbolsOutlined.ttf');
   runPowerShellUninstallFont(r'..\lib\fonts\MaterialSymbolsRounded.ttf');
   runPowerShellUninstallFont(r'..\lib\fonts\MaterialSymbolsSharp.ttf');
@@ -176,9 +199,9 @@ void runPowerShellInstallFont(String fontNameWithRelativePath) {
   final fontname = path.basename(path.withoutExtension(fontNameWithRelativePath));
   final numberFacesInstalled = int.tryParse(result);
   if(numberFacesInstalled != null && numberFacesInstalled > 0) {
-    print(chalk.green('$fontname font was successfully installed ($numberFacesInstalled faces installed).'));
+    print(chalk.greenBright('$fontname font was successfully installed ($numberFacesInstalled faces installed).'));
   } else {
-    print(chalk.red('$fontname font was not installed likely because the font $fontNameWithRelativePath was not found.'));
+    print(chalk.redBright('$fontname font was not installed likely because the font $fontNameWithRelativePath was not found.'));
   }
 }
 
@@ -186,9 +209,9 @@ void runPowerShellUninstallFont(String fontNameWithRelativePath) {
   var result = runPowerShellScriptOneArg(r'.\Uninstall-Font.ps1', fontNameWithRelativePath);
   final fontname = path.basename(path.withoutExtension(fontNameWithRelativePath));
   if(result.toLowerCase().contains('True'.toLowerCase())) {
-    print(chalk.green('$fontname font was successfully uninstalled.'));
+    print(chalk.greenBright('$fontname font was successfully uninstalled.'));
   } else {
-    print(chalk.red('$fontname font was not uninstalled because it was not currently installed.'));
+    print(chalk.redBright('$fontname font was not uninstalled because it was not currently installed.'));
   }
 }
 
@@ -202,67 +225,72 @@ String runPowerShellScript(String scriptPath, List<String> argumentsToScript) {
           workingDirectory: rootDir //path.join(Directory.current.path, 'bin')
         );
   if(debugScripts) {
-    print(chalk.yellow('Executing $scriptPath with $argumentsToScript'));
-    print(chalk.red(processResult.stderr as String));
-    print(chalk.blue(processResult.stdout as String));
+    print(chalk.yellowBright('Executing $scriptPath with $argumentsToScript'));
+    print(chalk.redBright(processResult.stderr as String));
+    print(chalk.blueBright(processResult.stdout as String));
   }
   return processResult.stdout as String;
 }
 
 void runShellInstallFontsScriptLinux() {
+  String scriptName = 'install-fonts.sh';
+  if(macOSUseFontBook) {
+    scriptName = 'install-fonts-withFontBook.sh';
+  }
+  final scriptPath = path.join(rootDir, scriptName);  
+  final fontWorkingDir = path.join(rootDir, '..', 'lib', 'fonts' );
+  //print(chalk.red('scriptPath=$scriptPath  fontWorkingDir=$fontWorkingDir'));  
   final processResult = Process.runSync(
-          'sh', [ path.join(rootDir, 'install_fonts.sh')],
-          workingDirectory: path.join(rootDir, '..', 'lib', 'fonts' )
+          'sh', [ scriptPath ],
+          workingDirectory: fontWorkingDir
         );
   if(debugScripts) {
-    print(chalk.yellow('Executing install_fonts.sh'));
-    print(chalk.red(processResult.stderr as String));
-    print(chalk.blue(processResult.stdout as String));
+    print(chalk.yellowBright('Executed $scriptName'));
+    print(chalk.redBright(processResult.stderr as String));
+    print(chalk.blueBright(processResult.stdout as String));
   }
 }
 
-void runShellInstallFontsScriptMacOS() {
+void runShellInstallFontsScriptGloballyOnMacOS() {
+  String scriptName = 'install-fonts-macAlt.sh';
+  if(macOSUseFontBook) {
+    scriptName = 'install-fonts-macAlt-withFontBook.sh';
+  }
+  final scriptPath = path.join(rootDir, scriptName);
+  final fontWorkingDir = path.join(rootDir, '..', 'lib', 'fonts' );
+  //print(chalk.red('scriptPath=$scriptPath  fontWorkingDir=$fontWorkingDir'));
   final processResult = Process.runSync(
-          'sh', [ path.join(rootDir, 'install-fonts-macAlt.sh')],
-          workingDirectory: path.join(rootDir, '..', 'lib', 'fonts' )
+          'sh', [ scriptPath ],
+          workingDirectory: fontWorkingDir
         );
   if(debugScripts) {
-    print(chalk.yellow('Executing install-fonts-macAlt.sh'));
-    print(chalk.red(processResult.stderr as String));
-    print(chalk.blue(processResult.stdout as String));
+    print(chalk.yellowBright('Executed $scriptName'));
+    print(chalk.redBright(processResult.stderr as String));
+    print(chalk.blueBright(processResult.stdout as String));
   }
 }
-
-
-
 
 //MacOS specific functions
-/*
-Add this to your startup file (e.g. ~/.zshrc):
-
-alias fontbook="open -b com.apple.FontBook"
-Then, in a new Terminal, you can execute:
-
-fontbook *.otf
-
-*/
-
 void installMaterialSymbolsIconsFontMacOS() {
-  print(chalk.pink('Install Material Symbols Icons fonts...'));
-  runShellInstallFontsScriptMacOS();
+  if(globalMacOSInstall) {
+    print(chalk.greenBright('Install Material Symbols Icons fonts globally${(macOSUseFontBook) ? ' and validating with FontBook.':'.'}'));
+    runShellInstallFontsScriptGloballyOnMacOS();
+  } else {
+    print(chalk.greenBright('Install Material Symbols Icons fonts for current user${(macOSUseFontBook) ? ' and validating with FontBook.':'.'}...'));
+    runShellInstallFontsScriptLinux();
+  }
 }
 
 void uninstallMaterialSymbolsIconsFontMacOS() {
-  print(chalk.pink('UNINSTALLING Material Symbols Icons fonts not supported on MacOS.'));
+  print(chalk.redBright('UNINSTALLING Material Symbols Icons fonts not supported on MacOS.'));
 }
-
 
 //Linux specific functions
 void installMaterialSymbolsIconsFontLinux() {
-  print(chalk.pink('Install Material Symbols Icons fonts...'));
+  print(chalk.greenBright('Install Material Symbols Icons fonts for current user using Linux script...'));
   runShellInstallFontsScriptLinux();
 }
 
 void uninstallMaterialSymbolsIconsFontLinux() {
-  print(chalk.pink('UNINSTALLING Material Symbols Icons fonts not supported on Linux.'));
+  print(chalk.redBright('UNINSTALLING Material Symbols Icons fonts not supported on Linux.'));
 }

@@ -18,7 +18,7 @@ else
     sudo chown root:wheel "/Library/Fonts/MaterialSymbolsOutlined.ttf"
     echo "MaterialSymbolsOutlined Font copied to /Library/Fonts successfully."
     # Run FontBook to validate the font
-    #open -b com.apple.FontBook MaterialSymbolsOutlined.ttf
+    open -b com.apple.FontBook MaterialSymbolsOutlined.ttf
 fi
 
 # Check if the font file already exists in /Library/Fonts
@@ -37,7 +37,7 @@ else
     sudo chown root:wheel "/Library/Fonts/MaterialSymbolsRounded.ttf"
     echo "MaterialSymbolsRounded Font copied to /Library/Fonts successfully."
     # Run FontBook to validate the font
-    #open -b com.apple.FontBook MaterialSymbolsRounded.ttf
+    open -b com.apple.FontBook MaterialSymbolsRounded.ttf
 fi
 
 
@@ -57,6 +57,6 @@ else
     sudo chown root:wheel "/Library/Fonts/MaterialSymbolsSharp.ttf"
     echo "MaterialSymbolsSharp Font copied to /Library/Fonts successfully."
     # Run FontBook to validate the font
-    #open -b com.apple.FontBook MaterialSymbolsSharp.ttf
+    open -b com.apple.FontBook MaterialSymbolsSharp.ttf
 fi
 

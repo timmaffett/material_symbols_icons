@@ -33,7 +33,8 @@ fi
 
 if [[ `uname` == 'Darwin' ]]; then
   # MacOS
-  echo -e "\nSkipping FontBook validation - If fonts are not available re-run install_material_symbols_icons_fonts with --usefontbook option."
+  echo -e "\nStarting FontBook to validate the fonts..."
+  open -b com.apple.FontBook $HOME/Library/Fonts/MaterialSymbols*.ttf
 fi
 
 

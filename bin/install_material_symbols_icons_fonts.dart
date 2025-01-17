@@ -26,8 +26,8 @@ enum Options {
   usefontbook('usefontbook'),
   usage('usage'),
   help('help'),
-  debug('debug'),
-  path('path');
+  //OBSOLETE//path('path')
+  debug('debug');
 
   const Options(this.name);
 
@@ -51,7 +51,7 @@ String getRootPathsToLatestInstalledPackage() {
 
   String pubDevPackagesDir = path.join(rootDir, '..', '..', '..', 'hosted', 'pub.dev');
 
-  print('pubDevPackagesDir=$pubDevPackagesDir');
+  if(debugScripts) print('pubDevPackagesDir=$pubDevPackagesDir');
 
   final packageDirs = Glob('material_symbols_icons-*', caseSensitive:false, recursive:false);
   final baseToChop = 'material_symbols_icons-';
@@ -63,7 +63,7 @@ String getRootPathsToLatestInstalledPackage() {
   for(final fse in listFSE) {
     String dirName = fse.basename;
     String version = dirName.substring(baseToChop.length);
-    //print('Found directory $dirName version=$version');
+    if(debugScripts) print('Found directory $dirName version=$version');
     if(version.length>=8) {
       if(version.compareTo(highestVersion)>0) {
         highestVersion = version;
@@ -71,8 +71,8 @@ String getRootPathsToLatestInstalledPackage() {
       }
     }
   }
-  print('Highest Version = $highestVersion');
-  print('latestPackageDir = $latestPackageDir');
+  if(debugScripts) print('Highest Version = $highestVersion');
+  if(debugScripts) print('latestPackageDir = $latestPackageDir');
   return path.join(latestPackageDir, 'bin');
 }
 
@@ -106,11 +106,12 @@ void main(List<String> args) async {
       help:
           'Debug scripts.',
     )
-    ..addOption(
-      Options.path.name,
-      defaultsTo: './bin',
-      help: 'Path to the scripts directory.',
-    )..addFlag(
+    //OBSOLETE//..addOption(
+    //OBSOLETE//  Options.path.name,
+    //OBSOLETE//  defaultsTo: './bin',
+    //OBSOLETE//  help: 'Path to the scripts directory.',
+    //OBSOLETE//)
+    ..addFlag(
       Options.global.name,
       defaultsTo: false,
       negatable: false,
@@ -157,15 +158,15 @@ void main(List<String> args) async {
     return;
   }
 
-  if (parsedArgs[Options.path.name] != './bin') {
-    rootDir = parsedArgs[Options.path.name];
-    print('Got path arg $rootDir');
-  } else {
-    final pathToScript = Platform.script.toFilePath();
-    rootDir = path.dirname(pathToScript);
-    print('Got pathToScript=$pathToScript arg $rootDir  curdir=${Directory.current.path}');
-  }
-  print(chalk.yellowBright('Root directory: $rootDir'));
+  //OBSOLETE//if (parsedArgs[Options.path.name] != './bin') {
+  //OBSOLETE//  rootDir = parsedArgs[Options.path.name];
+  //OBSOLETE//  //print('Got path arg $rootDir');
+  //OBSOLETE//} else {
+  //OBSOLETE//  final pathToScript = Platform.script.toFilePath();
+  //OBSOLETE//  rootDir = path.dirname(pathToScript);
+  //OBSOLETE//  //print('Got pathToScript=$pathToScript arg $rootDir  curdir=${Directory.current.path}');
+  //OBSOLETE//}
+  //OBSOLETE//print(chalk.yellowBright('Root directory: $rootDir'));
 
   rootDir = getRootPathsToLatestInstalledPackage();
 

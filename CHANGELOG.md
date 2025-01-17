@@ -1,6 +1,6 @@
 # Changelog for Material Symbols Icons package
 
-## 4.2801.7
+## 4.2801.8
 
 * Fixes to `install_material_symbols_icons_fonts` command
 

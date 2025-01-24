@@ -1,5 +1,13 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2804.0
+
+* Update to version 2.804 of the material icons variable fonts released 01/23/2025 with 3810 icons
+* Added f368  # article_person, f35d  # globe_location_pin, f360  # inbox_text_asterisk,
+  f35e  # inbox_text_person, f35c  # inbox_text_share, f361  # lock_open_circle,
+  f369  # nfc_off, f367  # notification_settings, f366  # stylus_brush, f365  # stylus_fountain_pen,
+  f364  # stylus_highlighter, f363  # stylus_pen, f362  # stylus_pencil
+
 ## 4.2801.8
 
 * Fixes to `install_material_symbols_icons_fonts` command

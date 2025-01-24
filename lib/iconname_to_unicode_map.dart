@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2024-12-06 08:32:27.137452 by the dart file
+// This file was generated 2025-01-23 20:10:54.967529 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -369,6 +369,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'arrows_outward': 0xf72c,
   'art_track': 0xe060,
   'article': 0xef42,
+  'article_person': 0xf368,
   'article_shortcut': 0xf587,
   'artist': 0xe01a,
   'aspect_ratio': 0xe85b,
@@ -1609,6 +1610,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'globe': 0xe64c,
   'globe_asia': 0xf799,
   'globe_book': 0xf3c9,
+  'globe_location_pin': 0xf35d,
   'globe_uk': 0xf798,
   'glucose': 0xe4a0,
   'glyphs': 0xf8a3,
@@ -1824,6 +1826,9 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'inbox': 0xe156,
   'inbox_customize': 0xf859,
   'inbox_text': 0xf399,
+  'inbox_text_asterisk': 0xf360,
+  'inbox_text_person': 0xf35e,
+  'inbox_text_share': 0xf35c,
   'incomplete_circle': 0xe79b,
   'indeterminate_check_box': 0xe909,
   'indeterminate_question_box': 0xf56d,
@@ -2064,6 +2069,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'lock': 0xe899,
   'lock_clock': 0xef57,
   'lock_open': 0xe898,
+  'lock_open_circle': 0xf361,
   'lock_open_right': 0xf656,
   'lock_outline': 0xe899,
   'lock_person': 0xf8f3,
@@ -2375,6 +2381,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'next_plan': 0xef5d,
   'next_week': 0xe16a,
   'nfc': 0xe1bb,
+  'nfc_off': 0xf369,
   'night_shelter': 0xf1f1,
   'night_sight_auto': 0xf1d7,
   'night_sight_auto_off': 0xf1f9,
@@ -2421,6 +2428,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'notification_add': 0xe399,
   'notification_important': 0xe004,
   'notification_multiple': 0xe6c2,
+  'notification_settings': 0xf367,
   'notifications': 0xe7f5,
   'notifications_active': 0xe7f7,
   'notifications_none': 0xe7f5,
@@ -3328,8 +3336,13 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'style': 0xe41d,
   'styler': 0xe273,
   'stylus': 0xf604,
+  'stylus_brush': 0xf366,
+  'stylus_fountain_pen': 0xf365,
+  'stylus_highlighter': 0xf364,
   'stylus_laser_pointer': 0xf747,
   'stylus_note': 0xf603,
+  'stylus_pen': 0xf363,
+  'stylus_pencil': 0xf362,
   'subdirectory_arrow_left': 0xe5d9,
   'subdirectory_arrow_right': 0xe5da,
   'subheader': 0xe9ea,

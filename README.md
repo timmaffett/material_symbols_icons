@@ -4,7 +4,7 @@
 
 ### Using Official Material Symbols Icons variable fonts version 2.804 released 01/23/2025 from [material font repo](https://github.com/google/material-design-icons) with 3810  icons.
 
-Icon previews are supported in VSCode. (For Android Studio icon preview see the section at the end of this readme).
+Icon previews are supported in VSCode.
 
 ### To enable icon preview within VSCode you can execute the following commands to install the fonts on your system:
 ```
@@ -241,21 +241,27 @@ The easiest way to install the fonts (after already adding the package in your p
 ```
 
 ### Enabling Icon Preview For Android Studio
-You must do a couple things to enable the Flutter Gutter Icon Preview feature within Android Studio.  (Only the latest versions have bug fixes which allow this).
-1) You must remove the 2.5MB limit on Intellisense
-   Select [Help->Edit Custom Properties...] menu
-   add a new setting:
-   `idea.max.intellisense.filesize=999999`
-   (The number is in KB, defaults to 2500 so 999999 effectively removes the limit).
-2) You must add the material_symbols_icons page to the list of Font Packages for flutter.
-   Select [Edit->Settings] menu
-   In the Settings dialog go to `Langauges & Frameworks`,
-     then find and select `Flutter`
-     at the bottom of the panel you will find `Font Packages` and here you need to add a line with `material_symbols_icons`.
 
-Now on any line with a `Symbols.XXXX` iconm reference you should see the icon preview in the gutter for the line.
+([Bugs](https://github.com/flutter/flutter-intellij/issues/6932) in the Flutter Android Studio plugin's icon preview prevent any icon preview (for any package) from working there.
+A long standing [bug (6932)](https://github.com/flutter/flutter-intellij/issues/6932) in the Flutter Android Studio plugin prevents any icon preview from working after restarting the IDE. (For the material_symbols_icons package or any other).
 
-```
+~~You must do a couple things to enable the Flutter Gutter Icon Preview feature within Android Studio.  (Only the latest versions have bug fixes which allow this).~~
+1) ~~You must remove the 2.5MB limit on Intellisense~~
+   ~~Select [Help->Edit Custom Properties...] menu~~
+   ~~add a new setting:~~
+   ~~`idea.max.intellisense.filesize=999999`~~
+   ~~(The number is in KB, defaults to 2500 so 999999 effectively removes the limit).~~
+2) ~~You must add the material_symbols_icons page to the list of Font Packages for flutter.~~
+   ~~Select [Edit->Settings] menu~~
+   ~~In the Settings dialog go to `Langauges & Frameworks`,~~
+     ~~then find and select `Flutter`~~
+     ~~at the bottom of the panel you will find `Font Packages` and here you need to add a line with `material_symbols_icons`.~~
+
+~~Now on any line with a `Symbols.XXXX` icon reference you should see the icon preview in the gutter for the line.~~
+
+Unfortunately this to works RIGHT then you make the settings change, but after restart Android Studio will hang with 'Checking Icons' message as detailed in [bug (6932)](https://github.com/flutter/flutter-intellij/issues/6932).
+
+```text
 NOTE:  Unfortunately the trick I am using for icon preview for VSCode, which is an inline
 SVG image which references the locally installed material_symbols_icons fonts, does not
 work in Android Studio because JetBrains does not support inline SVGs in markdown images.

@@ -1,5 +1,13 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2804.1
+
+* Updated README.md to include docs on supporting Gutter Icon Preview within Android Studio.
+* NOPE: Turns out [this bug](https://github.com/flutter/flutter-intellij/issues/6932)
+  still prevents Android Studio from working after restart - and it will just hang.
+  (This has nothing to do with material_symbols_icons, it happens for whatever Font
+  Package you add to the Flutter settings).
+
 ## 4.2804.0
 
 * Update to version 2.804 of the material icons variable fonts released 01/23/2025 with 3810 icons

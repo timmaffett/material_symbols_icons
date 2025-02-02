@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2025-01-23 20:10:54.967529 by the dart file
+// This file was generated 2025-02-02 09:59:11.806159 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -254,6 +254,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'alarm_add': 0xe856,
   'alarm_off': 0xe857,
   'alarm_on': 0xe858,
+  'alarm_pause': 0xf35b,
   'alarm_smart_wake': 0xf6b0,
   'album': 0xe019,
   'align_center': 0xe356,
@@ -2675,6 +2676,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'playlist_add_circle': 0xe7e5,
   'playlist_play': 0xe05f,
   'playlist_remove': 0xeb80,
+  'plug_connect': 0xf35a,
   'plumbing': 0xf107,
   'plus_one': 0xe800,
   'podcasts': 0xf048,
@@ -3268,6 +3270,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'square_foot': 0xea49,
   'ssid_chart': 0xeb66,
   'stack': 0xf609,
+  'stack_group': 0xf359,
   'stack_hexagon': 0xf41c,
   'stack_off': 0xf608,
   'stack_star': 0xf607,

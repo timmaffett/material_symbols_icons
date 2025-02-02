@@ -161,10 +161,9 @@ const Map<String, String> _identifierExactRewrites = <String, String>{
 
 // Icon names which are DUPLICATES and we should EXCLUDE
 const List<String> _identifierExcludeNames = <String>[
-  'power_rounded',  // THis is a DUPLICATE icon of 'power_settings_new' and if we included it it would create 'power_rounded' which would collide with 'power' 's 'power_rounded'
+  'power_rounded', // THis is a DUPLICATE icon of 'power_settings_new' and if we included it it would create 'power_rounded' which would collide with 'power' 's 'power_rounded'
   'expension_panels', // spelling error in Google's 2.791 version of codepoint files
 ];
-
 
 Map<String, String> renamedSymbolsToAugmentMap = {};
 
@@ -331,7 +330,7 @@ Future<void> main(List<String> args) async {
             final originalName = parts[0];
             final codePoint = parts[1];
             var iconName = originalName;
-            if(!_identifierExcludeNames.contains(iconName)) {
+            if (!_identifierExcludeNames.contains(iconName)) {
               if (_identifierExactRewrites.keys.contains(iconName) ||
                   iconName.startsWith(RegExp(r'[0-9]'))) {
                 iconName = _generateFlutterId(iconName);
@@ -487,7 +486,6 @@ ${parser.usage}
 void writeCombinedSourceFile(
     List<MaterialSymbolsVariableFont> fontinfoList, String sourceFilename,
     {bool suffixVersion = true}) {
-
   final sourceFileContent = StringBuffer('''// GENERATED FILE. DO NOT EDIT.
 //
 // To edit this file modify the generator file `generator/update_package.dart` and
@@ -729,7 +727,7 @@ import 'package:material_symbols_icons/$sourceFilename';
 Map<String, IconData> materialSymbolsMap = {
 ''');
 
-final renamedIconsContent = StringBuffer('''
+  final renamedIconsContent = StringBuffer('''
 // Map of Material Symbols Icon names that were renamed to
 // valid Dart variable/symbol names. (ie. not starting with numbers
 // and not being a Dart reserved word).
@@ -808,8 +806,8 @@ Map<String, String> renamedMaterialSymbolsMap = {
 String _generateFlutterId(String id) {
   String flutterId = id;
   bool fixApplied = false;
-  if(_identifierExcludeNames.contains(id)) {
-    throw('_generateFlutterId() encounted "$id" which is an excluded icon name and should have been pruned from lists.');
+  if (_identifierExcludeNames.contains(id)) {
+    throw ('_generateFlutterId() encounted "$id" which is an excluded icon name and should have been pruned from lists.');
   }
 
   // Exact identifier rewrites.

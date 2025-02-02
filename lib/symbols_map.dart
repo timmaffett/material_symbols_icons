@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2025-01-23 20:10:54.901827 by the dart file
+// This file was generated 2025-02-02 09:59:11.789160 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -532,6 +532,9 @@ Map<String, IconData> materialSymbolsMap = {
   'alarm_on': Symbols.alarm_on,
   'alarm_on_rounded': Symbols.alarm_on_rounded,
   'alarm_on_sharp': Symbols.alarm_on_sharp,
+  'alarm_pause': Symbols.alarm_pause,
+  'alarm_pause_rounded': Symbols.alarm_pause_rounded,
+  'alarm_pause_sharp': Symbols.alarm_pause_sharp,
   'alarm_smart_wake': Symbols.alarm_smart_wake,
   'alarm_smart_wake_rounded': Symbols.alarm_smart_wake_rounded,
   'alarm_smart_wake_sharp': Symbols.alarm_smart_wake_sharp,
@@ -7843,6 +7846,9 @@ Map<String, IconData> materialSymbolsMap = {
   'playlist_remove': Symbols.playlist_remove,
   'playlist_remove_rounded': Symbols.playlist_remove_rounded,
   'playlist_remove_sharp': Symbols.playlist_remove_sharp,
+  'plug_connect': Symbols.plug_connect,
+  'plug_connect_rounded': Symbols.plug_connect_rounded,
+  'plug_connect_sharp': Symbols.plug_connect_sharp,
   'plumbing': Symbols.plumbing,
   'plumbing_rounded': Symbols.plumbing_rounded,
   'plumbing_sharp': Symbols.plumbing_sharp,
@@ -9649,6 +9655,9 @@ Map<String, IconData> materialSymbolsMap = {
   'stack': Symbols.stack,
   'stack_rounded': Symbols.stack_rounded,
   'stack_sharp': Symbols.stack_sharp,
+  'stack_group': Symbols.stack_group,
+  'stack_group_rounded': Symbols.stack_group_rounded,
+  'stack_group_sharp': Symbols.stack_group_sharp,
   'stack_hexagon': Symbols.stack_hexagon,
   'stack_hexagon_rounded': Symbols.stack_hexagon_rounded,
   'stack_hexagon_sharp': Symbols.stack_hexagon_sharp,

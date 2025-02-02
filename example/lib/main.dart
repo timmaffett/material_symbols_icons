@@ -27,9 +27,9 @@ Map<String, IconData> materialSymbolsSharpMap = {};
 List<String> renamedMaterialSymbolsMapKeys = [];
 
 const String materialSymbolsIconsSourceFontVersionNumber =
-    '2.804'; // must update for each new font update
+    '2.805'; // must update for each new font update
 const String materialSymbolsIconsSourceReleaseDate =
-    'January 23, 2025'; // must update for each new font update
+    'January 30, 2025'; // must update for each new font update
 int totalMaterialSymbolsIcons = 0;
 
 void makeSymbolsByStyleMaps() {
@@ -1111,9 +1111,27 @@ class IconSearchStringInputState extends State<IconSearchStringInput> {
                 : null,
             hintText: 'Enter text to search for in icon names',
             hintStyle: const TextStyle(fontSize: 14.0),
-            border: InputBorder.none,
-            focusedBorder: InputBorder.none,
-            enabledBorder: InputBorder.none,
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(25.0),
+              borderSide: const BorderSide(
+                color: Colors.grey,
+                width: 2.0,
+              ),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(25.0),
+              borderSide: const BorderSide(
+                color: Colors.purple,
+                width: 2.0,
+              ),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(25.0),
+              borderSide: const BorderSide(
+                color: Colors.grey,
+                width: 2.0,
+              ),
+            ),
             errorBorder: InputBorder.none,
             disabledBorder: InputBorder.none,
           ),

@@ -1,5 +1,11 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2805.0
+
+* Update to version 2.805 of the material icons variable fonts released 01/30/2025 with 3813 icons
+* Added f35b  # alarm_pause, f35a  # plug_connect, f359  # stack_group
+* Added outline to search box on example icon browser to highlight search term TextFormField
+
 ## 4.2804.1
 
 * Updated README.md to include docs on supporting Gutter Icon Preview within Android Studio.

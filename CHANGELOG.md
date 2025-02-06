@@ -1,5 +1,10 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2805.1
+
+* Remove test directory and dependency on flutter_test because there were no tests.
+* Downgraded to path version 1.9.0 from 1.9.1 to avoid conflict with flutter_test on stable
+
 ## 4.2805.0
 
 * Update to version 2.805 of the material icons variable fonts released 01/30/2025 with 3813 icons

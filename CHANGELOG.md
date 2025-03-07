@@ -1,5 +1,21 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2808.0
+
+* Update to version 2.808 of the material icons variable fonts released 03/06/2025 with 3854 icons
+* Added f34e  # accessible_menu, f344  # car_defrost_left, f343  # car_defrost_low_left,
+  f342  # car_defrost_low_right, f341  # car_defrost_mid_low_left, f340  # car_defrost_mid_right,
+  f33f  # car_defrost_right, f33e  # car_fan_low_left, f33d  # car_fan_low_mid_left,
+  f33c  # car_fan_low_right, f33b  # car_fan_mid_left, f33a  # car_fan_mid_low_right,
+  f339  # car_fan_mid_right, f338  # car_fan_recirculate, f337  # car_gear,
+  f336  # car_lock, f335  # car_mirror_heat, f357  # chef_hat, f351  # dropper_eye, f356  # ear_sound,
+  f334  # fan_focus, f333  # fan_indirect, f345  # fragrance, f346  # graph_7, f332  # hvac_max_defrost,
+  f34f  # moon_stars, f353  # notification_sound, f331  # seat_cool_left, f330  # seat_cool_right
+  f32f  # seat_heat_left, f32e  # seat_heat_right, f32d  # seat_vent_left, f32c  # seat_vent_right,
+  f32b  # steering_wheel_heat, f355  # subtitles_gear, f34d  # switch_access_3, f352  # voicemail_2,
+  f350  # vpn_lock_2, f32a  # windshield_defrost_front, f329  # windshield_defrost_rear,
+  f328  # windshield_heat_front
+
 ## 4.2805.2
 
 * Fix typos in README.md, add repository: and topics: to pubspec.yaml

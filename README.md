@@ -7,7 +7,8 @@
 Icon previews are supported in VSCode.
 
 ### To enable icon preview within VSCode you can execute the following commands to install the fonts on your system:
-```
+
+```shell
 dart pub global activate material_symbols_icons
                            [Only needs to be done once to activate
                                 the install_material_symbols_icons_fonts command.]
@@ -19,7 +20,7 @@ install_material_symbols_icons_fonts
 
 ### [Complete interactive icon map can be found here.](https://timmaffett.github.io/material_symbols_icons)
 
-----------------------
+----------------------;
 
 [<img src="https://github.com/timmaffett/material_symbols_icons/raw/master/media/example.png" width="100%">](https://timmaffett.github.io/material_symbols_icons)
 
@@ -87,7 +88,7 @@ for(var iconname in SymbolsGet.values) {
 
 ```
 
-----------------------------------------------------------------
+----------------------;
 
 All icons share the same name they had in the Material Icons [Icons] class.
 All icon names that start with a number (like `360` or `9mp`) but have their icon name changed so that the number is written out and may have
@@ -102,13 +103,13 @@ reserved words.  `door_back` and `door_front` have also been renamed `door_back_
 `power_rounded_power_sharp` for the sharp version.
 (likewise `error_circle_rounded` becomes `error_circle_rounded_error`).
 
-----------------------------------------------------------------
+----------------------;
 
 The middle 4 digit number (for example `2758`) of the version number corresponds to the version number of of the variable fonts used to generated the icon data (with the decimal point removed).  (`2758` corresponds to version number (`Version 2.758`)).  This is found in the `name` table of the variable font true type (.ttf)).  Thus it can be used to determine the variable source font TTF version numbers used to generate a given version of this package.  (The version number can also be found in the `fontRevision` property of the `head` table of the .ttf font files).
 
-----------------------------------------------------------------
+----------------------;
 
-The Material Symbols Icon fonts are variable fonts, so it is possible to further modify (or animate!) the icons by specifying your own parameters for fill, weight, grade, and optical size when creating your icons.  The [live web example app](https://timmaffett.github.io/material_symbols_icons) will show you a preview of the `Icon(...)` statement required to accomplish the currently visible axis settings.  This takes into account the default configuration for each axis, wichi is weight at 400, optical size at 48, grade at 0 and fill also 0.  Any axis which differs from the default will be included in the shown `Icon(...)` example.
+The Material Symbols Icon fonts are variable fonts, so it is possible to further modify (or animate!) the icons by specifying your own parameters for fill, weight, grade, and optical size when creating your icons.  The [live web example app](https://timmaffett.github.io/material_symbols_icons) will show you a preview of the `Icon(...)` statement required to accomplish the currently visible axis settings.  This takes into account the default configuration for each axis, which is weight at 400, optical size at 48, grade at 0 and fill also 0.  Any axis which differs from the default will be included in the shown `Icon(...)` example.
 
 ```dart
     
@@ -177,7 +178,8 @@ Each of the fonts has these design axes, which can be varied in CSS, or in many 
 - Grade from -50 to 200. The default is 0 (zero).
 - Fill from 0 to 100. The default is 0 (zero).
 
-What is currently _not_ available in Material Symbols?
+What is currently *not* available in Material Symbols?
+
 - only the 20 and 24 px versions are designed with perfect pixel-grid alignment
 - the only pre-made fonts are the variable fonts
 - there are no two-tone icons
@@ -220,7 +222,8 @@ created using `VariedIcon.varied()` call instead of `Icon()` directly.
 ### Manual installation of the Material Symbols Icons Fonts to enable icon preview in VSCode:
 (see above for instructions on using `install_material_symbols_icons_fonts` command to automatically
 accomplish this.)
-```
+
+```text
 To enable icon preview within VSCode you must install the 3 MaterialSymbolsXXXX.ttf font files.
 The easiest way to install the fonts (after already adding the package in your pubspec.yaml) is to:
 1) Follow a Symbols.XXXX identifier with right click 'Go to Definition [F12]'

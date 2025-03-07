@@ -1,5 +1,9 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2805.2
+
+* Fix typos in README.md, add repository: and topics: to pubspec.yaml
+
 ## 4.2805.1
 
 * Remove test directory and dependency on flutter_test because there were no tests.

@@ -1,5 +1,9 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2808.1
+
+* Fix HR lines in README.md horizontal rule lines which were not rendering correctly after lint fix.
+
 ## 4.2808.0
 
 * Update to version 2.808 of the material icons variable fonts released 03/06/2025 with 3854 icons

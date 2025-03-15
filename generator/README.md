@@ -5,7 +5,7 @@ The `update_package.dart` program downloads the latest code point and font files
 The command to do this is :
 
 ```shell
-dart run update_package.dart -d
+dart run update_package.dart -s -d
 ```
 
 The `-d` argument instructs the tool to also download the latest font files and place them in the `../rawFontsUnfixed' directory.

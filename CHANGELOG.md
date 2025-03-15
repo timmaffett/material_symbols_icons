@@ -1,5 +1,11 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2810.1
+
+* Remove src font reference from svg icon preview because vscode sandbox ignores this anyway
+  (locally installed font family is required so this was really just legacy attempt that failed
+  and is now removed to make symbols.dart file significantly smaller)
+
 ## 4.2810.0
 
 * Update to version 2.808 of the material icons variable fonts released 03/06/2025 with 3854 icons

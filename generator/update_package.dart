@@ -191,8 +191,10 @@ bool writeUnicodeCodepoints = true;
 /// Here is template to create INLINE svg images of the icons using SVG file and google fonts links to fonts
 /// $1 is fontfamily, $2 is the font src url, $3 is the codepoint
 //const svgIconTemplateRaw = r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face { font-family: "$1"; src: $2; font-weight:400;} text {font-family:"$1"; font-size: 32px; text-anchor: middle; dominant-baseline: text-bottom; fill: grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
+//WITH src - but the sandbox removes this//const svgIconTemplateRaw =
+// so there this is just wasted bytes    //    r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face { font-family: "$1"; src: $2;} text {font-family:"$1"; font-size: 32px; text-anchor: middle; dominant-baseline: text-bottom; fill: grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
 const svgIconTemplateRaw =
-    r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face { font-family: "$1"; src: $2;} text {font-family:"$1"; font-size: 32px; text-anchor: middle; dominant-baseline: text-bottom; fill: grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
+    r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face{font-family:"$1";}text{font-family:"$1";font-size:32px;text-anchor:middle;dominant-baseline:text-bottom;fill:grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
 String? svgIconTemplate;
 
 String getSVGDateUriFor(
@@ -210,7 +212,7 @@ String getSVGDateUriFor(
 
   String dataUri = svgIconTemplate!
       .replaceAll(r'$1', fontinfo.svgFontFamily)
-      .replaceFirst(r'$2', fontinfo.woff2FontUrlForDartDocSVG)
+      //NO LONGER BOTHER - sandbox removes - local fonts are required//.replaceFirst(r'$2', fontinfo.woff2FontUrlForDartDocSVG)
       .replaceFirst(r'$3', codepoint);
 
   return dataUri;

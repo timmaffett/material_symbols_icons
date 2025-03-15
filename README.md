@@ -6,6 +6,8 @@
 
 Icon previews are supported in VSCode.
 
+<img src="https://github.com/timmaffett/material_symbols_icons/raw/master/media/vscode_icon_preview.png">
+
 ### To enable icon preview within VSCode you can execute the following commands to install the fonts on your system:
 
 ```shell

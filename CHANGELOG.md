@@ -2,6 +2,7 @@
 
 ## 4.2810.1
 
+* Added example image of vscode icon preview
 * Remove src font reference from svg icon preview because vscode sandbox ignores this anyway
   (locally installed font family is required so this was really just legacy attempt that failed
   and is now removed to make symbols.dart file significantly smaller)

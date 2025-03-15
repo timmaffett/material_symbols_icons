@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2025-03-06 20:14:08.239683 by the dart file
+// This file was generated 2025-03-14 22:28:34.509986 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -1201,7 +1201,11 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'e_mobiledata': 0xf002,
   'e_mobiledata_badge': 0xf7e3,
   'ear_sound': 0xf356,
+  'earbud_case': 0xf327,
+  'earbud_left': 0xf326,
+  'earbud_right': 0xf325,
   'earbuds': 0xf003,
+  'earbuds_2': 0xf324,
   'earbuds_battery': 0xf004,
   'early_on': 0xe2ba,
   'earthquake': 0xf64f,
@@ -2220,8 +2224,12 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'mixture_med': 0xe4c8,
   'mms': 0xe618,
   'mobile_friendly': 0xe200,
+  'mobile_hand': 0xf323,
+  'mobile_loupe': 0xf322,
   'mobile_off': 0xe201,
   'mobile_screen_share': 0xe0e7,
+  'mobile_screensaver': 0xf321,
+  'mobile_speaker': 0xf320,
   'mobiledata_off': 0xf034,
   'mode': 0xf097,
   'mode_comment': 0xe253,
@@ -3324,7 +3332,9 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'star_purple500': 0xf09a,
   'star_rate': 0xf0ec,
   'star_rate_half': 0xec45,
+  'star_shine': 0xf31d,
   'stars': 0xe8d0,
+  'stars_2': 0xf31c,
   'start': 0xe089,
   'stat_0': 0xe697,
   'stat_1': 0xe698,
@@ -3822,6 +3832,8 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'wallet': 0xf8ff,
   'wallpaper': 0xe1bc,
   'wallpaper_slideshow': 0xf672,
+  'wand_shine': 0xf31f,
+  'wand_stars': 0xf31e,
   'ward': 0xe13c,
   'warehouse': 0xebb8,
   'warning': 0xf083,

@@ -1,5 +1,13 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2810.0
+
+* Update to version 2.808 of the material icons variable fonts released 03/06/2025 with 3854 icons
+* Added f327  # earbud_case, f326  # earbud_left, f325  # earbud_right,
+  f324  # earbuds_2, f323  # mobile_hand, f322  # mobile_loupe, f321  # mobile_screensaver,
+  f320  # mobile_speaker, f31d  # star_shine, f31c  # stars_2, f31f  # wand_shine
+  and f31e  # wand_stars
+
 ## 4.2808.1
 
 * Fix HR lines in README.md horizontal rule lines which were not rendering correctly after lint fix.

@@ -4,7 +4,7 @@
 
 ### Using Official Material Symbols Icons variable fonts version 2.810 released 03/13/2025 from [material font repo](https://github.com/google/material-design-icons) with 3866  icons.
 
-Icon previews are supported in VSCode.
+### Icon previews are supported in VSCode.
 
 <img src="https://github.com/timmaffett/material_symbols_icons/raw/master/media/vscode_icon_preview.png">
 

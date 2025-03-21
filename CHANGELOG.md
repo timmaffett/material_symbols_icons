@@ -1,5 +1,10 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2811.0
+
+* Update to version 2.811 of the material icons variable fonts released 03/21/2025 with 3869 icons
+* Added f317  # image_arrow_up, f318  # mobile_sound_2 and e384  # person_shield
+
 ## 4.2810.1
 
 * Added example image of vscode icon preview
@@ -9,7 +14,7 @@
 
 ## 4.2810.0
 
-* Update to version 2.808 of the material icons variable fonts released 03/06/2025 with 3854 icons
+* Update to version 2.810 of the material icons variable fonts released 03/13/2025 with 3866 icons
 * Added f327  # earbud_case, f326  # earbud_left, f325  # earbud_right,
   f324  # earbuds_2, f323  # mobile_hand, f322  # mobile_loupe, f321  # mobile_screensaver,
   f320  # mobile_speaker, f31d  # star_shine, f31c  # stars_2, f31f  # wand_shine

@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2025-03-14 22:28:34.469988 by the dart file
+// This file was generated 2025-03-21 02:56:10.160251 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -5317,6 +5317,9 @@ Map<String, IconData> materialSymbolsMap = {
   'image': Symbols.image,
   'image_rounded': Symbols.image_rounded,
   'image_sharp': Symbols.image_sharp,
+  'image_arrow_up': Symbols.image_arrow_up,
+  'image_arrow_up_rounded': Symbols.image_arrow_up_rounded,
+  'image_arrow_up_sharp': Symbols.image_arrow_up_sharp,
   'image_aspect_ratio': Symbols.image_aspect_ratio,
   'image_aspect_ratio_rounded': Symbols.image_aspect_ratio_rounded,
   'image_aspect_ratio_sharp': Symbols.image_aspect_ratio_sharp,
@@ -6485,6 +6488,9 @@ Map<String, IconData> materialSymbolsMap = {
   'mobile_screensaver': Symbols.mobile_screensaver,
   'mobile_screensaver_rounded': Symbols.mobile_screensaver_rounded,
   'mobile_screensaver_sharp': Symbols.mobile_screensaver_sharp,
+  'mobile_sound_2': Symbols.mobile_sound_2,
+  'mobile_sound_2_rounded': Symbols.mobile_sound_2_rounded,
+  'mobile_sound_2_sharp': Symbols.mobile_sound_2_sharp,
   'mobile_speaker': Symbols.mobile_speaker,
   'mobile_speaker_rounded': Symbols.mobile_speaker_rounded,
   'mobile_speaker_sharp': Symbols.mobile_speaker_sharp,
@@ -7659,6 +7665,9 @@ Map<String, IconData> materialSymbolsMap = {
   'person_search': Symbols.person_search,
   'person_search_rounded': Symbols.person_search_rounded,
   'person_search_sharp': Symbols.person_search_sharp,
+  'person_shield': Symbols.person_shield,
+  'person_shield_rounded': Symbols.person_shield_rounded,
+  'person_shield_sharp': Symbols.person_shield_sharp,
   'personal_bag': Symbols.personal_bag,
   'personal_bag_rounded': Symbols.personal_bag_rounded,
   'personal_bag_sharp': Symbols.personal_bag_sharp,

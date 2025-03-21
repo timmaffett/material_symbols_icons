@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2025-03-14 22:28:34.509986 by the dart file
+// This file was generated 2025-03-21 02:56:10.198652 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -1842,6 +1842,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'iframe': 0xf71b,
   'iframe_off': 0xf71c,
   'image': 0xe3f4,
+  'image_arrow_up': 0xf317,
   'image_aspect_ratio': 0xe3f5,
   'image_not_supported': 0xf116,
   'image_search': 0xe43f,
@@ -2229,6 +2230,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'mobile_off': 0xe201,
   'mobile_screen_share': 0xe0e7,
   'mobile_screensaver': 0xf321,
+  'mobile_sound_2': 0xf318,
   'mobile_speaker': 0xf320,
   'mobiledata_off': 0xf034,
   'mode': 0xf097,
@@ -2615,6 +2617,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'person_raised_hand': 0xf59a,
   'person_remove': 0xef66,
   'person_search': 0xf106,
+  'person_shield': 0xe384,
   'personal_bag': 0xeb0e,
   'personal_bag_off': 0xeb0f,
   'personal_bag_question': 0xeb10,

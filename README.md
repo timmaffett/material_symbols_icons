@@ -2,7 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/material_symbols_icons.svg)](https://pub.dev/packages/material_symbols_icons)
 
-### Using Official Material Symbols Icons variable fonts version 2.810 released 03/13/2025 from [material font repo](https://github.com/google/material-design-icons) with 3866  icons.
+### Using Official Material Symbols Icons variable fonts version 2.811 released 03/21/2025 from [material font repo](https://github.com/google/material-design-icons) with 3869  icons.
 
 ### Icon previews are supported in VSCode.
 

@@ -4,6 +4,7 @@
 
 * Update to version 2.811 of the material icons variable fonts released 03/21/2025 with 3869 icons
 * Added f317  # image_arrow_up, f318  # mobile_sound_2 and e384  # person_shield
+* Fixed some analyzer warnings in the example.
 
 ## 4.2810.1
 

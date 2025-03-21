@@ -50,7 +50,7 @@ Map<String, String>? startupQueryParameters;
 
 void main() {
   // prevent engine from removing query url parameters
-  setUrlStrategy(PathUrlStrategy());
+  setUrlStrategy(const PathUrlStrategy());
 
   // we need to grab these now because startup inside flutter will
   // throw exception for unknown route and clear our query parameters
@@ -398,8 +398,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: SelectableText(onTap: () {
       final exampleIconCode = getIconCodeStringForCurrentSettings();
       Clipboard.setData(ClipboardData(text: exampleIconCode)).then((_) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            content: Text('Copied "$exampleIconCode" to the clipboard.')));
+        if(context.mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+              content: Text('Copied "$exampleIconCode" to the clipboard.')));
+        }
       });
     }, 'eg: ${getIconCodeStringForCurrentSettings()}',
             style: const TextStyle(
@@ -590,10 +592,10 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: const Icon(Symbols.restart_alt),
               style: IconButton.styleFrom(
                 foregroundColor: colors.onSecondaryContainer,
-                disabledBackgroundColor: colors.onSurface.withOpacity(0.12),
-                hoverColor: colors.onSecondaryContainer.withOpacity(0.08),
-                focusColor: colors.onSecondaryContainer.withOpacity(0.12),
-                highlightColor: colors.onSecondaryContainer.withOpacity(0.12),
+                disabledBackgroundColor: colors.onSurface.withValues(alpha:0.12),
+                hoverColor: colors.onSecondaryContainer.withValues(alpha:0.08),
+                focusColor: colors.onSecondaryContainer.withValues(alpha:0.12),
+                highlightColor: colors.onSecondaryContainer.withValues(alpha:0.12),
               ),
             ),
           ),
@@ -872,14 +874,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   ...buildFlexibleOptionsCustomizationPanel(context),
-                  if (false)
-                    const Text(
-                      'Material Symbols Icons (using above settings):',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16.0,
-                      ),
-                    ),
+                  //analyzer now makes us comment out dead code//if (false)
+                  //analyzer now makes us comment out dead code//  const Text(
+                  //analyzer now makes us comment out dead code//    'Material Symbols Icons (using above settings):',
+                  //analyzer now makes us comment out dead code//    style: TextStyle(
+                  //analyzer now makes us comment out dead code//      fontWeight: FontWeight.bold,
+                  //analyzer now makes us comment out dead code//      fontSize: 16.0,
+                  //analyzer now makes us comment out dead code//    ),
+                  //analyzer now makes us comment out dead code//  ),
                   Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
@@ -1011,16 +1013,16 @@ class _MyHomePageState extends State<MyHomePage> {
                                               colors.secondaryContainer,
                                           disabledBackgroundColor: colors
                                               .onSurface
-                                              .withOpacity(0.12),
+                                              .withValues(alpha:0.12),
                                           hoverColor: colors
                                               .onSecondaryContainer
-                                              .withOpacity(0.08),
+                                              .withValues(alpha:0.08),
                                           focusColor: colors
                                               .onSecondaryContainer
-                                              .withOpacity(0.12),
+                                              .withValues(alpha:0.12),
                                           highlightColor: colors
                                               .onSecondaryContainer
-                                              .withOpacity(0.12),
+                                              .withValues(alpha:0.12),
                                         ),
                                       ),
                                     ),

@@ -27,9 +27,9 @@ Map<String, IconData> materialSymbolsSharpMap = {};
 List<String> renamedMaterialSymbolsMapKeys = [];
 
 const String materialSymbolsIconsSourceFontVersionNumber =
-    '2.811'; // must update for each new font update
+    '2.815'; // must update for each new font update
 const String materialSymbolsIconsSourceReleaseDate =
-    'March 21, 2025'; // must update for each new font update
+    'April 10, 2025'; // must update for each new font update
 int totalMaterialSymbolsIcons = 0;
 
 void makeSymbolsByStyleMaps() {
@@ -50,7 +50,7 @@ Map<String, String>? startupQueryParameters;
 
 void main() {
   // prevent engine from removing query url parameters
-  setUrlStrategy(const PathUrlStrategy());
+  setUrlStrategy(PathUrlStrategy());
 
   // we need to grab these now because startup inside flutter will
   // throw exception for unknown route and clear our query parameters

@@ -1,5 +1,17 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2815.0
+
+* Update to version 2.815 of the material icons variable fonts released 04/10/2025 with 3899 icons
+* Added ed38  # threed, f30d  # battery_android_0, f30c  # battery_android_1, f30b  # battery_android_2,
+  f30a  # battery_android_3, f309  # battery_android_4, f308  # battery_android_5, f307  # battery_android_6,
+  f306  # battery_android_alert, f305  # battery_android_bolt, f304  # battery_android_full, f303  # battery_android_plus,
+  f302  # battery_android_question, f301  # battery_android_share, f300  # battery_android_shield, f3e0  # book_4_spark,
+  f2f3  # cannabis, f2f7  # computer_arrow_up, f2f6  # computer_cancel, f2f5  # device_band, f310  # landscape_2_edit,
+  f313  # mobile_hand_left, f312  # mobile_hand_left_off, f314  # mobile_hand_off, f2f4  # router_off,
+  f30f  # shield_watch, f2ff  # split_scene_down, f2fe  # split_scene_left, f2fd  # split_scene_right,
+  f2fc  # split_scene_up, f2f2  # tab_search, f30e  # verified_off
+
 ## 4.2811.0
 
 * Update to version 2.811 of the material icons variable fonts released 03/21/2025 with 3869 icons

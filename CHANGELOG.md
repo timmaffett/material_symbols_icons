@@ -1,5 +1,16 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2815.1
+
+* Added Right To Left (RTL) language support for all of the icons (YeeHa!!)
+* Added support for including all of the known metadata for each  of the material symbols icons.
+  This data is found in `libs\material_symbols_metadata.dart`
+  This data may be useful for anyone creating a material symbols icon viewer, etc.
+  This metadata includes icon categories, tags, original name (if it had to be renamed),
+  popularity,  and RTL mirroring info.
+* Because of [this issue](https://github.com/google/material-design-icons/issues/1902) in the official repo
+  new versions of the material symbols icons are no longer being generated.  UNFORTUNATELY.
+
 ## 4.2815.0
 
 * Update to version 2.815 of the material icons variable fonts released 04/10/2025 with 3899 icons

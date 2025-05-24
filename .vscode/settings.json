@@ -3,5 +3,10 @@
     "cSpell.words": [
         "fontinfo",
         "iconname"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#0B342C",
+        "titleBar.activeBackground": "#0F483D",
+        "titleBar.activeForeground": "#F2FCFA"
+    }
 }

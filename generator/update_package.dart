@@ -11,6 +11,11 @@ import 'dart:io';
 import 'package:args/args.dart';
 import 'package:path/path.dart' as path;
 
+import 'package:chalkdart/chalkstrings.dart';
+
+import 'icon_metadata.dart';
+import 'write_metadata_dartfile.dart';
+
 ///  This program goes to the https://github.com/google/material-design-icons repository and retrieves the variable fonts and codepoint information
 /// for the Material Symbols Icon fonts
 ///
@@ -19,6 +24,8 @@ import 'package:path/path.dart' as path;
 /// https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints
 
 late final bool verboseFlag;
+
+bool addCategoryAndTagsComments = false;
 
 /// Flag to include inline SVG previews of the icons in dart docs comments as markup
 bool svgDartDocsFlag = false;
@@ -112,7 +119,7 @@ const Map<String, List<String>> _platformAdaptiveIdentifiers =
 */
 
 // Rewrite certain Flutter IDs (numbers) using prefix matching.
-const Map<String, String> _identifierPrefixRewrites = <String, String>{
+const Map<String, String> identifierPrefixRewrites = <String, String>{
   '3d_rotation': 'threed_rotation',
   '123': 'onetwothree',
   '360': 'threesixty',
@@ -147,7 +154,7 @@ const Map<String, String> _identifierPrefixRewrites = <String, String>{
 };
 
 // Rewrite certain Flutter IDs (reserved keywords) using exact matching.
-const Map<String, String> _identifierExactRewrites = <String, String>{
+const Map<String, String> identifierExactRewrites = <String, String>{
   'class': 'class_',
   'new': 'new_',
   'switch': 'switch_',
@@ -160,7 +167,7 @@ const Map<String, String> _identifierExactRewrites = <String, String>{
 };
 
 // Icon names which are DUPLICATES and we should EXCLUDE
-const List<String> _identifierExcludeNames = <String>[
+const List<String> identifierExcludeNames = <String>[
   'power_rounded', // THis is a DUPLICATE icon of 'power_settings_new' and if we included it it would create 'power_rounded' which would collide with 'power' 's 'power_rounded'
   'expension_panels', // spelling error in Google's 2.791 version of codepoint files
 ];
@@ -235,6 +242,135 @@ Future<void> downloadURLASBinaryFile(
   }
 }
 
+/// Hold metadata for each icon in the Material Symbols collection.  This (most importantly) includes the RTL auto-mirrored flag for icons which need to have this set via IconData( matchTextDirection: ) parameter
+Map<String, IconMetadata> iconMetadataMap = {};
+
+/// Creates a set from the keys of a map.
+///
+/// This function takes a map and returns a set containing all the keys
+/// from the map.
+///
+/// Parameters:
+///   map: The map whose keys will be used to create the set.
+///
+/// Returns:
+///   A set containing the keys of the map.  Returns an empty set if the
+///   input map is null or empty.
+Set<K> getKeysAsSet<K, V>(Map<K, V>? map) {
+  if (map == null || map.isEmpty) {
+    return <K>{}; // Return an empty set of the appropriate type
+  }
+  return map.keys.toSet();
+}
+
+Set<int> codepointMetadata = <int>{};
+/// Extracts the codepoints from a Map<String, Icon> and returns them as a Set<int>.
+///
+/// This function iterates through the values of the input map (which are assumed to be Icon objects)
+/// and adds the codepoint of each icon to a set.
+///
+/// Parameters:
+///   iconMap: A map where the keys are strings and the values are Icon objects.
+///
+/// Returns:
+///   A set containing the codepoints of all icons in the map.  Returns an empty set
+///   if the input map is null or empty.
+Set<int> getCodepointsFromIconMap(Map<String, IconMetadata>? iconMap) {
+  if (iconMap == null || iconMap.isEmpty) {
+    return <int>{};
+  }
+  Set<int> codepoints = {};
+  iconMap.forEach((key, icon) {
+    codepoints.add(icon.codepoint);
+    if(codepointToMetadataMap[icon.codepoint]!=null) {
+      print('CODEPOINT ${icon.codepoint} already exists!'.red);
+    }
+    codepointToMetadataMap[icon.codepoint] = icon;
+  });
+  return codepoints;
+}
+
+
+
+void findMetadataWithDifferentCodepointsFromName(List<MaterialSymbolsVariableFont> fontinfoList) {
+  int? lastCount;
+  for (final fontinfo in fontinfoList) {
+    if (lastCount != null) {
+      assert(fontinfo.iconInfoList.length == lastCount);
+      if(fontinfo.iconInfoList.length != lastCount) {
+        print('ERROR: style ${fontinfo.flavor} has different number of codepoints ${fontinfo.iconInfoList.length} vs. $lastCount'.red);
+      }
+    }
+    lastCount = fontinfo.iconInfoList.length;
+  }
+
+  var iconCount = 0;
+  final fontinfo = fontinfoList[0];
+
+  for (int i = 0; i < lastCount!; i++) {
+    final iconInfo = fontinfo.iconInfoList[i];
+    var iconname = iconInfo.iconName;
+    final codepoint = iconInfo.codePoint;
+    final int codePointValue = int.tryParse('0x$codepoint') ?? 0;
+
+    final iconDataClass = fontinfo.iconDataClass;
+    final iconMetadata = iconMetadataMap[iconname];// ?? codepointToMetadataMap[codePointValue];
+    if(iconMetadata!=null) {
+      if(iconMetadata.codepoint != codePointValue) {
+        if(iconMetadata.codePointsFromCodePointsFiles.contains(codePointValue)) {
+          print('  Icon $iconname has entry in codePointsFromCodePointsFiles[] for  $codePointValue ALREADY'.brightRed.blink);
+        } else {
+          iconMetadata.codePointsFromCodePointsFiles.add(codePointValue);
+          // MISS MATCH OF CODEPOINTS!!
+          print('Icon $iconname has a different codepoint in metadata "0x${iconMetadata.codepoint.toRadixString(16).toUpperCase()}" vs "0x${codePointValue.toRadixString(16).toUpperCase()}"'.red);
+
+
+          codepointToMetadataMap[codePointValue] = iconMetadata;
+          //print('  Icon $iconname has a different codepoint in metadata "0x${iconMetadata.codepoint.toRadixString(16).toUpperCase()}" vs "0x${codePointValue.toRadixString(16).toUpperCase()}"'.red);
+
+        }
+      }
+    } else {
+      print('DID not find $iconname in the metadata');
+    }
+  }
+
+}
+
+
+Map<int,IconMetadata> codepointToMetadataMap = {};
+
+Set<String> missingMetadata = <String>{}; 
+Set<String> unusedMetaData = <String>{};
+Set<String> usedRTLMetadata = <String>{};
+Set<String> expectedRTL = <String>{ "threesixty", "add_to_home_screen", "airplane_ticket", "airport_shuttle", "align_horizontal_left", "align_horizontal_right",
+"alt_route", "arrow_back", "arrow_back_ios", "arrow_circle_left", "arrow_circle_right", "arrow_forward", "arrow_forward_ios",
+"arrow_left", "arrow_left_alt", "arrow_menu_close", "arrow_menu_open", "arrow_outward", "arrow_right", "arrow_right_alt",
+"arrow_split", "article", "assignment", "assignment_return", "assist_walker", "assistant_direction", "backspace", "battery_unknown",
+"bike_lane", "block", "brand_awareness", "branding_watermark", "bubble", "business_messages", "call_made", "call_merge", "call_missed",
+"call_missed_outgoing", "call_received", "call_split", "chat", "chat_add_on", "chat_info", "chat_paste_go", "chat_paste_go_2", "checkbook",
+"chevron_backward", "chevron_forward", "chevron_left", "chevron_right", "chrome_reader_mode", "clarify", "comment", "compare_arrows",
+"contact_support", "content_copy", "content_cut", "contextual_token", "contextual_token_add", "contrast", "desktop_landscape", "desktop_landscape_add",
+"desktop_portrait", "devices_other", "diagonal_line", "directions", "directions_alt", "directions_bike", "directions_run", "directions_walk",
+"docs", "double_arrow", "draft", "drive_export", "drive_file_move", "dvr", "electric_bike", "electric_moped", "electric_rickshaw", "electric_scooter",
+"event_note", "event_upcoming", "exit_to_app", "expand_circle_right", "featured_play_list", "featured_video", "filter_arrow_right", "fire_truck",
+"flag", "flight_land", "flight_takeoff", "flights_and_hotels", "float_landscape_2", "float_portrait_2", "follow_the_signs", "format_align_left",
+"format_align_right", "format_indent_decrease", "format_indent_increase", "format_list_bulleted", "format_list_bulleted_add", "forward",
+"forward_to_inbox", "funicular", "gondola_lift", "grading", "handheld_controller", "help", "help_center", "highlight_mouse_cursor", "hotel",
+"hotel_class", "ink_highlighter_move", "input", "keyboard_arrow_left", "keyboard_arrow_right", "keyboard_backspace", "keyboard_double_arrow_left",
+"keyboard_double_arrow_right", "keyboard_return", "keyboard_tab", "keyboard_tab_rtl", "label", "label_important", "last_page", "library_books", "light_group",
+"line_curve", "list", "list_alt", "lists", "live_help", "local_shipping", "login", "logout", "lyrics", "manage_search", "menu_book", "menu_open", "merge_type",
+"missed_video_call", "mobile_screen_share", "monitoring", "moped", "more", "move_item", "move_location", "moving", "moving_ministry", "multiline_chart",
+"news", "newsmode", "next_plan", "next_week", "no_sound", "not_listed_location", "note_add", "notes", "offline_share", "open_in_new", "outbox_alt", "pedal_bike",
+"phone_callback", "phone_forwarded", "phone_missed", "picture_in_picture", "picture_in_picture_alt", "picture_in_picture_large", "picture_in_picture_medium",
+"picture_in_picture_mobile", "picture_in_picture_small", "position_top_right", "prompt_suggestion", "queue_music", "read_more", "receipt_long", "redo",
+"replace_audio", "replace_image", "replace_video", "reply", "reply_all", "reset_image", "rotate_left", "rotate_right", "rtt", "run_circle", "schedule_send", "scooter",
+"screen_share", "segment", "send", "send_and_archive", "send_money", "send_to_mobile", "settings_backup_restore", "shield_question", "short_text", "show_chart",
+"side_navigation", "snowmobile", "sort", "speaker_notes", "stairs", "stairs_2", "star_half", "sticky_note", "sticky_note_2", "stop_screen_share", "subject",
+"switch_access_2", "switch_access_3", "text_ad", "text_compare", "text_snippet", "text_to_speech", "thermostat", "toc", "tooltip_2", "transition_push",
+"transition_slide", "travel", "trending_down", "trending_flat", "trending_up", "tv_next", "two_wheeler", "undo", "video_camera_back_add", "videocam",
+"view_list", "view_quilt", "view_sidebar", "volume_down", "volume_down_alt", "volume_mute", "volume_off", "volume_up", "watch_arrow", "wrap_text", "wysiwyg" };
+
 // ignore: long-method
 Future<void> main(List<String> args) async {
   final parser = ArgParser()
@@ -258,29 +394,49 @@ Future<void> main(List<String> args) async {
       help: 'Include inline SVG icon in dart docs markup.',
     )
     ..addFlag(
+      'category_and_tag_comments',
+      abbr: 'c',
+      defaultsTo: false,
+      negatable: true,
+      help: 'Include category and tag metadata comments for each icon.',
+    )
+    ..addFlag(
       'downloadfonts',
       abbr: 'd',
       negatable: false,
       help:
           'The TTF font files will be downloaded to the $pathToWriteTTFFiles directory if this flag is passed.',
     );
-  late final ArgResults results;
+  late final ArgResults parseArgs;
 
   try {
-    results = parser.parse(args);
+    parseArgs = parser.parse(args);
   } catch (e) {
     printUsage(parser);
     exit(0);
   }
 
-  if (results['help'] as bool) {
+  if (parseArgs['help'] as bool) {
     printUsage(parser);
     exit(0);
   }
 
-  final downloadFontsFlag = results['downloadfonts'] as bool;
-  svgDartDocsFlag = results['svg_icon_in_dart_docs'] as bool;
-  verboseFlag = results['verbose'] as bool;
+
+  // Read the icon metadata so we have this info to write out categories and tags in comments and to set the `matchTextDirection` parameter of our IconData() constructors
+  iconMetadataMap = await readIconsMetadata();
+  print('READ metadata for ${iconMetadataMap.length} icons'.brightYellow);
+  codepointMetadata = getCodepointsFromIconMap(iconMetadataMap);
+  print('READ metadata for ${codepointMetadata.length} codepoints'.orange);
+  //print('    codepints [ ${codepointMetadata} ]'.orange);
+  print('    codepointToMetadataMap ${codepointToMetadataMap.length} entries '.orangeRed);
+  unusedMetaData = getKeysAsSet(iconMetadataMap);
+
+
+
+  final downloadFontsFlag = parseArgs['downloadfonts'] as bool;
+  svgDartDocsFlag = parseArgs['svg_icon_in_dart_docs'] as bool;
+  verboseFlag = parseArgs['verbose'] as bool;
+  addCategoryAndTagsComments = parseArgs['category_and_tag_comments'] as bool;
 
   /*
    The codepoint files are in the form:
@@ -332,8 +488,8 @@ Future<void> main(List<String> args) async {
             final originalName = parts[0];
             final codePoint = parts[1];
             var iconName = originalName;
-            if (!_identifierExcludeNames.contains(iconName)) {
-              if (_identifierExactRewrites.keys.contains(iconName) ||
+            if (!identifierExcludeNames.contains(iconName)) {
+              if (identifierExactRewrites.keys.contains(iconName) ||
                   iconName.startsWith(RegExp(r'[0-9]'))) {
                 iconName = _generateFlutterId(iconName);
                 renamedIconNames.add('$originalName => $iconName');
@@ -364,6 +520,9 @@ Future<void> main(List<String> args) async {
   if (verboseFlag) {
     print('Renamed icon names $renamedIconNames');
   }
+
+  // Now see where the iconname entries in the metadata have codepoints THAT ARE DIFFERENT than the codepoints file
+  findMetadataWithDifferentCodepointsFromName( variableFontFlavors );
 
   // write all flavors together with suffixed symbol names
   const combinedSourceFilename = '${pathToWriteDartFiles}symbols.dart';
@@ -465,6 +624,13 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   print(
       'Augmented unicode map with $numberOfRenamedIconsFound entries containing original names (for icons that had to be renamed)');
 
+  // Write out the metadata dart file
+  const dartMetadataSourceFilename =
+      '${pathToWriteDartFiles}material_symbols_metadata.dart';
+  print('Writing metadata dart file to $dartMetadataSourceFilename'.brightBlue);
+  final metadataResult = writeOutTheMetadataDartFile(File(dartMetadataSourceFilename));
+  print(metadataResult.brightCyan );
+
   exit(0);
 }
 
@@ -480,6 +646,47 @@ The --downloadfonts flag should be used if you also need to download the font fi
 ${parser.usage}
 ''',
   );
+}
+
+/// Joins a list of strings into a comma-separated string,
+/// splitting the string into multiple lines if necessary to keep
+/// the line length under 80 characters.
+String createTagCommentLines(List<String> strings) {
+  if (strings.isEmpty) return '';
+
+  String result = '';
+  const String commentStart = '  /// Tags: ';
+  String currentLine = commentStart;
+
+  for (String str in strings) {
+    if (currentLine==commentStart) {
+      currentLine += str;
+    } else if (currentLine.length + str.length + 2 <=
+        80) { // +2 for ", "
+      currentLine += ', $str';
+    } else {
+      result += '$currentLine,\n';
+      currentLine = '  ///       $str';
+    }
+  }
+  result += currentLine;
+  return result;
+}
+
+/// Removes all elements that are present in both sets from both sets.
+///
+/// This function modifies the original sets.
+///
+/// Parameters:
+///   set1: The first set.
+///   set2: The second set.
+void removeIntersectingElements<T>(Set<T> set1, Set<T> set2) {
+  // Create a copy of the intersection to avoid modifying the sets while iterating.
+  final intersection = set1.intersection(set2).toSet();
+
+  // Remove the intersecting elements from both sets.
+  set1.removeAll(intersection);
+  set2.removeAll(intersection);
 }
 
 /// Write a combined version of the `Symbols` class with outlined, rounded and sharp versions of
@@ -639,6 +846,9 @@ class Symbols {
   for (final fontinfo in fontinfoList) {
     if (lastCount != null) {
       assert(fontinfo.iconInfoList.length == lastCount);
+      if(fontinfo.iconInfoList.length != lastCount) {
+        print('ERROR: style ${fontinfo.flavor} has different number of codepoints ${fontinfo.iconInfoList.length} vs. $lastCount'.red);
+      }
     }
     lastCount = fontinfo.iconInfoList.length;
   }
@@ -650,7 +860,27 @@ class Symbols {
       final iconInfo = fontinfo.iconInfoList[i];
       var iconname = iconInfo.iconName;
       final codepoint = iconInfo.codePoint;
+      final int codePointValue = int.tryParse('0x$codepoint') ?? 0;
+
       final iconDataClass = fontinfo.iconDataClass;
+      final iconMetadata = iconMetadataMap[iconname] ?? codepointToMetadataMap[codePointValue];
+
+      // if we can't get metadata by iconame OR codepoint then it is missing...
+      if(iconMetadata==null) {
+        missingMetadata.add(iconname);
+      }
+
+      final rtlMatchTextDirection = iconMetadata?.rtlAutoMirrored ?? false;
+      final categories = iconMetadata?.categories ?? <String>[];
+      final tags = iconMetadata?.tags ?? <String>[];
+
+      if(rtlMatchTextDirection && !usedRTLMetadata.contains(iconname)) {
+        usedRTLMetadata.add(iconname);
+      }
+      if(fontinfo.flavor == 'outlined' && iconMetadataMap[iconname]!=null) {
+        // any time we use a metadata entry removeit from our 'unusedMetaData' set
+        unusedMetaData.remove(iconname);
+      }
 
       if (suffixVersion && fontinfo.flavor != 'outlined') {
         iconname = '${iconname}_${fontinfo.flavor}';
@@ -664,12 +894,17 @@ class Symbols {
         sourceFileContent.writeln(
             '  /// <span class="material-symbols-${fontinfo.flavor}" data-variation="${fontinfo.flavor}" data-fontfamily="${fontinfo.familyNameToUse}" data-codepoint="$codepoint">${iconInfo.originalIconName}</span> material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
       }
+      if(addCategoryAndTagsComments && (categories.isNotEmpty || tags.isNotEmpty)) {
+        sourceFileContent.writeln('  /// Category: ${categories.join(', ')}');
+        final tagLines = createTagCommentLines(tags);
+        sourceFileContent.writeln(tagLines);
+      }
       String proposedSingleLine =
-          "  static const IconData $iconname = $iconDataClass(0x$codepoint);";
+          "  static const IconData $iconname = $iconDataClass(0x$codepoint${rtlMatchTextDirection?', matchTextDirection:true':''});";
       if (proposedSingleLine.length > 80) {
         //split to two lines
         sourceFileContent.writeln("  static const IconData $iconname =");
-        sourceFileContent.writeln("      $iconDataClass(0x$codepoint);");
+        sourceFileContent.writeln("      $iconDataClass(0x$codepoint${rtlMatchTextDirection?', matchTextDirection:true':''});");
       } else {
         // one line
         sourceFileContent.writeln(proposedSingleLine);
@@ -683,6 +918,18 @@ class Symbols {
   File(sourceFilename).writeAsStringSync(sourceFileContent.toString());
 
   print('Wrote $iconCount COMBINED icons to $sourceFilename');
+
+  /// CHECK RTL metadata usage:
+  removeIntersectingElements( usedRTLMetadata, expectedRTL );
+
+  print('INTERSECTION of expected and usedRTLmetadata:'.orange);
+  print('usedRTLMetadata: $usedRTLMetadata'.orange);
+  print('expectedRTL: $expectedRTL'.orange);
+  print('unusedMetaData LEFTOVERS: ${unusedMetaData.length} entries left'.brightCyan);
+  print('unusedMetaData: ${unusedMetaData}'.brightCyan);
+  print('Icons that were MISSING from metadata: ${missingMetadata.length} icons  (There could be duplicate names for the same codepoint here, so fewer actual missing metadatas)'.red);
+  print('     MISSING metadata: ${missingMetadata}'.red);
+  
 }
 
 /// Write a combined version of the `Symbols` class with outlined, rounded and sharp versions of
@@ -801,6 +1048,13 @@ Map<String, String> renamedMaterialSymbolsMap = {
   print('Wrote $iconCount COMBINED icons to $exampleSourceFilename');
   print(
       'Augmented map with entries for $renamedMapEntries icons that were renamed from the original material names (which could not be used because they were invalid Dart symbol names).');
+
+  // Write out the metadata dart file
+  const dartMetadataSourceFilename =
+      '${pathToWriteDartFiles}material_symbols_metadata.dart';
+  print('Writing metadata dart file to $dartMetadataSourceFilename'.brightBlue);
+  final metadataResult = writeOutTheMetadataDartFile(File(dartMetadataSourceFilename));
+  print(metadataResult.brightCyan );
 }
 
 /// This mimics the flutter icon renaming in flutter engine \dev\tools\update_icons.dart
@@ -808,17 +1062,17 @@ Map<String, String> renamedMaterialSymbolsMap = {
 String _generateFlutterId(String id) {
   String flutterId = id;
   bool fixApplied = false;
-  if (_identifierExcludeNames.contains(id)) {
+  if (identifierExcludeNames.contains(id)) {
     throw ('_generateFlutterId() encounted "$id" which is an excluded icon name and should have been pruned from lists.');
   }
 
   // Exact identifier rewrites.
   for (final MapEntry<String, String> rewritePair
-      in _identifierExactRewrites.entries) {
+      in identifierExactRewrites.entries) {
     if (id == rewritePair.key) {
       flutterId = id.replaceFirst(
         rewritePair.key,
-        _identifierExactRewrites[rewritePair.key]!,
+        identifierExactRewrites[rewritePair.key]!,
       );
       fixApplied = true;
       break; // done we got exact match and replaced
@@ -828,11 +1082,11 @@ String _generateFlutterId(String id) {
   // we can break.
   if (!fixApplied) {
     for (final MapEntry<String, String> rewritePair
-        in _identifierPrefixRewrites.entries) {
+        in identifierPrefixRewrites.entries) {
       if (id.startsWith(rewritePair.key)) {
         flutterId = id.replaceFirst(
           rewritePair.key,
-          _identifierPrefixRewrites[rewritePair.key]!,
+          identifierPrefixRewrites[rewritePair.key]!,
         );
         fixApplied = true;
         break; // done we got the longest prefix match we will encounter

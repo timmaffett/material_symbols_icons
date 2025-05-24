@@ -1,7 +1,7 @@
 name: material_symbols_icons
 description: Full flutter support for latest Google Material Symbols Icons.
 maintainer: Tim Maffett
-version: 4.2815.0
+version: 4.2815.1
 homepage: https://github.com/timmaffett/material_symbols_icons
 repository: https://github.com/timmaffett/material_symbols_icons
 issue_tracker: https://github.com/timmaffett/material_symbols_icons/issues
@@ -19,7 +19,7 @@ topics:
   - material-symbols-icons
 
 environment:
-  sdk: '>=2.19.0 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0'
   flutter: '>=3.7.0'
 
 dependencies:
@@ -32,6 +32,7 @@ dependencies:
 
 dev_dependencies:
   flutter_lints: ^5.0.0
+  http: ^1.3.0
 
 flutter:
   fonts:

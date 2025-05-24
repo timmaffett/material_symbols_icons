@@ -2,7 +2,15 @@
 
 [![pub package](https://img.shields.io/pub/v/material_symbols_icons.svg)](https://pub.dev/packages/material_symbols_icons)
 
+## Because of [this issue](https://github.com/google/material-design-icons/issues/1902) within the Google's official Material Symbols Repo new versions of the Material Symbols Icons fonts are no longer being generated (since 04/10/2025).  UNFORTUNATELY(!).  Go up vote that issue so Google fixes it!!!!
+
 ### Using Official Material Symbols Icons variable fonts version 2.815 released 04/10/2025 from [material font repo](https://github.com/google/material-design-icons) with 3899  icons.
+
+
+Right-To-Left Language support has been added!  Auto mirroring of appropriate icons for Right-to-Left languages is now fully supported.
+
+Icon metadata is also available for those who may require that.  This metadata includes icon categories, tags, original name (if it had to be renamed), popularity, and RTL mirroring info.
+
 
 ### Icon previews are supported in VSCode.
 

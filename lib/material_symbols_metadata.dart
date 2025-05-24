@@ -2,7 +2,7 @@
 //
 // To edit this file modify the generator file `generator/update_package.dart` and
 // re-generate.
-// This file was generated 2025-05-24 10:22:59.910757 by the dart file
+// This file was generated 2025-05-24 10:34:05.888769 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2025. All rights reserved.
@@ -50,7 +50,7 @@ class SymbolsMetadata {
 
   String toJson() {
     return json.encode({
-      if(originalName!=null && originalName.isNotEmpty) 'originalName': originalName,
+      if(originalName!=null && originalName!.isNotEmpty) 'originalName': originalName!,
       if(rtlAutoMirrored) 'rtlAutoMirrored': rtlAutoMirrored,
       'popularity': popularity,
       'codepoint': codepoint,
@@ -15337,7 +15337,7 @@ List<String> tagMap = [
   "picture gallery",
   "saved album",
   "scrapbook",
-  ""photo auto merge"",
+  "photo auto merge",
   "best take",
   "capture icon",
   "camera mode",

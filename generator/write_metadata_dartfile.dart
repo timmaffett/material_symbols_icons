@@ -171,7 +171,7 @@ void writeIconMetadataAsDartCodeWithStringTables(StringBuffer output, Map<String
   output.writeln('/// List of all Tags - SymbolsMetadata() objects reference tags by their INDEX this table.');
   output.writeln('/// To get the tag name, use `tagMap[tagIndexFromSymbolsMetadata]`');
   output.writeln('List<String> tagMap = [');
-  _tagStringTable.keys.map((tag) => '  "$tag",').forEach((line) => output.writeln(line));
+  _tagStringTable.keys.map((tag) => '  "${tag.replaceAll('"','')}",').forEach((line) => output.writeln(line));
   output.writeln('];');  
   output.writeln();
 
@@ -235,7 +235,7 @@ class SymbolsMetadata {
 
   String toJson() {
     return json.encode({
-      if(originalName!=null && originalName.isNotEmpty) 'originalName': originalName,
+      if(originalName!=null && originalName!.isNotEmpty) 'originalName': originalName!,
       if(rtlAutoMirrored) 'rtlAutoMirrored': rtlAutoMirrored,
       'popularity': popularity,
       'codepoint': codepoint,

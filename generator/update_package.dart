@@ -38,27 +38,55 @@ class IconInfo {
   IconInfo(this.originalIconName, this.iconName, this.codePoint);
 }
 
+// The google repository's action has been broken for over 3 months https://github.com/google/material-design-icons/issues/1902
+// I have submitted a PR to fix it ( https://github.com/google/material-design-icons/pull/1922 )
+//  but until it's fixed get the fonts from my repo...
+const bool useMyRepository = true;
+
 class MaterialSymbolsVariableFont {
   final String flavor;
   final String iconDataClass;
   final String familyNameToUse;
-  final String codepointFileUrl;
-  final String ttfFontFileUrl;
+  /*final*/ String _codepointFileUrl;
+  /*final*/ String _ttfFontFileUrl;
   final String woff2FontUrlForDartDocSVG;
   final String svgFontFamily;
   late final String filename;
   final List<IconInfo> iconInfoList = [];
 
+  // Until google fixes their action to generate the codepoints/fonts correctly...
+  // use my repository
+  String get codepointFileUrl {
+    if (useMyRepository && _codepointFileUrl.startsWith("https://github.com/google/")) {
+      _codepointFileUrl = _codepointFileUrl.replaceFirst(
+          'github.com/google/','github.com/timmaffett/');
+    }
+
+    return _codepointFileUrl;
+  }
+
+  // Until google fixes their action to generate the codepoints/fonts correctly...
+  // use my repository
+  String get ttfFontFileUrl {
+    if (useMyRepository && _ttfFontFileUrl.startsWith("https://github.com/google/")) {
+      _ttfFontFileUrl = _ttfFontFileUrl.replaceFirst(
+          'github.com/google/','github.com/timmaffett/');
+    }
+    return _ttfFontFileUrl;
+  }
+
   MaterialSymbolsVariableFont(
       this.flavor,
       this.iconDataClass,
       this.familyNameToUse,
-      this.codepointFileUrl,
-      this.ttfFontFileUrl,
+      this._codepointFileUrl,
+      this._ttfFontFileUrl,
       this.woff2FontUrlForDartDocSVG,
       this.svgFontFamily) {
     final urlfilename = path.basename(ttfFontFileUrl);
     filename = Uri.decodeFull(urlfilename);
+
+    print("Set filename for symbols font to $filename");
   }
 }
 

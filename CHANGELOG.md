@@ -1,9 +1,64 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2858.1
+
+* Update to version 2.858 of the material icons variable fonts 'released' 07/30/2025 with 4018 icons
+  ('released' is in quotes because of offical repo action still being broken and I am pulling from my fixed
+  repo)
+* After waiting over 3 months for the official repo to fix their broken action to generate the fonts
+  (which usually happens on thursday at midnight every week) the github user https://github.com/mwillsey
+  educated me on the fact that the action can be fixed by changing the action runner to `ubuntu-latest` from
+  `ubuntu-20.04-4core`.  I did this for my copy of the offical repo and was able to successfully generate the fonts!
+  So we finally have new fonts after almost 4 months!  There have been many new symbols added as you can see below.
+  I have submitted PR https://github.com/google/material-design-icons/pull/1922 to fix the official repo and I
+  hope it gets merged soon.  For now I will be able to generate the fonts until google fixes the official repo.
+* Changed the update_package.dart file to have a flag allowing pulling fonts from my fixed copy of the repo.
+* Added f2c4  # acupuncture, f2c5  # approval_delegation_off, f267  # auto_stories_off, f2a8  # badminton,
+  f286  # bath_bedrock, f2a0  # bath_soak, f285  # beer_meal, f296  # calendar_meal, f278  # car_defrost_mid_left,
+  f277  # car_defrost_mid_low_right, f29f  # chair_counter, f29e  # chair_fireplace, f29d  # chair_umbrella,
+  f27e  # check_circle_unread, f261  # chess_bishop, f262  # chess_bishop_2, f25f  # chess_king,
+  f260  # chess_king_2, f25e  # chess_knight, f25d  # chess_pawn_2, f25c  # chess_queen, f25b  # chess_rook,
+  f2b2  # diamond_shine, f29c  # dine_heart, f295  # dine_in, f29b  # dine_lamp, f25a  # drone, f259  # drone_2,
+  f2c7  # eyeglasses_2, f265  # eyeglasses_2_sound, f28d  # garage_check, f28c  # garage_money, f294  # hand_meal,
+  f293  # hand_package, f2c3  # health_cross, f2ec  # hearing_aid_disabled_left, f2ed  # hearing_aid_left,
+  f292  # heart_smile, f29a  # high_chair, f284  # japanese_curry, f283  # japanese_flag, f298  # map_pin_heart,
+  f297  # map_pin_review, f2c2  # massage, f291  # menu_book_2, e200  # mobile_friendly, e7ba  # mobile,
+  f2db  # mobile_2, f2da  # mobile_3, f2d3  # mobile_alert, f2cd  # mobile_arrow_down, f2d2  # mobile_arrow_right,f2b9  # mobile_arrow_up_right, f2e5  # mobile_block, f44e  # mobile_camera, f2c9  # mobile_camera_front,
+  f2c8  # mobile_camera_rear, f2ea  # mobile_cancel, f2cc  # mobile_cast, f2e3  # mobile_charge, f79f  # mobile_chat,
+  f073  # mobile_check, f2e2  # mobile_code, f2d0  # mobile_dots, f073  # mobile_friendly, f2d9  # mobile_gear,
+  f2dc  # mobile_info, ed3e  # mobile_landscape, f2bf  # mobile_layout, f2d8  # mobile_lock_landscape,
+  f2be  # mobile_lock_portrait, f2d1  # mobile_menu, f2e1  # mobile_question, f2d5  # mobile_rotate,
+  f2d6  # mobile_rotate_lock, f2ef  # mobile_sensor_hi, f2ee  # mobile_sensor_lo, f2df  # mobile_share,
+  f2de  # mobile_share_stack, f2e8  # mobile_sound, f7aa  # mobile_sound_off, f2eb  # mobile_text,
+  f2e6  # mobile_text_2, f2e4  # mobile_ticket, f2cb  # mobile_vibrate, f2b0  # mobile_wrench, f28b  # moped_package,
+  f282  # mountain_steam, f2a3  # movie_speaker, f2c1  # music_history, f27d  # nest_farsight_cool,
+  f27c  # nest_farsight_dual, f27b  # nest_farsight_eco, f27a  # nest_farsight_heat, f279  # nest_farsight_seasonal,
+  f281  # okonomiyaki, f2a7  # padel, f28a  # parking_meter, f289  # parking_sign, f288  # parking_valet,
+  f2c0  # payment_arrow_down, f2a1  # payment_card, f290  # person_heart, f2a6  # pickleball,
+  f2ac  # plane_contrails, f28e  # playground, f28f  # playground_2, f266  # reset_exposure, f2ad  # shield_toggle,
+  f258  # sign_language_2, f287  # subway_walk, f264  # sync_saved_locally_off, f299  # table_large,
+  f2af  # timer_1, f2ae  # timer_2, f2b4  # tonality_2, f263  # translate_indic, f2b3  # vignette_2,
+  f280  # washoku, f2ca  # watch_arrow, f27f  # yoshoku
+  The following symbols changed their code points: ad_units ef39 > f2eb, add_to_home_screen  e1fe > f2b9,
+  aod efda > f2e6, app_blocking  ef3f > f2e5, app_promo  e981 > f2cd, app_settings_alt ef41 > f2df,
+  app_shortcut eae4 > f2d9, book_online f217 > f2e4, camera_front e3b1 > f2c9, camera_rear e3b2 > f2c8,
+  charging_station f19d > f2e3, developer_mode e1b0 > f2e2, device_unknown e339 > f2e1, dock e30e > f2e0,
+  edgesensor_high f005 > f2ef, edgesensor_low f006  > f2ee, install_mobile eb72 > f2cd,
+  mobile_screen_share e0e7 > f2df, offline_share e9c5 > f2de, open_in_phone e702 > f2d2,
+  perm_device_information e8a5 > f2dc, phone_android  e324 > f2db, phone_iphone e325 > f2da,
+  phonelink_erase e0db > f2ea, phonelink_lock e0dc > f2be, phonelink_off e327  > f7a5,
+  phonelink_ring e0dd > f2e8, phonelink_setup ef41 > f2d9, screen_lock_landscape e1be > f2d8,
+  screen_lock_portrait e1bf  > f2be, screen_lock_rotation e1c0  > f2d6, screen_rotation e1c1 > f2d5,
+  security_update f072 > f2cd, security_update_warning f074 > f2d3, send_to_mobile f05c > f2d2,
+  settings_cell e8bc > f2d1, smart_screen f06b > f2d0, smartphone e32c > e7ba, stay_current_landscape e0d3 > ed3e,
+  stay_current_portrait e0d4  > e7ba, stay_primary_landscape e0d5 > ed3e, stay_primary_portrait e0d6  > f2d3,
+  system_security_update f072 > f2cd, system_security_update_warning f074 > f2d3, system_update f072 > f2cd,
+  tap_and_play e62b > f2cc, vibration e62d > f2cb
+
 ## 4.2815.1
 
 * Added Right To Left (RTL) language support for all of the icons (YeeHa!!)
-* Added support for including all of the known metadata for each  of the material symbols icons.
+* Added support for including all of the known metadata for each of the material symbols icons.
   This data is found in `libs\material_symbols_metadata.dart`
   This data may be useful for anyone creating a material symbols icon viewer, etc.
   This metadata includes icon categories, tags, original name (if it had to be renamed),

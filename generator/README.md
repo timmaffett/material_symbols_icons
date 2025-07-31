@@ -30,8 +30,11 @@ is that this is a NO FIX - as I suspected it might be - for compatibility with a
 Steps to update package when new fonts are released.
 
 0.5) cd to `\generator`
-0.75) `dart run update_metadata.dart`
 1) `dart run update_package.dart -s -d` 
+
+
+1.5) `dart run update_metadata.dart`
+
 2) figure out source font version number with `ttx -s oneofthefonts.ttf`
     (`cd ~/source/fonttools`; copy font there 
       `cp /mnt/c/src/material_symbols_icons/rawFontsUnfixed/MaterialSymbolsOutline*.ttf .`

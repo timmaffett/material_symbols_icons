@@ -41,7 +41,7 @@ class IconInfo {
 // The google repository's action has been broken for over 3 months https://github.com/google/material-design-icons/issues/1902
 // I have submitted a PR to fix it ( https://github.com/google/material-design-icons/pull/1922 )
 //  but until it's fixed get the fonts from my repo...
-const bool useMyRepository = true;
+const bool useMyRepository = false; // As of 8/15/25 my PRs were merged into https://github.com/google/material_design_icons so the main.yml action is building fonts again
 
 class MaterialSymbolsVariableFont {
   final String flavor;
@@ -229,7 +229,12 @@ bool writeUnicodeCodepoints = true;
 //WITH src - but the sandbox removes this//const svgIconTemplateRaw =
 // so there this is just wasted bytes    //    r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face { font-family: "$1"; src: $2;} text {font-family:"$1"; font-size: 32px; text-anchor: middle; dominant-baseline: text-bottom; fill: grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
 const svgIconTemplateRaw =
-    r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face{font-family:"$1";}text{font-family:"$1";font-size:32px;text-anchor:middle;dominant-baseline:text-bottom;fill:grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
+  //r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face{font-family:"$1";}text{font-family:"$1";font-size:32px;text-anchor:middle;dominant-baseline:text-bottom;fill:grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
+  // remove font face from SVG
+    r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">text{font-family:"$1";font-size:32px;text-anchor:middle;dominant-baseline:text-bottom;fill:grey;}</style></defs><text x="50%" y="100%">&%23x$3;</text></svg>''';
+    //suggested alt //r'''data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%3E%3Cdefs%3E%3Cstyle%20type='text/css'%3E@font-face%7Bfont-family:'$1';%7Dtext%7Bfont-family:'$1';font-size:32px;text-anchor:middle;dominant-baseline:text-bottom;fill:grey;%7D%3C/style%3E%3C/defs%3E%3Ctext%20x='50%25'%20y='100%25'%3E%26%23$3%3B%3C/text%3E%3C/svg%3E''';
+
+
 String? svgIconTemplate;
 
 String getSVGDateUriFor(
@@ -916,8 +921,12 @@ class Symbols {
       sourceFileContent.writeln();
       if (svgDartDocsFlag) {
         final svgDataUUri = getSVGDateUriFor(fontinfo, codepoint);
+        // Include span so that standalong dart doc files show previews also via loaded style sheets
+        final spanString = ''; //~INCLUDE BOTH WAYS>> '<span class="material-symbols-${fontinfo.flavor}" data-variation="${fontinfo.flavor}" data-fontfamily="${fontinfo.familyNameToUse}" data-codepoint="$codepoint">${iconInfo.originalIconName}</span>';
+
         sourceFileContent.writeln(
-            '  /// \![$iconname]($svgDataUUri|width=32,height=32)  material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
+      //WITH MARKDOWN image/width/height BUT THIS BREAKS THE 'dart doc' html docs //      '  /// \![$iconname]($svgDataUUri|width=32,height=32)  material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
+            '  /// $spanString \![$iconname]($svgDataUUri)  material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
       } else {
         sourceFileContent.writeln(
             '  /// <span class="material-symbols-${fontinfo.flavor}" data-variation="${fontinfo.flavor}" data-fontfamily="${fontinfo.familyNameToUse}" data-codepoint="$codepoint">${iconInfo.originalIconName}</span> material symbols icon named "$iconname" (${fontinfo.flavor} variation).');

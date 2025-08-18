@@ -1,5 +1,29 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2867.0
+
+* Update to version 2.867 of the material icons variable fonts 'released' 08/14/2025 with 4092 icons
+* (My PRs https://github.com/google/material-design-icons/pull/1928 and https://github.com/google/material-design-icons/pull/1929 
+   were merged into https://github.com/google/material-design-icons and the main.ml action is generating fonts every
+   thursday at 7pm pacific time. Yippee!)
+* Added ef06  # android_cell_4_bar, ef09  # android_cell_4_bar_alert, ef08  # android_cell_4_bar_off, ef07  # android_cell_4_bar_plus,
+  ef02  # android_cell_5_bar, ef05  # android_cell_5_bar_alert, ef04  # android_cell_5_bar_off, ef03  # android_cell_5_bar_plus,
+  ef0d  # android_cell_dual_4_bar, ef0f  # android_cell_dual_4_bar_alert, ef0e  # android_cell_dual_4_bar_plus, ef0a  # android_cell_dual_5_bar,
+  ef0c  # android_cell_dual_5_bar_alert, ef0b  # android_cell_dual_5_bar_plus, ef16  # android_wifi_3_bar, ef1b  # android_wifi_3_bar_alert,
+  ef1a  # android_wifi_3_bar_lock, ef19  # android_wifi_3_bar_off, ef18  # android_wifi_3_bar_plus, ef17  # android_wifi_3_bar_question,
+  ef10  # android_wifi_4_bar, ef15  # android_wifi_4_bar_alert, ef14  # android_wifi_4_bar_lock, ef13  # android_wifi_4_bar_off,
+  ef12  # android_wifi_4_bar_plus, ef11  # android_wifi_4_bar_question, eef6  # arrow_shape_up, eef7  # arrow_shape_up_stack,
+  eef8  # arrow_shape_up_stack_2, f241  # award_meal, f257  # battery_android_frame_1, f256  # battery_android_frame_2,
+  f255  # battery_android_frame_3, f254  # battery_android_frame_4, f253  # battery_android_frame_5, f252  # battery_android_frame_6,
+  f251  # battery_android_frame_alert, f250  # battery_android_frame_bolt, f24f  # battery_android_frame_full,
+  f24e  # battery_android_frame_plus, f24d  # battery_android_frame_question, f24c  # battery_android_frame_share,
+  f24b  # battery_android_frame_shield, f246  # briefcase_meal, ef2a  # bucket_check, f243  # calendar_check, f242  # calendar_lock,
+  f240  # calendar_meal_2, ef30  # child_hat, ef2f  # conversation, f23f  # hanami_dango, f247  # image_inset, f23e  # kanji_alcohol,
+  f249  # mail_shield, f23d  # meal_dinner, f23c  # meal_lunch, f245  # money_range, eefb  # page_menu_ios, f22d  # parent_child_dining,
+  ef2e  # partner_heart, f244  # percent_discount, f22a  # rest_area, eefa  # search_gear, ef2d  # settings_seating, f225  # shaved_ice,
+  ef36  # soba, ef35  # solo_dining, ef2c  # table_sign, ef34  # takeout_dining_2, ef33  # tatami_seat, eefc  # thumbs_up_double,
+  ef32  # udon, f248  # windshield_defrost_auto, ef31  # yakitori
+
 ## 4.2858.1
 
 * Update to version 2.858 of the material icons variable fonts 'released' 07/30/2025 with 4018 icons

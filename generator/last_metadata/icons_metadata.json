@@ -2301,7 +2301,7 @@
     "name": "five_g",
     "version": 329,
     "originalName": "5g",
-    "popularity": 597,
+    "popularity": 598,
     "codepoint": 61240,
     "categories": [
       "Android"
@@ -3678,7 +3678,7 @@
   "account_balance_wallet": {
     "name": "account_balance_wallet",
     "version": 329,
-    "popularity": 10254,
+    "popularity": 10257,
     "codepoint": 59472,
     "categories": [
       "Business"
@@ -3998,7 +3998,7 @@
   "action_key": {
     "name": "action_key",
     "version": 329,
-    "popularity": 132,
+    "popularity": 133,
     "codepoint": 62722,
     "categories": [
       "UI actions"
@@ -4051,7 +4051,7 @@
   "activity_zone": {
     "name": "activity_zone",
     "version": 329,
-    "popularity": 433,
+    "popularity": 434,
     "codepoint": 57830,
     "categories": [
       "Home"
@@ -4542,7 +4542,7 @@
   "add": {
     "name": "add",
     "version": 329,
-    "popularity": 72375,
+    "popularity": 72381,
     "codepoint": 57669,
     "categories": [
       "UI actions"
@@ -4583,7 +4583,7 @@
   "add_2": {
     "name": "add_2",
     "version": 329,
-    "popularity": 108,
+    "popularity": 112,
     "codepoint": 62429,
     "categories": [
       "UI actions"
@@ -4666,7 +4666,7 @@
   "add_ad": {
     "name": "add_ad",
     "version": 329,
-    "popularity": 57,
+    "popularity": 58,
     "codepoint": 59178,
     "categories": [
       "Actions"
@@ -4993,7 +4993,7 @@
   "add_circle": {
     "name": "add_circle",
     "version": 329,
-    "popularity": 41020,
+    "popularity": 41021,
     "codepoint": 57671,
     "categories": [
       "UI actions"
@@ -5222,7 +5222,7 @@
   "add_home": {
     "name": "add_home",
     "version": 329,
-    "popularity": 387,
+    "popularity": 388,
     "codepoint": 63723,
     "categories": [
       "Maps"
@@ -5262,7 +5262,7 @@
   "add_home_work": {
     "name": "add_home_work",
     "version": 329,
-    "popularity": 324,
+    "popularity": 325,
     "codepoint": 63725,
     "categories": [
       "Maps"
@@ -5566,7 +5566,7 @@
   "add_reaction": {
     "name": "add_reaction",
     "version": 329,
-    "popularity": 2537,
+    "popularity": 2538,
     "codepoint": 57811,
     "categories": [
       "Social"
@@ -7257,7 +7257,7 @@
   "airwave": {
     "name": "airwave",
     "version": 329,
-    "popularity": 661,
+    "popularity": 662,
     "codepoint": 58012,
     "categories": [
       "Home"
@@ -9049,7 +9049,7 @@
   "altitude": {
     "name": "altitude",
     "version": 329,
-    "popularity": 78,
+    "popularity": 79,
     "codepoint": 63603,
     "categories": [
       "Social"
@@ -9308,7 +9308,7 @@
   "android": {
     "name": "android",
     "version": 329,
-    "popularity": 3409,
+    "popularity": 3410,
     "codepoint": 59481,
     "categories": [
       "Android"
@@ -9349,7 +9349,7 @@
   "animated_images": {
     "name": "animated_images",
     "version": 329,
-    "popularity": 231,
+    "popularity": 232,
     "codepoint": 62618,
     "categories": [
       "Audio&Video"
@@ -9625,7 +9625,7 @@
   "api": {
     "name": "api",
     "version": 329,
-    "popularity": 2821,
+    "popularity": 2826,
     "codepoint": 61879,
     "categories": [
       "Actions"
@@ -9935,7 +9935,7 @@
   "approval": {
     "name": "approval",
     "version": 329,
-    "popularity": 1779,
+    "popularity": 1781,
     "codepoint": 59778,
     "categories": [
       "Actions"
@@ -10538,7 +10538,7 @@
   "arrow_back": {
     "name": "arrow_back",
     "version": 329,
-    "popularity": 54055,
+    "popularity": 54056,
     "codepoint": 58820,
     "categories": [
       "UI actions"
@@ -10693,7 +10693,7 @@
   "arrow_back_ios_new": {
     "name": "arrow_back_ios_new",
     "version": 329,
-    "popularity": 10818,
+    "popularity": 10819,
     "codepoint": 58090,
     "categories": [
       "UI actions"
@@ -10943,7 +10943,7 @@
   "arrow_downward": {
     "name": "arrow_downward",
     "version": 329,
-    "popularity": 11387,
+    "popularity": 11388,
     "codepoint": 58843,
     "categories": [
       "UI actions"
@@ -11230,7 +11230,7 @@
   "arrow_forward_ios": {
     "name": "arrow_forward_ios",
     "version": 329,
-    "popularity": 45571,
+    "popularity": 45572,
     "codepoint": 58849,
     "categories": [
       "UI actions"
@@ -11794,7 +11794,7 @@
   "arrow_split": {
     "name": "arrow_split",
     "version": 329,
-    "popularity": 281,
+    "popularity": 282,
     "codepoint": 59781,
     "categories": [
       "UI actions"
@@ -12429,7 +12429,7 @@
   "article": {
     "name": "article",
     "version": 329,
-    "popularity": 8993,
+    "popularity": 8994,
     "codepoint": 61250,
     "categories": [
       "Text"
@@ -12660,7 +12660,7 @@
   "assignment": {
     "name": "assignment",
     "version": 329,
-    "popularity": 7205,
+    "popularity": 7207,
     "codepoint": 59485,
     "categories": [
       "Text"
@@ -12703,7 +12703,7 @@
   "assignment_add": {
     "name": "assignment_add",
     "version": 329,
-    "popularity": 184,
+    "popularity": 185,
     "codepoint": 63560,
     "categories": [
       "Text"
@@ -12922,7 +12922,7 @@
   "assignment_turned_in": {
     "name": "assignment_turned_in",
     "version": 329,
-    "popularity": 2969,
+    "popularity": 2970,
     "codepoint": 59490,
     "categories": [
       "Text"
@@ -13574,7 +13574,7 @@
   "attach_money": {
     "name": "attach_money",
     "version": 329,
-    "popularity": 13764,
+    "popularity": 13765,
     "codepoint": 57895,
     "categories": [
       "Business"
@@ -13809,7 +13809,7 @@
   "audio_file": {
     "name": "audio_file",
     "version": 329,
-    "popularity": 695,
+    "popularity": 697,
     "codepoint": 60290,
     "categories": [
       "Audio&Video"
@@ -14119,7 +14119,7 @@
   "auto_stories": {
     "name": "auto_stories",
     "version": 329,
-    "popularity": 4891,
+    "popularity": 4893,
     "codepoint": 58982,
     "categories": [
       "Images"
@@ -14786,7 +14786,7 @@
   "award_star": {
     "name": "award_star",
     "version": 329,
-    "popularity": 273,
+    "popularity": 274,
     "codepoint": 62994,
     "categories": [
       "Actions"
@@ -14923,7 +14923,7 @@
   "back_hand": {
     "name": "back_hand",
     "version": 329,
-    "popularity": 2049,
+    "popularity": 2050,
     "codepoint": 59236,
     "categories": [
       "Household"
@@ -15308,7 +15308,7 @@
   "backpack": {
     "name": "backpack",
     "version": 329,
-    "popularity": 971,
+    "popularity": 972,
     "codepoint": 61852,
     "categories": [
       "Activities"
@@ -15432,7 +15432,7 @@
   "backup_table": {
     "name": "backup_table",
     "version": 329,
-    "popularity": 805,
+    "popularity": 806,
     "codepoint": 61251,
     "categories": [
       "Actions"
@@ -15603,7 +15603,7 @@
   "balance": {
     "name": "balance",
     "version": 329,
-    "popularity": 2764,
+    "popularity": 2765,
     "codepoint": 60150,
     "categories": [
       "Hardware"
@@ -16063,7 +16063,7 @@
   "batch_prediction": {
     "name": "batch_prediction",
     "version": 329,
-    "popularity": 655,
+    "popularity": 656,
     "codepoint": 61685,
     "categories": [
       "Actions"
@@ -16842,7 +16842,7 @@
   "battery_android_5": {
     "name": "battery_android_5",
     "version": 352,
-    "popularity": 9,
+    "popularity": 10,
     "codepoint": 62216,
     "categories": [
       "Android"
@@ -18025,7 +18025,7 @@
   "battery_status_good": {
     "name": "battery_status_good",
     "version": 329,
-    "popularity": 22,
+    "popularity": 23,
     "codepoint": 63101,
     "categories": [
       "Android"
@@ -18479,7 +18479,7 @@
   "beenhere": {
     "name": "beenhere",
     "version": 329,
-    "popularity": 1339,
+    "popularity": 1340,
     "codepoint": 58669,
     "categories": [
       "Maps"
@@ -18913,7 +18913,7 @@
   "biotech": {
     "name": "biotech",
     "version": 329,
-    "popularity": 2701,
+    "popularity": 2702,
     "codepoint": 59962,
     "categories": [
       "Activities"
@@ -19172,7 +19172,7 @@
   "block": {
     "name": "block",
     "version": 329,
-    "popularity": 11729,
+    "popularity": 11730,
     "codepoint": 57675,
     "categories": [
       "UI actions"
@@ -19992,7 +19992,7 @@
   "bolt": {
     "name": "bolt",
     "version": 329,
-    "popularity": 15585,
+    "popularity": 15586,
     "codepoint": 59915,
     "categories": [
       "UI actions"
@@ -20413,7 +20413,7 @@
   "book_ribbon": {
     "name": "book_ribbon",
     "version": 329,
-    "popularity": 34,
+    "popularity": 35,
     "codepoint": 62439,
     "categories": [
       "Actions"
@@ -21644,7 +21644,7 @@
   "borg": {
     "name": "borg",
     "version": 329,
-    "popularity": 40,
+    "popularity": 41,
     "codepoint": 62477,
     "categories": [
       "UI actions"
@@ -22172,7 +22172,7 @@
   "boy": {
     "name": "boy",
     "version": 329,
-    "popularity": 1522,
+    "popularity": 1523,
     "codepoint": 60263,
     "categories": [
       "Social"
@@ -22543,7 +22543,7 @@
   "brick": {
     "name": "brick",
     "version": 329,
-    "popularity": 45,
+    "popularity": 46,
     "codepoint": 62344,
     "categories": [
       "Social"
@@ -23278,7 +23278,7 @@
   "browse_activity": {
     "name": "browse_activity",
     "version": 329,
-    "popularity": 1387,
+    "popularity": 1388,
     "codepoint": 63653,
     "categories": [
       "UI actions"
@@ -23624,7 +23624,7 @@
   "bug_report": {
     "name": "bug_report",
     "version": 329,
-    "popularity": 6473,
+    "popularity": 6477,
     "codepoint": 59496,
     "categories": [
       "Actions"
@@ -23665,7 +23665,7 @@
   "build": {
     "name": "build",
     "version": 329,
-    "popularity": 8286,
+    "popularity": 8291,
     "codepoint": 59497,
     "categories": [
       "Actions"
@@ -24470,7 +24470,7 @@
   "calendar_add_on": {
     "name": "calendar_add_on",
     "version": 329,
-    "popularity": 2203,
+    "popularity": 2204,
     "codepoint": 61317,
     "categories": [
       "Communicate"
@@ -24602,7 +24602,7 @@
   "calendar_month": {
     "name": "calendar_month",
     "version": 329,
-    "popularity": 38095,
+    "popularity": 38098,
     "codepoint": 60364,
     "categories": [
       "Actions"
@@ -24806,7 +24806,7 @@
   "call": {
     "name": "call",
     "version": 329,
-    "popularity": 48026,
+    "popularity": 48027,
     "codepoint": 57520,
     "categories": [
       "Communicate"
@@ -25190,7 +25190,7 @@
   "call_split": {
     "name": "call_split",
     "version": 329,
-    "popularity": 924,
+    "popularity": 925,
     "codepoint": 57526,
     "categories": [
       "Communicate"
@@ -25234,7 +25234,7 @@
   "call_to_action": {
     "name": "call_to_action",
     "version": 329,
-    "popularity": 578,
+    "popularity": 579,
     "codepoint": 57452,
     "categories": [
       "Audio&Video"
@@ -25761,7 +25761,7 @@
   "cancel": {
     "name": "cancel",
     "version": 329,
-    "popularity": 40998,
+    "popularity": 40999,
     "codepoint": 58825,
     "categories": [
       "UI actions"
@@ -27666,7 +27666,7 @@
   "cast_connected": {
     "name": "cast_connected",
     "version": 329,
-    "popularity": 578,
+    "popularity": 579,
     "codepoint": 58120,
     "categories": [
       "Hardware"
@@ -28041,7 +28041,7 @@
   "celebration": {
     "name": "celebration",
     "version": 329,
-    "popularity": 5560,
+    "popularity": 5561,
     "codepoint": 60005,
     "categories": [
       "Actions"
@@ -28864,7 +28864,7 @@
   "chat_info": {
     "name": "chat_info",
     "version": 329,
-    "popularity": 116,
+    "popularity": 117,
     "codepoint": 62763,
     "categories": [
       "Communicate"
@@ -29012,7 +29012,7 @@
   "check": {
     "name": "check",
     "version": 329,
-    "popularity": 30854,
+    "popularity": 30857,
     "codepoint": 58826,
     "categories": [
       "UI actions"
@@ -29057,7 +29057,7 @@
   "check_box": {
     "name": "check_box",
     "version": 329,
-    "popularity": 25544,
+    "popularity": 25546,
     "codepoint": 59444,
     "categories": [
       "UI actions"
@@ -29104,7 +29104,7 @@
   "check_box_outline_blank": {
     "name": "check_box_outline_blank",
     "version": 329,
-    "popularity": 21873,
+    "popularity": 21876,
     "codepoint": 59445,
     "categories": [
       "UI actions"
@@ -29152,7 +29152,7 @@
   "check_circle": {
     "name": "check_circle",
     "version": 329,
-    "popularity": 84105,
+    "popularity": 84111,
     "codepoint": 59500,
     "categories": [
       "UI actions"
@@ -29295,7 +29295,7 @@
   "check_small": {
     "name": "check_small",
     "version": 329,
-    "popularity": 1972,
+    "popularity": 1973,
     "codepoint": 63627,
     "categories": [
       "UI actions"
@@ -29461,7 +29461,7 @@
   "checklist": {
     "name": "checklist",
     "version": 329,
-    "popularity": 7038,
+    "popularity": 7040,
     "codepoint": 59057,
     "categories": [
       "Text"
@@ -29830,7 +29830,7 @@
   "chevron_forward": {
     "name": "chevron_forward",
     "version": 329,
-    "popularity": 142,
+    "popularity": 143,
     "codepoint": 62570,
     "categories": [
       "UI actions"
@@ -29913,7 +29913,7 @@
   "chevron_right": {
     "name": "chevron_right",
     "version": 329,
-    "popularity": 52022,
+    "popularity": 52023,
     "codepoint": 58828,
     "categories": [
       "UI actions"
@@ -31334,7 +31334,7 @@
   "close": {
     "name": "close",
     "version": 329,
-    "popularity": 134954,
+    "popularity": 134959,
     "codepoint": 58829,
     "categories": [
       "UI actions"
@@ -31621,7 +31621,7 @@
   "cloud": {
     "name": "cloud",
     "version": 329,
-    "popularity": 6777,
+    "popularity": 6780,
     "codepoint": 58045,
     "categories": [
       "Text"
@@ -32120,7 +32120,7 @@
   "co_present": {
     "name": "co_present",
     "version": 329,
-    "popularity": 1981,
+    "popularity": 1982,
     "codepoint": 60144,
     "categories": [
       "Communicate"
@@ -32167,7 +32167,7 @@
   "code": {
     "name": "code",
     "version": 329,
-    "popularity": 8724,
+    "popularity": 8725,
     "codepoint": 59503,
     "categories": [
       "Actions"
@@ -32391,7 +32391,7 @@
   "cognition": {
     "name": "cognition",
     "version": 329,
-    "popularity": 487,
+    "popularity": 491,
     "codepoint": 57503,
     "categories": [
       "Social"
@@ -32438,7 +32438,7 @@
   "cognition_2": {
     "name": "cognition_2",
     "version": 329,
-    "popularity": 139,
+    "popularity": 140,
     "codepoint": 62389,
     "categories": [
       "Social"
@@ -32822,7 +32822,7 @@
   "comic_bubble": {
     "name": "comic_bubble",
     "version": 329,
-    "popularity": 58,
+    "popularity": 60,
     "codepoint": 62941,
     "categories": [
       "Social"
@@ -33017,7 +33017,7 @@
   "commit": {
     "name": "commit",
     "version": 329,
-    "popularity": 613,
+    "popularity": 615,
     "codepoint": 60149,
     "categories": [
       "Actions"
@@ -33070,7 +33070,7 @@
   "communication": {
     "name": "communication",
     "version": 329,
-    "popularity": 2176,
+    "popularity": 2178,
     "codepoint": 57980,
     "categories": [
       "Social"
@@ -33566,7 +33566,7 @@
   "computer_cancel": {
     "name": "computer_cancel",
     "version": 329,
-    "popularity": 8,
+    "popularity": 9,
     "codepoint": 62198,
     "categories": [
       "Hardware"
@@ -33946,7 +33946,7 @@
   "construction": {
     "name": "construction",
     "version": 329,
-    "popularity": 9584,
+    "popularity": 9585,
     "codepoint": 59964,
     "categories": [
       "Activities"
@@ -34514,7 +34514,7 @@
   "content_paste": {
     "name": "content_paste",
     "version": 329,
-    "popularity": 3455,
+    "popularity": 3456,
     "codepoint": 57679,
     "categories": [
       "Text"
@@ -35352,7 +35352,7 @@
   "convert_to_text": {
     "name": "convert_to_text",
     "version": 329,
-    "popularity": 29,
+    "popularity": 30,
     "codepoint": 62495,
     "categories": [
       "Text"
@@ -35764,7 +35764,7 @@
   "corporate_fare": {
     "name": "corporate_fare",
     "version": 329,
-    "popularity": 3720,
+    "popularity": 3721,
     "codepoint": 61904,
     "categories": [
       "Business"
@@ -36114,7 +36114,7 @@
   "counter_6": {
     "name": "counter_6",
     "version": 329,
-    "popularity": 48,
+    "popularity": 49,
     "codepoint": 63359,
     "categories": [
       "Text"
@@ -36243,7 +36243,7 @@
   "counter_9": {
     "name": "counter_9",
     "version": 329,
-    "popularity": 31,
+    "popularity": 32,
     "codepoint": 63356,
     "categories": [
       "Text"
@@ -36370,7 +36370,7 @@
   "credit_card": {
     "name": "credit_card",
     "version": 329,
-    "popularity": 14570,
+    "popularity": 14574,
     "codepoint": 59504,
     "categories": [
       "Business"
@@ -36536,7 +36536,7 @@
   "credit_card_heart": {
     "name": "credit_card_heart",
     "version": 329,
-    "popularity": 34,
+    "popularity": 35,
     "codepoint": 62764,
     "categories": [
       "Business"
@@ -36744,7 +36744,7 @@
   "crisis_alert": {
     "name": "crisis_alert",
     "version": 329,
-    "popularity": 2254,
+    "popularity": 2255,
     "codepoint": 60393,
     "categories": [
       "Maps"
@@ -37430,7 +37430,7 @@
   "crown": {
     "name": "crown",
     "version": 329,
-    "popularity": 70,
+    "popularity": 71,
     "codepoint": 60595,
     "categories": [
       "Social"
@@ -38299,7 +38299,7 @@
   "cyclone": {
     "name": "cyclone",
     "version": 329,
-    "popularity": 718,
+    "popularity": 719,
     "codepoint": 60373,
     "categories": [
       "Social"
@@ -38527,7 +38527,7 @@
   "dashboard_customize": {
     "name": "dashboard_customize",
     "version": 329,
-    "popularity": 2534,
+    "popularity": 2536,
     "codepoint": 59803,
     "categories": [
       "Text"
@@ -38851,7 +38851,7 @@
   "data_object": {
     "name": "data_object",
     "version": 329,
-    "popularity": 1895,
+    "popularity": 1896,
     "codepoint": 60115,
     "categories": [
       "Text"
@@ -39094,7 +39094,7 @@
   "database": {
     "name": "database",
     "version": 329,
-    "popularity": 13347,
+    "popularity": 13351,
     "codepoint": 61966,
     "categories": [
       "Business"
@@ -39196,7 +39196,7 @@
   "database_search": {
     "name": "database_search",
     "version": 329,
-    "popularity": 79,
+    "popularity": 80,
     "codepoint": 62350,
     "categories": [
       "Business"
@@ -39251,7 +39251,7 @@
   "database_upload": {
     "name": "database_upload",
     "version": 329,
-    "popularity": 50,
+    "popularity": 51,
     "codepoint": 62428,
     "categories": [
       "Business"
@@ -39306,7 +39306,7 @@
   "dataset": {
     "name": "dataset",
     "version": 329,
-    "popularity": 4380,
+    "popularity": 4381,
     "codepoint": 63726,
     "categories": [
       "UI actions"
@@ -39559,7 +39559,7 @@
   "decimal_increase": {
     "name": "decimal_increase",
     "version": 329,
-    "popularity": 27,
+    "popularity": 28,
     "codepoint": 63532,
     "categories": [
       "Text"
@@ -39868,7 +39868,7 @@
   "delivery_truck_bolt": {
     "name": "delivery_truck_bolt",
     "version": 329,
-    "popularity": 32,
+    "popularity": 33,
     "codepoint": 62370,
     "categories": [
       "Business"
@@ -40542,7 +40542,7 @@
   "description": {
     "name": "description",
     "version": 329,
-    "popularity": 34299,
+    "popularity": 34300,
     "codepoint": 59507,
     "categories": [
       "Text"
@@ -41692,7 +41692,7 @@
   "developer_guide": {
     "name": "developer_guide",
     "version": 329,
-    "popularity": 313,
+    "popularity": 315,
     "codepoint": 59806,
     "categories": [
       "Actions"
@@ -42034,7 +42034,7 @@
   "devices": {
     "name": "devices",
     "version": 329,
-    "popularity": 7155,
+    "popularity": 7156,
     "codepoint": 57777,
     "categories": [
       "Hardware"
@@ -44737,7 +44737,7 @@
   "docs": {
     "name": "docs",
     "version": 329,
-    "popularity": 2508,
+    "popularity": 2509,
     "codepoint": 60029,
     "categories": [
       "Text"
@@ -44911,7 +44911,7 @@
   "document_search": {
     "name": "document_search",
     "version": 329,
-    "popularity": 70,
+    "popularity": 71,
     "codepoint": 62341,
     "categories": [
       "Text"
@@ -44968,7 +44968,7 @@
   "domain": {
     "name": "domain",
     "version": 329,
-    "popularity": 4799,
+    "popularity": 4801,
     "codepoint": 59374,
     "categories": [
       "Business"
@@ -45345,7 +45345,7 @@
   "done_outline": {
     "name": "done_outline",
     "version": 329,
-    "popularity": 7751,
+    "popularity": 7753,
     "codepoint": 59695,
     "categories": [
       "UI actions"
@@ -47257,7 +47257,7 @@
   "e911_emergency": {
     "name": "e911_emergency",
     "version": 329,
-    "popularity": 1171,
+    "popularity": 1172,
     "codepoint": 61721,
     "categories": [
       "Privacy"
@@ -47387,7 +47387,7 @@
   "ear_sound": {
     "name": "ear_sound",
     "version": 329,
-    "popularity": 23,
+    "popularity": 24,
     "codepoint": 62294,
     "categories": [
       "Audio&Video"
@@ -48124,7 +48124,7 @@
   "edit": {
     "name": "edit",
     "version": 329,
-    "popularity": 49357,
+    "popularity": 49359,
     "codepoint": 58313,
     "categories": [
       "Images"
@@ -49003,7 +49003,7 @@
   "elderly_woman": {
     "name": "elderly_woman",
     "version": 329,
-    "popularity": 972,
+    "popularity": 973,
     "codepoint": 60265,
     "categories": [
       "Social"
@@ -49093,7 +49093,7 @@
   "electric_bolt": {
     "name": "electric_bolt",
     "version": 329,
-    "popularity": 2724,
+    "popularity": 2725,
     "codepoint": 60444,
     "categories": [
       "Household"
@@ -51335,7 +51335,7 @@
   "error": {
     "name": "error",
     "version": 329,
-    "popularity": 29455,
+    "popularity": 29458,
     "codepoint": 57344,
     "categories": [
       "Actions"
@@ -52204,7 +52204,7 @@
   "exclamation": {
     "name": "exclamation",
     "version": 329,
-    "popularity": 2936,
+    "popularity": 2937,
     "codepoint": 61999,
     "categories": [
       "Privacy"
@@ -52656,7 +52656,7 @@
   "experiment": {
     "name": "experiment",
     "version": 329,
-    "popularity": 1524,
+    "popularity": 1525,
     "codepoint": 59014,
     "categories": [
       "Activities"
@@ -52885,7 +52885,7 @@
   "explosion": {
     "name": "explosion",
     "version": 329,
-    "popularity": 60,
+    "popularity": 63,
     "codepoint": 63109,
     "categories": [
       "Social"
@@ -53746,7 +53746,7 @@
   "face_6": {
     "name": "face_6",
     "version": 329,
-    "popularity": 1427,
+    "popularity": 1428,
     "codepoint": 63710,
     "categories": [
       "Social"
@@ -54250,7 +54250,7 @@
   "familiar_face_and_zone": {
     "name": "familiar_face_and_zone",
     "version": 329,
-    "popularity": 754,
+    "popularity": 756,
     "codepoint": 57884,
     "categories": [
       "Home"
@@ -54818,7 +54818,7 @@
   "favorite": {
     "name": "favorite",
     "version": 329,
-    "popularity": 76928,
+    "popularity": 76932,
     "codepoint": 59517,
     "categories": [
       "UI actions"
@@ -54900,7 +54900,7 @@
   "feature_search": {
     "name": "feature_search",
     "version": 329,
-    "popularity": 236,
+    "popularity": 237,
     "codepoint": 59817,
     "categories": [
       "Actions"
@@ -54983,7 +54983,7 @@
   "featured_seasonal_and_gifts": {
     "name": "featured_seasonal_and_gifts",
     "version": 329,
-    "popularity": 623,
+    "popularity": 624,
     "codepoint": 61329,
     "categories": [
       "Activities"
@@ -56240,7 +56240,7 @@
   "files": {
     "name": "files",
     "version": 329,
-    "popularity": 582,
+    "popularity": 583,
     "codepoint": 60037,
     "categories": [
       "Text"
@@ -57321,7 +57321,7 @@
   "filter_none": {
     "name": "filter_none",
     "version": 329,
-    "popularity": 1150,
+    "popularity": 1151,
     "codepoint": 58336,
     "categories": [
       "Images"
@@ -57606,7 +57606,7 @@
   "finance_mode": {
     "name": "finance_mode",
     "version": 329,
-    "popularity": 445,
+    "popularity": 446,
     "codepoint": 61330,
     "categories": [
       "Business"
@@ -58786,7 +58786,7 @@
   "flash_on": {
     "name": "flash_on",
     "version": 329,
-    "popularity": 2785,
+    "popularity": 2786,
     "codepoint": 58343,
     "categories": [
       "Images"
@@ -59797,7 +59797,7 @@
   "flowchart": {
     "name": "flowchart",
     "version": 329,
-    "popularity": 161,
+    "popularity": 162,
     "codepoint": 62349,
     "categories": [
       "Business"
@@ -59847,7 +59847,7 @@
   "flowsheet": {
     "name": "flowsheet",
     "version": 329,
-    "popularity": 125,
+    "popularity": 127,
     "codepoint": 57518,
     "categories": [
       "Business"
@@ -60346,7 +60346,7 @@
   "folder": {
     "name": "folder",
     "version": 329,
-    "popularity": 10587,
+    "popularity": 10590,
     "codepoint": 58055,
     "categories": [
       "Text"
@@ -60500,7 +60500,7 @@
   "folder_code": {
     "name": "folder_code",
     "version": 329,
-    "popularity": 47,
+    "popularity": 48,
     "codepoint": 62408,
     "categories": [
       "Text"
@@ -60857,7 +60857,7 @@
   "folder_managed": {
     "name": "folder_managed",
     "version": 329,
-    "popularity": 65,
+    "popularity": 67,
     "codepoint": 63349,
     "categories": [
       "Text"
@@ -61010,7 +61010,7 @@
   "folder_open": {
     "name": "folder_open",
     "version": 329,
-    "popularity": 9014,
+    "popularity": 9015,
     "codepoint": 58056,
     "categories": [
       "Text"
@@ -61198,7 +61198,7 @@
   "folder_zip": {
     "name": "folder_zip",
     "version": 329,
-    "popularity": 977,
+    "popularity": 979,
     "codepoint": 60204,
     "categories": [
       "Text"
@@ -61693,7 +61693,7 @@
   "fork_spoon": {
     "name": "fork_spoon",
     "version": 329,
-    "popularity": 26,
+    "popularity": 27,
     "codepoint": 62436,
     "categories": [
       "Household"
@@ -63397,7 +63397,7 @@
   "format_quote": {
     "name": "format_quote",
     "version": 329,
-    "popularity": 4438,
+    "popularity": 4439,
     "codepoint": 57924,
     "categories": [
       "Text"
@@ -64024,7 +64024,7 @@
   "forms_add_on": {
     "name": "forms_add_on",
     "version": 329,
-    "popularity": 692,
+    "popularity": 693,
     "codepoint": 61639,
     "categories": [
       "Text"
@@ -64598,7 +64598,7 @@
   "frame_inspect": {
     "name": "frame_inspect",
     "version": 329,
-    "popularity": 221,
+    "popularity": 222,
     "codepoint": 63346,
     "categories": [
       "Text"
@@ -65638,7 +65638,7 @@
   "gallery_thumbnail": {
     "name": "gallery_thumbnail",
     "version": 329,
-    "popularity": 136,
+    "popularity": 137,
     "codepoint": 63599,
     "categories": [
       "Images"
@@ -66352,7 +66352,7 @@
   "gif_2": {
     "name": "gif_2",
     "version": 329,
-    "popularity": 18,
+    "popularity": 19,
     "codepoint": 62478,
     "categories": [
       "Images"
@@ -66575,7 +66575,7 @@
   "globe": {
     "name": "globe",
     "version": 329,
-    "popularity": 565,
+    "popularity": 571,
     "codepoint": 58956,
     "categories": [
       "Maps"
@@ -66618,7 +66618,7 @@
   "globe_asia": {
     "name": "globe_asia",
     "version": 329,
-    "popularity": 221,
+    "popularity": 222,
     "codepoint": 63385,
     "categories": [
       "Maps"
@@ -67401,7 +67401,7 @@
   "graph_1": {
     "name": "graph_1",
     "version": 329,
-    "popularity": 53,
+    "popularity": 54,
     "codepoint": 62368,
     "categories": [
       "Business"
@@ -67489,7 +67489,7 @@
   "graph_3": {
     "name": "graph_3",
     "version": 329,
-    "popularity": 110,
+    "popularity": 111,
     "codepoint": 62366,
     "categories": [
       "Business"
@@ -67534,7 +67534,7 @@
   "graph_4": {
     "name": "graph_4",
     "version": 329,
-    "popularity": 68,
+    "popularity": 69,
     "codepoint": 62365,
     "categories": [
       "Business"
@@ -67581,7 +67581,7 @@
   "graph_5": {
     "name": "graph_5",
     "version": 329,
-    "popularity": 82,
+    "popularity": 83,
     "codepoint": 62364,
     "categories": [
       "Business"
@@ -67625,7 +67625,7 @@
   "graph_6": {
     "name": "graph_6",
     "version": 329,
-    "popularity": 22,
+    "popularity": 24,
     "codepoint": 62363,
     "categories": [
       "Business"
@@ -67668,7 +67668,7 @@
   "graph_7": {
     "name": "graph_7",
     "version": 329,
-    "popularity": 57,
+    "popularity": 60,
     "codepoint": 62278,
     "categories": [
       "Business"
@@ -68121,7 +68121,7 @@
   "grid_view": {
     "name": "grid_view",
     "version": 329,
-    "popularity": 14053,
+    "popularity": 14056,
     "codepoint": 59824,
     "categories": [
       "Text"
@@ -68211,7 +68211,7 @@
   "group": {
     "name": "group",
     "version": 329,
-    "popularity": 37418,
+    "popularity": 37420,
     "codepoint": 59375,
     "categories": [
       "Social"
@@ -69251,7 +69251,7 @@
   "handshake": {
     "name": "handshake",
     "version": 329,
-    "popularity": 14600,
+    "popularity": 14603,
     "codepoint": 60363,
     "categories": [
       "Social"
@@ -70191,7 +70191,7 @@
   "head_mounted_device": {
     "name": "head_mounted_device",
     "version": 329,
-    "popularity": 217,
+    "popularity": 220,
     "codepoint": 62661,
     "categories": [
       "Hardware"
@@ -70235,7 +70235,7 @@
   "headphones": {
     "name": "headphones",
     "version": 329,
-    "popularity": 4434,
+    "popularity": 4435,
     "codepoint": 61471,
     "categories": [
       "Hardware"
@@ -71447,7 +71447,7 @@
   "help": {
     "name": "help",
     "version": 329,
-    "popularity": 32498,
+    "popularity": 32501,
     "codepoint": 59527,
     "categories": [
       "Actions"
@@ -71688,7 +71688,7 @@
   "hexagon": {
     "name": "hexagon",
     "version": 329,
-    "popularity": 773,
+    "popularity": 774,
     "codepoint": 60217,
     "categories": [
       "Text"
@@ -72900,7 +72900,7 @@
   "home": {
     "name": "home",
     "version": 329,
-    "popularity": 166876,
+    "popularity": 166881,
     "codepoint": 59530,
     "categories": [
       "UI actions"
@@ -73833,7 +73833,7 @@
   "hotel_class": {
     "name": "hotel_class",
     "version": 329,
-    "popularity": 2486,
+    "popularity": 2490,
     "codepoint": 59203,
     "categories": [
       "Actions"
@@ -75496,7 +75496,7 @@
   "image": {
     "name": "image",
     "version": 329,
-    "popularity": 17167,
+    "popularity": 17168,
     "codepoint": 58356,
     "categories": [
       "Images"
@@ -76028,7 +76028,7 @@
   "inbox_customize": {
     "name": "inbox_customize",
     "version": 329,
-    "popularity": 206,
+    "popularity": 207,
     "codepoint": 63577,
     "categories": [
       "Communicate"
@@ -76208,7 +76208,7 @@
   "inbox_text_share": {
     "name": "inbox_text_share",
     "version": 329,
-    "popularity": 7,
+    "popularity": 9,
     "codepoint": 62300,
     "categories": [
       "Communicate"
@@ -76348,7 +76348,7 @@
   "indeterminate_question_box": {
     "name": "indeterminate_question_box",
     "version": 329,
-    "popularity": 115,
+    "popularity": 116,
     "codepoint": 62829,
     "categories": [
       "Actions"
@@ -76393,7 +76393,7 @@
   "info": {
     "name": "info",
     "version": 329,
-    "popularity": 57008,
+    "popularity": 57012,
     "codepoint": 59534,
     "categories": [
       "Actions"
@@ -76780,7 +76780,7 @@
   "ink_pen": {
     "name": "ink_pen",
     "version": 329,
-    "popularity": 286,
+    "popularity": 287,
     "codepoint": 59091,
     "categories": [
       "Text"
@@ -77302,7 +77302,7 @@
   "interactive_space": {
     "name": "interactive_space",
     "version": 329,
-    "popularity": 98,
+    "popularity": 99,
     "codepoint": 63487,
     "categories": [
       "Activities"
@@ -77454,7 +77454,7 @@
   "inventory": {
     "name": "inventory",
     "version": 329,
-    "popularity": 9093,
+    "popularity": 9095,
     "codepoint": 57721,
     "categories": [
       "Text"
@@ -78612,7 +78612,7 @@
   "keyboard": {
     "name": "keyboard",
     "version": 329,
-    "popularity": 3363,
+    "popularity": 3364,
     "codepoint": 58130,
     "categories": [
       "Hardware"
@@ -78695,7 +78695,7 @@
   "keyboard_arrow_down": {
     "name": "keyboard_arrow_down",
     "version": 329,
-    "popularity": 9723,
+    "popularity": 9726,
     "codepoint": 58131,
     "categories": [
       "Hardware"
@@ -78820,7 +78820,7 @@
   "keyboard_arrow_up": {
     "name": "keyboard_arrow_up",
     "version": 329,
-    "popularity": 3492,
+    "popularity": 3493,
     "codepoint": 58134,
     "categories": [
       "Hardware"
@@ -79029,7 +79029,7 @@
   "keyboard_control_key": {
     "name": "keyboard_control_key",
     "version": 329,
-    "popularity": 1040,
+    "popularity": 1041,
     "codepoint": 60134,
     "categories": [
       "UI actions"
@@ -79710,7 +79710,7 @@
   "keyboard_return": {
     "name": "keyboard_return",
     "version": 329,
-    "popularity": 2050,
+    "popularity": 2051,
     "codepoint": 58139,
     "categories": [
       "Hardware"
@@ -80610,7 +80610,7 @@
   "language": {
     "name": "language",
     "version": 329,
-    "popularity": 30585,
+    "popularity": 30586,
     "codepoint": 59540,
     "categories": [
       "Actions"
@@ -81446,7 +81446,7 @@
   "laptop_chromebook": {
     "name": "laptop_chromebook",
     "version": 329,
-    "popularity": 2327,
+    "popularity": 2328,
     "codepoint": 58143,
     "categories": [
       "Hardware"
@@ -81927,7 +81927,7 @@
   "leak_add": {
     "name": "leak_add",
     "version": 329,
-    "popularity": 486,
+    "popularity": 487,
     "codepoint": 58360,
     "categories": [
       "Images"
@@ -82395,7 +82395,7 @@
   "library_books": {
     "name": "library_books",
     "version": 329,
-    "popularity": 6649,
+    "popularity": 6650,
     "codepoint": 57391,
     "categories": [
       "Audio&Video"
@@ -82734,7 +82734,7 @@
   "lightbulb": {
     "name": "lightbulb",
     "version": 329,
-    "popularity": 11017,
+    "popularity": 11018,
     "codepoint": 57584,
     "categories": [
       "Actions"
@@ -82828,7 +82828,7 @@
   "lightbulb_circle": {
     "name": "lightbulb_circle",
     "version": 329,
-    "popularity": 936,
+    "popularity": 937,
     "codepoint": 60414,
     "categories": [
       "Actions"
@@ -82917,7 +82917,7 @@
   "line_axis": {
     "name": "line_axis",
     "version": 329,
-    "popularity": 290,
+    "popularity": 293,
     "codepoint": 60058,
     "categories": [
       "Text"
@@ -83096,7 +83096,7 @@
   "line_end_arrow_notch": {
     "name": "line_end_arrow_notch",
     "version": 329,
-    "popularity": 33,
+    "popularity": 34,
     "codepoint": 63516,
     "categories": [
       "Text"
@@ -84074,7 +84074,7 @@
   "list_alt_check": {
     "name": "list_alt_check",
     "version": 329,
-    "popularity": 67,
+    "popularity": 69,
     "codepoint": 62430,
     "categories": [
       "Text"
@@ -85333,7 +85333,7 @@
   "location_away": {
     "name": "location_away",
     "version": 329,
-    "popularity": 2149,
+    "popularity": 2150,
     "codepoint": 61776,
     "categories": [
       "Maps"
@@ -85620,7 +85620,7 @@
   "location_on": {
     "name": "location_on",
     "version": 329,
-    "popularity": 18488,
+    "popularity": 18491,
     "codepoint": 57544,
     "categories": [
       "Maps"
@@ -85663,7 +85663,7 @@
   "location_searching": {
     "name": "location_searching",
     "version": 329,
-    "popularity": 2241,
+    "popularity": 2242,
     "codepoint": 57783,
     "categories": [
       "Maps"
@@ -85709,7 +85709,7 @@
   "lock": {
     "name": "lock",
     "version": 329,
-    "popularity": 30535,
+    "popularity": 30538,
     "codepoint": 59543,
     "categories": [
       "Actions"
@@ -86094,7 +86094,7 @@
   "logout": {
     "name": "logout",
     "version": 329,
-    "popularity": 45533,
+    "popularity": 45534,
     "codepoint": 59834,
     "categories": [
       "UI actions"
@@ -87741,7 +87741,7 @@
   "manufacturing": {
     "name": "manufacturing",
     "version": 329,
-    "popularity": 1053,
+    "popularity": 1054,
     "codepoint": 59174,
     "categories": [
       "Actions"
@@ -87833,7 +87833,7 @@
   "map_search": {
     "name": "map_search",
     "version": 329,
-    "popularity": 29,
+    "popularity": 30,
     "codepoint": 62410,
     "categories": [
       "Maps"
@@ -89411,7 +89411,7 @@
   "memory": {
     "name": "memory",
     "version": 329,
-    "popularity": 3632,
+    "popularity": 3634,
     "codepoint": 58146,
     "categories": [
       "Hardware"
@@ -89539,7 +89539,7 @@
   "menu": {
     "name": "menu",
     "version": 329,
-    "popularity": 137736,
+    "popularity": 137738,
     "codepoint": 58834,
     "categories": [
       "UI actions"
@@ -89905,7 +89905,7 @@
   "mic": {
     "name": "mic",
     "version": 329,
-    "popularity": 13128,
+    "popularity": 13130,
     "codepoint": 57385,
     "categories": [
       "Audio&Video"
@@ -92559,7 +92559,7 @@
   "monitoring": {
     "name": "monitoring",
     "version": 329,
-    "popularity": 18644,
+    "popularity": 18646,
     "codepoint": 61840,
     "categories": [
       "Business"
@@ -93024,7 +93024,7 @@
   "more_horiz": {
     "name": "more_horiz",
     "version": 329,
-    "popularity": 19059,
+    "popularity": 19061,
     "codepoint": 58835,
     "categories": [
       "UI actions"
@@ -93162,7 +93162,7 @@
   "more_vert": {
     "name": "more_vert",
     "version": 329,
-    "popularity": 31010,
+    "popularity": 31011,
     "codepoint": 58836,
     "categories": [
       "UI actions"
@@ -93824,7 +93824,7 @@
   "mountain_flag": {
     "name": "mountain_flag",
     "version": 329,
-    "popularity": 148,
+    "popularity": 149,
     "codepoint": 62946,
     "categories": [
       "Social"
@@ -94069,7 +94069,7 @@
   "move_down": {
     "name": "move_down",
     "version": 329,
-    "popularity": 1467,
+    "popularity": 1468,
     "codepoint": 60257,
     "categories": [
       "UI actions"
@@ -94749,7 +94749,7 @@
   "moving": {
     "name": "moving",
     "version": 329,
-    "popularity": 1108,
+    "popularity": 1109,
     "codepoint": 58625,
     "categories": [
       "Maps"
@@ -94989,7 +94989,7 @@
   "multiline_chart": {
     "name": "multiline_chart",
     "version": 329,
-    "popularity": 437,
+    "popularity": 438,
     "codepoint": 59103,
     "categories": [
       "Business"
@@ -95267,7 +95267,7 @@
   "music_note": {
     "name": "music_note",
     "version": 329,
-    "popularity": 7407,
+    "popularity": 7408,
     "codepoint": 58373,
     "categories": [
       "Audio&Video"
@@ -95577,7 +95577,7 @@
   "nature": {
     "name": "nature",
     "version": 329,
-    "popularity": 2851,
+    "popularity": 2852,
     "codepoint": 58374,
     "categories": [
       "Images"
@@ -95662,7 +95662,7 @@
   "navigation": {
     "name": "navigation",
     "version": 329,
-    "popularity": 2637,
+    "popularity": 2638,
     "codepoint": 58717,
     "categories": [
       "Maps"
@@ -95805,7 +95805,7 @@
   "nearby": {
     "name": "nearby",
     "version": 329,
-    "popularity": 56,
+    "popularity": 57,
     "codepoint": 59063,
     "categories": [
       "Android"
@@ -96425,7 +96425,7 @@
   "nest_clock_farsight_analog": {
     "name": "nest_clock_farsight_analog",
     "version": 329,
-    "popularity": 1003,
+    "popularity": 1004,
     "codepoint": 63675,
     "categories": [
       "Home"
@@ -96932,7 +96932,7 @@
   "nest_hello_doorbell": {
     "name": "nest_hello_doorbell",
     "version": 329,
-    "popularity": 268,
+    "popularity": 269,
     "codepoint": 59436,
     "categories": [
       "Home"
@@ -97539,7 +97539,7 @@
   "nest_thermostat_zirconium_eu": {
     "name": "nest_thermostat_zirconium_eu",
     "version": 329,
-    "popularity": 166,
+    "popularity": 167,
     "codepoint": 61745,
     "categories": [
       "Home"
@@ -98027,7 +98027,7 @@
   "network_intelligence": {
     "name": "network_intelligence",
     "version": 329,
-    "popularity": 1810,
+    "popularity": 1813,
     "codepoint": 61356,
     "categories": [
       "Communicate"
@@ -98759,7 +98759,7 @@
   "neurology": {
     "name": "neurology",
     "version": 329,
-    "popularity": 313,
+    "popularity": 314,
     "codepoint": 57614,
     "categories": [
       "Social"
@@ -100232,7 +100232,7 @@
   "no_sound": {
     "name": "no_sound",
     "version": 329,
-    "popularity": 72,
+    "popularity": 73,
     "codepoint": 59152,
     "categories": [
       "Audio&Video"
@@ -101015,7 +101015,7 @@
   "note_stack": {
     "name": "note_stack",
     "version": 329,
-    "popularity": 226,
+    "popularity": 227,
     "codepoint": 62818,
     "categories": [
       "Text"
@@ -101401,7 +101401,7 @@
   "notifications": {
     "name": "notifications",
     "version": 329,
-    "popularity": 35279,
+    "popularity": 35280,
     "codepoint": 59380,
     "categories": [
       "Communicate"
@@ -102414,7 +102414,7 @@
   "open_in_new": {
     "name": "open_in_new",
     "version": 329,
-    "popularity": 25103,
+    "popularity": 25104,
     "codepoint": 59550,
     "categories": [
       "UI actions"
@@ -102833,7 +102833,7 @@
   "order_approve": {
     "name": "order_approve",
     "version": 329,
-    "popularity": 102,
+    "popularity": 103,
     "codepoint": 63506,
     "categories": [
       "Business"
@@ -103677,7 +103677,7 @@
   "overview": {
     "name": "overview",
     "version": 329,
-    "popularity": 207,
+    "popularity": 208,
     "codepoint": 58535,
     "categories": [
       "Text"
@@ -103724,7 +103724,7 @@
   "overview_key": {
     "name": "overview_key",
     "version": 329,
-    "popularity": 87,
+    "popularity": 88,
     "codepoint": 63444,
     "categories": [
       "Android"
@@ -104457,7 +104457,7 @@
   "paid": {
     "name": "paid",
     "version": 329,
-    "popularity": 11063,
+    "popularity": 11064,
     "codepoint": 61505,
     "categories": [
       "Business"
@@ -104504,7 +104504,7 @@
   "palette": {
     "name": "palette",
     "version": 329,
-    "popularity": 7504,
+    "popularity": 7505,
     "codepoint": 58378,
     "categories": [
       "Images"
@@ -105502,7 +105502,7 @@
   "pause": {
     "name": "pause",
     "version": 329,
-    "popularity": 8770,
+    "popularity": 8772,
     "codepoint": 57396,
     "categories": [
       "Audio&Video"
@@ -106525,7 +106525,7 @@
   "person": {
     "name": "person",
     "version": 329,
-    "popularity": 89352,
+    "popularity": 89353,
     "codepoint": 59389,
     "categories": [
       "Social"
@@ -106565,7 +106565,7 @@
   "person_2": {
     "name": "person_2",
     "version": 329,
-    "popularity": 949,
+    "popularity": 951,
     "codepoint": 63716,
     "categories": [
       "Social"
@@ -106605,7 +106605,7 @@
   "person_3": {
     "name": "person_3",
     "version": 329,
-    "popularity": 612,
+    "popularity": 613,
     "codepoint": 63717,
     "categories": [
       "Social"
@@ -106975,7 +106975,7 @@
   "person_celebrate": {
     "name": "person_celebrate",
     "version": 329,
-    "popularity": 175,
+    "popularity": 176,
     "codepoint": 63486,
     "categories": [
       "Activities"
@@ -108680,7 +108680,7 @@
   "photo": {
     "name": "photo",
     "version": 329,
-    "popularity": 1487,
+    "popularity": 1488,
     "codepoint": 58384,
     "categories": [
       "Images"
@@ -110583,7 +110583,7 @@
   "planet": {
     "name": "planet",
     "version": 329,
-    "popularity": 25,
+    "popularity": 26,
     "codepoint": 62343,
     "categories": [
       "Social"
@@ -110707,7 +110707,7 @@
   "play_arrow": {
     "name": "play_arrow",
     "version": 329,
-    "popularity": 26696,
+    "popularity": 26703,
     "codepoint": 57399,
     "categories": [
       "Audio&Video"
@@ -110761,7 +110761,7 @@
   "play_circle": {
     "name": "play_circle",
     "version": 329,
-    "popularity": 23957,
+    "popularity": 23959,
     "codepoint": 57796,
     "categories": [
       "Audio&Video"
@@ -112180,7 +112180,7 @@
   "potted_plant": {
     "name": "potted_plant",
     "version": 329,
-    "popularity": 2330,
+    "popularity": 2331,
     "codepoint": 63658,
     "categories": [
       "Social"
@@ -112473,7 +112473,7 @@
   "precision_manufacturing": {
     "name": "precision_manufacturing",
     "version": 329,
-    "popularity": 4104,
+    "popularity": 4105,
     "codepoint": 61513,
     "categories": [
       "Business"
@@ -112754,7 +112754,7 @@
   "preview": {
     "name": "preview",
     "version": 329,
-    "popularity": 5757,
+    "popularity": 5758,
     "codepoint": 61893,
     "categories": [
       "Actions"
@@ -113299,7 +113299,7 @@
   "priority_high": {
     "name": "priority_high",
     "version": 329,
-    "popularity": 8580,
+    "popularity": 8582,
     "codepoint": 58949,
     "categories": [
       "Actions"
@@ -114070,7 +114070,7 @@
   "public": {
     "name": "public",
     "version": 329,
-    "popularity": 18213,
+    "popularity": 18216,
     "codepoint": 59403,
     "categories": [
       "Social"
@@ -114689,7 +114689,7 @@
   "question_mark": {
     "name": "question_mark",
     "version": 329,
-    "popularity": 10465,
+    "popularity": 10468,
     "codepoint": 60299,
     "categories": [
       "Actions"
@@ -115009,7 +115009,7 @@
   "quickreply": {
     "name": "quickreply",
     "version": 329,
-    "popularity": 575,
+    "popularity": 576,
     "codepoint": 61292,
     "categories": [
       "Communicate"
@@ -115144,7 +115144,7 @@
   "radar": {
     "name": "radar",
     "version": 329,
-    "popularity": 1297,
+    "popularity": 1298,
     "codepoint": 61518,
     "categories": [
       "Android"
@@ -116080,7 +116080,7 @@
   "read_more": {
     "name": "read_more",
     "version": 329,
-    "popularity": 1399,
+    "popularity": 1400,
     "codepoint": 61293,
     "categories": [
       "Text"
@@ -116223,7 +116223,7 @@
   "rear_camera": {
     "name": "rear_camera",
     "version": 329,
-    "popularity": 91,
+    "popularity": 92,
     "codepoint": 63170,
     "categories": [
       "Hardware"
@@ -116799,7 +116799,7 @@
   "recycling": {
     "name": "recycling",
     "version": 329,
-    "popularity": 4475,
+    "popularity": 4476,
     "codepoint": 59232,
     "categories": [
       "Social"
@@ -118169,7 +118169,7 @@
   "replay_10": {
     "name": "replay_10",
     "version": 329,
-    "popularity": 1042,
+    "popularity": 1043,
     "codepoint": 57433,
     "categories": [
       "Audio&Video"
@@ -120021,7 +120021,7 @@
   "rocket": {
     "name": "rocket",
     "version": 329,
-    "popularity": 2516,
+    "popularity": 2517,
     "codepoint": 60325,
     "categories": [
       "Social"
@@ -120066,7 +120066,7 @@
   "rocket_launch": {
     "name": "rocket_launch",
     "version": 329,
-    "popularity": 11631,
+    "popularity": 11632,
     "codepoint": 60315,
     "categories": [
       "Social"
@@ -120961,7 +120961,7 @@
   "rss_feed": {
     "name": "rss_feed",
     "version": 329,
-    "popularity": 2588,
+    "popularity": 2589,
     "codepoint": 57573,
     "categories": [
       "Android"
@@ -121165,7 +121165,7 @@
   "rule": {
     "name": "rule",
     "version": 329,
-    "popularity": 3114,
+    "popularity": 3115,
     "codepoint": 61890,
     "categories": [
       "Actions"
@@ -121883,7 +121883,7 @@
   "save": {
     "name": "save",
     "version": 329,
-    "popularity": 11714,
+    "popularity": 11715,
     "codepoint": 57697,
     "categories": [
       "Hardware"
@@ -122297,7 +122297,7 @@
   "scatter_plot": {
     "name": "scatter_plot",
     "version": 329,
-    "popularity": 877,
+    "popularity": 880,
     "codepoint": 57960,
     "categories": [
       "Business"
@@ -122386,7 +122386,7 @@
   "schedule": {
     "name": "schedule",
     "version": 329,
-    "popularity": 36229,
+    "popularity": 36231,
     "codepoint": 59573,
     "categories": [
       "Actions"
@@ -122470,7 +122470,7 @@
   "schema": {
     "name": "schema",
     "version": 329,
-    "popularity": 2254,
+    "popularity": 2255,
     "codepoint": 58621,
     "categories": [
       "Business"
@@ -122561,7 +122561,7 @@
   "science": {
     "name": "science",
     "version": 329,
-    "popularity": 5788,
+    "popularity": 5789,
     "codepoint": 59979,
     "categories": [
       "Activities"
@@ -123901,7 +123901,7 @@
   "search": {
     "name": "search",
     "version": 329,
-    "popularity": 181211,
+    "popularity": 181217,
     "codepoint": 59574,
     "categories": [
       "UI actions"
@@ -125169,7 +125169,7 @@
   "sell": {
     "name": "sell",
     "version": 329,
-    "popularity": 12033,
+    "popularity": 12035,
     "codepoint": 61531,
     "categories": [
       "Business"
@@ -125219,7 +125219,7 @@
   "send": {
     "name": "send",
     "version": 329,
-    "popularity": 22070,
+    "popularity": 22071,
     "codepoint": 57699,
     "categories": [
       "Communicate"
@@ -125848,7 +125848,7 @@
   "sentiment_dissatisfied": {
     "name": "sentiment_dissatisfied",
     "version": 329,
-    "popularity": 5939,
+    "popularity": 5941,
     "codepoint": 59409,
     "categories": [
       "Social"
@@ -126024,7 +126024,7 @@
   "sentiment_neutral": {
     "name": "sentiment_neutral",
     "version": 329,
-    "popularity": 2921,
+    "popularity": 2923,
     "codepoint": 59410,
     "categories": [
       "Social"
@@ -126107,7 +126107,7 @@
   "sentiment_satisfied": {
     "name": "sentiment_satisfied",
     "version": 329,
-    "popularity": 11563,
+    "popularity": 11564,
     "codepoint": 59411,
     "categories": [
       "Social"
@@ -126425,7 +126425,7 @@
   "service_toolbox": {
     "name": "service_toolbox",
     "version": 329,
-    "popularity": 189,
+    "popularity": 190,
     "codepoint": 59159,
     "categories": [
       "Activities"
@@ -126510,7 +126510,7 @@
   "settings": {
     "name": "settings",
     "version": 329,
-    "popularity": 119008,
+    "popularity": 119016,
     "codepoint": 59576,
     "categories": [
       "UI actions"
@@ -127722,7 +127722,7 @@
   "settings_system_daydream": {
     "name": "settings_system_daydream",
     "version": 329,
-    "popularity": 391,
+    "popularity": 392,
     "codepoint": 57795,
     "categories": [
       "Android"
@@ -128238,7 +128238,7 @@
   "share": {
     "name": "share",
     "version": 329,
-    "popularity": 22120,
+    "popularity": 22123,
     "codepoint": 59405,
     "categories": [
       "Social"
@@ -128723,7 +128723,7 @@
   "shield": {
     "name": "shield",
     "version": 329,
-    "popularity": 4323,
+    "popularity": 4324,
     "codepoint": 59872,
     "categories": [
       "Privacy"
@@ -128767,7 +128767,7 @@
   "shield_lock": {
     "name": "shield_lock",
     "version": 329,
-    "popularity": 275,
+    "popularity": 276,
     "codepoint": 63110,
     "categories": [
       "Privacy"
@@ -131466,7 +131466,7 @@
   "sim_card_download": {
     "name": "sim_card_download",
     "version": 329,
-    "popularity": 898,
+    "popularity": 900,
     "codepoint": 61544,
     "categories": [
       "Android"
@@ -132401,7 +132401,7 @@
   "sliders": {
     "name": "sliders",
     "version": 329,
-    "popularity": 48,
+    "popularity": 49,
     "codepoint": 59875,
     "categories": [
       "UI actions"
@@ -132794,7 +132794,7 @@
   "smart_toy": {
     "name": "smart_toy",
     "version": 329,
-    "popularity": 4201,
+    "popularity": 4202,
     "codepoint": 61548,
     "categories": [
       "Hardware"
@@ -133086,7 +133086,7 @@
   "sms": {
     "name": "sms",
     "version": 329,
-    "popularity": 7449,
+    "popularity": 7450,
     "codepoint": 58917,
     "categories": [
       "Communicate"
@@ -133687,7 +133687,7 @@
   "sos": {
     "name": "sos",
     "version": 329,
-    "popularity": 501,
+    "popularity": 504,
     "codepoint": 60407,
     "categories": [
       "Maps"
@@ -136890,7 +136890,7 @@
   "sports_basketball": {
     "name": "sports_basketball",
     "version": 329,
-    "popularity": 1722,
+    "popularity": 1723,
     "codepoint": 59942,
     "categories": [
       "Activities"
@@ -136932,7 +136932,7 @@
   "sports_cricket": {
     "name": "sports_cricket",
     "version": 329,
-    "popularity": 469,
+    "popularity": 470,
     "codepoint": 59943,
     "categories": [
       "Activities"
@@ -138007,7 +138007,7 @@
   "stack_hexagon": {
     "name": "stack_hexagon",
     "version": 329,
-    "popularity": 20,
+    "popularity": 21,
     "codepoint": 62492,
     "categories": [
       "Text"
@@ -138178,7 +138178,7 @@
   "stacked_email": {
     "name": "stacked_email",
     "version": 329,
-    "popularity": 161,
+    "popularity": 164,
     "codepoint": 59079,
     "categories": [
       "Communicate"
@@ -138345,7 +138345,7 @@
   "stadia_controller": {
     "name": "stadia_controller",
     "version": 329,
-    "popularity": 5172,
+    "popularity": 5183,
     "codepoint": 61749,
     "categories": [
       "Home"
@@ -138446,7 +138446,7 @@
   "stairs": {
     "name": "stairs",
     "version": 329,
-    "popularity": 831,
+    "popularity": 832,
     "codepoint": 61865,
     "categories": [
       "Travel"
@@ -138529,7 +138529,7 @@
   "star": {
     "name": "star",
     "version": 329,
-    "popularity": 53287,
+    "popularity": 53290,
     "codepoint": 59448,
     "categories": [
       "UI actions"
@@ -138666,7 +138666,7 @@
   "star_rate_half": {
     "name": "star_rate_half",
     "version": 329,
-    "popularity": 97,
+    "popularity": 98,
     "codepoint": 60485,
     "categories": [
       "UI actions"
@@ -138714,7 +138714,7 @@
   "star_shine": {
     "name": "star_shine",
     "version": 329,
-    "popularity": 103,
+    "popularity": 107,
     "codepoint": 62237,
     "categories": [
       "Social"
@@ -139511,7 +139511,7 @@
   "steps": {
     "name": "steps",
     "version": 329,
-    "popularity": 292,
+    "popularity": 293,
     "codepoint": 63194,
     "categories": [
       "Activities"
@@ -139871,7 +139871,7 @@
   "stop": {
     "name": "stop",
     "version": 329,
-    "popularity": 3598,
+    "popularity": 3602,
     "codepoint": 57415,
     "categories": [
       "Audio&Video"
@@ -139912,7 +139912,7 @@
   "stop_circle": {
     "name": "stop_circle",
     "version": 329,
-    "popularity": 3557,
+    "popularity": 3559,
     "codepoint": 61297,
     "categories": [
       "Audio&Video"
@@ -141874,7 +141874,7 @@
   "supervisor_account": {
     "name": "supervisor_account",
     "version": 329,
-    "popularity": 7284,
+    "popularity": 7285,
     "codepoint": 59603,
     "categories": [
       "Actions"
@@ -142096,7 +142096,7 @@
   "surround_sound": {
     "name": "surround_sound",
     "version": 329,
-    "popularity": 210,
+    "popularity": 211,
     "codepoint": 57417,
     "categories": [
       "Audio&Video"
@@ -142452,7 +142452,7 @@
   "sweep": {
     "name": "sweep",
     "version": 329,
-    "popularity": 98,
+    "popularity": 99,
     "codepoint": 59052,
     "categories": [
       "UI actions"
@@ -144954,7 +144954,7 @@
   "table_chart": {
     "name": "table_chart",
     "version": 329,
-    "popularity": 2810,
+    "popularity": 2811,
     "codepoint": 57957,
     "categories": [
       "Text"
@@ -145151,7 +145151,7 @@
   "table_eye": {
     "name": "table_eye",
     "version": 329,
-    "popularity": 33,
+    "popularity": 40,
     "codepoint": 62566,
     "categories": [
       "Text"
@@ -145363,7 +145363,7 @@
   "table_view": {
     "name": "table_view",
     "version": 329,
-    "popularity": 1856,
+    "popularity": 1857,
     "codepoint": 61886,
     "categories": [
       "Text"
@@ -145643,7 +145643,7 @@
   "tactic": {
     "name": "tactic",
     "version": 329,
-    "popularity": 522,
+    "popularity": 524,
     "codepoint": 62820,
     "categories": [
       "Social"
@@ -145959,7 +145959,7 @@
   "target": {
     "name": "target",
     "version": 329,
-    "popularity": 1413,
+    "popularity": 1416,
     "codepoint": 59161,
     "categories": [
       "Actions"
@@ -148414,7 +148414,7 @@
   "thumb_down": {
     "name": "thumb_down",
     "version": 329,
-    "popularity": 5291,
+    "popularity": 5293,
     "codepoint": 59611,
     "categories": [
       "Social"
@@ -148462,7 +148462,7 @@
   "thumb_up": {
     "name": "thumb_up",
     "version": 329,
-    "popularity": 22187,
+    "popularity": 22189,
     "codepoint": 59612,
     "categories": [
       "Social"
@@ -149010,7 +149010,7 @@
   "timer": {
     "name": "timer",
     "version": 329,
-    "popularity": 11913,
+    "popularity": 11915,
     "codepoint": 58405,
     "categories": [
       "Images"
@@ -149100,7 +149100,7 @@
   "timer_10_alt_1": {
     "name": "timer_10_alt_1",
     "version": 329,
-    "popularity": 464,
+    "popularity": 465,
     "codepoint": 61375,
     "categories": [
       "Actions"
@@ -149999,7 +149999,7 @@
   "toggle_on": {
     "name": "toggle_on",
     "version": 329,
-    "popularity": 23784,
+    "popularity": 23785,
     "codepoint": 59894,
     "categories": [
       "UI actions"
@@ -150193,7 +150193,7 @@
   "toolbar": {
     "name": "toolbar",
     "version": 329,
-    "popularity": 79,
+    "popularity": 80,
     "codepoint": 59895,
     "categories": [
       "UI actions"
@@ -150583,7 +150583,7 @@
   "tooltip_2": {
     "name": "tooltip_2",
     "version": 329,
-    "popularity": 35,
+    "popularity": 36,
     "codepoint": 62445,
     "categories": [
       "Communicate"
@@ -151006,7 +151006,7 @@
   "touchpad_mouse": {
     "name": "touchpad_mouse",
     "version": 329,
-    "popularity": 64,
+    "popularity": 65,
     "codepoint": 63111,
     "categories": [
       "Hardware"
@@ -152482,7 +152482,7 @@
   "travel_luggage_and_bags": {
     "name": "travel_luggage_and_bags",
     "version": 329,
-    "popularity": 41,
+    "popularity": 42,
     "codepoint": 61379,
     "categories": [
       "Travel"
@@ -152829,7 +152829,7 @@
   "trophy": {
     "name": "trophy",
     "version": 329,
-    "popularity": 1113,
+    "popularity": 1118,
     "codepoint": 59162,
     "categories": [
       "Activities"
@@ -152868,7 +152868,7 @@
   "troubleshoot": {
     "name": "troubleshoot",
     "version": 329,
-    "popularity": 558,
+    "popularity": 559,
     "codepoint": 57810,
     "categories": [
       "Business"
@@ -153051,7 +153051,7 @@
   "tune": {
     "name": "tune",
     "version": 329,
-    "popularity": 14550,
+    "popularity": 14551,
     "codepoint": 58409,
     "categories": [
       "Images"
@@ -153364,7 +153364,7 @@
   "tv": {
     "name": "tv",
     "version": 329,
-    "popularity": 3243,
+    "popularity": 3244,
     "codepoint": 58163,
     "categories": [
       "Hardware"
@@ -153640,7 +153640,7 @@
   "tv_options_edit_channels": {
     "name": "tv_options_edit_channels",
     "version": 329,
-    "popularity": 89,
+    "popularity": 90,
     "codepoint": 57821,
     "categories": [
       "Hardware"
@@ -153780,7 +153780,7 @@
   "tv_signin": {
     "name": "tv_signin",
     "version": 329,
-    "popularity": 42,
+    "popularity": 43,
     "codepoint": 59163,
     "categories": [
       "Hardware"
@@ -153933,7 +153933,7 @@
   "two_pager_store": {
     "name": "two_pager_store",
     "version": 329,
-    "popularity": 13,
+    "popularity": 14,
     "codepoint": 62404,
     "categories": [
       "Text"
@@ -154794,7 +154794,7 @@
   "unknown_5": {
     "name": "unknown_5",
     "version": 329,
-    "popularity": 54,
+    "popularity": 55,
     "codepoint": 59045,
     "categories": [
       "UI actions"
@@ -154940,7 +154940,7 @@
   "unknown_med": {
     "name": "unknown_med",
     "version": 329,
-    "popularity": 136,
+    "popularity": 137,
     "codepoint": 60093,
     "categories": [
       "UI actions"
@@ -155225,7 +155225,7 @@
   "update": {
     "name": "update",
     "version": 329,
-    "popularity": 8818,
+    "popularity": 8819,
     "codepoint": 59683,
     "categories": [
       "Actions"
@@ -155369,7 +155369,7 @@
   "upi_pay": {
     "name": "upi_pay",
     "version": 329,
-    "popularity": 18,
+    "popularity": 19,
     "codepoint": 62415,
     "categories": [
       "Business"
@@ -156352,7 +156352,7 @@
   "verified_user": {
     "name": "verified_user",
     "version": 329,
-    "popularity": 11317,
+    "popularity": 11318,
     "codepoint": 59624,
     "categories": [
       "Privacy"
@@ -156781,7 +156781,7 @@
   "video_call": {
     "name": "video_call",
     "version": 329,
-    "popularity": 2755,
+    "popularity": 2756,
     "codepoint": 57456,
     "categories": [
       "Audio&Video"
@@ -157347,7 +157347,7 @@
   "videocam": {
     "name": "videocam",
     "version": 329,
-    "popularity": 11562,
+    "popularity": 11563,
     "codepoint": 57419,
     "categories": [
       "Audio&Video"
@@ -158819,7 +158819,7 @@
   "visibility": {
     "name": "visibility",
     "version": 329,
-    "popularity": 47619,
+    "popularity": 47622,
     "codepoint": 59636,
     "categories": [
       "Actions"
@@ -159042,7 +159042,7 @@
   "voice_chat": {
     "name": "voice_chat",
     "version": 329,
-    "popularity": 817,
+    "popularity": 818,
     "codepoint": 58926,
     "categories": [
       "Communicate"
@@ -159569,7 +159569,7 @@
   "volume_up": {
     "name": "volume_up",
     "version": 329,
-    "popularity": 10738,
+    "popularity": 10740,
     "codepoint": 57424,
     "categories": [
       "Audio&Video"
@@ -160169,7 +160169,7 @@
   "wallet": {
     "name": "wallet",
     "version": 329,
-    "popularity": 3656,
+    "popularity": 3657,
     "codepoint": 63743,
     "categories": [
       "Business"
@@ -160470,7 +160470,7 @@
   "warning": {
     "name": "warning",
     "version": 329,
-    "popularity": 33102,
+    "popularity": 33112,
     "codepoint": 57346,
     "categories": [
       "Actions"
@@ -161828,7 +161828,7 @@
   "waving_hand": {
     "name": "waving_hand",
     "version": 329,
-    "popularity": 3060,
+    "popularity": 3061,
     "codepoint": 59238,
     "categories": [
       "Social"
@@ -161920,7 +161920,7 @@
   "wb_incandescent": {
     "name": "wb_incandescent",
     "version": 329,
-    "popularity": 1184,
+    "popularity": 1185,
     "codepoint": 58414,
     "categories": [
       "Images"
@@ -163356,7 +163356,7 @@
   "wifi_calling": {
     "name": "wifi_calling",
     "version": 329,
-    "popularity": 281,
+    "popularity": 282,
     "codepoint": 61303,
     "categories": [
       "Communicate"
@@ -163402,7 +163402,7 @@
   "wifi_calling_bar_1": {
     "name": "wifi_calling_bar_1",
     "version": 329,
-    "popularity": 2,
+    "popularity": 3,
     "codepoint": 62540,
     "categories": [
       "Android"
@@ -163451,7 +163451,7 @@
   "wifi_calling_bar_2": {
     "name": "wifi_calling_bar_2",
     "version": 329,
-    "popularity": 2,
+    "popularity": 3,
     "codepoint": 62539,
     "categories": [
       "Android"
@@ -164613,7 +164613,7 @@
   "work_alert": {
     "name": "work_alert",
     "version": 329,
-    "popularity": 28,
+    "popularity": 29,
     "codepoint": 62967,
     "categories": [
       "Business"
@@ -165036,7 +165036,7 @@
   "wysiwyg": {
     "name": "wysiwyg",
     "version": 329,
-    "popularity": 2517,
+    "popularity": 2519,
     "codepoint": 61891,
     "categories": [
       "Actions"
@@ -166168,7 +166168,7 @@
   "check_circle_unread": {
     "name": "check_circle_unread",
     "version": 342,
-    "popularity": 8,
+    "popularity": 9,
     "codepoint": 62078,
     "categories": [
       "UI actions"
@@ -167361,7 +167361,7 @@
   "map_pin_heart": {
     "name": "map_pin_heart",
     "version": 343,
-    "popularity": 5,
+    "popularity": 6,
     "codepoint": 62104,
     "categories": [
       "Maps"
@@ -171750,7 +171750,7 @@
   "android_cell_dual_5_bar": {
     "name": "android_cell_dual_5_bar",
     "version": 352,
-    "popularity": 0,
+    "popularity": 2,
     "codepoint": 61194,
     "categories": [
       "Android"
@@ -173184,7 +173184,7 @@
   "bucket_check": {
     "name": "bucket_check",
     "version": 352,
-    "popularity": 0,
+    "popularity": 1,
     "codepoint": 61226,
     "categories": [
       "UI actions"
@@ -173411,7 +173411,7 @@
   "conversation": {
     "name": "conversation",
     "version": 352,
-    "popularity": 1,
+    "popularity": 2,
     "codepoint": 61231,
     "categories": [
       "Social"
@@ -174327,7 +174327,7 @@
   "thumbs_up_double": {
     "name": "thumbs_up_double",
     "version": 352,
-    "popularity": 2,
+    "popularity": 3,
     "codepoint": 61180,
     "categories": [
       "Social"

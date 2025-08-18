@@ -41,7 +41,8 @@ class IconInfo {
 // The google repository's action has been broken for over 3 months https://github.com/google/material-design-icons/issues/1902
 // I have submitted a PR to fix it ( https://github.com/google/material-design-icons/pull/1922 )
 //  but until it's fixed get the fonts from my repo...
-const bool useMyRepository = false; // As of 8/15/25 my PRs were merged into https://github.com/google/material_design_icons so the main.yml action is building fonts again
+const bool useMyRepository =
+    false; // As of 8/15/25 my PRs were merged into https://github.com/google/material_design_icons so the main.yml action is building fonts again
 
 class MaterialSymbolsVariableFont {
   final String flavor;
@@ -57,9 +58,10 @@ class MaterialSymbolsVariableFont {
   // Until google fixes their action to generate the codepoints/fonts correctly...
   // use my repository
   String get codepointFileUrl {
-    if (useMyRepository && _codepointFileUrl.startsWith("https://github.com/google/")) {
+    if (useMyRepository &&
+        _codepointFileUrl.startsWith("https://github.com/google/")) {
       _codepointFileUrl = _codepointFileUrl.replaceFirst(
-          'github.com/google/','github.com/timmaffett/');
+          'github.com/google/', 'github.com/timmaffett/');
     }
 
     return _codepointFileUrl;
@@ -68,9 +70,10 @@ class MaterialSymbolsVariableFont {
   // Until google fixes their action to generate the codepoints/fonts correctly...
   // use my repository
   String get ttfFontFileUrl {
-    if (useMyRepository && _ttfFontFileUrl.startsWith("https://github.com/google/")) {
+    if (useMyRepository &&
+        _ttfFontFileUrl.startsWith("https://github.com/google/")) {
       _ttfFontFileUrl = _ttfFontFileUrl.replaceFirst(
-          'github.com/google/','github.com/timmaffett/');
+          'github.com/google/', 'github.com/timmaffett/');
     }
     return _ttfFontFileUrl;
   }
@@ -229,11 +232,10 @@ bool writeUnicodeCodepoints = true;
 //WITH src - but the sandbox removes this//const svgIconTemplateRaw =
 // so there this is just wasted bytes    //    r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face { font-family: "$1"; src: $2;} text {font-family:"$1"; font-size: 32px; text-anchor: middle; dominant-baseline: text-bottom; fill: grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
 const svgIconTemplateRaw =
-  //r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face{font-family:"$1";}text{font-family:"$1";font-size:32px;text-anchor:middle;dominant-baseline:text-bottom;fill:grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
-  // remove font face from SVG
+    //r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">@font-face{font-family:"$1";}text{font-family:"$1";font-size:32px;text-anchor:middle;dominant-baseline:text-bottom;fill:grey;}</style></defs><text xmlns="http://www.w3.org/2000/svg" x="50%" y="100%">&%23x$3;</text></svg>''';
+    // remove font face from SVG
     r'''data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><defs><style type="text/css">text{font-family:"$1";font-size:32px;text-anchor:middle;dominant-baseline:text-bottom;fill:grey;}</style></defs><text x="50%" y="100%">&%23x$3;</text></svg>''';
-    //suggested alt //r'''data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%3E%3Cdefs%3E%3Cstyle%20type='text/css'%3E@font-face%7Bfont-family:'$1';%7Dtext%7Bfont-family:'$1';font-size:32px;text-anchor:middle;dominant-baseline:text-bottom;fill:grey;%7D%3C/style%3E%3C/defs%3E%3Ctext%20x='50%25'%20y='100%25'%3E%26%23$3%3B%3C/text%3E%3C/svg%3E''';
-
+//suggested alt //r'''data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%3E%3Cdefs%3E%3Cstyle%20type='text/css'%3E@font-face%7Bfont-family:'$1';%7Dtext%7Bfont-family:'$1';font-size:32px;text-anchor:middle;dominant-baseline:text-bottom;fill:grey;%7D%3C/style%3E%3C/defs%3E%3Ctext%20x='50%25'%20y='100%25'%3E%26%23$3%3B%3C/text%3E%3C/svg%3E''';
 
 String? svgIconTemplate;
 
@@ -297,6 +299,7 @@ Set<K> getKeysAsSet<K, V>(Map<K, V>? map) {
 }
 
 Set<int> codepointMetadata = <int>{};
+
 /// Extracts the codepoints from a Map<String, Icon> and returns them as a Set<int>.
 ///
 /// This function iterates through the values of the input map (which are assumed to be Icon objects)
@@ -315,7 +318,7 @@ Set<int> getCodepointsFromIconMap(Map<String, IconMetadata>? iconMap) {
   Set<int> codepoints = {};
   iconMap.forEach((key, icon) {
     codepoints.add(icon.codepoint);
-    if(codepointToMetadataMap[icon.codepoint]!=null) {
+    if (codepointToMetadataMap[icon.codepoint] != null) {
       print('CODEPOINT ${icon.codepoint} already exists!'.red);
     }
     codepointToMetadataMap[icon.codepoint] = icon;
@@ -323,15 +326,16 @@ Set<int> getCodepointsFromIconMap(Map<String, IconMetadata>? iconMap) {
   return codepoints;
 }
 
-
-
-void findMetadataWithDifferentCodepointsFromName(List<MaterialSymbolsVariableFont> fontinfoList) {
+void findMetadataWithDifferentCodepointsFromName(
+    List<MaterialSymbolsVariableFont> fontinfoList) {
   int? lastCount;
   for (final fontinfo in fontinfoList) {
     if (lastCount != null) {
       assert(fontinfo.iconInfoList.length == lastCount);
-      if(fontinfo.iconInfoList.length != lastCount) {
-        print('ERROR: style ${fontinfo.flavor} has different number of codepoints ${fontinfo.iconInfoList.length} vs. $lastCount'.red);
+      if (fontinfo.iconInfoList.length != lastCount) {
+        print(
+            'ERROR: style ${fontinfo.flavor} has different number of codepoints ${fontinfo.iconInfoList.length} vs. $lastCount'
+                .red);
       }
     }
     lastCount = fontinfo.iconInfoList.length;
@@ -347,62 +351,281 @@ void findMetadataWithDifferentCodepointsFromName(List<MaterialSymbolsVariableFon
     final int codePointValue = int.tryParse('0x$codepoint') ?? 0;
 
     final iconDataClass = fontinfo.iconDataClass;
-    final iconMetadata = iconMetadataMap[iconname];// ?? codepointToMetadataMap[codePointValue];
-    if(iconMetadata!=null) {
-      if(iconMetadata.codepoint != codePointValue) {
-        if(iconMetadata.codePointsFromCodePointsFiles.contains(codePointValue)) {
-          print('  Icon $iconname has entry in codePointsFromCodePointsFiles[] for  $codePointValue ALREADY'.brightRed.blink);
+    final iconMetadata =
+        iconMetadataMap[iconname]; // ?? codepointToMetadataMap[codePointValue];
+    if (iconMetadata != null) {
+      if (iconMetadata.codepoint != codePointValue) {
+        if (iconMetadata.codePointsFromCodePointsFiles
+            .contains(codePointValue)) {
+          print(
+              '  Icon $iconname has entry in codePointsFromCodePointsFiles[] for  $codePointValue ALREADY'
+                  .brightRed
+                  .blink);
         } else {
           iconMetadata.codePointsFromCodePointsFiles.add(codePointValue);
           // MISS MATCH OF CODEPOINTS!!
-          print('Icon $iconname has a different codepoint in metadata "0x${iconMetadata.codepoint.toRadixString(16).toUpperCase()}" vs "0x${codePointValue.toRadixString(16).toUpperCase()}"'.red);
-
+          print(
+              'Icon $iconname has a different codepoint in metadata "0x${iconMetadata.codepoint.toRadixString(16).toUpperCase()}" vs "0x${codePointValue.toRadixString(16).toUpperCase()}"'
+                  .red);
 
           codepointToMetadataMap[codePointValue] = iconMetadata;
           //print('  Icon $iconname has a different codepoint in metadata "0x${iconMetadata.codepoint.toRadixString(16).toUpperCase()}" vs "0x${codePointValue.toRadixString(16).toUpperCase()}"'.red);
-
         }
       }
     } else {
       print('DID not find $iconname in the metadata');
     }
   }
-
 }
 
+Map<int, IconMetadata> codepointToMetadataMap = {};
 
-Map<int,IconMetadata> codepointToMetadataMap = {};
-
-Set<String> missingMetadata = <String>{}; 
+Set<String> missingMetadata = <String>{};
 Set<String> unusedMetaData = <String>{};
 Set<String> usedRTLMetadata = <String>{};
-Set<String> expectedRTL = <String>{ "threesixty", "add_to_home_screen", "airplane_ticket", "airport_shuttle", "align_horizontal_left", "align_horizontal_right",
-"alt_route", "arrow_back", "arrow_back_ios", "arrow_circle_left", "arrow_circle_right", "arrow_forward", "arrow_forward_ios",
-"arrow_left", "arrow_left_alt", "arrow_menu_close", "arrow_menu_open", "arrow_outward", "arrow_right", "arrow_right_alt",
-"arrow_split", "article", "assignment", "assignment_return", "assist_walker", "assistant_direction", "backspace", "battery_unknown",
-"bike_lane", "block", "brand_awareness", "branding_watermark", "bubble", "business_messages", "call_made", "call_merge", "call_missed",
-"call_missed_outgoing", "call_received", "call_split", "chat", "chat_add_on", "chat_info", "chat_paste_go", "chat_paste_go_2", "checkbook",
-"chevron_backward", "chevron_forward", "chevron_left", "chevron_right", "chrome_reader_mode", "clarify", "comment", "compare_arrows",
-"contact_support", "content_copy", "content_cut", "contextual_token", "contextual_token_add", "contrast", "desktop_landscape", "desktop_landscape_add",
-"desktop_portrait", "devices_other", "diagonal_line", "directions", "directions_alt", "directions_bike", "directions_run", "directions_walk",
-"docs", "double_arrow", "draft", "drive_export", "drive_file_move", "dvr", "electric_bike", "electric_moped", "electric_rickshaw", "electric_scooter",
-"event_note", "event_upcoming", "exit_to_app", "expand_circle_right", "featured_play_list", "featured_video", "filter_arrow_right", "fire_truck",
-"flag", "flight_land", "flight_takeoff", "flights_and_hotels", "float_landscape_2", "float_portrait_2", "follow_the_signs", "format_align_left",
-"format_align_right", "format_indent_decrease", "format_indent_increase", "format_list_bulleted", "format_list_bulleted_add", "forward",
-"forward_to_inbox", "funicular", "gondola_lift", "grading", "handheld_controller", "help", "help_center", "highlight_mouse_cursor", "hotel",
-"hotel_class", "ink_highlighter_move", "input", "keyboard_arrow_left", "keyboard_arrow_right", "keyboard_backspace", "keyboard_double_arrow_left",
-"keyboard_double_arrow_right", "keyboard_return", "keyboard_tab", "keyboard_tab_rtl", "label", "label_important", "last_page", "library_books", "light_group",
-"line_curve", "list", "list_alt", "lists", "live_help", "local_shipping", "login", "logout", "lyrics", "manage_search", "menu_book", "menu_open", "merge_type",
-"missed_video_call", "mobile_screen_share", "monitoring", "moped", "more", "move_item", "move_location", "moving", "moving_ministry", "multiline_chart",
-"news", "newsmode", "next_plan", "next_week", "no_sound", "not_listed_location", "note_add", "notes", "offline_share", "open_in_new", "outbox_alt", "pedal_bike",
-"phone_callback", "phone_forwarded", "phone_missed", "picture_in_picture", "picture_in_picture_alt", "picture_in_picture_large", "picture_in_picture_medium",
-"picture_in_picture_mobile", "picture_in_picture_small", "position_top_right", "prompt_suggestion", "queue_music", "read_more", "receipt_long", "redo",
-"replace_audio", "replace_image", "replace_video", "reply", "reply_all", "reset_image", "rotate_left", "rotate_right", "rtt", "run_circle", "schedule_send", "scooter",
-"screen_share", "segment", "send", "send_and_archive", "send_money", "send_to_mobile", "settings_backup_restore", "shield_question", "short_text", "show_chart",
-"side_navigation", "snowmobile", "sort", "speaker_notes", "stairs", "stairs_2", "star_half", "sticky_note", "sticky_note_2", "stop_screen_share", "subject",
-"switch_access_2", "switch_access_3", "text_ad", "text_compare", "text_snippet", "text_to_speech", "thermostat", "toc", "tooltip_2", "transition_push",
-"transition_slide", "travel", "trending_down", "trending_flat", "trending_up", "tv_next", "two_wheeler", "undo", "video_camera_back_add", "videocam",
-"view_list", "view_quilt", "view_sidebar", "volume_down", "volume_down_alt", "volume_mute", "volume_off", "volume_up", "watch_arrow", "wrap_text", "wysiwyg" };
+Set<String> expectedRTL = <String>{
+  "threesixty",
+  "add_to_home_screen",
+  "airplane_ticket",
+  "airport_shuttle",
+  "align_horizontal_left",
+  "align_horizontal_right",
+  "alt_route",
+  "arrow_back",
+  "arrow_back_ios",
+  "arrow_circle_left",
+  "arrow_circle_right",
+  "arrow_forward",
+  "arrow_forward_ios",
+  "arrow_left",
+  "arrow_left_alt",
+  "arrow_menu_close",
+  "arrow_menu_open",
+  "arrow_outward",
+  "arrow_right",
+  "arrow_right_alt",
+  "arrow_split",
+  "article",
+  "assignment",
+  "assignment_return",
+  "assist_walker",
+  "assistant_direction",
+  "backspace",
+  "battery_unknown",
+  "bike_lane",
+  "block",
+  "brand_awareness",
+  "branding_watermark",
+  "bubble",
+  "business_messages",
+  "call_made",
+  "call_merge",
+  "call_missed",
+  "call_missed_outgoing",
+  "call_received",
+  "call_split",
+  "chat",
+  "chat_add_on",
+  "chat_info",
+  "chat_paste_go",
+  "chat_paste_go_2",
+  "checkbook",
+  "chevron_backward",
+  "chevron_forward",
+  "chevron_left",
+  "chevron_right",
+  "chrome_reader_mode",
+  "clarify",
+  "comment",
+  "compare_arrows",
+  "contact_support",
+  "content_copy",
+  "content_cut",
+  "contextual_token",
+  "contextual_token_add",
+  "contrast",
+  "desktop_landscape",
+  "desktop_landscape_add",
+  "desktop_portrait",
+  "devices_other",
+  "diagonal_line",
+  "directions",
+  "directions_alt",
+  "directions_bike",
+  "directions_run",
+  "directions_walk",
+  "docs",
+  "double_arrow",
+  "draft",
+  "drive_export",
+  "drive_file_move",
+  "dvr",
+  "electric_bike",
+  "electric_moped",
+  "electric_rickshaw",
+  "electric_scooter",
+  "event_note",
+  "event_upcoming",
+  "exit_to_app",
+  "expand_circle_right",
+  "featured_play_list",
+  "featured_video",
+  "filter_arrow_right",
+  "fire_truck",
+  "flag",
+  "flight_land",
+  "flight_takeoff",
+  "flights_and_hotels",
+  "float_landscape_2",
+  "float_portrait_2",
+  "follow_the_signs",
+  "format_align_left",
+  "format_align_right",
+  "format_indent_decrease",
+  "format_indent_increase",
+  "format_list_bulleted",
+  "format_list_bulleted_add",
+  "forward",
+  "forward_to_inbox",
+  "funicular",
+  "gondola_lift",
+  "grading",
+  "handheld_controller",
+  "help",
+  "help_center",
+  "highlight_mouse_cursor",
+  "hotel",
+  "hotel_class",
+  "ink_highlighter_move",
+  "input",
+  "keyboard_arrow_left",
+  "keyboard_arrow_right",
+  "keyboard_backspace",
+  "keyboard_double_arrow_left",
+  "keyboard_double_arrow_right",
+  "keyboard_return",
+  "keyboard_tab",
+  "keyboard_tab_rtl",
+  "label",
+  "label_important",
+  "last_page",
+  "library_books",
+  "light_group",
+  "line_curve",
+  "list",
+  "list_alt",
+  "lists",
+  "live_help",
+  "local_shipping",
+  "login",
+  "logout",
+  "lyrics",
+  "manage_search",
+  "menu_book",
+  "menu_open",
+  "merge_type",
+  "missed_video_call",
+  "mobile_screen_share",
+  "monitoring",
+  "moped",
+  "more",
+  "move_item",
+  "move_location",
+  "moving",
+  "moving_ministry",
+  "multiline_chart",
+  "news",
+  "newsmode",
+  "next_plan",
+  "next_week",
+  "no_sound",
+  "not_listed_location",
+  "note_add",
+  "notes",
+  "offline_share",
+  "open_in_new",
+  "outbox_alt",
+  "pedal_bike",
+  "phone_callback",
+  "phone_forwarded",
+  "phone_missed",
+  "picture_in_picture",
+  "picture_in_picture_alt",
+  "picture_in_picture_large",
+  "picture_in_picture_medium",
+  "picture_in_picture_mobile",
+  "picture_in_picture_small",
+  "position_top_right",
+  "prompt_suggestion",
+  "queue_music",
+  "read_more",
+  "receipt_long",
+  "redo",
+  "replace_audio",
+  "replace_image",
+  "replace_video",
+  "reply",
+  "reply_all",
+  "reset_image",
+  "rotate_left",
+  "rotate_right",
+  "rtt",
+  "run_circle",
+  "schedule_send",
+  "scooter",
+  "screen_share",
+  "segment",
+  "send",
+  "send_and_archive",
+  "send_money",
+  "send_to_mobile",
+  "settings_backup_restore",
+  "shield_question",
+  "short_text",
+  "show_chart",
+  "side_navigation",
+  "snowmobile",
+  "sort",
+  "speaker_notes",
+  "stairs",
+  "stairs_2",
+  "star_half",
+  "sticky_note",
+  "sticky_note_2",
+  "stop_screen_share",
+  "subject",
+  "switch_access_2",
+  "switch_access_3",
+  "text_ad",
+  "text_compare",
+  "text_snippet",
+  "text_to_speech",
+  "thermostat",
+  "toc",
+  "tooltip_2",
+  "transition_push",
+  "transition_slide",
+  "travel",
+  "trending_down",
+  "trending_flat",
+  "trending_up",
+  "tv_next",
+  "two_wheeler",
+  "undo",
+  "video_camera_back_add",
+  "videocam",
+  "view_list",
+  "view_quilt",
+  "view_sidebar",
+  "volume_down",
+  "volume_down_alt",
+  "volume_mute",
+  "volume_off",
+  "volume_up",
+  "watch_arrow",
+  "wrap_text",
+  "wysiwyg"
+};
 
 // ignore: long-method
 Future<void> main(List<String> args) async {
@@ -454,17 +677,15 @@ Future<void> main(List<String> args) async {
     exit(0);
   }
 
-
   // Read the icon metadata so we have this info to write out categories and tags in comments and to set the `matchTextDirection` parameter of our IconData() constructors
   iconMetadataMap = await readIconsMetadata();
   print('READ metadata for ${iconMetadataMap.length} icons'.brightYellow);
   codepointMetadata = getCodepointsFromIconMap(iconMetadataMap);
   print('READ metadata for ${codepointMetadata.length} codepoints'.orange);
   //print('    codepints [ ${codepointMetadata} ]'.orange);
-  print('    codepointToMetadataMap ${codepointToMetadataMap.length} entries '.orangeRed);
+  print('    codepointToMetadataMap ${codepointToMetadataMap.length} entries '
+      .orangeRed);
   unusedMetaData = getKeysAsSet(iconMetadataMap);
-
-
 
   final downloadFontsFlag = parseArgs['downloadfonts'] as bool;
   svgDartDocsFlag = parseArgs['svg_icon_in_dart_docs'] as bool;
@@ -555,7 +776,7 @@ Future<void> main(List<String> args) async {
   }
 
   // Now see where the iconname entries in the metadata have codepoints THAT ARE DIFFERENT than the codepoints file
-  findMetadataWithDifferentCodepointsFromName( variableFontFlavors );
+  findMetadataWithDifferentCodepointsFromName(variableFontFlavors);
 
   // write all flavors together with suffixed symbol names
   const combinedSourceFilename = '${pathToWriteDartFiles}symbols.dart';
@@ -661,8 +882,9 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   const dartMetadataSourceFilename =
       '${pathToWriteDartFiles}material_symbols_metadata.dart';
   print('Writing metadata dart file to $dartMetadataSourceFilename'.brightBlue);
-  final metadataResult = writeOutTheMetadataDartFile(File(dartMetadataSourceFilename));
-  print(metadataResult.brightCyan );
+  final metadataResult =
+      writeOutTheMetadataDartFile(File(dartMetadataSourceFilename));
+  print(metadataResult.brightCyan);
 
   exit(0);
 }
@@ -692,10 +914,10 @@ String createTagCommentLines(List<String> strings) {
   String currentLine = commentStart;
 
   for (String str in strings) {
-    if (currentLine==commentStart) {
+    if (currentLine == commentStart) {
       currentLine += str;
-    } else if (currentLine.length + str.length + 2 <=
-        80) { // +2 for ", "
+    } else if (currentLine.length + str.length + 2 <= 80) {
+      // +2 for ", "
       currentLine += ', $str';
     } else {
       result += '$currentLine,\n';
@@ -879,8 +1101,10 @@ class Symbols {
   for (final fontinfo in fontinfoList) {
     if (lastCount != null) {
       assert(fontinfo.iconInfoList.length == lastCount);
-      if(fontinfo.iconInfoList.length != lastCount) {
-        print('ERROR: style ${fontinfo.flavor} has different number of codepoints ${fontinfo.iconInfoList.length} vs. $lastCount'.red);
+      if (fontinfo.iconInfoList.length != lastCount) {
+        print(
+            'ERROR: style ${fontinfo.flavor} has different number of codepoints ${fontinfo.iconInfoList.length} vs. $lastCount'
+                .red);
       }
     }
     lastCount = fontinfo.iconInfoList.length;
@@ -896,10 +1120,11 @@ class Symbols {
       final int codePointValue = int.tryParse('0x$codepoint') ?? 0;
 
       final iconDataClass = fontinfo.iconDataClass;
-      final iconMetadata = iconMetadataMap[iconname] ?? codepointToMetadataMap[codePointValue];
+      final iconMetadata =
+          iconMetadataMap[iconname] ?? codepointToMetadataMap[codePointValue];
 
       // if we can't get metadata by iconame OR codepoint then it is missing...
-      if(iconMetadata==null) {
+      if (iconMetadata == null) {
         missingMetadata.add(iconname);
       }
 
@@ -907,10 +1132,10 @@ class Symbols {
       final categories = iconMetadata?.categories ?? <String>[];
       final tags = iconMetadata?.tags ?? <String>[];
 
-      if(rtlMatchTextDirection && !usedRTLMetadata.contains(iconname)) {
+      if (rtlMatchTextDirection && !usedRTLMetadata.contains(iconname)) {
         usedRTLMetadata.add(iconname);
       }
-      if(fontinfo.flavor == 'outlined' && iconMetadataMap[iconname]!=null) {
+      if (fontinfo.flavor == 'outlined' && iconMetadataMap[iconname] != null) {
         // any time we use a metadata entry removeit from our 'unusedMetaData' set
         unusedMetaData.remove(iconname);
       }
@@ -922,26 +1147,29 @@ class Symbols {
       if (svgDartDocsFlag) {
         final svgDataUUri = getSVGDateUriFor(fontinfo, codepoint);
         // Include span so that standalong dart doc files show previews also via loaded style sheets
-        final spanString = ''; //~INCLUDE BOTH WAYS>> '<span class="material-symbols-${fontinfo.flavor}" data-variation="${fontinfo.flavor}" data-fontfamily="${fontinfo.familyNameToUse}" data-codepoint="$codepoint">${iconInfo.originalIconName}</span>';
+        final spanString =
+            ''; //~INCLUDE BOTH WAYS>> '<span class="material-symbols-${fontinfo.flavor}" data-variation="${fontinfo.flavor}" data-fontfamily="${fontinfo.familyNameToUse}" data-codepoint="$codepoint">${iconInfo.originalIconName}</span>';
 
         sourceFileContent.writeln(
-      //WITH MARKDOWN image/width/height BUT THIS BREAKS THE 'dart doc' html docs //      '  /// \![$iconname]($svgDataUUri|width=32,height=32)  material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
+            //WITH MARKDOWN image/width/height BUT THIS BREAKS THE 'dart doc' html docs //      '  /// \![$iconname]($svgDataUUri|width=32,height=32)  material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
             '  /// $spanString \![$iconname]($svgDataUUri)  material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
       } else {
         sourceFileContent.writeln(
             '  /// <span class="material-symbols-${fontinfo.flavor}" data-variation="${fontinfo.flavor}" data-fontfamily="${fontinfo.familyNameToUse}" data-codepoint="$codepoint">${iconInfo.originalIconName}</span> material symbols icon named "$iconname" (${fontinfo.flavor} variation).');
       }
-      if(addCategoryAndTagsComments && (categories.isNotEmpty || tags.isNotEmpty)) {
+      if (addCategoryAndTagsComments &&
+          (categories.isNotEmpty || tags.isNotEmpty)) {
         sourceFileContent.writeln('  /// Category: ${categories.join(', ')}');
         final tagLines = createTagCommentLines(tags);
         sourceFileContent.writeln(tagLines);
       }
       String proposedSingleLine =
-          "  static const IconData $iconname = $iconDataClass(0x$codepoint${rtlMatchTextDirection?', matchTextDirection:true':''});";
+          "  static const IconData $iconname = $iconDataClass(0x$codepoint${rtlMatchTextDirection ? ', matchTextDirection: true' : ''});";
       if (proposedSingleLine.length > 80) {
         //split to two lines
         sourceFileContent.writeln("  static const IconData $iconname =");
-        sourceFileContent.writeln("      $iconDataClass(0x$codepoint${rtlMatchTextDirection?', matchTextDirection:true':''});");
+        sourceFileContent.writeln(
+            "      $iconDataClass(0x$codepoint${rtlMatchTextDirection ? ', matchTextDirection: true' : ''});");
       } else {
         // one line
         sourceFileContent.writeln(proposedSingleLine);
@@ -957,16 +1185,18 @@ class Symbols {
   print('Wrote $iconCount COMBINED icons to $sourceFilename');
 
   /// CHECK RTL metadata usage:
-  removeIntersectingElements( usedRTLMetadata, expectedRTL );
+  removeIntersectingElements(usedRTLMetadata, expectedRTL);
 
   print('INTERSECTION of expected and usedRTLmetadata:'.orange);
   print('usedRTLMetadata: $usedRTLMetadata'.orange);
   print('expectedRTL: $expectedRTL'.orange);
-  print('unusedMetaData LEFTOVERS: ${unusedMetaData.length} entries left'.brightCyan);
+  print('unusedMetaData LEFTOVERS: ${unusedMetaData.length} entries left'
+      .brightCyan);
   print('unusedMetaData: ${unusedMetaData}'.brightCyan);
-  print('Icons that were MISSING from metadata: ${missingMetadata.length} icons  (There could be duplicate names for the same codepoint here, so fewer actual missing metadatas)'.red);
+  print(
+      'Icons that were MISSING from metadata: ${missingMetadata.length} icons  (There could be duplicate names for the same codepoint here, so fewer actual missing metadatas)'
+          .red);
   print('     MISSING metadata: ${missingMetadata}'.red);
-  
 }
 
 /// Write a combined version of the `Symbols` class with outlined, rounded and sharp versions of
@@ -1090,8 +1320,9 @@ Map<String, String> renamedMaterialSymbolsMap = {
   const dartMetadataSourceFilename =
       '${pathToWriteDartFiles}material_symbols_metadata.dart';
   print('Writing metadata dart file to $dartMetadataSourceFilename'.brightBlue);
-  final metadataResult = writeOutTheMetadataDartFile(File(dartMetadataSourceFilename));
-  print(metadataResult.brightCyan );
+  final metadataResult =
+      writeOutTheMetadataDartFile(File(dartMetadataSourceFilename));
+  print(metadataResult.brightCyan);
 }
 
 /// This mimics the flutter icon renaming in flutter engine \dev\tools\update_icons.dart

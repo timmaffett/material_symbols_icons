@@ -10,11 +10,15 @@ import 'package:path/path.dart' as path;
 
 // IMPORT our update_package.dart so we can get all of the icon renaming information
 import 'icon_metadata.dart';
-import 'update_package.dart' show identifierPrefixRewrites, identifierExactRewrites, identifierExcludeNames;
-
+import 'update_package.dart'
+    show
+        identifierPrefixRewrites,
+        identifierExactRewrites,
+        identifierExcludeNames;
 
 const DEBUG = false;
-const writeFetchedFilesToDisk = false; // WE DO NOT WRITE the XML files to disk - we just get the autoMirrored info from them.
+const writeFetchedFilesToDisk =
+    false; // WE DO NOT WRITE the XML files to disk - we just get the autoMirrored info from them.
 
 // Define constants for URLs and headers.
 const String MATERIAL_SYMBOLS_METADATA_DOWNLOAD_URL =
@@ -27,8 +31,7 @@ const Map<String, String> _HEADERS = {
 typedef Asset = ({String srcUrlPattern, String destDirPattern});
 typedef Fetch = ({String iconName, String srcUrl, String destFile});
 
-
-Map<String,String> renamedIconNames = {};
+Map<String, String> renamedIconNames = {};
 Set<String> autoMirroredIconNames = Set<String>();
 
 // Define asset lists.
@@ -142,7 +145,7 @@ String _generateFlutterId(String iconName) {
   return flutterIconName;
 }
 
-String possiblyRenameThisIcon( String iconName ) {
+String possiblyRenameThisIcon(String iconName) {
   String? renamedIconName;
   if (!identifierExcludeNames.contains(iconName)) {
     if (identifierExactRewrites.keys.contains(iconName) ||
@@ -155,7 +158,8 @@ String possiblyRenameThisIcon( String iconName ) {
 
 /// Fetches the latest metadata from the Google Fonts API.
 Future<Map<String, dynamic>> _latestMetadata() async {
-  final response = await http.get(Uri.parse(MATERIAL_SYMBOLS_METADATA_DOWNLOAD_URL));
+  final response =
+      await http.get(Uri.parse(MATERIAL_SYMBOLS_METADATA_DOWNLOAD_URL));
   if (response.statusCode != 200) {
     throw Exception(
         'Failed to fetch metadata: ${response.statusCode}'); // More specific error
@@ -168,12 +172,14 @@ Future<Map<String, dynamic>> _latestMetadata() async {
 File _currentVersionsFile() {
   //Simulate Pathlib
   //OLDWAY//return File(path.join(Directory.current.path, 'current_versions.json'));
-  return File(path.join(Directory.current.path, 'last_metadata', 'current_versions.json'));
+  return File(path.join(
+      Directory.current.path, 'last_metadata', 'current_versions.json'));
 }
 
 /// Returns the path to the icons file.
 File _iconsMetadataFile() {
-  return File(path.join(Directory.current.path, 'last_metadata', 'icons_metadata.json'));
+  return File(path.join(
+      Directory.current.path, 'last_metadata', 'icons_metadata.json'));
 }
 
 /// Generates a version key for an icon.
@@ -203,17 +209,16 @@ Iterable<IconMetadata> _icons(Map<String, dynamic> metadata) sync* {
       }
     }
 
-
-    yield 
-      IconMetadata( name: iconName,
-        renamedIconName: renamedIconName,
-        version: rawIcon["version"],
-        stylisticSets: allSets.difference(unsupported),
-        popularity: rawIcon["popularity"],
-        codepoint: rawIcon["codepoint"],
-        categories: convertToStringList(rawIcon["categories"]),
-        tags: convertToStringList(rawIcon["tags"]),
-      );
+    yield IconMetadata(
+      name: iconName,
+      renamedIconName: renamedIconName,
+      version: rawIcon["version"],
+      stylisticSets: allSets.difference(unsupported),
+      popularity: rawIcon["popularity"],
+      codepoint: rawIcon["codepoint"],
+      categories: convertToStringList(rawIcon["categories"]),
+      tags: convertToStringList(rawIcon["tags"]),
+    );
   }
 }
 
@@ -221,7 +226,9 @@ Iterable<IconMetadata> _icons(Map<String, dynamic> metadata) sync* {
 Fetch _createFetch(Asset asset, Map<String, String> args) {
   final srcUrl = asset.srcUrlPattern.format(namedArguments: args);
   //Simulate Pathlib
-  final destFile = File(path.join(Directory.current.path,  "last_metadata", // DO NOT GO UP "../..",
+  final destFile = File(path.join(
+      Directory.current.path,
+      "last_metadata", // DO NOT GO UP "../..",
       asset.destDirPattern.format(namedArguments: args)));
   return (iconName: args["iconName"]!, srcUrl: srcUrl, destFile: destFile.path);
 }
@@ -239,7 +246,7 @@ Fetch _createFetch(Asset asset, Map<String, String> args) {
 // Define the regular expression for 'autoMirrored="true"'
 final autoMirroredTrueRegex = RegExp(r'android:autoMirrored\s*=\s*"true"');
 
-/// 
+///
 bool containsAutoMirrored(Uint8List data) {
   try {
     // Convert the Uint8List to a string using utf-8 encoding.
@@ -264,20 +271,20 @@ Future<void> _doFetch(String iconName, String srcUrl, String destFile) async {
       throw Exception('Failed to fetch $srcUrl: ${response.statusCode}');
     }
 
-    if(DEBUG) print('Fetching $srcUrl and going to write to $destFile');
+    if (DEBUG) print('Fetching $srcUrl and going to write to $destFile');
 
     bool rtlAutoMirrored = containsAutoMirrored(response.bodyBytes);
-    if(rtlAutoMirrored) {
+    if (rtlAutoMirrored) {
       print('RTL auto-mirroring detected for `${iconName.yellow}`'.brightCyan);
       autoMirroredIconNames.add(iconName);
     } else {
-      if(DEBUG) print('No RTL auto-mirroring detected for $srcUrl');
+      if (DEBUG) print('No RTL auto-mirroring detected for $srcUrl');
     }
-    
-    if(writeFetchedFilesToDisk) {
+
+    if (writeFetchedFilesToDisk) {
       final file = File(destFile);
-      await file.parent.create(
-          recursive: true); // Dart's equivalent of `parents=True`
+      await file.parent
+          .create(recursive: true); // Dart's equivalent of `parents=True`
       await file.writeAsBytes(response.bodyBytes);
     }
   } catch (e) {
@@ -295,13 +302,13 @@ Future<void> _doFetches(List<Fetch> fetches) async {
   for (final fetch in fetches) {
     await _doFetch(fetch.iconName, fetch.srcUrl, fetch.destFile);
     completed++;
-    if (completed % 10 == 0 || completed == total) { // update progress every 10 fetches or at the end.
+    if (completed % 10 == 0 || completed == total) {
+      // update progress every 10 fetches or at the end.
       print('$completed/$total complete');
     }
   }
   print('$total/$total complete');
 }
-
 
 /* NO FONT STUFF AT ALL
 
@@ -369,10 +376,12 @@ Future<void> _fetchFonts(List<String> cssFiles) async {
 
 NO FONT STUFF AT ALL */
 
-
 /// Filters a list of Fetch objects based on a predicate.
 List<String> _files(List<Fetch> fetches, bool Function(String) predicate) {
-  return fetches.where((fetch) => predicate(fetch.destFile)).map((f) => f.destFile).toList();
+  return fetches
+      .where((fetch) => predicate(fetch.destFile))
+      .map((f) => f.destFile)
+      .toList();
 }
 
 /// Checks if a fetch should be skipped.
@@ -387,7 +396,8 @@ Map<String, String> _patternArgs(
     "host": metadata["host"],
     "stylisticSetSnake": stylisticSet.replaceAll(" ", "").toLowerCase(),
     "stylisticSetUrl": stylisticSet.replaceAll(" ", "+"),
-    "stylisticSetFont": stylisticSet.replaceAll(" ", "") + "[FILL,GRAD,opsz,wght]",
+    "stylisticSetFont":
+        stylisticSet.replaceAll(" ", "") + "[FILL,GRAD,opsz,wght]",
   };
 }
 
@@ -441,33 +451,36 @@ Future<void> main(List<String> args) async {
 
   Map<String, dynamic> currentVersions = {};
   if (currentVersionsFile.existsSync()) {
-    currentVersions =
-        json.decode(await currentVersionsFile.readAsString());
+    currentVersions = json.decode(await currentVersionsFile.readAsString());
   } else {
     print('No current versions file found. Creating a new one.');
   }
-  if(DEBUG) print('Current versions: $currentVersions');
+  if (DEBUG) print('Current versions: $currentVersions');
 
   final metadata = await _latestMetadata();
   final stylisticSets = _symbolFamilies(metadata);
 
- if(DEBUG) print('Found ${stylisticSets.length} stylistic sets: $stylisticSets');
+  if (DEBUG)
+    print('Found ${stylisticSets.length} stylistic sets: $stylisticSets');
   if (stylisticSets.isEmpty) {
     print('No stylistic sets found. Exiting.');
     return;
   }
 
-
   final List<Fetch> fetches = [];
   final List<Fetch> skips = [];
   var numChanged = 0;
-  var icons = _icons(metadata).toList(); // Convert to list for easier manipulation.
+  var icons =
+      _icons(metadata).toList(); // Convert to list for easier manipulation.
 
-  print('Found metadata fir ${icons.length} icons. (including legacy Material Icons)');
+  print(
+      'Found metadata fir ${icons.length} icons. (including legacy Material Icons)');
 
-  icons.removeWhere((icon) => icon.stylisticSets.isEmpty); // Remove icons with empty stylistic sets
+  icons.removeWhere((icon) =>
+      icon.stylisticSets.isEmpty); // Remove icons with empty stylistic sets
 
-  print('Pruned icons to only include ${icons.length} icons from Material Symbols.');
+  print(
+      'Pruned icons to only include ${icons.length} icons from Material Symbols.');
 
   if (iconLimit > 0) {
     icons = icons.take(iconLimit).toList();
@@ -484,9 +497,11 @@ Future<void> main(List<String> args) async {
 
     int setsExamined = 0;
     for (final stylisticSet in stylisticSets) {
-      if(setsExamined>0) break; // Only process the first stylistic set for each icon
+      if (setsExamined > 0)
+        break; // Only process the first stylistic set for each icon
       if (!icon.stylisticSets.contains(stylisticSet)) {
-        print('Icon ${icon.name} does not support stylistic set $stylisticSet. Skipping.');
+        print(
+            'Icon ${icon.name} does not support stylistic set $stylisticSet. Skipping.');
         continue;
       }
       final patternArgs = _patternArgs(metadata, stylisticSet);
@@ -500,9 +515,9 @@ Future<void> main(List<String> args) async {
       //for (final opsz in [20]) {   //NOT ALL [20, 24, 40, 48]) {
       //  for (final fill in [""]) {    //NOT ALL ["", "fill1"]) {
       //    for (final grad in [""]) {  //NOT ALL ["gradN25", "", "grad200"]) {
-            //NO IOS //_createFetches(
-            //NO IOS //    grad + fill, opsz, patternArgs, fetches, skips, _ICON_IOS_ASSETS, overwriteFlag);
-            /* NO WEIGHTS
+      //NO IOS //_createFetches(
+      //NO IOS //    grad + fill, opsz, patternArgs, fetches, skips, _ICON_IOS_ASSETS, overwriteFlag);
+      /* NO WEIGHTS
             for (final wght in [
               "wght100",
               "wght200",
@@ -513,12 +528,12 @@ Future<void> main(List<String> args) async {
               "wght700"
             ]) {NO WEIGHTS */
 
-            final fill = ""; //NO FILL
-            final grad = ""; //NO GRAD
-            final wght = ""; //NO WEIGHTS
-              _createFetches(wght + grad + fill, opsz, patternArgs, fetches,
-                  skips, _ICON_ASSETS, overwriteFlag);
-            /*NO WEIGHTS 
+      final fill = ""; //NO FILL
+      final grad = ""; //NO GRAD
+      final wght = ""; //NO WEIGHTS
+      _createFetches(wght + grad + fill, opsz, patternArgs, fetches, skips,
+          _ICON_ASSETS, overwriteFlag);
+      /*NO WEIGHTS 
             }
             NO WEIGHTS */
       //    }
@@ -552,36 +567,49 @@ Future<void> main(List<String> args) async {
     }
   }
 
-  print('${autoMirroredIconNames.length} Auto-mirrored icon${(autoMirroredIconNames.length>1)?'s':''}.'.orange);
+  print(
+      '${autoMirroredIconNames.length} Auto-mirrored icon${(autoMirroredIconNames.length > 1) ? 's' : ''}.'
+          .orange);
   if (autoMirroredIconNames.isNotEmpty) {
-    print('Auto-mirrored icon name${(autoMirroredIconNames.length>1)?'s':''}: ${autoMirroredIconNames.join(", ").purple}'.orange);
+    print(
+        'Auto-mirrored icon name${(autoMirroredIconNames.length > 1) ? 's' : ''}: ${autoMirroredIconNames.join(", ").purple}'
+            .orange);
   } else {
     print('No auto-mirrored icon names found.');
   }
-
 
   /*
     Now augment the icons with the RTL (right-to-left) autoMirrored info
     And convert the icons list to a MAP of icon names to Icon objects.
   */
-  Map<String, IconMetadata> iconsMap = {}; //Map<String, Icon>.fromIterable(icons, key: (icon) => icon.name, value: (icon) => icon);
+  Map<String, IconMetadata> iconsMap =
+      {}; //Map<String, Icon>.fromIterable(icons, key: (icon) => icon.name, value: (icon) => icon);
   int rtlAutoMirroredFoundCount = 0;
-  for (final icon in icons) {  
+  for (final icon in icons) {
     if (autoMirroredIconNames.contains(icon.name)) {
       icon.rtlAutoMirrored = true;
       rtlAutoMirroredFoundCount++;
     } else {
       icon.rtlAutoMirrored = false;
     }
-    iconsMap[(icon.renamedIconName.isNotEmpty && icon.renamedIconName != icon.name) ? icon.renamedIconName : icon.name] = icon; // Update the map with the icon object
+    iconsMap[
+        (icon.renamedIconName.isNotEmpty && icon.renamedIconName != icon.name)
+            ? icon.renamedIconName
+            : icon.name] = icon; // Update the map with the icon object
   }
 
   print('Found ${autoMirroredIconNames.length} RTL auto-mirrored icons.'.green);
-  print('Paired Info with $rtlAutoMirroredFoundCount icons with RTL auto-mirroring.'.green);
-  if(autoMirroredIconNames.length != rtlAutoMirroredFoundCount) {
-    print('WARNING: RTL auto-mirrored icon names do not match the number of icons with RTL auto-mirroring.'.red);
+  print(
+      'Paired Info with $rtlAutoMirroredFoundCount icons with RTL auto-mirroring.'
+          .green);
+  if (autoMirroredIconNames.length != rtlAutoMirroredFoundCount) {
+    print(
+        'WARNING: RTL auto-mirrored icon names do not match the number of icons with RTL auto-mirroring.'
+            .red);
   } else {
-    print('RTL auto-mirrored icon names match the number of icons with RTL auto-mirroring.'.brightGreen);
+    print(
+        'RTL auto-mirrored icon names match the number of icons with RTL auto-mirroring.'
+            .brightGreen);
   }
 
   /* DO NOT GET ANY FONTS
@@ -593,7 +621,6 @@ Future<void> main(List<String> args) async {
   await currentVersionsFile.writeAsString(json.encode(currentVersions));
 
   // Write the icons METADATA map to a JSON file - now AUGMENTED with the RTL (right-to-left) autoMirrored info
-
 
   // Read in the existing icons metadata file, if it exists.
   final iconsMetadataFile = _iconsMetadataFile();
@@ -629,7 +656,8 @@ Future<void> main(List<String> args) async {
     } catch (e) {
       print(
           'Error reading or decoding existing icons metadata file: $e.  Overwriting.');
-      existingIconsMap = {}; // Reset to an empty map on error to avoid corrupting data.
+      existingIconsMap =
+          {}; // Reset to an empty map on error to avoid corrupting data.
     }
   } else {
     print('No existing icons metadata file found. Creating a new one.');
@@ -638,11 +666,13 @@ Future<void> main(List<String> args) async {
   // Update the existing map with the new icon data.
   iconsMap.forEach((key, newIcon) {
     existingIconsMap[key] = //newIcon;
-                json.decode(newIcon.toJson()); // Decode and re-encode to ensure the format is consistent.
+        json.decode(newIcon
+            .toJson()); // Decode and re-encode to ensure the format is consistent.
   });
 
   final iconsFile = _iconsMetadataFile();
-  String prettyJson = JsonEncoder.withIndent('  ').convert(existingIconsMap); // Use 2 space indentation
+  String prettyJson = JsonEncoder.withIndent('  ')
+      .convert(existingIconsMap); // Use 2 space indentation
   await iconsFile.writeAsString(prettyJson);
 
   print('Done.');

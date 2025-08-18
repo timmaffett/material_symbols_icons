@@ -15,7 +15,7 @@ class IconDataOutlined extends IconData {
 /// [IconData] for a material symbols sharp icon from a supplied codepoint
 ///
 class IconDataSharp extends IconData {
-  const IconDataSharp(super.codePoint, {super.matchTextDirection })
+  const IconDataSharp(super.codePoint, {super.matchTextDirection})
       : super(
           fontFamily: 'MaterialSymbolsSharp',
           fontPackage: 'material_symbols_icons',
@@ -25,7 +25,7 @@ class IconDataSharp extends IconData {
 /// [IconData] for a material symbols rounded icon from a supplied codepoint
 ///
 class IconDataRounded extends IconData {
-  const IconDataRounded(super.codePoint, {super.matchTextDirection} )
+  const IconDataRounded(super.codePoint, {super.matchTextDirection})
       : super(
           fontFamily: 'MaterialSymbolsRounded',
           fontPackage: 'material_symbols_icons',

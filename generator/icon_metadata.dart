@@ -18,7 +18,6 @@ import 'package:chalkdart/chalkstrings.dart';
                        Google needs to add this information to the metadata file in the future!
 */
 
-
 class IconMetadata {
   String name;
   String renamedIconName = "";
@@ -30,7 +29,7 @@ class IconMetadata {
   List<String> tags;
   bool rtlAutoMirrored = false; // Default to false
   List<int> codePointsFromCodePointsFiles = [];
-  
+
   IconMetadata(
       {required this.name,
       this.renamedIconName = '',
@@ -44,30 +43,42 @@ class IconMetadata {
 
   factory IconMetadata.fromJson(Map<String, dynamic> json) {
     return IconMetadata(
-      name: (json['originalName']!=null && json['originalName']!.isNotEmpty && json['originalName']!=json['name']) ? json['originalName'] : json['name'],
-      renamedIconName: (json['originalName']!=null && json['originalName']!.isNotEmpty && json['originalName']!=json['name']) ? json['name'] : '',
+      name: (json['originalName'] != null &&
+              json['originalName']!.isNotEmpty &&
+              json['originalName'] != json['name'])
+          ? json['originalName']
+          : json['name'],
+      renamedIconName: (json['originalName'] != null &&
+              json['originalName']!.isNotEmpty &&
+              json['originalName'] != json['name'])
+          ? json['name']
+          : '',
       version: json['version'] ?? 0,
       stylisticSets:
           (json['stylisticSets'] as List<dynamic>?)?.cast<String>().toSet() ??
-          {}, // Handle null or missing lists
+              {}, // Handle null or missing lists
       popularity: json['popularity'] ?? 0,
       codepoint: json['codepoint'] ?? 0,
-      categories:
-          (json['categories'] as List<dynamic>?)?.cast<String>() ?? [],
+      categories: (json['categories'] as List<dynamic>?)?.cast<String>() ?? [],
       tags: (json['tags'] as List<dynamic>?)?.cast<String>() ?? [],
       rtlAutoMirrored: json['rtlAutoMirrored'] ?? false,
     );
   }
 
   String toJson() {
-    if( categories.length>1) {
-      print('FOUND ICON WITH MULTIPLE CATEGORIES: $name   categories=$categories'.orange);
+    if (categories.length > 1) {
+      print(
+          'FOUND ICON WITH MULTIPLE CATEGORIES: $name   categories=$categories'
+              .orange);
     }
     return json.encode({
-      'name': (renamedIconName.isNotEmpty && renamedIconName != name) ? renamedIconName : name,
+      'name': (renamedIconName.isNotEmpty && renamedIconName != name)
+          ? renamedIconName
+          : name,
       'version': version,
-      if(renamedIconName.isNotEmpty && renamedIconName != name) 'originalName': name,
-      if(rtlAutoMirrored) 'rtlAutoMirrored': rtlAutoMirrored,
+      if (renamedIconName.isNotEmpty && renamedIconName != name)
+        'originalName': name,
+      if (rtlAutoMirrored) 'rtlAutoMirrored': rtlAutoMirrored,
       //DONT WRITE THIS - WE DONT NEED//'stylisticSets': stylisticSets.toList(),
       'popularity': popularity,
       'codepoint': codepoint,
@@ -76,5 +87,3 @@ class IconMetadata {
     });
   }
 }
-
-

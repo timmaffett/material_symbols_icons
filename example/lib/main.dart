@@ -398,7 +398,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: SelectableText(onTap: () {
       final exampleIconCode = getIconCodeStringForCurrentSettings();
       Clipboard.setData(ClipboardData(text: exampleIconCode)).then((_) {
-        if(context.mounted) {
+        if (context.mounted) {
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
               content: Text('Copied "$exampleIconCode" to the clipboard.')));
         }
@@ -592,10 +592,12 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: const Icon(Symbols.restart_alt),
               style: IconButton.styleFrom(
                 foregroundColor: colors.onSecondaryContainer,
-                disabledBackgroundColor: colors.onSurface.withValues(alpha:0.12),
-                hoverColor: colors.onSecondaryContainer.withValues(alpha:0.08),
-                focusColor: colors.onSecondaryContainer.withValues(alpha:0.12),
-                highlightColor: colors.onSecondaryContainer.withValues(alpha:0.12),
+                disabledBackgroundColor:
+                    colors.onSurface.withValues(alpha: 0.12),
+                hoverColor: colors.onSecondaryContainer.withValues(alpha: 0.08),
+                focusColor: colors.onSecondaryContainer.withValues(alpha: 0.12),
+                highlightColor:
+                    colors.onSecondaryContainer.withValues(alpha: 0.12),
               ),
             ),
           ),
@@ -1013,16 +1015,16 @@ class _MyHomePageState extends State<MyHomePage> {
                                               colors.secondaryContainer,
                                           disabledBackgroundColor: colors
                                               .onSurface
-                                              .withValues(alpha:0.12),
+                                              .withValues(alpha: 0.12),
                                           hoverColor: colors
                                               .onSecondaryContainer
-                                              .withValues(alpha:0.08),
+                                              .withValues(alpha: 0.08),
                                           focusColor: colors
                                               .onSecondaryContainer
-                                              .withValues(alpha:0.12),
+                                              .withValues(alpha: 0.12),
                                           highlightColor: colors
                                               .onSecondaryContainer
-                                              .withValues(alpha:0.12),
+                                              .withValues(alpha: 0.12),
                                         ),
                                       ),
                                     ),

@@ -11,11 +11,13 @@ import 'update_metadata.dart';
 
 /// Returns the path to the icons file.
 File _iconsMetadataJsonFile() {
-  return File(path.join(Directory.current.path, 'last_metadata', 'icons_metadata.json'));
+  return File(path.join(
+      Directory.current.path, 'last_metadata', 'icons_metadata.json'));
 }
 
 void main() {
-  String result = writeOutTheMetadataDartFile(File( 'material_symbols_metadata.dart'));
+  String result =
+      writeOutTheMetadataDartFile(File('material_symbols_metadata.dart'));
   print(result.green);
 }
 
@@ -34,11 +36,10 @@ String writeOutTheMetadataDartFile(File outFile) {
   // Write the stringbuffer to the output file.
   outFile.writeAsStringSync(outputStringBuffer.toString());
 
-  return('Wrote icon metadata to ${outFile.path} - ${iconMetadata.length} icons written.');
+  return ('Wrote icon metadata to ${outFile.path} - ${iconMetadata.length} icons written.');
 }
 
-Map<String, IconMetadata> readIconsMetadata() { 
-
+Map<String, IconMetadata> readIconsMetadata() {
   // Create a Map to hold the Icon objects, using the key from the JSON.
   Map<String, IconMetadata> iconMap = {};
 
@@ -63,7 +64,8 @@ Map<String, IconMetadata> readIconsMetadata() {
             // Handle the error, e.g., skip this icon or use a default Icon.
           }
         } else {
-          print('Unexpected data type for key $key: Expected a Map, got ${value.runtimeType}');
+          print(
+              'Unexpected data type for key $key: Expected a Map, got ${value.runtimeType}');
         }
       });
 
@@ -74,9 +76,11 @@ Map<String, IconMetadata> readIconsMetadata() {
     }
     return iconMap;
   } else {
-    print('Icon metadata file does not exist. Please run `dart run update_package.dart` to create it.'.red);
+    print(
+        'Icon metadata file does not exist. Please run `dart run update_package.dart` to create it.'
+            .red);
     return iconMap; // Return an empty map if the file doesn't exist.
-  } 
+  }
 }
 
 /* TEST
@@ -121,10 +125,8 @@ void writeIconMetadataAsDartCode(Map<String, IconMetadata> iconMap) {
 }
 END WRITE NON STRING TABLE VERSION */
 
-
 Map<String, int> _categoryStringTable = {};
 Map<String, int> _tagStringTable = {};
-
 
 int addToCategoryStringTable(String category) {
   if (!_categoryStringTable.containsKey(category)) {
@@ -140,39 +142,59 @@ int addToTagStringTable(String tag) {
   return _tagStringTable[tag]!;
 }
 
-/// Writes the icon metadata as Dart code, using string tables for categories and tags. 
-void writeIconMetadataAsDartCodeWithStringTables(StringBuffer output, Map<String, IconMetadata> iconMap) {
-
+/// Writes the icon metadata as Dart code, using string tables for categories and tags.
+void writeIconMetadataAsDartCodeWithStringTables(
+    StringBuffer output, Map<String, IconMetadata> iconMap) {
   StringBuffer mapStringBuffer = StringBuffer();
-  mapStringBuffer.writeln('/// This map contains the metadata for all Material Symbols icons.');
-  mapStringBuffer.writeln("/// The keys are the icon's dart symbol name and the values are SymbolsMetadata objects that contain the metadata.");
-  mapStringBuffer.writeln('/// The metadata includes the original name, popularity, codepoint, categories, tags, and whether the icon is RTL auto-mirrored.');
+  mapStringBuffer.writeln(
+      '/// This map contains the metadata for all Material Symbols icons.');
+  mapStringBuffer.writeln(
+      "/// The keys are the icon's dart symbol name and the values are SymbolsMetadata objects that contain the metadata.");
+  mapStringBuffer.writeln(
+      '/// The metadata includes the original name, popularity, codepoint, categories, tags, and whether the icon is RTL auto-mirrored.');
   mapStringBuffer.writeln('Map<String, SymbolsMetadata> iconMap = {');
   iconMap.forEach((key, icon) {
     mapStringBuffer.writeln('  "$key": SymbolsMetadata(');
     //mapStringBuffer.writeln('    name: "${icon.name}",');
-    if(icon.renamedIconName.isNotEmpty) mapStringBuffer.writeln('    originalName: "${icon.name}",');
+    if (icon.renamedIconName.isNotEmpty)
+      mapStringBuffer.writeln('    originalName: "${icon.name}",');
     mapStringBuffer.writeln('    popularity: ${icon.popularity},');
-    mapStringBuffer.writeln('    codepoint: 0x${icon.codepoint.toRadixString(16).padLeft(4, '0')},');
-    mapStringBuffer.writeln('    categories: [ ${icon.categories.map((cat) => '${addToCategoryStringTable(cat)}').join(', ')} ],');
-    mapStringBuffer.writeln('    tags: [ ${icon.tags.map((tag) => '${addToTagStringTable(tag)}').join(', ')} ],');
-    if(icon.rtlAutoMirrored) mapStringBuffer.writeln('    rtlAutoMirrored: ${icon.rtlAutoMirrored},');
+    mapStringBuffer.writeln(
+        '    codepoint: 0x${icon.codepoint.toRadixString(16).padLeft(4, '0')},');
+    mapStringBuffer.writeln(
+        '    categories: [${icon.categories.map((cat) => '${addToCategoryStringTable(cat)}').join(', ')}],');
+    //OLD WAY but dart format reforamts: mapStringBuffer.writeln('    tags: [ ${icon.tags.map((tag) => '${addToTagStringTable(tag)}').join(', ')} ],');
+    mapStringBuffer.writeln('    tags: [' );
+    for(int i=0;i<icon.tags.length;i++) {
+      mapStringBuffer.writeln('      ${addToTagStringTable(icon.tags[i])}${(i<icon.tags.length-1)?',':''}');
+    }
+    mapStringBuffer.writeln('    ],' );
+    if (icon.rtlAutoMirrored)
+      mapStringBuffer.writeln('    rtlAutoMirrored: ${icon.rtlAutoMirrored},');
     mapStringBuffer.writeln('  ),');
   });
   mapStringBuffer.writeln('};');
 
-  output.writeln('/// List of all Categories - SymbolsMetadata() objects reference categories by their INDEX this table.');
-  output.writeln('/// To get the category name, use `categoryMap[categoryIndexFromSymbolsMetadata]`');
+  output.writeln(
+      '/// List of all Categories - SymbolsMetadata() objects reference categories by their INDEX this table.');
+  output.writeln(
+      '/// To get the category name, use `categoryMap[categoryIndexFromSymbolsMetadata]`');
   output.writeln('List<String> categoryMap = [');
-  _categoryStringTable.keys.map((cat) => '  "$cat",').forEach((line) => output.writeln(line));
-  output.writeln('];');  
+  _categoryStringTable.keys
+      .map((cat) => '  "$cat",')
+      .forEach((line) => output.writeln(line));
+  output.writeln('];');
   output.writeln();
 
-  output.writeln('/// List of all Tags - SymbolsMetadata() objects reference tags by their INDEX this table.');
-  output.writeln('/// To get the tag name, use `tagMap[tagIndexFromSymbolsMetadata]`');
+  output.writeln(
+      '/// List of all Tags - SymbolsMetadata() objects reference tags by their INDEX this table.');
+  output.writeln(
+      '/// To get the tag name, use `tagMap[tagIndexFromSymbolsMetadata]`');
   output.writeln('List<String> tagMap = [');
-  _tagStringTable.keys.map((tag) => '  "${tag.replaceAll('"','')}",').forEach((line) => output.writeln(line));
-  output.writeln('];');  
+  _tagStringTable.keys
+      .map((tag) => '  "${tag.replaceAll('"', '')}",')
+      .forEach((line) => output.writeln(line));
+  output.writeln('];');
   output.writeln();
 
   output.writeln();
@@ -180,10 +202,8 @@ void writeIconMetadataAsDartCodeWithStringTables(StringBuffer output, Map<String
   output.writeln();
 }
 
-
-
 void writeIconMetadataDartCodeHeader(StringBuffer output) {
- final fileHeaderContent = '''// GENERATED FILE. DO NOT EDIT.
+  final fileHeaderContent = '''// GENERATED FILE. DO NOT EDIT.
 //
 // To edit this file modify the generator file `generator/update_package.dart` and
 // re-generate.

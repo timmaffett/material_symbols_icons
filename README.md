@@ -1,6 +1,12 @@
 # Material Symbols Icons for Flutter
 
 [![pub package](https://img.shields.io/pub/v/material_symbols_icons.svg)](https://pub.dev/packages/material_symbols_icons)
+[Pub Monthly Downloads](https://img.shields.io/pub/dm/material_symbols_icons)](https://pub.dev/packages/material_symbols_icons/score)
+[![Pub Version](https://img.shields.io/pub/v/material_symbols_icons)](https://pub.dev/packages/material_symbols_icons)
+[![likes](https://img.shields.io/pub/likes/material_symbols_icons)](https://pub.dev/packages/material_symbols_icons/score)
+[![points](https://img.shields.io/pub/points/material_symbols_icons)](https://pub.dev/packages/material_symbols_icons/score
+[![Pub Publisher](https://img.shields.io/pub/publisher/material_symbols_icons)](https://pub.dev/publishers/hiveright.tech/packages)
+
 
 ### Using Official Material Symbols Icons variable fonts version 2.867 released 08/14/2025 from [material font repo](https://github.com/google/material-design-icons) with 4092 icons
 

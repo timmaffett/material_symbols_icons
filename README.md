@@ -4,7 +4,7 @@
 [![Pub Monthly Downloads](https://img.shields.io/pub/dm/material_symbols_icons)](https://pub.dev/packages/material_symbols_icons/score)
 [![Pub Version](https://img.shields.io/pub/v/material_symbols_icons)](https://pub.dev/packages/material_symbols_icons)
 [![likes](https://img.shields.io/pub/likes/material_symbols_icons)](https://pub.dev/packages/material_symbols_icons/score)
-[![points](https://img.shields.io/pub/points/material_symbols_icons)](https://pub.dev/packages/material_symbols_icons/score
+[![points](https://img.shields.io/pub/points/material_symbols_icons)](https://pub.dev/packages/material_symbols_icons/score)
 [![Pub Publisher](https://img.shields.io/pub/publisher/material_symbols_icons)](https://pub.dev/publishers/hiveright.tech/packages)
 
 

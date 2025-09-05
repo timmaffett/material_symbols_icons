@@ -27,9 +27,9 @@ Map<String, IconData> materialSymbolsSharpMap = {};
 List<String> renamedMaterialSymbolsMapKeys = [];
 
 const String materialSymbolsIconsSourceFontVersionNumber =
-    '2.867'; // must update for each new font update
+    '2.872'; // must update for each new font update
 const String materialSymbolsIconsSourceReleaseDate =
-    'Aug 14, 2025'; // must update for each new font update
+    'Sept. 4, 2025'; // must update for each new font update
 int totalMaterialSymbolsIcons = 0;
 
 void makeSymbolsByStyleMaps() {

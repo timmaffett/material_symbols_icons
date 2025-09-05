@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2025-08-16 15:12:30.355088 by the dart file
+// This file was generated 2025-09-05 11:29:30.224699 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -1458,6 +1458,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'factory': 0xebbc,
   'falling': 0xf60d,
   'familiar_face_and_zone': 0xe21c,
+  'family_group': 0xeef2,
   'family_history': 0xe0ad,
   'family_home': 0xeb26,
   'family_link': 0xeb19,
@@ -1552,6 +1553,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'fit_width': 0xf779,
   'fitness_center': 0xeb43,
   'fitness_tracker': 0xf463,
+  'fitness_trackers': 0xeef1,
   'flag': 0xf0c6,
   'flag_2': 0xf40f,
   'flag_check': 0xf3d8,
@@ -2252,6 +2254,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'magnify_docked': 0xf7d6,
   'magnify_fullscreen': 0xf7d5,
   'mail': 0xe159,
+  'mail_asterisk': 0xeef4,
   'mail_lock': 0xec0a,
   'mail_off': 0xf48b,
   'mail_outline': 0xe159,
@@ -2392,6 +2395,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'mobile_speaker': 0xf320,
   'mobile_text': 0xf2eb,
   'mobile_text_2': 0xf2e6,
+  'mobile_theft': 0xf2a9,
   'mobile_ticket': 0xf2e4,
   'mobile_vibrate': 0xf2cb,
   'mobile_wrench': 0xf2b0,
@@ -2599,7 +2603,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'nightlife': 0xea62,
   'nightlight': 0xf03d,
   'nightlight_round': 0xf03d,
-  'nights_stay': 0xea46,
+  'nights_stay': 0xf174,
   'no_accounts': 0xf03e,
   'no_adult_content': 0xf8fe,
   'no_backpack': 0xf237,

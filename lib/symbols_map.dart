@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2025-08-16 15:12:30.104396 by the dart file
+// This file was generated 2025-09-05 11:29:30.084965 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -4171,6 +4171,9 @@ Map<String, IconData> materialSymbolsMap = {
   'familiar_face_and_zone': Symbols.familiar_face_and_zone,
   'familiar_face_and_zone_rounded': Symbols.familiar_face_and_zone_rounded,
   'familiar_face_and_zone_sharp': Symbols.familiar_face_and_zone_sharp,
+  'family_group': Symbols.family_group,
+  'family_group_rounded': Symbols.family_group_rounded,
+  'family_group_sharp': Symbols.family_group_sharp,
   'family_history': Symbols.family_history,
   'family_history_rounded': Symbols.family_history_rounded,
   'family_history_sharp': Symbols.family_history_sharp,
@@ -4455,6 +4458,9 @@ Map<String, IconData> materialSymbolsMap = {
   'fitness_tracker': Symbols.fitness_tracker,
   'fitness_tracker_rounded': Symbols.fitness_tracker_rounded,
   'fitness_tracker_sharp': Symbols.fitness_tracker_sharp,
+  'fitness_trackers': Symbols.fitness_trackers,
+  'fitness_trackers_rounded': Symbols.fitness_trackers_rounded,
+  'fitness_trackers_sharp': Symbols.fitness_trackers_sharp,
   'flag': Symbols.flag,
   'flag_rounded': Symbols.flag_rounded,
   'flag_sharp': Symbols.flag_sharp,
@@ -6576,6 +6582,9 @@ Map<String, IconData> materialSymbolsMap = {
   'mail': Symbols.mail,
   'mail_rounded': Symbols.mail_rounded,
   'mail_sharp': Symbols.mail_sharp,
+  'mail_asterisk': Symbols.mail_asterisk,
+  'mail_asterisk_rounded': Symbols.mail_asterisk_rounded,
+  'mail_asterisk_sharp': Symbols.mail_asterisk_sharp,
   'mail_lock': Symbols.mail_lock,
   'mail_lock_rounded': Symbols.mail_lock_rounded,
   'mail_lock_sharp': Symbols.mail_lock_sharp,
@@ -6996,6 +7005,9 @@ Map<String, IconData> materialSymbolsMap = {
   'mobile_text_2': Symbols.mobile_text_2,
   'mobile_text_2_rounded': Symbols.mobile_text_2_rounded,
   'mobile_text_2_sharp': Symbols.mobile_text_2_sharp,
+  'mobile_theft': Symbols.mobile_theft,
+  'mobile_theft_rounded': Symbols.mobile_theft_rounded,
+  'mobile_theft_sharp': Symbols.mobile_theft_sharp,
   'mobile_ticket': Symbols.mobile_ticket,
   'mobile_ticket_rounded': Symbols.mobile_ticket_rounded,
   'mobile_ticket_sharp': Symbols.mobile_ticket_sharp,

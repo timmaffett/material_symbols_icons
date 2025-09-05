@@ -1,5 +1,11 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2872.0
+
+* Update to version 2.872 of the material icons variable fonts 'released' 09/04/2025 with 4096 icons
+* Added eef2  # family_group, eef1  # fitness_trackers, eef4  # mail_asterisk, f2a9  # mobile_theft,
+* Changed codepoint for # nights_stay from ea46 to f174
+
 ## 4.2867.0
 
 * Update to version 2.867 of the material icons variable fonts 'released' 08/14/2025 with 4092 icons

@@ -21,7 +21,8 @@ dependencies:
   device_preview_plus: ^2.0.4    # (moved from `device_preview` to updated `device_preview_plus`) required only for virtual device screen testing
   splittable_flexible_row: ^1.0.0
   universal_html: ^2.2.3
-  
+  flutter_colorpicker: ^1.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

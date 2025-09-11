@@ -6,12 +6,13 @@ import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:material_symbols_icons/symbols_map.dart';
 import 'package:splittable_flexible_row/splittable_flexible_row.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
 // ignore: depend_on_referenced_packages
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:universal_html/html.dart' show window;
 
-import 'package:device_preview_plus/device_preview_plus.dart'; // required when useDevicePreview==true
+import 'package:device_preview_plus/device_preview_plus.dart';
 
 /// Set [useDevicePreview] to allow testing layouts on virtual device screens
 const useDevicePreview = false;
@@ -88,6 +89,14 @@ void main() {
   } else {
     runApp(const MyApp());
   }
+
+  // Example usage: show ColorPickerDialog after app starts (for demonstration)
+  // WidgetsBinding.instance.addPostFrameCallback((_) {
+  //   showDialog(
+  //     context: navigatorKey.currentContext!,
+  //     builder: (context) => ColorPickerDialog(initialColor: Colors.blue),
+  //   );
+  // });
 }
 
 class MyApp extends StatelessWidget {
@@ -183,6 +192,16 @@ class _MyHomePageState extends State<MyHomePage> {
   // default optical size
   double _opticalSizeVariation = 48.0;
   double _opticalSliderPos = 3;
+
+  // Icon display mode: 0 = Normal, 1 = Two Tone Variation 1, 2 = Two Tone Variation 2
+  int _iconDisplayMode = 0;
+
+  // Icon colors for two tone
+  Color _2toneIconColor1 = Colors.yellow;
+  Color _2toneIconColor2 = Colors.blue;
+
+  // Checkbox state: use two tone colors for normal icons
+  bool _useForNormalIcons = false;
 
   void setQueryParametersToMatchState() {
     var uri = Uri.parse(window.location.href);
@@ -355,18 +374,24 @@ class _MyHomePageState extends State<MyHomePage> {
 
   String getStyleSummary() {
     String style = '';
-    switch (_fontListType) {
-      case FontListType.outlined:
-        style = 'Outlined';
-        break;
-      case FontListType.rounded:
-        style = 'Rounded';
-        break;
-      case FontListType.sharp:
-        style = 'Sharp';
-        break;
-      case FontListType.universal:
-        style = 'All 3 Styles';
+    if(_iconDisplayMode == 1) {
+      style = 'Two Tone Variation 1';
+    } else if (_iconDisplayMode == 2) {
+      style = 'Two Tone Variation 2';
+    } else {
+      switch (_fontListType) {
+        case FontListType.outlined:
+          style = 'Outlined';
+          break;
+        case FontListType.rounded:
+          style = 'Rounded';
+          break;
+        case FontListType.sharp:
+          style = 'Sharp';
+          break;
+        case FontListType.universal:
+          style = 'All 3 Styles';
+      }
     }
     return 'Showing $style';
   }
@@ -390,24 +415,33 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   String getIconCodeStringForCurrentSettings() {
+    if(_iconDisplayMode == 1 || _iconDisplayMode == 2) {
+      return 'TwoToneIcon.varied( Symbols.settings, size: $_iconFontSize, color: ${colorToRGBString(_2toneIconColor1)}, color2: ${colorToRGBString(_2toneIconColor2)}${_fillVariation != 0 ? ', fill: $_fillVariation' : ''}${_weightVariation != 400 ? ', weight: $_weightVariation' : ''}${_gradeVariation != 0 ? ', grade: $_gradeVariation' : ''}${_opticalSizeVariation != 24 ? ', opticalSize: $_opticalSizeVariation' : ''} )';
+    } else if (_useForNormalIcons) {
+      return 'Icon( Symbols.settings, size: $_iconFontSize${_fillVariation != 0 ? ', fill: $_fillVariation' : ''}, color: ${colorToRGBString(_2toneIconColor1)}${_weightVariation != 400 ? ', weight: $_weightVariation' : ''}${_gradeVariation != 0 ? ', grade: $_gradeVariation' : ''}${_opticalSizeVariation != 24 ? ', opticalSize: $_opticalSizeVariation' : ''} )';
+    }
     return 'Icon( Symbols.settings, size: $_iconFontSize${_fillVariation != 0 ? ', fill: $_fillVariation' : ''}${_weightVariation != 400 ? ', weight: $_weightVariation' : ''}${_gradeVariation != 0 ? ', grade: $_gradeVariation' : ''}${_opticalSizeVariation != 24 ? ', opticalSize: $_opticalSizeVariation' : ''} )';
   }
 
   Widget buildIconCodeSummaryWidget() {
-    return Center(
-        child: SelectableText(onTap: () {
-      final exampleIconCode = getIconCodeStringForCurrentSettings();
-      Clipboard.setData(ClipboardData(text: exampleIconCode)).then((_) {
-        if (context.mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-              content: Text('Copied "$exampleIconCode" to the clipboard.')));
-        }
-      });
-    }, 'eg: ${getIconCodeStringForCurrentSettings()}',
-            style: const TextStyle(
+    return SelectableText(onTap: () {
+              final exampleIconCode = getIconCodeStringForCurrentSettings();
+              Clipboard.setData(ClipboardData(text: exampleIconCode)).then((_) {
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                      content: Text('Copied "$exampleIconCode" to the clipboard.')));
+                }
+              });
+            },
+            '${getIconCodeStringForCurrentSettings()}',
+            //maxLines: 4,
+            style: TextStyle(
                 color: Colors.black,
-                fontWeight: FontWeight.normal,
-                fontSize: 10)));
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Courier New',
+                fontSize: 10
+            )
+          );
   }
 
   Widget buildPossiblyConstrainedAppBarTitle(bool constrained) {
@@ -536,6 +570,182 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
+        // Row for icon display mode radio buttons
+        ...Splittable.flexibleRow(
+          context: context,
+          splitAtIndicesByWidth: {
+            300: [0, 2, 4],
+          },
+          forceSplit: screenWidth <= 600,
+          splitWidgetBehavior: SplitWidgetBehavior.includeInThisRow,
+          mainAxisAlignment: mainAxisAlignment,
+          children: <Widget>[
+            const Text(
+              'Icon Display:',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
+            ),
+            Radio<int>(
+              value: 0,
+              groupValue: _iconDisplayMode,
+              onChanged: (val) {
+                setState(() {
+                  _iconDisplayMode = val ?? 0;
+                });
+              },
+            ),
+            const Text('Normal', style: TextStyle(fontSize: 16.0)),
+            Radio<int>(
+              value: 1,
+              groupValue: _iconDisplayMode,
+              onChanged: (val) {
+                setState(() {
+                  _iconDisplayMode = val ?? 0;
+                });
+              },
+            ),
+            const Text('Two Tone Variation 1', style: TextStyle(fontSize: 16.0)),
+            Radio<int>(
+              value: 2,
+              groupValue: _iconDisplayMode,
+              onChanged: (val) {
+                setState(() {
+                  _iconDisplayMode = val ?? 0;
+                });
+              },
+            ),
+            const Text('Two Tone Variation 2', style: TextStyle(fontSize: 16.0)),
+          ],
+        ),
+        // Row for color pickers
+        ...Splittable.flexibleRow(
+          context: context,
+          splitAtIndicesByWidth: {
+            300: [0, 2, 4, 6],
+            600: [0, 3, 5],
+          },
+          forceSplit: screenWidth <= 600,
+          splitWidgetBehavior: SplitWidgetBehavior.includeInThisRow,
+          mainAxisAlignment: mainAxisAlignment,
+          children: <Widget>[
+            const Text(
+              'Two Tone Icon Color 1:',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
+            ),
+            SizedBox(width:10),
+            GestureDetector(
+              onTap: () async {
+                Color pickedColor = _2toneIconColor1;
+                await showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      title: const Text('Pick a color'),
+                      content: SingleChildScrollView(
+                        child: ColorPicker(
+                          pickerColor: pickedColor,
+                          onColorChanged: (color) {
+                            pickedColor = color;
+                          },
+                          showLabel: true,
+                          pickerAreaHeightPercent: 0.8,
+                        ),
+                      ),
+                      actions: [
+                        TextButton(
+                          child: const Text('Cancel'),
+                          onPressed: () => Navigator.of(context).pop(),
+                        ),
+                        TextButton(
+                          child: const Text('Select'),
+                          onPressed: () => Navigator.of(context).pop(pickedColor),
+                        ),
+                      ],
+                    );
+                  },
+                ).then((picked) {
+                  if (picked != null && picked is Color) {
+                    setState(() {
+                      _2toneIconColor1 = picked;
+                    });
+                  }
+                });
+              },
+              child: Container(
+                width: 16,
+                height: 16,
+                decoration: BoxDecoration(
+                  color: _2toneIconColor1,
+                  border: Border.all(color: Colors.black),
+                  borderRadius: BorderRadius.all(Radius.zero), //.circular(16),
+                ),
+              ),
+            ),
+            SizedBox(width:10),
+            const Text('Use ⇤ for normal icons', style: TextStyle(fontSize: 16.0)),
+            Checkbox(
+              value: _useForNormalIcons,
+              onChanged: (val) {
+                setState(() {
+                  _useForNormalIcons = val ?? false;
+                });
+              },
+            ),
+            SizedBox(width:20),
+            const Text(
+              'Two Tone Icon Color 2:',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
+            ),
+            SizedBox(width:10),
+            GestureDetector(
+              onTap: () async {
+                Color pickedColor = _2toneIconColor2;
+                await showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      title: const Text('Pick a color'),
+                      content: SingleChildScrollView(
+                        child: ColorPicker(
+                          pickerColor: pickedColor,
+                          onColorChanged: (color) {
+                            pickedColor = color;
+                          },
+                          showLabel: true,
+                          pickerAreaHeightPercent: 0.8,
+                        ),
+                      ),
+                      actions: [
+                        TextButton(
+                          child: const Text('Cancel'),
+                          onPressed: () => Navigator.of(context).pop(),
+                        ),
+                        TextButton(
+                          child: const Text('Select'),
+                          onPressed: () => Navigator.of(context).pop(pickedColor),
+                        ),
+                      ],
+                    );
+                  },
+                ).then((picked) {
+                  if (picked != null && picked is Color) {
+                    setState(() {
+                      _2toneIconColor2 = picked;
+                    });
+                  }
+                });
+              },
+              child: Container(
+                width: 16,
+                height: 16,
+                decoration: BoxDecoration(
+                  color: _2toneIconColor2,
+                  border: Border.all(color: Colors.black),
+                  borderRadius: BorderRadius.all(Radius.zero), //circular(16),
+                ),
+              ),
+            ),
+          ],
+        ),
       ...Splittable.flexibleRow(
         context: context,
         splitAtIndicesByWidth: {
@@ -739,11 +949,19 @@ class _MyHomePageState extends State<MyHomePage> {
       if (!useExpandPanel) ...[
         const SizedBox(height: 12),
         const Text(
-          'Style & Variation settings : ',
+          'Style & Variation settings',
           style: TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.bold,
             fontSize: 16.0,
+          ),
+        ),
+        const Text(
+          '(now including Two Tone options)',
+          style: TextStyle(
+            color: Colors.black,
+            fontWeight: FontWeight.normal,
+            fontSize: 12.0,
           ),
         ),
         const SizedBox(height: 12),
@@ -774,13 +992,22 @@ class _MyHomePageState extends State<MyHomePage> {
                             textAlign: TextAlign.center,
                             text: TextSpan(children: [
                               const TextSpan(
-                                text: 'Style & Variation settings :',
+                                text: 'Style & Variation settings',
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18.0,
                                 ),
                               ),
+                              const TextSpan(
+                                text: ' (now including Two Tone options)',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.normal,
+                                  fontSize: 12.0,
+                                ),
+                              ),
+
                               if (!configPanelExpanded!)
                                 buildSummaryWidgetOfStyleAndVariation(),
                             ]),
@@ -936,7 +1163,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                     child: Tooltip(
                                       message: 'Symbols.$iconNameForIndex',
                                       child: Column(children: [
-                                        if (hoveredOverIconData ==
+                                        if(_iconDisplayMode==1 || _iconDisplayMode==2)
+                                          TwoToneIcon.varied(iconDataForIndex,
+                                                size: _iconFontSize,
+                                                twoToneMode: _iconDisplayMode,
+                                                color: _2toneIconColor1,
+                                                color2: _2toneIconColor2,
+                                          )
+                                        else if (hoveredOverIconData ==
                                             iconDataForIndex)
                                           VariedIcon.varied(
                                             iconDataForIndex,
@@ -944,11 +1178,13 @@ class _MyHomePageState extends State<MyHomePage> {
                                                 ? 0.0
                                                 : 1.0, //  ON MOUSE OVER FILL !!
                                             size: _iconFontSize,
+                                            color: (_useForNormalIcons) ? _2toneIconColor1 : null,
                                           )
                                         else
                                           VariedIcon.varied(
                                             iconDataForIndex,
                                             size: _iconFontSize,
+                                            color: (_useForNormalIcons) ? _2toneIconColor1 : null,
                                           ),
                                         if (_iconFontSize <= 64)
                                           const SizedBox(height: 5),
@@ -1144,4 +1380,8 @@ class IconSearchStringInputState extends State<IconSearchStringInput> {
       ),
     );
   }
+}
+
+String colorToRGBString(Color color) {
+  return 'Color.fromARGB(255, ${color.red}, ${color.green}, ${color.blue})';
 }

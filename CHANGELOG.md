@@ -1,5 +1,11 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2872.2
+
+* Fix mistake in 4.2872.1 in creating root path - did not work in packaged version
+* Add TwoToneIcons extension for creating two variations of two tone Symbols icons
+* Added TwoToneIcons demonstration to example
+
 ## 4.2872.1
 
 * Fix the install_material_symbols_icons_fonts.dart to properly work on linux

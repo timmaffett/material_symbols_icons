@@ -194,3 +194,92 @@ extension VariedIcon on Icon {
                 .globalIconVariationDefaults[icon.fontFamily]?.textDirection,
       );
 }
+
+/// This extension creates a two-tone icon using a stack of two icons, each with different colors and fill variations.
+extension TwoToneIcon on Icon {
+  /// Creates an two-toneicon using a stack of two icons, each with different colors and fill variations.
+  /// The [fill] parameter is used to determine which icon is the "filled" version (fill=1.0) and which is the "outlined" version (fill=0.0). 
+  static Stack varied(
+    IconData icon, {
+    Key? key,
+    int twoToneMode = 1, // 1=filled first, 2=outlined first
+    double? size,
+    double? fill,
+    double? weight,
+    double? grade,
+    double? opticalSize,
+    Color? color,
+    Color? color2,
+    List<Shadow>? shadows,
+    String? semanticLabel,
+    TextDirection? textDirection,
+  }) =>
+    Stack(
+      children: [
+        Icon(
+            icon,
+            key: key,
+            size: size ??
+                MaterialSymbolsBase
+                    .globalIconVariationDefaults[icon.fontFamily]?.size,
+            fill: (fill ??
+                MaterialSymbolsBase
+                    .globalIconVariationDefaults[icon.fontFamily]?.fill)
+                    == (twoToneMode==1 ? 0.0 : 1.0)
+                ? 1.0
+                : 0.0,
+            weight: weight ??
+                MaterialSymbolsBase
+                    .globalIconVariationDefaults[icon.fontFamily]?.weight,
+            grade: grade ??
+                MaterialSymbolsBase
+                    .globalIconVariationDefaults[icon.fontFamily]?.grade,
+            opticalSize: opticalSize ??
+                MaterialSymbolsBase
+                    .globalIconVariationDefaults[icon.fontFamily]?.opticalSize,
+            color: color ??
+                MaterialSymbolsBase
+                    .globalIconVariationDefaults[icon.fontFamily]?.color,
+            shadows: shadows ??
+                MaterialSymbolsBase
+                    .globalIconVariationDefaults[icon.fontFamily]?.shadows,
+            semanticLabel: semanticLabel,
+            textDirection: textDirection ??
+                MaterialSymbolsBase
+                    .globalIconVariationDefaults[icon.fontFamily]?.textDirection,
+        ),
+        Icon(
+        icon,
+        key: key,
+        size: size ??
+            MaterialSymbolsBase
+                .globalIconVariationDefaults[icon.fontFamily]?.size,
+        fill: (fill ??
+            MaterialSymbolsBase
+                .globalIconVariationDefaults[icon.fontFamily]?.fill) ==
+            (twoToneMode == 1 ? 0.0 : 1.0)
+            ? 0.0
+            : 1.0,
+        weight: weight ??
+            MaterialSymbolsBase
+                .globalIconVariationDefaults[icon.fontFamily]?.weight,
+        grade: grade ??
+            MaterialSymbolsBase
+                .globalIconVariationDefaults[icon.fontFamily]?.grade,
+        opticalSize: opticalSize ??
+            MaterialSymbolsBase
+                .globalIconVariationDefaults[icon.fontFamily]?.opticalSize,
+        color: color2 ??
+            MaterialSymbolsBase
+                .globalIconVariationDefaults[icon.fontFamily]?.color,
+        shadows: shadows ??
+            MaterialSymbolsBase
+                .globalIconVariationDefaults[icon.fontFamily]?.shadows,
+        semanticLabel: semanticLabel,
+        textDirection: textDirection ??
+            MaterialSymbolsBase
+                .globalIconVariationDefaults[icon.fontFamily]?.textDirection,
+      )
+      ] 
+    );
+}

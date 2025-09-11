@@ -27,6 +27,7 @@ enum Options {
   usage('usage'),
   help('help'),
   //OBSOLETE//path('path')
+  localdev('localdev'),
   debug('debug');
 
   const Options(this.name);
@@ -37,7 +38,8 @@ enum Options {
 bool globalMacOSInstall = false;
 bool macOSUseFontBook = false;
 bool debugScripts = false;
-String _rootDir = path.join(Directory.current.path,'bin');
+bool localDev = false;
+String _rootDir = './bin';  /// WHEN DEVELOPING>>path.join(Directory.current.path,'bin');
 
 set rootDir(String value) {
   //if(value.length<10) throw('SOME ONE IS MESSING UP ROOTDIR');
@@ -51,11 +53,12 @@ String getRootPathsToLatestInstalledPackage() {
   final pathToScript = Platform.script.toFilePath();
   rootDir = path.dirname(pathToScript);
 
-  if (debugScripts) print('Got pathToScript=$pathToScript arg $rootDir  curdir=${Directory.current.path}');
-  
-  rootDir = path.join(Directory.current.path,'bin');
+  if (debugScripts) print('Got pathToScript=$pathToScript  rootDir set to $rootDir');
 
-  if (debugScripts) print(chalk.yellowBright('Root directory: $rootDir'));
+  if(localDev) {
+    rootDir = path.join(Directory.current.path,'bin');
+    if (debugScripts) print(chalk.cyan('LOCALDEV flag set. Using rootDir=$rootDir'));
+  }
 
   // following for testing
   if (Platform.isWindows && !rootDir.contains('global_packages')) {
@@ -147,6 +150,13 @@ void main(List<String> args) async {
           'MacOS specific flag to additionally validate fonts using FontBook.',
     )
     ..addFlag(
+      Options.localdev.name,
+      defaultsTo: false,
+      negatable: false,
+      help:
+          'Local development flag to use current directory as root package dir.',
+    )
+    ..addFlag(
       Options.uninstall.name,
       defaultsTo: false,
       negatable: false,
@@ -172,7 +182,9 @@ void main(List<String> args) async {
   if (parsedArgs[Options.usefontbook.name] == true) {
     macOSUseFontBook = true;
   }
-
+  if (parsedArgs[Options.localdev.name] == true) {
+    localDev = true;
+  }
   if (parsedArgs[Options.usage.name] == true ||
       parsedArgs[Options.help.name] == true) {
     print(parser.usage);

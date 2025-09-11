@@ -1,5 +1,12 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2872.1
+
+* Fix the install_material_symbols_icons_fonts.dart to properly work on linux
+  and MacOSX.  There could be directory path issues and the scripts needed to make
+  sure that their executable +x flags where set before running. (otherwise they would
+  of course fail)
+
 ## 4.2872.0
 
 * Update to version 2.872 of the material icons variable fonts 'released' 09/04/2025 with 4096 icons

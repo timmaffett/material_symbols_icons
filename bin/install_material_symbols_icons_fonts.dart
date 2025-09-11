@@ -37,15 +37,28 @@ enum Options {
 bool globalMacOSInstall = false;
 bool macOSUseFontBook = false;
 bool debugScripts = false;
-String rootDir = './bin';
+String _rootDir = path.join(Directory.current.path,'bin');
+
+set rootDir(String value) {
+  //if(value.length<10) throw('SOME ONE IS MESSING UP ROOTDIR');
+  _rootDir = value;
+}
+
+String get rootDir => _rootDir;
 
 // We need to get to the files of the LATEST material_symbols_icons package that is in the pub cache
 String getRootPathsToLatestInstalledPackage() {
   final pathToScript = Platform.script.toFilePath();
   rootDir = path.dirname(pathToScript);
 
+  if (debugScripts) print('Got pathToScript=$pathToScript arg $rootDir  curdir=${Directory.current.path}');
+  
+  rootDir = path.join(Directory.current.path,'bin');
+
+  if (debugScripts) print(chalk.yellowBright('Root directory: $rootDir'));
+
   // following for testing
-  if (!rootDir.contains('global_packages')) {
+  if (Platform.isWindows && !rootDir.contains('global_packages')) {
     rootDir =
         r"C:\Users\Tim\AppData\Local\Pub\Cache\global_packages\dart_frog_cli\bin";
   }
@@ -76,7 +89,13 @@ String getRootPathsToLatestInstalledPackage() {
   }
   if (debugScripts) print('Highest Version = $highestVersion');
   if (debugScripts) print('latestPackageDir = $latestPackageDir');
-  return path.join(latestPackageDir, 'bin');
+  if(latestPackageDir.isNotEmpty) {
+    return path.join(latestPackageDir, 'bin');
+  } else {
+    if (debugScripts) print(chalk.red('Could not find latest installed material_symbols_icons package in pub cache.'));
+    if (debugScripts) print(chalk.yellow.onBrightRed('Assuming we are running from root of the package!'));
+    return rootDir;
+  }
 }
 
 void main(List<String> args) async {
@@ -278,7 +297,7 @@ String runPowerShellScript(String scriptPath, List<String> argumentsToScript) {
   if (debugScripts) {
     print(chalk.yellowBright('Executing $scriptPath with $argumentsToScript'));
     print(chalk.redBright(processResult.stderr as String));
-    print(chalk.blueBright(processResult.stdout as String));
+    print(chalk.cyanBright(processResult.stdout as String));
   }
   return processResult.stdout as String;
 }
@@ -291,17 +310,33 @@ void runShellInstallFontsScriptLinux() {
   final scriptPath = path.join(
       rootDir, scriptName); //path.join('..', '..', 'bin', scriptName);
   final fontWorkingDir = path.join(rootDir, '..', 'lib', 'fonts');
-  //print(chalk.red('scriptPath=$scriptPath  fontWorkingDir=$fontWorkingDir'));
-  final processResult =
-      Process.runSync('sh', [scriptPath], workingDirectory: fontWorkingDir);
-  if (debugScripts) {
-    print(chalk.yellowBright('Executed $scriptName'));
-    print(chalk.redBright(processResult.stderr as String));
-    print(chalk.blueBright(processResult.stdout as String));
+  //
+  if(debugScripts) {
+    print(chalk.purple('print(Directory.current.path)=${Directory.current.path}'));
+    print(chalk.red('scriptPath=$scriptPath  fontWorkingDir=$fontWorkingDir'));
   }
+  // First we need to make sure the scipt is executable
+  final chmodProcessResult =
+      Process.runSync('chmod', ['+x',scriptPath], runInShell:true);
+  if(debugScripts) {
+    print(chalk.yellowBright('Chmod +x $scriptPath'));
+    print(chalk.redBright(chmodProcessResult.stderr as String));
+  }
+
+  final processResult =
+      Process.runSync(scriptPath, [], workingDirectory: fontWorkingDir, runInShell:true);
+
+  if (debugScripts || processResult.stderr.toString().isNotEmpty) {
+    print(chalk.yellowBright('Executed $scriptName'));
+    print(chalk.cyanBright(processResult.stdout as String));
+  }
+  if(processResult.stderr.isNotEmpty) print(chalk.redBright.blink('StdErr:',processResult.stderr as String));
 }
 
 void runShellInstallFontsScriptGloballyOnMacOS() {
+
+print(chalk.yellowBright('runShellInstallFontsScriptGloballyOnMacOS. rootDir=$rootDir'));
+
   String scriptName = 'install-fonts-macAlt.sh';
   if (macOSUseFontBook) {
     scriptName = 'install-fonts-macAlt-withFontBook.sh';
@@ -309,14 +344,23 @@ void runShellInstallFontsScriptGloballyOnMacOS() {
   final scriptPath = path.join(
       rootDir, scriptName); //path.join('..', '..', 'bin', scriptName);
   final fontWorkingDir = path.join(rootDir, '..', 'lib', 'fonts');
-  //print(chalk.red('scriptPath=$scriptPath  fontWorkingDir=$fontWorkingDir'));
-  final processResult =
-      Process.runSync('sh', [scriptPath], workingDirectory: fontWorkingDir);
-  if (debugScripts) {
-    print(chalk.yellowBright('Executed $scriptName'));
-    print(chalk.redBright(processResult.stderr as String));
-    print(chalk.blueBright(processResult.stdout as String));
+  print(chalk.purple('print(Directory.current.path)=${Directory.current.path}'));
+  print(chalk.red('scriptPath=$scriptPath  fontWorkingDir=$fontWorkingDir'));
+
+  // First we need to make sure the script is executable
+  final chmodProcessResult =
+      Process.runSync('chmod', ['+x',scriptPath], runInShell:true);
+  if(debugScripts) {
+    print(chalk.yellowBright('Chmod +x $scriptPath'));
+    print(chalk.redBright(chmodProcessResult.stderr as String));
   }
+  final processResult =
+      Process.runSync(scriptPath, [], workingDirectory: fontWorkingDir, runInShell:true);
+  if (debugScripts || processResult.stderr.toString().isNotEmpty) {
+    print(chalk.yellowBright('Executed $scriptName'));
+    print(chalk.cyanBright(processResult.stdout as String));
+  }
+  if(processResult.stderr.isNotEmpty) print(chalk.redBright.blink('StdErr:',processResult.stderr as String));
 }
 
 //MacOS specific functions

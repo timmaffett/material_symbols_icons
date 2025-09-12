@@ -7,7 +7,7 @@
 [![Pub Publisher](https://img.shields.io/pub/publisher/material_symbols_icons)](https://pub.dev/publishers/hiveright.tech/packages)
 
 
-### Using Official Material Symbols Icons variable fonts version 2.872 released 09/04/2025 from [material font repo](https://github.com/google/material-design-icons) with 4096 icons
+### Using Official Material Symbols Icons variable fonts version 2.873 released 09/11/2025 from [material font repo](https://github.com/google/material-design-icons) with 4099 icons
 
 Right-To-Left Language support has been added!  Auto mirroring of appropriate icons for Right-to-Left languages is now fully supported.
 
@@ -48,7 +48,9 @@ These icons also support the complete set of icon variation parameters defined f
 
 ## [Live Flutter Web Example with Material Symbols Icons style and variation customization](https://timmaffett.github.io/material_symbols_icons)
 
-Here is a [live example](https://timmaffett.github.io/material_symbols_icons) of the current version of this package where you can test any Material Symbols icon name to verify it's availability.  The example also allows playing with all of the font variation options to explore further customizing the look of our Material Symbols.
+### Now w/ Two-Tone variations! The package now includes the ability to display two different two-tone variations of many of the icons.
+
+Here is a [live example](https://timmaffett.github.io/material_symbols_icons) of the current version of this package where you can test any Material Symbols icon name to verify it's availability.  The example also allows playing with all of the font variation options to explore further customizing the look of our Material Symbols.   
 
 To use this package simply
 

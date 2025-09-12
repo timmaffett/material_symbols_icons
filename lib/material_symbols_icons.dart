@@ -195,6 +195,9 @@ extension VariedIcon on Icon {
       );
 }
 
+/// TwoToneVariation - Note: having a fill property=1.0 will reverse this
+enum TwoToneVariation { filled_first, outline_first }   
+
 /// This extension creates a two-tone icon using a stack of two icons, each with different colors and fill variations.
 extension TwoToneIcon on Icon {
   /// Creates an two-toneicon using a stack of two icons, each with different colors and fill variations.
@@ -202,7 +205,7 @@ extension TwoToneIcon on Icon {
   static Stack varied(
     IconData icon, {
     Key? key,
-    int twoToneMode = 1, // 1=filled first, 2=outlined first
+    TwoToneVariation twoToneVariation = TwoToneVariation.filled_first, // 1=filled first, 2=outlined first
     double? size,
     double? fill,
     double? weight,
@@ -225,7 +228,7 @@ extension TwoToneIcon on Icon {
             fill: (fill ??
                 MaterialSymbolsBase
                     .globalIconVariationDefaults[icon.fontFamily]?.fill)
-                    == (twoToneMode==1 ? 0.0 : 1.0)
+                    == (twoToneVariation == TwoToneVariation.filled_first ? 0.0 : 1.0)
                 ? 1.0
                 : 0.0,
             weight: weight ??
@@ -257,7 +260,7 @@ extension TwoToneIcon on Icon {
         fill: (fill ??
             MaterialSymbolsBase
                 .globalIconVariationDefaults[icon.fontFamily]?.fill) ==
-            (twoToneMode == 1 ? 0.0 : 1.0)
+            (twoToneVariation == TwoToneVariation.filled_first ? 0.0 : 1.0)
             ? 0.0
             : 1.0,
         weight: weight ??

@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 #
 # The font metrics within the release fonts are incorrect.  This requires them to be replaced so that they render correctly
 # within flutter.

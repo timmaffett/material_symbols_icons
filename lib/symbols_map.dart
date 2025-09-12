@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2025-09-05 11:29:30.084965 by the dart file
+// This file was generated 2025-09-12 07:59:52.660186 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -2311,6 +2311,9 @@ Map<String, IconData> materialSymbolsMap = {
   'chat_bubble_outline': Symbols.chat_bubble_outline,
   'chat_bubble_outline_rounded': Symbols.chat_bubble_outline_rounded,
   'chat_bubble_outline_sharp': Symbols.chat_bubble_outline_sharp,
+  'chat_dashed': Symbols.chat_dashed,
+  'chat_dashed_rounded': Symbols.chat_dashed_rounded,
+  'chat_dashed_sharp': Symbols.chat_dashed_sharp,
   'chat_error': Symbols.chat_error,
   'chat_error_rounded': Symbols.chat_error_rounded,
   'chat_error_sharp': Symbols.chat_error_sharp,
@@ -4881,6 +4884,12 @@ Map<String, IconData> materialSymbolsMap = {
   'fragrance': Symbols.fragrance,
   'fragrance_rounded': Symbols.fragrance_rounded,
   'fragrance_sharp': Symbols.fragrance_sharp,
+  'frame_bug': Symbols.frame_bug,
+  'frame_bug_rounded': Symbols.frame_bug_rounded,
+  'frame_bug_sharp': Symbols.frame_bug_sharp,
+  'frame_exclamation': Symbols.frame_exclamation,
+  'frame_exclamation_rounded': Symbols.frame_exclamation_rounded,
+  'frame_exclamation_sharp': Symbols.frame_exclamation_sharp,
   'frame_inspect': Symbols.frame_inspect,
   'frame_inspect_rounded': Symbols.frame_inspect_rounded,
   'frame_inspect_sharp': Symbols.frame_inspect_sharp,

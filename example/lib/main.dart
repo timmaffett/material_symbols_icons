@@ -28,9 +28,9 @@ Map<String, IconData> materialSymbolsSharpMap = {};
 List<String> renamedMaterialSymbolsMapKeys = [];
 
 const String materialSymbolsIconsSourceFontVersionNumber =
-    '2.872'; // must update for each new font update
+    '2.873'; // must update for each new font update
 const String materialSymbolsIconsSourceReleaseDate =
-    'Sept. 4, 2025'; // must update for each new font update
+    'Sept. 11, 2025'; // must update for each new font update
 int totalMaterialSymbolsIcons = 0;
 
 void makeSymbolsByStyleMaps() {
@@ -416,7 +416,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   String getIconCodeStringForCurrentSettings() {
     if(_iconDisplayMode == 1 || _iconDisplayMode == 2) {
-      return 'TwoToneIcon.varied( Symbols.settings, size: $_iconFontSize, color: ${colorToRGBString(_2toneIconColor1)}, color2: ${colorToRGBString(_2toneIconColor2)}${_fillVariation != 0 ? ', fill: $_fillVariation' : ''}${_weightVariation != 400 ? ', weight: $_weightVariation' : ''}${_gradeVariation != 0 ? ', grade: $_gradeVariation' : ''}${_opticalSizeVariation != 24 ? ', opticalSize: $_opticalSizeVariation' : ''} )';
+      final enumName = 'TwoToneVariation.${TwoToneVariation.values[_iconDisplayMode-1].name}';
+      return 'TwoToneIcon.varied( Symbols.settings, ${_iconDisplayMode==2 ? "twoToneVariation: ${enumName}, ":""}size: $_iconFontSize, color: ${colorToRGBString(_2toneIconColor1)}, color2: ${colorToRGBString(_2toneIconColor2)}${_fillVariation != 0 ? ', fill: $_fillVariation' : ''}${_weightVariation != 400 ? ', weight: $_weightVariation' : ''}${_gradeVariation != 0 ? ', grade: $_gradeVariation' : ''}${_opticalSizeVariation != 24 ? ', opticalSize: $_opticalSizeVariation' : ''} )';
     } else if (_useForNormalIcons) {
       return 'Icon( Symbols.settings, size: $_iconFontSize${_fillVariation != 0 ? ', fill: $_fillVariation' : ''}, color: ${colorToRGBString(_2toneIconColor1)}${_weightVariation != 400 ? ', weight: $_weightVariation' : ''}${_gradeVariation != 0 ? ', grade: $_gradeVariation' : ''}${_opticalSizeVariation != 24 ? ', opticalSize: $_opticalSizeVariation' : ''} )';
     }
@@ -1166,7 +1167,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         if(_iconDisplayMode==1 || _iconDisplayMode==2)
                                           TwoToneIcon.varied(iconDataForIndex,
                                                 size: _iconFontSize,
-                                                twoToneMode: _iconDisplayMode,
+                                                twoToneVariation: TwoToneVariation.values[_iconDisplayMode-1],
                                                 color: _2toneIconColor1,
                                                 color2: _2toneIconColor2,
                                           )

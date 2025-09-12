@@ -13,7 +13,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2025-09-05 11:29:30.224699 by the dart file
+// This file was generated 2025-09-12 07:59:52.851087 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -839,6 +839,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'chat_apps_script': 0xf0bd,
   'chat_bubble': 0xe0cb,
   'chat_bubble_outline': 0xe0cb,
+  'chat_dashed': 0xeeed,
   'chat_error': 0xf7ac,
   'chat_info': 0xf52b,
   'chat_paste_go': 0xf6bd,
@@ -1690,6 +1691,8 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'forward_to_inbox': 0xf187,
   'foundation': 0xf200,
   'fragrance': 0xf345,
+  'frame_bug': 0xeeef,
+  'frame_exclamation': 0xeeee,
   'frame_inspect': 0xf772,
   'frame_person': 0xf8a6,
   'frame_person_mic': 0xf4d5,

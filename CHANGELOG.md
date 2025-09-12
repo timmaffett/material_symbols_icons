@@ -1,5 +1,11 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2873.0
+
+* Update to version 2.872 of the material icons variable fonts 'released' 09/11/2025 with 4099 icons
+* Added eeed  # chat_dashed, eeef  # frame_bug, and eeee  # frame_exclamation
+* Fix TwoToneIcon example code hint in example app to include variation argument `twoToneVariation`
+
 ## 4.2872.2
 
 * Fix mistake in 4.2872.1 in creating root path - did not work in packaged version

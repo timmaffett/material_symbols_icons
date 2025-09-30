@@ -12,7 +12,7 @@
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
 // https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2025-09-12 07:59:52.660186 by the dart file
+// This file was generated 2025-09-29 17:08:35.946580 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -1015,6 +1015,9 @@ Map<String, IconData> materialSymbolsMap = {
   'assignment_add': Symbols.assignment_add,
   'assignment_add_rounded': Symbols.assignment_add_rounded,
   'assignment_add_sharp': Symbols.assignment_add_sharp,
+  'assignment_globe': Symbols.assignment_globe,
+  'assignment_globe_rounded': Symbols.assignment_globe_rounded,
+  'assignment_globe_sharp': Symbols.assignment_globe_sharp,
   'assignment_ind': Symbols.assignment_ind,
   'assignment_ind_rounded': Symbols.assignment_ind_rounded,
   'assignment_ind_sharp': Symbols.assignment_ind_sharp,

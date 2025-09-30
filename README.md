@@ -7,7 +7,7 @@
 [![Pub Publisher](https://img.shields.io/pub/publisher/material_symbols_icons)](https://pub.dev/publishers/hiveright.tech/packages)
 
 
-### Using Official Material Symbols Icons variable fonts version 2.873 released 09/11/2025 from [material font repo](https://github.com/google/material-design-icons) with 4099 icons
+### Using Official Material Symbols Icons variable fonts version 2.874 released 09/18/2025 from [material font repo](https://github.com/google/material-design-icons) with 4100 icons
 
 Right-To-Left Language support has been added!  Auto mirroring of appropriate icons for Right-to-Left languages is now fully supported.
 

@@ -1,5 +1,10 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2874.0
+
+* Update to version 2.874 of the material icons variable fonts 'released' 09/18/2025 with 4100 icons
+* Added eeec  # assignment_globe
+
 ## 4.2873.0
 
 * Update to version 2.872 of the material icons variable fonts 'released' 09/11/2025 with 4099 icons

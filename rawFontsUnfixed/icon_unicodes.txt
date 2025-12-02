@@ -305,10 +305,12 @@ e5d8  # arrow_upward
 e986  # arrow_upward_alt
 f4b5  # arrow_warm_up
 f394  # arrows_input
+eee4  # arrows_left_right_circle
 f8ab  # arrows_more_down
 f8ac  # arrows_more_up
 f393  # arrows_output
 f72c  # arrows_outward
+eee3  # arrows_up_down_circle
 e060  # art_track
 ef42  # article
 f368  # article_person
@@ -388,6 +390,7 @@ f813  # avg_time
 f241  # award_meal
 f612  # award_star
 f6ec  # azm
+eee2  # b_circle
 f19b  # baby_changing_station
 e764  # back_hand
 f72b  # back_to_tab
@@ -553,6 +556,7 @@ f456  # bookmark_flag
 f455  # bookmark_heart
 f7b1  # bookmark_manager
 e59a  # bookmark_remove
+eee8  # bookmark_stacks
 f454  # bookmark_star
 e98b  # bookmarks
 ef82  # books_movies_and_music
@@ -709,6 +713,7 @@ e8f8  # card_travel
 f4b9  # cardio_load
 e09c  # cardiology
 e991  # cards
+f38f  # cards_stack
 f375  # cards_star
 f1f8  # carpenter
 eb08  # carry_on_bag
@@ -783,6 +788,7 @@ f25b  # chess_rook
 f46b  # chevron_backward
 f46a  # chevron_forward
 e5cb  # chevron_left
+eec3  # chevron_line_up
 e5cc  # chevron_right
 eb41  # child_care
 eb42  # child_friendly
@@ -796,6 +802,7 @@ ebb2  # chronic
 eaae  # church
 f853  # cinematic_blur
 ef4a  # circle
+eee1  # circle_circle
 e994  # circle_notifications
 e7ea  # circles
 e7ec  # circles_ext
@@ -875,6 +882,7 @@ e94d  # compress
 e31e  # computer
 f2f7  # computer_arrow_up
 f2f6  # computer_cancel
+eeb4  # computer_sound
 f561  # concierge
 e0a0  # conditions
 e638  # confirmation_number
@@ -1048,6 +1056,7 @@ e30c  # desktop_windows
 f585  # destruction
 e3c8  # details
 e29f  # detection_and_zone
+eebf  # detection_and_zone_off
 e282  # detector
 e1f7  # detector_alarm
 e204  # detector_battery
@@ -1344,6 +1353,7 @@ e3cf  # exposure_zero
 e87b  # extension
 e4f5  # extension_off
 f4c9  # eye_tracking
+eeb3  # eyebrow
 f6ee  # eyeglasses
 f2c7  # eyeglasses_2
 f265  # eyeglasses_2_sound
@@ -1553,6 +1563,12 @@ f85f  # format_h3
 f860  # format_h4
 f861  # format_h5
 f862  # format_h6
+eeb0  # format_image_back
+eeaf  # format_image_break_left
+eeae  # format_image_break_right
+eead  # format_image_front
+eeac  # format_image_inline_left
+ffffd  # format_image_inline_right
 f863  # format_image_left
 f864  # format_image_right
 e23d  # format_indent_decrease
@@ -1623,7 +1639,31 @@ f010  # g_mobiledata
 f7e1  # g_mobiledata_badge
 e927  # g_translate
 f86f  # gallery_thumbnail
+eee0  # game_bumper_left
+eedf  # game_bumper_right
+eede  # game_button_l
+eedd  # game_button_l1
+eedc  # game_button_l2
+eedb  # game_button_r
+eeda  # game_button_r1
+eed9  # game_button_r2
+eed8  # game_button_zl
+eed7  # game_button_zr
+eed6  # game_stick_l3
+eed5  # game_stick_left
+eed4  # game_stick_r3
+eed3  # game_stick_right
+eed2  # game_trigger_left
+eed1  # game_trigger_right
 e30f  # gamepad
+eed0  # gamepad_circle_down
+eecf  # gamepad_circle_left
+eece  # gamepad_circle_right
+eecd  # gamepad_circle_up
+eecc  # gamepad_down
+eecb  # gamepad_left
+eeca  # gamepad_right
+eec9  # gamepad_up
 e30f  # games
 f011  # garage
 f28d  # garage_check
@@ -1679,6 +1719,7 @@ f39d  # graph_4
 f39c  # graph_5
 f39b  # graph_6
 f346  # graph_7
+fffec  # graph_8
 e1b8  # graphic_eq
 f205  # grass
 f015  # grid_3x3
@@ -1827,6 +1868,7 @@ ebff  # hourglass
 f37e  # hourglass_arrow_down
 f37d  # hourglass_arrow_up
 ea5c  # hourglass_bottom
+fffed  # hourglass_check
 ef53  # hourglass_disabled
 e88b  # hourglass_empty
 e88c  # hourglass_full
@@ -2072,6 +2114,7 @@ e250  # link
 e16f  # link_off
 e438  # linked_camera
 f535  # linked_services
+eeb2  # lips
 ea60  # liquor
 e896  # list
 e0ee  # list_alt
@@ -2239,6 +2282,7 @@ f392  # mic_alert
 f5d1  # mic_double
 ef59  # mic_external_off
 ef5a  # mic_external_on
+eeba  # mic_gear
 e31d  # mic_none
 e02b  # mic_off
 e10c  # microbiology
@@ -2307,6 +2351,7 @@ f2eb  # mobile_text
 f2e6  # mobile_text_2
 f2a9  # mobile_theft
 f2e4  # mobile_ticket
+eeea  # mobile_unlock
 f2cb  # mobile_vibrate
 f2b0  # mobile_wrench
 f034  # mobiledata_off
@@ -2550,6 +2595,8 @@ f562  # note_stack
 f563  # note_stack_add
 e26c  # notes
 e399  # notification_add
+eec1  # notification_audio
+eec0  # notification_audio_off
 e004  # notification_important
 e6c2  # notification_multiple
 f367  # notification_settings
@@ -2653,6 +2700,7 @@ ef2e  # partner_heart
 efaf  # partner_reports
 e7fa  # party_mode
 f87f  # passkey
+eec4  # passport
 f042  # password
 f4a9  # password_2
 f4a8  # password_2_off
@@ -2717,6 +2765,7 @@ f59a  # person_raised_hand
 ef66  # person_remove
 f106  # person_search
 e384  # person_shield
+eebd  # person_text
 eb0e  # personal_bag
 eb0f  # personal_bag_off
 eb10  # personal_bag_question
@@ -2944,6 +2993,7 @@ f4c0  # recenter
 e9d2  # recommend
 e91f  # record_voice_over
 eb54  # rectangle
+eec8  # rectangle_add
 e760  # recycling
 e8f6  # redeem
 e15a  # redo
@@ -3428,6 +3478,7 @@ ea31  # sports_volleyball
 e29a  # sprinkler
 f81f  # sprint
 eb36  # square
+eec7  # square_circle
 f3b3  # square_dot
 ea49  # square_foot
 eb66  # ssid_chart
@@ -3478,6 +3529,8 @@ f6da  # steps
 f805  # stethoscope
 f807  # stethoscope_arrow
 f806  # stethoscope_check
+e707  # sticker
+eec2  # sticker_add
 e9e8  # sticky_note
 f1fc  # sticky_note_2
 f570  # stock_media
@@ -3672,6 +3725,7 @@ ea66  # theater_comedy
 e8da  # theaters
 e846  # thermometer
 f582  # thermometer_add
+ffffb  # thermometer_alert
 f6d8  # thermometer_gain
 f6d7  # thermometer_loss
 f581  # thermometer_minus
@@ -3792,6 +3846,7 @@ efc3  # travel_luggage_and_bags
 e8e3  # trending_down
 e8e4  # trending_flat
 e8e5  # trending_up
+eec6  # triangle_circle
 e6fb  # trip
 e57b  # trip_origin
 f86b  # trolley
@@ -3834,6 +3889,7 @@ f89d  # ulna_radius
 f89e  # ulna_radius_alt
 f1ad  # umbrella
 e169  # unarchive
+eeb1  # undereye
 e166  # undo
 e5d6  # unfold_less
 f8cf  # unfold_less_double
@@ -3940,6 +3996,7 @@ e650  # vital_signs
 e13b  # vitals
 f4aa  # vo2_max
 e62e  # voice_chat
+eebe  # voice_chat_off
 e94a  # voice_over_off
 f58a  # voice_selection
 f42c  # voice_selection_off
@@ -3980,6 +4037,7 @@ f2ca  # watch_arrow
 f6aa  # watch_button_press
 f468  # watch_check
 efd6  # watch_later
+eee9  # watch_lock
 eae3  # watch_off
 f6ae  # watch_screentime
 f467  # watch_vibration
@@ -4028,6 +4086,7 @@ e80e  # whatshot
 f1ab  # wheelchair_pickup
 e177  # where_to_vote
 f3ba  # widget_medium
+eeb7  # widget_menu
 f3b9  # widget_small
 f3b8  # widget_width
 e1bd  # widgets
@@ -4085,6 +4144,8 @@ e25b  # wrap_text
 f69c  # wrist
 ef78  # wrong_location
 f1c3  # wysiwyg
+e349  # x_circle
+eec5  # y_circle
 ef31  # yakitori
 f089  # yard
 f27f  # yoshoku

@@ -33,13 +33,13 @@ Steps to update package when new fonts are released.
 1) `dart run update_package.dart -s -d` 
 
 
-1.5) `dart run update_metadata.dart`
+1.5) `dart run update_metadata.dart` or `dart run update_metadata.dart --overwrite`   (--overwrite forces RE-getting ALL SVG/XML files to check for "android:autoMirrored")
 
 2) figure out source font version number with `ttx -s oneofthefonts.ttf`
     (`cd ~/source/fonttools`; copy font there 
       `cp /mnt/c/src/material_symbols_icons/rawFontsUnfixed/MaterialSymbolsOutline*.ttf .`
      and then ttx).
-    (version number found at `fontRevision` entry in `MaterialSymbolsXXXXX._h_e_a_d.ttx`)
+    (version number found at `fontRevision` entry in `MaterialSymbolsXXXXX._h_e_a_d.ttx`   ( `vi *._h_e_a_d.ttx`)
 3) Update `CHANGELOG.md` with version number of new fonts
 3.05) Do a diff of last two LAST_VERSION/icon_unicodes
       Edit and incorporate added/changed icons into the `CHANGELOG.md`

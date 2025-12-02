@@ -42,7 +42,7 @@ class IconInfo {
 // I have submitted a PR to fix it ( https://github.com/google/material-design-icons/pull/1922 )
 //  but until it's fixed get the fonts from my repo...
 const bool useMyRepository =
-    false; // As of 8/15/25 my PRs were merged into https://github.com/google/material_design_icons so the main.yml action is building fonts again
+    true; // As of 8/15/25 my PRs were merged into https://github.com/google/material_design_icons so the main.yml action is building fonts again
 
 class MaterialSymbolsVariableFont {
   final String flavor;

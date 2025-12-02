@@ -1,5 +1,23 @@
 # Changelog for Material Symbols Icons package
 
+## 4.2892.0
+
+* Fixed right to left language support, which was not correctly catching many of the icons that needed to be set as RTL
+* Update to version 2.892 of the material icons variable fonts 'released' 11/27/2025 with 4161 icons
+* Added eee4  # arrows_left_right_circle, eee3  # arrows_up_down_circle, eee2  # b_circle, eee8  # bookmark_stacks,
+  f38f  # cards_stack, eec3  # chevron_line_up, eee1  # circle_circle, eeb4  # computer_sound,
+  eebf  # detection_and_zone_off, eeb3  # eyebrow, eeb0  # format_image_back, eeaf  # format_image_break_left,
+  eeae  # format_image_break_right, eead  # format_image_front, eeac  # format_image_inline_left, ffffd  # format_image_inline_right,
+  eee0  # game_bumper_left, eedf  # game_bumper_right, eede  # game_button_l, eedd  # game_button_l1, eedc  # game_button_l2,
+  eedb  # game_button_r, eeda  # game_button_r1, eed9  # game_button_r2, eed8  # game_button_zl, eed7  # game_button_zr,
+  eed6  # game_stick_l3, eed5  # game_stick_left, eed4  # game_stick_r3, eed3  # game_stick_right, eed2  # game_trigger_left,
+  eed1  # game_trigger_right, eed0  # gamepad_circle_down, eecf  # gamepad_circle_left, eece  # gamepad_circle_right,
+  eecd  # gamepad_circle_up, eecc  # gamepad_down, eecb  # gamepad_left, eeca  # gamepad_right, eec9  # gamepad_up,
+  fffec  # graph_8, fffed  # hourglass_check, eeb2  # lips, eeba  # mic_gear, eeea  # mobile_unlock, eec1  # notification_audio,
+  eec0  # notification_audio_off, eec4  # passport, eebd  # person_text, eec8  # rectangle_add, eec7  # square_circle,
+  e707  # sticker, eec2  # sticker_add, ffffb  # thermometer_alert, eec6  # triangle_circle, eeb1  # undereye,
+  eebe  # voice_chat_off, eee9  # watch_lock, eeb7  # widget_menu, e349  # x_circle, eec5  # y_circle
+
 ## 4.2874.0
 
 * Update to version 2.874 of the material icons variable fonts 'released' 09/18/2025 with 4100 icons

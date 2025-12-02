@@ -48,6 +48,9 @@ Steps to update package when new fonts are released.
 4) linux run the rawFontsUnfixed/fixFontMetricsAndUpdateLibFonts.sh to patch fonts/install into lib/fonts
      `cd /material_symbols_icons/rawFontsUnfixed`
      `./fixFontMetricsAndUpdateLibFonts.sh`
+
+4.5) CHECK `lib\material_symbols_metadata.dart` for the google Icon Tag Naming AI errors by doing 'dart analyze' on the lib directory!!!
+
 5) update source font `materialSymbolsIconsSourceFontVersionNumber` and
    `materialSymbolsIconsSourceReleaseDate` to example\main.dart
 6) `buildWeb.bat` example

@@ -9857,11 +9857,6 @@ List<String> tagMap = [
   "blood test",
   "diabetic",
   "glucose",
-  "The provided image is entirely white and contains no discernible visual information or glyphs. Therefore",
-  "it's impossible to analyze the icon's content",
-  "or any visual elements.
-
-Please provide an image that contains the icon you want me to analyze.",
   "purpose",
   "goto",
   "ball",
@@ -12327,10 +12322,6 @@ Please provide an image that contains the icon you want me to analyze.",
   "video muted",
   "video recorder",
   "visual media disabled",
-  "I cannot generate accurate tags based on its content or purpose. I can only rely on the provided title.
-
-Therefore",
-  "The icon is completely blank. Without any visual information",
   "advancing",
   "alive",
   "animate",
@@ -12339,9 +12330,7 @@ Therefore",
   "going",
   "moving object",
   "onward",
-  "potential tags could relate to:
-
-moving",
+  "moving",
   "proceeding",
   "bed transfer",
   "critical care",
@@ -12977,24 +12966,12 @@ moving",
   "current page",
   "steppers",
   "total pages",
-  "There is no image provided for analysis. To provide relevant tags",
-  "please include the image of the icon.",
   "file manager",
   "gplus",
   "squared",
   "add page",
   "create file",
   "page icon",
-  "I cannot analyze its content or generate relevant tags based on visual elements.
-
-I can only use the provided title [paid]. However",
-  "I cannot generate tags based solely on the title while adhering to your negative constraints.
-
-Please provide an image of the icon.",
-  "I should avoid generic UI/UX terms. The term paid directly relates to a UI/UX concept (indicating paid status or features). Therefore",
-  "The provided image is entirely white",
-  "as per your instructions",
-  "making it impossible to discern any visual information about the icon. Therefore",
   "art palette",
   "color selection",
   "paint palette",

@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:material_symbols_icons/symbols.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:material_symbols_icons/symbols_map.dart';
+import 'package:material_symbols_icons/material_symbols_metadata.dart';
 import 'package:splittable_flexible_row/splittable_flexible_row.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
@@ -51,7 +52,7 @@ Map<String, String>? startupQueryParameters;
 
 void main() {
   // prevent engine from removing query url parameters
-  setUrlStrategy(PathUrlStrategy());
+  setUrlStrategy(const PathUrlStrategy());
 
   // we need to grab these now because startup inside flutter will
   // throw exception for unknown route and clear our query parameters
@@ -158,6 +159,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   /// icon font size
   double _iconFontSize = 48.0;
+
+  /// Whether to include metadata tags in search
+  bool _includeMetadataTags = false;
 
   /// possible fill values
   final List<double> _fillValues = [0.0, 1.0];
@@ -436,7 +440,7 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             '${getIconCodeStringForCurrentSettings()}',
             //maxLines: 4,
-            style: TextStyle(
+            style: const TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
                 fontFamily: 'Courier New',
@@ -632,7 +636,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'Two Tone Icon Color 1:',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
             ),
-            SizedBox(width:10),
+            const SizedBox(width:10),
             GestureDetector(
               onTap: () async {
                 Color pickedColor = _2toneIconColor1;
@@ -677,11 +681,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: BoxDecoration(
                   color: _2toneIconColor1,
                   border: Border.all(color: Colors.black),
-                  borderRadius: BorderRadius.all(Radius.zero), //.circular(16),
+                  borderRadius: const BorderRadius.all(Radius.zero), //.circular(16),
                 ),
               ),
             ),
-            SizedBox(width:10),
+            const SizedBox(width:10),
             const Text('Use ⇤ for normal icons', style: TextStyle(fontSize: 16.0)),
             Checkbox(
               value: _useForNormalIcons,
@@ -691,12 +695,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 });
               },
             ),
-            SizedBox(width:20),
+            const SizedBox(width:20),
             const Text(
               'Two Tone Icon Color 2:',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
             ),
-            SizedBox(width:10),
+            const SizedBox(width:10),
             GestureDetector(
               onTap: () async {
                 Color pickedColor = _2toneIconColor2;
@@ -741,7 +745,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: BoxDecoration(
                   color: _2toneIconColor2,
                   border: Border.all(color: Colors.black),
-                  borderRadius: BorderRadius.all(Radius.zero), //circular(16),
+                  borderRadius: const BorderRadius.all(Radius.zero), //circular(16),
                 ),
               ),
             ),
@@ -1035,6 +1039,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List<int> searchIconNameList(String searchString) {
     List<int> matchIndices = [];
     searchString = searchString.toLowerCase();
+    // 1. Name and renamed search
     for (int i = 0; i < iconNameList.length; i++) {
       if (iconNameList[i].toLowerCase().contains(searchString)) {
         matchIndices.add(i);
@@ -1049,8 +1054,37 @@ class _MyHomePageState extends State<MyHomePage> {
             renamedMaterialSymbolsMapKeys[j]]!; // we know this is a valid key
         int i = iconNameList.indexOf(iconWasRenamedTo);
         if (i != -1 && !matchIndices.contains(i)) {
-          // add to list if it's not there already
           matchIndices.add(i);
+        }
+      }
+    }
+
+    // 2. Metadata tag/category search if enabled
+    if (_includeMetadataTags && searchString.isNotEmpty) {
+      // Find tag indices that match search
+      final tagMatches = <int>{};
+      for (int t = 0; t < tagMap.length; t++) {
+        if (tagMap[t].toLowerCase().contains(searchString)) {
+          tagMatches.add(t);
+        }
+      }
+      // Find category indices that match search
+      final categoryMatches = <int>{};
+      for (int c = 0; c < categoryMap.length; c++) {
+        if (categoryMap[c].toLowerCase().contains(searchString)) {
+          categoryMatches.add(c);
+        }
+      }
+      // Find icon names with matching tag/category indices
+      for (int i = 0; i < iconNameList.length; i++) {
+        final iconName = iconNameList[i];
+        final meta = iconMap[iconName];
+        if (meta != null) {
+          final hasTag = meta.tags.any((t) => tagMatches.contains(t));
+          final hasCategory = meta.categories.any((c) => categoryMatches.contains(c));
+          if ((hasTag || hasCategory) && !matchIndices.contains(i)) {
+            matchIndices.add(i);
+          }
         }
       }
     }
@@ -1060,10 +1094,14 @@ class _MyHomePageState extends State<MyHomePage> {
   void setNewSearchText(String newSearchText) {
     setState(() {
       newSearchText = newSearchText.trim();
-
       _iconSearchText = newSearchText;
-
       setQueryParametersToMatchState();
+    });
+  }
+
+  void setIncludeMetadataTags(bool? value) {
+    setState(() {
+      _includeMetadataTags = value ?? false;
     });
   }
 
@@ -1084,49 +1122,56 @@ class _MyHomePageState extends State<MyHomePage> {
         toolbarHeight: 22,
         title: LayoutBuilder(
           builder: (context, constraints) {
-            //DEBUGdebugPrint('constraints.maxWidth=${constraints.maxWidth}');
-            return buildPossiblyConstrainedAppBarTitle(
-                (constraints.maxWidth < 640));
+            return buildPossiblyConstrainedAppBarTitle((constraints.maxWidth < 640));
           },
         ),
       ),
       body: LayoutBuilder(
-          builder: (BuildContext context, BoxConstraints viewportConstraints) {
-        return ConstrainedBox(
-          constraints: BoxConstraints(
-            minHeight: viewportConstraints.maxHeight,
-          ),
-          child: IntrinsicHeight(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(12.0, 5.0, 12.0, 5.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  ...buildFlexibleOptionsCustomizationPanel(context),
-                  //analyzer now makes us comment out dead code//if (false)
-                  //analyzer now makes us comment out dead code//  const Text(
-                  //analyzer now makes us comment out dead code//    'Material Symbols Icons (using above settings):',
-                  //analyzer now makes us comment out dead code//    style: TextStyle(
-                  //analyzer now makes us comment out dead code//      fontWeight: FontWeight.bold,
-                  //analyzer now makes us comment out dead code//      fontSize: 16.0,
-                  //analyzer now makes us comment out dead code//    ),
-                  //analyzer now makes us comment out dead code//  ),
-                  Row(
+        builder: (BuildContext context, BoxConstraints viewportConstraints) {
+          return ConstrainedBox(
+            constraints: BoxConstraints(
+              minHeight: viewportConstraints.maxHeight,
+            ),
+            child: IntrinsicHeight(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(12.0, 5.0, 12.0, 5.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    ...buildFlexibleOptionsCustomizationPanel(context),
+                    ...Splittable.flexibleRow(
+                      context: context,
+                      forceSplit: screenWidth <= 600,
+                      splitAtIndicesByWidth: {
+                        300: [0],
+                        600: [0],
+                      },
+                      splitWidgetBehavior : SplitWidgetBehavior.includeInThisRow,
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         ConstrainedBox(
                           constraints: BoxConstraints(
-                            maxWidth:
-                                screenWidth > 500 ? 400 : screenWidth * 0.8,
+                            maxWidth: screenWidth > 500 ? 400 : screenWidth * 0.8,
                           ),
                           child: IconSearchStringInput(
                             initialSearchText: _iconSearchText,
                             onSearchTextChanged: setNewSearchText,
                           ),
                         ),
-                      ]),
-                  Expanded(
+                        Row(
+                          children: [
+                            Checkbox(
+                              value: _includeMetadataTags,
+                              onChanged: setIncludeMetadataTags,
+                            ),
+                            const Text('include metadata tags'),
+                          ],
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 10),
+                    Expanded(
                     child: CustomScrollView(
                       controller: _scrollController,
                       slivers: [

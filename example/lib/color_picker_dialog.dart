@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class ColorPickerDialog extends StatefulWidget {
   final Color initialColor;
-  const ColorPickerDialog({Key? key, required this.initialColor}) : super(key: key);
+  const ColorPickerDialog({super.key, required this.initialColor});
 
   @override
   State<ColorPickerDialog> createState() => _ColorPickerDialogState();

@@ -3,17 +3,17 @@
 // To edit this file modify the generator file `generator/update_package.dart` and
 // re-generate.
 // This file was generated using the Material Symbols codepoint files
-// localed at https://github.com/timmaffett/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints,
-// https://github.com/timmaffett/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints and
-// https://github.com/timmaffett/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
+// localed at https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints,
+// https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints and
+// https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
 // All three fonts were check and are guaranteed to contains the exact same code points.
 // These codepoints correspond to symbols within the corresponding variable font.
 // The fonts were downloaded from
-// https://github.com/timmaffett/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf,
-// https://github.com/timmaffett/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
-// https://github.com/timmaffett/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
+// https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf,
+// https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
+// https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2025-11-27 10:34:03.449411 by the dart file
+// This file was generated 2026-01-30 20:26:12.375300 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -331,6 +331,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'animated_images': 0xf49a,
   'animation': 0xe71c,
   'announcement': 0xe87f,
+  'antigravity': 0xfffd2,
   'aod': 0xf2e6,
   'aod_tablet': 0xf89f,
   'aod_watch': 0xf6ac,
@@ -844,6 +845,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'chat_add_on': 0xf0f3,
   'chat_apps_script': 0xf0bd,
   'chat_bubble': 0xe0cb,
+  'chat_bubble_off': 0xfffbb,
   'chat_bubble_outline': 0xe0cb,
   'chat_dashed': 0xeeed,
   'chat_error': 0xf7ac,
@@ -1088,6 +1090,8 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'dark_mode': 0xe51c,
   'dashboard': 0xe871,
   'dashboard_2': 0xf3ea,
+  'dashboard_2_edit': 0xfffd7,
+  'dashboard_2_gear': 0xfffd6,
   'dashboard_customize': 0xe99b,
   'data_alert': 0xf7f6,
   'data_array': 0xead1,
@@ -1563,6 +1567,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'fit_page_width': 0xf396,
   'fit_screen': 0xea10,
   'fit_width': 0xf779,
+  'fitbit_raquetball': 0xfffc5,
   'fitness_center': 0xeb43,
   'fitness_tracker': 0xf463,
   'fitness_trackers': 0xeef1,
@@ -1783,6 +1788,8 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'gite': 0xe58b,
   'glass_cup': 0xf6e3,
   'globe': 0xe64c,
+  'globe_2_cancel': 0xfffb7,
+  'globe_2_question': 0xfffb6,
   'globe_asia': 0xf799,
   'globe_book': 0xf3c9,
   'globe_location_pin': 0xf35d,
@@ -2205,6 +2212,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'line_weight': 0xe91a,
   'linear_scale': 0xe260,
   'link': 0xe250,
+  'link_2': 0xfffb5,
   'link_off': 0xe16f,
   'linked_camera': 0xe438,
   'linked_services': 0xf535,
@@ -2457,6 +2465,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'mode_edit': 0xf097,
   'mode_edit_outline': 0xf097,
   'mode_fan': 0xf168,
+  'mode_fan_2': 0xfffd0,
   'mode_fan_off': 0xec17,
   'mode_heat': 0xf16a,
   'mode_heat_cool': 0xf16b,
@@ -2483,6 +2492,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'monorail': 0xf473,
   'mood': 0xea22,
   'mood_bad': 0xe7f3,
+  'mood_heart': 0xfffb4,
   'moon_stars': 0xf34f,
   'mop': 0xe28d,
   'moped': 0xeb28,
@@ -2544,6 +2554,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'music_cast': 0xeb1a,
   'music_history': 0xf2c1,
   'music_note': 0xe405,
+  'music_note_2': 0xfffd8,
   'music_note_add': 0xf391,
   'music_off': 0xe440,
   'music_video': 0xe063,
@@ -3380,6 +3391,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'shift': 0xe5f2,
   'shift_lock': 0xf7ae,
   'shift_lock_off': 0xf483,
+  'shoe_cleats': 0xfffb3,
   'shop': 0xe8c9,
   'shop_2': 0xe8ca,
   'shop_two': 0xe8ca,
@@ -3541,6 +3553,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'splitscreen_add': 0xf4fd,
   'splitscreen_bottom': 0xf676,
   'splitscreen_landscape': 0xf459,
+  'splitscreen_landscape_add': 0xfffba,
   'splitscreen_left': 0xf675,
   'splitscreen_portrait': 0xf458,
   'splitscreen_right': 0xf674,
@@ -4051,6 +4064,7 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'video_search': 0xefc6,
   'video_settings': 0xea75,
   'video_stable': 0xf081,
+  'video_template': 0xfffd3,
   'videocam': 0xe04b,
   'videocam_alert': 0xf390,
   'videocam_off': 0xe04c,
@@ -4129,7 +4143,9 @@ Map<String, int> materialSymbolsIconNameToUnicodeMap = {
   'wash': 0xf1b1,
   'washoku': 0xf280,
   'watch': 0xe334,
+  'watch_alert': 0xfffd1,
   'watch_arrow': 0xf2ca,
+  'watch_arrow_down': 0xfffcf,
   'watch_button_press': 0xf6aa,
   'watch_check': 0xf468,
   'watch_later': 0xefd6,

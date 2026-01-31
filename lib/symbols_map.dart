@@ -3,16 +3,16 @@
 // To edit this file modify the generator file `generator/update_package.dart` and
 // re-generate.
 // This file was generated using the Material Symbols codepoint files
-// localed at https://github.com/timmaffett/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints,
-// https://github.com/timmaffett/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints and
-// https://github.com/timmaffett/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
+// localed at https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints,
+// https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints and
+// https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.codepoints.
 // These codepoints correspond to symbols within the corresponding variable font.
 // The fonts were downloaded from
-// https://github.com/timmaffett/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf,
-// https://github.com/timmaffett/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
-// https://github.com/timmaffett/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
+// https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf,
+// https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsRounded%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf, and
+// https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
 // and added to this package.
-// This file was generated 2025-11-27 10:34:03.099624 by the dart file
+// This file was generated 2026-01-30 20:26:12.265853 by the dart file
 // `generator/update_package.dart`.
 //
 // Copyright 2024. All rights reserved.
@@ -775,6 +775,9 @@ Map<String, IconData> materialSymbolsMap = {
   'announcement': Symbols.announcement,
   'announcement_rounded': Symbols.announcement_rounded,
   'announcement_sharp': Symbols.announcement_sharp,
+  'antigravity': Symbols.antigravity,
+  'antigravity_rounded': Symbols.antigravity_rounded,
+  'antigravity_sharp': Symbols.antigravity_sharp,
   'aod': Symbols.aod,
   'aod_rounded': Symbols.aod_rounded,
   'aod_sharp': Symbols.aod_sharp,
@@ -2326,6 +2329,9 @@ Map<String, IconData> materialSymbolsMap = {
   'chat_bubble': Symbols.chat_bubble,
   'chat_bubble_rounded': Symbols.chat_bubble_rounded,
   'chat_bubble_sharp': Symbols.chat_bubble_sharp,
+  'chat_bubble_off': Symbols.chat_bubble_off,
+  'chat_bubble_off_rounded': Symbols.chat_bubble_off_rounded,
+  'chat_bubble_off_sharp': Symbols.chat_bubble_off_sharp,
   'chat_bubble_outline': Symbols.chat_bubble_outline,
   'chat_bubble_outline_rounded': Symbols.chat_bubble_outline_rounded,
   'chat_bubble_outline_sharp': Symbols.chat_bubble_outline_sharp,
@@ -3056,6 +3062,12 @@ Map<String, IconData> materialSymbolsMap = {
   'dashboard_2': Symbols.dashboard_2,
   'dashboard_2_rounded': Symbols.dashboard_2_rounded,
   'dashboard_2_sharp': Symbols.dashboard_2_sharp,
+  'dashboard_2_edit': Symbols.dashboard_2_edit,
+  'dashboard_2_edit_rounded': Symbols.dashboard_2_edit_rounded,
+  'dashboard_2_edit_sharp': Symbols.dashboard_2_edit_sharp,
+  'dashboard_2_gear': Symbols.dashboard_2_gear,
+  'dashboard_2_gear_rounded': Symbols.dashboard_2_gear_rounded,
+  'dashboard_2_gear_sharp': Symbols.dashboard_2_gear_sharp,
   'dashboard_customize': Symbols.dashboard_customize,
   'dashboard_customize_rounded': Symbols.dashboard_customize_rounded,
   'dashboard_customize_sharp': Symbols.dashboard_customize_sharp,
@@ -4488,6 +4500,9 @@ Map<String, IconData> materialSymbolsMap = {
   'fit_width': Symbols.fit_width,
   'fit_width_rounded': Symbols.fit_width_rounded,
   'fit_width_sharp': Symbols.fit_width_sharp,
+  'fitbit_raquetball': Symbols.fitbit_raquetball,
+  'fitbit_raquetball_rounded': Symbols.fitbit_raquetball_rounded,
+  'fitbit_raquetball_sharp': Symbols.fitbit_raquetball_sharp,
   'fitness_center': Symbols.fitness_center,
   'fitness_center_rounded': Symbols.fitness_center_rounded,
   'fitness_center_sharp': Symbols.fitness_center_sharp,
@@ -5161,6 +5176,12 @@ Map<String, IconData> materialSymbolsMap = {
   'globe': Symbols.globe,
   'globe_rounded': Symbols.globe_rounded,
   'globe_sharp': Symbols.globe_sharp,
+  'globe_2_cancel': Symbols.globe_2_cancel,
+  'globe_2_cancel_rounded': Symbols.globe_2_cancel_rounded,
+  'globe_2_cancel_sharp': Symbols.globe_2_cancel_sharp,
+  'globe_2_question': Symbols.globe_2_question,
+  'globe_2_question_rounded': Symbols.globe_2_question_rounded,
+  'globe_2_question_sharp': Symbols.globe_2_question_sharp,
   'globe_asia': Symbols.globe_asia,
   'globe_asia_rounded': Symbols.globe_asia_rounded,
   'globe_asia_sharp': Symbols.globe_asia_sharp,
@@ -6435,6 +6456,9 @@ Map<String, IconData> materialSymbolsMap = {
   'link': Symbols.link,
   'link_rounded': Symbols.link_rounded,
   'link_sharp': Symbols.link_sharp,
+  'link_2': Symbols.link_2,
+  'link_2_rounded': Symbols.link_2_rounded,
+  'link_2_sharp': Symbols.link_2_sharp,
   'link_off': Symbols.link_off,
   'link_off_rounded': Symbols.link_off_rounded,
   'link_off_sharp': Symbols.link_off_sharp,
@@ -7192,6 +7216,9 @@ Map<String, IconData> materialSymbolsMap = {
   'mode_fan': Symbols.mode_fan,
   'mode_fan_rounded': Symbols.mode_fan_rounded,
   'mode_fan_sharp': Symbols.mode_fan_sharp,
+  'mode_fan_2': Symbols.mode_fan_2,
+  'mode_fan_2_rounded': Symbols.mode_fan_2_rounded,
+  'mode_fan_2_sharp': Symbols.mode_fan_2_sharp,
   'mode_fan_off': Symbols.mode_fan_off,
   'mode_fan_off_rounded': Symbols.mode_fan_off_rounded,
   'mode_fan_off_sharp': Symbols.mode_fan_off_sharp,
@@ -7270,6 +7297,9 @@ Map<String, IconData> materialSymbolsMap = {
   'mood_bad': Symbols.mood_bad,
   'mood_bad_rounded': Symbols.mood_bad_rounded,
   'mood_bad_sharp': Symbols.mood_bad_sharp,
+  'mood_heart': Symbols.mood_heart,
+  'mood_heart_rounded': Symbols.mood_heart_rounded,
+  'mood_heart_sharp': Symbols.mood_heart_sharp,
   'moon_stars': Symbols.moon_stars,
   'moon_stars_rounded': Symbols.moon_stars_rounded,
   'moon_stars_sharp': Symbols.moon_stars_sharp,
@@ -7453,6 +7483,9 @@ Map<String, IconData> materialSymbolsMap = {
   'music_note': Symbols.music_note,
   'music_note_rounded': Symbols.music_note_rounded,
   'music_note_sharp': Symbols.music_note_sharp,
+  'music_note_2': Symbols.music_note_2,
+  'music_note_2_rounded': Symbols.music_note_2_rounded,
+  'music_note_2_sharp': Symbols.music_note_2_sharp,
   'music_note_add': Symbols.music_note_add,
   'music_note_add_rounded': Symbols.music_note_add_rounded,
   'music_note_add_sharp': Symbols.music_note_add_sharp,
@@ -9986,6 +10019,9 @@ Map<String, IconData> materialSymbolsMap = {
   'shift_lock_off': Symbols.shift_lock_off,
   'shift_lock_off_rounded': Symbols.shift_lock_off_rounded,
   'shift_lock_off_sharp': Symbols.shift_lock_off_sharp,
+  'shoe_cleats': Symbols.shoe_cleats,
+  'shoe_cleats_rounded': Symbols.shoe_cleats_rounded,
+  'shoe_cleats_sharp': Symbols.shoe_cleats_sharp,
   'shop': Symbols.shop,
   'shop_rounded': Symbols.shop_rounded,
   'shop_sharp': Symbols.shop_sharp,
@@ -10491,6 +10527,10 @@ Map<String, IconData> materialSymbolsMap = {
   'splitscreen_landscape': Symbols.splitscreen_landscape,
   'splitscreen_landscape_rounded': Symbols.splitscreen_landscape_rounded,
   'splitscreen_landscape_sharp': Symbols.splitscreen_landscape_sharp,
+  'splitscreen_landscape_add': Symbols.splitscreen_landscape_add,
+  'splitscreen_landscape_add_rounded':
+      Symbols.splitscreen_landscape_add_rounded,
+  'splitscreen_landscape_add_sharp': Symbols.splitscreen_landscape_add_sharp,
   'splitscreen_left': Symbols.splitscreen_left,
   'splitscreen_left_rounded': Symbols.splitscreen_left_rounded,
   'splitscreen_left_sharp': Symbols.splitscreen_left_sharp,
@@ -12034,6 +12074,9 @@ Map<String, IconData> materialSymbolsMap = {
   'video_stable': Symbols.video_stable,
   'video_stable_rounded': Symbols.video_stable_rounded,
   'video_stable_sharp': Symbols.video_stable_sharp,
+  'video_template': Symbols.video_template,
+  'video_template_rounded': Symbols.video_template_rounded,
+  'video_template_sharp': Symbols.video_template_sharp,
   'videocam': Symbols.videocam,
   'videocam_rounded': Symbols.videocam_rounded,
   'videocam_sharp': Symbols.videocam_sharp,
@@ -12268,9 +12311,15 @@ Map<String, IconData> materialSymbolsMap = {
   'watch': Symbols.watch,
   'watch_rounded': Symbols.watch_rounded,
   'watch_sharp': Symbols.watch_sharp,
+  'watch_alert': Symbols.watch_alert,
+  'watch_alert_rounded': Symbols.watch_alert_rounded,
+  'watch_alert_sharp': Symbols.watch_alert_sharp,
   'watch_arrow': Symbols.watch_arrow,
   'watch_arrow_rounded': Symbols.watch_arrow_rounded,
   'watch_arrow_sharp': Symbols.watch_arrow_sharp,
+  'watch_arrow_down': Symbols.watch_arrow_down,
+  'watch_arrow_down_rounded': Symbols.watch_arrow_down_rounded,
+  'watch_arrow_down_sharp': Symbols.watch_arrow_down_sharp,
   'watch_button_press': Symbols.watch_button_press,
   'watch_button_press_rounded': Symbols.watch_button_press_rounded,
   'watch_button_press_sharp': Symbols.watch_button_press_sharp,

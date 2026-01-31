@@ -66,6 +66,7 @@ electric_bike
 electric_moped
 electric_rickshaw
 electric_scooter
+event_list
 event_note
 event_upcoming
 exit_to_app

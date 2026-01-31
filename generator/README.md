@@ -30,10 +30,11 @@ is that this is a NO FIX - as I suspected it might be - for compatibility with a
 Steps to update package when new fonts are released.
 
 0.5) cd to `\generator`
+
+0.75) `dart run update_metadata.dart` or `dart run update_metadata.dart --overwrite`   (--overwrite forces RE-getting ALL SVG/XML files to check for "android:autoMirrored")
+
 1) `dart run update_package.dart -s -d` 
 
-
-1.5) `dart run update_metadata.dart` or `dart run update_metadata.dart --overwrite`   (--overwrite forces RE-getting ALL SVG/XML files to check for "android:autoMirrored")
 
 2) figure out source font version number with `ttx -s oneofthefonts.ttf`
     (`cd ~/source/fonttools`; copy font there 
@@ -48,6 +49,8 @@ Steps to update package when new fonts are released.
 4) linux run the rawFontsUnfixed/fixFontMetricsAndUpdateLibFonts.sh to patch fonts/install into lib/fonts
      `cd /material_symbols_icons/rawFontsUnfixed`
      `./fixFontMetricsAndUpdateLibFonts.sh`
+
+4.25) Run `generator\compare_rtl_mirroring.dart` using `dart run compare_rtl_mirroring.dart` from `generator` directory
 
 4.5) CHECK `lib\material_symbols_metadata.dart` for the google Icon Tag Naming AI errors by doing 'dart analyze' on the lib directory!!!
 

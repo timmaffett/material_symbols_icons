@@ -1,5 +1,18 @@
 # Changelog for Material Symbols Icons package
 
+# 4.2906.0
+
+* Update to version 2.906 of the material icons variable fonts 'released' 01/29/2026 with 4177 icons
+* Added fffd2  # antigravity, fffbb  # chat_bubble_off, fffd7  # dashboard_2_edit, fffd6  # dashboard_2_gear
+  fffc5  # fitbit_raquetball, fffb7  # globe_2_cancel, fffb6  # globe_2_question, fffb5  # link_2,
+  fffd0  # mode_fan_2, fffb4  # mood_heart, fffd8  # music_note_2, fffb3  # shoe_cleats,
+  fffba  # splitscreen_landscape_add, fffd3  # video_template, fffd1  # watch_alert, fffcf  # watch_arrow_down
+* add code to update_metadata.dart to detect the error messages from the google backend AI that generates
+  the tags and remove them from our collected tags.
+* add `generator\compare_rtl_mirroring.dart` to compare the RTL auto mirrored marked icons 
+  in `lib\material_symbols_metadata.dart` to the icons marked with corresponding dart
+  `matchTextDirection:true` in `lib\symbols.dart` and make sure they match.
+
 ## 4.2892.1
 
 * **Breaking Change**: Moved CLI tool `install_material_symbols_icons_fonts` to a separate package `material_symbols_icons_cli` to reduce dependencies for the main package.

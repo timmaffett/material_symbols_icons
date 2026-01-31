@@ -238,6 +238,7 @@ ef11  # android_wifi_4_bar_question
 f49a  # animated_images
 e71c  # animation
 e87f  # announcement
+fffd2  # antigravity
 f2e6  # aod
 f89f  # aod_tablet
 f6ac  # aod_watch
@@ -751,6 +752,7 @@ e0c9  # chat
 f0f3  # chat_add_on
 f0bd  # chat_apps_script
 e0cb  # chat_bubble
+fffbb  # chat_bubble_off
 e0cb  # chat_bubble_outline
 eeed  # chat_dashed
 f7ac  # chat_error
@@ -994,6 +996,8 @@ e99a  # dangerous
 e51c  # dark_mode
 e871  # dashboard
 f3ea  # dashboard_2
+fffd7  # dashboard_2_edit
+fffd6  # dashboard_2_gear
 e99b  # dashboard_customize
 f7f6  # data_alert
 ead1  # data_array
@@ -1469,6 +1473,7 @@ f397  # fit_page_height
 f396  # fit_page_width
 ea10  # fit_screen
 f779  # fit_width
+fffc5  # fitbit_raquetball
 eb43  # fitness_center
 f463  # fitness_tracker
 eef1  # fitness_trackers
@@ -1689,6 +1694,8 @@ eb68  # girl
 e58b  # gite
 f6e3  # glass_cup
 e64c  # globe
+fffb7  # globe_2_cancel
+fffb6  # globe_2_question
 f799  # globe_asia
 f3c9  # globe_book
 f35d  # globe_location_pin
@@ -2111,6 +2118,7 @@ e919  # line_style
 e91a  # line_weight
 e260  # linear_scale
 e250  # link
+fffb5  # link_2
 e16f  # link_off
 e438  # linked_camera
 f535  # linked_services
@@ -2363,6 +2371,7 @@ f557  # mode_dual
 f097  # mode_edit
 f097  # mode_edit_outline
 f168  # mode_fan
+fffd0  # mode_fan_2
 ec17  # mode_fan_off
 f16a  # mode_heat
 f16b  # mode_heat_cool
@@ -2389,6 +2398,7 @@ e403  # monochrome_photos
 f473  # monorail
 ea22  # mood
 e7f3  # mood_bad
+fffb4  # mood_heart
 f34f  # moon_stars
 e28d  # mop
 eb28  # moped
@@ -2450,6 +2460,7 @@ ea36  # museum
 eb1a  # music_cast
 f2c1  # music_history
 e405  # music_note
+fffd8  # music_note_2
 f391  # music_note_add
 e440  # music_off
 e063  # music_video
@@ -3286,6 +3297,7 @@ e78d  # shield_with_house
 e5f2  # shift
 f7ae  # shift_lock
 f483  # shift_lock_off
+fffb3  # shoe_cleats
 e8c9  # shop
 e8ca  # shop_2
 e8ca  # shop_two
@@ -3447,6 +3459,7 @@ f06d  # splitscreen
 f4fd  # splitscreen_add
 f676  # splitscreen_bottom
 f459  # splitscreen_landscape
+fffba  # splitscreen_landscape_add
 f675  # splitscreen_left
 f458  # splitscreen_portrait
 f674  # splitscreen_right
@@ -3955,6 +3968,7 @@ e04a  # video_library
 efc6  # video_search
 ea75  # video_settings
 f081  # video_stable
+fffd3  # video_template
 e04b  # videocam
 f390  # videocam_alert
 e04c  # videocam_off
@@ -4033,7 +4047,9 @@ f7ad  # warning_off
 f1b1  # wash
 f280  # washoku
 e334  # watch
+fffd1  # watch_alert
 f2ca  # watch_arrow
+fffcf  # watch_arrow_down
 f6aa  # watch_button_press
 f468  # watch_check
 efd6  # watch_later

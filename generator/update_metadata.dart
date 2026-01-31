@@ -100,6 +100,55 @@ List<String> convertToStringList(List<dynamic>? list) {
   return result;
 }
 
+List<String> filterInvalidTags(List<String> tags) {
+  const invalidPhrases = [
+    "image is completely blank",
+    "cannot analyze",
+    "provided image is entirely white",
+    "impossible to analyze",
+    "visual elements",
+    "provide an image",
+    "generate accurate tags",
+    "based on its content",
+    "rely on the provided title",
+    "no visual information",
+    "potential tags could relate to",
+    "no image provided",
+    "include the image",
+    "adhering to your negative constraints",
+    "avoid generic ui/ux terms",
+    "as per your instructions",
+    "impossible to discern",
+    "impossible to analyze",
+    "or any visual elements",
+    "Please provide an image",
+    "you want me to analyze",
+    "no discernible visual information",
+    "analyze the icon's content",
+    "cannot generate accurate tag",
+    "The icon is completely blank",
+    "Without any visual information",
+    "This is a blank white image",
+    "I cannot analyze the content of the icon based on this",
+    "Please provide an image",
+
+  ];
+
+  final potentialTagsPrefix = RegExp(r'^potential tags could relate to:\s*', caseSensitive: false);
+  return tags
+    .map((tag) => tag.replaceFirst(potentialTagsPrefix, ''))
+    .where((tag) {
+      if (tag.contains('\n')) return false;
+      if (tag.contains('\r')) return false;
+      final lowerTag = tag.toLowerCase();
+      for (final phrase in invalidPhrases) {
+        if (lowerTag.contains(phrase)) return false;
+      }
+      return true;
+    })
+    .toList();
+}
+
 // Version of our file from update_package.dart
 String _generateFlutterId(String iconName) {
   String flutterIconName = iconName;
@@ -218,7 +267,7 @@ Iterable<IconMetadata> _icons(Map<String, dynamic> metadata) sync* {
       popularity: rawIcon["popularity"],
       codepoint: rawIcon["codepoint"],
       categories: convertToStringList(rawIcon["categories"]),
-      tags: convertToStringList(rawIcon["tags"]),
+      tags: filterInvalidTags(convertToStringList(rawIcon["tags"])),
     );
   }
 }
@@ -430,6 +479,33 @@ void _createFetches(
   }
 }
 
+/// Checks existings files in skips list for auto-mirroring.
+Future<void> _processSkips(List<Fetch> skips) async {
+  print('Processing ${skips.length} skipped files for auto-mirroring...');
+  final total = skips.length;
+  var completed = 0;
+
+  for (final skip in skips) {
+    final file = File(skip.destFile);
+    if (!file.existsSync()) {
+        continue;
+    }
+    try {
+      final bytes = await file.readAsBytes();
+      if (containsAutoMirrored(bytes)) {
+        if(DEBUG) print('RTL auto-mirroring detected in existing file for `${skip.iconName}`');
+        autoMirroredIconNames.add(skip.iconName);
+      }
+    } catch (e) {
+      print('Error reading skipped file ${skip.destFile}: $e');
+    }
+    completed++;
+    if (completed % 100 == 0 || completed == total) {
+       // print('$completed/$total checked'); // reduce noise
+    }
+  }
+}
+
 Future<void> main(List<String> args) async {
   // Parse command-line flags. 
   bool fetchFlag = true;
@@ -571,6 +647,7 @@ Future<void> main(List<String> args) async {
   print('$numChanged/${icons.length} icons have changed');
   if (skips.isNotEmpty) {
     print('${skips.length} fetches skipped because assets exist');
+    await _processSkips(skips);
   }
 
   if (fetches.isNotEmpty) {
@@ -611,6 +688,9 @@ Future<void> main(List<String> args) async {
 
   /* first read in the LAST file and compare */
   await autoMirroredFile.readAsLines().then((lines) {
+    if (lines.isNotEmpty && lines[0].startsWith('\uFEFF')) {
+      lines[0] = lines[0].substring(1);
+    }
     final previousSet = Set<String>.from(lines);
     final currentSet = autoMirroredIconNames;
 

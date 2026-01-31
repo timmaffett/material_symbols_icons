@@ -20,7 +20,7 @@ Icon metadata is also available for those who may require that.  This metadata i
 ### To enable icon preview within VSCode you can execute the following commands to install the fonts on your system:
 
 ```shell
-dart pub global activate material_symbols_icons
+dart pub global activate material_symbols_icons_cli
                            [Only needs to be done once to activate
                                 the install_material_symbols_icons_fonts command.]
 install_material_symbols_icons_fonts

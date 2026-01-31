@@ -39,35 +39,58 @@ bool globalMacOSInstall = false;
 bool macOSUseFontBook = false;
 bool debugScripts = false;
 bool localDev = false;
-String _rootDir = './bin';  /// WHEN DEVELOPING>>path.join(Directory.current.path,'bin');
 
-set rootDir(String value) {
-  //if(value.length<10) throw('SOME ONE IS MESSING UP ROOTDIR');
-  _rootDir = value;
-}
+// Directory where this script and other shell scripts reside (cli/bin)
+late String _cliBinDir; 
+String get cliBinDir => _cliBinDir;
 
-String get rootDir => _rootDir;
+// Directory where the material_symbols_icons package is located (has lib/fonts)
+late String _resourcesDir;
+String get resourcesDir => _resourcesDir;
 
-// We need to get to the files of the LATEST material_symbols_icons package that is in the pub cache
-String getRootPathsToLatestInstalledPackage() {
+
+// We need to resolve where this CLI package is, and where the resources (main) package is.
+void resolvePackagePaths() {
   final pathToScript = Platform.script.toFilePath();
-  rootDir = path.dirname(pathToScript);
+  _cliBinDir = path.dirname(pathToScript);
 
-  if (debugScripts) print('Got pathToScript=$pathToScript  rootDir set to $rootDir');
+  if (debugScripts) print('Got pathToScript=$pathToScript  cliBinDir=$_cliBinDir');
 
   if(localDev) {
-    rootDir = path.join(Directory.current.path,'bin');
-    if (debugScripts) print(chalk.cyan('LOCALDEV flag set. Using rootDir=$rootDir'));
+    _cliBinDir = path.join(Directory.current.path,'bin');
+    // In local dev, we assume we are at the root of the repo, OR inside the cli package.
+    // However, user usually runs from root.
+    // If run from root of cli package:
+    if (File(path.join(_cliBinDir, 'install_material_symbols_icons_fonts.dart')).existsSync()) {
+        // We are likely in material_symbols_icons_cli/
+        // Resources are in ../lib/fonts (relative to cli package root?)
+        // Repo structure:
+        // root/
+        //   lib/fonts
+        //   material_symbols_icons_cli/
+        //     bin/
+        
+        // So resourcesDir is path.join(cliBinDir, '..', '..')
+        _resourcesDir = path.normalize(path.join(_cliBinDir, '..', '..'));
+    } else {
+        // Fallback or error
+         _resourcesDir = Directory.current.path;
+    }
+
+    if (debugScripts) print(chalk.cyan('LOCALDEV flag set. Using cliBinDir=$_cliBinDir resourcesDir=$_resourcesDir'));
+    return;
   }
 
   // following for testing
-  if (Platform.isWindows && !rootDir.contains('global_packages')) {
-    rootDir =
+  if (Platform.isWindows && !_cliBinDir.contains('global_packages')) {
+    // This looks like specific debug code for Windows dev environment, leaving as is but using cliBinDir
+    // But it sets cliBinDir.
+    _cliBinDir =
         r"C:\Users\Tim\AppData\Local\Pub\Cache\global_packages\dart_frog_cli\bin";
   }
 
   String pubDevPackagesDir =
-      path.join(rootDir, '..', '..', '..', 'hosted', 'pub.dev');
+      path.join(_cliBinDir, '..', '..', '..', 'hosted', 'pub.dev');
 
   if (debugScripts) print('pubDevPackagesDir=$pubDevPackagesDir');
 
@@ -76,14 +99,20 @@ String getRootPathsToLatestInstalledPackage() {
   final baseToChop = 'material_symbols_icons-';
 
   final listFSE = packageDirs.listSync(root: pubDevPackagesDir);
-  String highestVersion = '4.2600.0';
+  String highestVersion = '0.0.0';
   String latestPackageDir = '';
 
   for (final fse in listFSE) {
     String dirName = fse.basename;
+    // START CHANGE: Filter out the cli package itself if it matches the glob (it shouldn't if name is different but glob is material_symbols_icons-*)
+    // material_symbols_icons_cli-* matches material_symbols_icons-* glob?
+    // Glob('material_symbols_icons-*') matches material_symbols_icons_cli-1.0.0
+    // We want the MAIN package, not the CLI package.
+    if (dirName.startsWith('material_symbols_icons_cli')) continue;
+
     String version = dirName.substring(baseToChop.length);
     if (debugScripts) print('Found directory $dirName version=$version');
-    if (version.length >= 8) {
+    if (version.length >= 5) { // Adjusted from 8 to 5 to refer to X.Y.Z
       if (version.compareTo(highestVersion) > 0) {
         highestVersion = version;
         latestPackageDir = fse.path;
@@ -92,12 +121,15 @@ String getRootPathsToLatestInstalledPackage() {
   }
   if (debugScripts) print('Highest Version = $highestVersion');
   if (debugScripts) print('latestPackageDir = $latestPackageDir');
+  
   if(latestPackageDir.isNotEmpty) {
-    return path.join(latestPackageDir, 'bin');
+    _resourcesDir = latestPackageDir;
   } else {
     if (debugScripts) print(chalk.red('Could not find latest installed material_symbols_icons package in pub cache.'));
-    if (debugScripts) print(chalk.yellow.onBrightRed('Assuming we are running from root of the package!'));
-    return rootDir;
+    // If not found, maybe we are running from the main package itself (legacy compat)?
+    // Or maybe we just default to cliBinDir/../.. similar to localdev structure as fallback?
+    // Use cliBinDir as fallback for safety to avoid crash, but it won't work if fonts aren't there.
+    _resourcesDir = path.dirname(_cliBinDir); 
   }
 }
 
@@ -201,7 +233,7 @@ void main(List<String> args) async {
   //OBSOLETE//}
   //OBSOLETE//print(chalk.yellowBright('Root directory: $rootDir'));
 
-  rootDir = getRootPathsToLatestInstalledPackage();
+  resolvePackagePaths();
 
   if (parsedArgs[Options.uninstall.name] == true) {
     print(chalk.yellowBright('Uninstalling Material Symbols Icons fonts...'));
@@ -256,39 +288,48 @@ void uninstallMaterialSymbolsIconsFonts() {
 void installMaterialSymbolsIconsFontWindows() {
   print(chalk.cyanBright(
       'running powershell scripts to install Material Symbols Icons fonts...'));
-  runPowerShellInstallFont(r'..\lib\fonts\MaterialSymbolsOutlined.ttf');
-  runPowerShellInstallFont(r'..\lib\fonts\MaterialSymbolsRounded.ttf');
-  runPowerShellInstallFont(r'..\lib\fonts\MaterialSymbolsSharp.ttf');
+  
+  // Font paths are relative to resourcesDir
+  final fontsDir = path.join(resourcesDir, 'lib', 'fonts');
+  
+  runPowerShellInstallFont(path.join(fontsDir, 'MaterialSymbolsOutlined.ttf'));
+  runPowerShellInstallFont(path.join(fontsDir, 'MaterialSymbolsRounded.ttf'));
+  runPowerShellInstallFont(path.join(fontsDir, 'MaterialSymbolsSharp.ttf'));
 }
 
 void uninstallMaterialSymbolsIconsFontWindows() {
   print(chalk.cyanBright(
       'running powershell scripts to UNINSTALL Material Symbols Icons fonts...'));
-  runPowerShellUninstallFont(r'..\lib\fonts\MaterialSymbolsOutlined.ttf');
-  runPowerShellUninstallFont(r'..\lib\fonts\MaterialSymbolsRounded.ttf');
-  runPowerShellUninstallFont(r'..\lib\fonts\MaterialSymbolsSharp.ttf');
+      
+  final fontsDir = path.join(resourcesDir, 'lib', 'fonts');
+
+  runPowerShellUninstallFont(path.join(fontsDir, 'MaterialSymbolsOutlined.ttf'));
+  runPowerShellUninstallFont(path.join(fontsDir, 'MaterialSymbolsRounded.ttf'));
+  runPowerShellUninstallFont(path.join(fontsDir, 'MaterialSymbolsSharp.ttf'));
 }
 
-void runPowerShellInstallFont(String fontNameWithRelativePath) {
+void runPowerShellInstallFont(String fontNameWithFullPath) {
   var result = runPowerShellScriptOneArg(
-      r'.\Install-Font.ps1', fontNameWithRelativePath);
+      path.join(cliBinDir, 'Install-Font.ps1'), fontNameWithFullPath);
+  
   final fontname =
-      path.basename(path.withoutExtension(fontNameWithRelativePath));
+      path.basename(path.withoutExtension(fontNameWithFullPath));
   final numberFacesInstalled = int.tryParse(result);
   if (numberFacesInstalled != null && numberFacesInstalled > 0) {
     print(chalk.greenBright(
         '$fontname font was successfully installed ($numberFacesInstalled faces installed).'));
   } else {
     print(chalk.redBright(
-        '$fontname font was not installed likely because the font $fontNameWithRelativePath was not found.'));
+        '$fontname font was not installed likely because the font $fontNameWithFullPath was not found.'));
   }
 }
 
-void runPowerShellUninstallFont(String fontNameWithRelativePath) {
+void runPowerShellUninstallFont(String fontNameWithFullPath) {
   var result = runPowerShellScriptOneArg(
-      r'.\Uninstall-Font.ps1', fontNameWithRelativePath);
+      path.join(cliBinDir, 'Uninstall-Font.ps1'), fontNameWithFullPath);
+  
   final fontname =
-      path.basename(path.withoutExtension(fontNameWithRelativePath));
+      path.basename(path.withoutExtension(fontNameWithFullPath));
   if (result.toLowerCase().contains('True'.toLowerCase())) {
     print(chalk.greenBright('$fontname font was successfully uninstalled.'));
   } else {
@@ -302,9 +343,10 @@ String runPowerShellScriptOneArg(String scriptPath, String argumentToScript) {
 }
 
 String runPowerShellScript(String scriptPath, List<String> argumentsToScript) {
+  // Use cliBinDir as working directory for the process
   final processResult = Process.runSync('Powershell.exe',
       ['-executionpolicy', 'bypass', '-File', scriptPath, ...argumentsToScript],
-      workingDirectory: rootDir //path.join(Directory.current.path, 'bin')
+      workingDirectory: cliBinDir 
       );
   if (debugScripts) {
     print(chalk.yellowBright('Executing $scriptPath with $argumentsToScript'));
@@ -320,8 +362,9 @@ void runShellInstallFontsScriptLinux() {
     scriptName = 'install-fonts-withFontBook.sh';
   }
   final scriptPath = path.join(
-      rootDir, scriptName); //path.join('..', '..', 'bin', scriptName);
-  final fontWorkingDir = path.join(rootDir, '..', 'lib', 'fonts');
+      cliBinDir, scriptName); 
+      
+  final fontWorkingDir = path.join(resourcesDir, 'lib', 'fonts');
   //
   if(debugScripts) {
     print(chalk.purple('print(Directory.current.path)=${Directory.current.path}'));
@@ -347,15 +390,15 @@ void runShellInstallFontsScriptLinux() {
 
 void runShellInstallFontsScriptGloballyOnMacOS() {
 
-print(chalk.yellowBright('runShellInstallFontsScriptGloballyOnMacOS. rootDir=$rootDir'));
+  print(chalk.yellowBright('runShellInstallFontsScriptGloballyOnMacOS. cliBinDir=$cliBinDir'));
 
   String scriptName = 'install-fonts-macAlt.sh';
   if (macOSUseFontBook) {
     scriptName = 'install-fonts-macAlt-withFontBook.sh';
   }
   final scriptPath = path.join(
-      rootDir, scriptName); //path.join('..', '..', 'bin', scriptName);
-  final fontWorkingDir = path.join(rootDir, '..', 'lib', 'fonts');
+      cliBinDir, scriptName); 
+  final fontWorkingDir = path.join(resourcesDir, 'lib', 'fonts');
   print(chalk.purple('print(Directory.current.path)=${Directory.current.path}'));
   print(chalk.red('scriptPath=$scriptPath  fontWorkingDir=$fontWorkingDir'));
 

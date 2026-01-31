@@ -1,12 +1,11 @@
-# Changelog for Material Symbols Icons package
+# Changelog
 
-## 4.2892.1
+## 1.0.0
 
-* **Breaking Change**: Moved CLI tool `install_material_symbols_icons_fonts` to a separate package `material_symbols_icons_cli` to reduce dependencies for the main package.
-* Moved `args`, `path`, `chalkdart`, `glob` to `dev_dependencies`.
-* Updated `README.md` with instructions for the new CLI package.
+* Initial release of the CLI tool as a separate package.
+* Moved from `material_symbols_icons` package.
 
-## 4.2892.0
+## 4.2892.1 (material_symbols_icons)
 
 * Fixed right to left language support, which was not correctly catching many of the icons that needed to be set as RTL
 * Update to version 2.892 of the material icons variable fonts 'released' 11/27/2025 with 4161 icons

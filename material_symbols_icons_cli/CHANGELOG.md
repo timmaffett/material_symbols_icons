@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1
+
+* Fix published package to include CLI shell/PowerShell scripts in bin/.
+
 ## 1.0.0
 
 * Initial release of the CLI tool as a separate package.

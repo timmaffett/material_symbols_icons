@@ -113,9 +113,14 @@ void resolvePackagePaths() {
 
     final versionString = dirName.substring(baseToChop.length);
     if (debugScripts) print('Found directory $dirName version=$versionString');
-    final version = Version.tryParse(versionString);
+    Version? version;
+    try {
+      version = Version.parse(versionString);
+    } catch (_) {
+      version = null;
+    }
     if (version == null) continue;
-    if (highestVersion == null || version > highestVersion!) {
+    if (highestVersion == null || version > highestVersion) {
       highestVersion = version;
       latestPackageDir = fse.path;
     }

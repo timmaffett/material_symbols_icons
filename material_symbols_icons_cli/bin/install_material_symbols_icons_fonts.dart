@@ -18,6 +18,7 @@ import 'package:args/args.dart';
 import 'package:glob/glob.dart';
 import 'package:glob/list_local_fs.dart';
 import 'package:path/path.dart' as path;
+import 'package:pub_semver/pub_semver.dart';
 
 enum Options {
   install('install'),
@@ -99,7 +100,7 @@ void resolvePackagePaths() {
   final baseToChop = 'material_symbols_icons-';
 
   final listFSE = packageDirs.listSync(root: pubDevPackagesDir);
-  String highestVersion = '0.0.0';
+  Version? highestVersion;
   String latestPackageDir = '';
 
   for (final fse in listFSE) {
@@ -110,16 +111,16 @@ void resolvePackagePaths() {
     // We want the MAIN package, not the CLI package.
     if (dirName.startsWith('material_symbols_icons_cli')) continue;
 
-    String version = dirName.substring(baseToChop.length);
-    if (debugScripts) print('Found directory $dirName version=$version');
-    if (version.length >= 5) { // Adjusted from 8 to 5 to refer to X.Y.Z
-      if (version.compareTo(highestVersion) > 0) {
-        highestVersion = version;
-        latestPackageDir = fse.path;
-      }
+    final versionString = dirName.substring(baseToChop.length);
+    if (debugScripts) print('Found directory $dirName version=$versionString');
+    final version = Version.tryParse(versionString);
+    if (version == null) continue;
+    if (highestVersion == null || version > highestVersion!) {
+      highestVersion = version;
+      latestPackageDir = fse.path;
     }
   }
-  if (debugScripts) print('Highest Version = $highestVersion');
+  if (debugScripts) print('Highest Version = ${highestVersion?.toString() ?? 'none'}');
   if (debugScripts) print('latestPackageDir = $latestPackageDir');
   
   if(latestPackageDir.isNotEmpty) {

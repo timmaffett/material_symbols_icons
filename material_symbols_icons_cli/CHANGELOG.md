@@ -4,6 +4,10 @@
 
 * Fix published package to include CLI shell/PowerShell scripts in bin/.
 
+## 1.0.2
+
+* Fix package lookup to use semantic versioning so the latest material_symbols_icons fonts are found.
+
 ## 1.0.0
 
 * Initial release of the CLI tool as a separate package.

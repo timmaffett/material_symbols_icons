@@ -90,8 +90,8 @@ void resolvePackagePaths() {
         r"C:\Users\Tim\AppData\Local\Pub\Cache\global_packages\dart_frog_cli\bin";
   }
 
-  String pubDevPackagesDir =
-      path.join(_cliBinDir, '..', '..', '..', 'hosted', 'pub.dev');
+    String pubDevPackagesDir = path.normalize(path.absolute(
+      path.join(_cliBinDir, '..', '..', '..', 'hosted', 'pub.dev')));
 
   if (debugScripts) print('pubDevPackagesDir=$pubDevPackagesDir');
 
@@ -128,8 +128,12 @@ void resolvePackagePaths() {
   if (debugScripts) print('Highest Version = ${highestVersion?.toString() ?? 'none'}');
   if (debugScripts) print('latestPackageDir = $latestPackageDir');
   
-  if(latestPackageDir.isNotEmpty) {
-    _resourcesDir = latestPackageDir;
+  if (latestPackageDir.isNotEmpty) {
+    // Ensure we have an absolute, normalized path with no '..' segments.
+    if (!path.isAbsolute(latestPackageDir)) {
+      latestPackageDir = path.join(pubDevPackagesDir, latestPackageDir);
+    }
+    _resourcesDir = path.normalize(path.absolute(latestPackageDir));
   } else {
     if (debugScripts) print(chalk.red('Could not find latest installed material_symbols_icons package in pub cache.'));
     // If not found, maybe we are running from the main package itself (legacy compat)?
@@ -315,18 +319,25 @@ void uninstallMaterialSymbolsIconsFontWindows() {
 }
 
 void runPowerShellInstallFont(String fontNameWithFullPath) {
+  final fontFile = File(fontNameWithFullPath);
+  if (!fontFile.existsSync()) {
+    print(chalk.redBright(
+        'Font file not found: $fontNameWithFullPath'));
+    return;
+  }
+
   var result = runPowerShellScriptOneArg(
       path.join(cliBinDir, 'Install-Font.ps1'), fontNameWithFullPath);
   
   final fontname =
       path.basename(path.withoutExtension(fontNameWithFullPath));
-  final numberFacesInstalled = int.tryParse(result);
+  final numberFacesInstalled = int.tryParse(result.trim());
   if (numberFacesInstalled != null && numberFacesInstalled > 0) {
     print(chalk.greenBright(
         '$fontname font was successfully installed ($numberFacesInstalled faces installed).'));
   } else {
     print(chalk.redBright(
-        '$fontname font was not installed likely because the font $fontNameWithFullPath was not found.'));
+        '$fontname font was not installed. The file exists but the install API returned 0 (already installed or install blocked).'));
   }
 }
 

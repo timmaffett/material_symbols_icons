@@ -8,6 +8,10 @@
 
 * Fix package lookup to use semantic versioning so the latest material_symbols_icons fonts are found.
 
+## 1.0.3
+
+* Normalize pub cache paths on Windows and improve font install diagnostics.
+
 ## 1.0.0
 
 * Initial release of the CLI tool as a separate package.

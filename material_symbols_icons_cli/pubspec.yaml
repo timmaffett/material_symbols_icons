@@ -1,6 +1,6 @@
 name: material_symbols_icons_cli
 description: CLI tool to install fonts for the material_symbols_icons package.
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/timmaffett/material_symbols_icons
 repository: https://github.com/timmaffett/material_symbols_icons
 #publish_to: 'none' # Uncomment to prevent accidental publishing

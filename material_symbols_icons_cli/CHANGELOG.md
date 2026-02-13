@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.5
+
+* Fix shell scripts to have platform approriate line endings (LF linux/macosx, CRLF windows)
+* Added .gitattributes to enforce LF line endings for .sh files
+  and CRLF for .ps1 files regardless of platform.
+
 ## 1.0.4
 
 * Extracted the version-finding glob logic into a reusable _findLatestPackageDir() helper

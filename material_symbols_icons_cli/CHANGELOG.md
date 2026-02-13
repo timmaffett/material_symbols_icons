@@ -1,16 +1,23 @@
 # Changelog
 
-## 1.0.1
+## 1.0.4
+
+* Extracted the version-finding glob logic into a reusable _findLatestPackageDir() helper
+* _cliBinDir is now resolved from the hosted cache (hosted/pub.dev/material_symbols_icons_cli-X.Y.Z/bin/) using the
+  same approach that already worked for finding _resourcesDir
+* cleaned up pubspec.yaml
+
+## 1.0.3
 
 * Fix published package to include CLI shell/PowerShell scripts in bin/.
 
 ## 1.0.2
 
-* Fix package lookup to use semantic versioning so the latest material_symbols_icons fonts are found.
-
-## 1.0.3
-
 * Normalize pub cache paths on Windows and improve font install diagnostics.
+
+## 1.0.1
+
+* Fix package lookup to use semantic versioning so the latest material_symbols_icons fonts are found.
 
 ## 1.0.0
 

@@ -50,6 +50,45 @@ late String _resourcesDir;
 String get resourcesDir => _resourcesDir;
 
 
+/// Finds the latest version of a package directory in the pub hosted cache.
+/// [baseToChop] is the prefix including the trailing hyphen (e.g. 'material_symbols_icons-').
+/// [filter] allows filtering directories by name (receives the full directory basename).
+/// Returns the normalized absolute path, or null if not found.
+String? _findLatestPackageDir(String pubDevPackagesDir, String baseToChop, bool Function(String dirName) filter) {
+  final packageDirs = Glob('${baseToChop}*', caseSensitive: false, recursive: false);
+  final listFSE = packageDirs.listSync(root: pubDevPackagesDir);
+  Version? highestVersion;
+  String latestPackageDir = '';
+
+  for (final fse in listFSE) {
+    String dirName = fse.basename;
+    if (!filter(dirName)) continue;
+    final versionString = dirName.substring(baseToChop.length);
+    if (debugScripts) print('Found directory $dirName version=$versionString');
+    Version? version;
+    try {
+      version = Version.parse(versionString);
+    } catch (_) {
+      version = null;
+    }
+    if (version == null) continue;
+    if (highestVersion == null || version > highestVersion) {
+      highestVersion = version;
+      latestPackageDir = fse.path;
+    }
+  }
+  if (debugScripts) print('$baseToChop highest version = ${highestVersion?.toString() ?? 'none'}');
+  if (debugScripts) print('$baseToChop latestPackageDir = $latestPackageDir');
+
+  if (latestPackageDir.isNotEmpty) {
+    if (!path.isAbsolute(latestPackageDir)) {
+      latestPackageDir = path.join(pubDevPackagesDir, latestPackageDir);
+    }
+    return path.normalize(path.absolute(latestPackageDir));
+  }
+  return null;
+}
+
 // We need to resolve where this CLI package is, and where the resources (main) package is.
 void resolvePackagePaths() {
   final pathToScript = Platform.script.toFilePath();
@@ -82,64 +121,32 @@ void resolvePackagePaths() {
     return;
   }
 
-  // following for testing
-  if (Platform.isWindows && !_cliBinDir.contains('global_packages')) {
-    // This looks like specific debug code for Windows dev environment, leaving as is but using cliBinDir
-    // But it sets cliBinDir.
-    _cliBinDir =
-        r"C:\Users\Tim\AppData\Local\Pub\Cache\global_packages\dart_frog_cli\bin";
-  }
-
-    String pubDevPackagesDir = path.normalize(path.absolute(
+  // When running as a globally activated package, Platform.script points to
+  // a snapshot in global_packages/material_symbols_icons_cli/bin/ but the
+  // actual script files (.sh, .ps1) are in the hosted cache at
+  // hosted/pub.dev/material_symbols_icons_cli-X.Y.Z/bin/.
+  // We navigate up to the pub cache root and resolve both packages from there.
+  String pubDevPackagesDir = path.normalize(path.absolute(
       path.join(_cliBinDir, '..', '..', '..', 'hosted', 'pub.dev')));
 
   if (debugScripts) print('pubDevPackagesDir=$pubDevPackagesDir');
 
-  final packageDirs =
-      Glob('material_symbols_icons-*', caseSensitive: false, recursive: false);
-  final baseToChop = 'material_symbols_icons-';
-
-  final listFSE = packageDirs.listSync(root: pubDevPackagesDir);
-  Version? highestVersion;
-  String latestPackageDir = '';
-
-  for (final fse in listFSE) {
-    String dirName = fse.basename;
-    // START CHANGE: Filter out the cli package itself if it matches the glob (it shouldn't if name is different but glob is material_symbols_icons-*)
-    // material_symbols_icons_cli-* matches material_symbols_icons-* glob?
-    // Glob('material_symbols_icons-*') matches material_symbols_icons_cli-1.0.0
-    // We want the MAIN package, not the CLI package.
-    if (dirName.startsWith('material_symbols_icons_cli')) continue;
-
-    final versionString = dirName.substring(baseToChop.length);
-    if (debugScripts) print('Found directory $dirName version=$versionString');
-    Version? version;
-    try {
-      version = Version.parse(versionString);
-    } catch (_) {
-      version = null;
-    }
-    if (version == null) continue;
-    if (highestVersion == null || version > highestVersion) {
-      highestVersion = version;
-      latestPackageDir = fse.path;
-    }
+  // Resolve the CLI package's actual bin/ directory from the hosted cache
+  _cliBinDir = _findLatestPackageDir(pubDevPackagesDir, 'material_symbols_icons_cli-', (dirName) => true) ?? _cliBinDir;
+  if (_cliBinDir.isNotEmpty && !_cliBinDir.endsWith('bin')) {
+    _cliBinDir = path.join(_cliBinDir, 'bin');
   }
-  if (debugScripts) print('Highest Version = ${highestVersion?.toString() ?? 'none'}');
-  if (debugScripts) print('latestPackageDir = $latestPackageDir');
-  
-  if (latestPackageDir.isNotEmpty) {
-    // Ensure we have an absolute, normalized path with no '..' segments.
-    if (!path.isAbsolute(latestPackageDir)) {
-      latestPackageDir = path.join(pubDevPackagesDir, latestPackageDir);
-    }
-    _resourcesDir = path.normalize(path.absolute(latestPackageDir));
+  if (debugScripts) print('Resolved cliBinDir=$_cliBinDir');
+
+  // Resolve the main material_symbols_icons package for font resources
+  final mainPackageDir = _findLatestPackageDir(pubDevPackagesDir, 'material_symbols_icons-',
+      (dirName) => !dirName.startsWith('material_symbols_icons_cli'));
+
+  if (mainPackageDir != null) {
+    _resourcesDir = mainPackageDir;
   } else {
     if (debugScripts) print(chalk.red('Could not find latest installed material_symbols_icons package in pub cache.'));
-    // If not found, maybe we are running from the main package itself (legacy compat)?
-    // Or maybe we just default to cliBinDir/../.. similar to localdev structure as fallback?
-    // Use cliBinDir as fallback for safety to avoid crash, but it won't work if fonts aren't there.
-    _resourcesDir = path.dirname(_cliBinDir); 
+    _resourcesDir = path.dirname(_cliBinDir);
   }
 }
 

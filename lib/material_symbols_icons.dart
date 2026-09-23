@@ -118,26 +118,27 @@ class MaterialSymbolsBase {
   /// method is required and that it CAN NOT tree-shake this method when it never
   /// finds a call to it in the dart source code.
   /// `@pragma('wasm:entry-point')` does the same for dart2wasm (`flutter build web --wasm`).
-  /// dart2js has no equivalent, so JS-only web builds still include unreferenced fonts in full.
+  /// dart2js has no equivalent: for JS-only web builds, call this method once, for example
+  /// at the start of `main()`.
   @pragma('vm:entry-point')
   @pragma('wasm:entry-point')
   static void forceCompileTimeTreeShaking() {
-    // these variables must be declared as var to trigger tree shaking, when declared as const
-    // then the tree shaking is not triggered.  These are references to the 'check_indeterminate_small'
-    // icon in each of the fonts (one of the smallest glyphs we can include).
-    // ignore: unused_local_variable
-    var forceOutlinedTreeShake = const IconData(0xf88a,
-        fontFamily: 'MaterialSymbolsOutlined',
-        fontPackage: 'material_symbols_icons');
-    // ignore: unused_local_variable
-    var forceRoundedTreeShake = const IconData(0xf88a,
-        fontFamily: 'MaterialSymbolsRounded',
-        fontPackage: 'material_symbols_icons');
-    // ignore: unused_local_variable
-    var forceSharpTreeShake = const IconData(0xf88a,
-        fontFamily: 'MaterialSymbolsSharp',
-        fontPackage: 'material_symbols_icons');
+    // 'check_indeterminate_small' in each of the fonts, one of the smallest glyphs.
+    _keepIcons(const [
+      IconData(0xf88a, fontFamily: 'MaterialSymbolsOutlined', fontPackage: 'material_symbols_icons'),
+      IconData(0xf88a, fontFamily: 'MaterialSymbolsRounded', fontPackage: 'material_symbols_icons'),
+      IconData(0xf88a, fontFamily: 'MaterialSymbolsSharp', fontPackage: 'material_symbols_icons'),
+    ]);
   }
+
+  /// Keeps [icons] in the compiled program. dart2js drops a constant only assigned
+  /// to an unused local, so the icons go through a call instead: the entry-point
+  /// pragmas stop the native and Wasm compilers from removing this unused parameter,
+  /// and `noInline` stops dart2js from inlining the call away.
+  @pragma('vm:entry-point')
+  @pragma('wasm:entry-point')
+  @pragma('dart2js:noInline')
+  static void _keepIcons(Object icons) {}
 }
 
 /// Extension to [Icon] that creates icons are varied by any defaults you have set using

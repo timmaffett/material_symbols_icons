@@ -120,7 +120,10 @@ class Symbols {
   /// and it is being used to force the dart compilation process to believe that this
   /// method is required and that it CAN NOT tree-shake this method when it never
   /// finds a call to it in the dart source code.
+  /// `@pragma('wasm:entry-point')` does the same for dart2wasm (`flutter build web --wasm`).
+  /// dart2js has no equivalent, so JS-only web builds still include unreferenced fonts in full.
   @pragma('vm:entry-point')
+  @pragma('wasm:entry-point')
   static void forceCompileTimeTreeShaking() {
     // these variables must be declared as var to trigger tree shaking, when declared as const
     // then the tree shaking is not triggered.  These are references to the 'check_indeterminate_small'

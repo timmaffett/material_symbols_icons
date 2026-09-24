@@ -68,6 +68,18 @@ and then access the icons from the `Symbols` class.
 This class contains outlined, rounded and sharp versions of every icon.  You access them using `Symbols.iconname` (for the outlined version),
 and `Symbols.iconname_rounded` or `Symbols.iconname_sharp` for the rounded and sharp versions respectively.
 
+Flutter's icon tree shaker reduces each font to the icons your app uses, but only for a font with at least one icon
+left in the compiled app: a style you never use would otherwise ship in full (8 to 15 MB each). The package keeps one
+tiny icon of each style for you in native and `flutter build web --wasm` builds. For a JS-only web build
+(`flutter build web` without `--wasm`), call `Symbols.forceCompileTimeTreeShaking()` once, for example at the start of `main()`:
+
+```dart
+void main() {
+  Symbols.forceCompileTimeTreeShaking();
+  runApp(const MyApp());
+}
+```
+
 Additionally the Material Symbols [specification](https://docs.google.com/document/d/1UHRKDl8-lzl_hW_K2AHnpMwvdPo0vGPbDI7mqACWXJY/) document also specifies
 a Symbols.get(String name, SymbolStyle style) method that can be used to return the IconData for any icon using it's
 icon name and style (SymbolStyle.outlined, SymbolStyle.rounded, or SymbolStyle.sharp).  The get() method is not included on
